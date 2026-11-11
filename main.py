@@ -6,7 +6,15 @@ API_KEY = "3046beec0ef4a4346c9dcaa602e87315"
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-SKIP_FOOTBALL_LEAGUES = ["women", "u19", "u21", "u20", "friendly", "hazırlık", "reserve", "non league", "regional"]
+# Bilyoner ve yasal bültende yer alan, taranmasını istediğimiz majör lig anahtar kelimeleri (Beyaz Liste)
+ALLOWED_FOOTBALL_LEAGUES = [
+    "super lig", "premier league", "laliga", "la liga", "serie a", "bundesliga", 
+    "ligue 1", "champions league", "europa league", "conference league", 
+    "copa libertadores", "eredivisie", "primeira liga", "championship", 
+    "mls", "brasileiro", "argentina", "liga profesional", "superlig", 
+    "fa cup", "copa del rey", "coppa italia", "dfb pokal"
+]
+
 SKIP_BASKETBALL_LEAGUES = ["women", "u18", "u19", "u20", "u21", "3x3", "youth"]
 
 def send_telegram_message(message):
@@ -82,7 +90,10 @@ def check_live_football():
         fixture = item.get("fixture", {})
         elapsed = fixture.get("status", {}).get("elapsed", 0) or 0
         league_name = item.get("league", {}).get("name", "").lower()
-        if any(kw in league_name for kw in SKIP_FOOTBALL_LEAGUES): continue
+        
+        # Sadece Bilyoner/Yasal bültende yer alan majör ligleri filtrele (Beyaz Liste kontrolü)
+        if not any(allowed in league_name for allowed in ALLOWED_FOOTBALL_LEAGUES):
+            continue
 
         events = item.get("events", [])
         if any(e.get("type") == "Card" and e.get("detail") == "Red Card" for e in events if isinstance(e, dict)): continue
