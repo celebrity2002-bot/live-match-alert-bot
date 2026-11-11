@@ -117,5 +117,7 @@ def check_live_football():
             send_telegram_message(msg)
 
 if __name__ == "__main__":
-    check_live_football()
-    check_live_basketball()
+    for _ in range(4):
+        check_live_football()
+        check_live_basketball()
+        time.sleep(60)
