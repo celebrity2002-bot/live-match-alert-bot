@@ -42,7 +42,6 @@ def parse_minute(display_clock):
     return int(match.group(1)) if match else 0
 
 def parse_remaining_seconds(display_clock):
-    """Basketbol saatinden kalan süreyi saniye cinsinden döner."""
     if not display_clock:
         return 999
     clock_str = str(display_clock).strip()
@@ -60,7 +59,6 @@ def parse_remaining_seconds(display_clock):
         return 999
 
 def check_live_football():
-    """ESPN dünya geneli + Türkiye Süper Lig canlı maç taraması."""
     football_endpoints = [
         "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard",
         "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard"
@@ -124,7 +122,6 @@ def check_live_football():
                 send_telegram_message(alert_key, msg)
 
 def check_live_basketball():
-    """ESPN dünya geneli canlı basketbol taraması (ALT, ÜST, Handikap, Taktik Faul ve Blowout)."""
     basketball_endpoints = [
         ("NBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard", 54, 44),
         ("EuroLeague", "https://site.api.espn.com/apis/site/v2/sports/basketball/eur.euroleague/scoreboard", 45, 31),
@@ -173,7 +170,6 @@ def check_live_basketball():
             total_score = home_total + away_total
             score_diff = abs(home_total - away_total)
 
-            # --- A) 2. VE 3. PERİYOT SİNYALLERİ (1. Bölüm Temposuna Göre) ---
             valid_mid_periods = [2] if default_league == "NCAA" else [2, 3]
             if period in valid_mid_periods:
                 home_lines = home.get("linescores", [])
@@ -219,12 +215,10 @@ def check_live_basketball():
                                f"📌 **Sebep:** Ev sahibi maça soğuk başladı, canlı handikap avantajlı.")
                         send_telegram_message(alert_key, msg)
 
-            # --- B) SON PERİYOT SİNYALLERİ (Taktik Faul ÜST & Maç Koptu ALT) ---
             final_period = 2 if default_league == "NCAA" else 4
             if period == final_period:
                 rem_secs = parse_remaining_seconds(display_clock)
 
-                # 1. Taktik Faul ÜST: Son 4 dakikada (240 sn) fark 1-6 sayı arasındaysa
                 if (45 <= rem_secs <= 240) and (1 <= score_diff <= 6):
                     alert_key = f"bb_{event_id}_foul_over"
                     msg = (f"🔥 **BASKETBOL SON DAKİKA (TAKTİK FAUL ÜST)** 🔥\n\n"
@@ -236,7 +230,6 @@ def check_live_basketball():
                            f"📌 **Sebep:** Başa baş giden maçta son dakikalarda taktik faullerle saat durup serbest atışlarla sayı yağacak.")
                     send_telegram_message(alert_key, msg)
 
-                # 2. Maç Koptu (Blowout) ALT: Son periyotta fark 22+ sayı ise yedekler oyuna girer
                 elif (rem_secs >= 240) and (score_diff >= 22):
                     alert_key = f"bb_{event_id}_blowout_under"
                     msg = (f"❄️ **BASKETBOL RÖLANTİ ALARMI (BLOWOUT ALT)** ❄️\n\n"
@@ -246,4 +239,10 @@ def check_live_basketball():
                            f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                            f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
                            f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, as oyuncular dinlenmeye çekilip tempo düşecek.")
-                    send_telegram_message(alert_
+                    send_telegram_message(alert_key, msg)
+
+if __name__ == "__main__":
+    print("Canli mac tarama botu baslatildi...")
+    check_live_football()
+    check_live_basketball()
+    print("Tarama tamamlandi.")
