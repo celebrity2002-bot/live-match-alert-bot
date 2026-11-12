@@ -1,6 +1,5 @@
 import os
 import requests
-import time
 import re
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -43,7 +42,7 @@ def parse_minute(display_clock):
     return int(match.group(1)) if match else 0
 
 def parse_remaining_seconds(display_clock):
-    """Basketbol saatinden (ör: '3:42' veya '45.2') kalan süreyi saniye cinsinden döner."""
+    """Basketbol saatinden kalan süreyi saniye cinsinden döner."""
     if not display_clock:
         return 999
     clock_str = str(display_clock).strip()
@@ -247,13 +246,4 @@ def check_live_basketball():
                            f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                            f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
                            f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, as oyuncular dinlenmeye çekilip tempo düşecek.")
-                    send_telegram_message(alert_key, msg)
-
-if __name__ == "__main__":
-    print("Canli mac tarama botu baslatildi (ESPN Tam Dunya Kapsami)...")
-    for cycle in range(4):
-        check_live_football()
-        check_live_basketball()
-        if cycle < 3:
-            time.sleep(60)
-    print("Tarama dongusu basariyla tamamlandi.")
+                    send_telegram_message(alert_
