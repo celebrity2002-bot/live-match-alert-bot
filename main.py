@@ -12,7 +12,7 @@ BROWSER_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
-# Sadece 3x3 basketbolu eler; Bilyoner'deki U19, U21 ve hazırlık maçlarını artık engellemez
+# Sadece 3x3 basketbolu eler; Bilyoner'deki U19, U21 ve hazırlık maçlarını engellemez
 SKIP_LEAGUES = ["3x3"]
 
 sent_alerts = set()
@@ -65,6 +65,59 @@ def parse_remaining_seconds(display_clock):
         return int(float(clock_str))
     except ValueError:
         return 999
+
+
+def extract_stats_from_list(stats_list):
+    corners = 0
+    sot = 0
+    found = False
+    for item in stats_list or []:
+        name = str(item.get("name", "")).lower()
+        val_str = str(item.get("displayValue", "0")).strip()
+        try:
+            val = int(float(val_str))
+        except ValueError:
+            val = 0
+        if "corner" in name:
+            corners += val
+            found = True
+        elif "shotsontarget" in name or "shotontarget" in name:
+            sot += val
+            found = True
+    return corners, sot, found
+
+
+def get_soccer_pressure(event_id, competitors):
+    total_corners = 0
+    total_sot = 0
+    stats_found = False
+
+    for comp in competitors:
+        c, s, f = extract_stats_from_list(comp.get("statistics", []))
+        total_corners += c
+        total_sot += s
+        if f:
+            stats_found = True
+
+    if stats_found:
+        return total_corners, total_sot, True
+
+    # Scoreboard özetinde istatistik yoksa maç detayından canlı veriyi çeker
+    summary_url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event={event_id}"
+    try:
+        res = requests.get(summary_url, headers=BROWSER_HEADERS, timeout=6)
+        if res.status_code == 200:
+            s_data = res.json()
+            for team_box in s_data.get("boxscore", {}).get("teams", []):
+                c, s, f = extract_stats_from_list(team_box.get("statistics", []))
+                total_corners += c
+                total_sot += s
+                if f:
+                    stats_found = True
+    except Exception:
+        pass
+
+    return total_corners, total_sot, stats_found
 
 
 def check_live_football():
@@ -126,31 +179,38 @@ def check_live_football():
             a_goals = int(away.get("score", 0) or 0)
             total_goals = h_goals + a_goals
 
-            # KURAL 1: İlk Yarı 18-36. Dakika Arası 0-0 (İY 0.5 Üst Fırsatı)
-            if period == 1 and (18 <= minute <= 36) and total_goals == 0:
-                alert_key = f"fb_{event_id}_iy05"
-                msg = (
-                    f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n\n"
-                    f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı"
-                )
-                send_telegram_message(alert_key, msg)
+            # KURAL 1: İlk Yarı 18-30. Dakika Arası 0-0 + Canlı Baskı Filtresi
+            if period == 1 and (18 <= minute <= 30) and total_goals == 0:
+                corners, sot, has_stats = get_soccer_pressure(event_id, competitors)
+                # En az 3 korner veya 2 isabetli şut (toplam baskı >= 4) şartı
+                if has_stats and (corners >= 3 or sot >= 2) and (corners + sot >= 4):
+                    alert_key = f"fb_{event_id}_iy05"
+                    msg = (
+                        f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
+                        f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                        f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
+                        f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı"
+                    )
+                    send_telegram_message(alert_key, msg)
 
-            # KURAL 2: İkinci Yarı 60-65. Dakika Arası Berabere / Tek Farklı Kritik An
+            # KURAL 2: İkinci Yarı 60-65. Dakika Arası Berabere / Tek Farklı Kritik An + Baskı Filtresi
             elif period == 2 and (60 <= minute <= 65) and abs(h_goals - a_goals) <= 1:
-                alert_key = f"fb_{event_id}_2h_late"
-                msg = (
-                    f"⚡ **FUTBOL 2. YARI KRİTİK AN (60-65')** ⚡\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n\n"
-                    f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı"
-                )
-                send_telegram_message(alert_key, msg)
+                corners, sot, has_stats = get_soccer_pressure(event_id, competitors)
+                if has_stats and (corners + sot >= 7):
+                    alert_key = f"fb_{event_id}_2h_late"
+                    msg = (
+                        f"⚡ **FUTBOL 2. YARI KRİTİK AN (60-65')** ⚡\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
+                        f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                        f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
+                        f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı"
+                    )
+                    send_telegram_message(alert_key, msg)
 
     return len(seen_live_ids)
 
