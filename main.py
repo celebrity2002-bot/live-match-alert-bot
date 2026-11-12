@@ -1,5 +1,6 @@
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import requests
 
@@ -12,7 +13,30 @@ BROWSER_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
-# Sadece 3x3 basketbolu eler; Bilyoner'deki U19, U21 ve hazırlık maçlarını engellemez
+# Bilyoner (İddaa) bülteninde düzenli canlı bahis açılan ligler ve milli maçlar
+BILYONER_SOCCER_LEAGUES = [
+    # Türkiye
+    "tur.1", "tur.2",
+    # İngiltere
+    "eng.1", "eng.2", "eng.fa", "eng.league_cup",
+    # İspanya
+    "esp.1", "esp.2", "esp.copa_del_rey",
+    # İtalya
+    "ita.1", "ita.2", "ita.coppa_italia",
+    # Almanya
+    "ger.1", "ger.2", "ger.dfb_pokal",
+    # Fransa
+    "fra.1", "fra.2", "fra.coupe_de_france",
+    # Diğer Avrupa Üst Ligleri
+    "ned.1", "por.1", "bel.1", "sco.1",
+    "aut.1", "sui.1", "gre.1", "den.1", "swe.1", "nor.1",
+    # UEFA & Milli Maçlar
+    "uefa.champions", "uefa.europa", "uefa.europa.conf",
+    "uefa.nations", "fifa.worldq.uefa", "fifa.friendly",
+    # İddaa Bültenindeki Seçili Dünya Ligleri
+    "bra.1", "usa.1", "mex.1", "ksa.1"
+]
+
 SKIP_LEAGUES = ["3x3"]
 
 sent_alerts = set()
@@ -87,7 +111,7 @@ def extract_stats_from_list(stats_list):
     return corners, sot, found
 
 
-def get_soccer_pressure(event_id, competitors):
+def get_soccer_pressure(league_slug, event_id, competitors):
     total_corners = 0
     total_sot = 0
     stats_found = False
@@ -102,115 +126,116 @@ def get_soccer_pressure(event_id, competitors):
     if stats_found:
         return total_corners, total_sot, True
 
-    # Scoreboard özetinde istatistik yoksa maç detayından canlı veriyi çeker
-    summary_url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event={event_id}"
-    try:
-        res = requests.get(summary_url, headers=BROWSER_HEADERS, timeout=6)
-        if res.status_code == 200:
-            s_data = res.json()
-            for team_box in s_data.get("boxscore", {}).get("teams", []):
-                c, s, f = extract_stats_from_list(team_box.get("statistics", []))
-                total_corners += c
-                total_sot += s
-                if f:
-                    stats_found = True
-    except Exception:
-        pass
+    summary_urls = [
+        f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league_slug}/summary?event={event_id}",
+        f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event={event_id}"
+    ]
+    for summary_url in summary_urls:
+        try:
+            res = requests.get(summary_url, headers=BROWSER_HEADERS, timeout=6)
+            if res.status_code == 200:
+                s_data = res.json()
+                for team_box in s_data.get("boxscore", {}).get("teams", []):
+                    c, s, f = extract_stats_from_list(team_box.get("statistics", []))
+                    total_corners += c
+                    total_sot += s
+                    if f:
+                        stats_found = True
+                if stats_found:
+                    break
+        except Exception:
+            continue
 
     return total_corners, total_sot, stats_found
 
 
-def check_live_football():
-    football_endpoints = [
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard",
-        "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard"
-    ]
-    seen_live_ids = set()
+def fetch_league_events(league_slug):
+    url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league_slug}/scoreboard"
+    try:
+        res = requests.get(url, headers=BROWSER_HEADERS, timeout=8)
+        if res.status_code != 200:
+            return []
+        data = res.json()
+        league_name = data.get("leagues", [{}])[0].get("name", league_slug)
+        return [(league_slug, league_name, ev) for ev in data.get("events", [])]
+    except Exception:
+        return []
 
-    for url in football_endpoints:
-        try:
-            res = requests.get(url, headers=BROWSER_HEADERS, timeout=12)
-            if res.status_code != 200:
-                continue
-            data = res.json()
-        except Exception as e:
-            print(f"Futbol baglanti hatasi: {e}")
+
+def check_live_football():
+    seen_live_ids = set()
+    all_events = []
+
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        results = executor.map(fetch_league_events, BILYONER_SOCCER_LEAGUES)
+        for batch in results:
+            all_events.extend(batch)
+
+    for league_slug, league_title, event in all_events:
+        event_id = str(event.get("id", ""))
+        if not event_id or event_id in seen_live_ids:
             continue
 
-        for event in data.get("events", []):
-            event_id = str(event.get("id", ""))
-            if not event_id or event_id in seen_live_ids:
-                continue
+        status_obj = event.get("status", {})
+        state = status_obj.get("type", {}).get("state", "")
+        period = status_obj.get("period", 0)
 
-            status_obj = event.get("status", {})
-            state = status_obj.get("type", {}).get("state", "")
-            period = status_obj.get("period", 0)
+        if state != "in":
+            continue
 
-            if state != "in":
-                continue
+        seen_live_ids.add(event_id)
 
-            seen_live_ids.add(event_id)
+        comp_list = event.get("competitions", [])
+        if not comp_list:
+            continue
 
-            league_info = event.get("season", {}).get("slug", "") or ""
-            event_name = event.get("name", "")
-            comp_list = event.get("competitions", [])
-            if not comp_list:
-                continue
+        comp = comp_list[0]
+        minute = parse_minute(status_obj.get("displayClock", ""))
+        competitors = comp.get("competitors", [])
+        if len(competitors) < 2:
+            continue
 
-            comp = comp_list[0]
-            league_title = comp.get("league", {}).get("name", "") or league_info
-            check_text = f"{league_title} {league_info} {event_name}".lower()
+        home = next((c for c in competitors if c.get("homeAway") == "home"), competitors[0])
+        away = next((c for c in competitors if c.get("homeAway") == "away"), competitors[1])
 
-            if any(kw in check_text for kw in SKIP_LEAGUES):
-                continue
+        home_name = home.get("team", {}).get("shortDisplayName", "Ev")
+        away_name = away.get("team", {}).get("shortDisplayName", "Deplasman")
 
-            minute = parse_minute(status_obj.get("displayClock", ""))
-            competitors = comp.get("competitors", [])
-            if len(competitors) < 2:
-                continue
+        h_goals = int(home.get("score", 0) or 0)
+        a_goals = int(away.get("score", 0) or 0)
+        total_goals = h_goals + a_goals
 
-            home = next((c for c in competitors if c.get("homeAway") == "home"), competitors[0])
-            away = next((c for c in competitors if c.get("homeAway") == "away"), competitors[1])
+        # KURAL 1: İlk Yarı 18-30. Dakika Arası 0-0 + Canlı Baskı Filtresi
+        if period == 1 and (18 <= minute <= 30) and total_goals == 0:
+            corners, sot, has_stats = get_soccer_pressure(league_slug, event_id, competitors)
+            if has_stats and (corners >= 3 or sot >= 2) and (corners + sot >= 4):
+                alert_key = f"fb_{event_id}_iy05"
+                msg = (
+                    f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
+                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                    f"🏆 **Lig:** {league_title}\n"
+                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                    f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
+                    f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
+                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı"
+                )
+                send_telegram_message(alert_key, msg)
 
-            home_name = home.get("team", {}).get("shortDisplayName", "Ev")
-            away_name = away.get("team", {}).get("shortDisplayName", "Deplasman")
-
-            h_goals = int(home.get("score", 0) or 0)
-            a_goals = int(away.get("score", 0) or 0)
-            total_goals = h_goals + a_goals
-
-            # KURAL 1: İlk Yarı 18-30. Dakika Arası 0-0 + Canlı Baskı Filtresi
-            if period == 1 and (18 <= minute <= 30) and total_goals == 0:
-                corners, sot, has_stats = get_soccer_pressure(event_id, competitors)
-                # En az 3 korner veya 2 isabetli şut (toplam baskı >= 4) şartı
-                if has_stats and (corners >= 3 or sot >= 2) and (corners + sot >= 4):
-                    alert_key = f"fb_{event_id}_iy05"
-                    msg = (
-                        f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
-                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                        f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
-                        f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
-                        f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
-                        f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
-                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı"
-                    )
-                    send_telegram_message(alert_key, msg)
-
-            # KURAL 2: İkinci Yarı 60-65. Dakika Arası Berabere / Tek Farklı Kritik An + Baskı Filtresi
-            elif period == 2 and (60 <= minute <= 65) and abs(h_goals - a_goals) <= 1:
-                corners, sot, has_stats = get_soccer_pressure(event_id, competitors)
-                if has_stats and (corners + sot >= 7):
-                    alert_key = f"fb_{event_id}_2h_late"
-                    msg = (
-                        f"⚡ **FUTBOL 2. YARI KRİTİK AN (60-65')** ⚡\n\n"
-                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                        f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
-                        f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
-                        f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
-                        f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
-                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı"
-                    )
-                    send_telegram_message(alert_key, msg)
+        # KURAL 2: İkinci Yarı 60-65. Dakika Arası Berabere / Tek Farklı Kritik An + Baskı Filtresi
+        elif period == 2 and (60 <= minute <= 65) and abs(h_goals - a_goals) <= 1:
+            corners, sot, has_stats = get_soccer_pressure(league_slug, event_id, competitors)
+            if has_stats and (corners + sot >= 7):
+                alert_key = f"fb_{event_id}_2h_late"
+                msg = (
+                    f"⚡ **FUTBOL 2. YARI KRİTİK AN (60-65')** ⚡\n\n"
+                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                    f"🏆 **Lig:** {league_title}\n"
+                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                    f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
+                    f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
+                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı"
+                )
+                send_telegram_message(alert_key, msg)
 
     return len(seen_live_ids)
 
