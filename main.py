@@ -1,9 +1,10 @@
 import os
-import requests
 import re
+from datetime import datetime, timezone
+import requests
 
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID") or os.environ.get("CHAT_ID")
 
 BROWSER_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
@@ -11,13 +12,11 @@ BROWSER_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
-SKIP_LEAGUES = [
-    "women", "wom", "femenil", "femminile", "frauen", "feminine", "wnba",
-    "u17", "u18", "u19", "u20", "u21", "u23", "youth", "junior", "academy",
-    "reserves", "3x3", "friendly", "club friendlies"
-]
+# Sadece 3x3 basketbolu eler; Bilyoner'deki U19, U21 ve hazırlık maçlarını artık engellemez
+SKIP_LEAGUES = ["3x3"]
 
 sent_alerts = set()
+
 
 def send_telegram_message(alert_id, message):
     if alert_id in sent_alerts:
@@ -27,19 +26,28 @@ def send_telegram_message(alert_id, message):
         return
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "Markdown",
+        "disable_web_page_preview": True
+    }
     try:
         res = requests.post(url, json=payload, timeout=10)
         if res.status_code == 200:
             sent_alerts.add(alert_id)
+        else:
+            print(f"Telegram yanit kodu: {res.status_code}")
     except Exception as e:
         print(f"Telegram hatasi: {e}")
+
 
 def parse_minute(display_clock):
     if not display_clock:
         return 0
     match = re.search(r"(\d+)", str(display_clock))
     return int(match.group(1)) if match else 0
+
 
 def parse_remaining_seconds(display_clock):
     if not display_clock:
@@ -58,11 +66,13 @@ def parse_remaining_seconds(display_clock):
     except ValueError:
         return 999
 
+
 def check_live_football():
     football_endpoints = [
         "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard",
         "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard"
     ]
+    seen_live_ids = set()
 
     for url in football_endpoints:
         try:
@@ -76,12 +86,17 @@ def check_live_football():
 
         for event in data.get("events", []):
             event_id = str(event.get("id", ""))
+            if not event_id or event_id in seen_live_ids:
+                continue
+
             status_obj = event.get("status", {})
             state = status_obj.get("type", {}).get("state", "")
             period = status_obj.get("period", 0)
 
-            if state != "in" or period != 1:
+            if state != "in":
                 continue
+
+            seen_live_ids.add(event_id)
 
             league_info = event.get("season", {}).get("slug", "") or ""
             event_name = event.get("name", "")
@@ -111,23 +126,44 @@ def check_live_football():
             a_goals = int(away.get("score", 0) or 0)
             total_goals = h_goals + a_goals
 
-            if (18 <= minute <= 36) and total_goals == 0:
+            # KURAL 1: İlk Yarı 18-36. Dakika Arası 0-0 (İY 0.5 Üst Fırsatı)
+            if period == 1 and (18 <= minute <= 36) and total_goals == 0:
                 alert_key = f"fb_{event_id}_iy05"
-                msg = (f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
-                       f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                       f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
-                       f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n\n"
-                       f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
-                       f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı")
+                msg = (
+                    f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
+                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                    f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
+                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n\n"
+                    f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
+                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı"
+                )
                 send_telegram_message(alert_key, msg)
+
+            # KURAL 2: İkinci Yarı 60-65. Dakika Arası Berabere / Tek Farklı Kritik An
+            elif period == 2 and (60 <= minute <= 65) and abs(h_goals - a_goals) <= 1:
+                alert_key = f"fb_{event_id}_2h_late"
+                msg = (
+                    f"⚡ **FUTBOL 2. YARI KRİTİK AN (60-65')** ⚡\n\n"
+                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                    f"🏆 **Lig:** {league_title if league_title else 'Dünya Ligi'}\n"
+                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n\n"
+                    f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
+                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı"
+                )
+                send_telegram_message(alert_key, msg)
+
+    return len(seen_live_ids)
+
 
 def check_live_basketball():
     basketball_endpoints = [
         ("NBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard", 54, 44),
         ("EuroLeague", "https://site.api.espn.com/apis/site/v2/sports/basketball/eur.euroleague/scoreboard", 45, 31),
-        ("NCAA", "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard", 78, 56)
+        ("NCAA", "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard", 78, 56),
+        ("FIBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/fiba/scoreboard", 45, 31)
     ]
-    
+    seen_live_ids = set()
+
     for default_league, url, high_limit, low_limit in basketball_endpoints:
         try:
             res = requests.get(url, headers=BROWSER_HEADERS, timeout=10)
@@ -150,6 +186,8 @@ def check_live_basketball():
 
             if state != "in":
                 continue
+
+            seen_live_ids.add(event_id)
 
             competitions = event.get("competitions", [])
             if not competitions:
@@ -182,37 +220,43 @@ def check_live_basketball():
 
                     if q1_total >= high_limit:
                         alert_key = f"bb_{event_id}_under"
-                        msg = (f"🏀 **BASKETBOL ALARMI (ALT SİNYALİ)** 🏀\n\n"
-                               f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                               f"🏆 **Lig:** {league_name}\n"
-                               f"⏱️ **Bölüm:** {period}. Periyot | Toplam Skor: {total_score}\n"
-                               f"📊 **{period_label} Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
-                               f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
-                               f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                               f"📌 **Sebep:** İlk bölümdeki yüksek şut temposu düşüş eğiliminde.")
+                        msg = (
+                            f"🏀 **BASKETBOL ALARMI (ALT SİNYALİ)** 🏀\n\n"
+                            f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                            f"🏆 **Lig:** {league_name}\n"
+                            f"⏱️ **Bölüm:** {period}. Periyot | Toplam Skor: {total_score}\n"
+                            f"📊 **{period_label} Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
+                            f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
+                            f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
+                            f"📌 **Sebep:** İlk bölümdeki yüksek şut temposu düşüş eğiliminde."
+                        )
                         send_telegram_message(alert_key, msg)
 
                     elif 0 < q1_total <= low_limit:
                         alert_key = f"bb_{event_id}_over"
-                        msg = (f"🏀 **BASKETBOL ALARMI (ÜST SİNYALİ)** 🏀\n\n"
-                               f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                               f"🏆 **Lig:** {league_name}\n"
-                               f"⏱️ **Bölüm:** {period}. Periyot | Toplam Skor: {total_score}\n"
-                               f"📊 **{period_label} Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
-                               f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
-                               f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                               f"📌 **Sebep:** İlk bölümdeki kısır skor sonrası canlı barem avantajlı indi.")
+                        msg = (
+                            f"🏀 **BASKETBOL ALARMI (ÜST SİNYALİ)** 🏀\n\n"
+                            f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                            f"🏆 **Lig:** {league_name}\n"
+                            f"⏱️ **Bölüm:** {period}. Periyot | Toplam Skor: {total_score}\n"
+                            f"📊 **{period_label} Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
+                            f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
+                            f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
+                            f"📌 **Sebep:** İlk bölümdeki kısır skor sonrası canlı barem avantajlı indi."
+                        )
                         send_telegram_message(alert_key, msg)
 
                     if period == 2 and (a_q1 - h_q1 >= 9):
                         alert_key = f"bb_{event_id}_hcp"
-                        msg = (f"🏀 **BASKETBOL ALARMI (HANDİKAP FIRSATI)** 🏀\n\n"
-                               f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                               f"🏆 **Lig:** {league_name}\n"
-                               f"⏱️ **Bölüm:** 2. Periyot | Skor: {home_total} - {away_total}\n\n"
-                               f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap** veya **Galibiyet**\n"
-                               f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                               f"📌 **Sebep:** Ev sahibi maça soğuk başladı, canlı handikap avantajlı.")
+                        msg = (
+                            f"🏀 **BASKETBOL ALARMI (HANDİKAP FIRSATI)** 🏀\n\n"
+                            f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                            f"🏆 **Lig:** {league_name}\n"
+                            f"⏱️ **Bölüm:** 2. Periyot | Skor: {home_total} - {away_total}\n\n"
+                            f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap** veya **Galibiyet**\n"
+                            f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
+                            f"📌 **Sebep:** Ev sahibi maça soğuk başladı, canlı handikap avantajlı."
+                        )
                         send_telegram_message(alert_key, msg)
 
             final_period = 2 if default_league == "NCAA" else 4
@@ -221,28 +265,45 @@ def check_live_basketball():
 
                 if (45 <= rem_secs <= 240) and (1 <= score_diff <= 6):
                     alert_key = f"bb_{event_id}_foul_over"
-                    msg = (f"🔥 **BASKETBOL SON DAKİKA (TAKTİK FAUL ÜST)** 🔥\n\n"
-                           f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                           f"🏆 **Lig:** {league_name}\n"
-                           f"⏱️ **Süre:** Son Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
-                           f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
-                           f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.75 Bandı\n"
-                           f"📌 **Sebep:** Başa baş giden maçta son dakikalarda taktik faullerle saat durup serbest atışlarla sayı yağacak.")
+                    msg = (
+                        f"🔥 **BASKETBOL SON DAKİKA (TAKTİK FAUL ÜST)** 🔥\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {league_name}\n"
+                        f"⏱️ **Süre:** Son Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
+                        f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.75 Bandı\n"
+                        f"📌 **Sebep:** Başa baş giden maçta son dakikalarda taktik faullerle saat durup serbest atışlarla sayı yağacak."
+                    )
                     send_telegram_message(alert_key, msg)
 
                 elif (rem_secs >= 240) and (score_diff >= 22):
                     alert_key = f"bb_{event_id}_blowout_under"
-                    msg = (f"❄️ **BASKETBOL RÖLANTİ ALARMI (BLOWOUT ALT)** ❄️\n\n"
-                           f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                           f"🏆 **Lig:** {league_name}\n"
-                           f"⏱️ **Süre:** Son Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
-                           f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
-                           f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
-                           f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, as oyuncular dinlenmeye çekilip tempo düşecek.")
+                    msg = (
+                        f"❄️ **BASKETBOL RÖLANTİ ALARMI (BLOWOUT ALT)** ❄️\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {league_name}\n"
+                        f"⏱️ **Süre:** Son Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
+                        f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
+                        f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, as oyuncular dinlenmeye çekilip tempo düşecek."
+                    )
                     send_telegram_message(alert_key, msg)
+
+    return len(seen_live_ids)
+
 
 if __name__ == "__main__":
     print("Canli mac tarama botu baslatildi...")
-    check_live_football()
-    check_live_basketball()
-    print("Tarama tamamlandi.")
+    live_fb = check_live_football()
+    live_bb = check_live_basketball()
+    print(f"Tarama tamamlandi. Canli Futbol: {live_fb}, Canli Basketbol: {live_bb}")
+
+    # Her saat başı (00-04. dakikalar arası) otomatik arka plan durum raporu gönderir
+    now_utc = datetime.now(timezone.utc)
+    if now_utc.minute < 5:
+        status_msg = (
+            f"🤖 **Otomatik Arka Plan Raporu**\n"
+            f"⚽ Taranan Canlı Futbol: **{live_fb}** maç\n"
+            f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç"
+        )
+        send_telegram_message("hourly_status", status_msg)
