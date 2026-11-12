@@ -2,7 +2,14 @@ import os
 import requests
 import time
 
-API_KEY = "3046beec0ef4a4346c9dcaa602e87315"
+# 4 Farklı Hesaba Ait API Anahtarları (Günlük Toplam 400 İstek Kapasitesi)
+API_KEYS = [
+    "3046beec0ef4a4346c9dcaa602e87315",  # 1. Hesap
+    "90db487e3867a1b2c5aa35a80c9b4790",  # 2. Hesap
+    "4d00450b5fa5168d0b8b55e95b76391c",  # 3. Hesap
+    "f4a16e9ffbbc9a4cd3c80b987b6d94db",  # 4. Hesap
+]
+
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
@@ -27,21 +34,48 @@ def send_telegram_message(message):
     except Exception as e:
         print(f"Telegram hatasi: {e}")
 
-def check_live_basketball():
-    if not API_KEY: return
-    url = "https://v1.basketball.api-sports.io/games?live=all"
-    headers = {"x-apisports-key": API_KEY, "x-rapidapi-host": "v1.basketball.api-sports.io"}
-    try:
-        res = requests.get(url, headers=headers, timeout=10)
-        if res.status_code != 200: return
-        data = res.json()
-    except Exception: return
+def fetch_api_with_rotation(url, extra_headers=None):
+    """Anahtarları sırayla dener; kotası dolan anahtarı atlayıp bir sonrakine geçer."""
+    for idx, key in enumerate(API_KEYS):
+        headers = {"x-apisports-key": key}
+        if extra_headers:
+            headers.update(extra_headers)
+        try:
+            res = requests.get(url, headers=headers, timeout=10)
+            if res.status_code != 200:
+                print(f"Anahtar {idx+1} HTTP hatasi ({res.status_code}), sonraki anahtara geciliyor...")
+                continue
+            
+            data = res.json()
+            errors = data.get("errors", {})
+            
+            # API-Sports günlük kota dolduğunda 'errors' içinde 'requests' anahtarı döndürür
+            if isinstance(errors, dict) and ("requests" in errors or "rateLimit" in errors):
+                print(f"Anahtar {idx+1} gunluk kotasi doldu, sonraki anahtara geciliyor...")
+                continue
+            elif isinstance(errors, list) and len(errors) > 0:
+                print(f"Anahtar {idx+1} API hatasi ({errors}), sonraki anahtara geciliyor...")
+                continue
+                
+            return data
+        except Exception as e:
+            print(f"Anahtar {idx+1} baglanti hatasi ({e}), sonraki anahtara geciliyor...")
+            continue
+            
+    print("UYARI: Tum API anahtarlarinin kotasi doldu veya erisim saglanamadi.")
+    return None
 
-    if "response" not in data or not data["response"]: return
+def check_live_basketball():
+    url = "https://v1.basketball.api-sports.io/games?live=all"
+    data = fetch_api_with_rotation(url, extra_headers={"x-rapidapi-host": "v1.basketball.api-sports.io"})
+    
+    if not data or "response" not in data or not data["response"]:
+        return
 
     for item in data["response"]:
         league_name = item.get("league", {}).get("name", "").lower()
-        if any(kw in league_name for kw in SKIP_BASKETBALL_LEAGUES): continue
+        if any(kw in league_name for kw in SKIP_BASKETBALL_LEAGUES):
+            continue
 
         status = item.get("status", {}).get("short", "")
         teams = item.get("teams", {})
@@ -75,16 +109,11 @@ def check_live_basketball():
             send_telegram_message(msg)
 
 def check_live_football():
-    if not API_KEY: return
     url = "https://v3.football.api-sports.io/fixtures?live=all"
-    headers = {"x-apisports-key": API_KEY}
-    try:
-        res = requests.get(url, headers=headers, timeout=10)
-        if res.status_code != 200: return
-        data = res.json()
-    except Exception: return
-
-    if "response" not in data or not data["response"]: return
+    data = fetch_api_with_rotation(url)
+    
+    if not data or "response" not in data or not data["response"]:
+        return
 
     for item in data["response"]:
         fixture = item.get("fixture", {})
@@ -96,7 +125,8 @@ def check_live_football():
             continue
 
         events = item.get("events", [])
-        if any(e.get("type") == "Card" and e.get("detail") == "Red Card" for e in events if isinstance(e, dict)): continue
+        if any(e.get("type") == "Card" and e.get("detail") == "Red Card" for e in events if isinstance(e, dict)):
+            continue
 
         teams = item.get("teams", {})
         home_team = teams.get("home", {}).get("name", "Ev")
