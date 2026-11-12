@@ -2,21 +2,20 @@ name: Canli Mac Takip Botu
 
 on:
   schedule:
-    # 7/24 her 15 dakikada bir otomatik tetiklenir (icerdeki 4 donguyle 1'er dk arayla tarar)
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     steps:
-      - name: Depoyu Cek
+      - name: Kodu Cek
         uses: actions/checkout@v4
 
-      - name: Python Kurulumu
+      - name: Python Kur
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Kutuphaneleri Yukle
         run: pip install requests
