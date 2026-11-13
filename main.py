@@ -69,6 +69,15 @@ def send_telegram_message(alert_id, message):
         print(f"Telegram hatasi: {e}")
 
 
+def safe_int(val, default=0):
+    if val is None or val == "":
+        return default
+    try:
+        return int(float(str(val).strip()))
+    except (ValueError, TypeError):
+        return default
+
+
 def parse_minute(display_clock):
     if not display_clock:
         return 0
@@ -130,11 +139,7 @@ def extract_stats_from_list(stats_list):
     found = False
     for item in stats_list or []:
         name = str(item.get("name", "")).lower()
-        val_str = str(item.get("displayValue", "0")).strip()
-        try:
-            val = int(float(val_str))
-        except ValueError:
-            val = 0
+        val = safe_int(item.get("displayValue", 0))
         if "corner" in name:
             corners += val
             found = True
@@ -153,7 +158,6 @@ def get_soccer_live_metrics(league_slug, event_id, comp, competitors):
     total_reds = 0
     stats_found = False
 
-    # Maç olaylarından (details) kırmızı kart kontrolü
     detail_reds = 0
     for det in comp.get("details") or []:
         det_type = str((det.get("type") or {}).get("text", "")).lower()
@@ -251,14 +255,14 @@ def check_live_football():
         home_name = home.get("team", {}).get("shortDisplayName", "Ev")
         away_name = away.get("team", {}).get("shortDisplayName", "Deplasman")
 
-        h_goals = int(home.get("score", 0) or 0)
-        a_goals = int(away.get("score", 0) or 0)
+        h_goals = safe_int(home.get("score", 0))
+        a_goals = safe_int(away.get("score", 0))
         total_goals = h_goals + a_goals
 
-        has_odds, home_fav, away_fav, _, odds_details = get_match_odds_info(comp)
+        has_odds, _, _, _, odds_details = get_match_odds_info(comp)
         fav_tag = f" | Favori: {odds_details}" if (has_odds and odds_details) else ""
 
-        # KURAL 1: İlk Yarı 18-22. Dakika Arası 0-0 + Canlı Baskı Filtresi (Tek Atış)
+        # KURAL 1: İlk Yarı 18-22. Dakika Arası 0-0 + Canlı Baskı Filtresi
         if period == 1 and (18 <= minute <= 22) and total_goals == 0:
             corners, sot, _, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
             if has_stats and (corners >= 3 or sot >= 2) and (corners + sot >= 4):
@@ -292,7 +296,7 @@ def check_live_football():
                 )
                 send_telegram_message(alert_key, msg)
 
-        # KURAL 3 (SNIPER): Kırmızı Kart + Baskı Radarı (68-73' Arası, 11'e 10 Avantajı)
+        # KURAL 3 (SNIPER): Kırmızı Kart + Baskı Radarı (68-73' Arası)
         elif period == 2 and (68 <= minute <= 73):
             corners, sot, reds, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
             if has_stats and reds >= 1 and (corners + sot >= 8):
@@ -309,7 +313,7 @@ def check_live_football():
                 )
                 send_telegram_message(alert_key, msg)
 
-        # KURAL 4 (SNIPER): "Son Kale" Geç Gol Kuralı (75-80' Arası, Yoğun Baskı >= 11)
+        # KURAL 4 (SNIPER): "Son Kale" Geç Gol Kuralı (75-80' Arası)
         elif period == 2 and (75 <= minute <= 80) and abs(h_goals - a_goals) <= 1:
             corners, sot, _, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
             if has_stats and (corners + sot >= 11):
@@ -329,6 +333,242 @@ def check_live_football():
     return len(seen_live_ids)
 
 
+def classify_world_league(country_raw, league_raw):
+    country = str(country_raw or "").lower()
+    league = str(league_raw or "").lower()
+
+    if ("korea" in country) and ("kbl" in league) and ("wkbl" not in league) and ("women" not in league):
+        return "Güney Kore KBL", 50, 29
+    if ("japan" in country) and ("b.league" in league or "b1" in league) and ("b2" not in league) and ("b3" not in league) and ("women" not in league):
+        return "Japonya B.League", 51, 30
+    if ("turkey" in country or "türkiye" in country) and ("super" in league or "süper" in league or "bsl" in league) and ("kbsl" not in league) and ("women" not in league) and ("kadın" not in league):
+        return "Türkiye BSL", 50, 30
+    if ("spain" in country) and ("acb" in league or "liga endesa" in league) and ("women" not in league) and ("femenina" not in league):
+        return "İspanya ACB", 51, 30
+    return None, 50, 30
+
+
+def fetch_world_basketball_games():
+    """LiveScore (?MD=1) ve Sofascore yedekli anahtarsız dünya basketbolu veri çekici."""
+    normalized_games = []
+    today_str = datetime.now(timezone.utc).strftime("%Y%m%d")
+
+    ls_headers = {
+        **BROWSER_HEADERS,
+        "Origin": "https://www.livescore.com",
+        "Referer": "https://www.livescore.com/"
+    }
+    ls_urls = [
+        "https://prod-public-api.livescore.com/v1/api/app/live/basketball/3?MD=1",
+        f"https://prod-public-api.livescore.com/v1/api/app/date/basketball/{today_str}/3?MD=1"
+    ]
+
+    for url in ls_urls:
+        try:
+            res = requests.get(url, headers=ls_headers, timeout=10)
+            if res.status_code != 200:
+                continue
+            stages = res.json().get("Stages") or []
+            for st in stages:
+                target_label, high_lim, low_lim = classify_world_league(st.get("Cnm"), st.get("Snm"))
+                if not target_label:
+                    continue
+                for ev in st.get("Events") or []:
+                    eps = str(ev.get("Eps", "")).upper().strip()
+                    if eps not in ["1Q", "2Q", "HT", "3Q", "4Q", "OT"]:
+                        continue
+                    t1_list = ev.get("T1") or [{}]
+                    t2_list = ev.get("T2") or [{}]
+                    normalized_games.append({
+                        "source": "LiveScore",
+                        "id": f"ls_{ev.get('Eid', '')}",
+                        "league": target_label,
+                        "high_limit": high_lim,
+                        "low_limit": low_lim,
+                        "period": eps,
+                        "home_name": t1_list[0].get("Nm", "Ev"),
+                        "away_name": t2_list[0].get("Nm", "Deplasman"),
+                        "home_total": safe_int(ev.get("Tr1", 0)),
+                        "away_total": safe_int(ev.get("Tr2", 0)),
+                        "h_q1": safe_int(ev.get("Tr1Q1", 0)),
+                        "a_q1": safe_int(ev.get("Tr2Q1", 0)),
+                        "h_q4": safe_int(ev.get("Tr1Q4", 0)),
+                        "a_q4": safe_int(ev.get("Tr2Q4", 0)),
+                    })
+            if normalized_games:
+                return normalized_games, "LiveScore"
+        except Exception:
+            continue
+
+    # Yedek Kaynak: Sofascore Canlı Basketbol Akışı
+    sf_headers = {
+        **BROWSER_HEADERS,
+        "Origin": "https://www.sofascore.com",
+        "Referer": "https://www.sofascore.com/"
+    }
+    try:
+        res = requests.get("https://api.sofascore.com/api/v1/sport/basketball/events/live", headers=sf_headers, timeout=10)
+        if res.status_code == 200:
+            for ev in res.json().get("events") or []:
+                tourn = ev.get("tournament") or {}
+                cat_name = (tourn.get("category") or {}).get("name", "")
+                tourn_name = tourn.get("name", "")
+                target_label, high_lim, low_lim = classify_world_league(cat_name, tourn_name)
+                if not target_label:
+                    continue
+
+                st_desc = str((ev.get("status") or {}).get("description", "")).lower()
+                eps = "LIVE"
+                if "1st" in st_desc:
+                    eps = "1Q"
+                elif "2nd" in st_desc:
+                    eps = "2Q"
+                elif "halftime" in st_desc:
+                    eps = "HT"
+                elif "3rd" in st_desc:
+                    eps = "3Q"
+                elif "4th" in st_desc:
+                    eps = "4Q"
+                elif "overtime" in st_desc:
+                    eps = "OT"
+
+                h_sc = ev.get("homeScore") or {}
+                a_sc = ev.get("awayScore") or {}
+                normalized_games.append({
+                    "source": "Sofascore",
+                    "id": f"sf_{ev.get('id', '')}",
+                    "league": target_label,
+                    "high_limit": high_lim,
+                    "low_limit": low_lim,
+                    "period": eps,
+                    "home_name": (ev.get("homeTeam") or {}).get("shortName") or (ev.get("homeTeam") or {}).get("name", "Ev"),
+                    "away_name": (ev.get("awayTeam") or {}).get("shortName") or (ev.get("awayTeam") or {}).get("name", "Deplasman"),
+                    "home_total": safe_int(h_sc.get("current", 0)),
+                    "away_total": safe_int(a_sc.get("current", 0)),
+                    "h_q1": safe_int(h_sc.get("period1", 0)),
+                    "a_q1": safe_int(a_sc.get("period1", 0)),
+                    "h_q4": safe_int(h_sc.get("period4", 0)),
+                    "a_q4": safe_int(a_sc.get("period4", 0)),
+                })
+            if normalized_games:
+                return normalized_games, "Sofascore"
+    except Exception:
+        pass
+
+    return [], "Aktif Mac Yok"
+
+
+def check_keyless_world_basketball():
+    """Güney Kore KBL, Japonya B.League, Türkiye BSL ve İspanya ACB taraması."""
+    stake_high = int(KASA_TUTARI * 0.10)  # 2 Birim (200 TL)
+    stake_low = int(KASA_TUTARI * 0.05)   # 1 Birim (100 TL)
+
+    games, source_used = fetch_world_basketball_games()
+    print(f"Dunya Basketbol (KBL/B.League/BSL/ACB) [{source_used}]: {len(games)} canli mac")
+
+    for g in games:
+        game_id = g["id"]
+        target_label = g["league"]
+        high_limit = g["high_limit"]
+        low_limit = g["low_limit"]
+        eps = g["period"]
+
+        home_name = g["home_name"]
+        away_name = g["away_name"]
+        home_total = g["home_total"]
+        away_total = g["away_total"]
+        total_score = home_total + away_total
+        score_diff = abs(home_total - away_total)
+
+        h_q1 = g["h_q1"]
+        a_q1 = g["a_q1"]
+        q1_total = h_q1 + a_q1
+        q1_diff = abs(h_q1 - a_q1)
+
+        # 2. Çeyrek İlk ~4 Dakika Penceresi
+        if eps == "2Q" and q1_total > 0:
+            q2_scored = total_score - q1_total
+            if 0 <= q2_scored <= 16:
+                if q1_total >= high_limit and q1_diff >= 5:
+                    alert_key = f"{game_id}_under"
+                    msg = (
+                        f"🏀 **GÜNDÜZ BASKETBOL ALARMI (TEMPO DÜŞÜŞÜ ALT)** 🏀\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {target_label}\n"
+                        f"⏱️ **Süre:** 2. Çeyrek Başı | Toplam Skor: {total_score}\n"
+                        f"📊 **1. Çeyrek Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
+                        f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
+                        f"📌 **Sebep:** 10 dakikalık ilk çeyrekteki yüksek tempo dengelenecek."
+                    )
+                    send_telegram_message(alert_key, msg)
+
+                elif q1_total <= low_limit:
+                    alert_key = f"{game_id}_over"
+                    msg = (
+                        f"🏀 **GÜNDÜZ BASKETBOL ALARMI (DÜŞÜK BAREM ÜST)** 🏀\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {target_label}\n"
+                        f"⏱️ **Süre:** 2. Çeyrek Başı | Toplam Skor: {total_score}\n"
+                        f"📊 **1. Çeyrek Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
+                        f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
+                        f"📌 **Sebep:** İlk çeyrekteki düşük skor sonrası canlı barem avantajlı indi."
+                    )
+                    send_telegram_message(alert_key, msg)
+
+                if (a_q1 - h_q1 >= 8) and (home_total - away_total >= -13):
+                    alert_key = f"{game_id}_hcp"
+                    msg = (
+                        f"🏀 **GÜNDÜZ BASKETBOL (EV SAHİBİ HANDİKAP)** 🏀\n\n"
+                        f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                        f"🏆 **Lig:** {target_label}\n"
+                        f"⏱️ **Süre:** 2. Çeyrek Başı | Skor: {home_total} - {away_total}\n"
+                        f"📊 **1. Çeyrek Skoru:** {h_q1} - {a_q1}\n\n"
+                        f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap** veya **Galibiyet**\n"
+                        f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı\n"
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)\n"
+                        f"📌 **Sebep:** Ev sahibi ilk çeyreği geride kapattı ancak oyuna ortak oluyor."
+                    )
+                    send_telegram_message(alert_key, msg)
+
+        # 4. Çeyrek Stratejileri
+        elif eps == "4Q":
+            q4_scored = g["h_q4"] + g["a_q4"]
+
+            if (24 <= q4_scored <= 42) and (1 <= score_diff <= 5):
+                alert_key = f"{game_id}_foul_over"
+                msg = (
+                    f"🔥 **GÜNDÜZ SON DAKİKA (TAKTİK FAUL ÜST)** 🔥\n\n"
+                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                    f"🏆 **Lig:** {target_label}\n"
+                    f"⏱️ **Süre:** 4. Çeyrek Son Bölümü | Skor: {home_total} - {away_total}\n\n"
+                    f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
+                    f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.75 Bandı\n"
+                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)\n"
+                    f"📌 **Sebep:** Başa baş giden maçta son dakikalarda taktik faullerle serbest atış yağacak."
+                )
+                send_telegram_message(alert_key, msg)
+
+            elif (4 <= q4_scored <= 18) and (score_diff >= 20):
+                alert_key = f"{game_id}_blowout_under"
+                msg = (
+                    f"❄️ **GÜNDÜZ RÖLANTİ ALARMI (FARK AÇILDI ALT)** ❄️\n\n"
+                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                    f"🏆 **Lig:** {target_label}\n"
+                    f"⏱️ **Süre:** 4. Çeyrek | Skor: {home_total} - {away_total}\n\n"
+                    f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
+                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
+                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
+                    f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, tempo düşecek."
+                )
+                send_telegram_message(alert_key, msg)
+
+    return len(games)
+
+
 def check_live_basketball():
     now_us_east = datetime.now(timezone.utc) - timedelta(hours=5)
     us_dates = [now_us_east.strftime("%Y%m%d")]
@@ -338,22 +578,25 @@ def check_live_basketball():
     stake_high = int(KASA_TUTARI * 0.10)  # 2 Birim (200 TL)
     stake_low = int(KASA_TUTARI * 0.05)   # 1 Birim (100 TL)
 
-    # 4 dakikalık kilitli 2. periyot pencereleri (Tek bildirim garantisi)
     basketball_endpoints = [
-        ("EuroLeague", "https://site.api.espn.com/apis/site/v2/sports/basketball/eur.euroleague/scoreboard", 50, 30, 600, 360),
-        ("FIBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/fiba/scoreboard", 50, 30, 600, 360)
+        ("Avustralya NBL", "https://site.api.espn.com/apis/site/v2/sports/basketball/nbl/scoreboard", 54, 32, 600, 360, 8),
+        ("EuroLeague", "https://site.api.espn.com/apis/site/v2/sports/basketball/eur.euroleague/scoreboard", 50, 30, 600, 360, 9),
+        ("FIBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/fiba/scoreboard", 50, 30, 600, 360, 9)
     ]
     for d_str in us_dates:
         basketball_endpoints.append(
-            ("NBA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d_str}", 66, 43, 720, 480)
+            ("NBA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d_str}", 66, 43, 720, 480, 9)
         )
         basketball_endpoints.append(
-            ("NCAA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates={d_str}", 84, 54, 1200, 960)
+            ("NBA G League", f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba-development/scoreboard?dates={d_str}", 66, 43, 720, 480, 9)
+        )
+        basketball_endpoints.append(
+            ("NCAA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates={d_str}", 84, 54, 1200, 960, 9)
         )
 
     seen_live_ids = set()
 
-    for default_league, url, high_limit, low_limit, p2_start_sec, p2_end_sec in basketball_endpoints:
+    for default_league, url, high_limit, low_limit, p2_start_sec, p2_end_sec, hcp_limit in basketball_endpoints:
         try:
             res = requests.get(url, headers=BROWSER_HEADERS, timeout=10)
             if res.status_code != 200:
@@ -364,6 +607,8 @@ def check_live_basketball():
 
         leagues_list = data.get("leagues") or [{}]
         league_name = leagues_list[0].get("abbreviation", default_league)
+        if default_league in ["Avustralya NBL", "NBA G League"]:
+            league_name = default_league
         if any(kw in league_name.lower() for kw in SKIP_LEAGUES):
             continue
 
@@ -397,8 +642,8 @@ def check_live_basketball():
             home_name = home.get("team", {}).get("shortDisplayName", "Ev")
             away_name = away.get("team", {}).get("shortDisplayName", "Deplasman")
 
-            home_total = int(home.get("score", 0) or 0)
-            away_total = int(away.get("score", 0) or 0)
+            home_total = safe_int(home.get("score", 0))
+            away_total = safe_int(away.get("score", 0))
             total_score = home_total + away_total
             score_diff = abs(home_total - away_total)
             rem_secs = parse_remaining_seconds(display_clock)
@@ -410,13 +655,12 @@ def check_live_basketball():
                 home_lines = home.get("linescores", [])
                 away_lines = away.get("linescores", [])
                 if home_lines and away_lines:
-                    h_q1 = int(home_lines[0].get("value", 0) or 0)
-                    a_q1 = int(away_lines[0].get("value", 0) or 0)
+                    h_q1 = safe_int(home_lines[0].get("value", 0))
+                    a_q1 = safe_int(away_lines[0].get("value", 0))
                     q1_total = h_q1 + a_q1
                     q1_diff = abs(h_q1 - a_q1)
                     period_label = "1. Yarı" if default_league == "NCAA" else "1. Çeyrek"
 
-                    # KURAL 1: Tempo Regresyonu ALT
                     if q1_total >= high_limit and q1_diff >= 5:
                         alert_key = f"bb_{event_id}_under"
                         msg = (
@@ -432,7 +676,6 @@ def check_live_basketball():
                         )
                         send_telegram_message(alert_key, msg)
 
-                    # KURAL 2: Düşük Barem ÜST
                     elif 0 < q1_total <= low_limit:
                         alert_key = f"bb_{event_id}_over"
                         msg = (
@@ -448,9 +691,8 @@ def check_live_basketball():
                         )
                         send_telegram_message(alert_key, msg)
 
-                    # KURAL 3 (SNIPER): Maç Önü Favorisi Ev Sahibi Geri Dönüş Handikapı
                     is_valid_fav = (not has_odds) or (home_fav and not away_fav and (spread_val is None or spread_val <= -2.5))
-                    if is_valid_fav and (a_q1 - h_q1 >= 9) and (home_total - away_total >= -14):
+                    if is_valid_fav and (a_q1 - h_q1 >= hcp_limit) and (home_total - away_total >= -14):
                         fav_note = f" (Maç Önü: {odds_details})" if odds_details else ""
                         alert_key = f"bb_{event_id}_hcp"
                         msg = (
@@ -469,7 +711,6 @@ def check_live_basketball():
             # SON PERİYOT STRATEJİLERİ
             final_period = 2 if default_league == "NCAA" else 4
             if period == final_period:
-                # KURAL 4 (SNIPER): Keskin Taktik Faul ÜST (02:30 - 00:40 arası, 1-5 sayı fark)
                 if (40 <= rem_secs <= 150) and (1 <= score_diff <= 5):
                     alert_key = f"bb_{event_id}_foul_over"
                     msg = (
@@ -484,7 +725,6 @@ def check_live_basketball():
                     )
                     send_telegram_message(alert_key, msg)
 
-                # KURAL 5: Fark Açılınca Rölanti ALT (08:30 - 05:00 arası, >= 20 sayı fark)
                 elif (300 <= rem_secs <= 510) and (score_diff >= 20):
                     alert_key = f"bb_{event_id}_blowout_under"
                     msg = (
@@ -499,7 +739,8 @@ def check_live_basketball():
                     )
                     send_telegram_message(alert_key, msg)
 
-    return len(seen_live_ids)
+    cdn_count = check_keyless_world_basketball()
+    return len(seen_live_ids) + cdn_count
 
 
 if __name__ == "__main__":
@@ -508,13 +749,13 @@ if __name__ == "__main__":
     live_bb = check_live_basketball()
     print(f"Tarama tamamlandi. Canli Futbol: {live_fb}, Canli Basketbol: {live_bb}")
 
-    # Her saat başı (00-09. dakikalar arası) otomatik arka plan durum raporu gönderir
+    # Her saat başı (00-04. dakikalar arası) yalnızca 1 kez otomatik arka plan durum raporu gönderir
     now_utc = datetime.now(timezone.utc)
-    if now_utc.minute < 10:
+    if now_utc.minute < 5:
         status_msg = (
             f"🤖 **Otomatik Arka Plan Raporu**\n"
             f"⚽ Taranan Canlı Futbol: **{live_fb}** maç\n"
-            f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç\n"
+            f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç (Anahtarsız Çift Kaynak)\n"
             f"💼 Aktif Kasa: **{KASA_TUTARI} TL** (1 Birim: {int(KASA_TUTARI * 0.05)} TL)"
         )
         send_telegram_message("hourly_status", status_msg)
