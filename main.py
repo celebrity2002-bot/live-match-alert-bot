@@ -591,7 +591,7 @@ def check_keyless_world_basketball():
                     )
                     send_telegram_message(alert_key, msg)
 
-        # 4. Çeyrek Stratejileri (YENİ: Maç Temposu Filtresi Eklenmiş Rölanti ALT)
+        # 4. Çeyrek Stratejileri (Maç Temposu Filtresi Eklenmiş Rölanti ALT)
         elif eps == "4Q":
             q4_scored = g["h_q4"] + g["a_q4"]
             q3_accum = g["h_q3_accum"] + g["a_q3_accum"]
@@ -815,6 +815,6 @@ if __name__ == "__main__":
             f"🤖 **Otomatik Arka Plan Raporu**\n"
             f"⚽ Taranan Canlı Futbol: **{live_fb}** maç\n"
             f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç (Anahtarsız Çift Kaynak)\n"
-            f"💼 Aktif Kasa: **{KASA_TUTARI} TL** (1 Birim: {int(KASA_TTR * 0.05)} TL)"
+            f"💼 Aktif Kasa: **{KASA_TUTARI} TL** (1 Birim: {int(KASA_TUTARI * 0.05)} TL)"
         )
         send_telegram_message("hourly_status", status_msg)
