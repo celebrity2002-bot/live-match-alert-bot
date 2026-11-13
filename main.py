@@ -256,8 +256,9 @@ def check_live_basketball():
         basketball_endpoints.append(
             ("NBA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d_str}", 54, 44)
         )
+        # Sadece Bilyoner bültenine giren majör konferans / Top 25 NCAA maçlarını tarar
         basketball_endpoints.append(
-            ("NCAA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=300&dates={d_str}", 78, 56)
+            ("NCAA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates={d_str}", 78, 56)
         )
 
     seen_live_ids = set()
