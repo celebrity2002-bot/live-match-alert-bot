@@ -1,7 +1,7 @@
 import os
 import re
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import requests
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
@@ -34,7 +34,7 @@ BILYONER_SOCCER_LEAGUES = [
     "uefa.champions", "uefa.europa", "uefa.europa.conf",
     "uefa.nations", "fifa.worldq.uefa", "fifa.friendly",
     # İddaa Bültenindeki Seçili Dünya Ligleri
-    "bra.1", "usa.1", "mex.1", "ksa.1"
+    "bra.1", "arg.1", "usa.1", "mex.1", "ksa.1"
 ]
 
 SKIP_LEAGUES = ["3x3"]
@@ -156,7 +156,8 @@ def fetch_league_events(league_slug):
         if res.status_code != 200:
             return []
         data = res.json()
-        league_name = data.get("leagues", [{}])[0].get("name", league_slug)
+        leagues_list = data.get("leagues") or [{}]
+        league_name = leagues_list[0].get("name", league_slug)
         return [(league_slug, league_name, ev) for ev in data.get("events", [])]
     except Exception:
         return []
@@ -241,12 +242,24 @@ def check_live_football():
 
 
 def check_live_basketball():
+    # ABD Doğu Saati (UTC-5) kullanarak 03:00 TR sonrasındaki gece maçlarının kaybolmasını önler
+    now_us_east = datetime.now(timezone.utc) - timedelta(hours=5)
+    us_dates = [now_us_east.strftime("%Y%m%d")]
+    if now_us_east.hour < 5:
+        us_dates.append((now_us_east - timedelta(days=1)).strftime("%Y%m%d"))
+
     basketball_endpoints = [
-        ("NBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard", 54, 44),
         ("EuroLeague", "https://site.api.espn.com/apis/site/v2/sports/basketball/eur.euroleague/scoreboard", 45, 31),
-        ("NCAA", "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard", 78, 56),
         ("FIBA", "https://site.api.espn.com/apis/site/v2/sports/basketball/fiba/scoreboard", 45, 31)
     ]
+    for d_str in us_dates:
+        basketball_endpoints.append(
+            ("NBA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={d_str}", 54, 44)
+        )
+        basketball_endpoints.append(
+            ("NCAA", f"https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=300&dates={d_str}", 78, 56)
+        )
+
     seen_live_ids = set()
 
     for default_league, url, high_limit, low_limit in basketball_endpoints:
@@ -258,12 +271,16 @@ def check_live_basketball():
         except Exception:
             continue
 
-        league_name = data.get("leagues", [{}])[0].get("abbreviation", default_league)
+        leagues_list = data.get("leagues") or [{}]
+        league_name = leagues_list[0].get("abbreviation", default_league)
         if any(kw in league_name.lower() for kw in SKIP_LEAGUES):
             continue
 
         for event in data.get("events", []):
             event_id = str(event.get("id", ""))
+            if not event_id or event_id in seen_live_ids:
+                continue
+
             status_obj = event.get("status", {})
             state = status_obj.get("type", {}).get("state", "")
             period = status_obj.get("period", 0)
