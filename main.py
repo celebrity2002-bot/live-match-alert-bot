@@ -16,7 +16,7 @@ BROWSER_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
-# Bilyoner (İddaa) bülteninde düzenli canlı bahis açılan ligler ve milli maçlar
+# SADECE RESMİ VE ÜST DÜZEY LİGLER (Riski minimumda tutmak için hazırlık ve alt ligler hariç)
 BILYONER_SOCCER_LEAGUES = [
     # Türkiye
     "tur.1", "tur.2", "tur.cup",
@@ -34,22 +34,26 @@ BILYONER_SOCCER_LEAGUES = [
     "ned.1", "ned.2", "por.1", "bel.1", "sco.1",
     "aut.1", "sui.1", "gre.1", "den.1", "swe.1", "nor.1",
     "pol.1", "cze.1", "rou.1", "cro.1",
-    # UEFA & Milli Maçlar
+    # UEFA Resmi Organizasyonları & Milli Resmi Maçlar
     "uefa.champions", "uefa.europa", "uefa.europa.conf",
-    "uefa.nations", "fifa.worldq.uefa", "fifa.friendly",
-    # İddaa Bültenindeki Seçili Dünya & Asya Ligleri
+    "uefa.nations", "fifa.worldq.uefa",
+    # Seçili Dünya & Amerika/Asya Ligleri
     "bra.1", "arg.1", "usa.1", "mex.1", "ksa.1",
     "aus.1", "jpn.1", "kor.1"
 ]
 
-SKIP_LEAGUES = ["3x3", "women", "femenina", "kadın", "u18", "u19", "u20", "cyber", "esports"]
+SKIP_LEAGUES = ["3x3", "women", "femenina", "kadın", "u18", "u19", "u20", "cyber", "esports", "friendly", "hazırlık"]
 
 sent_alerts = set()
+match_signaled_today = set()  # Aynı maçtan gün içinde tekrar sinyal gelmesini önleyen hafıza
 
 
-def send_telegram_message(alert_id, message):
+def send_telegram_message(alert_id, message, match_id=None):
     if alert_id in sent_alerts:
         return
+    if match_id and match_id in match_signaled_today:
+        return
+
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("Telegram Token veya Chat ID eksik!")
         return
@@ -65,6 +69,8 @@ def send_telegram_message(alert_id, message):
         res = requests.post(url, json=payload, timeout=10)
         if res.status_code == 200:
             sent_alerts.add(alert_id)
+            if match_id:
+                match_signaled_today.add(match_id)
         else:
             print(f"Telegram yanit kodu: {res.status_code}")
     except Exception as e:
@@ -106,7 +112,6 @@ def parse_remaining_seconds(display_clock):
 
 
 def get_match_odds_info(comp):
-    """ESPN maç önü handikap ve favori bilgisini okur."""
     odds_list = comp.get("odds") or []
     if not odds_list:
         return False, False, False, None, ""
@@ -134,49 +139,51 @@ def get_match_odds_info(comp):
     return True, home_fav, away_fav, spread_val, details_str
 
 
-def extract_stats_from_list(stats_list):
+def parse_team_stats(team_obj):
     corners = 0
     sot = 0
-    red_cards = 0
+    reds = 0
     found = False
-    for item in stats_list or []:
+    for item in team_obj.get("statistics", []):
         name = str(item.get("name", "")).lower()
         val = safe_int(item.get("displayValue", 0))
         if "corner" in name:
-            corners += val
+            corners = val
             found = True
         elif "shotsontarget" in name or "shotontarget" in name:
-            sot += val
+            sot = val
             found = True
         elif "redcard" in name:
-            red_cards += val
+            reds = val
             found = True
-    return corners, sot, red_cards, found
+    return corners, sot, reds, found
 
 
 def get_soccer_live_metrics(league_slug, event_id, comp, competitors):
-    total_corners = 0
-    total_sot = 0
+    """
+    Çoklu Veri Kaynağı (Multi-Source Fallback): Ev sahibi ve deplasman korner, 
+    isabetli şut ve kart verilerini ayrı ayrı kusursuz çeker.
+    """
+    home_corners, away_corners = 0, 0
+    home_sot, away_sot = 0, 0
     total_reds = 0
     stats_found = False
 
-    detail_reds = 0
-    for det in comp.get("details") or []:
-        det_type = str((det.get("type") or {}).get("text", "")).lower()
-        if det.get("redCard") is True or "red card" in det_type:
-            detail_reds += 1
-
     for comp_team in competitors:
-        c, s, r, f = extract_stats_from_list(comp_team.get("statistics", []))
-        total_corners += c
-        total_sot += s
+        c, s, r, f = parse_team_stats(comp_team)
+        is_home = comp_team.get("homeAway") == "home"
+        if is_home:
+            home_corners, home_sot = c, s
+        else:
+            away_corners, away_sot = c, s
         total_reds += r
         if f:
             stats_found = True
 
     if stats_found:
-        return total_corners, total_sot, max(total_reds, detail_reds), True
+        return home_corners, away_corners, home_sot, away_sot, total_reds, True
 
+    # Yedek Kaynak Katmanı (Fallback Endpoints)
     summary_urls = [
         f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league_slug}/summary?event={event_id}",
         f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event={event_id}"
@@ -186,10 +193,13 @@ def get_soccer_live_metrics(league_slug, event_id, comp, competitors):
             res = requests.get(summary_url, headers=BROWSER_HEADERS, timeout=6)
             if res.status_code == 200:
                 s_data = res.json()
-                for team_box in (s_data.get("boxscore") or {}).get("teams", []):
-                    c, s, r, f = extract_stats_from_list(team_box.get("statistics", []))
-                    total_corners += c
-                    total_sot += s
+                teams_box = (s_data.get("boxscore") or {}).get("teams", [])
+                for tb in teams_box:
+                    c, s, r, f = parse_team_stats(tb)
+                    if tb.get("homeAway") == "home" or (tb.get("team", {}).get("homeAway") == "home"):
+                        home_corners, home_sot = c, s
+                    else:
+                        away_corners, away_sot = c, s
                     total_reds += r
                     if f:
                         stats_found = True
@@ -198,7 +208,7 @@ def get_soccer_live_metrics(league_slug, event_id, comp, competitors):
         except Exception:
             continue
 
-    return total_corners, total_sot, max(total_reds, detail_reds), stats_found
+    return home_corners, away_corners, home_sot, away_sot, total_reds, stats_found
 
 
 def fetch_league_events(league_slug):
@@ -219,8 +229,8 @@ def check_live_football():
     seen_live_ids = set()
     all_events = []
 
-    stake_high = int(KASA_TUTARI * 0.10)  # 2 Birim (200 TL)
-    stake_std = int(KASA_TUTARI * 0.075)  # 1.5 Birim (150 TL)
+    stake_high = int(KASA_TUTARI * 0.10)  # 2 Birim (200 TL) - Yüksek Güven
+    stake_std = int(KASA_TUTARI * 0.075)  # 1.5 Birim (150 TL) - Standart Güven
 
     with ThreadPoolExecutor(max_workers=12) as executor:
         results = executor.map(fetch_league_events, BILYONER_SOCCER_LEAGUES)
@@ -228,6 +238,9 @@ def check_live_football():
             all_events.extend(batch)
 
     for league_slug, league_title, event in all_events:
+        if any(w in league_title.lower() for w in ["friendly", "hazırlık", "exhibition"]):
+            continue
+
         event_id = str(event.get("id", ""))
         if not event_id or event_id in seen_live_ids:
             continue
@@ -247,7 +260,7 @@ def check_live_football():
 
         comp = comp_list[0]
         minute = parse_minute(status_obj.get("displayClock", ""))
-        competitors = comp.get("competitors", [])
+        competitors = comp.get("competitions", [])
         if len(competitors) < 2:
             continue
 
@@ -265,92 +278,71 @@ def check_live_football():
         has_odds, home_fav, away_fav, spread_val, odds_details = get_match_odds_info(comp)
         fav_tag = f" | Favori: {odds_details}" if (has_odds and odds_details) else ""
 
-        # KURAL 1: İlk Yarı 18-23. Dakika Arası 0-0 + Canlı Baskı Filtresi
-        if period == 1 and (18 <= minute <= 23) and total_goals == 0:
-            corners, sot, _, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
-            if has_stats and (corners >= 3 or sot >= 2) and (corners + sot >= 4):
-                alert_key = f"fb_{event_id}_iy05"
-                msg = (
-                    f"⚽ **FUTBOL İY GOL FIRSATI** ⚽\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title}{fav_tag}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
-                    f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
-                    f"💡 **TAVSİYE BAHİS:** İlk Yarı **0.5 Üst** Gol\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.65 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_std} TL** (1.5 Birim - Standart Güven)"
-                )
-                send_telegram_message(alert_key, msg)
+        # Metrikleri çek (Ev Korner, Deplasman Korner, SOT vb.)
+        h_corners, a_corners, h_sot, a_sot, reds, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
+        total_corners = h_corners + a_corners
+        total_sot = h_sot + a_sot
 
-        # KURAL 2 (SNIPER): Favori Ev Sahibi Geride / Berabere Baskısı (55-72' Arası)
-        elif period == 2 and (55 <= minute <= 72) and has_odds and home_fav and not away_fav and (spread_val is not None and spread_val <= -1.0) and (h_goals <= a_goals) and (a_goals - h_goals <= 1):
-            corners, sot, _, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
-            if has_stats and (corners + sot >= 8) and (sot >= 3):
-                alert_key = f"fb_{event_id}_fav_push"
-                msg = (
-                    f"🎯 **SNIPER: FAVORİ EV SAHİBİ BASKISI** 🎯\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title}{fav_tag}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
-                    f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
-                    f"💡 **TAVSİYE BAHİS:** Canlı **ÜST** veya **{home_name} Sıradaki Gol**\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.75 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)"
-                )
-                send_telegram_message(alert_key, msg)
+        # Kural 1: İlk Yarı Erken Korner Patlaması (20-30. Dakika) -> Toplam Korner ÜST
+        if period == 1 and (20 <= minute <= 30) and total_corners >= 4:
+            alert_key = f"fb_{event_id}_iy_corner"
+            msg = (
+                f"⚽ **CANLI KORNER ALARMI (İLK YARI ÜST)** ⚽\n\n"
+                f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                f"🏆 **Lig:** {league_title}{fav_tag}\n"
+                f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                f"📊 **Anlık Kornerler:** {home_name}: {h_corners} | {away_name}: {a_corners} (Toplam: **{total_corners}**)\n\n"
+                f"💡 **TAVSİYE BAHİS:** Canlı Toplam Korner **ÜST** (Bilyoner Canlı Baremi)\n"
+                f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı\n"
+                f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_std} TL** (1.5 Birim)"
+            )
+            send_telegram_message(alert_key, msg, match_id=event_id)
 
-        # KURAL 3: İkinci Yarı 60-65. Dakika Arası Kritik An + Baskı Filtresi
-        elif period == 2 and (60 <= minute <= 65) and goal_diff <= 1:
-            corners, sot, _, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
-            if has_stats and (corners + sot >= 7):
-                lock_note = " (0-0 Kilidi Açılmaya Yakın)" if total_goals == 0 else ""
-                alert_key = f"fb_{event_id}_2h_late"
-                msg = (
-                    f"⚡ **FUTBOL 2. YARI KRİTİK AN (60-65')** ⚡\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title}{fav_tag}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals}){lock_note}\n"
-                    f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
-                    f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_std} TL** (1.5 Birim - Standart Güven)"
-                )
-                send_telegram_message(alert_key, msg)
+        # Kural 2: 2. Yarı Kritik Toplam Korner Üst (65-78. Dakika - Skor Yakın, Baskı Yüksek)
+        elif period == 2 and (65 <= minute <= 78) and goal_diff <= 1 and total_corners >= 8:
+            alert_key = f"fb_{event_id}_2h_total_corner"
+            msg = (
+                f"⚡ **CANLI KORNER ALARMI (MAÇ SONU TOPLAM ÜST)** ⚡\n\n"
+                f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                f"🏆 **Lig:** {league_title}{fav_tag}\n"
+                f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                f"📊 **Anlık Kornerler:** {home_name}: {h_corners} | {away_name}: {a_corners} (Toplam: **{total_corners}**)\n"
+                f"🎯 **İsabetli Şut:** {total_sot}\n\n"
+                f"💡 **TAVSİYE BAHİS:** Canlı Toplam Korner **ÜST**\n"
+                f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı\n"
+                f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_std} TL** (1.5 Birim)"
+            )
+            send_telegram_message(alert_key, msg, match_id=event_id)
 
-        # KURAL 4 (SNIPER): Kırmızı Kart + Baskı Radarı (67-73' Arası, 11'e 10 Avantajı)
-        elif period == 2 and (67 <= minute <= 73) and goal_diff <= 2:
-            corners, sot, reds, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
-            if reds >= 1 and ((has_stats and (corners + sot >= 7)) or (not has_stats and goal_diff <= 1)):
-                stat_line = f"📊 **Canlı Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n" if has_stats else "📊 **Durum:** 11'e 10 Sayısal Üstünlük + Yakın Skor\n\n"
-                alert_key = f"fb_{event_id}_redcard"
-                msg = (
-                    f"🟥 **SNIPER RADAR: KIRMIZI KART + BASKI** 🟥\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title}{fav_tag}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals} | Kırmızı Kart: {reds})\n"
-                    f"{stat_line}"
-                    f"💡 **TAVSİYE BAHİS:** Sıradaki Gol / Canlı **ÜST** Fırsatı\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.75 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)"
-                )
-                send_telegram_message(alert_key, msg)
+        # Kural 3: Favori Ev Sahibi Takım Korner Baskısı (60-80. Dakika) -> Ev Sahibi Korner ÜST
+        elif period == 2 and (60 <= minute <= 80) and has_odds and home_fav and not away_fav and (h_goals <= a_goals) and h_corners >= 6:
+            alert_key = f"fb_{event_id}_home_corner"
+            msg = (
+                f"🎯 **SNIPER: EV SAHİBİ KORNER ÜST BASKISI** 🎯\n\n"
+                f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                f"🏆 **Lig:** {league_title}{fav_tag}\n"
+                f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                f"📊 **Ev Sahibi Korner:** **{h_corners}** | Toplam Korner: {total_corners}\n\n"
+                f"💡 **TAVSİYE BAHİS:** **{home_name} Korner ÜST** (Canlı Barem)\n"
+                f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.75 Bandı\n"
+                f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim)"
+            )
+            send_telegram_message(alert_key, msg, match_id=event_id)
 
-        # KURAL 5 (SNIPER): "Son Kale" Geç Gol Kuralı (75-80' Arası, Yoğun Baskı >= 11 ve >= 4 İsabetli Şut)
-        elif period == 2 and (75 <= minute <= 80) and goal_diff <= 1:
-            corners, sot, _, has_stats = get_soccer_live_metrics(league_slug, event_id, comp, competitors)
-            if has_stats and (corners + sot >= 11) and (sot >= 4):
-                alert_key = f"fb_{event_id}_sonkale"
-                msg = (
-                    f"🔥 **FUTBOL SON KALE (75-80' GEÇ GOL)** 🔥\n\n"
-                    f"⚔️ **Maç:** {home_name} - {away_name}\n"
-                    f"🏆 **Lig:** {league_title}{fav_tag}\n"
-                    f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
-                    f"📊 **Yoğun Baskı:** {corners} Korner | {sot} İsabetli Şut\n\n"
-                    f"💡 **TAVSİYE BAHİS:** Canlı **ÜST** / Sıradaki Gol\n"
-                    f"🎯 **Bilyoner Target Oranı:** 1.55 - 1.85 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_std} TL** (1.5 Birim - Standart Güven)"
-                )
-                send_telegram_message(alert_key, msg)
+        # Kural 4: Son Kale / Maç Sonu Korner Patlaması (80-88. Dakika)
+        elif period == 2 and (80 <= minute <= 88) and goal_diff <= 1 and total_corners >= 11:
+            alert_key = f"fb_{event_id}_son_kale_corner"
+            msg = (
+                f"🔥 **FUTBOL SON KALE (SON DAKİKA KORNER ÜST)** 🔥\n\n"
+                f"⚔️ **Maç:** {home_name} - {away_name}\n"
+                f"🏆 **Lig:** {league_title}{fav_tag}\n"
+                f"⏱️ **Dakika:** {minute}' (Skor: {h_goals}-{a_goals})\n"
+                f"📊 **Anlık Toplam Korner:** **{total_corners}** ({home_name}: {h_corners} - {away_name}: {a_corners})\n\n"
+                f"💡 **TAVSİYE BAHİS:** Canlı Toplam Korner **ÜST** (Kıl Payı Barem)\n"
+                f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.85 Bandı\n"
+                f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_std} TL** (1.5 Birim)"
+            )
+            send_telegram_message(alert_key, msg, match_id=event_id)
 
     return len(seen_live_ids)
 
@@ -388,7 +380,6 @@ def classify_world_league(country_raw, league_raw):
 
 
 def fetch_world_basketball_games():
-    """LiveScore (?MD=1) ve Sofascore yedekli anahtarsız dünya basketbolu veri çekici."""
     normalized_games = []
     today_str = datetime.now(timezone.utc).strftime("%Y%m%d")
 
@@ -448,7 +439,6 @@ def fetch_world_basketball_games():
         except Exception:
             continue
 
-    # Yedek Kaynak: Sofascore Canlı Basketbol Akışı
     sf_headers = {
         **BROWSER_HEADERS,
         "Origin": "https://www.sofascore.com",
@@ -516,12 +506,10 @@ def fetch_world_basketball_games():
 
 
 def check_keyless_world_basketball():
-    """Asya & Avrupa Bilyoner basketbol ligleri (KBL, B.League, BSL, ACB, LBA, BBL, LNB, EuroCup, BCL, ABA)."""
     stake_high = int(KASA_TUTARI * 0.10)  # 2 Birim (200 TL)
     stake_low = int(KASA_TUTARI * 0.05)   # 1 Birim (100 TL)
 
     games, source_used = fetch_world_basketball_games()
-    print(f"Dunya & Avrupa Basketbol [{source_used}]: {len(games)} canli mac")
 
     for g in games:
         game_id = g["id"]
@@ -542,7 +530,6 @@ def check_keyless_world_basketball():
         q1_total = h_q1 + a_q1
         q1_diff = abs(h_q1 - a_q1)
 
-        # 2. Çeyrek İlk ~4 Dakika Penceresi
         if eps == "2Q" and q1_total > 0:
             q2_scored = total_score - q1_total
             if 2 <= q2_scored <= 15:
@@ -556,10 +543,9 @@ def check_keyless_world_basketball():
                         f"📊 **1. Çeyrek Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
                         f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                         f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                        f"📌 **Sebep:** 10 dakikalık ilk çeyrekteki yüksek tempo dengelenecek."
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                     )
-                    send_telegram_message(alert_key, msg)
+                    send_telegram_message(alert_key, msg, match_id=game_id)
 
                 elif q1_total <= low_limit:
                     alert_key = f"{game_id}_over"
@@ -571,10 +557,9 @@ def check_keyless_world_basketball():
                         f"📊 **1. Çeyrek Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
                         f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
                         f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                        f"📌 **Sebep:** İlk çeyrekteki düşük skor sonrası canlı barem avantajlı indi."
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                     )
-                    send_telegram_message(alert_key, msg)
+                    send_telegram_message(alert_key, msg, match_id=game_id)
 
                 if (a_q1 - h_q1 >= 8) and (home_total - away_total >= -13):
                     alert_key = f"{game_id}_hcp"
@@ -584,19 +569,17 @@ def check_keyless_world_basketball():
                         f"🏆 **Lig:** {target_label}\n"
                         f"⏱️ **Süre:** 2. Çeyrek Başı | Skor: {home_total} - {away_total}\n"
                         f"📊 **1. Çeyrek Skoru:** {h_q1} - {a_q1}\n\n"
-                        f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap** (Maç önü favorisiyse)\n"
+                        f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap**\n"
                         f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı\n"
-                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                        f"📌 **Sebep:** Ev sahibi ilk çeyreği geride kapattı; maç önü favori oranını Bilyoner'den teyit edip gir."
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                     )
-                    send_telegram_message(alert_key, msg)
+                    send_telegram_message(alert_key, msg, match_id=game_id)
 
-        # 4. Çeyrek Stratejileri (Maç Temposu Filtresi Eklenmiş Rölanti ALT)
         elif eps == "4Q":
             q4_scored = g["h_q4"] + g["a_q4"]
             q3_accum = g["h_q3_accum"] + g["a_q3_accum"]
 
-            if (18 <= q4_scored <= 46) and (1 <= score_diff <= 5):
+            if (18 <= q4_scored <= 52) and (1 <= score_diff <= 5):
                 alert_key = f"{game_id}_foul_over"
                 msg = (
                     f"🔥 **SNIPER SON DAKİKA (TAKTİK FAUL ÜST)** 🔥\n\n"
@@ -605,25 +588,22 @@ def check_keyless_world_basketball():
                     f"⏱️ **Süre:** 4. Çeyrek Son Bölümü | Skor: {home_total} - {away_total}\n\n"
                     f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
                     f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.75 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)\n"
-                    f"📌 **Sebep:** Başa baş giden maçta son dakikalarda taktik faullerle serbest atış yağacak."
+                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim)"
                 )
-                send_telegram_message(alert_key, msg)
+                send_telegram_message(alert_key, msg, match_id=game_id)
 
-            elif (4 <= q4_scored <= 20) and (score_diff >= 20) and (q3_accum <= 138):
+            elif (4 <= q4_scored <= 20) and (score_diff >= 18) and (q3_accum <= 138):
                 alert_key = f"{game_id}_blowout_under"
                 msg = (
                     f"❄️ **BASKETBOL RÖLANTİ ALARMI (FARK AÇILDI ALT)** ❄️\n\n"
                     f"⚔️ **Maç:** {home_name} - {away_name}\n"
                     f"🏆 **Lig:** {target_label}\n"
-                    f"⏱️ **Süre:** 4. Çeyrek | Skor: {home_total} - {away_total}\n"
-                    f"📊 **İlk 3 Çeyrek Toplamı:** {q3_accum} Sayı (Kontrollü Tempo)\n\n"
+                    f"⏱️ **Süre:** 4. Çeyrek | Skor: {home_total} - {away_total}\n\n"
                     f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                     f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
-                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                    f"📌 **Sebep:** Fark 20+ ve ilk 3 çeyrek toplamı düşük/orta tempoda; rölanti beklentisi yüksek."
+                    f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                 )
-                send_telegram_message(alert_key, msg)
+                send_telegram_message(alert_key, msg, match_id=game_id)
 
     return len(games)
 
@@ -634,8 +614,8 @@ def check_live_basketball():
     if now_us_east.hour < 5:
         us_dates.append((now_us_east - timedelta(days=1)).strftime("%Y%m%d"))
 
-    stake_high = int(KASA_TUTARI * 0.10)  # 2 Birim (200 TL)
-    stake_low = int(KASA_TUTARI * 0.05)   # 1 Birim (100 TL)
+    stake_high = int(KASA_TUTARI * 0.10)
+    stake_low = int(KASA_TUTARI * 0.05)
 
     basketball_endpoints = [
         ("Avustralya NBL", "https://site.api.espn.com/apis/site/v2/sports/basketball/nbl/scoreboard", 54, 32, 600, 360, 8),
@@ -709,7 +689,6 @@ def check_live_basketball():
 
             has_odds, home_fav, away_fav, spread_val, odds_details = get_match_odds_info(comp)
 
-            # SADECE 2. PERİYOT İLK 4 DAKİKA PENCERESİ
             if period == 2 and (p2_end_sec <= rem_secs <= p2_start_sec):
                 home_lines = home.get("linescores", [])
                 away_lines = away.get("linescores", [])
@@ -730,10 +709,9 @@ def check_live_basketball():
                             f"📊 **{period_label} Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
                             f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                             f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                            f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                            f"📌 **Sebep:** İlk bölümdeki ekstrem şut yüzdesi ve fark sonrası tempo dengelenecek."
+                            f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                         )
-                        send_telegram_message(alert_key, msg)
+                        send_telegram_message(alert_key, msg, match_id=event_id)
 
                     elif 0 < q1_total <= low_limit:
                         alert_key = f"bb_{event_id}_over"
@@ -745,32 +723,27 @@ def check_live_basketball():
                             f"📊 **{period_label} Skoru:** {h_q1} - {a_q1} ({q1_total} Sayı)\n\n"
                             f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
                             f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
-                            f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                            f"📌 **Sebep:** İlk çeyrekteki kısır skor sonrası canlı barem avantajlı indi."
+                            f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                         )
-                        send_telegram_message(alert_key, msg)
+                        send_telegram_message(alert_key, msg, match_id=event_id)
 
                     is_confirmed_home_fav = has_odds and home_fav and not away_fav and (spread_val is None or spread_val <= -2.5)
                     if is_confirmed_home_fav and (a_q1 - h_q1 >= hcp_limit) and (home_total - away_total >= -14):
-                        fav_note = f" (Maç Önü: {odds_details})" if odds_details else ""
                         alert_key = f"bb_{event_id}_hcp"
                         msg = (
                             f"🏀 **SNIPER: FAVORİ EV SAHİBİ HANDİKAP** 🏀\n\n"
-                            f"⚔️ **Maç:** {home_name} - {away_name}{fav_note}\n"
+                            f"⚔️ **Maç:** {home_name} - {away_name}\n"
                             f"🏆 **Lig:** {league_name}\n"
-                            f"⏱️ **Süre:** 2. Periyot {display_clock} | Skor: {home_total} - {away_total}\n"
-                            f"📊 **{period_label} Skoru:** {h_q1} - {a_q1}\n\n"
-                            f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap** veya **Galibiyet**\n"
+                            f"⏱️ **Süre:** 2. Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
+                            f"💡 **TAVSİYE BAHİS:** {home_name} **+ Handikap**\n"
                             f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.70 Bandı\n"
-                            f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)\n"
-                            f"📌 **Sebep:** Maç önü favorisi ev sahibi ilk bölümü geride kapattı, geri dönüş bandında."
+                            f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim)"
                         )
-                        send_telegram_message(alert_key, msg)
+                        send_telegram_message(alert_key, msg, match_id=event_id)
 
-            # SON PERİYOT STRATEJİLERİ
             final_period = 2 if default_league == "NCAA" else 4
             if period == final_period:
-                if (40 <= rem_secs <= 150) and (1 <= score_diff <= 5):
+                if (40 <= rem_secs <= 220) and (1 <= score_diff <= 5):
                     alert_key = f"bb_{event_id}_foul_over"
                     msg = (
                         f"🔥 **SNIPER SON DAKİKA (TAKTİK FAUL ÜST)** 🔥\n\n"
@@ -779,12 +752,11 @@ def check_live_basketball():
                         f"⏱️ **Süre:** Son Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
                         f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
                         f"🎯 **Bilyoner Target Oranı:** 1.50 - 1.75 Bandı\n"
-                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)\n"
-                        f"📌 **Sebep:** Son 2.5 dakikada {score_diff} sayı farkla taktik fauller ve serbest atışlar zorunlu hale geldi."
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_high} TL** (2 Birim - Yüksek Güven)"
                     )
-                    send_telegram_message(alert_key, msg)
+                    send_telegram_message(alert_key, msg, match_id=event_id)
 
-                elif (300 <= rem_secs <= 510) and (score_diff >= 20):
+                elif (300 <= rem_secs <= 510) and (score_diff >= 18):
                     alert_key = f"bb_{event_id}_blowout_under"
                     msg = (
                         f"❄️ **BASKETBOL RÖLANTİ ALARMI (FARK AÇILDI ALT)** ❄️\n\n"
@@ -793,28 +765,26 @@ def check_live_basketball():
                         f"⏱️ **Süre:** Son Periyot {display_clock} | Skor: {home_total} - {away_total}\n\n"
                         f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                         f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
-                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                        f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, as oyuncular dinlenmeye çekilip tempo düşecek."
+                        f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim)"
                     )
-                    send_telegram_message(alert_key, msg)
+                    send_telegram_message(alert_key, msg, match_id=event_id)
 
     cdn_count = check_keyless_world_basketball()
     return len(seen_live_ids) + cdn_count
 
 
 if __name__ == "__main__":
-    print("Canli mac tarama botu baslatildi...")
+    print("Canli mac tarama botu baslatildi (Korner ve Basketbol Modu)...")
     live_fb = check_live_football()
     live_bb = check_live_basketball()
     print(f"Tarama tamamlandi. Canli Futbol: {live_fb}, Canli Basketbol: {live_bb}")
 
-    # Her saat başı (00-04. dakikalar arası) yalnızca 1 kez otomatik arka plan durum raporu gönderir
     now_utc = datetime.now(timezone.utc)
     if now_utc.minute < 5:
         status_msg = (
             f"🤖 **Otomatik Arka Plan Raporu**\n"
             f"⚽ Taranan Canlı Futbol: **{live_fb}** maç\n"
-            f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç (Anahtarsız Çift Kaynak)\n"
+            f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç\n"
             f"💼 Aktif Kasa: **{KASA_TUTARI} TL** (1 Birim: {int(KASA_TUTARI * 0.05)} TL)"
         )
         send_telegram_message("hourly_status", status_msg)
