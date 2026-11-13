@@ -418,6 +418,14 @@ def fetch_world_basketball_games():
                         continue
                     t1_list = ev.get("T1") or [{}]
                     t2_list = ev.get("T2") or [{}]
+                    
+                    h_q1 = safe_int(ev.get("Tr1Q1", 0))
+                    a_q1 = safe_int(ev.get("Tr2Q1", 0))
+                    h_q2 = safe_int(ev.get("Tr1Q2", 0))
+                    a_q2 = safe_int(ev.get("Tr2Q2", 0))
+                    h_q3 = safe_int(ev.get("Tr1Q3", 0))
+                    a_q3 = safe_int(ev.get("Tr2Q3", 0))
+
                     normalized_games.append({
                         "source": "LiveScore",
                         "id": f"ls_{ev.get('Eid', '')}",
@@ -429,8 +437,9 @@ def fetch_world_basketball_games():
                         "away_name": t2_list[0].get("Nm", "Deplasman"),
                         "home_total": safe_int(ev.get("Tr1", 0)),
                         "away_total": safe_int(ev.get("Tr2", 0)),
-                        "h_q1": safe_int(ev.get("Tr1Q1", 0)),
-                        "a_q1": safe_int(ev.get("Tr2Q1", 0)),
+                        "h_q1": h_q1, "a_q1": a_q1,
+                        "h_q3_accum": h_q1 + h_q2 + h_q3,
+                        "a_q3_accum": a_q1 + a_q2 + a_q3,
                         "h_q4": safe_int(ev.get("Tr1Q4", 0)),
                         "a_q4": safe_int(ev.get("Tr2Q4", 0)),
                     })
@@ -473,6 +482,14 @@ def fetch_world_basketball_games():
 
                 h_sc = ev.get("homeScore") or {}
                 a_sc = ev.get("awayScore") or {}
+                
+                h_q1 = safe_int(h_sc.get("period1", 0))
+                a_q1 = safe_int(a_sc.get("period1", 0))
+                h_q2 = safe_int(h_sc.get("period2", 0))
+                a_q2 = safe_int(a_sc.get("period2", 0))
+                h_q3 = safe_int(h_sc.get("period3", 0))
+                a_q3 = safe_int(a_sc.get("period3", 0))
+
                 normalized_games.append({
                     "source": "Sofascore",
                     "id": f"sf_{ev.get('id', '')}",
@@ -484,8 +501,9 @@ def fetch_world_basketball_games():
                     "away_name": (ev.get("awayTeam") or {}).get("shortName") or (ev.get("awayTeam") or {}).get("name", "Deplasman"),
                     "home_total": safe_int(h_sc.get("current", 0)),
                     "away_total": safe_int(a_sc.get("current", 0)),
-                    "h_q1": safe_int(h_sc.get("period1", 0)),
-                    "a_q1": safe_int(a_sc.get("period1", 0)),
+                    "h_q1": h_q1, "a_q1": a_q1,
+                    "h_q3_accum": h_q1 + h_q2 + h_q3,
+                    "a_q3_accum": a_q1 + a_q2 + a_q3,
                     "h_q4": safe_int(h_sc.get("period4", 0)),
                     "a_q4": safe_int(a_sc.get("period4", 0)),
                 })
@@ -573,9 +591,10 @@ def check_keyless_world_basketball():
                     )
                     send_telegram_message(alert_key, msg)
 
-        # 4. Çeyrek Stratejileri
+        # 4. Çeyrek Stratejileri (YENİ: Maç Temposu Filtresi Eklenmiş Rölanti ALT)
         elif eps == "4Q":
             q4_scored = g["h_q4"] + g["a_q4"]
+            q3_accum = g["h_q3_accum"] + g["a_q3_accum"]
 
             if (18 <= q4_scored <= 46) and (1 <= score_diff <= 5):
                 alert_key = f"{game_id}_foul_over"
@@ -591,17 +610,18 @@ def check_keyless_world_basketball():
                 )
                 send_telegram_message(alert_key, msg)
 
-            elif (4 <= q4_scored <= 20) and (score_diff >= 20):
+            elif (4 <= q4_scored <= 20) and (score_diff >= 20) and (q3_accum <= 138):
                 alert_key = f"{game_id}_blowout_under"
                 msg = (
                     f"❄️ **BASKETBOL RÖLANTİ ALARMI (FARK AÇILDI ALT)** ❄️\n\n"
                     f"⚔️ **Maç:** {home_name} - {away_name}\n"
                     f"🏆 **Lig:** {target_label}\n"
-                    f"⏱️ **Süre:** 4. Çeyrek | Skor: {home_total} - {away_total}\n\n"
+                    f"⏱️ **Süre:** 4. Çeyrek | Skor: {home_total} - {away_total}\n"
+                    f"📊 **İlk 3 Çeyrek Toplamı:** {q3_accum} Sayı (Kontrollü Tempo)\n\n"
                     f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ALT**\n"
                     f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.60 Bandı\n"
                     f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                    f"📌 **Sebep:** Fark {score_diff} sayıya çıktı, as oyuncular kenara alınıp tempo düşecek."
+                    f"📌 **Sebep:** Fark 20+ ve ilk 3 çeyrek toplamı düşük/orta tempoda; rölanti beklentisi yüksek."
                 )
                 send_telegram_message(alert_key, msg)
 
@@ -726,7 +746,7 @@ def check_live_basketball():
                             f"💡 **TAVSİYE BAHİS:** Canlı Toplam Sayı **ÜST**\n"
                             f"🎯 **Bilyoner Target Oranı:** 1.45 - 1.55 Bandı\n"
                             f"💰 **Önerilen Bahis ({KASA_TUTARI} TL Kasa):** **{stake_low} TL** (1 Birim - Kontrollü Test)\n"
-                            f"📌 **Sebep:** İlk bölümdeki kısır skor sonrası canlı barem avantajlı indi."
+                            f"📌 **Sebep:** İlk çeyrekteki kısır skor sonrası canlı barem avantajlı indi."
                         )
                         send_telegram_message(alert_key, msg)
 
@@ -795,6 +815,6 @@ if __name__ == "__main__":
             f"🤖 **Otomatik Arka Plan Raporu**\n"
             f"⚽ Taranan Canlı Futbol: **{live_fb}** maç\n"
             f"🏀 Taranan Canlı Basketbol: **{live_bb}** maç (Anahtarsız Çift Kaynak)\n"
-            f"💼 Aktif Kasa: **{KASA_TUTARI} TL** (1 Birim: {int(KASA_TUTARI * 0.05)} TL)"
+            f"💼 Aktif Kasa: **{KASA_TUTARI} TL** (1 Birim: {int(KASA_TTR * 0.05)} TL)"
         )
         send_telegram_message("hourly_status", status_msg)
