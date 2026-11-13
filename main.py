@@ -779,8 +779,9 @@ if __name__ == "__main__":
     live_bb = check_live_basketball()
     print(f"Tarama tamamlandi. Canli Futbol: {live_fb}, Canli Basketbol: {live_bb}")
 
+    # Her saat başı (sadece ilk 1-2 dakika içinde) yalnızca 1 kez otomatik arka plan durum raporu gönderir
     now_utc = datetime.now(timezone.utc)
-    if now_utc.minute < 5:
+    if now_utc.minute < 2:
         status_msg = (
             f"🤖 **Otomatik Arka Plan Raporu**\n"
             f"⚽ Taranan Canlı Futbol: **{live_fb}** maç\n"
