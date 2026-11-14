@@ -215,6 +215,54 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "fb_1806406|FB_GEC_GOL": {
+   "key": "fb_1806406|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1806406",
+   "match": "Deportivo Cali - Tolima",
+   "league": "Colombia Primera A: Clausura",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-14T22:05:31.128807+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
+  },
+  "fb_1806406|FB_TEK_FARK_70": {
+   "key": "fb_1806406|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1806406",
+   "match": "Deportivo Cali - Tolima",
+   "league": "Colombia Primera A: Clausura",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-14T22:05:31.128871+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
