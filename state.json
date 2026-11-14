@@ -40,8 +40,8 @@
     2.0
    ],
    "created": "2026-11-14T21:55:47.223887+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -49,7 +49,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-14T22:48:08.408745+00:00",
+   "seg_avg": 1.0
   },
   "fb_1806406|FB_11_IY2": {
    "key": "fb_1806406|FB_11_IY2",
@@ -64,8 +67,8 @@
     1.75
    ],
    "created": "2026-11-14T21:55:47.635180+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -73,7 +76,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "2-2"
+   "last_score": "2-2",
+   "final_total": 4,
+   "settled": "2026-11-14T22:48:08.797048+00:00",
+   "seg_avg": 2.0
   },
   "fb_1806414|FB_00_60_70": {
    "key": "fb_1806414|FB_00_60_70",
@@ -250,8 +256,8 @@
     1.7
    ],
    "created": "2026-11-14T22:05:31.128807+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": false,
    "direction": "over",
@@ -259,7 +265,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-2"
+   "last_score": "2-2",
+   "final_total": 4,
+   "settled": "2026-11-14T22:48:09.159506+00:00",
+   "seg_avg": 1.0
   },
   "fb_1806406|FB_TEK_FARK_70": {
    "key": "fb_1806406|FB_TEK_FARK_70",
@@ -274,8 +283,8 @@
     1.85
    ],
    "created": "2026-11-14T22:05:31.128871+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": false,
    "direction": "over",
@@ -283,7 +292,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-2"
+   "last_score": "2-2",
+   "final_total": 4,
+   "settled": "2026-11-14T22:48:09.159581+00:00",
+   "seg_avg": 1.0
   },
   "fb_1806417|FB_GERIDEN_FARK2": {
    "key": "fb_1806417|FB_GERIDEN_FARK2",
