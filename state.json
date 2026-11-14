@@ -364,8 +364,8 @@
     1.6
    ],
    "created": "2026-11-14T22:21:03.859622+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -373,7 +373,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-14T23:39:27.842803+00:00",
+   "seg_avg": 0.0
   },
   "fb_1915545|FB_GERIDEN_FARK2": {
    "key": "fb_1915545|FB_GERIDEN_FARK2",
@@ -550,8 +553,8 @@
     2.0
    ],
    "created": "2026-11-14T22:55:24.348304+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -559,7 +562,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-14T23:39:28.213400+00:00",
+   "seg_avg": 0.0
   },
   "fb_1915547|FB_11_IY2": {
    "key": "fb_1915547|FB_11_IY2",
