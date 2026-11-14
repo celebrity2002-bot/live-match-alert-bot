@@ -1,21 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2 - GitHub Actions sürümü (çok stratejili)
-
-Her çalıştırmada: LiveScore canlı veriyi çek -> tüm stratejileri değerlendir ->
-sinyal varsa kaydet (live modda Telegram'a gönder) -> biten maçları sonuçlandır -> state.json.
-
-Kullanım:
-    python sinyal_botu.py run       # normal tarama
-    python sinyal_botu.py summary   # günlük özet
-    python sinyal_botu.py test      # telegram bağlantı testi
-
-Gizli: TELEGRAM_TOKEN, TELEGRAM_CHAT_ID (GitHub Secrets)
-Ayarlar (GitHub Variables, isteğe bağlı):
-    BOT_MODE=paper|live, BANKROLL_TL, STAKE_PCT, ENABLE_BASKETBALL, ENABLE_FOOTBALL,
-    DISABLE_STRATEGIES (virgülle ayrılmış kimlikler), MAX_LIVE_PER_MATCH, DEBUG_DUMP
-    ve eşikler: BB_Q1_HIGH, BB_Q1_LOW, BB_Q2_MAX_POINTS, BB_Q4_MAX_POINTS, BB_HT_HIGH, BB_HT_LOW
+Canlı Sinyal Botu v2 - GitHub Actions sürümü (Futbol & Basketbol İddaa Bülten Filtreli)
 """
 import json
 import os
@@ -54,6 +40,32 @@ ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
 DISABLED = {x.strip().upper() for x in os.getenv("DISABLE_STRATEGIES", "").split(",") if x.strip()}
 MAX_LIVE_PER_MATCH = env_num("MAX_LIVE_PER_MATCH", 2, int)
 SEND_RESULTS = (os.getenv("SEND_RESULTS", "on") or "on").strip().lower()
+
+# Minimum bahis tutarı kuralı (En az 50 TL)
+MIN_STAKE_TL = env_num("MIN_STAKE_TL", 50, int)
+
+# Futbol için İddaa bülteni odaklı izin verilen anahtar kelimeler
+default_football_keywords = (
+    "turkey,england,spain,italy,germany,france,netherlands,portugal,"
+    "uefa,champions league,europa league,conference league,brazil,argentina,"
+    "mls,saudi arabia,greece,belgium,austria,switzerland,colombia,mexico"
+)
+ALLOWED_FOOTBALL_KEYWORDS = {
+    x.strip().lower() 
+    for x in os.getenv("ALLOWED_FOOTBALL_KEYWORDS", default_football_keywords).split(",") 
+    if x.strip()
+}
+
+# Basketbol için İddaa bülteni odaklı izin verilen anahtar kelimeler (EuroLeague, NBA, BSL, ACB, vb.)
+default_basketball_keywords = (
+    "euroleague,eurocup,champions league,nba,wnba,ncaa,turkey,super lig,tbl,bsl,"
+    "spain,acb,endesa,italy,germany,bundesliga,france,lnb,greece,aba,vtb"
+)
+ALLOWED_BASKETBALL_KEYWORDS = {
+    x.strip().lower() 
+    for x in os.getenv("ALLOWED_BASKETBALL_KEYWORDS", default_basketball_keywords).split(",") 
+    if x.strip()
+}
 
 # Basketbol eşikleri
 BB_Q1_HIGH = env_num("BB_Q1_HIGH", 50, int)
@@ -141,11 +153,17 @@ def fetch(sport):
     return None
 
 
-def iter_events(data):
+def iter_events(data, sport="football"):
+    keywords = ALLOWED_BASKETBALL_KEYWORDS if sport == "basketball" else ALLOWED_FOOTBALL_KEYWORDS
     for stage in (data or {}).get("Stages", []) or []:
         league = " ".join(
             x for x in (str(stage.get("Cnm", "")).strip(), str(stage.get("Snm", "")).strip()) if x
         )
+        # İddaa bülten filtresi kontrolü (Branşa özel)
+        if keywords:
+            l_lower = league.lower()
+            if not any(kw in l_lower for kw in keywords):
+                continue
         for ev in stage.get("Events", []) or []:
             if isinstance(ev, dict) and ev.get("Eid") is not None:
                 yield league, ev
@@ -174,7 +192,8 @@ def breakeven(band):
 
 def stake_tl():
     hesaplanan = round(BANKROLL * STAKE_PCT / 100.0)
-    return max(50, hesaplanan)  # Kasa yüzdesi ne olursa olsun minimum 50 TL yapar
+    return max(MIN_STAKE_TL, hesaplanan)
+
 
 # ------------------------------------------------------------------
 # STRATEJİ KAYIT DEFTERİ
@@ -411,7 +430,7 @@ def build_message(p, sd, res):
     lines += [line,
               f"🎯 OYNA: {sd['pick']}",
               f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
-              f"💰 Tutar: {stake_tl()} TL (%{STAKE_PCT:g})",
+              f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
               f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
               "",
               "⚠️ Oran bandın dışındaysa OYNAMAYIN"]
@@ -504,7 +523,7 @@ def process_sport(state, sport):
     sdefs = [s for s in STRATS.values() if s["sport"] == sport and s["id"] not in DISABLED]
 
     seen, total_events, raw_samples = set(), 0, []
-    for league, ev in iter_events(data):
+    for league, ev in iter_events(data, sport):
         total_events += 1
         if len(raw_samples) < 3:
             raw_samples.append(ev)
@@ -542,7 +561,7 @@ def process_sport(state, sport):
                 "events": raw_samples}
         (BASE / f"debug_sample_{sport}.json").write_text(
             json.dumps(dump, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"{sport}: {total_events} canlı olay tarandı")
+    log(f"{sport}: {total_events} canlı olay tarandı (İddaa filtresi aktif)")
 
 
 # ------------------------------------------------------------------
@@ -586,11 +605,11 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Canlı Maç Takip Botu Telegram ile başarıyla bağlantı kurdu. Sinyaller artık buraya gelecek.")
+        success = send_telegram("🤖 *Test Başarılı!* Futbol ve Basketbol için İddaa bülten filtreleri aktifleşti.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
-            log("Test mesajı gönderilemedi! Token veya Chat ID'yi kontrol edin.")
+            log("Test mesajı gönderilemedi!")
     else:
         active = [s for s in STRATS.values() if s["id"] not in DISABLED]
         log(f"Mod: {MODE} | Aktif strateji: {len(active)} | "
