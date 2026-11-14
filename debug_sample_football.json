@@ -46,11 +46,12 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "88'",
+   "Eps": "90+3'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794698371292,
-    "RTm": 5220000
+    "ATm": 1794698671424,
+    "RTm": 5400000,
+    "ITm": 120000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -59,6 +60,56 @@
    "Esd": 20261114223000,
    "EO": 807322495,
    "EOX": 807322495,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1708625",
+   "Pids": {
+    "112": "SBTE_2_1029688693",
+    "8": "1708625"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4928",
+     "Nm": "Chapecoense AF",
+     "Img": "enet/197693.png",
+     "Abr": "CHA",
+     "Fc": "009966",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4780",
+     "Nm": "Vasco da Gama",
+     "Img": "enet/10276.png",
+     "Abr": "VAS",
+     "Fc": "000000",
+     "Sc": "ff0000"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "21",
+   "Et": 1,
+   "Esd": 20261115003000,
+   "EO": 807190631,
+   "EOX": 807190631,
    "Spid": 1,
    "Pid": 8
   },
@@ -100,11 +151,11 @@
     ]
    },
    "Tr1": "0",
-   "Tr2": "1",
+   "Tr2": "2",
    "Trh1": "0",
    "Trh2": "1",
    "Tr1OR": "0",
-   "Tr2OR": "1",
+   "Tr2OR": "2",
    "T1": [
     {
      "ID": "5252",
@@ -125,11 +176,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "61'",
+   "Eps": "66'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794698416531,
-    "RTm": 3600000
+    "ATm": 1794698716476,
+    "RTm": 3900000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -138,81 +189,6 @@
    "Esd": 20261114230000,
    "EO": 2417279359,
    "EOX": 2417279359,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1799011",
-   "Pids": {
-    "112": "SBTE_2_1029041414",
-    "8": "1799011"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FOX One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "FOX+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "8ju1pvzcq93vg0zej7yyzbdw4",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "T1": [
-    {
-     "ID": "3478",
-     "Nm": "Queretaro FC",
-     "Img": "enet/1943.png",
-     "Abr": "QUE",
-     "Fc": "000000",
-     "Sc": "003d97"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4719",
-     "Nm": "Monterrey",
-     "Img": "enet/7849.png",
-     "Abr": "MTY",
-     "Fc": "020b3e",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "17'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794698321083,
-    "RTm": 960000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Apertura",
-   "Et": 1,
-   "Esd": 20261115000000,
-   "EO": 874431335,
-   "EOX": 874431335,
    "Spid": 1,
    "Pid": 8
   }

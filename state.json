@@ -584,6 +584,54 @@
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "1-1"
+  },
+  "fb_1902467|FB_GERIDEN_FARK2": {
+   "key": "fb_1902467|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1902467",
+   "match": "Banfield - Boca Juniors",
+   "league": "Argentina Copa Argentina",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-14T23:25:23.099974+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
+  },
+  "fb_1914756|FB_GERIDEN_FARK2": {
+   "key": "fb_1914756|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1914756",
+   "match": "Deportivo Madryn - Deportivo Maipu",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-14T23:25:23.544954+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
   }
  }
 }
