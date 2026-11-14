@@ -207,14 +207,14 @@
    "created": "2026-11-14T22:01:28.177880+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": false,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1806406|FB_GEC_GOL": {
    "key": "fb_1806406|FB_GEC_GOL",
@@ -277,6 +277,30 @@
     2.1
    ],
    "created": "2026-11-14T22:10:34.622328+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1806410|FB_GERIDEN_FARK2": {
+   "key": "fb_1806410|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1806410",
+   "match": "Millonarios - Alianza FC Valledupar",
+   "league": "Colombia Primera A: Clausura",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-14T22:15:31.170732+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 2,
