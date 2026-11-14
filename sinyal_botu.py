@@ -185,13 +185,6 @@ def stake_tl():
 
 # ------------------------------------------------------------------
 # STRATEJİ KAYIT DEFTERİ
-# Her strateji fonksiyonu uygunsa şu sözlüğü döndürür, değilse None:
-#   detail   : mesajdaki durum satırları
-#   direction: "over" | "under"
-#   base     : ölçüm bölümünün başladığı andaki toplam skor
-#   n        : ölçüm bölümündeki çeyrek sayısı (futbolda 1)
-#   ref      : referans (çeyrek başına sayı; futbolda 0 = "en az 1 gol")
-# Sonuç: (final - base) / n, ref'ten büyükse "over", küçükse "under" tutmuş sayılır.
 # ------------------------------------------------------------------
 STRATS = {}
 
@@ -378,7 +371,6 @@ def bb_ht_dusuk(p):
 
 
 def _q4_info(p):
-    """4. çeyrek başında (q1..q3 biliniyorsa) (üç çeyrek toplamı, 4. çeyrekte atılan) döndürür."""
     if p["period"] != 4 or any(x is None for x in p["q"][:3]):
         return None
     first3 = sum(p["q"][:3])
@@ -459,7 +451,6 @@ def register_signal(state, p, sd, res):
 
 
 def notify_result(state, rec):
-    """Sonuçlanan sinyalin sonucunu Telegram'a gönderir (live modda yalnızca gönderilmiş sinyaller)."""
     if SEND_RESULTS == "off":
         return
     if MODE == "live" and not rec.get("sent"):
@@ -497,7 +488,7 @@ def settle(rec, final_total, state=None):
     rec["final_total"] = final_total
     rec["settled"] = datetime.now(timezone.utc).isoformat()
     base = rec.get("base", 0)
-    if final_total < base:            # veri tutarsızlığı
+    if final_total < base:
         rec["status"] = "void"
         return
     avg = (final_total - base) / max(rec.get("n", 1), 1)
@@ -579,41 +570,4 @@ def summary(state):
         pend = sum(1 for r in recs if r["status"] == "pending")
         done = won + lost
         band = recs[0]["band"]
-        rate = f"%{100 * won / done:.0f}" if done else "-"
-        lines.append(f"{label}")
-        if recs[0]["sport"] == "football":
-            mid = (band[0] + band[1]) / 2
-            profit = (won * (mid - 1) - lost) * stake_tl()
-            lines.append(f"  Tuttu {won} | Tutmadı {lost} | Bekleyen {pend}")
-            lines.append(f"  İsabet {rate} (başa baş %{breakeven(band):.0f}) | K/Z {profit:+.0f} TL")
-        else:
-            lines.append(f"  Hipotez gerçekleşti {won} | Gerçekleşmedi {lost} | Bekleyen {pend}")
-            lines.append(f"  Oran: %{rate.strip('%')} (bahis sonucu DEĞİL, çizgi bilinmiyor)"
-                         if done else "  Henüz sonuç yok")
-        if 0 < done < 30:
-            lines.append(f"  Örnek az ({done}); güvenmeyin.")
-    send_telegram("\n".join(lines))
-
-
-# ------------------------------------------------------------------
-def main():
-    cmd = sys.argv[1] if len(sys.argv) > 1 else "run"
-    state = load_state()
-    if cmd == "summary":
-        summary(state)
-    else:
-        active = [s for s in STRATS.values() if s["id"] not in DISABLED]
-        log(f"Mod: {MODE} | Aktif strateji: {len(active)} | "
-            f"Basketbol: {ENABLE_BASKETBALL} | Futbol: {ENABLE_FOOTBALL}")
-        for sport, enabled in (("basketball", ENABLE_BASKETBALL), ("football", ENABLE_FOOTBALL)):
-            pending = any(r["sport"] == sport and r["status"] == "pending"
-                          for r in state["signals"].values())
-            if enabled or pending:
-                process_sport(sport) # wait, process_sport(state, sport)
-                process_sport(state, sport)
-                time.sleep(1)
-    save_state(state)
-
-
-if __name__ == "__main__":
-    main()
+        rate = f
