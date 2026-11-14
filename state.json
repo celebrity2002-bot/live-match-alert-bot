@@ -605,7 +605,7 @@
    ],
    "created": "2026-11-14T23:25:23.099974+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -686,6 +686,30 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1"
+  },
+  "fb_1799011|FB_IY2_00": {
+   "key": "fb_1799011|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1799011",
+   "match": "Queretaro FC - Monterrey",
+   "league": "Mexico Liga MX: Apertura",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-14T23:50:31.260795+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }

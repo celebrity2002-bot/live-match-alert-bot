@@ -46,11 +46,11 @@
      "Sc": "ff0000"
     }
    ],
-   "Eps": "13'",
+   "Eps": "19'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794699850982,
-    "RTm": 720000
+    "ATm": 1794700181047,
+    "RTm": 1080000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -59,85 +59,6 @@
    "Esd": 20261115003000,
    "EO": 807322471,
    "EOX": 807322471,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1902467",
-   "Pids": {
-    "112": "SBTE_2_1029328807",
-    "8": "1902467"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "TyC Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "dbcssu950tmvx7uthp6esg93o",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "3",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "3",
-   "T1": [
-    {
-     "ID": "5252",
-     "Nm": "Banfield",
-     "Img": "enet/10087.png",
-     "Abr": "BAN",
-     "Fc": "203b28",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4572",
-     "Nm": "Boca Juniors",
-     "Img": "enet/10077.png",
-     "Abr": "BOC",
-     "Fc": "002f91",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "86'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794699911563,
-    "RTm": 5100000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Semi Finals",
-   "Et": 1,
-   "Esd": 20261114230000,
-   "EO": 2417279359,
-   "EOX": 2417279359,
    "Spid": 1,
    "Pid": 8
   },
@@ -180,6 +101,8 @@
    "Tr2": "0",
    "Trh1": "0",
    "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "3478",
@@ -200,12 +123,8 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "44'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794699910967,
-    "RTm": 2580000
-   },
+   "Eps": "HT",
+   "Esid": 10,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Apertura",
@@ -213,6 +132,63 @@
    "Esd": 20261115000000,
    "EO": 874431343,
    "EOX": 874431343,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1914756",
+   "Pids": {
+    "8": "1914756",
+    "112": "SBTE_2_1029729235"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "3mj8dccvs6ntvoj38j33x5udw",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "3",
+   "Tr2": "1",
+   "Trh1": "1",
+   "Trh2": "0",
+   "Tr1OR": "3",
+   "Tr2OR": "1",
+   "T1": [
+    {
+     "ID": "5196",
+     "Nm": "Deportivo Madryn",
+     "Img": "enet/568706.png",
+     "Abr": "DEP"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "5249",
+     "Nm": "Deportivo Maipu",
+     "Img": "enet/213590.png",
+     "Abr": "DEP"
+    }
+   ],
+   "Eps": "82'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794700191202,
+    "RTm": 4860000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1/8",
+   "Et": 1,
+   "Esd": 20261114230000,
+   "EO": 2417229951,
+   "EOX": 2417229951,
    "Spid": 1,
    "Pid": 8
   }
