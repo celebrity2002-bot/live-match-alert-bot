@@ -5,69 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1708764",
-   "Pids": {
-    "112": "SBTE_2_1025985551",
-    "8": "1708764"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Fanatiz",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "5034",
-     "Nm": "Mirassol",
-     "Img": "enet/163782.png",
-     "Abr": "MIR"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4882",
-     "Nm": "Atletico MG",
-     "Img": "enet/10272.png",
-     "Abr": "AMN",
-     "Fc": "000000",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794698671424,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "35",
-   "Et": 1,
-   "Esd": 20261114223000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1708625",
    "Pids": {
-    "112": "SBTE_2_1029688693",
-    "8": "1708625"
+    "8": "1708625",
+    "112": "SBTE_2_1029688693"
    },
    "Media": {
     "112": [
@@ -176,11 +117,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "66'",
+   "Eps": "71'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794698716476,
-    "RTm": 3900000
+    "ATm": 1794699016645,
+    "RTm": 4200000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -189,6 +130,81 @@
    "Esd": 20261114230000,
    "EO": 2417279359,
    "EOX": 2417279359,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1799011",
+   "Pids": {
+    "112": "SBTE_2_1029041414",
+    "8": "1799011"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "8ju1pvzcq93vg0zej7yyzbdw4",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "T1": [
+    {
+     "ID": "3478",
+     "Nm": "Queretaro FC",
+     "Img": "enet/1943.png",
+     "Abr": "QUE",
+     "Fc": "000000",
+     "Sc": "003d97"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4719",
+     "Nm": "Monterrey",
+     "Img": "enet/7849.png",
+     "Abr": "MTY",
+     "Fc": "020b3e",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "29'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794699010969,
+    "RTm": 1680000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Apertura",
+   "Et": 1,
+   "Esd": 20261115000000,
+   "EO": 874431335,
+   "EOX": 874431335,
    "Spid": 1,
    "Pid": 8
   }

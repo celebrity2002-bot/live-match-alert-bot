@@ -365,7 +365,7 @@
    ],
    "created": "2026-11-14T22:21:03.859622+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -551,7 +551,7 @@
    ],
    "created": "2026-11-14T22:55:24.348304+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -576,14 +576,14 @@
    "created": "2026-11-14T23:14:50.384329+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "2-1"
   },
   "fb_1902467|FB_GERIDEN_FARK2": {
    "key": "fb_1902467|FB_GERIDEN_FARK2",
@@ -632,6 +632,54 @@
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0"
+  },
+  "fb_1915547|FB_GEC_GOL": {
+   "key": "fb_1915547|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1915547",
+   "match": "Real Pilar - CA Talleres Remedios de Escalada",
+   "league": "Argentina Primera B Metropolitana: Promotion Playoff",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-14T23:30:43.145847+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1915547|FB_TEK_FARK_70": {
+   "key": "fb_1915547|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1915547",
+   "match": "Real Pilar - CA Talleres Remedios de Escalada",
+   "league": "Argentina Primera B Metropolitana: Promotion Playoff",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-14T23:30:43.491135+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
