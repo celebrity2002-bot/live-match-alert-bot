@@ -9,19 +9,13 @@ sinyal varsa kaydet (live modda Telegram'a gönder) -> biten maçları sonuçlan
 Kullanım:
     python sinyal_botu.py run       # normal tarama
     python sinyal_botu.py summary   # günlük özet
+    python sinyal_botu.py test      # telegram bağlantı testi
 
 Gizli: TELEGRAM_TOKEN, TELEGRAM_CHAT_ID (GitHub Secrets)
 Ayarlar (GitHub Variables, isteğe bağlı):
     BOT_MODE=paper|live, BANKROLL_TL, STAKE_PCT, ENABLE_BASKETBALL, ENABLE_FOOTBALL,
     DISABLE_STRATEGIES (virgülle ayrılmış kimlikler), MAX_LIVE_PER_MATCH, DEBUG_DUMP
     ve eşikler: BB_Q1_HIGH, BB_Q1_LOW, BB_Q2_MAX_POINTS, BB_Q4_MAX_POINTS, BB_HT_HIGH, BB_HT_LOW
-
-ÖNEMLİ - SONUÇ ÖLÇÜMÜ HAKKINDA
-- Futbol: "sinyalden sonra gol oldu mu?" gerçek sonuçtur (bahis tuttu/tutmadı).
-- Basketbol: bahis şirketinin canlı toplam sayı çizgisi bilinmediği için sonuç, "hipotez
-  gerçekleşti mi?" (çeyrek başına sayı ortalaması referanstan düşük/yüksek mü) olarak
-  ölçülür. Bu, bahsin tuttuğu anlamına GELMEZ; çizgi bu etkiyi zaten fiyatlayabilir.
-  Basketbol oranları, ancak gerçek çizgileri elle not ederseniz doğru ölçülebilir.
 """
 import json
 import os
@@ -58,21 +52,21 @@ STAKE_PCT = env_num("STAKE_PCT", 1.0)
 ENABLE_BASKETBALL = os.getenv("ENABLE_BASKETBALL", "1") == "1"
 ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
 DISABLED = {x.strip().upper() for x in os.getenv("DISABLE_STRATEGIES", "").split(",") if x.strip()}
-MAX_LIVE_PER_MATCH = env_num("MAX_LIVE_PER_MATCH", 2, int)   # live modda bir maça en fazla kaç mesaj
-SEND_RESULTS = (os.getenv("SEND_RESULTS", "on") or "on").strip().lower()   # on | off
+MAX_LIVE_PER_MATCH = env_num("MAX_LIVE_PER_MATCH", 2, int)
+SEND_RESULTS = (os.getenv("SEND_RESULTS", "on") or "on").strip().lower()
 
 # Basketbol eşikleri
 BB_Q1_HIGH = env_num("BB_Q1_HIGH", 50, int)
 BB_Q1_LOW = env_num("BB_Q1_LOW", 36, int)
-BB_Q2_MAX_POINTS = env_num("BB_Q2_MAX_POINTS", 15, int)   # 5 dk tarama gecikmesini tolere eder
+BB_Q2_MAX_POINTS = env_num("BB_Q2_MAX_POINTS", 15, int)
 BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol "gol baskısı" pencereleri: son dakikalar riskli olduğu için 65-80 arası
+# Futbol eşikleri
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
-FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)   # "açık maç": en az bu kadar gol
+FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
 
 MISSING_RUNS_TO_SETTLE = 3
 
@@ -127,7 +121,6 @@ def team_name(event, key):
 
 
 def fetch(sport):
-    """Başarısızsa None (böylece 'maç kayboldu' yanlış alarmı üretmeyiz)."""
     for attempt in range(3):
         try:
             r = requests.get(
@@ -570,4 +563,46 @@ def summary(state):
         pend = sum(1 for r in recs if r["status"] == "pending")
         done = won + lost
         band = recs[0]["band"]
-        rate = f
+        rate = f"%{100 * won / done:.0f}" if done else "-"
+        lines.append(f"{label}")
+        if recs[0]["sport"] == "football":
+            mid = (band[0] + band[1]) / 2
+            profit = (won * (mid - 1) - lost) * stake_tl()
+            lines.append(f"  Tuttu {won} | Tutmadı {lost} | Bekleyen {pend}")
+            lines.append(f"  İsabet {rate} (başa baş %{breakeven(band):.0f}) | K/Z {profit:+.0f} TL")
+        else:
+            lines.append(f"  Hipotez gerçekleşti {won} | Gerçekleşmedi {lost} | Bekleyen {pend}")
+            lines.append(f"  Oran: %{rate.strip('%')} (bahis sonucu DEĞİL, çizgi bilinmiyor)"
+                         if done else "  Henüz sonuç yok")
+        if 0 < done < 30:
+            lines.append(f"  Örnek az ({done}); güvenmeyin.")
+    send_telegram("\n".join(lines))
+
+
+# ------------------------------------------------------------------
+def main():
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "run"
+    state = load_state()
+    if cmd == "summary":
+        summary(state)
+    elif cmd == "test":
+        success = send_telegram("🤖 *Test Başarılı!* Canlı Maç Takip Botu Telegram ile başarıyla bağlantı kurdu. Sinyaller artık buraya gelecek.")
+        if success:
+            log("Test mesajı Telegram'a başarıyla gönderildi!")
+        else:
+            log("Test mesajı gönderilemedi! Token veya Chat ID'yi kontrol edin.")
+    else:
+        active = [s for s in STRATS.values() if s["id"] not in DISABLED]
+        log(f"Mod: {MODE} | Aktif strateji: {len(active)} | "
+            f"Basketbol: {ENABLE_BASKETBALL} | Futbol: {ENABLE_FOOTBALL}")
+        for sport, enabled in (("basketball", ENABLE_BASKETBALL), ("football", ENABLE_FOOTBALL)):
+            pending = any(r["sport"] == sport and r["status"] == "pending"
+                          for r in state["signals"].values())
+            if enabled or pending:
+                process_sport(state, sport)
+                time.sleep(1)
+    save_state(state)
+
+
+if __name__ == "__main__":
+    main()
