@@ -7,8 +7,8 @@
   {
    "Eid": "1708764",
    "Pids": {
-    "8": "1708764",
-    "112": "SBTE_2_1025985551"
+    "112": "SBTE_2_1025985551",
+    "8": "1708764"
    },
    "Media": {
     "112": [
@@ -46,11 +46,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "58'",
+   "Eps": "63'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794696576199,
-    "RTm": 3420000
+    "ATm": 1794696876179,
+    "RTm": 3720000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -138,15 +138,31 @@
    "Pid": 8
   },
   {
-   "Eid": "1914758",
+   "Eid": "1799011",
    "Pids": {
-    "112": "SBTE_2_1029729236",
-    "8": "1914758"
+    "112": "SBTE_2_1029041414",
+    "8": "1799011"
    },
    "Media": {
     "112": [
      {
-      "eventId": "3nt4d0ld7qoehr9anv28h2xas",
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "8ju1pvzcq93vg0zej7yyzbdw4",
       "provider": "UNKNOWN_PROVIDER",
       "type": "LIVE_STREAMING",
       "allowedCountries": [
@@ -156,43 +172,35 @@
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "5231",
-     "Nm": "Club Atletico Colon",
-     "Img": "enet/10088.png",
-     "Abr": "COL",
+     "ID": "3478",
+     "Nm": "Queretaro FC",
+     "Img": "enet/1943.png",
+     "Abr": "QUE",
      "Fc": "000000",
-     "Sc": "ffffff"
+     "Sc": "003d97"
     }
    ],
    "T2": [
     {
-     "ID": "5167",
-     "Nm": "CA Ferrocarril Midland",
-     "Img": "enet/425965.png",
-     "Abr": "CAF"
+     "ID": "4719",
+     "Nm": "Monterrey",
+     "Img": "enet/7849.png",
+     "Abr": "MTY",
+     "Fc": "020b3e",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "80'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794696621163,
-    "RTm": 4740000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "1/8",
+   "ErnInf": "7",
    "Et": 1,
-   "Esd": 20261114220000,
-   "EO": 2416967695,
-   "EOX": 2416967695,
+   "Esd": 20261115000000,
+   "EO": 874299495,
+   "EOX": 874299495,
    "Spid": 1,
    "Pid": 8
   }
