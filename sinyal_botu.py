@@ -173,8 +173,8 @@ def breakeven(band):
 
 
 def stake_tl():
-    return round(BANKROLL * STAKE_PCT / 100.0)
-
+    hesaplanan = round(BANKROLL * STAKE_PCT / 100.0)
+    return max(50, hesaplanan)  # Kasa yüzdesi ne olursa olsun minimum 50 TL yapar
 
 # ------------------------------------------------------------------
 # STRATEJİ KAYIT DEFTERİ
