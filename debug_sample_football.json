@@ -1,0 +1,188 @@
+{
+ "top_level_keys": [
+  "Ts",
+  "Stages"
+ ],
+ "events": [
+  {
+   "Eid": "1708764",
+   "Pids": {
+    "112": "SBTE_2_1025985551",
+    "8": "1708764"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "T1": [
+    {
+     "ID": "5034",
+     "Nm": "Mirassol",
+     "Img": "enet/163782.png",
+     "Abr": "MIR"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4882",
+     "Nm": "Atletico MG",
+     "Img": "enet/10272.png",
+     "Abr": "AMN",
+     "Fc": "000000",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "26'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794693341009,
+    "RTm": 1500000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Regular Season",
+   "Et": 1,
+   "Esd": 20261114223000,
+   "EO": 807322479,
+   "EOX": 807322479,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1902467",
+   "Pids": {
+    "112": "SBTE_2_1029328807",
+    "8": "1902467"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "TyC Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "dbcssu950tmvx7uthp6esg93o",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "5252",
+     "Nm": "Banfield",
+     "Img": "enet/10087.png",
+     "Abr": "BAN",
+     "Fc": "203b28",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4572",
+     "Nm": "Boca Juniors",
+     "Img": "enet/10077.png",
+     "Abr": "BOC",
+     "Fc": "002f91",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "Semi Finals",
+   "Et": 1,
+   "Esd": 20261114230000,
+   "EO": 2417279079,
+   "EOX": 2417279079,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1914758",
+   "Pids": {
+    "112": "SBTE_2_1029729236",
+    "8": "1914758"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "3nt4d0ld7qoehr9anv28h2xas",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "1",
+   "Tr2": "0",
+   "Trh1": "1",
+   "Trh2": "0",
+   "Tr1OR": "1",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "5231",
+     "Nm": "Club Atletico Colon",
+     "Img": "enet/10088.png",
+     "Abr": "COL",
+     "Fc": "000000",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "5167",
+     "Nm": "CA Ferrocarril Midland",
+     "Img": "enet/425965.png",
+     "Abr": "CAF"
+    }
+   ],
+   "Eps": "HT",
+   "Esid": 10,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1/8",
+   "Et": 1,
+   "Esd": 20261114220000,
+   "EO": 2416967695,
+   "EOX": 2416967695,
+   "Spid": 1,
+   "Pid": 8
+  }
+ ]
+}
