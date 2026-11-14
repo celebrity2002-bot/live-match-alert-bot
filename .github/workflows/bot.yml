@@ -1,59 +1,16 @@
-name: Canli Mac Takip Botu
-
-on:
-  schedule:
-    - cron: '*/5 * * * *'   # Her 5 dakikada bir tarama
-    - cron: '0 19 * * *'    # 22:00 TSİ günlük özet
-  workflow_dispatch:        # Manuel test desteği
-
-permissions:
-  contents: write           # state.json ve debug dosyalarının kaydedilebilmesi için ŞART
-
-concurrency:
-  group: sinyal-botu
-  cancel-in-progress: false
-
-jobs:
-  run-bot:
-    runs-on: ubuntu-latest
-    timeout-minutes: 4
-    steps:
-      - name: Kodu Cek
-        uses: actions/checkout@v4
-
-      - name: Python Kur
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Kutuphaneleri Yukle
-        run: pip install requests
-
-      - name: Botu Calistir
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Kaydettiğiniz Secret bağlandı
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BOT_MODE: ${{ vars.BOT_MODE || 'paper' }}
-          BANKROLL_TL: ${{ vars.BANKROLL_TL || '2000' }}
-          STAKE_PCT: ${{ vars.STAKE_PCT || '1' }}
-          ENABLE_FOOTBALL: ${{ vars.ENABLE_FOOTBALL || '1' }}
-          DISABLE_STRATEGIES: ${{ vars.DISABLE_STRATEGIES || '' }}
-          MAX_LIVE_PER_MATCH: ${{ vars.MAX_LIVE_PER_MATCH || '2' }}
-          SEND_RESULTS: ${{ vars.SEND_RESULTS || 'on' }}
-          DEBUG_DUMP: ${{ vars.DEBUG_DUMP || '1' }}          # İlk test için açık
-        run: |
-          if [ "${{ github.event.schedule }}" = "0 19 * * *" ]; then
-            python sinyal_botu.py summary
-          else
-            python sinyal_botu.py run
-          fi
-
-      - name: Durumu ve Loglari Kaydet
+- name: Durumu ve Loglari Kaydet
         run: |
           git config user.name "sinyal-botu"
           git config user.email "bot@users.noreply.github.com"
-          git add state.json
+          
+          # state.json varsa ekle, yoksa hata verme
+          if [ -f "state.json" ]; then
+            git add state.json
+          fi
+          
+          # debug dosyaları varsa ekle
           for f in debug_sample_*.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
+          
           git diff --cached --quiet || (git commit -m "state güncellendi" && git push)
