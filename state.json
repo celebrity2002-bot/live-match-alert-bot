@@ -13,8 +13,8 @@
     1.75
    ],
    "created": "2026-11-14T21:55:46.737194+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -22,7 +22,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-14T22:45:28.246971+00:00",
+   "seg_avg": 0.0
   },
   "fb_1806409|FB_00_60_70": {
    "key": "fb_1806409|FB_00_60_70",
@@ -38,7 +41,7 @@
    ],
    "created": "2026-11-14T21:55:47.223887+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -62,7 +65,7 @@
    ],
    "created": "2026-11-14T21:55:47.635180+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -112,8 +115,8 @@
     1.7
    ],
    "created": "2026-11-14T22:01:28.177745+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -121,7 +124,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-14T22:45:28.862682+00:00",
+   "seg_avg": 0.0
   },
   "fb_1806403|FB_BERABERLIK_GEC": {
    "key": "fb_1806403|FB_BERABERLIK_GEC",
@@ -136,8 +142,8 @@
     1.75
    ],
    "created": "2026-11-14T22:01:28.177781+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -145,7 +151,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-14T22:45:28.862749+00:00",
+   "seg_avg": 0.0
   },
   "fb_1806417|FB_TEK_FARK_70": {
    "key": "fb_1806417|FB_TEK_FARK_70",
@@ -242,7 +251,7 @@
    ],
    "created": "2026-11-14T22:05:31.128807+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 4,
    "sent": false,
    "direction": "over",
@@ -266,7 +275,7 @@
    ],
    "created": "2026-11-14T22:05:31.128871+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 4,
    "sent": false,
    "direction": "over",
