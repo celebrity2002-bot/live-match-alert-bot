@@ -523,8 +523,8 @@
     2.1
    ],
    "created": "2026-11-14T22:50:29.671716+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -532,7 +532,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-6"
+   "last_score": "0-6",
+   "final_total": 6,
+   "settled": "2026-11-14T23:18:26.559885+00:00",
+   "seg_avg": 4.0
   },
   "fb_1708764|FB_00_60_70": {
    "key": "fb_1708764|FB_00_60_70",
