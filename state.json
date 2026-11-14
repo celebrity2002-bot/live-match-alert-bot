@@ -415,8 +415,8 @@
     1.85
    ],
    "created": "2026-11-14T22:21:04.602158+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -424,7 +424,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-14T23:15:30.464792+00:00",
+   "seg_avg": 1.0
   },
   "fb_1917190|FB_GEC_GOL": {
    "key": "fb_1917190|FB_GEC_GOL",
@@ -439,8 +442,8 @@
     1.7
    ],
    "created": "2026-11-14T22:30:45.790875+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -448,7 +451,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-14T23:15:30.938600+00:00",
+   "seg_avg": 0.0
   },
   "fb_1917190|FB_BERABERLIK_GEC": {
    "key": "fb_1917190|FB_BERABERLIK_GEC",
@@ -463,8 +469,8 @@
     1.75
    ],
    "created": "2026-11-14T22:30:46.407403+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -472,7 +478,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-14T23:15:31.489273+00:00",
+   "seg_avg": 0.0
   },
   "fb_1914758|FB_TEK_FARK_70": {
    "key": "fb_1914758|FB_TEK_FARK_70",
@@ -487,8 +496,8 @@
     1.85
    ],
    "created": "2026-11-14T22:35:27.600116+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -496,7 +505,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-14T23:15:31.489344+00:00",
+   "seg_avg": 0.0
   },
   "fb_1903658|FB_GERIDEN_FARK2": {
    "key": "fb_1903658|FB_GERIDEN_FARK2",
@@ -512,7 +524,7 @@
    ],
    "created": "2026-11-14T22:50:29.671716+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": true,
    "direction": "over",
