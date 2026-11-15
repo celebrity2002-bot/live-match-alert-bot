@@ -5,129 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1914759",
-   "Pids": {
-    "112": "SBTE_2_1029729233",
-    "8": "1914759"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "4wcu0q2fhjv07os8ueejjbml0",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 44,
-      "Nm": 2,
-      "NoP": false
-     }
-    ]
-   },
-   "Tr1": "3",
-   "Tr2": "1",
-   "Trh1": "2",
-   "Trh2": "1",
-   "Tr1OR": "3",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "5213",
-     "Nm": "Godoy Cruz",
-     "Img": "enet/10227.png",
-     "Abr": "GOD",
-     "Fc": "2658a3",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5142",
-     "Nm": "Tristan Suarez",
-     "Img": "enet/213528.png",
-     "Abr": "TRI"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794779376181,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "final",
-   "Et": 1,
-   "Esd": 20261115210000,
-   "EO": 269746191,
-   "EOX": 269746191,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1916536",
-   "Pids": {
-    "8": "1916536"
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 44,
-      "Nm": 2,
-      "NoP": false
-     }
-    ]
-   },
-   "Tr1": "3",
-   "Tr2": "1",
-   "Trh1": "2",
-   "Trh2": "1",
-   "Tr1OR": "3",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "5213",
-     "Nm": "Godoy Cruz",
-     "Img": "enet/10227.png",
-     "Abr": "GOD",
-     "Fc": "2658a3",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5142",
-     "Nm": "Tristan Suarez",
-     "Img": "enet/213528.png",
-     "Abr": "TRI"
-    }
-   ],
-   "Eps": "89'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794779261198,
-    "RTm": 5280000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Championship - Final",
-   "Et": 1,
-   "Esd": 20261115210000,
-   "EO": 2416967807,
-   "EOX": 2416967807,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1916113",
    "Pids": {
     "112": "SBTE_2_1029715796",
@@ -169,11 +46,12 @@
      "Abr": "DOU"
     }
    ],
-   "Eps": "87'",
+   "Eps": "90+2'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794779421289,
-    "RTm": 5160000
+    "ATm": 1794779721250,
+    "RTm": 5400000,
+    "ITm": 60000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -183,6 +61,49 @@
    "Esd": 20261115210000,
    "EO": 2954100751,
    "EOX": 2954100751,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1915354",
+   "Pids": {
+    "8": "1915354"
+   },
+   "Tr1": "2",
+   "Tr2": "2",
+   "Trh1": "2",
+   "Trh2": "2",
+   "Tr1OR": "2",
+   "Tr2OR": "2",
+   "T1": [
+    {
+     "ID": "10097",
+     "Nm": "Envigado",
+     "Img": "enet/4402.png",
+     "Abr": "ENV",
+     "Fc": "ff5706",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "10095",
+     "Nm": "Union Magdalena",
+     "Img": "enet/4408.png",
+     "Abr": "UNI",
+     "Fc": "bf0000",
+     "Sc": "00005b"
+    }
+   ],
+   "Eps": "HT",
+   "Esid": 10,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "5",
+   "Et": 1,
+   "Esd": 20261115215000,
+   "EO": 270270479,
+   "EOX": 270270479,
    "Spid": 1,
    "Pid": 8
   }
