@@ -46,11 +46,11 @@
      "Sc": "ff0000"
     }
    ],
-   "Eps": "29'",
+   "Eps": "33'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794700781164,
-    "RTm": 1680000
+    "ATm": 1794701021128,
+    "RTm": 1920000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -84,15 +84,6 @@
       "type": "TV_CHANNEL",
       "allowedCountries": [
        "MX"
-      ]
-     },
-     {
-      "eventId": "8ju1pvzcq93vg0zej7yyzbdw4",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
       ]
      }
     ]
@@ -141,19 +132,6 @@
     "112": "SBTE_2_1029729235",
     "8": "1914756"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "3mj8dccvs6ntvoj38j33x5udw",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
    "Tr1": "3",
    "Tr2": "1",
    "Trh1": "1",
@@ -176,12 +154,12 @@
      "Abr": "DEP"
     }
    ],
-   "Eps": "90+3'",
+   "Eps": "90+7'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794700846212,
+    "ATm": 1794701086189,
     "RTm": 5400000,
-    "ITm": 120000
+    "ITm": 360000
    },
    "Epr": 1,
    "Ecov": 0,
