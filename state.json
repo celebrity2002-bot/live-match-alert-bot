@@ -3712,8 +3712,8 @@
     1.55
    ],
    "created": "2026-11-15T14:30:43.573178+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 197,
    "sent": true,
    "direction": "under",
@@ -3721,7 +3721,10 @@
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "93-104"
+   "last_score": "93-104",
+   "final_total": 197,
+   "settled": "2026-11-15T16:39:06.258419+00:00",
+   "seg_avg": 49.0
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -4168,8 +4171,8 @@
     1.8
    ],
    "created": "2026-11-15T15:00:53.458125+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 197,
    "sent": true,
    "direction": "under",
@@ -4177,7 +4180,10 @@
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "93-104"
+   "last_score": "93-104",
+   "final_total": 197,
+   "settled": "2026-11-15T16:39:06.597025+00:00",
+   "seg_avg": 50.5
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4758,14 +4764,14 @@
    "created": "2026-11-15T16:00:51.570408+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "1-0"
   },
   "fb_1887385|FB_11_IY2": {
    "key": "fb_1887385|FB_11_IY2",
@@ -4806,14 +4812,14 @@
    "created": "2026-11-15T16:15:33.222406+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-4"
+   "last_score": "0-5"
   },
   "fb_1814498|FB_IY2_00": {
    "key": "fb_1814498|FB_IY2_00",
@@ -4902,14 +4908,14 @@
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 72,
+   "last_total": 76,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "36-36"
+   "last_score": "38-38"
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -4950,14 +4956,14 @@
    "created": "2026-11-15T16:25:24.742081+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1814050|FB_GEC_GOL": {
    "key": "fb_1814050|FB_GEC_GOL",
@@ -5070,14 +5076,14 @@
    "created": "2026-11-15T16:35:22.727697+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "1-0"
   },
   "fb_1812167|FB_IY2_00": {
    "key": "fb_1812167|FB_IY2_00",
@@ -5174,6 +5180,102 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1811143|FB_TEK_FARK_70": {
+   "key": "fb_1811143|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1811143",
+   "match": "Granada - Las Palmas",
+   "league": "Spain LaLiga 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T16:39:08.077725+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1815475|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1815475|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1815475",
+   "match": "Alcoyano - CF Intercity",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-15T16:39:08.078435+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1887385|FB_GEC_GOL": {
+   "key": "fb_1887385|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1887385",
+   "match": "Atletico Tordesillas - CD Atletico Paso",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T16:39:09.794003+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
+  },
+  "fb_1887385|FB_TEK_FARK_70": {
+   "key": "fb_1887385|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1887385",
+   "match": "Atletico Tordesillas - CD Atletico Paso",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T16:39:10.104127+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
