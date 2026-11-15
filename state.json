@@ -834,14 +834,14 @@
    "created": "2026-11-15T00:45:29.069705+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 67,
+   "last_total": 76,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "31-36",
-   "last_score": "31-36"
+   "last_score": "36-40"
   },
   "fb_1914974|FB_GERIDEN_FARK2": {
    "key": "fb_1914974|FB_GERIDEN_FARK2",
