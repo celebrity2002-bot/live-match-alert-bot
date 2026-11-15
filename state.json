@@ -4929,14 +4929,14 @@
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 159,
+   "last_total": 165,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "77-82"
+   "last_score": "81-84"
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -5164,8 +5164,8 @@
     1.75
    ],
    "created": "2026-11-15T16:35:23.609207+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -5173,7 +5173,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "3-1"
+   "last_score": "3-1",
+   "final_total": 4,
+   "settled": "2026-11-15T17:50:36.080230+00:00",
+   "seg_avg": 2.0
   },
   "fb_1831864|FB_TEK_FARK_70": {
    "key": "fb_1831864|FB_TEK_FARK_70",
@@ -5215,8 +5218,8 @@
     1.6
    ],
    "created": "2026-11-15T16:35:23.913062+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -5224,7 +5227,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T17:50:36.587230+00:00",
+   "seg_avg": 0.0
   },
   "fb_1811143|FB_TEK_FARK_70": {
    "key": "fb_1811143|FB_TEK_FARK_70",
@@ -5395,8 +5401,8 @@
     2.1
    ],
    "created": "2026-11-15T16:45:30.187573+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -5404,7 +5410,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "1-3"
+   "last_score": "1-3",
+   "final_total": 4,
+   "settled": "2026-11-15T17:50:37.161278+00:00",
+   "seg_avg": 2.0
   },
   "fb_1815166|FB_IY2_00": {
    "key": "fb_1815166|FB_IY2_00",
@@ -5472,14 +5481,14 @@
    "created": "2026-11-15T16:50:30.724425+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "bb_1853690|BB_Q4_FARK_ALT": {
    "key": "bb_1853690|BB_Q4_FARK_ALT",
@@ -5523,14 +5532,14 @@
    "created": "2026-11-15T16:55:25.792720+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 159,
+   "last_total": 165,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "45-51",
-   "last_score": "77-82"
+   "last_score": "81-84"
   },
   "fb_1813693|FB_GEC_GOL": {
    "key": "fb_1813693|FB_GEC_GOL",
@@ -5655,14 +5664,14 @@
    "created": "2026-11-15T17:00:57.157435+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 118,
+   "last_total": 127,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "23-29",
-   "last_score": "58-60"
+   "last_score": "62-65"
   },
   "fb_1812153|FB_11_IY2": {
    "key": "fb_1812153|FB_11_IY2",
@@ -5678,7 +5687,7 @@
    ],
    "created": "2026-11-15T17:00:58.938883+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -5836,8 +5845,8 @@
     2.0
    ],
    "created": "2026-11-15T17:05:34.509999+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -5845,7 +5854,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T17:50:37.713067+00:00",
+   "seg_avg": 0.0
   },
   "fb_1815783|FB_11_IY2": {
    "key": "fb_1815783|FB_11_IY2",
@@ -6019,8 +6031,8 @@
     2.1
    ],
    "created": "2026-11-15T17:15:32.273525+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -6028,7 +6040,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "3-1"
+   "last_score": "3-1",
+   "final_total": 4,
+   "settled": "2026-11-15T17:50:38.284375+00:00",
+   "seg_avg": 0.0
   },
   "fb_1812153|FB_GEC_GOL": {
    "key": "fb_1812153|FB_GEC_GOL",
@@ -6044,7 +6059,7 @@
    ],
    "created": "2026-11-15T17:15:32.614273+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -6068,7 +6083,7 @@
    ],
    "created": "2026-11-15T17:15:32.976256+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -6285,14 +6300,14 @@
    "created": "2026-11-15T17:20:43.444848+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1738320|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1738320|FB_COK_GOLLU_ERKEN",
@@ -6717,14 +6732,14 @@
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 66,
+   "last_total": 75,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "33-22",
-   "last_score": "42-24"
+   "last_score": "46-29"
   },
   "fb_1815165|FB_GERIDEN_FARK2": {
    "key": "fb_1815165|FB_GERIDEN_FARK2",
@@ -6821,6 +6836,174 @@
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0"
+  },
+  "bb_1854379|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1854379|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1854379",
+   "match": "UR Venezia - Maxima Roma",
+   "league": "Italy Lega Basket Serie A",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T17:50:30.878330+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 108,
+   "sent": true,
+   "direction": "under",
+   "base": 108,
+   "n": 2,
+   "ref": 54.0,
+   "signal_score": "62-46",
+   "last_score": "62-46"
+  },
+  "bb_1861272|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1861272|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1861272",
+   "match": "Fenerbahçe - Anadolu Efes",
+   "league": "Turkiye BSL",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T17:50:31.473450+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 50,
+   "sent": true,
+   "direction": "under",
+   "base": 50,
+   "n": 3,
+   "ref": 50.0,
+   "signal_score": "18-32",
+   "last_score": "18-32"
+  },
+  "fb_1814051|FB_IY2_00": {
+   "key": "fb_1814051|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814051",
+   "match": "Deportivo La Coruna W - Barcelona W",
+   "league": "Spain Liga F",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T17:50:33.315460+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855365|FB_GERIDEN_FARK2": {
+   "key": "fb_1855365|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1855365",
+   "match": "Juventus Next Gen - Treviso",
+   "league": "Italy Serie C: Group A",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T17:50:33.816817+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1855362|FB_00_60_70": {
+   "key": "fb_1855362|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1855362",
+   "match": "Pergolettese - Pro Vercelli",
+   "league": "Italy Serie C: Group A",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T17:50:34.377707+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855743|FB_GERIDEN_FARK2": {
+   "key": "fb_1855743|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1855743",
+   "match": "Ravenna - Forli",
+   "league": "Italy Serie C: Group B",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T17:50:34.997455+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1814871|FB_IY2_00": {
+   "key": "fb_1814871|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814871",
+   "match": "UE Olot - Espanyol B",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T17:50:35.541298+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
