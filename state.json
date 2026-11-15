@@ -1363,8 +1363,8 @@
     1.8
    ],
    "created": "2026-11-15T10:50:35.351781+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 149,
    "sent": true,
    "direction": "over",
@@ -1372,7 +1372,10 @@
    "n": 2,
    "ref": 33.0,
    "signal_score": "31-35",
-   "last_score": "57-92"
+   "last_score": "57-92",
+   "final_total": 149,
+   "settled": "2026-11-15T12:00:51.776714+00:00",
+   "seg_avg": 41.5
   },
   "bb_1895371|BB_Q1_DUSUK_UST": {
    "key": "bb_1895371|BB_Q1_DUSUK_UST",
@@ -1483,8 +1486,8 @@
     1.95
    ],
    "created": "2026-11-15T11:25:23.562828+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 149,
    "sent": true,
    "direction": "under",
@@ -1492,7 +1495,10 @@
    "n": 1,
    "ref": 33.666666666666664,
    "signal_score": "36-65",
-   "last_score": "57-92"
+   "last_score": "57-92",
+   "final_total": 149,
+   "settled": "2026-11-15T12:00:52.349120+00:00",
+   "seg_avg": 48.0
   },
   "fb_1814863|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1814863|FB_COK_GOLLU_ERKEN",
@@ -1749,14 +1755,14 @@
    "created": "2026-11-15T11:50:32.793230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 44,
+   "last_total": 55,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "14-22",
-   "last_score": "17-27"
+   "last_score": "23-32"
   },
   "fb_1816748|FB_IY2_00": {
    "key": "fb_1816748|FB_IY2_00",
@@ -1893,14 +1899,14 @@
    "created": "2026-11-15T11:55:25.382652+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "0-2"
   },
   "fb_1815477|FB_GEC_GOL": {
    "key": "fb_1815477|FB_GEC_GOL",
@@ -1973,6 +1979,30 @@
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "1-1"
+  },
+  "fb_1815471|FB_GERIDEN_FARK2": {
+   "key": "fb_1815471|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1815471",
+   "match": "Elche Ilicitano - Atletico Baleares",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T12:00:54.084373+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
   }
  }
 }
