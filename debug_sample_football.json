@@ -5,53 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1914755",
-   "Pids": {
-    "112": "SBTE_2_1029739638",
-    "8": "1914755"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "3k2vvdiy56bztg7qtjw1knlsk",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "T1": [
-    {
-     "ID": "6852",
-     "Nm": "Ferro Carril Oeste",
-     "Img": "enet/161733.png",
-     "Abr": "FER"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "12276",
-     "Nm": "Gimnasia y Tiro",
-     "Img": "enet/276511.png",
-     "Abr": "GIM"
-    }
-   ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
-   "Ecov": 0,
-   "ErnInf": "1/8",
-   "Et": 1,
-   "Esd": 20261116003000,
-   "EO": 2417229927,
-   "EOX": 2417229927,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1913935",
    "Pids": {
     "8": "1913935"
@@ -78,11 +31,11 @@
      "Abr": "REA"
     }
    ],
-   "Eps": "25'",
+   "Eps": "30'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794785396191,
-    "RTm": 1440000
+    "ATm": 1794785696227,
+    "RTm": 1740000
    },
    "Epr": 1,
    "Ecov": 0,
