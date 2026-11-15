@@ -1013,7 +1013,7 @@
    ],
    "created": "2026-11-15T01:45:32.217637+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 239,
    "sent": true,
    "direction": "under",
@@ -1038,14 +1038,14 @@
    "created": "2026-11-15T01:50:33.078256+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 220,
+   "last_total": 232,
    "sent": true,
    "direction": "under",
    "base": 76,
    "n": 3,
    "ref": 76.0,
    "signal_score": "42-45",
-   "last_score": "118-102"
+   "last_score": "124-108"
   },
   "bb_1868544|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868544|BB_HT_YUKSEK_ALT",
@@ -1061,7 +1061,7 @@
    ],
    "created": "2026-11-15T02:10:30.762993+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 239,
    "sent": true,
    "direction": "under",
@@ -1084,8 +1084,8 @@
     1.8
    ],
    "created": "2026-11-15T02:10:31.224247+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 223,
    "sent": true,
    "direction": "under",
@@ -1093,7 +1093,10 @@
    "n": 2,
    "ref": 51.5,
    "signal_score": "45-58",
-   "last_score": "106-117"
+   "last_score": "106-117",
+   "final_total": 223,
+   "settled": "2026-11-15T03:35:24.500633+00:00",
+   "seg_avg": 60.0
   },
   "bb_1868515|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868515|BB_HT_YUKSEK_ALT",
@@ -1110,14 +1113,14 @@
    "created": "2026-11-15T02:20:30.998907+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 220,
+   "last_total": 232,
    "sent": true,
    "direction": "under",
    "base": 127,
    "n": 2,
    "ref": 63.5,
    "signal_score": "67-60",
-   "last_score": "118-102"
+   "last_score": "124-108"
   },
   "bb_1868520|BB_Q4_FARK_ALT": {
    "key": "bb_1868520|BB_Q4_FARK_ALT",
@@ -1160,7 +1163,7 @@
    ],
    "created": "2026-11-15T03:01:02.205958+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 239,
    "sent": false,
    "direction": "under",
@@ -1185,14 +1188,14 @@
    "created": "2026-11-15T03:10:30.808309+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 220,
+   "last_total": 232,
    "sent": false,
    "direction": "under",
    "base": 189,
    "n": 1,
    "ref": 63.0,
    "signal_score": "103-86",
-   "last_score": "118-102"
+   "last_score": "124-108"
   }
  }
 }
