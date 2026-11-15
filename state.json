@@ -1365,14 +1365,14 @@
    "created": "2026-11-15T10:50:35.351781+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 101,
+   "last_total": 118,
    "sent": true,
    "direction": "over",
    "base": 66,
    "n": 2,
    "ref": 33.0,
    "signal_score": "31-35",
-   "last_score": "36-65"
+   "last_score": "44-74"
   },
   "bb_1895371|BB_Q1_DUSUK_UST": {
    "key": "bb_1895371|BB_Q1_DUSUK_UST",
@@ -1389,14 +1389,14 @@
    "created": "2026-11-15T11:20:33.109525+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 34,
+   "last_total": 41,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "21-10",
-   "last_score": "22-12"
+   "last_score": "22-19"
   },
   "fb_1815476|FB_IY2_00": {
    "key": "fb_1815476|FB_IY2_00",
@@ -1437,14 +1437,14 @@
    "created": "2026-11-15T11:25:22.942513+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 61,
+   "last_total": 69,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "25-36",
-   "last_score": "25-36"
+   "last_score": "28-41"
   },
   "bb_1867879|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867879|BB_TEMPO_DUSUSU_ALT",
@@ -1461,14 +1461,14 @@
    "created": "2026-11-15T11:25:23.259574+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 51,
+   "last_total": 66,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "27-24",
-   "last_score": "27-24"
+   "last_score": "38-28"
   },
   "bb_1861253|BB_Q4_FARK_ALT": {
    "key": "bb_1861253|BB_Q4_FARK_ALT",
@@ -1485,14 +1485,38 @@
    "created": "2026-11-15T11:25:23.562828+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 101,
+   "last_total": 118,
    "sent": true,
    "direction": "under",
    "base": 101,
    "n": 1,
    "ref": 33.666666666666664,
    "signal_score": "36-65",
-   "last_score": "36-65"
+   "last_score": "44-74"
+  },
+  "fb_1814863|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1814863|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1814863",
+   "match": "Barbastro - Arnedo",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-15T11:30:42.939122+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
