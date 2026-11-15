@@ -5,66 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1916113",
-   "Pids": {
-    "112": "SBTE_2_1029715796",
-    "8": "1916113"
-   },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 2,
-    "aggScoreTeam2": 3
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 45,
-      "Nm": 2
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "2",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "353829",
-     "Nm": "Gimnasia y Esgrima de Chivilcoy",
-     "Img": "enet/1723190.png",
-     "Abr": "GIM"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5238",
-     "Nm": "CA Douglas Haig",
-     "Img": "enet/213541.png",
-     "Abr": "DOU"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794779721250,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Quarter Finals",
-   "Awt": 0,
-   "Et": 1,
-   "Esd": 20261115210000,
-   "EO": 2954100751,
-   "EOX": 2954100751,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1915354",
    "Pids": {
     "8": "1915354"
@@ -95,8 +35,12 @@
      "Sc": "00005b"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "50'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794780011180,
+    "RTm": 2940000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "5",
