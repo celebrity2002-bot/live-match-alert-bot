@@ -8357,14 +8357,14 @@
    "created": "2026-11-15T20:15:40.514901+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "3-1"
+   "last_score": "4-1"
   },
   "fb_1915353|FB_GEC_GOL": {
    "key": "fb_1915353|FB_GEC_GOL",
@@ -8513,14 +8513,14 @@
    "created": "2026-11-15T21:01:00.007800+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "3-1"
+   "last_score": "4-1"
   },
   "fb_1738308|FB_GERIDEN_FARK2": {
    "key": "fb_1738308|FB_GERIDEN_FARK2",
@@ -8585,14 +8585,14 @@
    "created": "2026-11-15T21:10:35.037890+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "2-1"
   },
   "fb_1738344|FB_GERIDEN_FARK2": {
    "key": "fb_1738344|FB_GERIDEN_FARK2",
@@ -8633,14 +8633,14 @@
    "created": "2026-11-15T21:23:22.190751+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1914759|FB_TEK_FARK_70": {
    "key": "fb_1914759|FB_TEK_FARK_70",
@@ -8657,14 +8657,14 @@
    "created": "2026-11-15T21:23:22.512066+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1738308|FB_GEC_GOL": {
    "key": "fb_1738308|FB_GEC_GOL",
@@ -8729,14 +8729,14 @@
    "created": "2026-11-15T21:25:24.871617+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1916536|FB_TEK_FARK_70": {
    "key": "fb_1916536|FB_TEK_FARK_70",
@@ -8751,6 +8751,126 @@
     1.85
    ],
    "created": "2026-11-15T21:25:25.240406+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "3-1"
+  },
+  "fb_1914759|FB_GERIDEN_FARK2": {
+   "key": "fb_1914759|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1914759",
+   "match": "Godoy Cruz - Tristan Suarez",
+   "league": "Argentina Primera Nacional: Championship Play-off",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T21:30:41.608377+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": false,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-1",
+   "last_score": "3-1"
+  },
+  "fb_1916536|FB_GERIDEN_FARK2": {
+   "key": "fb_1916536|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1916536",
+   "match": "Godoy Cruz - Tristan Suarez",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T21:30:41.608453+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": false,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-1",
+   "last_score": "3-1"
+  },
+  "fb_1916113|FB_GEC_GOL": {
+   "key": "fb_1916113|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1916113",
+   "match": "Gimnasia y Esgrima de Chivilcoy - CA Douglas Haig",
+   "league": "Argentina Federal A: Promotion Play-off",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T21:30:41.608497+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1916113|FB_TEK_FARK_70": {
+   "key": "fb_1916113|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1916113",
+   "match": "Gimnasia y Esgrima de Chivilcoy - CA Douglas Haig",
+   "league": "Argentina Federal A: Promotion Play-off",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T21:30:41.956147+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1915354|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1915354|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1915354",
+   "match": "Envigado - Union Magdalena",
+   "league": "Colombia Primera B: Clausura: Play-off: Group A",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-15T21:30:42.293150+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 3,
