@@ -79,11 +79,15 @@
      "Sc": "fcd404"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "47'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794755091948,
+    "RTm": 2760000
+   },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "League C Group 2",
+   "ErnInf": "6",
    "Et": 1,
    "Esd": 20261115150000,
    "EO": 807322495,
@@ -166,8 +170,12 @@
      "Sc": "034ea1"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "47'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794755096757,
+    "RTm": 2760000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
@@ -252,8 +260,12 @@
      "Fc": "0066cc"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "46'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794755021380,
+    "RTm": 2700000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
