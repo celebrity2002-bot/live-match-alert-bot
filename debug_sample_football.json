@@ -75,102 +75,21 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "87'",
+   "Eps": "90+2'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794770411277,
-    "RTm": 5160000
+    "ATm": 1794770711119,
+    "RTm": 5400000,
+    "ITm": 60000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
    "Et": 1,
+   "Eit": "3",
    "Esd": 20261115183000,
    "EO": 807289727,
    "EOX": 807289727,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1811142",
-   "Pids": {
-    "112": "SBTE_2_1028208973",
-    "8": "1811142"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "4d6mznn7kmaepkd5howat4e8k",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "3786",
-     "Nm": "Eibar",
-     "Img": "enet/8372.png",
-     "NewsTag": "/team/eibar-2021020913320920836-200/",
-     "Abr": "EIB",
-     "Fc": "0057ae",
-     "Sc": "ff0000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3434",
-     "Nm": "Cadiz",
-     "Img": "enet/8385.png",
-     "NewsTag": "/team/cadiz-2021020913320920836-715/",
-     "Abr": "CCF",
-     "Fc": "fde607",
-     "Sc": "0045a7"
-    }
-   ],
-   "Eps": "90+1'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794770411391,
-    "RTm": 5400000,
-    "ITm": 0
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "14",
-   "Et": 1,
-   "Esd": 20261115183000,
-   "EO": 807322495,
-   "EOX": 807322495,
    "Spid": 1,
    "Pid": 8
   },
@@ -215,19 +134,78 @@
      "Abr": "COL"
     }
    ],
-   "Eps": "54'",
+   "Eps": "59'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794770396300,
-    "RTm": 3180000
+    "ATm": 1794770696291,
+    "RTm": 3480000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "1/8",
    "Et": 1,
    "Esd": 20261115190000,
-   "EO": 2417229935,
-   "EOX": 2417229935,
+   "EO": 2417229951,
+   "EOX": 2417229951,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1916109",
+   "Pids": {
+    "112": "SBTE_2_1029715795",
+    "8": "1916109"
+   },
+   "seriesInfo": {
+    "totalLegs": 2,
+    "currentLeg": 2,
+    "aggScoreTeam1": 3,
+    "aggScoreTeam2": 0
+   },
+   "Inc-f": {
+    "2": [
+     {
+      "IT": 45,
+      "Nm": 2
+     }
+    ]
+   },
+   "Tr1": "2",
+   "Tr2": "0",
+   "Trh1": "1",
+   "Trh2": "0",
+   "Tr1OR": "2",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "5222",
+     "Nm": "Club Cipolletti",
+     "Img": "enet/213539.png",
+     "Abr": "CLU"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "12357",
+     "Nm": "Juventud Antoniana",
+     "Img": "enet/213600.png",
+     "Abr": "JUV"
+    }
+   ],
+   "Eps": "67'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794770711353,
+    "RTm": 3960000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Quarter Finals",
+   "Awt": 0,
+   "Et": 1,
+   "Esd": 20261115190000,
+   "EO": 2954100751,
+   "EOX": 2954100751,
    "Spid": 1,
    "Pid": 8
   }
