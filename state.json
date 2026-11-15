@@ -5684,7 +5684,7 @@
    ],
    "created": "2026-11-15T17:00:57.157435+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 194,
    "sent": true,
    "direction": "under",
@@ -6168,14 +6168,14 @@
    "created": "2026-11-15T17:20:38.416750+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "26-26",
-   "last_score": "85-81"
+   "last_score": "88-81"
   },
   "fb_1850315|FB_11_IY2": {
    "key": "fb_1850315|FB_11_IY2",
@@ -6837,14 +6837,14 @@
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 148,
+   "last_total": 149,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "33-22",
-   "last_score": "86-62"
+   "last_score": "86-63"
   },
   "fb_1815165|FB_GERIDEN_FARK2": {
    "key": "fb_1815165|FB_GERIDEN_FARK2",
@@ -6969,14 +6969,14 @@
    "created": "2026-11-15T17:50:30.878330+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 108,
    "n": 2,
    "ref": 54.0,
    "signal_score": "62-46",
-   "last_score": "85-81"
+   "last_score": "88-81"
   },
   "bb_1861272|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1861272|BB_TEMPO_DUSUSU_ALT",
@@ -6993,14 +6993,14 @@
    "created": "2026-11-15T17:50:31.473450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 101,
+   "last_total": 108,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "54-47"
+   "last_score": "58-50"
   },
   "fb_1814051|FB_IY2_00": {
    "key": "fb_1814051|FB_IY2_00",
@@ -7146,14 +7146,14 @@
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 93,
+   "last_total": 104,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "28-24",
-   "last_score": "48-45"
+   "last_score": "56-48"
   },
   "fb_1850315|FB_GEC_GOL": {
    "key": "fb_1850315|FB_GEC_GOL",
@@ -7409,14 +7409,14 @@
    "created": "2026-11-15T18:10:31.162108+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 148,
+   "last_total": 149,
    "sent": true,
    "direction": "under",
    "base": 102,
    "n": 2,
    "ref": 51.0,
    "signal_score": "61-41",
-   "last_score": "86-62"
+   "last_score": "86-63"
   },
   "fb_1856116|FB_GERIDEN_FARK2": {
    "key": "fb_1856116|FB_GERIDEN_FARK2",
@@ -7556,14 +7556,14 @@
    "created": "2026-11-15T18:25:22.516958+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 95,
+   "last_total": 103,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "30-29",
-   "last_score": "55-40"
+   "last_score": "60-43"
   },
   "fb_1814051|FB_TEK_FARK_70": {
    "key": "fb_1814051|FB_TEK_FARK_70",
@@ -7628,14 +7628,38 @@
    "created": "2026-11-15T18:40:31.922203+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 69,
+   "last_total": 76,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "34-35",
-   "last_score": "34-35"
+   "last_score": "37-39"
+  },
+  "bb_1853693|BB_Q4_FARK_ALT": {
+   "key": "bb_1853693|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1853693",
+   "match": "Niners Chemnitz - Basketball Loewen Braunschweig",
+   "league": "Germany BBL",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-15T18:45:32.032902+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 149,
+   "sent": false,
+   "direction": "under",
+   "base": 149,
+   "n": 1,
+   "ref": 49.666666666666664,
+   "signal_score": "86-63",
+   "last_score": "86-63"
   }
  }
 }
