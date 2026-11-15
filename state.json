@@ -1365,14 +1365,14 @@
    "created": "2026-11-15T10:50:35.351781+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 148,
+   "last_total": 149,
    "sent": true,
    "direction": "over",
    "base": 66,
    "n": 2,
    "ref": 33.0,
    "signal_score": "31-35",
-   "last_score": "56-92"
+   "last_score": "57-92"
   },
   "bb_1895371|BB_Q1_DUSUK_UST": {
    "key": "bb_1895371|BB_Q1_DUSUK_UST",
@@ -1389,14 +1389,14 @@
    "created": "2026-11-15T11:20:33.109525+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 64,
+   "last_total": 66,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "21-10",
-   "last_score": "33-31"
+   "last_score": "35-31"
   },
   "fb_1815476|FB_IY2_00": {
    "key": "fb_1815476|FB_IY2_00",
@@ -1437,14 +1437,14 @@
    "created": "2026-11-15T11:25:22.942513+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 95,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "25-36",
-   "last_score": "40-47"
+   "last_score": "43-52"
   },
   "bb_1867879|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867879|BB_TEMPO_DUSUSU_ALT",
@@ -1461,14 +1461,14 @@
    "created": "2026-11-15T11:25:23.259574+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 97,
+   "last_total": 105,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "27-24",
-   "last_score": "54-43"
+   "last_score": "60-45"
   },
   "bb_1861253|BB_Q4_FARK_ALT": {
    "key": "bb_1861253|BB_Q4_FARK_ALT",
@@ -1485,14 +1485,14 @@
    "created": "2026-11-15T11:25:23.562828+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 148,
+   "last_total": 149,
    "sent": true,
    "direction": "under",
    "base": 101,
    "n": 1,
    "ref": 33.666666666666664,
    "signal_score": "36-65",
-   "last_score": "56-92"
+   "last_score": "57-92"
   },
   "fb_1814863|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1814863|FB_COK_GOLLU_ERKEN",
@@ -1541,6 +1541,126 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-3"
+  },
+  "fb_1814503|FB_IY2_00": {
+   "key": "fb_1814503|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814503",
+   "match": "Atletico Madrid B - CD Teruel",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T11:45:39.270009+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1814859|FB_IY2_00": {
+   "key": "fb_1814859|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814859",
+   "match": "Naxara CD - CE Manresa",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T11:45:39.807510+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1815476|FB_00_60_70": {
+   "key": "fb_1815476|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1815476",
+   "match": "Deportiva Minera - Poblense",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T11:45:40.287859+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1815477|FB_GERIDEN_FARK2": {
+   "key": "fb_1815477|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1815477",
+   "match": "Lorca Deportiva - Mallorca B",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T11:45:40.774912+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1816091|FB_IY2_00": {
+   "key": "fb_1816091|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1816091",
+   "match": "Real Valladolid Promesas - Numancia",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T11:45:41.257190+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
