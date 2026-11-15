@@ -1392,14 +1392,14 @@
    "created": "2026-11-15T11:20:33.109525+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 122,
+   "last_total": 129,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "21-10",
-   "last_score": "69-53"
+   "last_score": "72-57"
   },
   "fb_1815476|FB_IY2_00": {
    "key": "fb_1815476|FB_IY2_00",
@@ -1443,14 +1443,14 @@
    "created": "2026-11-15T11:25:22.942513+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 152,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "25-36",
-   "last_score": "71-81"
+   "last_score": "78-88"
   },
   "bb_1867879|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867879|BB_TEMPO_DUSUSU_ALT",
@@ -1467,14 +1467,14 @@
    "created": "2026-11-15T11:25:23.259574+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 189,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "27-24",
-   "last_score": "94-81"
+   "last_score": "101-88"
   },
   "bb_1861253|BB_Q4_FARK_ALT": {
    "key": "bb_1861253|BB_Q4_FARK_ALT",
@@ -1566,14 +1566,14 @@
    "created": "2026-11-15T11:45:39.270009+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "1-0"
   },
   "fb_1814859|FB_IY2_00": {
    "key": "fb_1814859|FB_IY2_00",
@@ -1668,14 +1668,14 @@
    "created": "2026-11-15T11:45:41.257190+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1816086|FB_IY2_00": {
    "key": "fb_1816086|FB_IY2_00",
@@ -1716,14 +1716,14 @@
    "created": "2026-11-15T11:50:31.607394+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 122,
+   "last_total": 129,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "35-35",
-   "last_score": "69-53"
+   "last_score": "72-57"
   },
   "bb_1867879|BB_HT_YUKSEK_ALT": {
    "key": "bb_1867879|BB_HT_YUKSEK_ALT",
@@ -1740,14 +1740,14 @@
    "created": "2026-11-15T11:50:32.264648+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 189,
    "sent": true,
    "direction": "under",
    "base": 111,
    "n": 2,
    "ref": 55.5,
    "signal_score": "63-48",
-   "last_score": "94-81"
+   "last_score": "101-88"
   },
   "bb_1867868|BB_Q1_DUSUK_UST": {
    "key": "bb_1867868|BB_Q1_DUSUK_UST",
@@ -1764,14 +1764,14 @@
    "created": "2026-11-15T11:50:32.793230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 92,
+   "last_total": 103,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "14-22",
-   "last_score": "50-42"
+   "last_score": "57-46"
   },
   "fb_1816748|FB_IY2_00": {
    "key": "fb_1816748|FB_IY2_00",
@@ -1812,14 +1812,14 @@
    "created": "2026-11-15T11:50:35.177762+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "bb_1867870|BB_HT_YUKSEK_ALT": {
    "key": "bb_1867870|BB_HT_YUKSEK_ALT",
@@ -1836,14 +1836,14 @@
    "created": "2026-11-15T11:55:23.067120+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 152,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 100,
    "n": 2,
    "ref": 50.0,
    "signal_score": "46-54",
-   "last_score": "71-81"
+   "last_score": "78-88"
   },
   "fb_1815473|FB_TEK_FARK_70": {
    "key": "fb_1815473|FB_TEK_FARK_70",
@@ -2271,14 +2271,14 @@
    "created": "2026-11-15T12:20:35.646012+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "1-0"
   },
   "fb_1814859|FB_TEK_FARK_70": {
    "key": "fb_1814859|FB_TEK_FARK_70",
@@ -2391,14 +2391,14 @@
    "created": "2026-11-15T12:25:27.785218+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1814862|FB_BERABERLIK_GEC": {
    "key": "fb_1814862|FB_BERABERLIK_GEC",
@@ -2415,14 +2415,14 @@
    "created": "2026-11-15T12:25:28.168126+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1816085|FB_GEC_GOL": {
    "key": "fb_1816085|FB_GEC_GOL",
@@ -2487,14 +2487,14 @@
    "created": "2026-11-15T12:25:28.168498+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "bb_1895376|BB_Q4_FARK_ALT": {
    "key": "bb_1895376|BB_Q4_FARK_ALT",
@@ -2511,14 +2511,14 @@
    "created": "2026-11-15T12:26:34.550115+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 133,
+   "last_total": 138,
    "sent": true,
    "direction": "under",
    "base": 114,
    "n": 1,
    "ref": 38.0,
    "signal_score": "66-48",
-   "last_score": "75-58"
+   "last_score": "76-62"
   },
   "fb_1814500|FB_TEK_FARK_70": {
    "key": "fb_1814500|FB_TEK_FARK_70",
@@ -2559,14 +2559,14 @@
    "created": "2026-11-15T12:26:36.909998+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1814045|FB_GEC_GOL": {
    "key": "fb_1814045|FB_GEC_GOL",
@@ -2703,14 +2703,14 @@
    "created": "2026-11-15T12:35:24.500374+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 189,
    "sent": false,
    "direction": "under",
    "base": 162,
    "n": 1,
    "ref": 54.0,
    "signal_score": "90-75",
-   "last_score": "94-81"
+   "last_score": "101-88"
   },
   "fb_1812154|FB_GERIDEN_FARK2": {
    "key": "fb_1812154|FB_GERIDEN_FARK2",
