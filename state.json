@@ -739,8 +739,8 @@
     1.6
    ],
    "created": "2026-11-14T23:55:24.925776+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -748,7 +748,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "2-0",
+   "final_total": 2,
+   "settled": "2026-11-15T01:20:32.878576+00:00",
+   "seg_avg": 2.0
   },
   "fb_1916719|FB_GERIDEN_FARK2": {
    "key": "fb_1916719|FB_GERIDEN_FARK2",
@@ -817,8 +820,8 @@
     1.85
    ],
    "created": "2026-11-15T00:35:22.888588+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -826,7 +829,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-0"
+   "last_score": "2-0",
+   "final_total": 2,
+   "settled": "2026-11-15T01:20:33.431503+00:00",
+   "seg_avg": 1.0
   },
   "bb_1868513|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868513|BB_TEMPO_DUSUSU_ALT",
@@ -865,8 +871,8 @@
     2.1
    ],
    "created": "2026-11-15T00:45:30.944853+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -874,7 +880,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-0",
+   "final_total": 2,
+   "settled": "2026-11-15T01:20:33.899987+00:00",
+   "seg_avg": 0.0
   },
   "fb_1708625|FB_TEK_FARK_70": {
    "key": "fb_1708625|FB_TEK_FARK_70",
@@ -939,14 +948,14 @@
    "created": "2026-11-15T01:10:31.794675+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 80,
+   "last_total": 87,
    "sent": true,
    "direction": "under",
    "base": 66,
    "n": 3,
    "ref": 66.0,
    "signal_score": "33-33",
-   "last_score": "41-39"
+   "last_score": "43-44"
   }
  }
 }
