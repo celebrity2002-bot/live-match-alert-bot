@@ -75,11 +75,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "67'",
+   "Eps": "72'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794769214358,
-    "RTm": 3960000
+    "ATm": 1794769511135,
+    "RTm": 4260000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -94,8 +94,8 @@
   {
    "Eid": "1811142",
    "Pids": {
-    "8": "1811142",
-    "112": "SBTE_2_1028208973"
+    "112": "SBTE_2_1028208973",
+    "8": "1811142"
    },
    "Media": {
     "112": [
@@ -130,11 +130,11 @@
     ]
    },
    "Tr1": "1",
-   "Tr2": "0",
+   "Tr2": "1",
    "Trh1": "0",
    "Trh2": "0",
    "Tr1OR": "1",
-   "Tr2OR": "0",
+   "Tr2OR": "1",
    "T1": [
     {
      "ID": "3786",
@@ -157,11 +157,11 @@
      "Sc": "0045a7"
     }
    ],
-   "Eps": "71'",
+   "Eps": "76'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794769211964,
-    "RTm": 4200000
+    "ATm": 1794769511438,
+    "RTm": 4500000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -174,15 +174,15 @@
    "Pid": 8
   },
   {
-   "Eid": "1814051",
+   "Eid": "1914757",
    "Pids": {
-    "8": "1814051",
-    "112": "SBTE_2_1029560800"
+    "112": "SBTE_2_1029729237",
+    "8": "1914757"
    },
    "Media": {
     "112": [
      {
-      "eventId": "29o275osk3jtoujg9jo4okvtg",
+      "eventId": "3l9apdik8e3gu3uqwbk245l3o",
       "provider": "UNKNOWN_PROVIDER",
       "type": "LIVE_STREAMING",
       "allowedCountries": [
@@ -192,63 +192,37 @@
      }
     ]
    },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 1037,
-      "Nm": 1,
-      "Sc": [
-       1,
-       0
-      ]
-     },
-     {
-      "IT": 1047,
-      "Nm": 2
-     }
-    ]
-   },
    "Tr1": "1",
    "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "0",
+   "Trh1": "1",
+   "Trh2": "1",
    "Tr1OR": "1",
    "Tr2OR": "1",
    "T1": [
     {
-     "ID": "2712",
-     "Nm": "Deportivo La Coruna W",
-     "Img": "enet/1077485.png",
-     "Abr": "DEP(W)",
-     "Fc": "57175E",
-     "Sc": "A38D44"
+     "ID": "6847",
+     "Nm": "Deportivo Moron",
+     "Img": "enet/213530.png",
+     "Abr": "DEP"
     }
    ],
    "T2": [
     {
-     "ID": "3391",
-     "Nm": "Barcelona W",
-     "Img": "enet/401657.png",
-     "Abr": "FCB(W)",
-     "Fc": "004D98",
-     "Sc": "A50044"
+     "ID": "5153",
+     "Nm": "Colegiales",
+     "Img": "enet/213535.png",
+     "Abr": "COL"
     }
    ],
-   "Eps": "90+14'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794769214412,
-    "RTm": 5400000,
-    "ITm": 780000
-   },
+   "Eps": "HT",
+   "Esid": 10,
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "Promotion Play-offs - 1st Round",
    "Et": 1,
-   "Eit": "8",
-   "Esd": 20261115180000,
-   "EO": 807190911,
-   "EOX": 807190911,
+   "Esd": 20261115190000,
+   "EO": 2417229935,
+   "EOX": 2417229935,
    "Spid": 1,
    "Pid": 8
   }

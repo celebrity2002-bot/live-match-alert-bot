@@ -6846,14 +6846,14 @@
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 169,
+   "last_total": 175,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "33-22",
-   "last_score": "96-73"
+   "last_score": "101-74"
   },
   "fb_1815165|FB_GERIDEN_FARK2": {
    "key": "fb_1815165|FB_GERIDEN_FARK2",
@@ -7005,14 +7005,14 @@
    "created": "2026-11-15T17:50:31.473450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 136,
+   "last_total": 144,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "72-64"
+   "last_score": "75-69"
   },
   "fb_1814051|FB_IY2_00": {
    "key": "fb_1814051|FB_IY2_00",
@@ -7028,7 +7028,7 @@
    ],
    "created": "2026-11-15T17:50:33.315460+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7132,8 +7132,8 @@
     1.6
    ],
    "created": "2026-11-15T17:50:35.541298+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7141,7 +7141,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T19:05:33.144965+00:00",
+   "seg_avg": 0.0
   },
   "bb_1884603|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1884603|BB_TEMPO_DUSUSU_ALT",
@@ -7158,14 +7161,14 @@
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 129,
+   "last_total": 131,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "28-24",
-   "last_score": "66-63"
+   "last_score": "67-64"
   },
   "fb_1850315|FB_GEC_GOL": {
    "key": "fb_1850315|FB_GEC_GOL",
@@ -7315,7 +7318,7 @@
    ],
    "created": "2026-11-15T18:00:52.177614+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7421,14 +7424,14 @@
    "created": "2026-11-15T18:10:31.162108+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 169,
+   "last_total": 175,
    "sent": true,
    "direction": "under",
    "base": 102,
    "n": 2,
    "ref": 51.0,
    "signal_score": "61-41",
-   "last_score": "96-73"
+   "last_score": "101-74"
   },
   "fb_1856116|FB_GERIDEN_FARK2": {
    "key": "fb_1856116|FB_GERIDEN_FARK2",
@@ -7470,8 +7473,8 @@
     2.1
    ],
    "created": "2026-11-15T18:15:35.031994+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7479,7 +7482,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-2",
+   "final_total": 2,
+   "settled": "2026-11-15T19:05:33.545817+00:00",
+   "seg_avg": 0.0
   },
   "fb_1811142|FB_IY2_00": {
    "key": "fb_1811142|FB_IY2_00",
@@ -7496,14 +7502,14 @@
    "created": "2026-11-15T18:20:32.208810+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1814871|FB_00_60_70": {
    "key": "fb_1814871|FB_00_60_70",
@@ -7518,8 +7524,8 @@
     2.0
    ],
    "created": "2026-11-15T18:20:32.735736+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7527,7 +7533,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T19:05:33.964602+00:00",
+   "seg_avg": 0.0
   },
   "fb_1815781|FB_GERIDEN_FARK2": {
    "key": "fb_1815781|FB_GERIDEN_FARK2",
@@ -7543,7 +7552,7 @@
    ],
    "created": "2026-11-15T18:20:33.076655+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7591,7 +7600,7 @@
    ],
    "created": "2026-11-15T18:25:24.201616+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7615,7 +7624,7 @@
    ],
    "created": "2026-11-15T18:30:47.472363+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7640,14 +7649,14 @@
    "created": "2026-11-15T18:40:31.922203+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 103,
+   "last_total": 113,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "34-35",
-   "last_score": "50-53"
+   "last_score": "56-57"
   },
   "bb_1853693|BB_Q4_FARK_ALT": {
    "key": "bb_1853693|BB_Q4_FARK_ALT",
@@ -7664,14 +7673,14 @@
    "created": "2026-11-15T18:45:32.032902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 169,
+   "last_total": 175,
    "sent": false,
    "direction": "under",
    "base": 149,
    "n": 1,
    "ref": 49.666666666666664,
    "signal_score": "86-63",
-   "last_score": "96-73"
+   "last_score": "101-74"
   },
   "fb_1811141|FB_GERIDEN_FARK2": {
    "key": "fb_1811141|FB_GERIDEN_FARK2",
@@ -7712,14 +7721,14 @@
    "created": "2026-11-15T18:50:41.070001+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1916883|FB_IY2_00": {
    "key": "fb_1916883|FB_IY2_00",
@@ -7784,14 +7793,14 @@
    "created": "2026-11-15T18:55:26.319349+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": false,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1914757|FB_11_IY2": {
    "key": "fb_1914757|FB_11_IY2",
@@ -7834,6 +7843,78 @@
    "missing_runs": 0,
    "last_total": 2,
    "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "bb_1884603|BB_Q4_YAKIN_UST": {
+   "key": "bb_1884603|BB_Q4_YAKIN_UST",
+   "sport": "basketball",
+   "match_id": "bb_1884603",
+   "match": "Crvena Zvezda Beograd - Cedevita Olimpija",
+   "league": "Adriatic ABA League: Group A",
+   "strategy": "BB_Q4_YAKIN_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T19:05:31.742864+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 131,
+   "sent": true,
+   "direction": "over",
+   "base": 131,
+   "n": 1,
+   "ref": 43.666666666666664,
+   "signal_score": "67-64",
+   "last_score": "67-64"
+  },
+  "fb_1811142|FB_GEC_GOL": {
+   "key": "fb_1811142|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1811142",
+   "match": "Eibar - Cadiz",
+   "league": "Spain LaLiga 2",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T19:05:33.144685+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1811142|FB_BERABERLIK_GEC": {
+   "key": "fb_1811142|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1811142",
+   "match": "Eibar - Cadiz",
+   "league": "Spain LaLiga 2",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T19:05:33.144758+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
