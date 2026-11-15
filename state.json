@@ -852,14 +852,14 @@
    "created": "2026-11-15T00:45:29.069705+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 216,
+   "last_total": 219,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "31-36",
-   "last_score": "103-113"
+   "last_score": "105-114"
   },
   "fb_1914974|FB_GERIDEN_FARK2": {
    "key": "fb_1914974|FB_GERIDEN_FARK2",
@@ -930,14 +930,14 @@
    "created": "2026-11-15T01:10:31.303806+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 216,
+   "last_total": 219,
    "sent": true,
    "direction": "under",
    "base": 107,
    "n": 2,
    "ref": 53.5,
    "signal_score": "51-56",
-   "last_score": "103-113"
+   "last_score": "105-114"
   },
   "bb_1868520|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868520|BB_TEMPO_DUSUSU_ALT",
@@ -954,14 +954,14 @@
    "created": "2026-11-15T01:10:31.794675+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 204,
+   "last_total": 207,
    "sent": true,
    "direction": "under",
    "base": 66,
    "n": 3,
    "ref": 66.0,
    "signal_score": "33-33",
-   "last_score": "113-91"
+   "last_score": "113-94"
   },
   "bb_1868520|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868520|BB_HT_YUKSEK_ALT",
@@ -978,14 +978,14 @@
    "created": "2026-11-15T01:40:30.488509+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 204,
+   "last_total": 207,
    "sent": true,
    "direction": "under",
    "base": 124,
    "n": 2,
    "ref": 62.0,
    "signal_score": "71-53",
-   "last_score": "113-91"
+   "last_score": "113-94"
   },
   "bb_1868544|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868544|BB_TEMPO_DUSUSU_ALT",
@@ -1122,14 +1122,14 @@
    "created": "2026-11-15T02:30:45.364467+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 204,
+   "last_total": 207,
    "sent": false,
    "direction": "under",
    "base": 196,
    "n": 1,
    "ref": 65.33333333333333,
    "signal_score": "113-91",
-   "last_score": "113-91"
+   "last_score": "113-94"
   }
  }
 }
