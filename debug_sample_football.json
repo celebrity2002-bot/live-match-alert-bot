@@ -75,11 +75,11 @@
      "Abr": "PIR"
     }
    ],
-   "Eps": "5'",
+   "Eps": "10'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794711876189,
-    "RTm": 240000
+    "ATm": 1794712176219,
+    "RTm": 540000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -152,6 +152,12 @@
     "aggScoreTeam1": 0,
     "aggScoreTeam2": 0
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "12741",
@@ -168,9 +174,13 @@
      "Abr": "FCJ(W)"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "4'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794712181412,
+    "RTm": 180000
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Quarter Finals",
    "Awt": 0,
