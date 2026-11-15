@@ -6845,7 +6845,7 @@
    ],
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -7005,14 +7005,14 @@
    "created": "2026-11-15T17:50:31.473450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 145,
+   "last_total": 150,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "75-70"
+   "last_score": "77-73"
   },
   "fb_1814051|FB_IY2_00": {
    "key": "fb_1814051|FB_IY2_00",
@@ -7027,8 +7027,8 @@
     1.6
    ],
    "created": "2026-11-15T17:50:33.315460+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7036,7 +7036,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:15:37.411937+00:00",
+   "seg_avg": 2.0
   },
   "fb_1855365|FB_GERIDEN_FARK2": {
    "key": "fb_1855365|FB_GERIDEN_FARK2",
@@ -7317,8 +7320,8 @@
     1.6
    ],
    "created": "2026-11-15T18:00:52.177614+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7326,7 +7329,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T19:15:37.871646+00:00",
+   "seg_avg": 0.0
   },
   "fb_1855357|FB_GEC_GOL": {
    "key": "fb_1855357|FB_GEC_GOL",
@@ -7423,7 +7429,7 @@
    ],
    "created": "2026-11-15T18:10:31.162108+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -7580,14 +7586,14 @@
    "created": "2026-11-15T18:25:22.516958+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 114,
+   "last_total": 126,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "30-29",
-   "last_score": "64-50"
+   "last_score": "70-56"
   },
   "fb_1814051|FB_TEK_FARK_70": {
    "key": "fb_1814051|FB_TEK_FARK_70",
@@ -7602,8 +7608,8 @@
     1.85
    ],
    "created": "2026-11-15T18:25:24.201616+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7611,7 +7617,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:15:38.401083+00:00",
+   "seg_avg": 1.0
   },
   "fb_1814048|FB_00_60_70": {
    "key": "fb_1814048|FB_00_60_70",
@@ -7626,8 +7635,8 @@
     2.0
    ],
    "created": "2026-11-15T18:30:47.472363+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7635,7 +7644,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T19:15:38.999769+00:00",
+   "seg_avg": 0.0
   },
   "bb_1868517|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868517|BB_TEMPO_DUSUSU_ALT",
@@ -7675,7 +7687,7 @@
    ],
    "created": "2026-11-15T18:45:32.032902+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 179,
    "sent": false,
    "direction": "under",
@@ -7772,14 +7784,14 @@
    "created": "2026-11-15T18:55:24.564983+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 114,
+   "last_total": 126,
    "sent": true,
    "direction": "under",
    "base": 112,
    "n": 2,
    "ref": 56.0,
    "signal_score": "62-50",
-   "last_score": "64-50"
+   "last_score": "70-56"
   },
   "fb_1811142|FB_TEK_FARK_70": {
    "key": "fb_1811142|FB_TEK_FARK_70",
@@ -7844,14 +7856,14 @@
    "created": "2026-11-15T19:00:54.040771+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "bb_1884603|BB_Q4_YAKIN_UST": {
    "key": "bb_1884603|BB_Q4_YAKIN_UST",
@@ -7964,14 +7976,14 @@
    "created": "2026-11-15T19:10:34.989363+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "fb_1814497|FB_BERABERLIK_GEC": {
    "key": "fb_1814497|FB_BERABERLIK_GEC",
@@ -7988,14 +8000,62 @@
    "created": "2026-11-15T19:10:35.347045+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
+  },
+  "fb_1916109|FB_GERIDEN_FARK2": {
+   "key": "fb_1916109|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1916109",
+   "match": "Club Cipolletti - Juventud Antoniana",
+   "league": "Argentina Federal A: Promotion Play-off",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T19:15:36.783923+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1814497|FB_TEK_FARK_70": {
+   "key": "fb_1814497|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1814497",
+   "match": "Real Murcia - Alcorcon",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T19:15:37.411834+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
