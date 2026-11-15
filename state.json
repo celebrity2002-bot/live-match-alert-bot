@@ -7006,8 +7006,8 @@
     1.55
    ],
    "created": "2026-11-15T17:50:31.473450+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 152,
    "sent": true,
    "direction": "under",
@@ -7015,7 +7015,10 @@
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "77-75"
+   "last_score": "77-75",
+   "final_total": 152,
+   "settled": "2026-11-15T19:31:15.600379+00:00",
+   "seg_avg": 34.0
   },
   "fb_1814051|FB_IY2_00": {
    "key": "fb_1814051|FB_IY2_00",
@@ -7166,7 +7169,7 @@
    ],
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 164,
    "sent": true,
    "direction": "under",
@@ -7512,8 +7515,8 @@
     1.6
    ],
    "created": "2026-11-15T18:20:32.208810+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7521,7 +7524,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:31:17.808611+00:00",
+   "seg_avg": 2.0
   },
   "fb_1814871|FB_00_60_70": {
    "key": "fb_1814871|FB_00_60_70",
@@ -7720,7 +7726,7 @@
    ],
    "created": "2026-11-15T18:50:40.552461+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7743,8 +7749,8 @@
     2.0
    ],
    "created": "2026-11-15T18:50:41.070001+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7752,7 +7758,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:31:18.214713+00:00",
+   "seg_avg": 2.0
   },
   "fb_1916883|FB_IY2_00": {
    "key": "fb_1916883|FB_IY2_00",
@@ -7815,8 +7824,8 @@
     1.85
    ],
    "created": "2026-11-15T18:55:26.319349+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -7824,7 +7833,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:31:18.653842+00:00",
+   "seg_avg": 1.0
   },
   "fb_1914757|FB_11_IY2": {
    "key": "fb_1914757|FB_11_IY2",
@@ -7888,7 +7900,7 @@
    ],
    "created": "2026-11-15T19:05:31.742864+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 164,
    "sent": true,
    "direction": "over",
@@ -7911,8 +7923,8 @@
     1.7
    ],
    "created": "2026-11-15T19:05:33.144685+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -7920,7 +7932,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:31:18.653920+00:00",
+   "seg_avg": 0.0
   },
   "fb_1811142|FB_BERABERLIK_GEC": {
    "key": "fb_1811142|FB_BERABERLIK_GEC",
@@ -7935,8 +7950,8 @@
     1.75
    ],
    "created": "2026-11-15T19:05:33.144758+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -7944,7 +7959,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T19:31:18.653939+00:00",
+   "seg_avg": 0.0
   },
   "bb_1868517|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868517|BB_HT_YUKSEK_ALT",
@@ -8105,14 +8123,14 @@
    "created": "2026-11-15T19:30:41.481166+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 124,
+   "last_total": 126,
    "sent": true,
    "direction": "under",
    "base": 118,
    "n": 1,
    "ref": 39.333333333333336,
    "signal_score": "51-73",
-   "last_score": "51-73"
+   "last_score": "51-75"
   },
   "fb_1916883|FB_00_60_70": {
    "key": "fb_1916883|FB_00_60_70",
@@ -8137,6 +8155,54 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1914757|FB_GEC_GOL": {
+   "key": "fb_1914757|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1914757",
+   "match": "Deportivo Moron - Colegiales",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T19:31:17.298932+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1914757|FB_BERABERLIK_GEC": {
+   "key": "fb_1914757|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1914757",
+   "match": "Deportivo Moron - Colegiales",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T19:31:17.808237+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
   }
  }
 }
