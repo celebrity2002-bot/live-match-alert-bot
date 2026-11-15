@@ -3093,14 +3093,14 @@
    "created": "2026-11-15T12:50:29.937699+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 150,
+   "last_total": 158,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "26-28",
-   "last_score": "75-75"
+   "last_score": "79-79"
   },
   "bb_1867868|BB_Q4_YAKIN_UST": {
    "key": "bb_1867868|BB_Q4_YAKIN_UST",
@@ -3359,7 +3359,7 @@
    ],
    "created": "2026-11-15T13:29:40.951902+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -3384,14 +3384,14 @@
    "created": "2026-11-15T13:55:31.347400+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 150,
+   "last_total": 158,
    "sent": true,
    "direction": "over",
    "base": 135,
    "n": 1,
    "ref": 45.0,
    "signal_score": "69-66",
-   "last_score": "75-75"
+   "last_score": "79-79"
   },
   "fb_1827127|FB_GEC_GOL": {
    "key": "fb_1827127|FB_GEC_GOL",
@@ -3408,14 +3408,14 @@
    "created": "2026-11-15T14:00:59.388036+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "1-3"
   },
   "fb_1827127|FB_TEK_FARK_70": {
    "key": "fb_1827127|FB_TEK_FARK_70",
@@ -3432,14 +3432,62 @@
    "created": "2026-11-15T14:00:59.962278+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "1-3"
+  },
+  "fb_1827127|FB_GERIDEN_FARK2": {
+   "key": "fb_1827127|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1827127",
+   "match": "Bremer SV - Eimsbutteler TV",
+   "league": "Germany Regionalliga Nord",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T14:05:32.790986+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": false,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-3",
+   "last_score": "1-3"
+  },
+  "fb_1813696|FB_IY2_00": {
+   "key": "fb_1813696|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1813696",
+   "match": "Zamora - Real Aviles Industrial",
+   "league": "Spain Primera Division RFEF: Group 1",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T14:05:32.791180+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
