@@ -3714,14 +3714,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "76-85"
+   "last_score": "81-88"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -3899,7 +3899,7 @@
    ],
    "created": "2026-11-15T14:50:33.009621+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -3949,8 +3949,8 @@
     1.6
    ],
    "created": "2026-11-15T14:50:33.885807+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -3958,7 +3958,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-3"
+   "last_score": "2-3",
+   "final_total": 5,
+   "settled": "2026-11-15T16:05:25.241633+00:00",
+   "seg_avg": 5.0
   },
   "fb_1855738|FB_00_60_70": {
    "key": "fb_1855738|FB_00_60_70",
@@ -4164,14 +4167,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "76-85"
+   "last_score": "81-88"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4268,7 +4271,7 @@
    ],
    "created": "2026-11-15T15:20:31.823056+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -4291,8 +4294,8 @@
     2.1
    ],
    "created": "2026-11-15T15:20:32.209136+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -4300,7 +4303,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-0",
+   "final_total": 2,
+   "settled": "2026-11-15T16:05:25.770733+00:00",
+   "seg_avg": 0.0
   },
   "fb_1850507|FB_00_60_70": {
    "key": "fb_1850507|FB_00_60_70",
@@ -4478,7 +4484,7 @@
    ],
    "created": "2026-11-15T15:25:25.221370+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -4501,8 +4507,8 @@
     1.85
    ],
    "created": "2026-11-15T15:25:25.670932+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -4510,7 +4516,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-3"
+   "last_score": "2-3",
+   "final_total": 5,
+   "settled": "2026-11-15T16:05:26.213830+00:00",
+   "seg_avg": 4.0
   },
   "bb_1853678|BB_Q4_FARK_ALT": {
    "key": "bb_1853678|BB_Q4_FARK_ALT",
@@ -4526,7 +4535,7 @@
    ],
    "created": "2026-11-15T15:30:44.122621+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 159,
    "sent": true,
    "direction": "under",
@@ -4604,7 +4613,7 @@
    ],
    "created": "2026-11-15T15:35:23.398211+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": false,
    "direction": "over",
@@ -4654,8 +4663,8 @@
     2.1
    ],
    "created": "2026-11-15T15:35:23.855455+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": false,
    "direction": "over",
@@ -4663,7 +4672,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-3"
+   "last_score": "2-3",
+   "final_total": 5,
+   "settled": "2026-11-15T16:05:26.625438+00:00",
+   "seg_avg": 3.0
   },
   "bb_1853682|BB_Q4_FARK_ALT": {
    "key": "bb_1853682|BB_Q4_FARK_ALT",
@@ -4679,7 +4691,7 @@
    ],
    "created": "2026-11-15T15:45:29.763323+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 171,
    "sent": true,
    "direction": "under",

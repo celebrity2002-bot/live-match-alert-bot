@@ -46,6 +46,8 @@
    "Tr2": "0",
    "Trh1": "0",
    "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "3640",
@@ -67,81 +69,15 @@
      "Sc": "004b9d"
     }
    ],
-   "Eps": "45+1'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794758440979,
-    "RTm": 2700000,
-    "ITm": 0
-   },
+   "Eps": "HT",
+   "Esid": 10,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
    "Et": 1,
-   "Eit": "2",
    "Esd": 20261115161500,
    "EO": 874431343,
    "EOX": 874431343,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1850506",
-   "Pids": {
-    "112": "SBTE_2_1028601265",
-    "8": "1850506"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "1ikwz17i31qptbfmzhhetblec",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "5",
-   "Trh1": "0",
-   "Trh2": "2",
-   "Tr1OR": "0",
-   "Tr2OR": "5",
-   "T1": [
-    {
-     "ID": "82861",
-     "Nm": "Burnley W",
-     "Img": "teambadge/burnley-2024.png",
-     "Abr": "BUR(W)"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "82839",
-     "Nm": "Southampton W",
-     "Img": "enet/1134185.png",
-     "Abr": "SOU(W)",
-     "Fc": "D71920",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+10'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794758425740,
-    "RTm": 5400000,
-    "ITm": 540000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "8",
-   "Et": 1,
-   "Esd": 20261115150000,
-   "EO": 806895999,
-   "EOX": 806895999,
    "Spid": 1,
    "Pid": 8
   },
@@ -199,6 +135,63 @@
    "Esd": 20261115160000,
    "EO": 807158127,
    "EOX": 807158127,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1834793",
+   "Pids": {
+    "112": "SBTE_2_1028430595",
+    "8": "1834793"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "8pqml0ivcj8u112ft3fj3tjbo",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "1",
+   "Trh1": "0",
+   "Trh2": "1",
+   "Tr1OR": "0",
+   "Tr2OR": "1",
+   "T1": [
+    {
+     "ID": "185368",
+     "Nm": "1. FC Nuremberg W",
+     "Img": "enet/1513038.png",
+     "Abr": "NUR(W)"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "6516",
+     "Nm": "FC Cologne W",
+     "Img": "enet/672088.png",
+     "Abr": "CGN(W)"
+    }
+   ],
+   "Eps": "48'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794758672277,
+    "RTm": 2820000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "10",
+   "Et": 1,
+   "Esd": 20261115160000,
+   "EO": 807157871,
+   "EOX": 807157871,
    "Spid": 1,
    "Pid": 8
   }
