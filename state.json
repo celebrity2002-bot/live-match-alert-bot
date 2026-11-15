@@ -7681,7 +7681,7 @@
    ],
    "created": "2026-11-15T18:40:31.922203+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 245,
    "sent": true,
    "direction": "under",
@@ -8002,7 +8002,7 @@
    ],
    "created": "2026-11-15T19:10:33.302962+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 245,
    "sent": true,
    "direction": "under",
@@ -8317,7 +8317,7 @@
    ],
    "created": "2026-11-15T19:55:24.022797+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 245,
    "sent": false,
    "direction": "under",
@@ -8422,6 +8422,30 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-2"
+  },
+  "fb_1738344|FB_IY2_00": {
+   "key": "fb_1738344|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1738344",
+   "match": "France - Turkiye",
+   "league": "UEFA Nations League League A: Group 1",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T20:35:25.030740+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
