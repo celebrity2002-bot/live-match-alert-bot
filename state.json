@@ -3714,14 +3714,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 151,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "66-77"
+   "last_score": "69-82"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -3765,14 +3765,14 @@
    "created": "2026-11-15T14:30:45.664849+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "4-1"
+   "last_score": "4-2"
   },
   "fb_1813696|FB_GERIDEN_FARK2": {
    "key": "fb_1813696|FB_GERIDEN_FARK2",
@@ -3917,7 +3917,7 @@
    ],
    "created": "2026-11-15T14:50:33.440334+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -3942,14 +3942,14 @@
    "created": "2026-11-15T14:50:33.885807+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "fb_1855738|FB_00_60_70": {
    "key": "fb_1855738|FB_00_60_70",
@@ -4152,14 +4152,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 151,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "66-77"
+   "last_score": "69-82"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4298,7 +4298,7 @@
    ],
    "created": "2026-11-15T15:20:32.630811+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -4467,14 +4467,14 @@
    "created": "2026-11-15T15:25:25.670932+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "bb_1853678|BB_Q4_FARK_ALT": {
    "key": "bb_1853678|BB_Q4_FARK_ALT",
@@ -4491,14 +4491,14 @@
    "created": "2026-11-15T15:30:44.122621+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 138,
+   "last_total": 150,
    "sent": true,
    "direction": "under",
    "base": 118,
    "n": 1,
    "ref": 39.333333333333336,
    "signal_score": "67-51",
-   "last_score": "80-58"
+   "last_score": "84-66"
   },
   "fb_1738381|FB_GERIDEN_FARK2": {
    "key": "fb_1738381|FB_GERIDEN_FARK2",
@@ -4587,14 +4587,14 @@
    "created": "2026-11-15T15:35:23.398370+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "4-1"
+   "last_score": "4-2"
   },
   "fb_1849645|FB_GERIDEN_FARK2": {
    "key": "fb_1849645|FB_GERIDEN_FARK2",
@@ -4611,14 +4611,14 @@
    "created": "2026-11-15T15:35:23.855455+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "bb_1853682|BB_Q4_FARK_ALT": {
    "key": "bb_1853682|BB_Q4_FARK_ALT",
@@ -4635,14 +4635,38 @@
    "created": "2026-11-15T15:45:29.763323+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 155,
    "sent": true,
    "direction": "under",
    "base": 138,
    "n": 1,
    "ref": 46.0,
    "signal_score": "64-79",
-   "last_score": "64-79"
+   "last_score": "68-87"
+  },
+  "fb_1831864|FB_IY2_00": {
+   "key": "fb_1831864|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1831864",
+   "match": "CF Calamocha - Reus FC Reddis",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T15:50:31.066921+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
