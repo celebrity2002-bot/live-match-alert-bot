@@ -5,167 +5,287 @@
  ],
  "events": [
   {
-   "Eid": "1914757",
+   "Eid": "1738343",
    "Pids": {
-    "112": "SBTE_2_1029729237",
-    "8": "1914757"
+    "112": "SBTE_2_1027057234",
+    "8": "1738343"
    },
    "Media": {
     "112": [
      {
-      "eventId": "3l9apdik8e3gu3uqwbk245l3o",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Amazon Prime PPV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "9109",
+     "Nm": "Belgium",
+     "Img": "enet/8263.png",
+     "NewsTag": "/team/belgium-2021020913320920836-2206/",
+     "Abr": "BEL",
+     "Fc": "E30613",
+     "Sc": "B59C56"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9098",
+     "Nm": "Italy",
+     "Img": "enet/8204.png",
+     "NewsTag": "/team/italy-2021020913320920836-1395/",
+     "Abr": "ITA",
+     "Fc": "0064aa",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261115204500,
+   "EO": 874299495,
+   "EOX": 874299495,
+   "Spid": 1,
+   "Pid": 8,
+   "Games": {
+    "ls6": [
+     {
+      "id": "679a5dc64c58a24929681a30",
+      "status": "INACTIVE",
       "allowedCountries": [
        "GB",
        "IE"
       ]
      }
     ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "6847",
-     "Nm": "Deportivo Moron",
-     "Img": "enet/213530.png",
-     "Abr": "DEP"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5153",
-     "Nm": "Colegiales",
-     "Img": "enet/213535.png",
-     "Abr": "COL"
-    }
-   ],
-   "Eps": "69'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794771296300,
-    "RTm": 4080000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1/8",
-   "Et": 1,
-   "Esd": 20261115190000,
-   "EO": 2417229951,
-   "EOX": 2417229951,
-   "Spid": 1,
-   "Pid": 8
+   }
   },
   {
-   "Eid": "1916109",
+   "Eid": "1738344",
    "Pids": {
-    "112": "SBTE_2_1029715795",
-    "8": "1916109"
+    "8": "1738344",
+    "112": "SBTE_2_1026632369"
    },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 4,
-    "aggScoreTeam2": 0
-   },
-   "Inc-f": {
-    "2": [
+   "Media": {
+    "112": [
      {
-      "IT": 45,
-      "Nm": 2
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Amazon Prime PPV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Fox Sports 2",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
      }
     ]
    },
-   "Tr1": "3",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "3",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "5222",
-     "Nm": "Club Cipolletti",
-     "Img": "enet/213539.png",
-     "Abr": "CLU"
+     "ID": "9179",
+     "Nm": "France",
+     "Img": "enet/6723.png",
+     "NewsTag": "/team/france-2021020913320920836-2434/",
+     "Abr": "FRA",
+     "Fc": "21304D",
+     "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "12357",
-     "Nm": "Juventud Antoniana",
-     "Img": "enet/213600.png",
-     "Abr": "JUV"
+     "ID": "9136",
+     "Nm": "Turkiye",
+     "Img": "teambadge/turkiye-new-2024.png",
+     "NewsTag": "/team/turkey-2021020913320920836-1845/",
+     "Abr": "TUR",
+     "Fc": "df2733",
+     "Sc": "FDFDFD"
     }
    ],
-   "Eps": "77'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794771311478,
-    "RTm": 4560000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Quarter Finals",
-   "Awt": 0,
+   "ErnInf": "6",
    "Et": 1,
-   "Esd": 20261115190000,
-   "EO": 2954100751,
-   "EOX": 2954100751,
+   "Esd": 20261115204500,
+   "EO": 874299495,
+   "EOX": 874299495,
    "Spid": 1,
-   "Pid": 8
+   "Pid": 8,
+   "Games": {
+    "ls6": [
+     {
+      "id": "679a5dc64c58a24929681a30",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   }
   },
   {
-   "Eid": "1916112",
+   "Eid": "1738307",
    "Pids": {
-    "112": "SBTE_2_1029715798",
-    "8": "1916112"
+    "112": "SBTE_2_1026632406",
+    "8": "1738307"
    },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 0,
-    "aggScoreTeam2": 1
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Amazon Prime PPV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Fox Soccer Plus",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "6838",
-     "Nm": "CA Alvarado",
-     "Img": "enet/354496.png",
-     "Abr": "CAA"
+     "ID": "9138",
+     "Nm": "Croatia",
+     "Img": "enet/10155.png",
+     "NewsTag": "/team/croatia-2021020913320920836-2342/",
+     "Abr": "CRO",
+     "Fc": "ED1C24",
+     "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "288534",
-     "Nm": "Sarmiento de La Banda",
-     "Img": "enet/1618062.png",
-     "Abr": "SAR"
+     "ID": "9266",
+     "Nm": "Czechia",
+     "Img": "enet/8496.png",
+     "NewsTag": "/team/czech-republic-2022062716001253418-2348/",
+     "Abr": "CZE",
+     "Fc": "ed1b2c",
+     "Sc": "0060af"
     }
    ],
-   "Eps": "34'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794771296279,
-    "RTm": 1980000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Quarter Finals",
-   "Awt": 0,
+   "ErnInf": "6",
    "Et": 1,
-   "Esd": 20261115200000,
-   "EO": 2954100743,
-   "EOX": 2954100743,
+   "Esd": 20261115204500,
+   "EO": 874299495,
+   "EOX": 874299495,
    "Spid": 1,
    "Pid": 8
   }
