@@ -1338,14 +1338,14 @@
    "created": "2026-11-15T10:30:42.056999+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 134,
+   "last_total": 147,
    "sent": true,
    "direction": "under",
    "base": 131,
    "n": 1,
    "ref": 43.666666666666664,
    "signal_score": "74-57",
-   "last_score": "77-57"
+   "last_score": "82-65"
   }
  }
 }
