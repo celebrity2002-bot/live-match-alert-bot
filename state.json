@@ -1238,6 +1238,30 @@
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "1-1"
+  },
+  "fb_1916881|FB_TEK_FARK_70": {
+   "key": "fb_1916881|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1916881",
+   "match": "Atletico La Paz - Piratas",
+   "league": "Mexico Liga de Expansion MX: Apertura: Play-off",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T04:25:26.068374+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
   }
  }
 }
