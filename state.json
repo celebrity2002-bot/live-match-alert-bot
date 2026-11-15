@@ -4766,7 +4766,7 @@
    ],
    "created": "2026-11-15T16:00:51.570408+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -4789,8 +4789,8 @@
     1.75
    ],
    "created": "2026-11-15T16:00:52.121140+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -4798,7 +4798,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "3-2"
+   "last_score": "3-2",
+   "final_total": 5,
+   "settled": "2026-11-15T17:20:43.960100+00:00",
+   "seg_avg": 3.0
   },
   "fb_1834787|FB_GERIDEN_FARK2": {
    "key": "fb_1834787|FB_GERIDEN_FARK2",
@@ -4842,14 +4845,14 @@
    "created": "2026-11-15T16:15:33.698406+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "fb_1831864|FB_00_60_70": {
    "key": "fb_1831864|FB_00_60_70",
@@ -4917,14 +4920,14 @@
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 124,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "55-62"
+   "last_score": "57-67"
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -5096,7 +5099,7 @@
    ],
    "created": "2026-11-15T16:35:22.727697+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -5219,7 +5222,7 @@
    ],
    "created": "2026-11-15T16:39:08.077725+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -5266,8 +5269,8 @@
     1.7
    ],
    "created": "2026-11-15T16:39:09.794003+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -5275,7 +5278,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "3-2"
+   "last_score": "3-2",
+   "final_total": 5,
+   "settled": "2026-11-15T17:20:44.500120+00:00",
+   "seg_avg": 2.0
   },
   "fb_1887385|FB_TEK_FARK_70": {
    "key": "fb_1887385|FB_TEK_FARK_70",
@@ -5290,8 +5296,8 @@
     1.85
    ],
    "created": "2026-11-15T16:39:10.104127+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": false,
    "direction": "over",
@@ -5299,7 +5305,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "3-2"
+   "last_score": "3-2",
+   "final_total": 5,
+   "settled": "2026-11-15T17:20:45.069076+00:00",
+   "seg_avg": 2.0
   },
   "fb_1815165|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1815165|FB_COK_GOLLU_ERKEN",
@@ -5459,7 +5468,7 @@
    ],
    "created": "2026-11-15T16:55:25.264428+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 143,
    "sent": true,
    "direction": "under",
@@ -5484,14 +5493,14 @@
    "created": "2026-11-15T16:55:25.792720+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 124,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "45-51",
-   "last_score": "55-62"
+   "last_score": "57-67"
   },
   "fb_1813693|FB_GEC_GOL": {
    "key": "fb_1813693|FB_GEC_GOL",
@@ -5556,14 +5565,14 @@
    "created": "2026-11-15T16:55:28.026206+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "bb_1895377|BB_Q4_FARK_ALT": {
    "key": "bb_1895377|BB_Q4_FARK_ALT",
@@ -5580,14 +5589,14 @@
    "created": "2026-11-15T17:00:53.905051+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 155,
+   "last_total": 162,
    "sent": true,
    "direction": "under",
    "base": 135,
    "n": 1,
    "ref": 45.0,
    "signal_score": "76-59",
-   "last_score": "87-68"
+   "last_score": "89-73"
   },
   "bb_1854358|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1854358|BB_TEMPO_DUSUSU_ALT",
@@ -5604,14 +5613,14 @@
    "created": "2026-11-15T17:00:57.157435+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 77,
+   "last_total": 91,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "23-29",
-   "last_score": "37-40"
+   "last_score": "41-50"
   },
   "fb_1812153|FB_11_IY2": {
    "key": "fb_1812153|FB_11_IY2",
@@ -5700,14 +5709,14 @@
    "created": "2026-11-15T17:01:00.592927+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "fb_1816084|FB_TEK_FARK_70": {
    "key": "fb_1816084|FB_TEK_FARK_70",
@@ -6012,14 +6021,206 @@
    "created": "2026-11-15T17:15:32.977056+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
+  },
+  "bb_1854379|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1854379|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1854379",
+   "match": "UR Venezia - Maxima Roma",
+   "league": "Italy Lega Basket Serie A",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T17:20:38.416750+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 52,
+   "sent": true,
+   "direction": "under",
+   "base": 52,
+   "n": 3,
+   "ref": 52.0,
+   "signal_score": "26-26",
+   "last_score": "26-26"
+  },
+  "fb_1850315|FB_11_IY2": {
+   "key": "fb_1850315|FB_11_IY2",
+   "sport": "football",
+   "match_id": "fb_1850315",
+   "match": "Arsenal W - London City Lionesses",
+   "league": "England FA Women’s Super League",
+   "strategy": "FB_11_IY2",
+   "pick": "Bir Gol Daha Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.75
+   ],
+   "created": "2026-11-15T17:20:40.142136+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1855357|FB_IY2_00": {
+   "key": "fb_1855357|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1855357",
+   "match": "Cittadella - Folgore Caratese",
+   "league": "Italy Serie C: Group A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T17:20:40.679734+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855362|FB_IY2_00": {
+   "key": "fb_1855362|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1855362",
+   "match": "Pergolettese - Pro Vercelli",
+   "league": "Italy Serie C: Group A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T17:20:41.213496+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1856116|FB_IY2_00": {
+   "key": "fb_1856116|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1856116",
+   "match": "Barletta - Team Altamura",
+   "league": "Italy Serie C: Group C",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T17:20:41.746607+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1815475|FB_GERIDEN_FARK2": {
+   "key": "fb_1815475|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1815475",
+   "match": "Alcoyano - CF Intercity",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T17:20:42.279941+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-1",
+   "last_score": "3-1"
+  },
+  "fb_1815478|FB_11_IY2": {
+   "key": "fb_1815478|FB_11_IY2",
+   "sport": "football",
+   "match_id": "fb_1815478",
+   "match": "La Nucia - Valencia B",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_11_IY2",
+   "pick": "Bir Gol Daha Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.75
+   ],
+   "created": "2026-11-15T17:20:42.823079+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1816089|FB_00_60_70": {
+   "key": "fb_1816089|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1816089",
+   "match": "Gimnastica Segoviana - Real Avila",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T17:20:43.444848+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
