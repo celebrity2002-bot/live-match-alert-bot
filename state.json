@@ -3713,7 +3713,7 @@
    ],
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 197,
    "sent": true,
    "direction": "under",
@@ -4169,7 +4169,7 @@
    ],
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 197,
    "sent": true,
    "direction": "under",
@@ -4734,14 +4734,14 @@
    "created": "2026-11-15T15:50:31.066921+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "fb_1811143|FB_IY2_00": {
    "key": "fb_1811143|FB_IY2_00",
@@ -4758,14 +4758,14 @@
    "created": "2026-11-15T16:00:51.570408+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1887385|FB_11_IY2": {
    "key": "fb_1887385|FB_11_IY2",
@@ -4806,14 +4806,14 @@
    "created": "2026-11-15T16:15:33.222406+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-3"
+   "last_score": "0-4"
   },
   "fb_1814498|FB_IY2_00": {
    "key": "fb_1814498|FB_IY2_00",
@@ -4854,14 +4854,14 @@
    "created": "2026-11-15T16:20:39.604159+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "fb_1816084|FB_IY2_00": {
    "key": "fb_1816084|FB_IY2_00",
@@ -4902,14 +4902,14 @@
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 68,
+   "last_total": 72,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "36-32"
+   "last_score": "36-36"
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -5054,6 +5054,126 @@
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1"
+  },
+  "fb_1811143|FB_GERIDEN_FARK2": {
+   "key": "fb_1811143|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1811143",
+   "match": "Granada - Las Palmas",
+   "league": "Spain LaLiga 2",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T16:35:22.727697+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1812167|FB_IY2_00": {
+   "key": "fb_1812167|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1812167",
+   "match": "FC Twente W - PSV W",
+   "league": "Netherlands Women's Eredivisie",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T16:35:23.262275+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1812155|FB_11_IY2": {
+   "key": "fb_1812155|FB_11_IY2",
+   "sport": "football",
+   "match_id": "fb_1812155",
+   "match": "Feyenoord W - SC Heerenveen W",
+   "league": "Netherlands Women's Eredivisie",
+   "strategy": "FB_11_IY2",
+   "pick": "Bir Gol Daha Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.75
+   ],
+   "created": "2026-11-15T16:35:23.609207+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1831864|FB_TEK_FARK_70": {
+   "key": "fb_1831864|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1831864",
+   "match": "CF Calamocha - Reus FC Reddis",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T16:35:23.912980+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
+  },
+  "fb_1815474|FB_IY2_00": {
+   "key": "fb_1815474|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1815474",
+   "match": "Castellonense - Orihuela",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T16:35:23.913062+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
