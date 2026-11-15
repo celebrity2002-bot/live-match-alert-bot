@@ -51,14 +51,14 @@
    "seriesInfo": {
     "totalLegs": 2,
     "currentLeg": 2,
-    "aggScoreTeam1": 1,
+    "aggScoreTeam1": 2,
     "aggScoreTeam2": 2
    },
-   "Tr1": "0",
+   "Tr1": "1",
    "Tr2": "1",
    "Trh1": "0",
    "Trh2": "1",
-   "Tr1OR": "0",
+   "Tr1OR": "1",
    "Tr2OR": "1",
    "T1": [
     {
@@ -75,11 +75,11 @@
      "Abr": "PIR"
     }
    ],
-   "Eps": "80'",
+   "Eps": "85'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794717611443,
-    "RTm": 4740000
+    "ATm": 1794717913398,
+    "RTm": 5040000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -174,11 +174,11 @@
      "Abr": "FCJ(W)"
     }
    ],
-   "Eps": "73'",
+   "Eps": "77'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794717631312,
-    "RTm": 4320000
+    "ATm": 1794717871614,
+    "RTm": 4560000
    },
    "Epr": 1,
    "Ecov": 0,
