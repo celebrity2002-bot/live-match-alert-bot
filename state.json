@@ -7681,7 +7681,7 @@
    ],
    "created": "2026-11-15T18:40:31.922203+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 245,
    "sent": true,
    "direction": "under",
@@ -8002,7 +8002,7 @@
    ],
    "created": "2026-11-15T19:10:33.302962+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 245,
    "sent": true,
    "direction": "under",
@@ -8294,14 +8294,14 @@
    "created": "2026-11-15T19:50:30.132378+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "bb_1868517|BB_Q4_FARK_ALT": {
    "key": "bb_1868517|BB_Q4_FARK_ALT",
@@ -8317,7 +8317,7 @@
    ],
    "created": "2026-11-15T19:55:24.022797+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 245,
    "sent": false,
    "direction": "under",
@@ -8366,14 +8366,14 @@
    "created": "2026-11-15T20:25:24.855039+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "fb_1915353|FB_BERABERLIK_GEC": {
    "key": "fb_1915353|FB_BERABERLIK_GEC",
@@ -8390,14 +8390,38 @@
    "created": "2026-11-15T20:25:25.272963+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
+  },
+  "fb_1915353|FB_TEK_FARK_70": {
+   "key": "fb_1915353|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1915353",
+   "match": "Boca Juniors de Cali - Atletico Huila",
+   "league": "Colombia Primera B: Clausura: Play-off: Group A",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T20:30:53.774802+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
