@@ -8299,7 +8299,7 @@
    ],
    "created": "2026-11-15T19:50:30.132378+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -8374,7 +8374,7 @@
    ],
    "created": "2026-11-15T20:25:24.855039+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -8398,7 +8398,7 @@
    ],
    "created": "2026-11-15T20:25:25.272963+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -8422,7 +8422,7 @@
    ],
    "created": "2026-11-15T20:30:53.774802+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -8479,6 +8479,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1738343|FB_GERIDEN_FARK2": {
+   "key": "fb_1738343|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1738343",
+   "match": "Belgium - Italy",
+   "league": "UEFA Nations League League A: Group 1",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T21:01:00.007800+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-1",
+   "last_score": "3-1"
   }
  }
 }
