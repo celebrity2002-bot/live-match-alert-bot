@@ -5,97 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1738319",
-   "Pids": {
-    "112": "SBTE_2_1026632492",
-    "8": "1738319"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Fox Soccer Plus",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "2",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "8530",
-     "Nm": "Belarus",
-     "Img": "enet/10057.png",
-     "Abr": "BLR",
-     "Fc": "FDFDFD",
-     "Sc": "466b38"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9178",
-     "Nm": "Albania",
-     "Img": "enet/10024.png",
-     "NewsTag": "/team/albania-2021020913320920836-2132/",
-     "Abr": "ALB",
-     "Fc": "DA291C",
-     "Sc": "000000"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794768636469,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261115180000,
-   "EO": 807324543,
-   "EOX": 807324543,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1811141",
    "Pids": {
     "112": "SBTE_2_1028208886",
@@ -166,11 +75,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "57'",
+   "Eps": "61'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794768611373,
-    "RTm": 3360000
+    "ATm": 1794768851056,
+    "RTm": 3600000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -220,11 +129,11 @@
      }
     ]
    },
-   "Tr1": "0",
+   "Tr1": "1",
    "Tr2": "0",
    "Trh1": "0",
    "Trh2": "0",
-   "Tr1OR": "0",
+   "Tr1OR": "1",
    "Tr2OR": "0",
    "T1": [
     {
@@ -248,11 +157,11 @@
      "Sc": "0045a7"
     }
    ],
-   "Eps": "61'",
+   "Eps": "66'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794768611432,
-    "RTm": 3600000
+    "ATm": 1794768911528,
+    "RTm": 3900000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -261,6 +170,81 @@
    "Esd": 20261115183000,
    "EO": 807322495,
    "EOX": 807322495,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1814051",
+   "Pids": {
+    "8": "1814051",
+    "112": "SBTE_2_1029560800"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "29o275osk3jtoujg9jo4okvtg",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Inc-f": {
+    "2": [
+     {
+      "IT": 1037,
+      "Nm": 1,
+      "Sc": [
+       1,
+       0
+      ]
+     }
+    ]
+   },
+   "Tr1": "1",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "1",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "2712",
+     "Nm": "Deportivo La Coruna W",
+     "Img": "enet/1077485.png",
+     "Abr": "DEP(W)",
+     "Fc": "57175E",
+     "Sc": "A38D44"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3391",
+     "Nm": "Barcelona W",
+     "Img": "enet/401657.png",
+     "Abr": "FCB(W)",
+     "Fc": "004D98",
+     "Sc": "A50044"
+    }
+   ],
+   "Eps": "90+8'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794768851076,
+    "RTm": 5400000,
+    "ITm": 420000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Regular Season",
+   "Et": 1,
+   "Eit": "8",
+   "Esd": 20261115180000,
+   "EO": 807190911,
+   "EOX": 807190911,
    "Spid": 1,
    "Pid": 8
   }
