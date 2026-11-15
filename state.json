@@ -7680,8 +7680,8 @@
     1.55
    ],
    "created": "2026-11-15T18:40:31.922203+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 245,
    "sent": true,
    "direction": "under",
@@ -7689,7 +7689,10 @@
    "n": 3,
    "ref": 64.0,
    "signal_score": "34-35",
-   "last_score": "126-119"
+   "last_score": "126-119",
+   "final_total": 245,
+   "settled": "2026-11-15T20:40:36.978226+00:00",
+   "seg_avg": 60.3
   },
   "bb_1853693|BB_Q4_FARK_ALT": {
    "key": "bb_1853693|BB_Q4_FARK_ALT",
@@ -8001,8 +8004,8 @@
     1.8
    ],
    "created": "2026-11-15T19:10:33.302962+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 245,
    "sent": true,
    "direction": "under",
@@ -8010,7 +8013,10 @@
    "n": 2,
    "ref": 57.5,
    "signal_score": "58-57",
-   "last_score": "126-119"
+   "last_score": "126-119",
+   "final_total": 245,
+   "settled": "2026-11-15T20:40:37.517938+00:00",
+   "seg_avg": 65.0
   },
   "fb_1814497|FB_GEC_GOL": {
    "key": "fb_1814497|FB_GEC_GOL",
@@ -8316,8 +8322,8 @@
     1.95
    ],
    "created": "2026-11-15T19:55:24.022797+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 245,
    "sent": false,
    "direction": "under",
@@ -8325,7 +8331,10 @@
    "n": 1,
    "ref": 61.333333333333336,
    "signal_score": "102-87",
-   "last_score": "126-119"
+   "last_score": "126-119",
+   "final_total": 245,
+   "settled": "2026-11-15T20:40:38.046532+00:00",
+   "seg_avg": 61.0
   },
   "fb_1738343|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1738343|FB_COK_GOLLU_ERKEN",
@@ -8436,6 +8445,30 @@
     1.6
    ],
    "created": "2026-11-15T20:35:25.030740+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1916112|FB_00_60_70": {
+   "key": "fb_1916112|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1916112",
+   "match": "CA Alvarado - Sarmiento de La Banda",
+   "league": "Argentina Federal A: Promotion Play-off",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T20:40:39.234461+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
