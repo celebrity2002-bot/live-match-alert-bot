@@ -79,11 +79,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "85'",
+   "Eps": "90'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794778211455,
-    "RTm": 5040000
+    "ATm": 1794778506354,
+    "RTm": 5340000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -176,11 +176,11 @@
     ]
    },
    "Tr1": "2",
-   "Tr2": "0",
+   "Tr2": "1",
    "Trh1": "0",
    "Trh2": "0",
    "Tr1OR": "2",
-   "Tr2OR": "0",
+   "Tr2OR": "1",
    "T1": [
     {
      "ID": "9179",
@@ -203,16 +203,18 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "87'",
+   "Eps": "90+2'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794778211510,
-    "RTm": 5160000
+    "ATm": 1794778511474,
+    "RTm": 5400000,
+    "ITm": 60000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
+   "Eit": "4",
    "Esd": 20261115204500,
    "EO": 874431359,
    "EOX": 874431359,
@@ -232,21 +234,59 @@
    }
   },
   {
-   "Eid": "1738307",
+   "Eid": "1738308",
    "Pids": {
-    "112": "SBTE_2_1026632406",
-    "8": "1738307"
+    "8": "1738308",
+    "29": "1738308",
+    "112": "SBTE_2_1026632420"
    },
    "Media": {
     "112": [
+     {
+      "eventId": "ITV 1",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "itv.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "STV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "stv.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "UTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "utv.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Virgin Media Two",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "virgin-media.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
       "allowedCountries": [
-       "CA",
-       "US"
+       "US",
+       "CA"
       ]
      },
      {
@@ -259,24 +299,6 @@
       ]
      },
      {
-      "eventId": "Amazon Prime PPV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Fox Soccer Plus",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
       "eventId": "Sky Sports",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
@@ -285,51 +307,81 @@
        "MX"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng19/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ]
+   },
+   "Inc-f": {
+    "2": [
+     {
+      "IT": 45,
+      "Nm": 2,
+      "NoP": false
+     }
     ]
    },
    "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "0",
+   "Tr2": "3",
+   "Trh1": "0",
+   "Trh2": "1",
    "Tr1OR": "2",
-   "Tr2OR": "1",
+   "Tr2OR": "3",
    "T1": [
     {
-     "ID": "9138",
-     "Nm": "Croatia",
-     "Img": "enet/10155.png",
-     "NewsTag": "/team/croatia-2021020913320920836-2342/",
-     "Abr": "CRO",
-     "Fc": "ED1C24",
-     "Sc": "FDFDFD"
+     "ID": "9182",
+     "Nm": "Spain",
+     "Img": "enet/6720.png",
+     "NewsTag": "/team/spain-2021020913320920836-1770/",
+     "Abr": "ESP",
+     "Fc": "8B0D11",
+     "Sc": "FCB507"
     }
    ],
    "T2": [
     {
-     "ID": "9266",
-     "Nm": "Czechia",
-     "Img": "enet/8496.png",
-     "NewsTag": "/team/czech-republic-2022062716001253418-2348/",
-     "Abr": "CZE",
-     "Fc": "ed1b2c",
-     "Sc": "0060af"
+     "ID": "9267",
+     "Nm": "England",
+     "Img": "enet/8491.png",
+     "NewsTag": "/team/england-2021020913320920836-2389/",
+     "Abr": "ENG",
+     "Fc": "FDFDFD",
+     "Sc": "2B57AC"
     }
    ],
-   "Eps": "90'",
+   "Eps": "86'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794778226434,
-    "RTm": 5340000
+    "ATm": 1794778501431,
+    "RTm": 5100000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
    "Esd": 20261115204500,
-   "EO": 874431359,
-   "EOX": 874431359,
+   "EO": 907985791,
+   "EOX": 907985791,
    "Spid": 1,
-   "Pid": 8
+   "Pid": 8,
+   "Games": {
+    "ls6": [
+     {
+      "id": "679a5dc64c58a24929681a30",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   }
   }
  ]
 }
