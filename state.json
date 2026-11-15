@@ -3611,6 +3611,54 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1826187|FB_GEC_GOL": {
+   "key": "fb_1826187|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1826187",
+   "match": "TSV Landsberg - 1. FC Nuremberg II",
+   "league": "Germany Regionalliga Bayern",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T14:25:25.114632+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1826187|FB_BERABERLIK_GEC": {
+   "key": "fb_1826187|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1826187",
+   "match": "TSV Landsberg - 1. FC Nuremberg II",
+   "league": "Germany Regionalliga Bayern",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T14:25:25.603288+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
   }
  }
 }
