@@ -3521,7 +3521,7 @@
    ],
    "created": "2026-11-15T14:15:28.173745+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -3545,7 +3545,7 @@
    ],
    "created": "2026-11-15T14:15:28.583981+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -3641,7 +3641,7 @@
    ],
    "created": "2026-11-15T14:25:25.114632+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -3665,7 +3665,7 @@
    ],
    "created": "2026-11-15T14:25:25.603288+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -3690,14 +3690,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 86,
+   "last_total": 96,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "37-49"
+   "last_score": "41-55"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -3713,7 +3713,7 @@
    ],
    "created": "2026-11-15T14:30:45.303140+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -4082,6 +4082,30 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "bb_1895373|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1895373|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1895373",
+   "match": "Vikos - Maroussi",
+   "league": "Greece Basket League",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T15:00:53.458125+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 96,
+   "sent": true,
+   "direction": "under",
+   "base": 96,
+   "n": 2,
+   "ref": 48.0,
+   "signal_score": "41-55",
+   "last_score": "41-55"
   }
  }
 }
