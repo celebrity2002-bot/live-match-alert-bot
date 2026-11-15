@@ -5,50 +5,35 @@
  ],
  "events": [
   {
-   "Eid": "1915354",
+   "Eid": "1913935",
    "Pids": {
-    "8": "1915354"
+    "8": "1913935"
    },
-   "Tr1": "2",
-   "Tr2": "3",
-   "Trh1": "2",
-   "Trh2": "2",
-   "Tr1OR": "2",
-   "Tr2OR": "3",
    "T1": [
     {
-     "ID": "10097",
-     "Nm": "Envigado",
-     "Img": "enet/4402.png",
-     "Abr": "ENV",
-     "Fc": "ff5706",
-     "Sc": "ffffff"
+     "ID": "9357",
+     "Nm": "Tigres FC",
+     "Img": "enet/193030.png",
+     "Abr": "TIG"
     }
    ],
    "T2": [
     {
-     "ID": "10095",
-     "Nm": "Union Magdalena",
-     "Img": "enet/4408.png",
-     "Abr": "UNI",
-     "Fc": "bf0000",
-     "Sc": "00005b"
+     "ID": "10780",
+     "Nm": "Real Soacha Cundinamarca",
+     "Img": "enet/193026.png",
+     "Abr": "REA"
     }
    ],
-   "Eps": "90+5'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794782711212,
-    "RTm": 5400000,
-    "ITm": 240000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
    "ErnInf": "5",
    "Et": 1,
-   "Esd": 20261115215000,
-   "EO": 270270479,
-   "EOX": 270270479,
+   "Esd": 20261116000500,
+   "EO": 270270471,
+   "EOX": 270270471,
    "Spid": 1,
    "Pid": 8
   }
