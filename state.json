@@ -1795,8 +1795,8 @@
     1.9
    ],
    "created": "2026-11-15T11:50:32.793230+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 144,
    "sent": true,
    "direction": "over",
@@ -1804,7 +1804,10 @@
    "n": 3,
    "ref": 36.0,
    "signal_score": "14-22",
-   "last_score": "78-66"
+   "last_score": "78-66",
+   "final_total": 144,
+   "settled": "2026-11-15T13:30:41.561556+00:00",
+   "seg_avg": 36.0
   },
   "fb_1816748|FB_IY2_00": {
    "key": "fb_1816748|FB_IY2_00",
@@ -2198,7 +2201,7 @@
    ],
    "created": "2026-11-15T12:10:37.756932+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -2275,8 +2278,8 @@
     1.75
    ],
    "created": "2026-11-15T12:20:34.767327+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -2284,7 +2287,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T13:30:43.582452+00:00",
+   "seg_avg": 0.0
   },
   "fb_1816748|FB_11_IY2": {
    "key": "fb_1816748|FB_11_IY2",
@@ -3056,7 +3062,7 @@
    ],
    "created": "2026-11-15T12:40:31.773373+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -3103,8 +3109,8 @@
     2.0
    ],
    "created": "2026-11-15T12:55:22.339669+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 144,
    "sent": true,
    "direction": "over",
@@ -3112,7 +3118,10 @@
    "n": 1,
    "ref": 38.333333333333336,
    "signal_score": "59-56",
-   "last_score": "78-66"
+   "last_score": "78-66",
+   "final_total": 144,
+   "settled": "2026-11-15T13:30:41.958233+00:00",
+   "seg_avg": 29.0
   },
   "fb_1849644|FB_TEK_FARK_70": {
    "key": "fb_1849644|FB_TEK_FARK_70",
@@ -3128,7 +3137,7 @@
    ],
    "created": "2026-11-15T12:55:24.032230+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -3151,8 +3160,8 @@
     1.7
    ],
    "created": "2026-11-15T12:55:24.446480+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -3160,7 +3169,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T13:30:43.956739+00:00",
+   "seg_avg": 0.0
   },
   "fb_1855361|FB_BERABERLIK_GEC": {
    "key": "fb_1855361|FB_BERABERLIK_GEC",
@@ -3175,8 +3187,8 @@
     1.75
    ],
    "created": "2026-11-15T12:55:24.953899+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -3184,7 +3196,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T13:30:44.379899+00:00",
+   "seg_avg": 0.0
   },
   "fb_1856122|FB_GEC_GOL": {
    "key": "fb_1856122|FB_GEC_GOL",
@@ -3200,7 +3215,7 @@
    ],
    "created": "2026-11-15T13:01:00.282674+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -3224,7 +3239,7 @@
    ],
    "created": "2026-11-15T13:01:00.562113+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": false,
    "direction": "over",
@@ -3248,7 +3263,7 @@
    ],
    "created": "2026-11-15T13:01:00.562325+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -3272,7 +3287,7 @@
    ],
    "created": "2026-11-15T13:01:00.848619+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": false,
    "direction": "over",
@@ -3296,7 +3311,7 @@
    ],
    "created": "2026-11-15T13:10:32.336761+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": false,
    "direction": "over",
