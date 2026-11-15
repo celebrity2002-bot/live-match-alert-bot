@@ -1262,6 +1262,54 @@
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1"
+  },
+  "fb_1916717|FB_GEC_GOL": {
+   "key": "fb_1916717|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1916717",
+   "match": "CD Guadalajara W - FC Juarez W",
+   "league": "Mexico Women's Liga MX: Apertura Play-off",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T04:35:26.871438+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1916717|FB_BERABERLIK_GEC": {
+   "key": "fb_1916717|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1916717",
+   "match": "CD Guadalajara W - FC Juarez W",
+   "league": "Mexico Women's Liga MX: Apertura Play-off",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T04:35:27.366038+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
   }
  }
 }
