@@ -9004,6 +9004,30 @@
    "ref": 0.0,
    "signal_score": "2-2",
    "last_score": "2-2"
+  },
+  "bb_1868524|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868524|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868524",
+   "match": "Phoenix Suns - LA Lakers",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T22:20:30.924180+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 118,
+   "sent": true,
+   "direction": "under",
+   "base": 118,
+   "n": 2,
+   "ref": 59.0,
+   "signal_score": "54-64",
+   "last_score": "54-64"
   }
  }
 }
