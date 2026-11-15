@@ -1392,14 +1392,14 @@
    "created": "2026-11-15T11:20:33.109525+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 100,
+   "last_total": 102,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "21-10",
-   "last_score": "53-47"
+   "last_score": "53-49"
   },
   "fb_1815476|FB_IY2_00": {
    "key": "fb_1815476|FB_IY2_00",
@@ -1414,8 +1414,8 @@
     1.6
    ],
    "created": "2026-11-15T11:20:34.599155+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1423,7 +1423,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-15T12:26:36.910287+00:00",
+   "seg_avg": 1.0
   },
   "bb_1867870|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867870|BB_TEMPO_DUSUSU_ALT",
@@ -1440,14 +1443,14 @@
    "created": "2026-11-15T11:25:22.942513+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 141,
+   "last_total": 142,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "25-36",
-   "last_score": "71-70"
+   "last_score": "71-71"
   },
   "bb_1867879|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867879|BB_TEMPO_DUSUSU_ALT",
@@ -1609,8 +1612,8 @@
     2.0
    ],
    "created": "2026-11-15T11:45:40.287859+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1618,7 +1621,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-15T12:26:37.399853+00:00",
+   "seg_avg": 1.0
   },
   "fb_1815477|FB_GERIDEN_FARK2": {
    "key": "fb_1815477|FB_GERIDEN_FARK2",
@@ -1634,7 +1640,7 @@
    ],
    "created": "2026-11-15T11:45:40.774912+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -1707,14 +1713,14 @@
    "created": "2026-11-15T11:50:31.607394+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 100,
+   "last_total": 102,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "35-35",
-   "last_score": "53-47"
+   "last_score": "53-49"
   },
   "bb_1867879|BB_HT_YUKSEK_ALT": {
    "key": "bb_1867879|BB_HT_YUKSEK_ALT",
@@ -1803,14 +1809,14 @@
    "created": "2026-11-15T11:50:35.177762+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "bb_1867870|BB_HT_YUKSEK_ALT": {
    "key": "bb_1867870|BB_HT_YUKSEK_ALT",
@@ -1827,14 +1833,14 @@
    "created": "2026-11-15T11:55:23.067120+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 141,
+   "last_total": 142,
    "sent": true,
    "direction": "under",
    "base": 100,
    "n": 2,
    "ref": 50.0,
    "signal_score": "46-54",
-   "last_score": "71-70"
+   "last_score": "71-71"
   },
   "fb_1815473|FB_TEK_FARK_70": {
    "key": "fb_1815473|FB_TEK_FARK_70",
@@ -1850,7 +1856,7 @@
    ],
    "created": "2026-11-15T11:55:24.849155+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -1873,8 +1879,8 @@
     1.85
    ],
    "created": "2026-11-15T11:55:25.382570+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": false,
    "direction": "over",
@@ -1882,7 +1888,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-15T12:26:37.912386+00:00",
+   "seg_avg": 0.0
   },
   "fb_1815471|FB_TEK_FARK_70": {
    "key": "fb_1815471|FB_TEK_FARK_70",
@@ -1922,7 +1931,7 @@
    ],
    "created": "2026-11-15T11:55:25.876297+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -1946,7 +1955,7 @@
    ],
    "created": "2026-11-15T11:55:26.428962+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -2355,14 +2364,14 @@
    "created": "2026-11-15T12:25:27.785218+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "fb_1814862|FB_BERABERLIK_GEC": {
    "key": "fb_1814862|FB_BERABERLIK_GEC",
@@ -2379,14 +2388,14 @@
    "created": "2026-11-15T12:25:28.168126+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "fb_1816085|FB_GEC_GOL": {
    "key": "fb_1816085|FB_GEC_GOL",
@@ -2459,6 +2468,78 @@
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1"
+  },
+  "bb_1895376|BB_Q4_FARK_ALT": {
+   "key": "bb_1895376|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1895376",
+   "match": "Panathinaikos - Kolossos Rhodes",
+   "league": "Greece Basket League",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-15T12:26:34.550115+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 114,
+   "sent": true,
+   "direction": "under",
+   "base": 114,
+   "n": 1,
+   "ref": 38.0,
+   "signal_score": "66-48",
+   "last_score": "66-48"
+  },
+  "fb_1814500|FB_TEK_FARK_70": {
+   "key": "fb_1814500|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1814500",
+   "match": "UD Ibiza - Cartagena",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T12:26:36.423764+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
+  },
+  "fb_1814862|FB_TEK_FARK_70": {
+   "key": "fb_1814862|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1814862",
+   "match": "UD Logrones B - Pena Sport",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T12:26:36.909998+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
