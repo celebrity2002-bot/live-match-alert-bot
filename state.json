@@ -1322,6 +1322,30 @@
    "final_total": 2,
    "settled": "2026-11-15T05:15:32.051624+00:00",
    "seg_avg": 0.0
+  },
+  "bb_1884515|BB_Q4_FARK_ALT": {
+   "key": "bb_1884515|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1884515",
+   "match": "BC Dubai - Spartak Subotica",
+   "league": "Adriatic ABA League: Group B",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-15T10:30:42.056999+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 131,
+   "sent": true,
+   "direction": "under",
+   "base": 131,
+   "n": 1,
+   "ref": 43.666666666666664,
+   "signal_score": "74-57",
+   "last_score": "74-57"
   }
  }
 }
