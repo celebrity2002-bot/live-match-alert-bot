@@ -5,102 +5,104 @@
  ],
  "events": [
   {
-   "Eid": "1916717",
+   "Eid": "1890716",
    "Pids": {
-    "112": "SBTE_2_1029766939",
-    "8": "1916717"
+    "112": "SBTE_2_1028986186",
+    "8": "1890716"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Amazon Prime",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "amaon-prime.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "FOX",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "FOX One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Tubi",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "Tubi-logo.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 1,
-    "aggScoreTeam2": 1
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
    "T1": [
     {
-     "ID": "12741",
-     "Nm": "CD Guadalajara W",
-     "Img": "enet/980702.png",
-     "Abr": "CDG(W)"
+     "ID": "412183",
+     "Nm": "Kalamaria",
+     "Abr": "KAL"
     }
    ],
    "T2": [
     {
-     "ID": "12760",
-     "Nm": "FC Juarez W",
-     "Img": "enet/1066912.png",
-     "Abr": "FCJ(W)"
+     "ID": "12338",
+     "Nm": "Athens Kallithea",
+     "Img": "teambadge/athens-kallithea-2024.png",
+     "Abr": "KAL",
+     "Fc": "003366",
+     "Sc": "990000"
     }
    ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794718826815,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Quarter Finals",
-   "Awt": 0,
+   "ErnInf": "11",
    "Et": 1,
-   "Esd": 20261115040600,
-   "EO": 2417229839,
-   "EOX": 2417229839,
+   "Esd": 20261115113000,
+   "EO": 806879239,
+   "EOX": 806879239,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1815473",
+   "Pids": {
+    "8": "1815473"
+   },
+   "T1": [
+    {
+     "ID": "232084",
+     "Nm": "CD Cieza",
+     "Img": "enet/189778.png",
+     "Abr": "CDC"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3839",
+     "Nm": "SCR Pena Deportiva",
+     "Img": "enet/8210.png",
+     "Abr": "PEN"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "11",
+   "Et": 1,
+   "Esd": 20261115113000,
+   "EO": 806879239,
+   "EOX": 806879239,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1815476",
+   "Pids": {
+    "112": "SBTE_2_1028227032",
+    "8": "1815476"
+   },
+   "T1": [
+    {
+     "ID": "82574",
+     "Nm": "Deportiva Minera",
+     "Img": "enet/278805.png",
+     "Abr": "DEP"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "11229",
+     "Nm": "Poblense",
+     "Img": "enet/189750.png",
+     "Abr": "POB"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "11",
+   "Et": 1,
+   "Esd": 20261115113000,
+   "EO": 806879239,
+   "EOX": 806879239,
    "Spid": 1,
    "Pid": 8
   }
