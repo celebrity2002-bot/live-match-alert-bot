@@ -8948,14 +8948,14 @@
    "created": "2026-11-15T21:50:28.689040+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 97,
+   "last_total": 112,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "29-37",
-   "last_score": "39-58"
+   "last_score": "50-62"
   }
  }
 }
