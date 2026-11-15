@@ -8298,8 +8298,8 @@
     1.75
    ],
    "created": "2026-11-15T19:50:30.132378+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -8307,7 +8307,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-15T21:05:23.678412+00:00",
+   "seg_avg": 1.0
   },
   "bb_1868517|BB_Q4_FARK_ALT": {
    "key": "bb_1868517|BB_Q4_FARK_ALT",
@@ -8373,8 +8376,8 @@
     1.7
    ],
    "created": "2026-11-15T20:25:24.855039+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -8382,7 +8385,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-15T21:05:24.136885+00:00",
+   "seg_avg": 1.0
   },
   "fb_1915353|FB_BERABERLIK_GEC": {
    "key": "fb_1915353|FB_BERABERLIK_GEC",
@@ -8397,8 +8403,8 @@
     1.75
    ],
    "created": "2026-11-15T20:25:25.272963+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -8406,7 +8412,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-15T21:05:24.500717+00:00",
+   "seg_avg": 1.0
   },
   "fb_1915353|FB_TEK_FARK_70": {
    "key": "fb_1915353|FB_TEK_FARK_70",
@@ -8421,8 +8430,8 @@
     1.85
    ],
    "created": "2026-11-15T20:30:53.774802+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -8430,7 +8439,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-15T21:05:24.500789+00:00",
+   "seg_avg": 0.0
   },
   "fb_1738344|FB_IY2_00": {
    "key": "fb_1738344|FB_IY2_00",
@@ -8503,6 +8515,30 @@
    "ref": 0.0,
    "signal_score": "3-1",
    "last_score": "3-1"
+  },
+  "fb_1738308|FB_GERIDEN_FARK2": {
+   "key": "fb_1738308|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1738308",
+   "match": "Spain - England",
+   "league": "UEFA Nations League League A: Group 3",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T21:05:23.149071+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
   }
  }
 }
