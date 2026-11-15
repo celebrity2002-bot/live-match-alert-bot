@@ -8356,7 +8356,7 @@
    ],
    "created": "2026-11-15T20:15:40.514901+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -8460,8 +8460,8 @@
     1.6
    ],
    "created": "2026-11-15T20:35:25.030740+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -8469,7 +8469,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-15T21:50:30.510406+00:00",
+   "seg_avg": 3.0
   },
   "fb_1916112|FB_00_60_70": {
    "key": "fb_1916112|FB_00_60_70",
@@ -8512,7 +8515,7 @@
    ],
    "created": "2026-11-15T21:01:00.007800+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -8536,7 +8539,7 @@
    ],
    "created": "2026-11-15T21:05:23.149071+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -8559,8 +8562,8 @@
     1.85
    ],
    "created": "2026-11-15T21:10:34.487411+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -8568,7 +8571,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-15T21:50:30.886922+00:00",
+   "seg_avg": 2.0
   },
   "fb_1738307|FB_TEK_FARK_70": {
    "key": "fb_1738307|FB_TEK_FARK_70",
@@ -8610,8 +8616,8 @@
     2.1
    ],
    "created": "2026-11-15T21:23:22.190586+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -8619,7 +8625,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-15T21:50:31.256894+00:00",
+   "seg_avg": 1.0
   },
   "fb_1914759|FB_GEC_GOL": {
    "key": "fb_1914759|FB_GEC_GOL",
@@ -8683,7 +8692,7 @@
    ],
    "created": "2026-11-15T21:25:24.490197+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -8707,7 +8716,7 @@
    ],
    "created": "2026-11-15T21:25:24.871385+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": false,
    "direction": "over",
@@ -8828,14 +8837,14 @@
    "created": "2026-11-15T21:30:41.608497+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1916113|FB_TEK_FARK_70": {
    "key": "fb_1916113|FB_TEK_FARK_70",
@@ -8852,14 +8861,14 @@
    "created": "2026-11-15T21:30:41.956147+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1915354|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1915354|FB_COK_GOLLU_ERKEN",
@@ -8884,6 +8893,30 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-2"
+  },
+  "bb_1868524|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868524|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868524",
+   "match": "Phoenix Suns - LA Lakers",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T21:50:28.689040+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 66,
+   "sent": true,
+   "direction": "under",
+   "base": 57,
+   "n": 3,
+   "ref": 57.0,
+   "signal_score": "29-37",
+   "last_score": "29-37"
   }
  }
 }
