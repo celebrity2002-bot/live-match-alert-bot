@@ -5,6 +5,93 @@
  ],
  "events": [
   {
+   "Eid": "1850315",
+   "Pids": {
+    "112": "SBTE_2_1028600922",
+    "8": "1850315"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports Premier League",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "3935",
+     "Nm": "Arsenal W",
+     "Img": "teambadge/arsenal-square-2024.png",
+     "NewsTag": "/team/arsenal-women-2021020913320920836-26188/",
+     "Abr": "ARS(W)",
+     "Fc": "EF0107",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "6985",
+     "Nm": "London City Lionesses",
+     "Img": "enet/1075419.png",
+     "Abr": "LON(W)"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "10",
+   "Et": 1,
+   "Esd": 20261115173000,
+   "EO": 874299495,
+   "EOX": 874299495,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
    "Eid": "1811143",
    "Pids": {
     "112": "SBTE_2_1028208869",
@@ -69,11 +156,11 @@
      "Sc": "004b9d"
     }
    ],
-   "Eps": "47'",
+   "Eps": "51'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794759637816,
-    "RTm": 2760000
+    "ATm": 1794759876498,
+    "RTm": 3000000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -130,11 +217,11 @@
      "Sc": "272E61"
     }
    ],
-   "Eps": "60'",
+   "Eps": "64'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794759615053,
-    "RTm": 3540000
+    "ATm": 1794759851022,
+    "RTm": 3780000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -143,63 +230,6 @@
    "Esd": 20261115160000,
    "EO": 807158143,
    "EOX": 807158143,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1834793",
-   "Pids": {
-    "8": "1834793",
-    "112": "SBTE_2_1028430595"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "8pqml0ivcj8u112ft3fj3tjbo",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "185368",
-     "Nm": "1. FC Nuremberg W",
-     "Img": "enet/1513038.png",
-     "Abr": "NUR(W)"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "6516",
-     "Nm": "FC Cologne W",
-     "Img": "enet/672088.png",
-     "Abr": "CGN(W)"
-    }
-   ],
-   "Eps": "64'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794759631652,
-    "RTm": 3780000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "10",
-   "Et": 1,
-   "Esd": 20261115160000,
-   "EO": 807157871,
-   "EOX": 807157871,
    "Spid": 1,
    "Pid": 8
   }

@@ -3714,14 +3714,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 189,
+   "last_total": 197,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "89-100"
+   "last_score": "93-104"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -4170,14 +4170,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 189,
+   "last_total": 197,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "89-100"
+   "last_score": "93-104"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4886,6 +4886,78 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1854375|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1854375|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1854375",
+   "match": "Napoli Basket - Pallacanestro Trieste 2004",
+   "league": "Italy Lega Basket Serie A",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T16:25:22.834638+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 61,
+   "sent": true,
+   "direction": "under",
+   "base": 61,
+   "n": 3,
+   "ref": 61.0,
+   "signal_score": "34-27",
+   "last_score": "34-27"
+  },
+  "fb_1834793|FB_TEK_FARK_70": {
+   "key": "fb_1834793|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1834793",
+   "match": "1. FC Nuremberg W - FC Cologne W",
+   "league": "Germany Frauen-Bundesliga",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T16:25:24.394988+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
+  },
+  "fb_1815782|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1815782|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1815782",
+   "match": "Mijas-Las Lagunas - CD Estepona",
+   "league": "Spain Segunda Division RFEF: Group 4",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-15T16:25:24.742081+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
