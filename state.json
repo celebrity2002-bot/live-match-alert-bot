@@ -8868,8 +8868,8 @@
     1.7
    ],
    "created": "2026-11-15T21:30:41.608497+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -8877,7 +8877,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-2"
+   "last_score": "2-2",
+   "final_total": 4,
+   "settled": "2026-11-15T22:05:25.028899+00:00",
+   "seg_avg": 1.0
   },
   "fb_1916113|FB_TEK_FARK_70": {
    "key": "fb_1916113|FB_TEK_FARK_70",
@@ -8892,8 +8895,8 @@
     1.85
    ],
    "created": "2026-11-15T21:30:41.956147+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -8901,7 +8904,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-2"
+   "last_score": "2-2",
+   "final_total": 4,
+   "settled": "2026-11-15T22:05:27.432972+00:00",
+   "seg_avg": 1.0
   },
   "fb_1915354|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1915354|FB_COK_GOLLU_ERKEN",

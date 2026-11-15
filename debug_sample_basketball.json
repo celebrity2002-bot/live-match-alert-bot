@@ -130,67 +130,12 @@
      "Sc": "1D1160"
     }
    ],
-   "Eps": "1Q",
-   "Esid": 35,
+   "Esid": 67,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "1",
    "Et": 1,
    "Esd": 20261116003000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
-   "Eid": "1868519",
-   "Pids": {
-    "112": "SBTE_2_1028754046",
-    "8": "1868519"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NBA League Pass",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "nba-league-pass.png",
-      "allowedCountries": [
-       "GB",
-       "MX",
-       "IE",
-       "US"
-      ]
-     }
-    ]
-   },
-   "T1": [
-    {
-     "ID": "1890",
-     "Nm": "Utah Jazz",
-     "Img": "enet/58545.png",
-     "Abr": "UTA",
-     "Fc": "3E2680",
-     "Sc": "F9A01B"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "1887",
-     "Nm": "San Antonio Spurs",
-     "Img": "teambadge/san-antonio-spurs-2024.png",
-     "Abr": "SAS",
-     "Fc": "000000",
-     "Sc": "C4CED4"
-    }
-   ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261116010000,
    "EO": 524391,
    "EOX": 524391,
    "Spid": 23,
