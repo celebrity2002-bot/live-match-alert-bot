@@ -5,66 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1867868",
-   "Pids": {
-    "112": "SBTE_2_1028750467",
-    "8": "1867868"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "78",
-   "Tr2": "66",
-   "Tr1OR": "78",
-   "Tr2OR": "66",
-   "Tr1Q1": "14",
-   "Tr2Q1": "22",
-   "Tr1Q2": "27",
-   "Tr2Q2": "16",
-   "Tr1Q3": "18",
-   "Tr2Q3": "18",
-   "Tr1Q4": "19",
-   "Tr2Q4": "10",
-   "T1": [
-    {
-     "ID": "2060",
-     "Nm": "Unicaja",
-     "Img": "enet/58633.png",
-     "Abr": "UNI"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "101209",
-     "Nm": "Basquet Girona",
-     "Img": "enet/1186422.png",
-     "Abr": "BAS"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "8",
-   "Et": 1,
-   "Esd": 20261115143000,
-   "EO": 524295,
-   "EOX": 524295,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1861255",
    "Pids": {
     "112": "SBTE_2_1028660316",
