@@ -5,19 +5,125 @@
  ],
  "events": [
   {
+   "Eid": "1868517",
+   "Pids": {
+    "112": "SBTE_2_1028754073",
+    "8": "1868517"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "GB",
+       "MX",
+       "IE",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sportsnet",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Sportsnet One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "1928",
+     "Nm": "Philadelphia 76ers",
+     "Img": "enet/58509.png",
+     "Abr": "PHI",
+     "Fc": "006BB6",
+     "Sc": "ED174C"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "120",
+     "Nm": "Indiana Pacers",
+     "Img": "enet/58540.png",
+     "Abr": "IND",
+     "Fc": "FDBB30",
+     "Sc": "002D62"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261115210000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1886825",
+   "Pids": {
+    "112": "SBTE_2_1029401983",
+    "8": "1886825"
+   },
+   "T1": [
+    {
+     "ID": "2132",
+     "Nm": "Le Mans",
+     "Img": "enet/58581.png",
+     "Abr": "LEM"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "85",
+     "Nm": "ASVEL Lyon-Villeurbanne",
+     "Img": "teambadge/asvel-2024.png",
+     "Abr": "ALV",
+     "Fc": "000000",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "8",
+   "Et": 1,
+   "Esd": 20261115210000,
+   "EO": 524295,
+   "EOX": 524295,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
    "Eid": "1853693",
    "Pids": {
     "112": "SBTE_2_1028646533",
     "8": "1853693"
    },
-   "Tr1": "46",
-   "Tr2": "29",
-   "Tr1OR": "46",
-   "Tr2OR": "29",
+   "Tr1": "51",
+   "Tr2": "34",
+   "Tr1OR": "51",
+   "Tr2OR": "34",
    "Tr1Q1": "33",
    "Tr2Q1": "22",
-   "Tr1Q2": "13",
-   "Tr2Q2": "7",
+   "Tr1Q2": "18",
+   "Tr2Q2": "12",
    "T1": [
     {
      "ID": "101387",
@@ -41,96 +147,6 @@
    "ErnInf": "9",
    "Et": 1,
    "Esd": 20261115200000,
-   "EO": 524295,
-   "EOX": 524295,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
-   "Eid": "1854375",
-   "Pids": {
-    "8": "1854375",
-    "112": "SBTE_2_1028635003"
-   },
-   "Tr1": "81",
-   "Tr2": "84",
-   "Tr1OR": "81",
-   "Tr2OR": "84",
-   "Tr1Q1": "34",
-   "Tr2Q1": "27",
-   "Tr1Q2": "11",
-   "Tr2Q2": "24",
-   "Tr1Q3": "20",
-   "Tr2Q3": "22",
-   "Tr1Q4": "16",
-   "Tr2Q4": "11",
-   "T1": [
-    {
-     "ID": "37",
-     "Nm": "Napoli Basket",
-     "Img": "enet/660149.png",
-     "Abr": "NAP"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "2504",
-     "Nm": "Pallacanestro Trieste 2004",
-     "Img": "enet/58618.png",
-     "Abr": "PAL"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "8",
-   "Et": 1,
-   "Esd": 20261115190000,
-   "EO": 524295,
-   "EOX": 524295,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
-   "Eid": "1854358",
-   "Pids": {
-    "112": "SBTE_2_1029868348",
-    "8": "1854358"
-   },
-   "Tr1": "62",
-   "Tr2": "65",
-   "Tr1OR": "62",
-   "Tr2OR": "65",
-   "Tr1Q1": "23",
-   "Tr2Q1": "29",
-   "Tr1Q2": "18",
-   "Tr2Q2": "21",
-   "Tr1Q3": "21",
-   "Tr2Q3": "15",
-   "T1": [
-    {
-     "ID": "2598",
-     "Nm": "Pallacanestro Cantu",
-     "Img": "enet/58612.png",
-     "Abr": "PAL"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "2480",
-     "Nm": "Derthona Basket",
-     "Img": "enet/660163.png",
-     "Abr": "DER"
-    }
-   ],
-   "Eps": "3Q",
-   "Esid": 42,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "8",
-   "Et": 1,
-   "Esd": 20261115193000,
    "EO": 524295,
    "EOX": 524295,
    "Spid": 23,
