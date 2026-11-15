@@ -1228,8 +1228,8 @@
     1.75
    ],
    "created": "2026-11-15T03:55:30.946082+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -1237,7 +1237,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T05:15:31.003553+00:00",
+   "seg_avg": 0.0
   },
   "fb_1916881|FB_TEK_FARK_70": {
    "key": "fb_1916881|FB_TEK_FARK_70",
@@ -1279,8 +1282,8 @@
     1.7
    ],
    "created": "2026-11-15T04:35:26.871438+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -1288,7 +1291,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T05:15:31.571613+00:00",
+   "seg_avg": 0.0
   },
   "fb_1916717|FB_BERABERLIK_GEC": {
    "key": "fb_1916717|FB_BERABERLIK_GEC",
@@ -1303,8 +1309,8 @@
     1.75
    ],
    "created": "2026-11-15T04:35:27.366038+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -1312,7 +1318,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-15T05:15:32.051624+00:00",
+   "seg_avg": 0.0
   }
  }
 }
