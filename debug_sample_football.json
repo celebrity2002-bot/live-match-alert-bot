@@ -5,95 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1916881",
-   "Pids": {
-    "112": "SBTE_2_1029801930",
-    "8": "1916881"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "AYM Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "ESPN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "espn.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "69zbg39pks69nzwf6w90691jo",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 2,
-    "aggScoreTeam2": 2
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "222582",
-     "Nm": "Atletico La Paz",
-     "Img": "enet/1374638.png",
-     "Abr": "ATL"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "407593",
-     "Nm": "Piratas",
-     "Abr": "PIR"
-    }
-   ],
-   "Eps": "90+5'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794718511220,
-    "RTm": 5400000,
-    "ITm": 240000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Semi Finals",
-   "Awt": 0,
-   "Et": 1,
-   "Esd": 20261115040000,
-   "EO": 2954101119,
-   "EOX": 2954101119,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1916717",
    "Pids": {
     "112": "SBTE_2_1029766939",
@@ -175,11 +86,12 @@
      "Abr": "FCJ(W)"
     }
    ],
-   "Eps": "87'",
+   "Eps": "90+3'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794718466298,
-    "RTm": 5160000
+    "ATm": 1794718826815,
+    "RTm": 5400000,
+    "ITm": 120000
    },
    "Epr": 1,
    "Ecov": 0,
