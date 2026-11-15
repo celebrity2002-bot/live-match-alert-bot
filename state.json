@@ -8531,14 +8531,62 @@
    "created": "2026-11-15T21:05:23.149071+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-3"
+  },
+  "fb_1738344|FB_TEK_FARK_70": {
+   "key": "fb_1738344|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738344",
+   "match": "France - Turkiye",
+   "league": "UEFA Nations League League A: Group 1",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T21:10:34.487411+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1738307|FB_TEK_FARK_70": {
+   "key": "fb_1738307|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738307",
+   "match": "Croatia - Czechia",
+   "league": "UEFA Nations League League A: Group 3",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T21:10:35.037890+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
