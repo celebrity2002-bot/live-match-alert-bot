@@ -4847,7 +4847,7 @@
    ],
    "created": "2026-11-15T16:15:33.698406+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -4923,14 +4923,14 @@
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 124,
+   "last_total": 136,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "57-67"
+   "last_score": "63-73"
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -5358,14 +5358,14 @@
    "created": "2026-11-15T16:45:29.670302+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1813697|FB_GERIDEN_FARK2": {
    "key": "fb_1813697|FB_GERIDEN_FARK2",
@@ -5476,8 +5476,8 @@
     1.95
    ],
    "created": "2026-11-15T16:55:25.264428+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 143,
    "sent": true,
    "direction": "under",
@@ -5485,7 +5485,10 @@
    "n": 1,
    "ref": 37.666666666666664,
    "signal_score": "66-47",
-   "last_score": "87-56"
+   "last_score": "87-56",
+   "final_total": 143,
+   "settled": "2026-11-15T17:25:25.163714+00:00",
+   "seg_avg": 30.0
   },
   "bb_1854375|BB_HT_YUKSEK_ALT": {
    "key": "bb_1854375|BB_HT_YUKSEK_ALT",
@@ -5502,14 +5505,14 @@
    "created": "2026-11-15T16:55:25.792720+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 124,
+   "last_total": 136,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "45-51",
-   "last_score": "57-67"
+   "last_score": "63-73"
   },
   "fb_1813693|FB_GEC_GOL": {
    "key": "fb_1813693|FB_GEC_GOL",
@@ -5526,14 +5529,14 @@
    "created": "2026-11-15T16:55:27.551473+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1813693|FB_BERABERLIK_GEC": {
    "key": "fb_1813693|FB_BERABERLIK_GEC",
@@ -5550,14 +5553,14 @@
    "created": "2026-11-15T16:55:28.025995+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1814498|FB_TEK_FARK_70": {
    "key": "fb_1814498|FB_TEK_FARK_70",
@@ -5573,7 +5576,7 @@
    ],
    "created": "2026-11-15T16:55:28.026206+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -5598,14 +5601,14 @@
    "created": "2026-11-15T17:00:53.905051+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 162,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 135,
    "n": 1,
    "ref": 45.0,
    "signal_score": "76-59",
-   "last_score": "89-73"
+   "last_score": "92-74"
   },
   "bb_1854358|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1854358|BB_TEMPO_DUSUSU_ALT",
@@ -5717,7 +5720,7 @@
    ],
    "created": "2026-11-15T17:01:00.592927+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -5766,14 +5769,14 @@
    "created": "2026-11-15T17:05:34.509814+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1815474|FB_00_60_70": {
    "key": "fb_1815474|FB_00_60_70",
@@ -5934,14 +5937,14 @@
    "created": "2026-11-15T17:10:42.262522+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-3",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1812155|FB_GERIDEN_FARK2": {
    "key": "fb_1812155|FB_GERIDEN_FARK2",
@@ -6054,14 +6057,14 @@
    "created": "2026-11-15T17:20:38.416750+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 52,
+   "last_total": 57,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "26-26",
-   "last_score": "26-26"
+   "last_score": "26-31"
   },
   "fb_1850315|FB_11_IY2": {
    "key": "fb_1850315|FB_11_IY2",
@@ -6230,6 +6233,246 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1738320|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1738320|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1738320",
+   "match": "Finland - San Marino",
+   "league": "UEFA Nations League League C: Group 1",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-15T17:25:26.921574+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-0",
+   "last_score": "3-0"
+  },
+  "fb_1815166|FB_TEK_FARK_70": {
+   "key": "fb_1815166|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1815166",
+   "match": "Compostela - Ourense CF",
+   "league": "Spain Segunda Division RFEF: Group 1",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T17:25:27.358753+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
+  },
+  "fb_1815165|FB_GEC_GOL": {
+   "key": "fb_1815165|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1815165",
+   "match": "Coruxo FC - UD Llanera",
+   "league": "Spain Segunda Division RFEF: Group 1",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T17:25:27.797581+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1815165|FB_TEK_FARK_70": {
+   "key": "fb_1815165|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1815165",
+   "match": "Coruxo FC - UD Llanera",
+   "league": "Spain Segunda Division RFEF: Group 1",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T17:25:28.249250+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1815167|FB_TEK_FARK_70": {
+   "key": "fb_1815167|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1815167",
+   "match": "SD Gernika - Real Oviedo B",
+   "league": "Spain Segunda Division RFEF: Group 1",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T17:25:28.249420+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1887284|FB_TEK_FARK_70": {
+   "key": "fb_1887284|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1887284",
+   "match": "Yeclano - Castellon B",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T17:25:28.708216+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1815782|FB_GEC_GOL": {
+   "key": "fb_1815782|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1815782",
+   "match": "Mijas-Las Lagunas - CD Estepona",
+   "league": "Spain Segunda Division RFEF: Group 4",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T17:25:29.176323+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 6,
+   "sent": true,
+   "direction": "over",
+   "base": 6,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-3",
+   "last_score": "3-3"
+  },
+  "fb_1815782|FB_BERABERLIK_GEC": {
+   "key": "fb_1815782|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1815782",
+   "match": "Mijas-Las Lagunas - CD Estepona",
+   "league": "Spain Segunda Division RFEF: Group 4",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T17:25:29.631956+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 6,
+   "sent": false,
+   "direction": "over",
+   "base": 6,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-3",
+   "last_score": "3-3"
+  },
+  "fb_1816088|FB_GEC_GOL": {
+   "key": "fb_1816088|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1816088",
+   "match": "Conquense - Guadalajara",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T17:25:29.632204+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1816088|FB_TEK_FARK_70": {
+   "key": "fb_1816088|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1816088",
+   "match": "Conquense - Guadalajara",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T17:25:30.092076+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
