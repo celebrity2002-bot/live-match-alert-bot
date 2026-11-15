@@ -7,8 +7,8 @@
   {
    "Eid": "1868513",
    "Pids": {
-    "112": "SBTE_2_1028754053",
-    "8": "1868513"
+    "8": "1868513",
+    "112": "SBTE_2_1028754053"
    },
    "Media": {
     "112": [
@@ -26,12 +26,12 @@
      }
     ]
    },
-   "Tr1": "9",
-   "Tr2": "13",
-   "Tr1OR": "9",
-   "Tr2OR": "13",
-   "Tr1Q1": "9",
-   "Tr2Q1": "13",
+   "Tr1": "11",
+   "Tr2": "17",
+   "Tr1OR": "11",
+   "Tr2OR": "17",
+   "Tr1Q1": "11",
+   "Tr2Q1": "17",
    "T1": [
     {
      "ID": "1881",
@@ -59,6 +59,60 @@
    "ErnInf": "1",
    "Et": 1,
    "Esd": 20261115030000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1868520",
+   "Pids": {
+    "112": "SBTE_2_1028754049",
+    "8": "1868520"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "GB",
+       "MX",
+       "IE",
+       "US"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "2015",
+     "Nm": "Cleveland Cavaliers",
+     "Img": "enet/58541.png",
+     "Abr": "CLE",
+     "Fc": "860038",
+     "Sc": "041E42"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1888",
+     "Nm": "Dallas Mavericks",
+     "Img": "enet/58547.png",
+     "Abr": "DAL",
+     "Fc": "00538C",
+     "Sc": "002B5E"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261115033000,
    "EO": 524391,
    "EOX": 524391,
    "Spid": 23,
