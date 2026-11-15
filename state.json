@@ -3498,14 +3498,14 @@
    "created": "2026-11-15T14:05:32.791180+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1826187|FB_11_IY2": {
    "key": "fb_1826187|FB_11_IY2",
@@ -3576,14 +3576,14 @@
    "created": "2026-11-15T14:20:32.876446+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "2-1"
   },
   "fb_1856118|FB_IY2_00": {
    "key": "fb_1856118|FB_IY2_00",
@@ -3702,14 +3702,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 96,
+   "last_total": 113,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "41-55"
+   "last_score": "51-62"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -3777,14 +3777,14 @@
    "created": "2026-11-15T14:40:40.365878+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1813696|FB_GEC_GOL": {
    "key": "fb_1813696|FB_GEC_GOL",
@@ -3801,14 +3801,14 @@
    "created": "2026-11-15T14:45:39.771593+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1813696|FB_TEK_FARK_70": {
    "key": "fb_1813696|FB_TEK_FARK_70",
@@ -3825,14 +3825,14 @@
    "created": "2026-11-15T14:45:39.771650+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1738382|FB_IY2_00": {
    "key": "fb_1738382|FB_IY2_00",
@@ -3921,14 +3921,14 @@
    "created": "2026-11-15T14:50:33.885807+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1855738|FB_00_60_70": {
    "key": "fb_1855738|FB_00_60_70",
@@ -3945,14 +3945,14 @@
    "created": "2026-11-15T14:50:34.395867+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "2-1"
   },
   "fb_1816755|FB_IY2_00": {
    "key": "fb_1816755|FB_IY2_00",
@@ -4017,14 +4017,14 @@
    "created": "2026-11-15T14:55:24.510029+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "2-1"
   },
   "fb_1855744|FB_GERIDEN_FARK2": {
    "key": "fb_1855744|FB_GERIDEN_FARK2",
@@ -4113,14 +4113,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 96,
+   "last_total": 113,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "41-55"
+   "last_score": "51-62"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4161,14 +4161,110 @@
    "created": "2026-11-15T15:11:33.518114+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "0-1"
+   "last_score": "1-2"
+  },
+  "fb_1738382|FB_00_60_70": {
+   "key": "fb_1738382|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1738382",
+   "match": "Latvia - Armenia",
+   "league": "UEFA Nations League League C: Group 2",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T15:20:31.410767+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1850310|FB_00_60_70": {
+   "key": "fb_1850310|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1850310",
+   "match": "Aston Villa W - Birmingham City W",
+   "league": "England FA Women’s Super League",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T15:20:31.823056+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1850309|FB_GERIDEN_FARK2": {
+   "key": "fb_1850309|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1850309",
+   "match": "West Ham United W - Charlton Athletic W",
+   "league": "England FA Women’s Super League",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T15:20:32.209136+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1850507|FB_00_60_70": {
+   "key": "fb_1850507|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1850507",
+   "match": "Sunderland W - Newcastle United W",
+   "league": "England WSL 2",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T15:20:32.630811+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
