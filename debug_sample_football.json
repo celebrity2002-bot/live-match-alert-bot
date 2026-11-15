@@ -5,107 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1850310",
-   "Pids": {
-    "112": "SBTE_2_1028600904",
-    "8": "1850310"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports Premier League",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 44,
-      "Nm": 1,
-      "NoP": false
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "4486",
-     "Nm": "Aston Villa W",
-     "Img": "teambadge/aston-villa-2024.png",
-     "NewsTag": "/team/aston-villa-women-2021020913320920836-26189/",
-     "Abr": "AVL(W)",
-     "Fc": "670E36",
-     "Sc": "95BFE5"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3869",
-     "Nm": "Birmingham City W",
-     "Img": "enet/258658.png",
-     "Abr": "BIR(W)",
-     "Fc": "0066cc"
-    }
-   ],
-   "Eps": "90+7'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794758081139,
-    "RTm": 5400000,
-    "ITm": 360000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Regular Season",
-   "Et": 1,
-   "Eit": "6",
-   "Esd": 20261115150000,
-   "EO": 874431359,
-   "EOX": 874431359,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1811143",
    "Pids": {
     "112": "SBTE_2_1028208869",
@@ -168,16 +67,18 @@
      "Sc": "004b9d"
     }
    ],
-   "Eps": "39'",
+   "Eps": "45+1'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794758051185,
-    "RTm": 2280000
+    "ATm": 1794758440979,
+    "RTm": 2700000,
+    "ITm": 0
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
    "Et": 1,
+   "Eit": "2",
    "Esd": 20261115161500,
    "EO": 874431343,
    "EOX": 874431343,
@@ -227,12 +128,12 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "90+5'",
+   "Eps": "90+10'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794758126342,
+    "ATm": 1794758425740,
     "RTm": 5400000,
-    "ITm": 240000
+    "ITm": 540000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -241,6 +142,63 @@
    "Esd": 20261115150000,
    "EO": 806895999,
    "EOX": 806895999,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1814050",
+   "Pids": {
+    "112": "SBTE_2_1029560806",
+    "8": "1814050"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "2b6otdedr8llruy1dslnpmhas",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "1",
+   "Tr2": "2",
+   "Trh1": "1",
+   "Trh2": "2",
+   "Tr1OR": "1",
+   "Tr2OR": "2",
+   "T1": [
+    {
+     "ID": "3422",
+     "Nm": "Sevilla W",
+     "Img": "enet/980746.png",
+     "Abr": "SEV(W)",
+     "Fc": "F43333",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3387",
+     "Nm": "Atletico Madrid W",
+     "Img": "teambadge/atletico-madrid-2024.png",
+     "Abr": "ATM(W)",
+     "Fc": "CB3524",
+     "Sc": "272E61"
+    }
+   ],
+   "Eps": "HT",
+   "Esid": 10,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Regular Season",
+   "Et": 1,
+   "Esd": 20261115160000,
+   "EO": 807158127,
+   "EOX": 807158127,
    "Spid": 1,
    "Pid": 8
   }
