@@ -6846,14 +6846,14 @@
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 179,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "33-22",
-   "last_score": "101-74"
+   "last_score": "102-77"
   },
   "fb_1815165|FB_GERIDEN_FARK2": {
    "key": "fb_1815165|FB_GERIDEN_FARK2",
@@ -7005,14 +7005,14 @@
    "created": "2026-11-15T17:50:31.473450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 144,
+   "last_total": 145,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "75-69"
+   "last_score": "75-70"
   },
   "fb_1814051|FB_IY2_00": {
    "key": "fb_1814051|FB_IY2_00",
@@ -7028,7 +7028,7 @@
    ],
    "created": "2026-11-15T17:50:33.315460+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7161,14 +7161,14 @@
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 131,
+   "last_total": 135,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "28-24",
-   "last_score": "67-64"
+   "last_score": "69-66"
   },
   "fb_1850315|FB_GEC_GOL": {
    "key": "fb_1850315|FB_GEC_GOL",
@@ -7318,7 +7318,7 @@
    ],
    "created": "2026-11-15T18:00:52.177614+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7424,14 +7424,14 @@
    "created": "2026-11-15T18:10:31.162108+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 179,
    "sent": true,
    "direction": "under",
    "base": 102,
    "n": 2,
    "ref": 51.0,
    "signal_score": "61-41",
-   "last_score": "101-74"
+   "last_score": "102-77"
   },
   "fb_1856116|FB_GERIDEN_FARK2": {
    "key": "fb_1856116|FB_GERIDEN_FARK2",
@@ -7551,8 +7551,8 @@
     2.1
    ],
    "created": "2026-11-15T18:20:33.076655+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7560,7 +7560,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-0",
+   "final_total": 2,
+   "settled": "2026-11-15T19:10:35.347403+00:00",
+   "seg_avg": 0.0
   },
   "bb_1886825|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1886825|BB_TEMPO_DUSUSU_ALT",
@@ -7577,14 +7580,14 @@
    "created": "2026-11-15T18:25:22.516958+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 112,
+   "last_total": 114,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "30-29",
-   "last_score": "62-50"
+   "last_score": "64-50"
   },
   "fb_1814051|FB_TEK_FARK_70": {
    "key": "fb_1814051|FB_TEK_FARK_70",
@@ -7600,7 +7603,7 @@
    ],
    "created": "2026-11-15T18:25:24.201616+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7624,7 +7627,7 @@
    ],
    "created": "2026-11-15T18:30:47.472363+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7649,14 +7652,14 @@
    "created": "2026-11-15T18:40:31.922203+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 113,
+   "last_total": 115,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "34-35",
-   "last_score": "56-57"
+   "last_score": "58-57"
   },
   "bb_1853693|BB_Q4_FARK_ALT": {
    "key": "bb_1853693|BB_Q4_FARK_ALT",
@@ -7673,14 +7676,14 @@
    "created": "2026-11-15T18:45:32.032902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 179,
    "sent": false,
    "direction": "under",
    "base": 149,
    "n": 1,
    "ref": 49.666666666666664,
    "signal_score": "86-63",
-   "last_score": "101-74"
+   "last_score": "102-77"
   },
   "fb_1811141|FB_GERIDEN_FARK2": {
    "key": "fb_1811141|FB_GERIDEN_FARK2",
@@ -7769,14 +7772,14 @@
    "created": "2026-11-15T18:55:24.564983+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 112,
+   "last_total": 114,
    "sent": true,
    "direction": "under",
    "base": 112,
    "n": 2,
    "ref": 56.0,
    "signal_score": "62-50",
-   "last_score": "62-50"
+   "last_score": "64-50"
   },
   "fb_1811142|FB_TEK_FARK_70": {
    "key": "fb_1811142|FB_TEK_FARK_70",
@@ -7865,14 +7868,14 @@
    "created": "2026-11-15T19:05:31.742864+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 131,
+   "last_total": 135,
    "sent": true,
    "direction": "over",
    "base": 131,
    "n": 1,
    "ref": 43.666666666666664,
    "signal_score": "67-64",
-   "last_score": "67-64"
+   "last_score": "69-66"
   },
   "fb_1811142|FB_GEC_GOL": {
    "key": "fb_1811142|FB_GEC_GOL",
@@ -7911,6 +7914,78 @@
     1.75
    ],
    "created": "2026-11-15T19:05:33.144758+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "bb_1868517|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868517|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868517",
+   "match": "Philadelphia 76ers - Indiana Pacers",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T19:10:33.302962+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 115,
+   "sent": true,
+   "direction": "under",
+   "base": 115,
+   "n": 2,
+   "ref": 57.5,
+   "signal_score": "58-57",
+   "last_score": "58-57"
+  },
+  "fb_1814497|FB_GEC_GOL": {
+   "key": "fb_1814497|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1814497",
+   "match": "Real Murcia - Alcorcon",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T19:10:34.989363+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1814497|FB_BERABERLIK_GEC": {
+   "key": "fb_1814497|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1814497",
+   "match": "Real Murcia - Alcorcon",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T19:10:35.347045+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 2,
