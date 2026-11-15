@@ -54,6 +54,12 @@
     "aggScoreTeam1": 1,
     "aggScoreTeam2": 1
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "222582",
@@ -69,16 +75,109 @@
      "Abr": "PIR"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794711638650,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Semi Finals",
    "Awt": 0,
    "Et": 1,
    "Esd": 20261115040000,
-   "EO": 2954100839,
-   "EOX": 2954100839,
+   "EO": 2954100847,
+   "EOX": 2954100847,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1916717",
+   "Pids": {
+    "112": "SBTE_2_1029766939",
+    "8": "1916717"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Amazon Prime",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "amaon-prime.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Tubi",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "Tubi-logo.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "seriesInfo": {
+    "totalLegs": 2,
+    "currentLeg": 2,
+    "aggScoreTeam1": 0,
+    "aggScoreTeam2": 0
+   },
+   "T1": [
+    {
+     "ID": "12741",
+     "Nm": "CD Guadalajara W",
+     "Img": "enet/980702.png",
+     "Abr": "CDG(W)"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "12760",
+     "Nm": "FC Juarez W",
+     "Img": "enet/1066912.png",
+     "Abr": "FCJ(W)"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "Quarter Finals",
+   "Awt": 0,
+   "Et": 1,
+   "Esd": 20261115040600,
+   "EO": 2417229831,
+   "EOX": 2417229831,
    "Spid": 1,
    "Pid": 8
   }
