@@ -1338,14 +1338,38 @@
    "created": "2026-11-15T10:30:42.056999+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 154,
+   "last_total": 168,
    "sent": true,
    "direction": "under",
    "base": 131,
    "n": 1,
    "ref": 43.666666666666664,
    "signal_score": "74-57",
-   "last_score": "86-68"
+   "last_score": "93-75"
+  },
+  "bb_1861253|BB_HT_DUSUK_UST": {
+   "key": "bb_1861253|BB_HT_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1861253",
+   "match": "Esenler Erokspor - Bahcesehir Koleji",
+   "league": "Turkiye BSL",
+   "strategy": "BB_HT_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T10:50:35.351781+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 66,
+   "sent": true,
+   "direction": "over",
+   "base": 66,
+   "n": 2,
+   "ref": 33.0,
+   "signal_score": "31-35",
+   "last_score": "31-35"
   }
  }
 }
