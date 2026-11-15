@@ -1365,14 +1365,62 @@
    "created": "2026-11-15T10:50:35.351781+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 91,
+   "last_total": 99,
    "sent": true,
    "direction": "over",
    "base": 66,
    "n": 2,
    "ref": 33.0,
    "signal_score": "31-35",
-   "last_score": "36-55"
+   "last_score": "36-63"
+  },
+  "bb_1895371|BB_Q1_DUSUK_UST": {
+   "key": "bb_1895371|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1895371",
+   "match": "Peristeri - Mykonos",
+   "league": "Greece Basket League",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-15T11:20:33.109525+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 31,
+   "sent": true,
+   "direction": "over",
+   "base": 31,
+   "n": 3,
+   "ref": 31.0,
+   "signal_score": "21-10",
+   "last_score": "21-10"
+  },
+  "fb_1815476|FB_IY2_00": {
+   "key": "fb_1815476|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1815476",
+   "match": "Deportiva Minera - Poblense",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T11:20:34.599155+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
