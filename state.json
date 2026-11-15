@@ -851,7 +851,7 @@
    ],
    "created": "2026-11-15T00:45:29.069705+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 224,
    "sent": true,
    "direction": "under",
@@ -929,7 +929,7 @@
    ],
    "created": "2026-11-15T01:10:31.303806+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 224,
    "sent": true,
    "direction": "under",
@@ -1002,14 +1002,14 @@
    "created": "2026-11-15T01:45:32.217637+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 148,
+   "last_total": 162,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "45-27",
-   "last_score": "81-67"
+   "last_score": "85-77"
   },
   "bb_1868515|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868515|BB_TEMPO_DUSUSU_ALT",
@@ -1026,14 +1026,14 @@
    "created": "2026-11-15T01:50:33.078256+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 151,
    "sent": true,
    "direction": "under",
    "base": 76,
    "n": 3,
    "ref": 76.0,
    "signal_score": "42-45",
-   "last_score": "77-66"
+   "last_score": "77-74"
   },
   "bb_1868544|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868544|BB_HT_YUKSEK_ALT",
@@ -1050,14 +1050,14 @@
    "created": "2026-11-15T02:10:30.762993+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 148,
+   "last_total": 162,
    "sent": true,
    "direction": "under",
    "base": 125,
    "n": 2,
    "ref": 62.5,
    "signal_score": "71-54",
-   "last_score": "81-67"
+   "last_score": "85-77"
   },
   "bb_1868555|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868555|BB_HT_YUKSEK_ALT",
@@ -1074,14 +1074,14 @@
    "created": "2026-11-15T02:10:31.224247+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 138,
+   "last_total": 152,
    "sent": true,
    "direction": "under",
    "base": 103,
    "n": 2,
    "ref": 51.5,
    "signal_score": "45-58",
-   "last_score": "66-72"
+   "last_score": "72-80"
   },
   "bb_1868515|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868515|BB_HT_YUKSEK_ALT",
@@ -1098,14 +1098,14 @@
    "created": "2026-11-15T02:20:30.998907+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 151,
    "sent": true,
    "direction": "under",
    "base": 127,
    "n": 2,
    "ref": 63.5,
    "signal_score": "67-60",
-   "last_score": "77-66"
+   "last_score": "77-74"
   },
   "bb_1868520|BB_Q4_FARK_ALT": {
    "key": "bb_1868520|BB_Q4_FARK_ALT",
