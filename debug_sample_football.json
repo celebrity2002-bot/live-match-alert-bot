@@ -64,11 +64,11 @@
      "Abr": "ADC"
     }
    ],
-   "Eps": "22'",
+   "Eps": "25'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794749081377,
-    "RTm": 1260000
+    "ATm": 1794749291060,
+    "RTm": 1440000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -119,72 +119,47 @@
    "Pid": 8
   },
   {
-   "Eid": "1849644",
+   "Eid": "1826187",
    "Pids": {
-    "112": "SBTE_2_1028488949",
-    "8": "1849644"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     }
-    ]
+    "8": "1826187"
    },
    "Tr1": "1",
-   "Tr2": "1",
-   "Tug1": "1",
-   "Tug2": "1",
+   "Tr2": "0",
    "Trh1": "1",
    "Trh2": "0",
    "Tr1OR": "1",
-   "Tr2OR": "1",
+   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "101069",
-     "Nm": "Sassuolo W",
-     "Img": "enet/1184320.png",
-     "Abr": "SAS(W)"
+     "ID": "8176",
+     "Nm": "TSV Landsberg",
+     "Img": "enet/557350.png",
+     "Abr": "TSV"
     }
    ],
    "T2": [
     {
-     "ID": "317407",
-     "Nm": "Ternana Femminile",
-     "Img": "enet/1645964.png",
-     "Abr": "TER"
+     "ID": "8235",
+     "Nm": "1. FC Nuremberg II",
+     "Img": "enet/94943.png",
+     "Abr": "NUR",
+     "Fc": "cc0000",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "90+6'",
-   "Esid": 3,
+   "Eps": "29'",
+   "Esid": 2,
    "Etm": {
-    "ATm": 1794749071384,
-    "RTm": 5400000,
-    "ITm": 300000
+    "ATm": 1794749321274,
+    "RTm": 1680000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "7",
+   "ErnInf": "19",
    "Et": 1,
-   "Esd": 20261115123000,
-   "EO": 807141759,
-   "EOX": 807141759,
+   "Esd": 20261115140000,
+   "EO": 806879247,
+   "EOX": 806879247,
    "Spid": 1,
    "Pid": 8
   }
