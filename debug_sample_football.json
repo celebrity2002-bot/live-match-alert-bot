@@ -106,97 +106,6 @@
    "Pid": 8
   },
   {
-   "Eid": "1850309",
-   "Pids": {
-    "112": "SBTE_2_1028600926",
-    "8": "1850309"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports Mix",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Sportsnet One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "CA"
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "3923",
-     "Nm": "West Ham United W",
-     "Img": "enet/231497.png",
-     "NewsTag": "/team/west-ham-united-women-2021020913320920836-26199/",
-     "Abr": "WHU(W)",
-     "Fc": "7A263A",
-     "Sc": "1BB1E7"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "6881",
-     "Nm": "Charlton Athletic W",
-     "Img": "enet/231502.png",
-     "Abr": "CHA(W)",
-     "Fc": "d4021d",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+7'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794758081120,
-    "RTm": 5400000,
-    "ITm": 360000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Regular Season",
-   "Et": 1,
-   "Eit": "7",
-   "Esd": 20261115150000,
-   "EO": 907985791,
-   "EOX": 907985791,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1811143",
    "Pids": {
     "112": "SBTE_2_1028208869",
@@ -272,6 +181,66 @@
    "Esd": 20261115161500,
    "EO": 874431343,
    "EOX": 874431343,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1850506",
+   "Pids": {
+    "112": "SBTE_2_1028601265",
+    "8": "1850506"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "1ikwz17i31qptbfmzhhetblec",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "5",
+   "Trh1": "0",
+   "Trh2": "2",
+   "Tr1OR": "0",
+   "Tr2OR": "5",
+   "T1": [
+    {
+     "ID": "82861",
+     "Nm": "Burnley W",
+     "Img": "teambadge/burnley-2024.png",
+     "Abr": "BUR(W)"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "82839",
+     "Nm": "Southampton W",
+     "Img": "enet/1134185.png",
+     "Abr": "SOU(W)",
+     "Fc": "D71920",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "90+5'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794758126342,
+    "RTm": 5400000,
+    "ITm": 240000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "8",
+   "Et": 1,
+   "Esd": 20261115150000,
+   "EO": 806895999,
+   "EOX": 806895999,
    "Spid": 1,
    "Pid": 8
   }
