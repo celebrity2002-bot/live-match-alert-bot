@@ -4928,7 +4928,7 @@
    ],
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -5546,7 +5546,7 @@
    ],
    "created": "2026-11-15T16:55:25.792720+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -5679,14 +5679,14 @@
    "created": "2026-11-15T17:00:57.157435+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 153,
+   "last_total": 157,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "23-29",
-   "last_score": "75-78"
+   "last_score": "78-79"
   },
   "fb_1812153|FB_11_IY2": {
    "key": "fb_1812153|FB_11_IY2",
@@ -5891,7 +5891,7 @@
    ],
    "created": "2026-11-15T17:05:35.061230+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -6159,14 +6159,14 @@
    "created": "2026-11-15T17:20:38.416750+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 116,
+   "last_total": 120,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "26-26",
-   "last_score": "64-52"
+   "last_score": "66-54"
   },
   "fb_1850315|FB_11_IY2": {
    "key": "fb_1850315|FB_11_IY2",
@@ -6255,14 +6255,14 @@
    "created": "2026-11-15T17:20:41.746607+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1815475|FB_GERIDEN_FARK2": {
    "key": "fb_1815475|FB_GERIDEN_FARK2",
@@ -6816,14 +6816,14 @@
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 99,
+   "last_total": 102,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "33-22",
-   "last_score": "58-41"
+   "last_score": "61-41"
   },
   "fb_1815165|FB_GERIDEN_FARK2": {
    "key": "fb_1815165|FB_GERIDEN_FARK2",
@@ -6866,7 +6866,7 @@
    ],
    "created": "2026-11-15T17:40:32.468358+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -6890,7 +6890,7 @@
    ],
    "created": "2026-11-15T17:40:32.778547+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -6915,14 +6915,14 @@
    "created": "2026-11-15T17:45:33.279846+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "bb_1854379|BB_HT_YUKSEK_ALT": {
    "key": "bb_1854379|BB_HT_YUKSEK_ALT",
@@ -6939,14 +6939,14 @@
    "created": "2026-11-15T17:50:30.878330+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 116,
+   "last_total": 120,
    "sent": true,
    "direction": "under",
    "base": 108,
    "n": 2,
    "ref": 54.0,
    "signal_score": "62-46",
-   "last_score": "64-52"
+   "last_score": "66-54"
   },
   "bb_1861272|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1861272|BB_TEMPO_DUSUSU_ALT",
@@ -6963,14 +6963,14 @@
    "created": "2026-11-15T17:50:31.473450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 67,
+   "last_total": 78,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "26-41"
+   "last_score": "35-43"
   },
   "fb_1814051|FB_IY2_00": {
    "key": "fb_1814051|FB_IY2_00",
@@ -7011,14 +7011,14 @@
    "created": "2026-11-15T17:50:33.816817+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "fb_1855362|FB_00_60_70": {
    "key": "fb_1855362|FB_00_60_70",
@@ -7107,14 +7107,14 @@
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 65,
+   "last_total": 75,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "28-24",
-   "last_score": "35-30"
+   "last_score": "43-32"
   },
   "fb_1850315|FB_GEC_GOL": {
    "key": "fb_1850315|FB_GEC_GOL",
@@ -7203,14 +7203,14 @@
    "created": "2026-11-15T17:55:27.907647+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1855357|FB_TEK_FARK_70": {
    "key": "fb_1855357|FB_TEK_FARK_70",
@@ -7323,14 +7323,62 @@
    "created": "2026-11-15T18:05:35.912398+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": false,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
+  },
+  "bb_1853693|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1853693|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1853693",
+   "match": "Niners Chemnitz - Basketball Loewen Braunschweig",
+   "league": "Germany BBL",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T18:10:31.162108+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 102,
+   "sent": true,
+   "direction": "under",
+   "base": 102,
+   "n": 2,
+   "ref": 51.0,
+   "signal_score": "61-41",
+   "last_score": "61-41"
+  },
+  "fb_1856116|FB_GERIDEN_FARK2": {
+   "key": "fb_1856116|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1856116",
+   "match": "Barletta - Team Altamura",
+   "league": "Italy Serie C: Group C",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T18:10:32.799910+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
   }
  }
 }
