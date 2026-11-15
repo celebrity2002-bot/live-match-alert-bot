@@ -3714,14 +3714,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 181,
+   "last_total": 184,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "88-93"
+   "last_score": "89-95"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -4170,14 +4170,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 181,
+   "last_total": 184,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "88-93"
+   "last_score": "89-95"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4489,8 +4489,8 @@
     2.1
    ],
    "created": "2026-11-15T15:25:25.221370+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -4498,7 +4498,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "3-0"
+   "last_score": "3-0",
+   "final_total": 3,
+   "settled": "2026-11-15T16:15:34.201185+00:00",
+   "seg_avg": 1.0
   },
   "fb_1849645|FB_TEK_FARK_70": {
    "key": "fb_1849645|FB_TEK_FARK_70",
@@ -4702,8 +4705,8 @@
     1.95
    ],
    "created": "2026-11-15T15:45:29.763323+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 171,
    "sent": true,
    "direction": "under",
@@ -4711,7 +4714,10 @@
    "n": 1,
    "ref": 46.0,
    "signal_score": "64-79",
-   "last_score": "76-95"
+   "last_score": "76-95",
+   "final_total": 171,
+   "settled": "2026-11-15T16:15:31.309159+00:00",
+   "seg_avg": 33.0
   },
   "fb_1831864|FB_IY2_00": {
    "key": "fb_1831864|FB_IY2_00",
@@ -4784,6 +4790,54 @@
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "1-1"
+  },
+  "fb_1834787|FB_GERIDEN_FARK2": {
+   "key": "fb_1834787|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1834787",
+   "match": "RB Leipzig W - Eintracht Frankfurt W",
+   "league": "Germany Frauen-Bundesliga",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T16:15:33.222406+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
+  },
+  "fb_1814498|FB_IY2_00": {
+   "key": "fb_1814498|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814498",
+   "match": "Algeciras - Antequera CF",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T16:15:33.698406+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
