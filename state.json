@@ -1364,7 +1364,7 @@
    ],
    "created": "2026-11-15T10:50:35.351781+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 149,
    "sent": true,
    "direction": "over",
@@ -1389,14 +1389,14 @@
    "created": "2026-11-15T11:20:33.109525+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 66,
+   "last_total": 70,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "21-10",
-   "last_score": "35-31"
+   "last_score": "35-35"
   },
   "fb_1815476|FB_IY2_00": {
    "key": "fb_1815476|FB_IY2_00",
@@ -1437,14 +1437,14 @@
    "created": "2026-11-15T11:25:22.942513+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 95,
+   "last_total": 100,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "25-36",
-   "last_score": "43-52"
+   "last_score": "46-54"
   },
   "bb_1867879|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867879|BB_TEMPO_DUSUSU_ALT",
@@ -1461,14 +1461,14 @@
    "created": "2026-11-15T11:25:23.259574+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 106,
+   "last_total": 111,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "27-24",
-   "last_score": "61-45"
+   "last_score": "63-48"
   },
   "bb_1861253|BB_Q4_FARK_ALT": {
    "key": "bb_1861253|BB_Q4_FARK_ALT",
@@ -1484,7 +1484,7 @@
    ],
    "created": "2026-11-15T11:25:23.562828+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 149,
    "sent": true,
    "direction": "under",
@@ -1629,14 +1629,14 @@
    "created": "2026-11-15T11:45:40.774912+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "2-1"
   },
   "fb_1816091|FB_IY2_00": {
    "key": "fb_1816091|FB_IY2_00",
@@ -1685,6 +1685,126 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1895371|BB_HT_DUSUK_UST": {
+   "key": "bb_1895371|BB_HT_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1895371",
+   "match": "Peristeri - Mykonos",
+   "league": "Greece Basket League",
+   "strategy": "BB_HT_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T11:50:31.607394+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 70,
+   "sent": true,
+   "direction": "over",
+   "base": 70,
+   "n": 2,
+   "ref": 35.0,
+   "signal_score": "35-35",
+   "last_score": "35-35"
+  },
+  "bb_1867879|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1867879|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867879",
+   "match": "Valencia - Basquet Coruna",
+   "league": "Spain Liga ACB",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T11:50:32.264648+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 111,
+   "sent": true,
+   "direction": "under",
+   "base": 111,
+   "n": 2,
+   "ref": 55.5,
+   "signal_score": "63-48",
+   "last_score": "63-48"
+  },
+  "bb_1867868|BB_Q1_DUSUK_UST": {
+   "key": "bb_1867868|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1867868",
+   "match": "Unicaja - Basquet Girona",
+   "league": "Spain Liga ACB",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-15T11:50:32.793230+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 36,
+   "sent": true,
+   "direction": "over",
+   "base": 36,
+   "n": 3,
+   "ref": 36.0,
+   "signal_score": "14-22",
+   "last_score": "14-22"
+  },
+  "fb_1816748|FB_IY2_00": {
+   "key": "fb_1816748|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1816748",
+   "match": "Amarante FC - Felgueiras 1932",
+   "league": "Portugal Liga Portugal 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T11:50:34.680828+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1814862|FB_11_IY2": {
+   "key": "fb_1814862|FB_11_IY2",
+   "sport": "football",
+   "match_id": "fb_1814862",
+   "match": "UD Logrones B - Pena Sport",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_11_IY2",
+   "pick": "Bir Gol Daha Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.75
+   ],
+   "created": "2026-11-15T11:50:35.177762+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
   }
  }
 }
