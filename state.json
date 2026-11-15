@@ -762,14 +762,38 @@
    "created": "2026-11-15T00:20:31.621901+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-3"
+  },
+  "fb_1799011|FB_TEK_FARK_70": {
+   "key": "fb_1799011|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1799011",
+   "match": "Queretaro FC - Monterrey",
+   "league": "Mexico Liga MX: Apertura",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T00:30:44.875631+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
   }
  }
 }
