@@ -3714,14 +3714,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 139,
+   "last_total": 143,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "64-75"
+   "last_score": "66-77"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -3765,14 +3765,14 @@
    "created": "2026-11-15T14:30:45.664849+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "3-1"
+   "last_score": "4-1"
   },
   "fb_1813696|FB_GERIDEN_FARK2": {
    "key": "fb_1813696|FB_GERIDEN_FARK2",
@@ -4152,14 +4152,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 139,
+   "last_total": 143,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "64-75"
+   "last_score": "66-77"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4203,14 +4203,14 @@
    "created": "2026-11-15T15:11:33.518114+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-3"
+   "last_score": "1-4"
   },
   "fb_1738382|FB_00_60_70": {
    "key": "fb_1738382|FB_00_60_70",
@@ -4323,14 +4323,14 @@
    "created": "2026-11-15T15:25:23.633732+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-3"
+   "last_score": "1-4"
   },
   "fb_1738381|FB_TEK_FARK_70": {
    "key": "fb_1738381|FB_TEK_FARK_70",
@@ -4347,14 +4347,14 @@
    "created": "2026-11-15T15:25:24.017687+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": false,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-3"
+   "last_score": "1-4"
   },
   "fb_1850504|FB_GEC_GOL": {
    "key": "fb_1850504|FB_GEC_GOL",
@@ -4443,14 +4443,14 @@
    "created": "2026-11-15T15:25:25.221370+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "fb_1849645|FB_TEK_FARK_70": {
    "key": "fb_1849645|FB_TEK_FARK_70",
@@ -4491,14 +4491,14 @@
    "created": "2026-11-15T15:30:44.122621+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 132,
+   "last_total": 138,
    "sent": true,
    "direction": "under",
    "base": 118,
    "n": 1,
    "ref": 39.333333333333336,
    "signal_score": "67-51",
-   "last_score": "75-57"
+   "last_score": "80-58"
   },
   "fb_1738381|FB_GERIDEN_FARK2": {
    "key": "fb_1738381|FB_GERIDEN_FARK2",
@@ -4515,14 +4515,14 @@
    "created": "2026-11-15T15:30:45.978141+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": false,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-3",
-   "last_score": "1-3"
+   "last_score": "1-4"
   },
   "fb_1850503|FB_GERIDEN_FARK2": {
    "key": "fb_1850503|FB_GERIDEN_FARK2",
@@ -4587,14 +4587,14 @@
    "created": "2026-11-15T15:35:23.398370+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "3-1"
+   "last_score": "4-1"
   },
   "fb_1849645|FB_GERIDEN_FARK2": {
    "key": "fb_1849645|FB_GERIDEN_FARK2",
@@ -4619,6 +4619,30 @@
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0"
+  },
+  "bb_1853682|BB_Q4_FARK_ALT": {
+   "key": "bb_1853682|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1853682",
+   "match": "Fraport Skyliners - Gladiators Trier",
+   "league": "Germany BBL",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-15T15:45:29.763323+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 143,
+   "sent": true,
+   "direction": "under",
+   "base": 138,
+   "n": 1,
+   "ref": 46.0,
+   "signal_score": "64-79",
+   "last_score": "64-79"
   }
  }
 }
