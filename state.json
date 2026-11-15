@@ -3714,14 +3714,14 @@
    "created": "2026-11-15T14:30:43.573178+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 184,
+   "last_total": 189,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "18-32",
-   "last_score": "89-95"
+   "last_score": "89-100"
   },
   "fb_1811144|FB_TEK_FARK_70": {
    "key": "fb_1811144|FB_TEK_FARK_70",
@@ -4170,14 +4170,14 @@
    "created": "2026-11-15T15:00:53.458125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 184,
+   "last_total": 189,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "41-55",
-   "last_score": "89-95"
+   "last_score": "89-100"
   },
   "fb_1855739|FB_GERIDEN_FARK2": {
    "key": "fb_1855739|FB_GERIDEN_FARK2",
@@ -4806,14 +4806,14 @@
    "created": "2026-11-15T16:15:33.222406+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-3"
   },
   "fb_1814498|FB_IY2_00": {
    "key": "fb_1814498|FB_IY2_00",
@@ -4828,6 +4828,54 @@
     1.6
    ],
    "created": "2026-11-15T16:15:33.698406+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1831864|FB_00_60_70": {
+   "key": "fb_1831864|FB_00_60_70",
+   "sport": "football",
+   "match_id": "fb_1831864",
+   "match": "CF Calamocha - Reus FC Reddis",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_00_60_70",
+   "pick": "Maçta Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-15T16:20:39.604159+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1816084|FB_IY2_00": {
+   "key": "fb_1816084|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1816084",
+   "match": "Navalcarnero - Getafe B",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-15T16:20:40.149815+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
