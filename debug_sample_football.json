@@ -5,10 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1811144",
+   "Eid": "1738381",
    "Pids": {
-    "8": "1811144",
-    "112": "SBTE_2_1028208927"
+    "112": "SBTE_2_1026632477",
+    "8": "1738381"
    },
    "Media": {
     "112": [
@@ -17,6 +17,24 @@
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Sports 2",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
       "allowedCountries": [
        "US",
        "US"
@@ -30,156 +48,201 @@
       "allowedCountries": [
        "MX"
       ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "9110",
+     "Nm": "Cyprus",
+     "Img": "enet/5793.png",
+     "NewsTag": "/team/cyprus-2022081113203185684-2346/",
+     "Abr": "CYP",
+     "Fc": "0d2d68",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9097",
+     "Nm": "Montenegro",
+     "Img": "enet/49437.png",
+     "NewsTag": "/team/montenegro-2022062716001253418-1538/",
+     "Abr": "MNE",
+     "Fc": "e81d2c",
+     "Sc": "fcd404"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261115150000,
+   "EO": 807190631,
+   "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738382",
+   "Pids": {
+    "112": "SBTE_2_1027163460",
+    "8": "1738382"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
      },
      {
-      "eventId": "4fdplgt6tb1nxisrh0rpivyfo",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
       "allowedCountries": [
-       "GB",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Soccer Plus",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "9160",
+     "Nm": "Latvia",
+     "Img": "teambadge/latvia-2024.png",
+     "NewsTag": "/team/latvia-2022081113203185684-1480/",
+     "Abr": "LVA",
+     "Fc": "a11b37",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9099",
+     "Nm": "Armenia",
+     "Img": "enet/6583.png",
+     "NewsTag": "/team/armenia-2022062716001253418-2173/",
+     "Abr": "ARM",
+     "Fc": "ec1c24",
+     "Sc": "034ea1"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261115150000,
+   "EO": 807190631,
+   "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1850310",
+   "Pids": {
+    "112": "SBTE_2_1028600904",
+    "8": "1850310"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
        "IE"
       ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "1": [
+     },
      {
-      "IT": 1038,
-      "Nm": 2,
-      "Sc": [
-       0,
-       0
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports Premier League",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
       ]
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
    "T1": [
     {
-     "ID": "3298",
-     "Nm": "Tenerife",
-     "Img": "enet/9867.png",
-     "Abr": "TEN",
-     "Fc": "ffffff",
-     "Sc": "0000a0"
+     "ID": "4486",
+     "Nm": "Aston Villa W",
+     "Img": "teambadge/aston-villa-2024.png",
+     "NewsTag": "/team/aston-villa-women-2021020913320920836-26189/",
+     "Abr": "AVL(W)",
+     "Fc": "670E36",
+     "Sc": "95BFE5"
     }
    ],
    "T2": [
     {
-     "ID": "4168",
-     "Nm": "AD Ceuta FC",
-     "Img": "enet/357259.png",
-     "Abr": "ADC"
+     "ID": "3869",
+     "Nm": "Birmingham City W",
+     "Img": "enet/258658.png",
+     "Abr": "BIR(W)",
+     "Fc": "0066cc"
     }
    ],
-   "Eps": "45+2'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794750581348,
-    "RTm": 2700000,
-    "ITm": 60000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "10",
    "Et": 1,
-   "Eit": "3",
-   "Esd": 20261115140000,
-   "EO": 807027567,
-   "EOX": 807027567,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1799890",
-   "Pids": {
-    "112": "SBTE_2_1027978085",
-    "8": "1799890"
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "4053",
-     "Nm": "MVV Maastricht",
-     "Img": "enet/9838.png",
-     "Abr": "MVV",
-     "Fc": "ff0000",
-     "Sc": "dd0000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "2877",
-     "Nm": "Vitesse",
-     "Img": "enet/8277.png",
-     "Abr": "VIT",
-     "Fc": "FCD205",
-     "Sc": "000000"
-    }
-   ],
-   "Eps": "18'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794750586315,
-    "RTm": 1020000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "15",
-   "Et": 1,
-   "Esd": 20261115143000,
-   "EO": 807190887,
-   "EOX": 807190887,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1826187",
-   "Pids": {
-    "8": "1826187"
-   },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "8176",
-     "Nm": "TSV Landsberg",
-     "Img": "enet/557350.png",
-     "Abr": "TSV"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "8235",
-     "Nm": "1. FC Nuremberg II",
-     "Img": "enet/94943.png",
-     "Abr": "NUR",
-     "Fc": "cc0000",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "HT",
-   "Esid": 10,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "19",
-   "Et": 1,
-   "Esd": 20261115140000,
-   "EO": 806879247,
-   "EOX": 806879247,
+   "Esd": 20261115150000,
+   "EO": 874299495,
+   "EOX": 874299495,
    "Spid": 1,
    "Pid": 8
   }
