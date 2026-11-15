@@ -4739,7 +4739,7 @@
    ],
    "created": "2026-11-15T15:50:31.066921+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -4788,14 +4788,14 @@
    "created": "2026-11-15T16:00:52.121140+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "3-2"
   },
   "fb_1834787|FB_GERIDEN_FARK2": {
    "key": "fb_1834787|FB_GERIDEN_FARK2",
@@ -4811,7 +4811,7 @@
    ],
    "created": "2026-11-15T16:15:33.222406+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -4859,7 +4859,7 @@
    ],
    "created": "2026-11-15T16:20:39.604159+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -4908,14 +4908,14 @@
    "created": "2026-11-15T16:25:22.834638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 95,
+   "last_total": 96,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "44-51"
+   "last_score": "45-51"
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -4931,7 +4931,7 @@
    ],
    "created": "2026-11-15T16:25:24.394988+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -5124,14 +5124,14 @@
    "created": "2026-11-15T16:35:23.609207+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1"
+   "last_score": "2-1"
   },
   "fb_1831864|FB_TEK_FARK_70": {
    "key": "fb_1831864|FB_TEK_FARK_70",
@@ -5147,7 +5147,7 @@
    ],
    "created": "2026-11-15T16:35:23.912980+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": false,
    "direction": "over",
@@ -5244,14 +5244,14 @@
    "created": "2026-11-15T16:39:09.794003+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "3-2"
   },
   "fb_1887385|FB_TEK_FARK_70": {
    "key": "fb_1887385|FB_TEK_FARK_70",
@@ -5268,14 +5268,14 @@
    "created": "2026-11-15T16:39:10.104127+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 5,
    "sent": false,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "3-2"
   },
   "fb_1815165|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1815165|FB_COK_GOLLU_ERKEN",
@@ -5340,14 +5340,14 @@
    "created": "2026-11-15T16:45:30.187573+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-3"
   },
   "fb_1815166|FB_IY2_00": {
    "key": "fb_1815166|FB_IY2_00",
@@ -5420,6 +5420,126 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1853690|BB_Q4_FARK_ALT": {
+   "key": "bb_1853690|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1853690",
+   "match": "FC Bayern Munchen - Mitteldeutscher BC",
+   "league": "Germany BBL",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-15T16:55:25.264428+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 113,
+   "sent": true,
+   "direction": "under",
+   "base": 113,
+   "n": 1,
+   "ref": 37.666666666666664,
+   "signal_score": "66-47",
+   "last_score": "66-47"
+  },
+  "bb_1854375|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1854375|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1854375",
+   "match": "Napoli Basket - Pallacanestro Trieste 2004",
+   "league": "Italy Lega Basket Serie A",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T16:55:25.792720+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 96,
+   "sent": true,
+   "direction": "under",
+   "base": 96,
+   "n": 2,
+   "ref": 48.0,
+   "signal_score": "45-51",
+   "last_score": "45-51"
+  },
+  "fb_1813693|FB_GEC_GOL": {
+   "key": "fb_1813693|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1813693",
+   "match": "Logrones - Arenas Getxo",
+   "league": "Spain Primera Division RFEF: Group 1",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T16:55:27.551473+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1813693|FB_BERABERLIK_GEC": {
+   "key": "fb_1813693|FB_BERABERLIK_GEC",
+   "sport": "football",
+   "match_id": "fb_1813693",
+   "match": "Logrones - Arenas Getxo",
+   "league": "Spain Primera Division RFEF: Group 1",
+   "strategy": "FB_BERABERLIK_GEC",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.75
+   ],
+   "created": "2026-11-15T16:55:28.025995+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
+  },
+  "fb_1814498|FB_TEK_FARK_70": {
+   "key": "fb_1814498|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1814498",
+   "match": "Algeciras - Antequera CF",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T16:55:28.026206+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }

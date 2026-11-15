@@ -5,6 +5,158 @@
  ],
  "events": [
   {
+   "Eid": "1738319",
+   "Pids": {
+    "112": "SBTE_2_1026632492",
+    "8": "1738319"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Soccer Plus",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "8530",
+     "Nm": "Belarus",
+     "Img": "enet/10057.png",
+     "Abr": "BLR",
+     "Fc": "FDFDFD",
+     "Sc": "466b38"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9178",
+     "Nm": "Albania",
+     "Img": "enet/10024.png",
+     "NewsTag": "/team/albania-2021020913320920836-2132/",
+     "Abr": "ALB",
+     "Fc": "DA291C",
+     "Sc": "000000"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261115180000,
+   "EO": 807192679,
+   "EOX": 807192679,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738320",
+   "Pids": {
+    "112": "SBTE_2_1026632489",
+    "8": "1738320"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "9228",
+     "Nm": "Finland",
+     "Img": "enet/7871.png",
+     "NewsTag": "/team/finland-2022062716001253418-2422/",
+     "Abr": "FIN",
+     "Fc": "FDFDFD",
+     "Sc": "0258a3"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9073",
+     "Nm": "San Marino",
+     "Img": "enet/6035.png",
+     "NewsTag": "/team/san-marino-2022081113203185684-1673/",
+     "Abr": "SMR",
+     "Fc": "0082c4",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261115180000,
+   "EO": 807190631,
+   "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
    "Eid": "1850315",
    "Pids": {
     "112": "SBTE_2_1028600922",
@@ -85,11 +237,11 @@
      "Abr": "LON(W)"
     }
    ],
-   "Eps": "18'",
+   "Eps": "25'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794761261104,
-    "RTm": 1020000
+    "ATm": 1794761711266,
+    "RTm": 1440000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -98,148 +250,6 @@
    "Esd": 20261115173000,
    "EO": 907985775,
    "EOX": 907985775,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1811143",
-   "Pids": {
-    "112": "SBTE_2_1028208869",
-    "8": "1811143"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "4dt92de65y8ysenlrkk5oh6ac",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "3640",
-     "Nm": "Granada",
-     "Img": "teambadge/granada-cf-2024.png",
-     "Abr": "GCF",
-     "Fc": "A61B2B",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3358",
-     "Nm": "Las Palmas",
-     "Img": "enet/8306.png",
-     "NewsTag": "/team/las-palmas-2021020913320920836-214/",
-     "Abr": "LAP",
-     "Fc": "ffe400",
-     "Sc": "004b9d"
-    }
-   ],
-   "Eps": "77'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794761426739,
-    "RTm": 4560000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "14",
-   "Et": 1,
-   "Esd": 20261115161500,
-   "EO": 874431359,
-   "EOX": 874431359,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1814050",
-   "Pids": {
-    "8": "1814050",
-    "112": "SBTE_2_1029560806"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "2b6otdedr8llruy1dslnpmhas",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "2",
-   "Trh1": "1",
-   "Trh2": "2",
-   "Tr1OR": "1",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "3422",
-     "Nm": "Sevilla W",
-     "Img": "enet/980746.png",
-     "Abr": "SEV(W)",
-     "Fc": "F43333",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3387",
-     "Nm": "Atletico Madrid W",
-     "Img": "teambadge/atletico-madrid-2024.png",
-     "Abr": "ATM(W)",
-     "Fc": "CB3524",
-     "Sc": "272E61"
-    }
-   ],
-   "Eps": "89'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794761351226,
-    "RTm": 5280000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Regular Season",
-   "Et": 1,
-   "Esd": 20261115160000,
-   "EO": 807158143,
-   "EOX": 807158143,
    "Spid": 1,
    "Pid": 8
   }
