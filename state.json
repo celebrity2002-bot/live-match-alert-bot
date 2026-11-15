@@ -713,7 +713,7 @@
    ],
    "created": "2026-11-14T23:50:31.260795+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -737,7 +737,7 @@
    ],
    "created": "2026-11-14T23:55:24.925776+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -760,8 +760,8 @@
     2.1
    ],
    "created": "2026-11-15T00:20:31.621901+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -769,7 +769,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-5"
+   "last_score": "0-5",
+   "final_total": 5,
+   "settled": "2026-11-15T01:10:33.618168+00:00",
+   "seg_avg": 3.0
   },
   "fb_1799011|FB_TEK_FARK_70": {
    "key": "fb_1799011|FB_TEK_FARK_70",
@@ -785,7 +788,7 @@
    ],
    "created": "2026-11-15T00:30:44.875631+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -809,7 +812,7 @@
    ],
    "created": "2026-11-15T00:35:22.888588+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -834,14 +837,14 @@
    "created": "2026-11-15T00:45:29.069705+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 98,
+   "last_total": 107,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "31-36",
-   "last_score": "46-52"
+   "last_score": "51-56"
   },
   "fb_1914974|FB_GERIDEN_FARK2": {
    "key": "fb_1914974|FB_GERIDEN_FARK2",
@@ -857,7 +860,7 @@
    ],
    "created": "2026-11-15T00:45:30.944853+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -890,6 +893,54 @@
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1"
+  },
+  "bb_1868513|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868513|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868513",
+   "match": "New Orleans Pelicans - Denver Nuggets",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-15T01:10:31.303806+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 107,
+   "sent": true,
+   "direction": "under",
+   "base": 107,
+   "n": 2,
+   "ref": 53.5,
+   "signal_score": "51-56",
+   "last_score": "51-56"
+  },
+  "bb_1868520|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868520|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868520",
+   "match": "Cleveland Cavaliers - Dallas Mavericks",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T01:10:31.794675+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 66,
+   "sent": true,
+   "direction": "under",
+   "base": 66,
+   "n": 3,
+   "ref": 66.0,
+   "signal_score": "33-33",
+   "last_score": "33-33"
   }
  }
 }
