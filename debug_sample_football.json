@@ -78,27 +78,27 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "62'",
+   "Eps": "67'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794766781734,
-    "RTm": 3660000
+    "ATm": 1794767081498,
+    "RTm": 3960000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
    "Esd": 20261115180000,
-   "EO": 807324527,
-   "EOX": 807324527,
+   "EO": 807324543,
+   "EOX": 807324543,
    "Spid": 1,
    "Pid": 8
   },
   {
    "Eid": "1738320",
    "Pids": {
-    "8": "1738320",
-    "112": "SBTE_2_1026632489"
+    "112": "SBTE_2_1026632489",
+    "8": "1738320"
    },
    "Media": {
     "112": [
@@ -160,11 +160,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "64'",
+   "Eps": "68'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794766827903,
-    "RTm": 3780000
+    "ATm": 1794767066460,
+    "RTm": 4020000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -177,22 +177,13 @@
    "Pid": 8
   },
   {
-   "Eid": "1850315",
+   "Eid": "1811141",
    "Pids": {
-    "112": "SBTE_2_1028600922",
-    "8": "1850315"
+    "112": "SBTE_2_1028208886",
+    "8": "1811141"
    },
    "Media": {
     "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
@@ -204,74 +195,67 @@
       ]
      },
      {
-      "eventId": "FOX One",
+      "eventId": "Sky Sports",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
       "allowedCountries": [
        "MX"
       ]
      },
      {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
+      "eventId": "4di2apakgjy5hjfampzwgoys4",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports Premier League",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
+       "GB",
+       "IE"
       ]
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
+   "Inc-f": {
+    "1": [
+     {
+      "IT": 45,
+      "Nm": 2,
+      "NoP": false
+     }
+    ]
+   },
+   "Tr1": "2",
+   "Tr2": "0",
+   "Trh1": "2",
+   "Trh2": "0",
+   "Tr1OR": "2",
+   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "3935",
-     "Nm": "Arsenal W",
-     "Img": "teambadge/arsenal-square-2024.png",
-     "NewsTag": "/team/arsenal-women-2021020913320920836-26188/",
-     "Abr": "ARS(W)",
-     "Fc": "EF0107",
-     "Sc": "FDFDFD"
+     "ID": "82774",
+     "Nm": "CD Eldense",
+     "Img": "enet/8288.png",
+     "Abr": "CDE"
     }
    ],
    "T2": [
     {
-     "ID": "6985",
-     "Nm": "London City Lionesses",
-     "Img": "enet/1075419.png",
-     "Abr": "LON(W)"
+     "ID": "3731",
+     "Nm": "Sabadell",
+     "Img": "enet/4033.png",
+     "Abr": "SAB",
+     "Fc": "0066ff",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794766751474,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
+   "Eps": "HT",
+   "Esid": 10,
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "14",
    "Et": 1,
-   "Eit": "6",
-   "Esd": 20261115173000,
-   "EO": 907985791,
-   "EOX": 907985791,
+   "Esd": 20261115183000,
+   "EO": 807289727,
+   "EOX": 807289727,
    "Spid": 1,
    "Pid": 8
   }

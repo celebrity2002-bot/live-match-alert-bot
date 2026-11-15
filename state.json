@@ -5685,14 +5685,14 @@
    "created": "2026-11-15T17:00:57.157435+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "23-29",
-   "last_score": "86-85"
+   "last_score": "87-87"
   },
   "fb_1812153|FB_11_IY2": {
    "key": "fb_1812153|FB_11_IY2",
@@ -6168,14 +6168,14 @@
    "created": "2026-11-15T17:20:38.416750+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 150,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "26-26",
-   "last_score": "68-62"
+   "last_score": "78-72"
   },
   "fb_1850315|FB_11_IY2": {
    "key": "fb_1850315|FB_11_IY2",
@@ -6191,7 +6191,7 @@
    ],
    "created": "2026-11-15T17:20:40.142136+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -6216,14 +6216,14 @@
    "created": "2026-11-15T17:20:40.679734+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1855362|FB_IY2_00": {
    "key": "fb_1855362|FB_IY2_00",
@@ -6239,7 +6239,7 @@
    ],
    "created": "2026-11-15T17:20:41.213496+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -6825,14 +6825,14 @@
    "created": "2026-11-15T17:35:23.567148+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 102,
+   "last_total": 116,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "33-22",
-   "last_score": "61-41"
+   "last_score": "69-47"
   },
   "fb_1815165|FB_GERIDEN_FARK2": {
    "key": "fb_1815165|FB_GERIDEN_FARK2",
@@ -6954,14 +6954,14 @@
    "created": "2026-11-15T17:50:30.878330+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 150,
    "sent": true,
    "direction": "under",
    "base": 108,
    "n": 2,
    "ref": 54.0,
    "signal_score": "62-46",
-   "last_score": "68-62"
+   "last_score": "78-72"
   },
   "bb_1861272|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1861272|BB_TEMPO_DUSUSU_ALT",
@@ -7049,7 +7049,7 @@
    ],
    "created": "2026-11-15T17:50:34.377707+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -7122,14 +7122,14 @@
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 89,
+   "last_total": 91,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "28-24",
-   "last_score": "48-41"
+   "last_score": "48-43"
   },
   "fb_1850315|FB_GEC_GOL": {
    "key": "fb_1850315|FB_GEC_GOL",
@@ -7145,7 +7145,7 @@
    ],
    "created": "2026-11-15T17:55:27.370412+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -7169,7 +7169,7 @@
    ],
    "created": "2026-11-15T17:55:27.907168+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 2,
    "sent": false,
    "direction": "over",
@@ -7193,7 +7193,7 @@
    ],
    "created": "2026-11-15T17:55:27.907541+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": false,
    "direction": "over",
@@ -7242,14 +7242,14 @@
    "created": "2026-11-15T17:59:38.135448+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1814048|FB_IY2_00": {
    "key": "fb_1814048|FB_IY2_00",
@@ -7290,14 +7290,14 @@
    "created": "2026-11-15T18:05:35.912207+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1855357|FB_BERABERLIK_GEC": {
    "key": "fb_1855357|FB_BERABERLIK_GEC",
@@ -7314,14 +7314,14 @@
    "created": "2026-11-15T18:05:35.912253+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1856116|FB_TEK_FARK_70": {
    "key": "fb_1856116|FB_TEK_FARK_70",
@@ -7362,14 +7362,14 @@
    "created": "2026-11-15T18:10:31.162108+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 102,
+   "last_total": 116,
    "sent": true,
    "direction": "under",
    "base": 102,
    "n": 2,
    "ref": 51.0,
    "signal_score": "61-41",
-   "last_score": "61-41"
+   "last_score": "69-47"
   },
   "fb_1856116|FB_GERIDEN_FARK2": {
    "key": "fb_1856116|FB_GERIDEN_FARK2",
@@ -7490,6 +7490,54 @@
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0"
+  },
+  "bb_1886825|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1886825|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1886825",
+   "match": "Le Mans - ASVEL Lyon-Villeurbanne",
+   "league": "France LNB Pro A",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T18:25:22.516958+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 59,
+   "sent": true,
+   "direction": "under",
+   "base": 59,
+   "n": 3,
+   "ref": 59.0,
+   "signal_score": "30-29",
+   "last_score": "30-29"
+  },
+  "fb_1814051|FB_TEK_FARK_70": {
+   "key": "fb_1814051|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1814051",
+   "match": "Deportivo La Coruna W - Barcelona W",
+   "league": "Spain Liga F",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T18:25:24.201616+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
