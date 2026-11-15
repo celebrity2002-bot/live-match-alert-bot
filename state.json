@@ -3093,14 +3093,14 @@
    "created": "2026-11-15T12:50:29.937699+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 162,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "26-28",
-   "last_score": "79-79"
+   "last_score": "83-79"
   },
   "bb_1867868|BB_Q4_YAKIN_UST": {
    "key": "bb_1867868|BB_Q4_YAKIN_UST",
@@ -3358,8 +3358,8 @@
     1.85
    ],
    "created": "2026-11-15T13:29:40.951902+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -3367,7 +3367,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-15T14:10:29.775121+00:00",
+   "seg_avg": 0.0
   },
   "bb_1861255|BB_Q4_YAKIN_UST": {
    "key": "bb_1861255|BB_Q4_YAKIN_UST",
@@ -3384,14 +3387,14 @@
    "created": "2026-11-15T13:55:31.347400+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 162,
    "sent": true,
    "direction": "over",
    "base": 135,
    "n": 1,
    "ref": 45.0,
    "signal_score": "69-66",
-   "last_score": "79-79"
+   "last_score": "83-79"
   },
   "fb_1827127|FB_GEC_GOL": {
    "key": "fb_1827127|FB_GEC_GOL",
