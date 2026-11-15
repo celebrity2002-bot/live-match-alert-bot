@@ -79,136 +79,12 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "90'",
+   "Eps": "90+5'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794778506354,
-    "RTm": 5340000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261115204500,
-   "EO": 874431359,
-   "EOX": 874431359,
-   "Spid": 1,
-   "Pid": 8,
-   "Games": {
-    "ls6": [
-     {
-      "id": "679a5dc64c58a24929681a30",
-      "status": "INACTIVE",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "Eid": "1738344",
-   "Pids": {
-    "112": "SBTE_2_1026632369",
-    "8": "1738344"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Amazon Prime PPV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Fox Sports 2",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 1038,
-      "Nm": 2,
-      "Sc": [
-       1,
-       0
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "9179",
-     "Nm": "France",
-     "Img": "enet/6723.png",
-     "NewsTag": "/team/france-2021020913320920836-2434/",
-     "Abr": "FRA",
-     "Fc": "21304D",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9136",
-     "Nm": "Turkiye",
-     "Img": "teambadge/turkiye-new-2024.png",
-     "NewsTag": "/team/turkey-2021020913320920836-1845/",
-     "Abr": "TUR",
-     "Fc": "df2733",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794778511474,
+    "ATm": 1794778811518,
     "RTm": 5400000,
-    "ITm": 60000
+    "ITm": 240000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -236,11 +112,20 @@
   {
    "Eid": "1738308",
    "Pids": {
+    "112": "SBTE_2_1026632420",
     "8": "1738308",
-    "29": "1738308",
-    "112": "SBTE_2_1026632420"
+    "29": "1738308"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng19/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "ITV 1",
@@ -307,15 +192,6 @@
        "MX"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng19/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
    "Inc-f": {
@@ -355,16 +231,18 @@
      "Sc": "2B57AC"
     }
    ],
-   "Eps": "86'",
+   "Eps": "90+1'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794778501431,
-    "RTm": 5100000
+    "ATm": 1794778796356,
+    "RTm": 5400000,
+    "ITm": 0
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
+   "Eit": "4",
    "Esd": 20261115204500,
    "EO": 907985791,
    "EOX": 907985791,
@@ -382,6 +260,65 @@
      }
     ]
    }
+  },
+  {
+   "Eid": "1914759",
+   "Pids": {
+    "112": "SBTE_2_1029729233",
+    "8": "1914759"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "4wcu0q2fhjv07os8ueejjbml0",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "3",
+   "Tr2": "1",
+   "Trh1": "2",
+   "Trh2": "1",
+   "Tr1OR": "3",
+   "Tr2OR": "1",
+   "T1": [
+    {
+     "ID": "5213",
+     "Nm": "Godoy Cruz",
+     "Img": "enet/10227.png",
+     "Abr": "GOD",
+     "Fc": "2658a3",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "5142",
+     "Nm": "Tristan Suarez",
+     "Img": "enet/213528.png",
+     "Abr": "TRI"
+    }
+   ],
+   "Eps": "82'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794778776213,
+    "RTm": 4860000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "final",
+   "Et": 1,
+   "Esd": 20261115210000,
+   "EO": 269746191,
+   "EOX": 269746191,
+   "Spid": 1,
+   "Pid": 8
   }
  ]
 }
