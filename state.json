@@ -1365,14 +1365,14 @@
    "created": "2026-11-15T10:50:35.351781+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 99,
+   "last_total": 101,
    "sent": true,
    "direction": "over",
    "base": 66,
    "n": 2,
    "ref": 33.0,
    "signal_score": "31-35",
-   "last_score": "36-63"
+   "last_score": "36-65"
   },
   "bb_1895371|BB_Q1_DUSUK_UST": {
    "key": "bb_1895371|BB_Q1_DUSUK_UST",
@@ -1389,14 +1389,14 @@
    "created": "2026-11-15T11:20:33.109525+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 31,
+   "last_total": 34,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "21-10",
-   "last_score": "21-10"
+   "last_score": "22-12"
   },
   "fb_1815476|FB_IY2_00": {
    "key": "fb_1815476|FB_IY2_00",
@@ -1421,6 +1421,78 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1867870|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1867870|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867870",
+   "match": "Hiopos Lleida - Manresa",
+   "league": "Spain Liga ACB",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T11:25:22.942513+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 61,
+   "sent": true,
+   "direction": "under",
+   "base": 57,
+   "n": 3,
+   "ref": 57.0,
+   "signal_score": "25-36",
+   "last_score": "25-36"
+  },
+  "bb_1867879|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1867879|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867879",
+   "match": "Valencia - Basquet Coruna",
+   "league": "Spain Liga ACB",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-15T11:25:23.259574+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 51,
+   "sent": true,
+   "direction": "under",
+   "base": 51,
+   "n": 3,
+   "ref": 51.0,
+   "signal_score": "27-24",
+   "last_score": "27-24"
+  },
+  "bb_1861253|BB_Q4_FARK_ALT": {
+   "key": "bb_1861253|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1861253",
+   "match": "Esenler Erokspor - Bahcesehir Koleji",
+   "league": "Turkiye BSL",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-15T11:25:23.562828+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 101,
+   "sent": true,
+   "direction": "under",
+   "base": 101,
+   "n": 1,
+   "ref": 33.666666666666664,
+   "signal_score": "36-65",
+   "last_score": "36-65"
   }
  }
 }
