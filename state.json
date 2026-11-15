@@ -4927,8 +4927,8 @@
     1.55
    ],
    "created": "2026-11-15T16:25:22.834638+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -4936,7 +4936,10 @@
    "n": 3,
    "ref": 61.0,
    "signal_score": "34-27",
-   "last_score": "90-89"
+   "last_score": "90-89",
+   "final_total": 179,
+   "settled": "2026-11-15T18:15:32.687254+00:00",
+   "seg_avg": 39.3
   },
   "fb_1834793|FB_TEK_FARK_70": {
    "key": "fb_1834793|FB_TEK_FARK_70",
@@ -5545,8 +5548,8 @@
     1.8
    ],
    "created": "2026-11-15T16:55:25.792720+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -5554,7 +5557,10 @@
    "n": 2,
    "ref": 48.0,
    "signal_score": "45-51",
-   "last_score": "90-89"
+   "last_score": "90-89",
+   "final_total": 179,
+   "settled": "2026-11-15T18:15:33.211123+00:00",
+   "seg_avg": 41.5
   },
   "fb_1813693|FB_GEC_GOL": {
    "key": "fb_1813693|FB_GEC_GOL",
@@ -5679,14 +5685,14 @@
    "created": "2026-11-15T17:00:57.157435+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 157,
+   "last_total": 164,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "23-29",
-   "last_score": "78-79"
+   "last_score": "83-81"
   },
   "fb_1812153|FB_11_IY2": {
    "key": "fb_1812153|FB_11_IY2",
@@ -5891,7 +5897,7 @@
    ],
    "created": "2026-11-15T17:05:35.061230+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -6159,14 +6165,14 @@
    "created": "2026-11-15T17:20:38.416750+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 128,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "26-26",
-   "last_score": "66-54"
+   "last_score": "68-60"
   },
   "fb_1850315|FB_11_IY2": {
    "key": "fb_1850315|FB_11_IY2",
@@ -6866,7 +6872,7 @@
    ],
    "created": "2026-11-15T17:40:32.468358+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -6890,7 +6896,7 @@
    ],
    "created": "2026-11-15T17:40:32.778547+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -6939,14 +6945,14 @@
    "created": "2026-11-15T17:50:30.878330+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 128,
    "sent": true,
    "direction": "under",
    "base": 108,
    "n": 2,
    "ref": 54.0,
    "signal_score": "62-46",
-   "last_score": "66-54"
+   "last_score": "68-60"
   },
   "bb_1861272|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1861272|BB_TEMPO_DUSUSU_ALT",
@@ -7107,14 +7113,14 @@
    "created": "2026-11-15T17:55:25.549353+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 75,
+   "last_total": 80,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "28-24",
-   "last_score": "43-32"
+   "last_score": "43-37"
   },
   "fb_1850315|FB_GEC_GOL": {
    "key": "fb_1850315|FB_GEC_GOL",
@@ -7379,6 +7385,30 @@
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0"
+  },
+  "fb_1738319|FB_GERIDEN_FARK2": {
+   "key": "fb_1738319|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1738319",
+   "match": "Belarus - Albania",
+   "league": "UEFA Nations League League C: Group 1",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-15T18:15:35.031994+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
   }
  }
 }
