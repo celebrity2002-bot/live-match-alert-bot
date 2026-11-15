@@ -79,6 +79,60 @@
    "EOX": 524391,
    "Spid": 23,
    "Pid": 8
+  },
+  {
+   "Eid": "1868525",
+   "Pids": {
+    "112": "SBTE_2_1028754067",
+    "8": "1868525"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "GB",
+       "MX",
+       "IE",
+       "US"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "181",
+     "Nm": "LA Clippers",
+     "Img": "teambadge/la-clippers-2025.png",
+     "Abr": "LAC",
+     "Fc": "1D428A",
+     "Sc": "C8102E"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1891",
+     "Nm": "Charlotte Hornets",
+     "Img": "enet/58755.png",
+     "Abr": "CHA",
+     "Fc": "00788C",
+     "Sc": "1D1160"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261116003000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
   }
  ]
 }

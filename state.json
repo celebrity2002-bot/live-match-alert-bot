@@ -8274,8 +8274,8 @@
     1.6
    ],
    "created": "2026-11-15T19:50:29.754639+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -8283,7 +8283,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T21:25:25.583499+00:00",
+   "seg_avg": 0.0
   },
   "fb_1915353|FB_11_IY2": {
    "key": "fb_1915353|FB_11_IY2",
@@ -8481,8 +8484,8 @@
     2.0
    ],
    "created": "2026-11-15T20:40:39.234461+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -8490,7 +8493,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-15T21:25:25.920658+00:00",
+   "seg_avg": 0.0
   },
   "fb_1738343|FB_GERIDEN_FARK2": {
    "key": "fb_1738343|FB_GERIDEN_FARK2",
@@ -8531,14 +8537,14 @@
    "created": "2026-11-15T21:05:23.149071+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "1-3"
+   "last_score": "2-3"
   },
   "fb_1738344|FB_TEK_FARK_70": {
    "key": "fb_1738344|FB_TEK_FARK_70",
@@ -8649,6 +8655,102 @@
     1.85
    ],
    "created": "2026-11-15T21:23:22.512066+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1738308|FB_GEC_GOL": {
+   "key": "fb_1738308|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1738308",
+   "match": "Spain - England",
+   "league": "UEFA Nations League League A: Group 3",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T21:25:24.490197+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 5,
+   "sent": true,
+   "direction": "over",
+   "base": 5,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-3",
+   "last_score": "2-3"
+  },
+  "fb_1738308|FB_TEK_FARK_70": {
+   "key": "fb_1738308|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738308",
+   "match": "Spain - England",
+   "league": "UEFA Nations League League A: Group 3",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T21:25:24.871385+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 5,
+   "sent": false,
+   "direction": "over",
+   "base": 5,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-3",
+   "last_score": "2-3"
+  },
+  "fb_1916536|FB_GEC_GOL": {
+   "key": "fb_1916536|FB_GEC_GOL",
+   "sport": "football",
+   "match_id": "fb_1916536",
+   "match": "Godoy Cruz - Tristan Suarez",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_GEC_GOL",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.7
+   ],
+   "created": "2026-11-15T21:25:24.871617+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1916536|FB_TEK_FARK_70": {
+   "key": "fb_1916536|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1916536",
+   "match": "Godoy Cruz - Tristan Suarez",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-15T21:25:25.240406+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 3,
