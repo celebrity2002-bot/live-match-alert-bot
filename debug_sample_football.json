@@ -5,67 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1708625",
-   "Pids": {
-    "112": "SBTE_2_1029688693",
-    "8": "1708625"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Fanatiz",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "2",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "4928",
-     "Nm": "Chapecoense AF",
-     "Img": "enet/197693.png",
-     "Abr": "CHA",
-     "Fc": "009966",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4780",
-     "Nm": "Vasco da Gama",
-     "Img": "enet/10276.png",
-     "Abr": "VAS",
-     "Fc": "000000",
-     "Sc": "ff0000"
-    }
-   ],
-   "Eps": "90+5'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794705866723,
-    "RTm": 5400000,
-    "ITm": 240000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "21",
-   "Et": 1,
-   "Esd": 20261115003000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1914756",
    "Pids": {
     "112": "SBTE_2_1029729235",
