@@ -1040,7 +1040,7 @@
    ],
    "created": "2026-11-15T01:50:33.078256+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 254,
    "sent": true,
    "direction": "under",
@@ -1118,7 +1118,7 @@
    ],
    "created": "2026-11-15T02:20:30.998907+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 254,
    "sent": true,
    "direction": "under",
@@ -1196,7 +1196,7 @@
    ],
    "created": "2026-11-15T03:10:30.808309+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 254,
    "sent": false,
    "direction": "under",
@@ -1205,6 +1205,30 @@
    "ref": 63.0,
    "signal_score": "103-86",
    "last_score": "137-117"
+  },
+  "fb_1916717|FB_11_IY2": {
+   "key": "fb_1916717|FB_11_IY2",
+   "sport": "football",
+   "match_id": "fb_1916717",
+   "match": "CD Guadalajara W - FC Juarez W",
+   "league": "Mexico Women's Liga MX: Apertura Play-off",
+   "strategy": "FB_11_IY2",
+   "pick": "Bir Gol Daha Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.75
+   ],
+   "created": "2026-11-15T03:55:30.946082+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1"
   }
  }
 }
