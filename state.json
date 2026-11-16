@@ -9860,14 +9860,14 @@
    "created": "2026-11-16T18:25:24.693669+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-2"
+   "last_score": "2-3"
   },
   "bb_1884586|BB_Q4_FARK_ALT": {
    "key": "bb_1884586|BB_Q4_FARK_ALT",
@@ -9884,14 +9884,14 @@
    "created": "2026-11-16T18:40:32.377058+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 137,
+   "last_total": 145,
    "sent": true,
    "direction": "under",
    "base": 125,
    "n": 1,
    "ref": 41.666666666666664,
    "signal_score": "46-82",
-   "last_score": "49-88"
+   "last_score": "57-88"
   },
   "fb_1917401|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1917401|FB_COK_GOLLU_ERKEN",
