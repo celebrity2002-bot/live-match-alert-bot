@@ -9977,14 +9977,14 @@
    "created": "2026-11-16T20:35:23.010621+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 119,
+   "last_total": 131,
    "sent": true,
    "direction": "over",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "61-58",
-   "last_score": "61-58"
+   "last_score": "65-66"
   },
   "fb_1738289|FB_IY2_00": {
    "key": "fb_1738289|FB_IY2_00",
@@ -10033,6 +10033,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1856125|FB_GERIDEN_FARK2": {
+   "key": "fb_1856125|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1856125",
+   "match": "Sorrento - Monopoli",
+   "league": "Italy Serie C: Group C",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-16T20:45:31.736970+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
   }
  }
 }
