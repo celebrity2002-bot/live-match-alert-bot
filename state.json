@@ -9381,8 +9381,8 @@
     1.55
    ],
    "created": "2026-11-16T01:40:28.956535+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 218,
    "sent": true,
    "direction": "under",
@@ -9390,7 +9390,10 @@
    "n": 3,
    "ref": 55.0,
    "signal_score": "40-21",
-   "last_score": "106-112"
+   "last_score": "106-112",
+   "final_total": 218,
+   "settled": "2026-11-16T03:45:36.989625+00:00",
+   "seg_avg": 54.3
   },
   "fb_1913936|FB_IY2_00": {
    "key": "fb_1913936|FB_IY2_00",
@@ -9459,8 +9462,8 @@
     1.8
    ],
    "created": "2026-11-16T02:05:47.454086+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 218,
    "sent": true,
    "direction": "under",
@@ -9468,7 +9471,10 @@
    "n": 2,
    "ref": 54.0,
    "signal_score": "53-55",
-   "last_score": "106-112"
+   "last_score": "106-112",
+   "final_total": 218,
+   "settled": "2026-11-16T03:45:37.510288+00:00",
+   "seg_avg": 55.0
   },
   "fb_1916718|FB_TEK_FARK_70": {
    "key": "fb_1916718|FB_TEK_FARK_70",
@@ -9539,14 +9545,14 @@
    "created": "2026-11-16T02:40:39.456200+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "30-36",
-   "last_score": "65-78"
+   "last_score": "78-91"
   },
   "bb_1868442|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868442|BB_HT_YUKSEK_ALT",
@@ -9563,14 +9569,14 @@
    "created": "2026-11-16T03:10:36.720426+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 112,
    "n": 2,
    "ref": 56.0,
    "signal_score": "50-62",
-   "last_score": "65-78"
+   "last_score": "78-91"
   }
  }
 }
