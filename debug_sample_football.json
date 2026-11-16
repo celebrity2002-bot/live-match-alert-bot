@@ -5,109 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1738376",
-   "Pids": {
-    "112": "SBTE_2_1026632517",
-    "8": "1738376"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Fox Sports 2",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 1038,
-      "Nm": 2,
-      "Sc": [
-       2,
-       1
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "2",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "9030",
-     "Nm": "Kazakhstan",
-     "Img": "enet/8265.png",
-     "NewsTag": "/team/kazakhstan-2022081113203185684-1456/",
-     "Abr": "KAZ",
-     "Fc": "ffd540",
-     "Sc": "123c8b"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9011",
-     "Nm": "Slovakia",
-     "Img": "enet/8497.png",
-     "Abr": "SVK",
-     "Fc": "0b4ea2",
-     "Sc": "ee1c25"
-    }
-   ],
-   "Eps": "90+9'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794848106220,
-    "RTm": 5400000,
-    "ITm": 480000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261116160000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1738408",
    "Pids": {
     "112": "SBTE_2_1026632538",
@@ -257,6 +154,97 @@
    "Esd": 20261116180000,
    "EO": 807190631,
    "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738295",
+   "Pids": {
+    "112": "SBTE_2_1026632330",
+    "8": "1738295"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Soccer Plus",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "9236",
+     "Nm": "Lithuania",
+     "Img": "teambadge/lithuania-2024.png",
+     "NewsTag": "/team/lithuania-2022062716001253418-1504/",
+     "Abr": "LTU",
+     "Fc": "fabb00",
+     "Sc": "007735"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9033",
+     "Nm": "Liechtenstein",
+     "Img": "teambadge/liechtenstein-2024.png",
+     "NewsTag": "/team/liechtenstein-2022081113203185684-1502/",
+     "Abr": "LIE",
+     "Fc": "0045ff",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794848421185,
+    "RTm": 0
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261116180000,
+   "EO": 270451303,
+   "EOX": 270451303,
    "Spid": 1,
    "Pid": 8
   }
