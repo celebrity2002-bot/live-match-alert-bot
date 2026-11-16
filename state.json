@@ -9653,14 +9653,14 @@
    "created": "2026-11-16T12:30:46.083586+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "4-0"
+   "last_score": "6-0"
   }
  }
 }
