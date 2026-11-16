@@ -9302,14 +9302,14 @@
    "created": "2026-11-16T00:40:39.687999+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 242,
+   "last_total": 260,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "31-43",
-   "last_score": "104-138"
+   "last_score": "115-145"
   },
   "bb_1868455|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868455|BB_HT_YUKSEK_ALT",
@@ -9326,14 +9326,14 @@
    "created": "2026-11-16T01:05:33.197400+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 242,
+   "last_total": 260,
    "sent": true,
    "direction": "under",
    "base": 127,
    "n": 2,
    "ref": 63.5,
    "signal_score": "54-73",
-   "last_score": "104-138"
+   "last_score": "115-145"
   },
   "fb_1914755|FB_TEK_FARK_70": {
    "key": "fb_1914755|FB_TEK_FARK_70",
@@ -9377,14 +9377,14 @@
    "created": "2026-11-16T01:40:28.956535+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 126,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "40-21",
-   "last_score": "56-64"
+   "last_score": "58-68"
   },
   "fb_1913936|FB_IY2_00": {
    "key": "fb_1913936|FB_IY2_00",
@@ -9425,14 +9425,14 @@
    "created": "2026-11-16T02:05:47.453994+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 242,
+   "last_total": 260,
    "sent": false,
    "direction": "under",
    "base": 207,
    "n": 1,
    "ref": 69.0,
    "signal_score": "90-122",
-   "last_score": "104-138"
+   "last_score": "115-145"
   },
   "bb_1868441|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868441|BB_HT_YUKSEK_ALT",
@@ -9449,14 +9449,38 @@
    "created": "2026-11-16T02:05:47.454086+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 126,
    "sent": true,
    "direction": "under",
    "base": 108,
    "n": 2,
    "ref": 54.0,
    "signal_score": "53-55",
-   "last_score": "56-64"
+   "last_score": "58-68"
+  },
+  "fb_1916718|FB_TEK_FARK_70": {
+   "key": "fb_1916718|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1916718",
+   "match": "Monterrey W - Pachuca W",
+   "league": "Mexico Women's Liga MX: Apertura Play-off",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T02:30:50.568156+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
