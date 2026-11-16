@@ -5,90 +5,37 @@
  ],
  "events": [
   {
-   "Eid": "1916714",
+   "Eid": "1890719",
    "Pids": {
-    "8": "1916714",
-    "112": "SBTE_2_1029827460"
+    "8": "1890719"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Nu9ve",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "TUDN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Liga BBVA MX Femenil YouTube",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "ViX.",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 0,
-    "aggScoreTeam2": 6
-   },
-   "Tr1": "0",
-   "Tr2": "3",
-   "Trh1": "0",
-   "Trh2": "2",
-   "Tr1OR": "0",
-   "Tr2OR": "3",
    "T1": [
     {
-     "ID": "12744",
-     "Nm": "Toluca W",
-     "Img": "enet/980694.png",
-     "Abr": "TOL(W)"
+     "ID": "234137",
+     "Nm": "Marko",
+     "Img": "enet/1787833.png",
+     "Abr": "MAR"
     }
    ],
    "T2": [
     {
-     "ID": "12734",
-     "Nm": "CF America W",
-     "Img": "enet/980693.png",
-     "Abr": "CFA(W)"
+     "ID": "11311",
+     "Nm": "Zakynthos APS",
+     "Img": "enet/162388.png",
+     "Abr": "ZAK",
+     "Fc": "0000cc",
+     "Sc": "ffff00"
     }
    ],
-   "Eps": "89'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794805211169,
-    "RTm": 5280000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Quarter Finals",
-   "Awt": 0,
+   "ErnInf": "11",
    "Et": 1,
-   "Esd": 20261116041000,
-   "EO": 2417229839,
-   "EOX": 2417229839,
+   "Esd": 20261116130000,
+   "EO": 806879239,
+   "EOX": 806879239,
    "Spid": 1,
    "Pid": 8
   }
