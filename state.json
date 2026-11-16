@@ -10101,8 +10101,8 @@
     1.85
    ],
    "created": "2026-11-16T20:55:36.056605+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -10110,7 +10110,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-16T21:30:45.801679+00:00",
+   "seg_avg": 0.0
   },
   "fb_1738288|FB_GERIDEN_FARK2": {
    "key": "fb_1738288|FB_GERIDEN_FARK2",
