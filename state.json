@@ -9976,7 +9976,7 @@
    ],
    "created": "2026-11-16T20:35:23.010621+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 159,
    "sent": true,
    "direction": "over",
@@ -10071,8 +10071,8 @@
     1.9
    ],
    "created": "2026-11-16T20:50:47.621696+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 7,
    "sent": true,
    "direction": "over",
@@ -10080,7 +10080,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-3",
-   "last_score": "4-3"
+   "last_score": "4-3",
+   "final_total": 7,
+   "settled": "2026-11-16T21:10:41.851016+00:00",
+   "seg_avg": 1.0
   },
   "fb_1811139|FB_TEK_FARK_70": {
    "key": "fb_1811139|FB_TEK_FARK_70",
@@ -10121,14 +10124,62 @@
    "created": "2026-11-16T21:05:25.220337+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
+  },
+  "fb_1738263|FB_GERIDEN_FARK2": {
+   "key": "fb_1738263|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1738263",
+   "match": "North Macedonia - Slovenia",
+   "league": "UEFA Nations League League B: Group 1",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-16T21:10:41.227483+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
+  },
+  "fb_1738361|FB_TEK_FARK_70": {
+   "key": "fb_1738361|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738361",
+   "match": "Gibraltar - Malta",
+   "league": "UEFA Nations League League D: Group 1",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T21:10:41.566629+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
   }
  }
 }
