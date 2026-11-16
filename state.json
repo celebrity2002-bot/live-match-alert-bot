@@ -9544,7 +9544,7 @@
    ],
    "created": "2026-11-16T02:40:39.456200+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 226,
    "sent": true,
    "direction": "under",
@@ -9568,7 +9568,7 @@
    ],
    "created": "2026-11-16T03:10:36.720426+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 226,
    "sent": true,
    "direction": "under",
@@ -9592,7 +9592,7 @@
    ],
    "created": "2026-11-16T03:54:33.108397+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 226,
    "sent": false,
    "direction": "under",
@@ -9601,6 +9601,30 @@
    "ref": 58.0,
    "signal_score": "82-98",
    "last_score": "101-125"
+  },
+  "fb_1916714|FB_GERIDEN_FARK2": {
+   "key": "fb_1916714|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1916714",
+   "match": "Toluca W - CF America W",
+   "league": "Mexico Women's Liga MX: Apertura Play-off",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-16T04:30:46.076046+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
   }
  }
 }
