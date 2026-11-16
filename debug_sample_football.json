@@ -5,46 +5,36 @@
  ],
  "events": [
   {
-   "Eid": "1917399",
+   "Eid": "1917396",
    "Pids": {
-    "112": "SBTE_2_1029886694",
-    "8": "1917399"
+    "112": "SBTE_2_1029886693",
+    "8": "1917396"
    },
-   "Tr1": "4",
-   "Tr2": "2",
-   "Trh1": "2",
-   "Trh2": "1",
-   "Tr1OR": "4",
-   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "356611",
-     "Nm": "Wembley Rangers",
-     "Img": "teambadge/wembley-rangers.png",
-     "Abr": "WEM"
+     "ID": "418058",
+     "Nm": "RTG FC",
+     "Img": "teambadge/rtg-fc.png",
+     "Abr": "RTG"
     }
    ],
    "T2": [
     {
-     "ID": "395621",
-     "Nm": "Gold Devils",
-     "Img": "teambadge/gold-devils-2.png",
-     "Abr": "GOL"
+     "ID": "418059",
+     "Nm": "P17 FC",
+     "Img": "teambadge/p17-fc.png",
+     "Abr": "P17"
     }
    ],
-   "Eps": "33'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794865841172,
-    "RTm": 1920000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
-   "Esd": 20261116221000,
-   "EO": 807174159,
-   "EOX": 807174159,
+   "Esd": 20261116230000,
+   "EO": 806879239,
+   "EOX": 806879239,
    "Spid": 1,
    "Pid": 8
   }
