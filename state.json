@@ -9664,6 +9664,30 @@
    "final_total": 6,
    "settled": "2026-11-16T14:05:27.142434+00:00",
    "seg_avg": 3.0
+  },
+  "fb_1890721|FB_TEK_FARK_70": {
+   "key": "fb_1890721|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1890721",
+   "match": "Niki Volou - Pyrgos AFC",
+   "league": "Greece Super League 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T14:35:27.068634+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
