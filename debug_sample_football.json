@@ -5,46 +5,161 @@
  ],
  "events": [
   {
-   "Eid": "1890721",
+   "Eid": "1738375",
    "Pids": {
-    "8": "1890721"
+    "112": "SBTE_2_1026632520",
+    "8": "1738375"
    },
-   "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "1",
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Soccer Plus",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
    "T1": [
     {
-     "ID": "2735",
-     "Nm": "Niki Volou",
-     "Img": "teambadge/niki-volou-2024.png",
-     "Abr": "NIK",
-     "Fc": "0000ff",
-     "Sc": "ffffff"
+     "ID": "9039",
+     "Nm": "Faroe Islands",
+     "Img": "enet/8269.png",
+     "Abr": "FRO",
+     "Fc": "2f4694",
+     "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "412182",
-     "Nm": "Pyrgos AFC",
-     "Abr": "PYR"
+     "ID": "3369",
+     "Nm": "Moldova",
+     "Img": "enet/5794.png",
+     "Abr": "MDA",
+     "Fc": "ffd400",
+     "Sc": "294294"
     }
    ],
-   "Eps": "73'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794839621064,
-    "RTm": 4320000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Group A",
+   "ErnInf": "6",
    "Et": 1,
-   "Esd": 20261116140000,
-   "EO": 806879247,
-   "EOX": 806879247,
+   "Esd": 20261116160000,
+   "EO": 807190631,
+   "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738376",
+   "Pids": {
+    "112": "SBTE_2_1026632517",
+    "8": "1738376"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Sports 2",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "9030",
+     "Nm": "Kazakhstan",
+     "Img": "enet/8265.png",
+     "NewsTag": "/team/kazakhstan-2022081113203185684-1456/",
+     "Abr": "KAZ",
+     "Fc": "ffd540",
+     "Sc": "123c8b"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9011",
+     "Nm": "Slovakia",
+     "Img": "enet/8497.png",
+     "Abr": "SVK",
+     "Fc": "0b4ea2",
+     "Sc": "ee1c25"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261116160000,
+   "EO": 807190631,
+   "EOX": 807190631,
    "Spid": 1,
    "Pid": 8
   }
