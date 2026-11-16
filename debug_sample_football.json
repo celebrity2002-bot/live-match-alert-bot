@@ -5,96 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1738375",
-   "Pids": {
-    "112": "SBTE_2_1026632520",
-    "8": "1738375"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Fox Soccer Plus",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "9039",
-     "Nm": "Faroe Islands",
-     "Img": "enet/8269.png",
-     "Abr": "FRO",
-     "Fc": "2f4694",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3369",
-     "Nm": "Moldova",
-     "Img": "enet/5794.png",
-     "Abr": "MDA",
-     "Fc": "ffd400",
-     "Sc": "294294"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794847826220,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261116160000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1738376",
    "Pids": {
     "112": "SBTE_2_1026632517",
@@ -154,11 +64,11 @@
     ]
    },
    "Tr1": "2",
-   "Tr2": "1",
+   "Tr2": "2",
    "Trh1": "1",
    "Trh2": "0",
    "Tr1OR": "2",
-   "Tr2OR": "1",
+   "Tr2OR": "2",
    "T1": [
     {
      "ID": "9030",
@@ -180,12 +90,12 @@
      "Sc": "ee1c25"
     }
    ],
-   "Eps": "90+4'",
+   "Eps": "90+8'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794847811248,
+    "ATm": 1794848046814,
     "RTm": 5400000,
-    "ITm": 180000
+    "ITm": 420000
    },
    "Epr": 1,
    "Ecov": 0,
