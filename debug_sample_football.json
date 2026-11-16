@@ -32,11 +32,11 @@
      "Abr": "GIM"
     }
    ],
-   "Eps": "59'",
+   "Eps": "63'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794790846198,
-    "RTm": 3480000
+    "ATm": 1794791086178,
+    "RTm": 3720000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -45,6 +45,53 @@
    "Esd": 20261116003000,
    "EO": 2417229951,
    "EOX": 2417229951,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1913936",
+   "Pids": {
+    "112": "SBTE_2_1029755445",
+    "8": "1913936"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "atb525x0bubq9gvzy0ec362ok",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "9369",
+     "Nm": "Deportes Quindio",
+     "Img": "enet/4407.png",
+     "Abr": "DEP"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9148",
+     "Nm": "Real Cartagena",
+     "Img": "enet/7731.png",
+     "Abr": "REA"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "5",
+   "Et": 1,
+   "Esd": 20261116021000,
+   "EO": 270270471,
+   "EOX": 270270471,
    "Spid": 1,
    "Pid": 8
   },
@@ -89,6 +136,12 @@
     "aggScoreTeam1": 1,
     "aggScoreTeam2": 0
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "12709",
@@ -105,9 +158,13 @@
      "Abr": "PAC(W)"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "3'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794791081238,
+    "RTm": 120000
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Quarter Finals",
    "Awt": 0,
