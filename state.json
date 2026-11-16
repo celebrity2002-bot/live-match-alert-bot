@@ -9934,6 +9934,30 @@
    "final_total": 3,
    "settled": "2026-11-16T19:05:28.040140+00:00",
    "seg_avg": 0.0
+  },
+  "fb_1917398|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1917398|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1917398",
+   "match": "Deportrio - N5 FC",
+   "league": "England Baller League UK",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-16T19:40:31.852483+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 8,
+   "sent": true,
+   "direction": "over",
+   "base": 8,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "4-4",
+   "last_score": "4-4"
   }
  }
 }
