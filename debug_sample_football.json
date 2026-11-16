@@ -90,12 +90,12 @@
      "Sc": "ee1c25"
     }
    ],
-   "Eps": "90+8'",
+   "Eps": "90+9'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794848046814,
+    "ATm": 1794848106220,
     "RTm": 5400000,
-    "ITm": 420000
+    "ITm": 480000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -104,6 +104,159 @@
    "Esd": 20261116160000,
    "EO": 807322495,
    "EOX": 807322495,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738408",
+   "Pids": {
+    "112": "SBTE_2_1026632538",
+    "8": "1738408"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Fox Sports 2",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "8968",
+     "Nm": "Estonia",
+     "Img": "enet/8261.png",
+     "NewsTag": "/team/estonia-2021020913320920836-2414/",
+     "Abr": "EST",
+     "Fc": "1a79bf",
+     "Sc": "1e3a76"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "8625",
+     "Nm": "Bulgaria",
+     "Img": "enet/10150.png",
+     "NewsTag": "/team/bulgaria-2021020913320920836-2258/",
+     "Abr": "BUL",
+     "Fc": "FDFDFD",
+     "Sc": "D62612"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261116180000,
+   "EO": 807190631,
+   "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738409",
+   "Pids": {
+    "112": "SBTE_2_1027163452",
+    "8": "1738409"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4505",
+     "Nm": "Iceland",
+     "Img": "enet/8536.png",
+     "NewsTag": "/team/iceland-2022062716001253418-1327/",
+     "Abr": "ISL",
+     "Fc": "0153a4",
+     "Sc": "ed1c29"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9294",
+     "Nm": "Luxembourg",
+     "Img": "teambadge/luxembourg-2026.png",
+     "NewsTag": "/team/luxembourg-2022081113203185684-1508/",
+     "Abr": "LUX",
+     "Fc": "e94545",
+     "Sc": "00b0f0"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261116180000,
+   "EO": 807190631,
+   "EOX": 807190631,
    "Spid": 1,
    "Pid": 8
   }
