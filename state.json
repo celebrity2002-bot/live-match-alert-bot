@@ -10285,6 +10285,30 @@
    "final_total": 6,
    "settled": "2026-11-16T22:05:25.688380+00:00",
    "seg_avg": 1.0
+  },
+  "fb_1917396|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1917396|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1917396",
+   "match": "RTG FC - P17 FC",
+   "league": "England Baller League UK",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-16T22:40:33.576661+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-3",
+   "last_score": "0-3"
   }
  }
 }
