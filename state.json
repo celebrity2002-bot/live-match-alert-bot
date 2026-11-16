@@ -9637,6 +9637,30 @@
    "final_total": 3,
    "settled": "2026-11-16T05:15:30.828958+00:00",
    "seg_avg": 1.0
+  },
+  "fb_1890719|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1890719|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1890719",
+   "match": "Marko - Zakynthos APS",
+   "league": "Greece Super League 2",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-16T12:30:46.083586+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-0",
+   "last_score": "3-0"
   }
  }
 }
