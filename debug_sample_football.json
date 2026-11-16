@@ -5,17 +5,93 @@
  ],
  "events": [
   {
+   "Eid": "1811139",
+   "Pids": {
+    "112": "SBTE_2_1028208884",
+    "8": "1811139"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "4ck14gg4u2ymon3yqroy2ye50",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "T1": [
+    {
+     "ID": "3549",
+     "Nm": "Albacete",
+     "Img": "enet/8393.png",
+     "Abr": "ALB",
+     "Fc": "ffffff",
+     "Sc": "950000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3787",
+     "Nm": "Celta Vigo B",
+     "Img": "enet/161743.png",
+     "Abr": "CLV"
+    }
+   ],
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794857441019,
+    "RTm": 0
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Regular Season",
+   "Et": 1,
+   "Esd": 20261116203000,
+   "EO": 807157863,
+   "EOX": 807157863,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
    "Eid": "1917398",
    "Pids": {
-    "112": "SBTE_2_1029886689",
-    "8": "1917398"
+    "8": "1917398",
+    "112": "SBTE_2_1029886689"
    },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
+   "Tr1": "4",
+   "Tr2": "4",
+   "Trh1": "4",
+   "Trh2": "4",
+   "Tr1OR": "4",
+   "Tr2OR": "4",
    "T1": [
     {
      "ID": "356603",
@@ -32,11 +108,11 @@
      "Abr": "N5F"
     }
    ],
-   "Eps": "16'",
-   "Esid": 2,
+   "Eps": "18'",
+   "Esid": 3,
    "Etm": {
-    "ATm": 1794856811176,
-    "RTm": 900000
+    "ATm": 1794857446168,
+    "RTm": 1020000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -45,6 +121,42 @@
    "Esd": 20261116200500,
    "EO": 807174159,
    "EOX": 807174159,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1856125",
+   "Pids": {
+    "112": "SBTE_2_1028576913",
+    "8": "1856125"
+   },
+   "T1": [
+    {
+     "ID": "3855",
+     "Nm": "Sorrento",
+     "Img": "enet/88998.png",
+     "Abr": "SOR"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4250",
+     "Nm": "Monopoli",
+     "Img": "enet/189506.png",
+     "Abr": "MON",
+     "Fc": "009900",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "14",
+   "Et": 1,
+   "Esd": 20261116203000,
+   "EO": 807141479,
+   "EOX": 807141479,
    "Spid": 1,
    "Pid": 8
   }
