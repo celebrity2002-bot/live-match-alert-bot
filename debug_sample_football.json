@@ -51,14 +51,14 @@
     "totalLegs": 2,
     "currentLeg": 2,
     "aggScoreTeam1": 0,
-    "aggScoreTeam2": 5
+    "aggScoreTeam2": 6
    },
    "Tr1": "0",
-   "Tr2": "2",
+   "Tr2": "3",
    "Trh1": "0",
    "Trh2": "2",
    "Tr1OR": "0",
-   "Tr2OR": "2",
+   "Tr2OR": "3",
    "T1": [
     {
      "ID": "12744",
@@ -75,11 +75,11 @@
      "Abr": "CFA(W)"
     }
    ],
-   "Eps": "79'",
+   "Eps": "84'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794804611332,
-    "RTm": 4680000
+    "ATm": 1794804906152,
+    "RTm": 4980000
    },
    "Epr": 1,
    "Ecov": 0,
