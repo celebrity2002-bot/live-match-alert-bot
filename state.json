@@ -9085,7 +9085,7 @@
    ],
    "created": "2026-11-15T22:40:29.435139+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 217,
    "sent": true,
    "direction": "under",
@@ -9110,14 +9110,14 @@
    "created": "2026-11-15T22:40:29.884317+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 188,
+   "last_total": 190,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "38-34",
-   "last_score": "96-92"
+   "last_score": "96-94"
   },
   "bb_1868524|BB_Q4_FARK_ALT": {
    "key": "bb_1868524|BB_Q4_FARK_ALT",
@@ -9161,14 +9161,14 @@
    "created": "2026-11-15T23:05:37.602693+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 188,
+   "last_total": 190,
    "sent": true,
    "direction": "under",
    "base": 113,
    "n": 2,
    "ref": 56.5,
    "signal_score": "55-58",
-   "last_score": "96-92"
+   "last_score": "96-94"
   },
   "bb_1868525|BB_Q4_YAKIN_UST": {
    "key": "bb_1868525|BB_Q4_YAKIN_UST",
@@ -9184,7 +9184,7 @@
    ],
    "created": "2026-11-15T23:30:00.416067+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 217,
    "sent": true,
    "direction": "over",

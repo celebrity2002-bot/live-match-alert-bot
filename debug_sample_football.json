@@ -10,19 +10,6 @@
     "112": "SBTE_2_1029739638",
     "8": "1914755"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "3k2vvdiy56bztg7qtjw1knlsk",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
    "Tr1": "0",
    "Tr2": "1",
    "Trh1": "0",
@@ -45,11 +32,11 @@
      "Abr": "GIM"
     }
    ],
-   "Eps": "17'",
+   "Eps": "30'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794786731726,
-    "RTm": 960000
+    "ATm": 1794787511055,
+    "RTm": 1740000
    },
    "Epr": 1,
    "Ecov": 0,
