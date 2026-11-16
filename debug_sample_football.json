@@ -7,8 +7,8 @@
   {
    "Eid": "1913936",
    "Pids": {
-    "112": "SBTE_2_1029755445",
-    "8": "1913936"
+    "8": "1913936",
+    "112": "SBTE_2_1029755445"
    },
    "Media": {
     "112": [
@@ -45,11 +45,12 @@
      "Abr": "REA"
     }
    ],
-   "Eps": "86'",
+   "Eps": "90+2'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794797681198,
-    "RTm": 5100000
+    "ATm": 1794798036178,
+    "RTm": 5400000,
+    "ITm": 60000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -58,87 +59,6 @@
    "Esd": 20261116021000,
    "EO": 270270479,
    "EOX": 270270479,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1916718",
-   "Pids": {
-    "8": "1916718",
-    "112": "SBTE_2_1029790672"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Nu9ve",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "TUDN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Liga BBVA MX Femenil YouTube",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "seriesInfo": {
-    "totalLegs": 2,
-    "currentLeg": 2,
-    "aggScoreTeam1": 4,
-    "aggScoreTeam2": 2
-   },
-   "Tr1": "3",
-   "Tr2": "2",
-   "Trh1": "0",
-   "Trh2": "2",
-   "Tr1OR": "3",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "12709",
-     "Nm": "Monterrey W",
-     "Img": "teambadge/monterrey-women-2024.png",
-     "Abr": "MTY(W)"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "12759",
-     "Nm": "Pachuca W",
-     "Img": "enet/980692.png",
-     "Abr": "PAC(W)"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794797711207,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Quarter Finals",
-   "Awt": 0,
-   "Et": 1,
-   "Esd": 20261116020000,
-   "EO": 2417229839,
-   "EOX": 2417229839,
    "Spid": 1,
    "Pid": 8
   }
