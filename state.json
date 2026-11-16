@@ -9220,7 +9220,7 @@
    ],
    "created": "2026-11-15T23:39:54.733995+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 219,
    "sent": true,
    "direction": "under",
@@ -9244,7 +9244,7 @@
    ],
    "created": "2026-11-16T00:00:56.772912+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 219,
    "sent": true,
    "direction": "under",
@@ -9267,8 +9267,8 @@
     1.85
    ],
    "created": "2026-11-16T00:30:45.956315+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -9276,7 +9276,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-16T01:10:40.857941+00:00",
+   "seg_avg": 0.0
   },
   "bb_1868455|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868455|BB_TEMPO_DUSUSU_ALT",
@@ -9325,6 +9328,30 @@
    "ref": 63.5,
    "signal_score": "54-73",
    "last_score": "54-73"
+  },
+  "fb_1914755|FB_TEK_FARK_70": {
+   "key": "fb_1914755|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1914755",
+   "match": "Ferro Carril Oeste - Gimnasia y Tiro",
+   "league": "Argentina Primera Nacional: Promotion Play-off",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T01:10:40.346126+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
   }
  }
 }

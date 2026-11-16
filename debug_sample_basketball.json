@@ -5,85 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1868522",
-   "Pids": {
-    "8": "1868522",
-    "112": "SBTE_2_1028754059"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Amazon Prime",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "amaon-prime.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "NBA League Pass",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "nba-league-pass.png",
-      "allowedCountries": [
-       "MX",
-       "GB",
-       "IE",
-       "US"
-      ]
-     }
-    ]
-   },
-   "Tr1": "129",
-   "Tr2": "90",
-   "Tr1OR": "129",
-   "Tr2OR": "90",
-   "Tr1Q1": "42",
-   "Tr2Q1": "9",
-   "Tr1Q2": "25",
-   "Tr2Q2": "28",
-   "Tr1Q3": "37",
-   "Tr2Q3": "34",
-   "Tr1Q4": "25",
-   "Tr2Q4": "19",
-   "T1": [
-    {
-     "ID": "1929",
-     "Nm": "Boston Celtics",
-     "Img": "enet/58534.png",
-     "Abr": "BOS",
-     "Fc": "007A33",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "1888",
-     "Nm": "Dallas Mavericks",
-     "Img": "enet/58547.png",
-     "Abr": "DAL",
-     "Fc": "00538C",
-     "Sc": "002B5E"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261116020000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1868523",
    "Pids": {
-    "112": "SBTE_2_1028754056",
-    "8": "1868523"
+    "8": "1868523",
+    "112": "SBTE_2_1028754056"
    },
    "Media": {
     "112": [
@@ -109,18 +34,18 @@
      }
     ]
    },
-   "Tr1": "78",
-   "Tr2": "71",
-   "Tr1OR": "78",
-   "Tr2OR": "71",
+   "Tr1": "84",
+   "Tr2": "73",
+   "Tr1OR": "84",
+   "Tr2OR": "73",
    "Tr1Q1": "17",
    "Tr2Q1": "23",
    "Tr1Q2": "26",
    "Tr2Q2": "24",
    "Tr1Q3": "31",
    "Tr2Q3": "20",
-   "Tr1Q4": "4",
-   "Tr2Q4": "4",
+   "Tr1Q4": "10",
+   "Tr2Q4": "6",
    "T1": [
     {
      "ID": "2412",
