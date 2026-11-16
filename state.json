@@ -9961,6 +9961,78 @@
    "final_total": 9,
    "settled": "2026-11-16T20:05:24.501850+00:00",
    "seg_avg": 1.0
+  },
+  "bb_1884498|BB_Q4_YAKIN_UST": {
+   "key": "bb_1884498|BB_Q4_YAKIN_UST",
+   "sport": "basketball",
+   "match_id": "bb_1884498",
+   "match": "KK Studentski centar - BC Vienna",
+   "league": "Adriatic ABA League: Group B",
+   "strategy": "BB_Q4_YAKIN_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-16T20:35:23.010621+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 119,
+   "sent": true,
+   "direction": "over",
+   "base": 119,
+   "n": 1,
+   "ref": 39.666666666666664,
+   "signal_score": "61-58",
+   "last_score": "61-58"
+  },
+  "fb_1738289|FB_IY2_00": {
+   "key": "fb_1738289|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1738289",
+   "match": "Greece - Serbia",
+   "league": "UEFA Nations League League A: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-16T20:35:24.936634+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855740|FB_IY2_00": {
+   "key": "fb_1855740|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1855740",
+   "match": "Perugia - Torres",
+   "league": "Italy Serie C: Group B",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-16T20:35:25.331512+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
