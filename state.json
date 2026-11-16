@@ -9977,14 +9977,14 @@
    "created": "2026-11-16T20:35:23.010621+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 153,
+   "last_total": 159,
    "sent": true,
    "direction": "over",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "61-58",
-   "last_score": "75-78"
+   "last_score": "75-84"
   },
   "fb_1738289|FB_IY2_00": {
    "key": "fb_1738289|FB_IY2_00",
@@ -10072,7 +10072,7 @@
    ],
    "created": "2026-11-16T20:50:47.621696+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 7,
    "sent": true,
    "direction": "over",
@@ -10105,6 +10105,30 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "fb_1738288|FB_GERIDEN_FARK2": {
+   "key": "fb_1738288|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1738288",
+   "match": "Germany - Netherlands",
+   "league": "UEFA Nations League League A: Group 2",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-16T21:05:25.220337+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
   }
  }
 }
