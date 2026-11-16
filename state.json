@@ -9950,14 +9950,14 @@
    "created": "2026-11-16T19:40:31.852483+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 8,
+   "last_total": 9,
    "sent": true,
    "direction": "over",
    "base": 8,
    "n": 1,
    "ref": 0.0,
    "signal_score": "4-4",
-   "last_score": "4-4"
+   "last_score": "5-4"
   }
  }
 }
