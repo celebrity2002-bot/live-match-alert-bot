@@ -9691,6 +9691,54 @@
    "final_total": 3,
    "settled": "2026-11-16T15:05:36.602978+00:00",
    "seg_avg": 0.0
+  },
+  "fb_1738375|FB_TEK_FARK_70": {
+   "key": "fb_1738375|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738375",
+   "match": "Faroe Islands - Moldova",
+   "league": "UEFA Nations League League C: Group 3",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T16:25:25.397978+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1738376|FB_TEK_FARK_70": {
+   "key": "fb_1738376|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738376",
+   "match": "Kazakhstan - Slovakia",
+   "league": "UEFA Nations League League C: Group 3",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T16:25:25.960261+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
