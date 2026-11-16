@@ -9977,14 +9977,14 @@
    "created": "2026-11-16T20:35:23.010621+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 141,
+   "last_total": 147,
    "sent": true,
    "direction": "over",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "61-58",
-   "last_score": "68-73"
+   "last_score": "72-75"
   },
   "fb_1738289|FB_IY2_00": {
    "key": "fb_1738289|FB_IY2_00",
@@ -10073,14 +10073,38 @@
    "created": "2026-11-16T20:50:47.621696+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 6,
+   "last_total": 7,
    "sent": true,
    "direction": "over",
    "base": 6,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-3",
-   "last_score": "3-3"
+   "last_score": "4-3"
+  },
+  "fb_1811139|FB_TEK_FARK_70": {
+   "key": "fb_1811139|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1811139",
+   "match": "Albacete - Celta Vigo B",
+   "league": "Spain LaLiga 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-16T20:55:36.056605+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
