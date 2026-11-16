@@ -78,8 +78,12 @@
      "Abr": "PYR"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "46'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794838000945,
+    "RTm": 2700000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Group A",
