@@ -9745,6 +9745,30 @@
    "final_total": 4,
    "settled": "2026-11-16T17:10:31.202795+00:00",
    "seg_avg": 1.0
+  },
+  "fb_1917400|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1917400|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1917400",
+   "match": "VZN FC - Clutch FC",
+   "league": "England Baller League UK",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-16T17:50:31.186507+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 6,
+   "sent": true,
+   "direction": "over",
+   "base": 6,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-3",
+   "last_score": "3-3"
   }
  }
 }
