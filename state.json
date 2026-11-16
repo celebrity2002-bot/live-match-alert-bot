@@ -10003,7 +10003,7 @@
    ],
    "created": "2026-11-16T20:35:24.936634+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -10027,7 +10027,7 @@
    ],
    "created": "2026-11-16T20:35:25.331512+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -10050,8 +10050,8 @@
     2.1
    ],
    "created": "2026-11-16T20:45:31.736970+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -10059,7 +10059,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-16T21:45:45.750580+00:00",
+   "seg_avg": 1.0
   },
   "fb_1917397|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1917397|FB_COK_GOLLU_ERKEN",
@@ -10128,8 +10131,8 @@
     2.1
    ],
    "created": "2026-11-16T21:05:25.220337+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -10137,7 +10140,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "5-0"
+   "last_score": "5-0",
+   "final_total": 5,
+   "settled": "2026-11-16T21:45:46.287317+00:00",
+   "seg_avg": 3.0
   },
   "fb_1738263|FB_GERIDEN_FARK2": {
    "key": "fb_1738263|FB_GERIDEN_FARK2",
@@ -10152,8 +10158,8 @@
     2.1
    ],
    "created": "2026-11-16T21:10:41.227483+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -10161,7 +10167,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-2",
+   "final_total": 2,
+   "settled": "2026-11-16T21:45:46.803794+00:00",
+   "seg_avg": 0.0
   },
   "fb_1738361|FB_TEK_FARK_70": {
    "key": "fb_1738361|FB_TEK_FARK_70",
@@ -10177,7 +10186,7 @@
    ],
    "created": "2026-11-16T21:10:41.566629+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -10201,7 +10210,7 @@
    ],
    "created": "2026-11-16T21:15:30.528962+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -10225,7 +10234,7 @@
    ],
    "created": "2026-11-16T21:15:30.907390+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -10234,6 +10243,30 @@
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1"
+  },
+  "fb_1917399|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1917399|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1917399",
+   "match": "Wembley Rangers - Gold Devils",
+   "league": "England Baller League UK",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-16T21:45:45.122171+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 5,
+   "sent": true,
+   "direction": "over",
+   "base": 5,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "4-1",
+   "last_score": "4-1"
   }
  }
 }
