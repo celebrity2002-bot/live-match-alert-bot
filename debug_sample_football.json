@@ -5,308 +5,110 @@
  ],
  "events": [
   {
-   "Eid": "1738289",
+   "Eid": "1917399",
    "Pids": {
-    "112": "SBTE_2_1026632366",
-    "8": "1738289"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Amazon Prime PPV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Fox Sports 2",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "9227",
-     "Nm": "Greece",
-     "Img": "enet/6383.png",
-     "NewsTag": "/team/greece-2021020913320920836-1284/",
-     "Abr": "GRE",
-     "Fc": "14448b",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9244",
-     "Nm": "Serbia",
-     "Img": "enet/8205.png",
-     "NewsTag": "/team/serbia-2021020913320920836-1716/",
-     "Abr": "SRB",
-     "Fc": "B72E3E",
-     "Sc": "0D1131"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794864951301,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Eit": "3",
-   "Esd": 20261116204500,
-   "EO": 874431359,
-   "EOX": 874431359,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1738264",
-   "Pids": {
-    "112": "SBTE_2_1026632439",
-    "8": "1738264",
-    "29": "1738264"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "BBC Two",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "BBC Scotland",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "BBCi",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ]
+    "112": "SBTE_2_1029886694",
+    "8": "1917399"
    },
    "Tr1": "4",
-   "Tr2": "0",
-   "Tug1": "4",
-   "Tug2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "4",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "9153",
-     "Nm": "Switzerland",
-     "Img": "enet/6717.png",
-     "NewsTag": "/team/switzerland-2021020913320920836-1807/",
-     "Abr": "SWI",
-     "Fc": "ff0000",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9029",
-     "Nm": "Scotland",
-     "Img": "enet/8498.png",
-     "NewsTag": "/team/scotland-2022062716001253418-1689/",
-     "Abr": "SCO",
-     "Fc": "17233a",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "90'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794864951260,
-    "RTm": 5340000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261116204500,
-   "EO": 907985791,
-   "EOX": 907985791,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1738361",
-   "Pids": {
-    "8": "1738361",
-    "112": "SBTE_2_1027163438"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
    "Tr2": "1",
-   "Trh1": "0",
+   "Trh1": "2",
    "Trh2": "1",
-   "Tr1OR": "1",
+   "Tr1OR": "4",
    "Tr2OR": "1",
    "T1": [
     {
-     "ID": "9152",
-     "Nm": "Gibraltar",
-     "Img": "enet/507764.png",
-     "NewsTag": "/team/gibraltar-2022081113203185684-1283/",
-     "Abr": "GIB",
-     "Fc": "cc0000",
+     "ID": "356611",
+     "Nm": "Wembley Rangers",
+     "Img": "teambadge/wembley-rangers.png",
+     "Abr": "WEM"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "395621",
+     "Nm": "Gold Devils",
+     "Img": "teambadge/gold-devils-2.png",
+     "Abr": "GOL"
+    }
+   ],
+   "Eps": "22'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794865181206,
+    "RTm": 1260000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261116221000,
+   "EO": 807174159,
+   "EOX": 807174159,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1855740",
+   "Pids": {
+    "112": "SBTE_2_1028576546",
+    "8": "1855740"
+   },
+   "Inc-f": {
+    "1": [
+     {
+      "IT": 45,
+      "Nm": 1,
+      "NoP": false
+     },
+     {
+      "IT": 45,
+      "Nm": 1,
+      "NoP": false
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "1",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "1",
+   "T1": [
+    {
+     "ID": "4437",
+     "Nm": "Perugia",
+     "Img": "enet/8685.png",
+     "Abr": "PER",
+     "Fc": "c1000e",
      "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "9203",
-     "Nm": "Malta",
-     "Img": "enet/8495.png",
-     "NewsTag": "/team/malta-2022081113203185684-1526/",
-     "Abr": "MLT",
-     "Fc": "d51920",
-     "Sc": "FDFDFD"
+     "ID": "4092",
+     "Nm": "Torres",
+     "Img": "enet/7856.png",
+     "Abr": "TOR",
+     "Fc": "0000ff",
+     "Sc": "ff0000"
     }
    ],
-   "Eps": "90+3'",
+   "Eps": "90+1'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794864911319,
+    "ATm": 1794865211085,
     "RTm": 5400000,
-    "ITm": 120000
+    "ITm": 0
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "6",
+   "ErnInf": "Girone B",
    "Et": 1,
+   "Eit": "4",
    "Esd": 20261116204500,
-   "EO": 270418815,
-   "EOX": 270418815,
+   "EO": 807141759,
+   "EOX": 807141759,
    "Spid": 1,
    "Pid": 8
   }
