@@ -5,110 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1738288",
-   "Pids": {
-    "112": "SBTE_2_1026632367",
-    "8": "1738288"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Amazon Prime PPV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Fox Sports 1",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "5",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "5",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "9016",
-     "Nm": "Germany",
-     "Img": "enet/8570.png",
-     "NewsTag": "/team/germany-2021020913320920836-1272/",
-     "Abr": "GER",
-     "Fc": "FDFDFD",
-     "Sc": "000000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "8967",
-     "Nm": "Netherlands",
-     "Img": "enet/6708.png",
-     "NewsTag": "/team/netherlands-2022062716001253418-1562/",
-     "Abr": "NLD",
-     "Fc": "F36C21",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "88'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794864611836,
-    "RTm": 5220000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261116204500,
-   "EO": 874431359,
-   "EOX": 874431359,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1738289",
    "Pids": {
-    "8": "1738289",
-    "112": "SBTE_2_1026632366"
+    "112": "SBTE_2_1026632366",
+    "8": "1738289"
    },
    "Media": {
     "112": [
@@ -188,16 +88,18 @@
      "Sc": "0D1131"
     }
    ],
-   "Eps": "86'",
+   "Eps": "90+2'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794864591357,
-    "RTm": 5100000
+    "ATm": 1794864951301,
+    "RTm": 5400000,
+    "ITm": 60000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
+   "Eit": "3",
    "Esd": 20261116204500,
    "EO": 874431359,
    "EOX": 874431359,
@@ -205,10 +107,131 @@
    "Pid": 8
   },
   {
-   "Eid": "1738263",
+   "Eid": "1738264",
    "Pids": {
-    "112": "SBTE_2_1026632442",
-    "8": "1738263"
+    "112": "SBTE_2_1026632439",
+    "8": "1738264",
+    "29": "1738264"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "BBC Two",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "bbc.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "BBC Scotland",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "bbc.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "BBCi",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "bbc.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ]
+   },
+   "Tr1": "4",
+   "Tr2": "0",
+   "Tug1": "4",
+   "Tug2": "0",
+   "Trh1": "1",
+   "Trh2": "0",
+   "Tr1OR": "4",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "9153",
+     "Nm": "Switzerland",
+     "Img": "enet/6717.png",
+     "NewsTag": "/team/switzerland-2021020913320920836-1807/",
+     "Abr": "SWI",
+     "Fc": "ff0000",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9029",
+     "Nm": "Scotland",
+     "Img": "enet/8498.png",
+     "NewsTag": "/team/scotland-2022062716001253418-1689/",
+     "Abr": "SCO",
+     "Fc": "17233a",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "90'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794864951260,
+    "RTm": 5340000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261116204500,
+   "EO": 907985791,
+   "EOX": 907985791,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1738361",
+   "Pids": {
+    "8": "1738361",
+    "112": "SBTE_2_1027163438"
    },
    "Media": {
     "112": [
@@ -242,47 +265,48 @@
      }
     ]
    },
-   "Tr1": "0",
-   "Tr2": "2",
+   "Tr1": "1",
+   "Tr2": "1",
    "Trh1": "0",
    "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "2",
+   "Tr1OR": "1",
+   "Tr2OR": "1",
    "T1": [
     {
-     "ID": "9133",
-     "Nm": "North Macedonia",
-     "Img": "enet/8260.png",
-     "NewsTag": "/team/north-macedonia-2022081113203185684-1510/",
-     "Abr": "MKD",
-     "Fc": "c72230",
-     "Sc": "fab819"
+     "ID": "9152",
+     "Nm": "Gibraltar",
+     "Img": "enet/507764.png",
+     "NewsTag": "/team/gibraltar-2022081113203185684-1283/",
+     "Abr": "GIB",
+     "Fc": "cc0000",
+     "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "8994",
-     "Nm": "Slovenia",
-     "Img": "enet/5787.png",
-     "NewsTag": "/team/slovenia-2022062716001253418-1738/",
-     "Abr": "SNN",
-     "Fc": "FDFDFD",
-     "Sc": "1d4095"
+     "ID": "9203",
+     "Nm": "Malta",
+     "Img": "enet/8495.png",
+     "NewsTag": "/team/malta-2022081113203185684-1526/",
+     "Abr": "MLT",
+     "Fc": "d51920",
+     "Sc": "FDFDFD"
     }
    ],
-   "Eps": "89'",
+   "Eps": "90+3'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794864643855,
-    "RTm": 5280000
+    "ATm": 1794864911319,
+    "RTm": 5400000,
+    "ITm": 120000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
    "Esd": 20261116204500,
-   "EO": 874431359,
-   "EOX": 874431359,
+   "EO": 270418815,
+   "EOX": 270418815,
    "Spid": 1,
    "Pid": 8
   }
