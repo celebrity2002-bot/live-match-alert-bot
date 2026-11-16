@@ -45,11 +45,11 @@
      "Abr": "REA"
     }
    ],
-   "Eps": "71'",
+   "Eps": "76'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794796786196,
-    "RTm": 4200000
+    "ATm": 1794797086157,
+    "RTm": 4500000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -99,14 +99,14 @@
    "seriesInfo": {
     "totalLegs": 2,
     "currentLeg": 2,
-    "aggScoreTeam1": 3,
+    "aggScoreTeam1": 4,
     "aggScoreTeam2": 2
    },
-   "Tr1": "2",
+   "Tr1": "3",
    "Tr2": "2",
    "Trh1": "0",
    "Trh2": "2",
-   "Tr1OR": "2",
+   "Tr1OR": "3",
    "Tr2OR": "2",
    "T1": [
     {
@@ -124,11 +124,11 @@
      "Abr": "PAC(W)"
     }
    ],
-   "Eps": "78'",
+   "Eps": "83'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794796811248,
-    "RTm": 4620000
+    "ATm": 1794797111546,
+    "RTm": 4920000
    },
    "Epr": 1,
    "Ecov": 0,
