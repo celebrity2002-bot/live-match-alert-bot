@@ -10,6 +10,43 @@
     "112": "SBTE_2_1029827460",
     "8": "1916714"
    },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Nu9ve",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "TUDN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Liga BBVA MX Femenil YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "ViX.",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
    "seriesInfo": {
     "totalLegs": 2,
     "currentLeg": 2,
