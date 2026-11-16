@@ -32,11 +32,11 @@
      "Abr": "GIM"
     }
    ],
-   "Eps": "48'",
+   "Eps": "53'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794790186192,
-    "RTm": 2820000
+    "ATm": 1794790486177,
+    "RTm": 3120000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -75,11 +75,12 @@
      "Abr": "REA"
     }
    ],
-   "Eps": "87'",
+   "Eps": "90+2'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794790186177,
-    "RTm": 5160000
+    "ATm": 1794790486151,
+    "RTm": 5400000,
+    "ITm": 60000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -88,6 +89,76 @@
    "Esd": 20261116000500,
    "EO": 270270479,
    "EOX": 270270479,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1916718",
+   "Pids": {
+    "112": "SBTE_2_1029790672",
+    "8": "1916718"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Nu9ve",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "TUDN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Liga BBVA MX Femenil YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "seriesInfo": {
+    "totalLegs": 2,
+    "currentLeg": 2,
+    "aggScoreTeam1": 1,
+    "aggScoreTeam2": 0
+   },
+   "T1": [
+    {
+     "ID": "12709",
+     "Nm": "Monterrey W",
+     "Img": "teambadge/monterrey-women-2024.png",
+     "Abr": "MTY(W)"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "12759",
+     "Nm": "Pachuca W",
+     "Img": "enet/980692.png",
+     "Abr": "PAC(W)"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "Quarter Finals",
+   "Awt": 0,
+   "Et": 1,
+   "Esd": 20261116020000,
+   "EO": 2417229831,
+   "EOX": 2417229831,
    "Spid": 1,
    "Pid": 8
   }
