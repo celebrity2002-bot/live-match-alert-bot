@@ -75,8 +75,12 @@
      "Abr": "CFA(W)"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "49'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794802801172,
+    "RTm": 2880000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Quarter Finals",
