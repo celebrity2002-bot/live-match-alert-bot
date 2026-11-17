@@ -10328,14 +10328,38 @@
    "created": "2026-11-17T00:40:30.826863+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 66,
+   "last_total": 75,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "30-36",
-   "last_score": "30-36"
+   "last_score": "37-38"
+  },
+  "bb_1868537|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868537|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868537",
+   "match": "Washington Wizards - Memphis Grizzlies",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-17T00:45:29.367108+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 80,
+   "sent": true,
+   "direction": "under",
+   "base": 68,
+   "n": 3,
+   "ref": 68.0,
+   "signal_score": "43-37",
+   "last_score": "43-37"
   }
  }
 }
