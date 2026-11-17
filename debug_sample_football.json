@@ -5,46 +5,65 @@
  ],
  "events": [
   {
-   "Eid": "1917396",
+   "Eid": "1866824",
    "Pids": {
-    "8": "1917396",
-    "112": "SBTE_2_1029886693"
+    "112": "SBTE_2_1028727621",
+    "8": "1866824"
    },
-   "Tr1": "0",
-   "Tr2": "3",
-   "Trh1": "0",
-   "Trh2": "2",
-   "Tr1OR": "0",
-   "Tr2OR": "3",
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Sky Sports+ App",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "sky-sports-plus.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
    "T1": [
     {
-     "ID": "418058",
-     "Nm": "RTG FC",
-     "Img": "teambadge/rtg-fc.png",
-     "Abr": "RTG"
+     "ID": "2857",
+     "Nm": "Luton Town",
+     "Img": "teambadge/luton-2024.png",
+     "NewsTag": "/team/luton-town-2022062716001253418-3407/",
+     "Abr": "LUT",
+     "Fc": "F78F1E",
+     "Sc": "002D62"
     }
    ],
    "T2": [
     {
-     "ID": "418059",
-     "Nm": "P17 FC",
-     "Img": "teambadge/p17-fc.png",
-     "Abr": "P17"
+     "ID": "2945",
+     "Nm": "Peterborough United",
+     "Img": "enet/8677.png",
+     "NewsTag": "/team/peterborough-united-2022081113203185684-3449/",
+     "Abr": "PET",
+     "Fc": "0067B4",
+     "Sc": "FDFDFD"
     }
    ],
-   "Eps": "31'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794869116182,
-    "RTm": 1800000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "6",
+   "ErnInf": "3",
    "Et": 1,
-   "Esd": 20261116230500,
-   "EO": 806879247,
-   "EOX": 806879247,
+   "Esd": 20261117200000,
+   "EO": 337412199,
+   "EOX": 337412199,
    "Spid": 1,
    "Pid": 8
   }
