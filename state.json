@@ -10733,14 +10733,14 @@
    "created": "2026-11-17T17:55:25.817832+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 149,
+   "last_total": 157,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "24-15",
-   "last_score": "71-78"
+   "last_score": "76-81"
   },
   "bb_1832266|BB_HT_YUKSEK_ALT": {
    "key": "bb_1832266|BB_HT_YUKSEK_ALT",
@@ -10757,14 +10757,14 @@
    "created": "2026-11-17T18:50:31.485915+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 137,
+   "last_total": 147,
    "sent": true,
    "direction": "under",
    "base": 103,
    "n": 2,
    "ref": 51.5,
    "signal_score": "52-51",
-   "last_score": "68-69"
+   "last_score": "74-73"
   },
   "bb_1851061|BB_HT_YUKSEK_ALT": {
    "key": "bb_1851061|BB_HT_YUKSEK_ALT",
@@ -10781,14 +10781,38 @@
    "created": "2026-11-17T18:55:23.108452+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 129,
+   "last_total": 135,
    "sent": true,
    "direction": "under",
    "base": 107,
    "n": 2,
    "ref": 53.5,
    "signal_score": "50-57",
-   "last_score": "61-68"
+   "last_score": "65-70"
+  },
+  "bb_1844050|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1844050|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1844050",
+   "match": "Poitiers 86 - UJAP Quimper",
+   "league": "France Pro B",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-17T19:20:40.928131+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 50,
+   "sent": true,
+   "direction": "under",
+   "base": 50,
+   "n": 3,
+   "ref": 50.0,
+   "signal_score": "22-28",
+   "last_score": "22-28"
   }
  }
 }
