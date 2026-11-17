@@ -10679,14 +10679,38 @@
    "created": "2026-11-17T03:15:29.324971+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 172,
+   "last_total": 179,
    "sent": true,
    "direction": "under",
    "base": 109,
    "n": 2,
    "ref": 54.5,
    "signal_score": "53-56",
-   "last_score": "82-90"
+   "last_score": "82-97"
+  },
+  "bb_1868541|BB_Q4_FARK_ALT": {
+   "key": "bb_1868541|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868541",
+   "match": "Denver Nuggets - Phoenix Suns",
+   "league": "NBA Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-17T04:00:51.296970+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 179,
+   "sent": true,
+   "direction": "under",
+   "base": 172,
+   "n": 1,
+   "ref": 57.333333333333336,
+   "signal_score": "82-97",
+   "last_score": "82-97"
   }
  }
 }
