@@ -10312,6 +10312,30 @@
    "final_total": 3,
    "settled": "2026-11-16T23:00:56.392037+00:00",
    "seg_avg": 0.0
+  },
+  "bb_1868504|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868504|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868504",
+   "match": "Cleveland Cavaliers - Chicago Bulls",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-17T00:40:30.826863+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 66,
+   "sent": true,
+   "direction": "under",
+   "base": 56,
+   "n": 3,
+   "ref": 56.0,
+   "signal_score": "30-36",
+   "last_score": "30-36"
   }
  }
 }
