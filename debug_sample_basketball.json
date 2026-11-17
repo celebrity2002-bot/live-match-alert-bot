@@ -32,12 +32,14 @@
      }
     ]
    },
-   "Tr1": "15",
-   "Tr2": "21",
-   "Tr1OR": "15",
-   "Tr2OR": "21",
+   "Tr1": "18",
+   "Tr2": "25",
+   "Tr1OR": "18",
+   "Tr2OR": "25",
    "Tr1Q1": "15",
-   "Tr2Q1": "21",
+   "Tr2Q1": "23",
+   "Tr1Q2": "3",
+   "Tr2Q2": "2",
    "T1": [
     {
      "ID": "334862",
@@ -56,8 +58,8 @@
      "Sc": "D73430"
     }
    ],
-   "Eps": "1Q",
-   "Esid": 35,
+   "Eps": "2Q",
+   "Esid": 41,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "12",
@@ -65,6 +67,53 @@
    "Esd": 20261117190000,
    "EO": 524391,
    "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1829607",
+   "Pids": {
+    "112": "SBTE_2_1028405508",
+    "8": "1829607"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "EuroLeague TV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "1949",
+     "Nm": "Turk Telekom",
+     "Img": "teambadge/turk-telekom-2024.png",
+     "Abr": "TUR"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "2193",
+     "Nm": "Iberostar Tenerife",
+     "Img": "enet/154635.png",
+     "Abr": "IBE"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "8",
+   "Et": 1,
+   "Esd": 20261117193000,
+   "EO": 524295,
+   "EOX": 524295,
    "Spid": 23,
    "Pid": 8
   }
