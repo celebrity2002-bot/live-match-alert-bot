@@ -7,15 +7,21 @@
   {
    "Eid": "1916111",
    "Pids": {
-    "112": "SBTE_2_1029715792",
-    "8": "1916111"
+    "8": "1916111",
+    "112": "SBTE_2_1029715792"
    },
    "seriesInfo": {
     "totalLegs": 2,
     "currentLeg": 2,
-    "aggScoreTeam1": 1,
+    "aggScoreTeam1": 2,
     "aggScoreTeam2": 1
    },
+   "Tr1": "1",
+   "Tr2": "0",
+   "Trh1": "1",
+   "Trh2": "0",
+   "Tr1OR": "1",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "5208",
@@ -34,16 +40,20 @@
      "Abr": "KIM"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "2'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1794957611298,
+    "RTm": 60000
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Quarter Finals",
    "Awt": 0,
    "Et": 1,
    "Esd": 20261118001500,
-   "EO": 2954100743,
-   "EOX": 2954100743,
+   "EO": 2954100751,
+   "EOX": 2954100751,
    "Spid": 1,
    "Pid": 8
   }
