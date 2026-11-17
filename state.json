@@ -10717,6 +10717,30 @@
    "final_total": 222,
    "settled": "2026-11-17T04:40:31.617992+00:00",
    "seg_avg": 50.0
+  },
+  "bb_1832302|BB_Q1_DUSUK_UST": {
+   "key": "bb_1832302|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1832302",
+   "match": "Bnei Herzliya - Telekom Baskets Bonn",
+   "league": "Champions League Group H",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-17T17:55:25.817832+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 39,
+   "sent": true,
+   "direction": "over",
+   "base": 36,
+   "n": 3,
+   "ref": 36.0,
+   "signal_score": "24-15",
+   "last_score": "24-15"
   }
  }
 }
