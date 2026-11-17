@@ -100,17 +100,18 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "90+1'",
+   "Eps": "90+6'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794951321326,
+    "ATm": 1794951626297,
     "RTm": 5400000,
-    "ITm": 0
+    "ITm": 300000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
    "Et": 1,
+   "Eit": "4",
    "Esd": 20261117204500,
    "EO": 874431359,
    "EOX": 874431359,
@@ -118,280 +119,95 @@
    "Pid": 8
   },
   {
-   "Eid": "1738353",
+   "Eid": "1823016",
    "Pids": {
-    "112": "SBTE_2_1026632401",
-    "8": "1738353"
+    "8": "1823016",
+    "112": "SBTE_2_1029469533"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "BBC One Wales",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "BBC Two",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "BBCi",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "S4C",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "s4c.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "S4C Online",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "s4c.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 44,
-      "Nm": 2,
-      "NoP": false
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "3",
-   "Trh1": "2",
-   "Trh2": "2",
-   "Tr1OR": "2",
-   "Tr2OR": "3",
+   "Tr1": "1",
+   "Tr2": "2",
+   "Trh1": "1",
+   "Trh2": "1",
+   "Tr1OR": "1",
+   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "8962",
-     "Nm": "Wales",
-     "Img": "enet/5790.png",
-     "NewsTag": "/team/wales-2021020913320920836-1939/",
-     "Abr": "WAL",
-     "Fc": "AE2630",
-     "Sc": "174A3F"
+     "ID": "10848",
+     "Nm": "Bedford Town",
+     "Img": "enet/8717.png",
+     "Abr": "BED"
     }
    ],
    "T2": [
     {
-     "ID": "9295",
-     "Nm": "Portugal",
-     "Img": "enet/8361.png",
-     "NewsTag": "/team/portugal-2021020913320920836-1651/",
-     "Abr": "POR",
-     "Fc": "E42518",
-     "Sc": "0D6938"
+     "ID": "4521",
+     "Nm": "Chorley",
+     "Img": "enet/274599.png",
+     "Abr": "CHO"
     }
    ],
-   "Eps": "90+2'",
+   "Eps": "90+8'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794951311423,
+    "ATm": 1794951626180,
     "RTm": 5400000,
-    "ITm": 60000
+    "ITm": 420000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "6",
+   "ErnInf": "12",
    "Et": 1,
-   "Eit": "3",
    "Esd": 20261117204500,
-   "EO": 907985791,
-   "EOX": 907985791,
+   "EO": 807141391,
+   "EOX": 807141391,
    "Spid": 1,
    "Pid": 8
   },
   {
-   "Eid": "1738329",
+   "Eid": "1823020",
    "Pids": {
-    "112": "SBTE_2_1026632459",
-    "8": "1738329",
-    "29": "1738329"
+    "112": "SBTE_2_1029469526",
+    "8": "1823020"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "BBC One Northern Ireland",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "BBC Three",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "BBCi",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Virgin Media Three",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "virgin-media.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Fox Sports 2",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
+   "Tr1": "0",
+   "Tr2": "3",
+   "Trh1": "0",
+   "Trh2": "1",
+   "Tr1OR": "0",
+   "Tr2OR": "3",
    "T1": [
     {
-     "ID": "8963",
-     "Nm": "Hungary",
-     "Img": "enet/8565.png",
-     "NewsTag": "/team/hungary-2022062716001253418-1315/",
-     "Abr": "HUN",
-     "Fc": "de1021",
-     "Sc": "0b663a"
+     "ID": "3191",
+     "Nm": "Oxford City",
+     "Img": "enet/161836.png",
+     "NewsTag": "/team/oxford-city-2022081113203185684-5475/",
+     "Abr": "OXF"
     }
    ],
    "T2": [
     {
-     "ID": "9017",
-     "Nm": "Northern Ireland",
-     "Img": "enet/10259.png",
-     "NewsTag": "/team/northern-ireland-2021020913320920836-1583/",
-     "Abr": "NIR",
-     "Fc": "019e51",
-     "Sc": "FDFDFD"
+     "ID": "2897",
+     "Nm": "Macclesfield FC",
+     "Img": "enet/8599.png",
+     "Abr": "MAC",
+     "Fc": "0058b0",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "90'",
+   "Eps": "90+7'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794951307898,
-    "RTm": 5340000
+    "ATm": 1794951626316,
+    "RTm": 5400000,
+    "ITm": 360000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "6",
+   "ErnInf": "12",
    "Et": 1,
    "Esd": 20261117204500,
-   "EO": 907985791,
-   "EOX": 907985791,
+   "EO": 807141391,
+   "EOX": 807141391,
    "Spid": 1,
    "Pid": 8
   }
