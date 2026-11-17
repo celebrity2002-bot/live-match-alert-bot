@@ -10840,7 +10840,7 @@
    ],
    "created": "2026-11-17T19:25:24.775982+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 151,
    "sent": true,
    "direction": "over",
@@ -11000,14 +11000,14 @@
    "created": "2026-11-17T19:55:41.556441+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 154,
+   "last_total": 162,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "33-30",
-   "last_score": "77-77"
+   "last_score": "81-81"
   },
   "bb_1844055|BB_Q1_DUSUK_UST": {
    "key": "bb_1844055|BB_Q1_DUSUK_UST",
@@ -11024,14 +11024,14 @@
    "created": "2026-11-17T19:55:42.083416+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 111,
+   "last_total": 115,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "21-16",
-   "last_score": "60-51"
+   "last_score": "62-53"
   },
   "bb_1851081|BB_Q1_DUSUK_UST": {
    "key": "bb_1851081|BB_Q1_DUSUK_UST",
@@ -11048,14 +11048,14 @@
    "created": "2026-11-17T20:05:27.272236+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 93,
+   "last_total": 99,
    "sent": true,
    "direction": "over",
    "base": 29,
    "n": 3,
    "ref": 29.0,
    "signal_score": "13-16",
-   "last_score": "43-50"
+   "last_score": "47-52"
   },
   "bb_1832301|BB_HT_DUSUK_UST": {
    "key": "bb_1832301|BB_HT_DUSUK_UST",
@@ -11072,14 +11072,14 @@
    "created": "2026-11-17T20:15:45.672000+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 136,
+   "last_total": 144,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "30-34",
-   "last_score": "72-64"
+   "last_score": "74-70"
   },
   "fb_1866824|FB_GERIDEN_FARK2": {
    "key": "fb_1866824|FB_GERIDEN_FARK2",
@@ -11204,14 +11204,14 @@
    "created": "2026-11-17T20:25:27.104741+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 111,
+   "last_total": 115,
    "sent": true,
    "direction": "over",
    "base": 63,
    "n": 2,
    "ref": 31.5,
    "signal_score": "33-30",
-   "last_score": "60-51"
+   "last_score": "62-53"
   },
   "fb_1738354|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1738354|FB_COK_GOLLU_ERKEN",
@@ -11274,8 +11274,8 @@
     1.95
    ],
    "created": "2026-11-17T20:30:54.040262+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 178,
    "sent": true,
    "direction": "under",
@@ -11283,7 +11283,10 @@
    "n": 1,
    "ref": 42.0,
    "signal_score": "57-72",
-   "last_score": "86-92"
+   "last_score": "86-92",
+   "final_total": 178,
+   "settled": "2026-11-17T21:15:32.456083+00:00",
+   "seg_avg": 52.0
   },
   "fb_1837052|FB_IY2_00": {
    "key": "fb_1837052|FB_IY2_00",
@@ -11324,14 +11327,14 @@
    "created": "2026-11-17T20:35:25.396212+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 93,
+   "last_total": 99,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "34-36",
-   "last_score": "43-50"
+   "last_score": "47-52"
   },
   "bb_1896872|BB_Q4_YAKIN_UST": {
    "key": "bb_1896872|BB_Q4_YAKIN_UST",
@@ -11348,14 +11351,14 @@
    "created": "2026-11-17T20:35:25.949054+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 184,
+   "last_total": 186,
    "sent": true,
    "direction": "over",
    "base": 134,
    "n": 1,
    "ref": 44.666666666666664,
    "signal_score": "71-69",
-   "last_score": "93-91"
+   "last_score": "93-93"
   },
   "fb_1823024|FB_IY2_00": {
    "key": "fb_1823024|FB_IY2_00",
@@ -11467,7 +11470,7 @@
    ],
    "created": "2026-11-17T20:45:29.271693+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 151,
    "sent": true,
    "direction": "under",
@@ -11492,14 +11495,14 @@
    "created": "2026-11-17T21:00:52.123873+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 154,
+   "last_total": 162,
    "sent": true,
    "direction": "over",
    "base": 135,
    "n": 1,
    "ref": 45.0,
    "signal_score": "71-68",
-   "last_score": "77-77"
+   "last_score": "81-81"
   },
   "fb_1738276|FB_GERIDEN_FARK2": {
    "key": "fb_1738276|FB_GERIDEN_FARK2",
@@ -11588,14 +11591,14 @@
    "created": "2026-11-17T21:05:28.384828+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-3"
   },
   "bb_1851062|BB_Q4_YAKIN_UST": {
    "key": "bb_1851062|BB_Q4_YAKIN_UST",
@@ -11612,14 +11615,14 @@
    "created": "2026-11-17T21:10:31.648154+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 137,
+   "last_total": 141,
    "sent": true,
    "direction": "over",
    "base": 137,
    "n": 1,
    "ref": 45.666666666666664,
    "signal_score": "69-68",
-   "last_score": "69-68"
+   "last_score": "71-70"
   },
   "fb_1738354|FB_TEK_FARK_70": {
    "key": "fb_1738354|FB_TEK_FARK_70",
@@ -11708,14 +11711,14 @@
    "created": "2026-11-17T21:10:37.220885+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "1-2"
   },
   "fb_1837052|FB_TEK_FARK_70": {
    "key": "fb_1837052|FB_TEK_FARK_70",
@@ -11764,6 +11767,126 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-2"
+  },
+  "fb_1738353|FB_TEK_FARK_70": {
+   "key": "fb_1738353|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738353",
+   "match": "Wales - Portugal",
+   "league": "UEFA Nations League League A: Group 4",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:15:34.335145+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 5,
+   "sent": true,
+   "direction": "over",
+   "base": 5,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-3",
+   "last_score": "2-3"
+  },
+  "fb_1837535|FB_TEK_FARK_70": {
+   "key": "fb_1837535|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1837535",
+   "match": "Cleethorpes Town - FC United of Manchester",
+   "league": "England Northern Premier League",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:15:34.879850+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1837544|FB_GERIDEN_FARK2": {
+   "key": "fb_1837544|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1837544",
+   "match": "Guiseley - Ashton United",
+   "league": "England Northern Premier League",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-17T21:15:35.370976+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-1",
+   "last_score": "3-1"
+  },
+  "fb_1837542|FB_TEK_FARK_70": {
+   "key": "fb_1837542|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1837542",
+   "match": "Hyde United - Warrington Rylands",
+   "league": "England Northern Premier League",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:15:35.924488+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
+  },
+  "fb_1839557|FB_TEK_FARK_70": {
+   "key": "fb_1839557|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1839557",
+   "match": "Worcester City - Kettering Town",
+   "league": "England Southern League Premier: Central",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:15:36.414325+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
