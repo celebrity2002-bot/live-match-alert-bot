@@ -10733,14 +10733,14 @@
    "created": "2026-11-17T17:55:25.817832+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 80,
+   "last_total": 83,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "24-15",
-   "last_score": "42-38"
+   "last_score": "42-41"
   }
  }
 }
