@@ -73,11 +73,11 @@
     ]
    },
    "Tr1": "2",
-   "Tr2": "1",
+   "Tr2": "2",
    "Trh1": "2",
    "Trh2": "1",
    "Tr1OR": "2",
-   "Tr2OR": "1",
+   "Tr2OR": "2",
    "T1": [
     {
      "ID": "9053",
@@ -100,11 +100,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "81'",
+   "Eps": "86'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794950721479,
-    "RTm": 4800000
+    "ATm": 1794951021378,
+    "RTm": 5100000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -237,11 +237,11 @@
      "Sc": "0D6938"
     }
    ],
-   "Eps": "82'",
+   "Eps": "87'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794950707706,
-    "RTm": 4860000
+    "ATm": 1794951011314,
+    "RTm": 5160000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -256,20 +256,11 @@
   {
    "Eid": "1738329",
    "Pids": {
-    "112": "SBTE_2_1026632459",
     "8": "1738329",
-    "29": "1738329"
+    "29": "1738329",
+    "112": "SBTE_2_1026632459"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "BBC One Northern Ireland",
@@ -346,6 +337,15 @@
        "MX"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "1",
@@ -376,11 +376,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "80'",
+   "Eps": "85'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794950712009,
-    "RTm": 4740000
+    "ATm": 1794951012517,
+    "RTm": 5040000
    },
    "Epr": 1,
    "Ecov": 0,
