@@ -100,8 +100,12 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "46'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794948623200,
+    "RTm": 2700000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "6",
@@ -224,15 +228,19 @@
      "Sc": "0D6938"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "47'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1794948616261,
+    "RTm": 2760000
+   },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "League A Group 4",
+   "ErnInf": "6",
    "Et": 1,
    "Esd": 20261117204500,
-   "EO": 874431343,
-   "EOX": 874431343,
+   "EO": 907985791,
+   "EOX": 907985791,
    "Spid": 1,
    "Pid": 8
   },
@@ -244,15 +252,6 @@
     "29": "1738329"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "BBC One Northern Ireland",
@@ -328,6 +327,15 @@
       "allowedCountries": [
        "MX"
       ]
+     }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng17/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
      }
     ]
    },
