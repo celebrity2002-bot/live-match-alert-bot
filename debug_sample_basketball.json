@@ -5,78 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1851062",
-   "Pids": {
-    "112": "SBTE_2_1028562780",
-    "8": "1851062"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Azteca Deportes Network",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "azteca.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "EuroLeague TV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "86",
-   "Tr2": "86",
-   "Tr1OR": "86",
-   "Tr2OR": "86",
-   "Tr1Q1": "20",
-   "Tr2Q1": "24",
-   "Tr1Q2": "26",
-   "Tr2Q2": "19",
-   "Tr1Q3": "23",
-   "Tr2Q3": "25",
-   "Tr1Q4": "17",
-   "Tr2Q4": "18",
-   "T1": [
-    {
-     "ID": "71",
-     "Nm": "Barcelona",
-     "Img": "enet/58625.png",
-     "Abr": "FCB",
-     "Fc": "004D98",
-     "Sc": "A50044"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "28",
-     "Nm": "Paris Basketball",
-     "Img": "enet/960506.png",
-     "Abr": "PAR",
-     "Fc": "000000",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "12",
-   "Et": 1,
-   "Esd": 20261117223000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1851081",
    "Pids": {
     "112": "SBTE_2_1028562782",
@@ -95,18 +23,18 @@
      }
     ]
    },
-   "Tr1": "61",
-   "Tr2": "67",
-   "Tr1OR": "61",
-   "Tr2OR": "67",
+   "Tr1": "64",
+   "Tr2": "73",
+   "Tr1OR": "64",
+   "Tr2OR": "73",
    "Tr1Q1": "13",
    "Tr2Q1": "16",
    "Tr1Q2": "21",
    "Tr2Q2": "20",
    "Tr1Q3": "17",
    "Tr2Q3": "16",
-   "Tr1Q4": "10",
-   "Tr2Q4": "15",
+   "Tr1Q4": "13",
+   "Tr2Q4": "21",
    "T1": [
     {
      "ID": "2207",
@@ -156,18 +84,18 @@
      }
     ]
    },
-   "Tr1": "68",
-   "Tr2": "64",
-   "Tr1OR": "68",
-   "Tr2OR": "64",
+   "Tr1": "71",
+   "Tr2": "66",
+   "Tr1OR": "71",
+   "Tr2OR": "66",
    "Tr1Q1": "19",
    "Tr2Q1": "20",
    "Tr1Q2": "21",
    "Tr2Q2": "23",
    "Tr1Q3": "20",
    "Tr2Q3": "13",
-   "Tr1Q4": "8",
-   "Tr2Q4": "8",
+   "Tr1Q4": "11",
+   "Tr2Q4": "10",
    "T1": [
     {
      "ID": "2495",

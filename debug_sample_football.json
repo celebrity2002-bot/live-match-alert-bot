@@ -5,157 +5,43 @@
  ],
  "events": [
   {
-   "Eid": "1738354",
+   "Eid": "1837051",
    "Pids": {
-    "112": "SBTE_2_1026632424",
-    "8": "1738354"
+    "8": "1837051",
+    "112": "SBTE_2_1029604448"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Amazon Prime PPV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Fox Sports 1",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "1": [
-     {
-      "IT": 1038,
-      "Nm": 2,
-      "Sc": [
-       2,
-       0
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "2",
-   "Trh1": "2",
+   "Tr1": "0",
+   "Tr2": "1",
+   "Trh1": "0",
    "Trh2": "1",
-   "Tr1OR": "2",
-   "Tr2OR": "2",
+   "Tr1OR": "0",
+   "Tr2OR": "1",
    "T1": [
     {
-     "ID": "9053",
-     "Nm": "Denmark",
-     "Img": "enet/8238.png",
-     "NewsTag": "/team/denmark-2021020913320920836-2372/",
-     "Abr": "DEN",
-     "Fc": "CD181E",
-     "Sc": "FDFDFD"
+     "ID": "10847",
+     "Nm": "Burgess Hill Town",
+     "Img": "enet/282340.png",
+     "Abr": "BUR"
     }
    ],
    "T2": [
     {
-     "ID": "9204",
-     "Nm": "Norway",
-     "Img": "enet/8492.png",
-     "NewsTag": "/team/norway-2022062716001253418-1588/",
-     "Abr": "NOR",
-     "Fc": "dc1430",
-     "Sc": "FDFDFD"
+     "ID": "10863",
+     "Nm": "Brentwood Town",
+     "Img": "enet/282343.png",
+     "Abr": "BRE"
     }
    ],
-   "Eps": "90+6'",
+   "Eps": "90+4'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794951626297,
+    "ATm": 1794951911214,
     "RTm": 5400000,
-    "ITm": 300000
+    "ITm": 180000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Eit": "4",
-   "Esd": 20261117204500,
-   "EO": 874431359,
-   "EOX": 874431359,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1823016",
-   "Pids": {
-    "8": "1823016",
-    "112": "SBTE_2_1029469533"
-   },
-   "Tr1": "1",
-   "Tr2": "2",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "10848",
-     "Nm": "Bedford Town",
-     "Img": "enet/8717.png",
-     "Abr": "BED"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4521",
-     "Nm": "Chorley",
-     "Img": "enet/274599.png",
-     "Abr": "CHO"
-    }
-   ],
-   "Eps": "90+8'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1794951626180,
-    "RTm": 5400000,
-    "ITm": 420000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "12",
+   "ErnInf": "15",
    "Et": 1,
    "Esd": 20261117204500,
    "EO": 807141391,
@@ -164,46 +50,42 @@
    "Pid": 8
   },
   {
-   "Eid": "1823020",
+   "Eid": "1837085",
    "Pids": {
-    "112": "SBTE_2_1029469526",
-    "8": "1823020"
+    "8": "1837085"
    },
-   "Tr1": "0",
+   "Tr1": "2",
    "Tr2": "3",
-   "Trh1": "0",
+   "Trh1": "1",
    "Trh2": "1",
-   "Tr1OR": "0",
+   "Tr1OR": "2",
    "Tr2OR": "3",
    "T1": [
     {
-     "ID": "3191",
-     "Nm": "Oxford City",
-     "Img": "enet/161836.png",
-     "NewsTag": "/team/oxford-city-2022081113203185684-5475/",
-     "Abr": "OXF"
+     "ID": "10983",
+     "Nm": "Ramsgate",
+     "Img": "enet/5767.png",
+     "Abr": "RAM"
     }
    ],
    "T2": [
     {
-     "ID": "2897",
-     "Nm": "Macclesfield FC",
-     "Img": "enet/8599.png",
-     "Abr": "MAC",
-     "Fc": "0058b0",
-     "Sc": "ffffff"
+     "ID": "3128",
+     "Nm": "Cray Wanderers",
+     "Img": "enet/177064.png",
+     "Abr": "CRA"
     }
    ],
-   "Eps": "90+7'",
+   "Eps": "90+12'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794951626316,
+    "ATm": 1794951876208,
     "RTm": 5400000,
-    "ITm": 360000
+    "ITm": 660000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "12",
+   "ErnInf": "13",
    "Et": 1,
    "Esd": 20261117204500,
    "EO": 807141391,
