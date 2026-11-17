@@ -10760,14 +10760,14 @@
    "created": "2026-11-17T18:50:31.485915+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 180,
    "sent": true,
    "direction": "under",
    "base": 103,
    "n": 2,
    "ref": 51.5,
    "signal_score": "52-51",
-   "last_score": "81-90"
+   "last_score": "86-94"
   },
   "bb_1851061|BB_HT_YUKSEK_ALT": {
    "key": "bb_1851061|BB_HT_YUKSEK_ALT",
@@ -10784,14 +10784,14 @@
    "created": "2026-11-17T18:55:23.108452+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 107,
    "n": 2,
    "ref": 53.5,
    "signal_score": "50-57",
-   "last_score": "82-84"
+   "last_score": "86-88"
   },
   "bb_1844050|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844050|BB_TEMPO_DUSUSU_ALT",
@@ -10808,14 +10808,14 @@
    "created": "2026-11-17T19:20:40.928131+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 91,
+   "last_total": 104,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "22-28",
-   "last_score": "47-44"
+   "last_score": "54-50"
   },
   "bb_1830778|BB_Q1_DUSUK_UST": {
    "key": "bb_1830778|BB_Q1_DUSUK_UST",
@@ -10832,14 +10832,14 @@
    "created": "2026-11-17T19:25:24.775982+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 52,
+   "last_total": 58,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "15-17",
-   "last_score": "22-30"
+   "last_score": "24-34"
   },
   "bb_1844053|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844053|BB_TEMPO_DUSUSU_ALT",
@@ -10856,14 +10856,14 @@
    "created": "2026-11-17T19:25:25.225572+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 91,
+   "last_total": 100,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "28-26",
-   "last_score": "50-41"
+   "last_score": "53-47"
   },
   "bb_1851059|BB_Q4_FARK_ALT": {
    "key": "bb_1851059|BB_Q4_FARK_ALT",
@@ -10880,14 +10880,14 @@
    "created": "2026-11-17T19:30:48.407933+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 182,
+   "last_total": 191,
    "sent": true,
    "direction": "under",
    "base": 150,
    "n": 1,
    "ref": 50.0,
    "signal_score": "91-64",
-   "last_score": "110-72"
+   "last_score": "115-76"
   },
   "bb_1851061|BB_Q4_YAKIN_UST": {
    "key": "bb_1851061|BB_Q4_YAKIN_UST",
@@ -10904,14 +10904,14 @@
    "created": "2026-11-17T19:35:29.264835+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 174,
    "sent": true,
    "direction": "over",
    "base": 157,
    "n": 1,
    "ref": 52.333333333333336,
    "signal_score": "78-79",
-   "last_score": "82-84"
+   "last_score": "86-88"
   }
  }
 }
