@@ -10732,7 +10732,7 @@
    ],
    "created": "2026-11-17T17:55:25.817832+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 164,
    "sent": true,
    "direction": "over",
@@ -10757,14 +10757,14 @@
    "created": "2026-11-17T18:50:31.485915+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 153,
+   "last_total": 160,
    "sent": true,
    "direction": "under",
    "base": 103,
    "n": 2,
    "ref": 51.5,
    "signal_score": "52-51",
-   "last_score": "74-79"
+   "last_score": "76-84"
   },
   "bb_1851061|BB_HT_YUKSEK_ALT": {
    "key": "bb_1851061|BB_HT_YUKSEK_ALT",
@@ -10781,14 +10781,14 @@
    "created": "2026-11-17T18:55:23.108452+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 155,
    "sent": true,
    "direction": "under",
    "base": 107,
    "n": 2,
    "ref": 53.5,
    "signal_score": "50-57",
-   "last_score": "67-76"
+   "last_score": "76-79"
   },
   "bb_1844050|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844050|BB_TEMPO_DUSUSU_ALT",
@@ -10805,14 +10805,14 @@
    "created": "2026-11-17T19:20:40.928131+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 54,
+   "last_total": 71,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "22-28",
-   "last_score": "26-28"
+   "last_score": "37-34"
   },
   "bb_1830778|BB_Q1_DUSUK_UST": {
    "key": "bb_1830778|BB_Q1_DUSUK_UST",
@@ -10829,14 +10829,14 @@
    "created": "2026-11-17T19:25:24.775982+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 32,
+   "last_total": 37,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "15-17",
-   "last_score": "15-17"
+   "last_score": "17-20"
   },
   "bb_1844053|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844053|BB_TEMPO_DUSUSU_ALT",
@@ -10853,14 +10853,38 @@
    "created": "2026-11-17T19:25:25.225572+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 54,
+   "last_total": 65,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "28-26",
-   "last_score": "28-26"
+   "last_score": "35-30"
+  },
+  "bb_1851059|BB_Q4_FARK_ALT": {
+   "key": "bb_1851059|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1851059",
+   "match": "Fenerbahçe - ASVEL Lyon-Villeurbanne",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-17T19:30:48.407933+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 155,
+   "sent": true,
+   "direction": "under",
+   "base": 150,
+   "n": 1,
+   "ref": 50.0,
+   "signal_score": "91-64",
+   "last_score": "91-64"
   }
  }
 }
