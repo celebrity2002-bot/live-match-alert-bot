@@ -5,80 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1868521",
-   "Pids": {
-    "112": "SBTE_2_1028754069",
-    "8": "1868521"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NBA League Pass",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "nba-league-pass.png",
-      "allowedCountries": [
-       "GB",
-       "MX",
-       "IE",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sportsnet",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "CA"
-      ]
-     }
-    ]
-   },
-   "Tr1": "123",
-   "Tr2": "131",
-   "Tr1OR": "123",
-   "Tr2OR": "131",
-   "Tr1Q1": "26",
-   "Tr2Q1": "33",
-   "Tr1Q2": "33",
-   "Tr2Q2": "45",
-   "Tr1Q3": "36",
-   "Tr2Q3": "27",
-   "Tr1Q4": "28",
-   "Tr2Q4": "26",
-   "T1": [
-    {
-     "ID": "1906",
-     "Nm": "Brooklyn Nets",
-     "Img": "enet/58535.png",
-     "Abr": "BKN",
-     "Fc": "000000",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "1928",
-     "Nm": "Philadelphia 76ers",
-     "Img": "enet/58509.png",
-     "Abr": "PHI",
-     "Fc": "006BB6",
-     "Sc": "ED174C"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261117033000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1868511",
    "Pids": {
     "112": "SBTE_2_1028754045",
@@ -100,18 +26,18 @@
      }
     ]
    },
-   "Tr1": "98",
-   "Tr2": "79",
-   "Tr1OR": "98",
-   "Tr2OR": "79",
+   "Tr1": "100",
+   "Tr2": "82",
+   "Tr1OR": "100",
+   "Tr2OR": "82",
    "Tr1Q1": "26",
    "Tr2Q1": "26",
    "Tr1Q2": "33",
    "Tr2Q2": "25",
    "Tr1Q3": "28",
    "Tr2Q3": "22",
-   "Tr1Q4": "11",
-   "Tr2Q4": "6",
+   "Tr1Q4": "13",
+   "Tr2Q4": "9",
    "T1": [
     {
      "ID": "157",
@@ -174,18 +100,18 @@
      }
     ]
    },
-   "Tr1": "102",
-   "Tr2": "75",
-   "Tr1OR": "102",
-   "Tr2OR": "75",
+   "Tr1": "107",
+   "Tr2": "78",
+   "Tr1OR": "107",
+   "Tr2OR": "78",
    "Tr1Q1": "35",
    "Tr2Q1": "11",
    "Tr1Q2": "26",
    "Tr2Q2": "25",
    "Tr1Q3": "32",
    "Tr2Q3": "29",
-   "Tr1Q4": "9",
-   "Tr2Q4": "10",
+   "Tr1Q4": "14",
+   "Tr2Q4": "13",
    "T1": [
     {
      "ID": "1881",
@@ -213,6 +139,68 @@
    "ErnInf": "1",
    "Et": 1,
    "Esd": 20261117040000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1868541",
+   "Pids": {
+    "8": "1868541",
+    "112": "SBTE_2_1028754055"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "MX",
+       "GB",
+       "IE",
+       "US"
+      ]
+     }
+    ]
+   },
+   "Tr1": "53",
+   "Tr2": "56",
+   "Tr1OR": "53",
+   "Tr2OR": "56",
+   "Tr1Q1": "24",
+   "Tr2Q1": "20",
+   "Tr1Q2": "29",
+   "Tr2Q2": "36",
+   "T1": [
+    {
+     "ID": "2382",
+     "Nm": "Denver Nuggets",
+     "Img": "enet/58550.png",
+     "Abr": "DEN",
+     "Fc": "0E2240",
+     "Sc": "FEC524"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1908",
+     "Nm": "Phoenix Suns",
+     "Img": "enet/58555.png",
+     "Abr": "PHX",
+     "Fc": "391266",
+     "Sc": "E56020"
+    }
+   ],
+   "Eps": "HT",
+   "Esid": 10,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261117050000,
    "EO": 524391,
    "EOX": 524391,
    "Spid": 23,
