@@ -10733,14 +10733,14 @@
    "created": "2026-11-17T17:55:25.817832+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 124,
+   "last_total": 130,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "24-15",
-   "last_score": "60-64"
+   "last_score": "63-67"
   },
   "bb_1832266|BB_HT_YUKSEK_ALT": {
    "key": "bb_1832266|BB_HT_YUKSEK_ALT",
