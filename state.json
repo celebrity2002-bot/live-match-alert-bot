@@ -10759,7 +10759,7 @@
    ],
    "created": "2026-11-17T18:50:31.485915+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 189,
    "sent": true,
    "direction": "under",
@@ -10784,14 +10784,14 @@
    "created": "2026-11-17T18:55:23.108452+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 189,
+   "last_total": 191,
    "sent": true,
    "direction": "under",
    "base": 107,
    "n": 2,
    "ref": 53.5,
    "signal_score": "50-57",
-   "last_score": "92-97"
+   "last_score": "94-97"
   },
   "bb_1844050|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844050|BB_TEMPO_DUSUSU_ALT",
@@ -10832,14 +10832,14 @@
    "created": "2026-11-17T19:25:24.775982+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 78,
+   "last_total": 80,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "15-17",
-   "last_score": "33-45"
+   "last_score": "33-47"
   },
   "bb_1844053|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844053|BB_TEMPO_DUSUSU_ALT",
@@ -10878,8 +10878,8 @@
     1.95
    ],
    "created": "2026-11-17T19:30:48.407933+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 195,
    "sent": true,
    "direction": "under",
@@ -10887,7 +10887,10 @@
    "n": 1,
    "ref": 50.0,
    "signal_score": "91-64",
-   "last_score": "115-80"
+   "last_score": "115-80",
+   "final_total": 195,
+   "settled": "2026-11-17T20:00:55.448121+00:00",
+   "seg_avg": 45.0
   },
   "bb_1851061|BB_Q4_YAKIN_UST": {
    "key": "bb_1851061|BB_Q4_YAKIN_UST",
@@ -10904,14 +10907,14 @@
    "created": "2026-11-17T19:35:29.264835+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 189,
+   "last_total": 191,
    "sent": true,
    "direction": "over",
    "base": 157,
    "n": 1,
    "ref": 52.333333333333336,
    "signal_score": "78-79",
-   "last_score": "92-97"
+   "last_score": "94-97"
   },
   "bb_1844053|BB_HT_YUKSEK_ALT": {
    "key": "bb_1844053|BB_HT_YUKSEK_ALT",
@@ -10976,14 +10979,14 @@
    "created": "2026-11-17T19:55:41.556441+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 63,
+   "last_total": 72,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "33-30",
-   "last_score": "33-30"
+   "last_score": "41-31"
   },
   "bb_1844055|BB_Q1_DUSUK_UST": {
    "key": "bb_1844055|BB_Q1_DUSUK_UST",
@@ -11000,14 +11003,14 @@
    "created": "2026-11-17T19:55:42.083416+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 37,
+   "last_total": 44,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "21-16",
-   "last_score": "21-16"
+   "last_score": "26-18"
   }
  }
 }
