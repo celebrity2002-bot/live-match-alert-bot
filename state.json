@@ -11001,8 +11001,8 @@
     1.55
    ],
    "created": "2026-11-17T19:55:41.556441+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 167,
    "sent": true,
    "direction": "under",
@@ -11010,7 +11010,10 @@
    "n": 3,
    "ref": 59.0,
    "signal_score": "33-30",
-   "last_score": "82-85"
+   "last_score": "82-85",
+   "final_total": 167,
+   "settled": "2026-11-17T21:32:17.019427+00:00",
+   "seg_avg": 36.0
   },
   "bb_1844055|BB_Q1_DUSUK_UST": {
    "key": "bb_1844055|BB_Q1_DUSUK_UST",
@@ -11026,7 +11029,7 @@
    ],
    "created": "2026-11-17T19:55:42.083416+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 132,
    "sent": true,
    "direction": "over",
@@ -11209,7 +11212,7 @@
    ],
    "created": "2026-11-17T20:25:27.104741+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 132,
    "sent": true,
    "direction": "over",
@@ -11356,7 +11359,7 @@
    ],
    "created": "2026-11-17T20:35:25.949054+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 196,
    "sent": true,
    "direction": "over",
@@ -11502,8 +11505,8 @@
     2.0
    ],
    "created": "2026-11-17T21:00:52.123873+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 167,
    "sent": true,
    "direction": "over",
@@ -11511,7 +11514,10 @@
    "n": 1,
    "ref": 45.0,
    "signal_score": "71-68",
-   "last_score": "82-85"
+   "last_score": "82-85",
+   "final_total": 167,
+   "settled": "2026-11-17T21:32:17.534377+00:00",
+   "seg_avg": 32.0
   },
   "fb_1738276|FB_GERIDEN_FARK2": {
    "key": "fb_1738276|FB_GERIDEN_FARK2",
