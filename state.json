@@ -10352,14 +10352,14 @@
    "created": "2026-11-17T00:45:29.367108+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 115,
+   "last_total": 125,
    "sent": true,
    "direction": "under",
    "base": 68,
    "n": 3,
    "ref": 68.0,
    "signal_score": "43-37",
-   "last_score": "60-55"
+   "last_score": "68-57"
   },
   "bb_1868504|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868504|BB_HT_YUKSEK_ALT",
