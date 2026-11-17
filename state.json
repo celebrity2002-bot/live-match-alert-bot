@@ -10679,14 +10679,14 @@
    "created": "2026-11-17T03:15:29.324971+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 136,
+   "last_total": 142,
    "sent": true,
    "direction": "under",
    "base": 109,
    "n": 2,
    "ref": 54.5,
    "signal_score": "53-56",
-   "last_score": "67-69"
+   "last_score": "69-73"
   }
  }
 }
