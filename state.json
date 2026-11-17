@@ -10812,8 +10812,8 @@
     1.55
    ],
    "created": "2026-11-17T19:20:40.928131+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 186,
    "sent": true,
    "direction": "under",
@@ -10821,7 +10821,10 @@
    "n": 3,
    "ref": 50.0,
    "signal_score": "22-28",
-   "last_score": "84-102"
+   "last_score": "84-102",
+   "final_total": 186,
+   "settled": "2026-11-17T21:10:32.321097+00:00",
+   "seg_avg": 45.3
   },
   "bb_1830778|BB_Q1_DUSUK_UST": {
    "key": "bb_1830778|BB_Q1_DUSUK_UST",
@@ -10837,7 +10840,7 @@
    ],
    "created": "2026-11-17T19:25:24.775982+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 151,
    "sent": true,
    "direction": "over",
@@ -10860,8 +10863,8 @@
     1.55
    ],
    "created": "2026-11-17T19:25:25.225572+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 218,
    "sent": true,
    "direction": "under",
@@ -10869,7 +10872,10 @@
    "n": 3,
    "ref": 54.0,
    "signal_score": "28-26",
-   "last_score": "113-105"
+   "last_score": "113-105",
+   "final_total": 218,
+   "settled": "2026-11-17T21:10:32.866274+00:00",
+   "seg_avg": 54.7
   },
   "bb_1851059|BB_Q4_FARK_ALT": {
    "key": "bb_1851059|BB_Q4_FARK_ALT",
@@ -10938,8 +10944,8 @@
     1.8
    ],
    "created": "2026-11-17T19:46:57.896034+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 218,
    "sent": true,
    "direction": "under",
@@ -10947,7 +10953,10 @@
    "n": 2,
    "ref": 51.0,
    "signal_score": "55-47",
-   "last_score": "113-105"
+   "last_score": "113-105",
+   "final_total": 218,
+   "settled": "2026-11-17T21:10:33.378551+00:00",
+   "seg_avg": 58.0
   },
   "bb_1844050|BB_HT_YUKSEK_ALT": {
    "key": "bb_1844050|BB_HT_YUKSEK_ALT",
@@ -10962,8 +10971,8 @@
     1.8
    ],
    "created": "2026-11-17T19:50:37.684526+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 186,
    "sent": true,
    "direction": "under",
@@ -10971,7 +10980,10 @@
    "n": 2,
    "ref": 52.0,
    "signal_score": "54-50",
-   "last_score": "84-102"
+   "last_score": "84-102",
+   "final_total": 186,
+   "settled": "2026-11-17T21:10:33.866003+00:00",
+   "seg_avg": 41.0
   },
   "bb_1851065|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1851065|BB_TEMPO_DUSUSU_ALT",
@@ -10988,14 +11000,14 @@
    "created": "2026-11-17T19:55:41.556441+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 145,
+   "last_total": 154,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "33-30",
-   "last_score": "73-72"
+   "last_score": "77-77"
   },
   "bb_1844055|BB_Q1_DUSUK_UST": {
    "key": "bb_1844055|BB_Q1_DUSUK_UST",
@@ -11012,14 +11024,14 @@
    "created": "2026-11-17T19:55:42.083416+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 103,
+   "last_total": 111,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "21-16",
-   "last_score": "55-48"
+   "last_score": "60-51"
   },
   "bb_1851081|BB_Q1_DUSUK_UST": {
    "key": "bb_1851081|BB_Q1_DUSUK_UST",
@@ -11036,14 +11048,14 @@
    "created": "2026-11-17T20:05:27.272236+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 93,
    "sent": true,
    "direction": "over",
    "base": 29,
    "n": 3,
    "ref": 29.0,
    "signal_score": "13-16",
-   "last_score": "41-46"
+   "last_score": "43-50"
   },
   "bb_1832301|BB_HT_DUSUK_UST": {
    "key": "bb_1832301|BB_HT_DUSUK_UST",
@@ -11060,14 +11072,14 @@
    "created": "2026-11-17T20:15:45.672000+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 131,
+   "last_total": 136,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "30-34",
-   "last_score": "70-61"
+   "last_score": "72-64"
   },
   "fb_1866824|FB_GERIDEN_FARK2": {
    "key": "fb_1866824|FB_GERIDEN_FARK2",
@@ -11082,8 +11094,8 @@
     2.1
    ],
    "created": "2026-11-17T20:20:32.057949+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -11091,7 +11103,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "3-0"
+   "last_score": "3-0",
+   "final_total": 3,
+   "settled": "2026-11-17T21:10:38.709450+00:00",
+   "seg_avg": 1.0
   },
   "bb_1844051|BB_Q4_FARK_ALT": {
    "key": "bb_1844051|BB_Q4_FARK_ALT",
@@ -11160,8 +11175,8 @@
     2.0
    ],
    "created": "2026-11-17T20:25:27.104597+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 218,
    "sent": false,
    "direction": "over",
@@ -11169,7 +11184,10 @@
    "n": 1,
    "ref": 53.666666666666664,
    "signal_score": "82-79",
-   "last_score": "113-105"
+   "last_score": "113-105",
+   "final_total": 218,
+   "settled": "2026-11-17T21:10:34.376383+00:00",
+   "seg_avg": 57.0
   },
   "bb_1844055|BB_HT_DUSUK_UST": {
    "key": "bb_1844055|BB_HT_DUSUK_UST",
@@ -11186,14 +11204,14 @@
    "created": "2026-11-17T20:25:27.104741+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 103,
+   "last_total": 111,
    "sent": true,
    "direction": "over",
    "base": 63,
    "n": 2,
    "ref": 31.5,
    "signal_score": "33-30",
-   "last_score": "55-48"
+   "last_score": "60-51"
   },
   "fb_1738354|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1738354|FB_COK_GOLLU_ERKEN",
@@ -11257,7 +11275,7 @@
    ],
    "created": "2026-11-17T20:30:54.040262+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 178,
    "sent": true,
    "direction": "under",
@@ -11306,14 +11324,14 @@
    "created": "2026-11-17T20:35:25.396212+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 93,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "34-36",
-   "last_score": "41-46"
+   "last_score": "43-50"
   },
   "bb_1896872|BB_Q4_YAKIN_UST": {
    "key": "bb_1896872|BB_Q4_YAKIN_UST",
@@ -11330,14 +11348,14 @@
    "created": "2026-11-17T20:35:25.949054+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 182,
+   "last_total": 184,
    "sent": true,
    "direction": "over",
    "base": 134,
    "n": 1,
    "ref": 44.666666666666664,
    "signal_score": "71-69",
-   "last_score": "92-90"
+   "last_score": "93-91"
   },
   "fb_1823024|FB_IY2_00": {
    "key": "fb_1823024|FB_IY2_00",
@@ -11449,7 +11467,7 @@
    ],
    "created": "2026-11-17T20:45:29.271693+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 151,
    "sent": true,
    "direction": "under",
@@ -11474,14 +11492,14 @@
    "created": "2026-11-17T21:00:52.123873+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 145,
+   "last_total": 154,
    "sent": true,
    "direction": "over",
    "base": 135,
    "n": 1,
    "ref": 45.0,
    "signal_score": "71-68",
-   "last_score": "73-72"
+   "last_score": "77-77"
   },
   "fb_1738276|FB_GERIDEN_FARK2": {
    "key": "fb_1738276|FB_GERIDEN_FARK2",
@@ -11546,14 +11564,14 @@
    "created": "2026-11-17T21:00:54.914472+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "fb_1823027|FB_GERIDEN_FARK2": {
    "key": "fb_1823027|FB_GERIDEN_FARK2",
@@ -11578,6 +11596,174 @@
    "ref": 0.0,
    "signal_score": "0-2",
    "last_score": "0-2"
+  },
+  "bb_1851062|BB_Q4_YAKIN_UST": {
+   "key": "bb_1851062|BB_Q4_YAKIN_UST",
+   "sport": "basketball",
+   "match_id": "bb_1851062",
+   "match": "Barcelona - Paris Basketball",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_Q4_YAKIN_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-17T21:10:31.648154+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 137,
+   "sent": true,
+   "direction": "over",
+   "base": 137,
+   "n": 1,
+   "ref": 45.666666666666664,
+   "signal_score": "69-68",
+   "last_score": "69-68"
+  },
+  "fb_1738354|FB_TEK_FARK_70": {
+   "key": "fb_1738354|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738354",
+   "match": "Denmark - Norway",
+   "league": "UEFA Nations League League A: Group 4",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:10:35.711533+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1738330|FB_TEK_FARK_70": {
+   "key": "fb_1738330|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1738330",
+   "match": "Ukraine - Georgia",
+   "league": "UEFA Nations League League B: Group 2",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:10:36.222036+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1824124|FB_TEK_FARK_70": {
+   "key": "fb_1824124|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1824124",
+   "match": "Tonbridge Angels - Chesham United",
+   "league": "England National League: South",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:10:36.728427+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1837542|FB_GERIDEN_FARK2": {
+   "key": "fb_1837542|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1837542",
+   "match": "Hyde United - Warrington Rylands",
+   "league": "England Northern Premier League",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-17T21:10:37.220885+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
+  },
+  "fb_1837052|FB_TEK_FARK_70": {
+   "key": "fb_1837052|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1837052",
+   "match": "Dartford - Three Bridges",
+   "league": "England Isthmian League Premier Division",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:10:37.741903+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1837085|FB_TEK_FARK_70": {
+   "key": "fb_1837085|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1837085",
+   "match": "Ramsgate - Cray Wanderers",
+   "league": "England Isthmian League Premier Division",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-17T21:10:38.222872+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
