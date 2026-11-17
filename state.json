@@ -10328,14 +10328,14 @@
    "created": "2026-11-17T00:40:30.826863+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 147,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "30-36",
-   "last_score": "77-70"
+   "last_score": "88-78"
   },
   "bb_1868537|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868537|BB_TEMPO_DUSUSU_ALT",
@@ -10352,14 +10352,14 @@
    "created": "2026-11-17T00:45:29.367108+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 176,
    "sent": true,
    "direction": "under",
    "base": 68,
    "n": 3,
    "ref": 68.0,
    "signal_score": "43-37",
-   "last_score": "79-82"
+   "last_score": "84-92"
   },
   "bb_1868504|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868504|BB_HT_YUKSEK_ALT",
@@ -10376,14 +10376,14 @@
    "created": "2026-11-17T01:05:24.304284+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 147,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 105,
    "n": 2,
    "ref": 52.5,
    "signal_score": "57-48",
-   "last_score": "77-70"
+   "last_score": "88-78"
   },
   "bb_1868537|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868537|BB_HT_YUKSEK_ALT",
@@ -10400,14 +10400,14 @@
    "created": "2026-11-17T01:15:32.489896+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 176,
    "sent": true,
    "direction": "under",
    "base": 128,
    "n": 2,
    "ref": 64.0,
    "signal_score": "69-59",
-   "last_score": "79-82"
+   "last_score": "84-92"
   },
   "bb_1868521|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868521|BB_TEMPO_DUSUSU_ALT",
@@ -10424,14 +10424,62 @@
    "created": "2026-11-17T01:15:32.956118+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 115,
+   "last_total": 125,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "28-40",
-   "last_score": "47-68"
+   "last_score": "52-73"
+  },
+  "bb_1868514|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868514|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868514",
+   "match": "Miami Heat - Houston Rockets",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-17T01:45:41.103117+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 108,
+   "sent": true,
+   "direction": "under",
+   "base": 108,
+   "n": 2,
+   "ref": 54.0,
+   "signal_score": "62-46",
+   "last_score": "62-46"
+  },
+  "bb_1868511|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868511|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868511",
+   "match": "Minnesota Timberwolves - Portland Trail Blazers",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-17T01:45:41.382552+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 54,
+   "sent": true,
+   "direction": "under",
+   "base": 52,
+   "n": 3,
+   "ref": 52.0,
+   "signal_score": "28-26",
+   "last_score": "28-26"
   }
  }
 }
