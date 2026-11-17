@@ -10758,8 +10758,8 @@
     1.8
    ],
    "created": "2026-11-17T18:50:31.485915+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 189,
    "sent": true,
    "direction": "under",
@@ -10767,7 +10767,10 @@
    "n": 2,
    "ref": 51.5,
    "signal_score": "52-51",
-   "last_score": "91-98"
+   "last_score": "91-98",
+   "final_total": 189,
+   "settled": "2026-11-17T20:05:27.817989+00:00",
+   "seg_avg": 43.0
   },
   "bb_1851061|BB_HT_YUKSEK_ALT": {
    "key": "bb_1851061|BB_HT_YUKSEK_ALT",
@@ -10784,14 +10787,14 @@
    "created": "2026-11-17T18:55:23.108452+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 191,
+   "last_total": 196,
    "sent": true,
    "direction": "under",
    "base": 107,
    "n": 2,
    "ref": 53.5,
    "signal_score": "50-57",
-   "last_score": "94-97"
+   "last_score": "96-100"
   },
   "bb_1844050|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844050|BB_TEMPO_DUSUSU_ALT",
@@ -10808,14 +10811,14 @@
    "created": "2026-11-17T19:20:40.928131+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 104,
+   "last_total": 111,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "22-28",
-   "last_score": "54-50"
+   "last_score": "54-57"
   },
   "bb_1830778|BB_Q1_DUSUK_UST": {
    "key": "bb_1830778|BB_Q1_DUSUK_UST",
@@ -10856,14 +10859,14 @@
    "created": "2026-11-17T19:25:25.225572+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 102,
+   "last_total": 112,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "28-26",
-   "last_score": "55-47"
+   "last_score": "61-51"
   },
   "bb_1851059|BB_Q4_FARK_ALT": {
    "key": "bb_1851059|BB_Q4_FARK_ALT",
@@ -10907,14 +10910,14 @@
    "created": "2026-11-17T19:35:29.264835+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 191,
+   "last_total": 196,
    "sent": true,
    "direction": "over",
    "base": 157,
    "n": 1,
    "ref": 52.333333333333336,
    "signal_score": "78-79",
-   "last_score": "94-97"
+   "last_score": "96-100"
   },
   "bb_1844053|BB_HT_YUKSEK_ALT": {
    "key": "bb_1844053|BB_HT_YUKSEK_ALT",
@@ -10931,14 +10934,14 @@
    "created": "2026-11-17T19:46:57.896034+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 102,
+   "last_total": 112,
    "sent": true,
    "direction": "under",
    "base": 102,
    "n": 2,
    "ref": 51.0,
    "signal_score": "55-47",
-   "last_score": "55-47"
+   "last_score": "61-51"
   },
   "bb_1844050|BB_HT_YUKSEK_ALT": {
    "key": "bb_1844050|BB_HT_YUKSEK_ALT",
@@ -10955,14 +10958,14 @@
    "created": "2026-11-17T19:50:37.684526+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 104,
+   "last_total": 111,
    "sent": true,
    "direction": "under",
    "base": 104,
    "n": 2,
    "ref": 52.0,
    "signal_score": "54-50",
-   "last_score": "54-50"
+   "last_score": "54-57"
   },
   "bb_1851065|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1851065|BB_TEMPO_DUSUSU_ALT",
@@ -10979,14 +10982,14 @@
    "created": "2026-11-17T19:55:41.556441+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 72,
+   "last_total": 79,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "33-30",
-   "last_score": "41-31"
+   "last_score": "44-35"
   },
   "bb_1844055|BB_Q1_DUSUK_UST": {
    "key": "bb_1844055|BB_Q1_DUSUK_UST",
@@ -11003,14 +11006,38 @@
    "created": "2026-11-17T19:55:42.083416+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 44,
+   "last_total": 46,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "21-16",
-   "last_score": "26-18"
+   "last_score": "26-20"
+  },
+  "bb_1851081|BB_Q1_DUSUK_UST": {
+   "key": "bb_1851081|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1851081",
+   "match": "Partizan - Valencia",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-17T20:05:27.272236+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 29,
+   "sent": true,
+   "direction": "over",
+   "base": 29,
+   "n": 3,
+   "ref": 29.0,
+   "signal_score": "13-16",
+   "last_score": "13-16"
   }
  }
 }
