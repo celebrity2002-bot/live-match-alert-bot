@@ -10733,14 +10733,38 @@
    "created": "2026-11-17T17:55:25.817832+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 104,
+   "last_total": 115,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "24-15",
-   "last_score": "53-51"
+   "last_score": "56-59"
+  },
+  "bb_1832266|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1832266|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1832266",
+   "match": "Juventus - Pallacanestro Reggiana",
+   "league": "Champions League Group E",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-17T18:50:31.485915+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 103,
+   "sent": true,
+   "direction": "under",
+   "base": 103,
+   "n": 2,
+   "ref": 51.5,
+   "signal_score": "52-51",
+   "last_score": "52-51"
   }
  }
 }
