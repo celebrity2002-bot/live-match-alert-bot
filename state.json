@@ -10489,7 +10489,7 @@
    ],
    "created": "2026-11-17T01:45:41.382552+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 201,
    "sent": true,
    "direction": "under",
@@ -10567,7 +10567,7 @@
    ],
    "created": "2026-11-17T02:12:50.054497+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 201,
    "sent": true,
    "direction": "under",
@@ -10591,7 +10591,7 @@
    ],
    "created": "2026-11-17T02:12:50.592489+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 204,
    "sent": true,
    "direction": "under",
@@ -10642,7 +10642,7 @@
    ],
    "created": "2026-11-17T03:05:07.106510+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 204,
    "sent": true,
    "direction": "under",
@@ -10667,14 +10667,14 @@
    "created": "2026-11-17T03:15:29.324971+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 115,
+   "last_total": 121,
    "sent": true,
    "direction": "under",
    "base": 109,
    "n": 2,
    "ref": 54.5,
    "signal_score": "53-56",
-   "last_score": "56-59"
+   "last_score": "62-59"
   }
  }
 }
