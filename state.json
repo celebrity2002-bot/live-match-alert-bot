@@ -10786,7 +10786,7 @@
    ],
    "created": "2026-11-17T18:55:23.108452+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 231,
    "sent": true,
    "direction": "under",
@@ -10811,14 +10811,14 @@
    "created": "2026-11-17T19:20:40.928131+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 139,
+   "last_total": 140,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "22-28",
-   "last_score": "66-73"
+   "last_score": "66-74"
   },
   "bb_1830778|BB_Q1_DUSUK_UST": {
    "key": "bb_1830778|BB_Q1_DUSUK_UST",
@@ -10835,14 +10835,14 @@
    "created": "2026-11-17T19:25:24.775982+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 100,
+   "last_total": 113,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "15-17",
-   "last_score": "47-53"
+   "last_score": "51-62"
   },
   "bb_1844053|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1844053|BB_TEMPO_DUSUSU_ALT",
@@ -10859,14 +10859,14 @@
    "created": "2026-11-17T19:25:25.225572+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 172,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "28-26",
-   "last_score": "82-79"
+   "last_score": "89-83"
   },
   "bb_1851059|BB_Q4_FARK_ALT": {
    "key": "bb_1851059|BB_Q4_FARK_ALT",
@@ -10909,7 +10909,7 @@
    ],
    "created": "2026-11-17T19:35:29.264835+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 231,
    "sent": true,
    "direction": "over",
@@ -10934,14 +10934,14 @@
    "created": "2026-11-17T19:46:57.896034+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 172,
    "sent": true,
    "direction": "under",
    "base": 102,
    "n": 2,
    "ref": 51.0,
    "signal_score": "55-47",
-   "last_score": "82-79"
+   "last_score": "89-83"
   },
   "bb_1844050|BB_HT_YUKSEK_ALT": {
    "key": "bb_1844050|BB_HT_YUKSEK_ALT",
@@ -10958,14 +10958,14 @@
    "created": "2026-11-17T19:50:37.684526+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 139,
+   "last_total": 140,
    "sent": true,
    "direction": "under",
    "base": 104,
    "n": 2,
    "ref": 52.0,
    "signal_score": "54-50",
-   "last_score": "66-73"
+   "last_score": "66-74"
   },
   "bb_1851065|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1851065|BB_TEMPO_DUSUSU_ALT",
@@ -11030,14 +11030,14 @@
    "created": "2026-11-17T20:05:27.272236+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 61,
+   "last_total": 65,
    "sent": true,
    "direction": "over",
    "base": 29,
    "n": 3,
    "ref": 29.0,
    "signal_score": "13-16",
-   "last_score": "29-32"
+   "last_score": "32-33"
   },
   "bb_1832301|BB_HT_DUSUK_UST": {
    "key": "bb_1832301|BB_HT_DUSUK_UST",
@@ -11054,14 +11054,14 @@
    "created": "2026-11-17T20:15:45.672000+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 64,
+   "last_total": 75,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "30-34",
-   "last_score": "30-34"
+   "last_score": "35-40"
   },
   "fb_1866824|FB_GERIDEN_FARK2": {
    "key": "fb_1866824|FB_GERIDEN_FARK2",
@@ -11078,14 +11078,14 @@
    "created": "2026-11-17T20:20:32.057949+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "bb_1844051|BB_Q4_FARK_ALT": {
    "key": "bb_1844051|BB_Q4_FARK_ALT",
@@ -11102,14 +11102,14 @@
    "created": "2026-11-17T20:25:26.239809+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 136,
+   "last_total": 143,
    "sent": true,
    "direction": "under",
    "base": 136,
    "n": 1,
    "ref": 45.333333333333336,
    "signal_score": "76-60",
-   "last_score": "76-60"
+   "last_score": "81-62"
   },
   "bb_1844052|BB_Q4_FARK_ALT": {
    "key": "bb_1844052|BB_Q4_FARK_ALT",
@@ -11126,14 +11126,14 @@
    "created": "2026-11-17T20:25:26.691030+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 140,
+   "last_total": 151,
    "sent": true,
    "direction": "under",
    "base": 140,
    "n": 1,
    "ref": 46.666666666666664,
    "signal_score": "83-57",
-   "last_score": "83-57"
+   "last_score": "88-63"
   },
   "bb_1844053|BB_Q4_YAKIN_UST": {
    "key": "bb_1844053|BB_Q4_YAKIN_UST",
@@ -11150,14 +11150,14 @@
    "created": "2026-11-17T20:25:27.104597+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 172,
    "sent": false,
    "direction": "over",
    "base": 161,
    "n": 1,
    "ref": 53.666666666666664,
    "signal_score": "82-79",
-   "last_score": "82-79"
+   "last_score": "89-83"
   },
   "bb_1844055|BB_HT_DUSUK_UST": {
    "key": "bb_1844055|BB_HT_DUSUK_UST",
@@ -11230,6 +11230,54 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1"
+  },
+  "bb_1844068|BB_Q4_FARK_ALT": {
+   "key": "bb_1844068|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1844068",
+   "match": "Hyeres-Toulon - Nantes",
+   "league": "France Pro B",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-17T20:30:54.040262+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 129,
+   "sent": true,
+   "direction": "under",
+   "base": 126,
+   "n": 1,
+   "ref": 42.0,
+   "signal_score": "57-72",
+   "last_score": "57-72"
+  },
+  "fb_1837052|FB_IY2_00": {
+   "key": "fb_1837052|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1837052",
+   "match": "Dartford - Three Bridges",
+   "league": "England Isthmian League Premier Division",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-17T20:30:55.822930+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
