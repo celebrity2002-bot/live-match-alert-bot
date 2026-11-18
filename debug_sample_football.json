@@ -40,12 +40,8 @@
      "Abr": "KIM"
     }
    ],
-   "Eps": "42'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794960011360,
-    "RTm": 2460000
-   },
+   "Eps": "HT",
+   "Esid": 10,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Quarter Finals",
@@ -62,19 +58,6 @@
    "Pids": {
     "112": "SBTE_2_1029777742",
     "8": "1917189"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "2fnvn306r6qo8drjvptwnghzo",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
    },
    "seriesInfo": {
     "totalLegs": 2,
@@ -108,11 +91,11 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "32'",
+   "Eps": "36'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1794960051218,
-    "RTm": 1860000
+    "ATm": 1794960286295,
+    "RTm": 2100000
    },
    "Epr": 1,
    "Ecov": 0,
