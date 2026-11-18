@@ -12569,14 +12569,14 @@
    "created": "2026-11-18T18:25:24.061286+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 98,
+   "last_total": 102,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "15-21",
-   "last_score": "41-57"
+   "last_score": "41-61"
   },
   "bb_1829659|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1829659|BB_TEMPO_DUSUSU_ALT",
@@ -12593,14 +12593,14 @@
    "created": "2026-11-18T18:30:39.038362+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 129,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "35-28",
-   "last_score": "60-57"
+   "last_score": "67-62"
   },
   "bb_1829603|BB_Q4_YAKIN_UST": {
    "key": "bb_1829603|BB_Q4_YAKIN_UST",
@@ -12716,14 +12716,14 @@
    "created": "2026-11-18T18:55:25.103699+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 129,
    "sent": true,
    "direction": "under",
    "base": 96,
    "n": 2,
    "ref": 48.0,
    "signal_score": "52-44",
-   "last_score": "60-57"
+   "last_score": "67-62"
   },
   "bb_1829660|BB_Q4_FARK_ALT": {
    "key": "bb_1829660|BB_Q4_FARK_ALT",
@@ -12740,14 +12740,14 @@
    "created": "2026-11-18T19:00:54.987394+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 127,
+   "last_total": 134,
    "sent": true,
    "direction": "under",
    "base": 111,
    "n": 1,
    "ref": 37.0,
    "signal_score": "63-48",
-   "last_score": "72-55"
+   "last_score": "74-60"
   },
   "bb_1829608|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1829608|BB_TEMPO_DUSUSU_ALT",
@@ -12764,14 +12764,14 @@
    "created": "2026-11-18T19:00:55.304662+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 96,
+   "last_total": 103,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "31-31",
-   "last_score": "45-51"
+   "last_score": "47-56"
   },
   "fb_1887720|FB_TEK_FARK_70": {
    "key": "fb_1887720|FB_TEK_FARK_70",
@@ -12820,6 +12820,30 @@
    "ref": 0.0,
    "signal_score": "0-2",
    "last_score": "0-2"
+  },
+  "fb_1870309|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1870309|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1870309",
+   "match": "Tottenham Hotspur W - Leicester City W",
+   "league": "England Women's League Cup",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-18T19:25:25.398718+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "4-0",
+   "last_score": "4-0"
   }
  }
 }
