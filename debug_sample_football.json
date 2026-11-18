@@ -48,12 +48,12 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "45+4'",
+   "Eps": "45+7'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795044146221,
+    "ATm": 1795044326190,
     "RTm": 2700000,
-    "ITm": 180000
+    "ITm": 360000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -85,8 +85,6 @@
    },
    "Tr1": "2",
    "Tr2": "0",
-   "Tug1": "2",
-   "Tug2": "0",
    "Trh1": "2",
    "Trh2": "0",
    "Tr1OR": "2",
@@ -111,11 +109,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "21'",
+   "Eps": "24'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795044131072,
-    "RTm": 1200000
+    "ATm": 1795044310964,
+    "RTm": 1380000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -124,6 +122,84 @@
    "Esd": 20261119000000,
    "EO": 807289711,
    "EOX": 807289711,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1708768",
+   "Pids": {
+    "112": "SBTE_2_1025985549",
+    "8": "1708768"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Azteca Deportes Network",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "azteca.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Premier Sports 2",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "premier-sports.png",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4935",
+     "Nm": "Cruzeiro",
+     "Img": "enet/9781.png",
+     "Abr": "CRZ",
+     "Fc": "0033cc",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4934",
+     "Nm": "Palmeiras",
+     "Img": "enet/10283.png",
+     "Abr": "PAL",
+     "Fc": "006437",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "35",
+   "Et": 1,
+   "Esd": 20261119003000,
+   "EO": 807190631,
+   "EOX": 807190631,
    "Spid": 1,
    "Pid": 8
   }
