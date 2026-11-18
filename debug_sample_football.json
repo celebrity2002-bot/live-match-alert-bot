@@ -7,8 +7,8 @@
   {
    "Eid": "1903172",
    "Pids": {
-    "112": "SBTE_2_1029761840",
-    "8": "1903172"
+    "8": "1903172",
+    "112": "SBTE_2_1029761840"
    },
    "Tr1": "0",
    "Tr2": "0",
@@ -47,8 +47,8 @@
   {
    "Eid": "1903169",
    "Pids": {
-    "8": "1903169",
-    "112": "SBTE_2_1029762002"
+    "112": "SBTE_2_1029762002",
+    "8": "1903169"
    },
    "Tr1": "0",
    "Tr2": "3",
@@ -87,79 +87,39 @@
    "Pid": 8
   },
   {
-   "Eid": "1887720",
+   "Eid": "1903127",
    "Pids": {
-    "112": "SBTE_2_1029027456",
-    "8": "1887720"
+    "112": "SBTE_2_1029762057",
+    "8": "1903127"
    },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "TVC Deportes",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "10365",
-     "Nm": "BK Haecken W",
-     "Img": "enet/181464.png",
-     "Abr": "BKH(W)"
+     "ID": "11784",
+     "Nm": "Alcoyano",
+     "Img": "enet/4697.png",
+     "Abr": "ALC"
     }
    ],
    "T2": [
     {
-     "ID": "3392",
-     "Nm": "Manchester City W",
-     "Img": "enet/231488.png",
-     "NewsTag": "/team/manchester-city-women-2021020913320920836-26195/",
-     "Abr": "MCI(W)",
-     "Fc": "6CABDD",
-     "Sc": "FDFDFD"
+     "ID": "500",
+     "Nm": "Mallorca",
+     "Img": "enet/8661.png",
+     "NewsTag": "/team/mallorca-2021020913320920836-705/",
+     "Abr": "RCD",
+     "Fc": "E20613",
+     "Sc": "000000"
     }
    ],
-   "Eps": "48'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795027796239,
-    "RTm": 2820000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "5",
+   "ErnInf": "1",
    "Et": 1,
-   "Esd": 20261118184500,
-   "EO": 337544063,
-   "EOX": 337544063,
+   "Esd": 20261118200000,
+   "EO": 2484371559,
+   "EOX": 2484371559,
    "Spid": 1,
    "Pid": 8
   }

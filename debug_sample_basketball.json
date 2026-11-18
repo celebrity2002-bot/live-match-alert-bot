@@ -32,18 +32,18 @@
      }
     ]
    },
-   "Tr1": "73",
-   "Tr2": "69",
-   "Tr1OR": "73",
-   "Tr2OR": "69",
+   "Tr1": "77",
+   "Tr2": "71",
+   "Tr1OR": "77",
+   "Tr2OR": "71",
    "Tr1Q1": "18",
    "Tr2Q1": "15",
    "Tr1Q2": "27",
    "Tr2Q2": "22",
    "Tr1Q3": "19",
    "Tr2Q3": "17",
-   "Tr1Q4": "9",
-   "Tr2Q4": "15",
+   "Tr1Q4": "13",
+   "Tr2Q4": "17",
    "T1": [
     {
      "ID": "2114",
@@ -114,18 +114,18 @@
      }
     ]
    },
-   "Tr1": "80",
-   "Tr2": "75",
-   "Tr1OR": "80",
-   "Tr2OR": "75",
+   "Tr1": "83",
+   "Tr2": "77",
+   "Tr1OR": "83",
+   "Tr2OR": "77",
    "Tr1Q1": "25",
    "Tr2Q1": "20",
    "Tr1Q2": "23",
    "Tr2Q2": "21",
    "Tr1Q3": "21",
    "Tr2Q3": "20",
-   "Tr1Q4": "11",
-   "Tr2Q4": "14",
+   "Tr1Q4": "14",
+   "Tr2Q4": "16",
    "T1": [
     {
      "ID": "1948",
@@ -155,59 +155,70 @@
    "Pid": 8
   },
   {
-   "Eid": "1829660",
+   "Eid": "1832235",
    "Pids": {
-    "112": "SBTE_2_1028405471",
-    "8": "1829660"
+    "112": "SBTE_2_1028492464",
+    "8": "1832235"
    },
    "Media": {
     "112": [
      {
-      "eventId": "EuroLeague TV",
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Courtside 1891",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
        "IE",
-       "GB"
+       "CA",
+       "GB",
+       "US",
+       "MX"
+      ]
+     },
+     {
+      "eventId": "42vw9usnfjw4xg4m4v4mjkowk",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
       ]
      }
     ]
    },
-   "Tr1": "55",
-   "Tr2": "36",
-   "Tr1OR": "55",
-   "Tr2OR": "36",
-   "Tr1Q1": "22",
-   "Tr2Q1": "16",
-   "Tr1Q2": "26",
-   "Tr2Q2": "13",
-   "Tr1Q3": "7",
-   "Tr2Q3": "7",
    "T1": [
     {
-     "ID": "2208",
-     "Nm": "Cedevita Olimpija",
-     "Img": "enet/58643.png",
-     "Abr": "CED"
+     "ID": "87",
+     "Nm": "Cibona",
+     "Img": "enet/58646.png",
+     "Abr": "CIB"
     }
    ],
    "T2": [
     {
-     "ID": "2062",
-     "Nm": "Burgos",
-     "Img": "enet/154642.png",
-     "Abr": "BUR"
+     "ID": "2138",
+     "Nm": "Strasbourg",
+     "Img": "enet/58565.png",
+     "Abr": "STR"
     }
    ],
-   "Eps": "3Q",
-   "Esid": 42,
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "8",
+   "ErnInf": "4",
    "Et": 1,
-   "Esd": 20261118203000,
-   "EO": 524295,
-   "EOX": 524295,
+   "Esd": 20261118220000,
+   "EO": 524391,
+   "EOX": 524391,
    "Spid": 23,
    "Pid": 8
   }
