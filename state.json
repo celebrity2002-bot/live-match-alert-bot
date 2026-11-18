@@ -12326,14 +12326,14 @@
    "created": "2026-11-18T04:10:30.662738+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "29-41",
-   "last_score": "83-88"
+   "last_score": "86-88"
   },
   "bb_1868516|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868516|BB_HT_YUKSEK_ALT",
@@ -12350,14 +12350,14 @@
    "created": "2026-11-18T04:35:23.777638+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 120,
    "n": 2,
    "ref": 60.0,
    "signal_score": "62-58",
-   "last_score": "83-88"
+   "last_score": "86-88"
   },
   "bb_1868490|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868490|BB_TEMPO_DUSUSU_ALT",
@@ -12374,14 +12374,38 @@
    "created": "2026-11-18T04:50:31.391428+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 123,
+   "last_total": 125,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "36-34",
-   "last_score": "57-66"
+   "last_score": "59-66"
+  },
+  "bb_1868490|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868490|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868490",
+   "match": "LA Lakers - Charlotte Hornets",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-18T05:20:32.737013+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 125,
+   "sent": true,
+   "direction": "under",
+   "base": 125,
+   "n": 2,
+   "ref": 62.5,
+   "signal_score": "59-66",
+   "last_score": "59-66"
   }
  }
 }
