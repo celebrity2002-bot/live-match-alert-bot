@@ -12380,14 +12380,14 @@
    "created": "2026-11-18T04:50:31.391428+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 222,
+   "last_total": 227,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "36-34",
-   "last_score": "111-111"
+   "last_score": "113-114"
   },
   "bb_1868490|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868490|BB_HT_YUKSEK_ALT",
@@ -12404,14 +12404,14 @@
    "created": "2026-11-18T05:20:32.737013+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 222,
+   "last_total": 227,
    "sent": true,
    "direction": "under",
    "base": 125,
    "n": 2,
    "ref": 62.5,
    "signal_score": "59-66",
-   "last_score": "111-111"
+   "last_score": "113-114"
   }
  }
 }
