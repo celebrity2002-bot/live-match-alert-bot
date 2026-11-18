@@ -12297,8 +12297,8 @@
     1.6
    ],
    "created": "2026-11-18T02:35:23.840480+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -12306,7 +12306,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-18T03:55:23.417819+00:00",
+   "seg_avg": 2.0
   }
  }
 }
