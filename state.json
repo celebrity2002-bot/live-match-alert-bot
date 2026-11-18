@@ -12136,7 +12136,7 @@
    ],
    "created": "2026-11-18T00:45:30.059204+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -12161,14 +12161,14 @@
    "created": "2026-11-18T01:10:32.232717+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 61,
+   "last_total": 74,
    "sent": true,
    "direction": "over",
    "base": 59,
    "n": 2,
    "ref": 29.5,
    "signal_score": "32-27",
-   "last_score": "34-27"
+   "last_score": "41-33"
   }
  }
 }
