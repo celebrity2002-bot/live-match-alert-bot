@@ -12145,6 +12145,30 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-1"
+  },
+  "bb_1868491|BB_HT_DUSUK_UST": {
+   "key": "bb_1868491|BB_HT_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1868491",
+   "match": "Toronto Raptors - New York Knicks",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-18T01:10:32.232717+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 59,
+   "sent": true,
+   "direction": "over",
+   "base": 59,
+   "n": 2,
+   "ref": 29.5,
+   "signal_score": "32-27",
+   "last_score": "32-27"
   }
  }
 }
