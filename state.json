@@ -13082,14 +13082,14 @@
    "created": "2026-11-18T20:01:00.526678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 137,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "31-19",
-   "last_score": "66-64"
+   "last_score": "69-68"
   },
   "fb_1903151|FB_IY2_00": {
    "key": "fb_1903151|FB_IY2_00",
