@@ -12785,14 +12785,14 @@
    "created": "2026-11-18T19:00:55.304662+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 195,
+   "last_total": 201,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "31-31",
-   "last_score": "95-100"
+   "last_score": "97-104"
   },
   "fb_1887720|FB_TEK_FARK_70": {
    "key": "fb_1887720|FB_TEK_FARK_70",
@@ -12887,14 +12887,14 @@
    "created": "2026-11-18T19:30:45.689902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 195,
+   "last_total": 201,
    "sent": true,
    "direction": "under",
    "base": 105,
    "n": 2,
    "ref": 52.5,
    "signal_score": "47-58",
-   "last_score": "95-100"
+   "last_score": "97-104"
   },
   "bb_1830728|BB_Q4_FARK_ALT": {
    "key": "bb_1830728|BB_Q4_FARK_ALT",
@@ -12989,14 +12989,14 @@
    "created": "2026-11-18T19:50:29.074384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 95,
    "n": 2,
    "ref": 47.5,
    "signal_score": "54-41",
-   "last_score": "89-69"
+   "last_score": "96-78"
   },
   "fb_1870308|FB_IY2_00": {
    "key": "fb_1870308|FB_IY2_00",
@@ -13013,14 +13013,14 @@
    "created": "2026-11-18T19:50:31.278933+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "bb_1830785|BB_Q4_FARK_ALT": {
    "key": "bb_1830785|BB_Q4_FARK_ALT",
@@ -13036,7 +13036,7 @@
    ],
    "created": "2026-11-18T20:01:00.089166+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 173,
    "sent": true,
    "direction": "under",
@@ -13085,14 +13085,14 @@
    "created": "2026-11-18T20:15:31.659053+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "fb_1903152|FB_IY2_00": {
    "key": "fb_1903152|FB_IY2_00",
@@ -13132,7 +13132,7 @@
    ],
    "created": "2026-11-18T20:20:30.899689+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 170,
    "sent": true,
    "direction": "over",
@@ -13205,14 +13205,14 @@
    "created": "2026-11-18T20:25:23.547902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 133,
    "n": 1,
    "ref": 44.333333333333336,
    "signal_score": "75-60",
-   "last_score": "89-69"
+   "last_score": "96-78"
   },
   "fb_1870310|FB_TEK_FARK_70": {
    "key": "fb_1870310|FB_TEK_FARK_70",
@@ -13253,14 +13253,14 @@
    "created": "2026-11-18T20:25:25.603114+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "fb_1870302|FB_TEK_FARK_70": {
    "key": "fb_1870302|FB_TEK_FARK_70",
@@ -13301,14 +13301,14 @@
    "created": "2026-11-18T20:35:22.497255+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 143,
+   "last_total": 155,
    "sent": true,
    "direction": "under",
    "base": 130,
    "n": 1,
    "ref": 43.333333333333336,
    "signal_score": "75-55",
-   "last_score": "80-63"
+   "last_score": "86-69"
   },
   "fb_1870308|FB_GERIDEN_FARK2": {
    "key": "fb_1870308|FB_GERIDEN_FARK2",
@@ -13325,14 +13325,14 @@
    "created": "2026-11-18T20:35:24.265441+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": false,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   }
  }
 }
