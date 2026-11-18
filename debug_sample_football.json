@@ -7,8 +7,8 @@
   {
    "Eid": "1903151",
    "Pids": {
-    "112": "SBTE_2_1029774852",
-    "8": "1903151"
+    "8": "1903151",
+    "112": "SBTE_2_1029774852"
    },
    "Inc-f": {
     "2": [
@@ -20,8 +20,8 @@
     ]
    },
    "Tr1": "1",
-   "Tr2": "1",
-   "Tr2ET": "0",
+   "Tr2": "2",
+   "Tr2ET": "1",
    "Tr1ET": "0",
    "Trh1": "0",
    "Trh2": "0",
@@ -45,11 +45,11 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "111'",
+   "Eps": "116'",
    "Esid": 9,
    "Etm": {
-    "ATm": 1795038581220,
-    "RTm": 6600000
+    "ATm": 1795038876154,
+    "RTm": 6900000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -91,11 +91,11 @@
      "Abr": "BAR"
     }
    ],
-   "Eps": "110'",
+   "Eps": "115'",
    "Esid": 9,
    "Etm": {
-    "ATm": 1795038581202,
-    "RTm": 6540000
+    "ATm": 1795038881229,
+    "RTm": 6840000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -104,86 +104,6 @@
    "Esd": 20261118203000,
    "EO": 2417099391,
    "EOX": 2417099391,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1887691",
-   "Pids": {
-    "8": "1887691",
-    "112": "SBTE_2_1029027467"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "TVC Deportes",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "3824",
-     "Nm": "Chelsea W",
-     "Img": "enet/258661.png",
-     "NewsTag": "/team/chelsea-fc-women-2021020913320920836-26191/",
-     "Abr": "CHE(W)",
-     "Fc": "034694",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4653",
-     "Nm": "Paris Saint-Germain W",
-     "Img": "enet/294858.png",
-     "Abr": "PSG(W)",
-     "Fc": "004170",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "90+4'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795038626224,
-    "RTm": 5400000,
-    "ITm": 180000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "5",
-   "Et": 1,
-   "Esd": 20261118210000,
-   "EO": 337546111,
-   "EOX": 337546111,
    "Spid": 1,
    "Pid": 8
   }
