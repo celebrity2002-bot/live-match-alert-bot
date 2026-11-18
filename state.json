@@ -13134,8 +13134,8 @@
     1.6
    ],
    "created": "2026-11-18T20:15:32.174722+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -13143,7 +13143,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-18T22:23:46.132533+00:00",
+   "seg_avg": 2.0
   },
   "bb_1830725|BB_Q4_YAKIN_UST": {
    "key": "bb_1830725|BB_Q4_YAKIN_UST",
@@ -13455,8 +13458,8 @@
     1.85
    ],
    "created": "2026-11-18T20:55:25.270541+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -13464,7 +13467,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-18T22:23:46.512216+00:00",
+   "seg_avg": 1.0
   },
   "bb_1830782|BB_Q4_YAKIN_UST": {
    "key": "bb_1830782|BB_Q4_YAKIN_UST",
