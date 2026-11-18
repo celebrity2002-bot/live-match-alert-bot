@@ -12458,14 +12458,38 @@
    "created": "2026-11-18T17:20:33.294739+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 36,
+   "last_total": 52,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "10-26",
-   "last_score": "10-26"
+   "last_score": "19-33"
+  },
+  "bb_1829666|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1829666|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1829666",
+   "match": "Derthona Basket - Rigas Zelli",
+   "league": "EuroCup Group A",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-18T17:25:23.023782+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 96,
+   "sent": true,
+   "direction": "under",
+   "base": 96,
+   "n": 2,
+   "ref": 48.0,
+   "signal_score": "45-51",
+   "last_score": "45-51"
   }
  }
 }
