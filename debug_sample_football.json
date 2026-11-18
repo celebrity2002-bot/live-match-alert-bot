@@ -48,11 +48,11 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "17'",
+   "Eps": "21'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795042226227,
-    "RTm": 960000
+    "ATm": 1795042466253,
+    "RTm": 1200000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -61,6 +61,56 @@
    "Esd": 20261118233000,
    "EO": 807322479,
    "EOX": 807322479,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1708785",
+   "Pids": {
+    "112": "SBTE_2_1025985568",
+    "8": "1708785"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4748",
+     "Nm": "Remo",
+     "Img": "enet/1626.png",
+     "Abr": "REM",
+     "Fc": "000033",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4928",
+     "Nm": "Chapecoense AF",
+     "Img": "enet/197693.png",
+     "Abr": "CHA",
+     "Fc": "009966",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "35",
+   "Et": 1,
+   "Esd": 20261119000000,
+   "EO": 807157863,
+   "EOX": 807157863,
    "Spid": 1,
    "Pid": 8
   }
