@@ -7,8 +7,8 @@
   {
    "Eid": "1917189",
    "Pids": {
-    "112": "SBTE_2_1029777742",
-    "8": "1917189"
+    "8": "1917189",
+    "112": "SBTE_2_1029777742"
    },
    "seriesInfo": {
     "totalLegs": 2,
@@ -42,11 +42,12 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "88'",
+   "Eps": "90+3'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1794964826197,
-    "RTm": 5220000
+    "ATm": 1794965121183,
+    "RTm": 5400000,
+    "ITm": 120000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -56,6 +57,64 @@
    "Esd": 20261118003000,
    "EO": 2954100751,
    "EOX": 2954100751,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1917188",
+   "Pids": {
+    "112": "SBTE_2_1029777743",
+    "8": "1917188"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "2fe9s0qvp3m0fg717wlvjosno",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "seriesInfo": {
+    "totalLegs": 2,
+    "currentLeg": 2,
+    "aggScoreTeam1": 2,
+    "aggScoreTeam2": 1
+   },
+   "T1": [
+    {
+     "ID": "7356",
+     "Nm": "America de Cali",
+     "Img": "enet/10280.png",
+     "Abr": "AME",
+     "Fc": "ed303b",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "10101",
+     "Nm": "Internacional de Bogota",
+     "Img": "teambadge/internacional-de-bogota.png",
+     "Abr": "INB",
+     "Fc": "fcfcfc",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "Semi Finals",
+   "Awt": 0,
+   "Et": 1,
+   "Esd": 20261118023000,
+   "EO": 2954100743,
+   "EOX": 2954100743,
    "Spid": 1,
    "Pid": 8
   }
