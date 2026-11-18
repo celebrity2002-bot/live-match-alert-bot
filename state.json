@@ -12358,6 +12358,30 @@
    "ref": 60.0,
    "signal_score": "62-58",
    "last_score": "62-58"
+  },
+  "bb_1868490|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868490|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868490",
+   "match": "LA Lakers - Charlotte Hornets",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-18T04:50:31.391428+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 70,
+   "sent": true,
+   "direction": "under",
+   "base": 64,
+   "n": 3,
+   "ref": 64.0,
+   "signal_score": "36-34",
+   "last_score": "36-34"
   }
  }
 }
