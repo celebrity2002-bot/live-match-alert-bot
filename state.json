@@ -12785,14 +12785,14 @@
    "created": "2026-11-18T19:00:55.304662+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 173,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "31-31",
-   "last_score": "79-87"
+   "last_score": "82-91"
   },
   "fb_1887720|FB_TEK_FARK_70": {
    "key": "fb_1887720|FB_TEK_FARK_70",
@@ -12887,14 +12887,14 @@
    "created": "2026-11-18T19:30:45.689902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 173,
    "sent": true,
    "direction": "under",
    "base": 105,
    "n": 2,
    "ref": 52.5,
    "signal_score": "47-58",
-   "last_score": "79-87"
+   "last_score": "82-91"
   },
   "bb_1830728|BB_Q4_FARK_ALT": {
    "key": "bb_1830728|BB_Q4_FARK_ALT",
@@ -12965,14 +12965,14 @@
    "created": "2026-11-18T19:45:40.827155+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "bb_1830727|BB_HT_YUKSEK_ALT": {
    "key": "bb_1830727|BB_HT_YUKSEK_ALT",
@@ -12989,14 +12989,14 @@
    "created": "2026-11-18T19:50:29.074384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 131,
+   "last_total": 135,
    "sent": true,
    "direction": "under",
    "base": 95,
    "n": 2,
    "ref": 47.5,
    "signal_score": "54-41",
-   "last_score": "73-58"
+   "last_score": "75-60"
   },
   "fb_1870308|FB_IY2_00": {
    "key": "fb_1870308|FB_IY2_00",
@@ -13037,14 +13037,14 @@
    "created": "2026-11-18T20:01:00.089166+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 157,
+   "last_total": 162,
    "sent": true,
    "direction": "under",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "74-52",
-   "last_score": "83-74"
+   "last_score": "86-76"
   },
   "bb_1830782|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1830782|BB_TEMPO_DUSUSU_ALT",
@@ -13061,14 +13061,14 @@
    "created": "2026-11-18T20:01:00.526678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 68,
+   "last_total": 76,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "31-19",
-   "last_score": "39-29"
+   "last_score": "41-35"
   },
   "fb_1903151|FB_IY2_00": {
    "key": "fb_1903151|FB_IY2_00",
@@ -13133,14 +13133,14 @@
    "created": "2026-11-18T20:20:30.899689+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 138,
+   "last_total": 142,
    "sent": true,
    "direction": "over",
    "base": 130,
    "n": 1,
    "ref": 43.333333333333336,
    "signal_score": "70-68",
-   "last_score": "70-68"
+   "last_score": "72-70"
   },
   "fb_1903133|FB_GERIDEN_FARK2": {
    "key": "fb_1903133|FB_GERIDEN_FARK2",
@@ -13189,6 +13189,78 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1830727|BB_Q4_FARK_ALT": {
+   "key": "bb_1830727|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1830727",
+   "match": "Dolomiti Energia Trento - BC Neptunas",
+   "league": "EuroCup Group C",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-18T20:25:23.547902+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 135,
+   "sent": true,
+   "direction": "under",
+   "base": 133,
+   "n": 1,
+   "ref": 44.333333333333336,
+   "signal_score": "75-60",
+   "last_score": "75-60"
+  },
+  "fb_1870310|FB_TEK_FARK_70": {
+   "key": "fb_1870310|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1870310",
+   "match": "London City Lionesses - Brighton W",
+   "league": "England Women's League Cup",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-18T20:25:25.173523+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1"
+  },
+  "fb_1870308|FB_TEK_FARK_70": {
+   "key": "fb_1870308|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1870308",
+   "match": "West Ham United W - Wolves W",
+   "league": "England Women's League Cup",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-18T20:25:25.603114+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
