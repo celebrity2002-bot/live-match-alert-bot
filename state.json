@@ -12164,14 +12164,14 @@
    "created": "2026-11-18T01:10:32.232717+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 163,
    "sent": true,
    "direction": "over",
    "base": 59,
    "n": 2,
    "ref": 29.5,
    "signal_score": "32-27",
-   "last_score": "80-78"
+   "last_score": "83-80"
   },
   "bb_1868491|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868491|BB_HT_YUKSEK_ALT",
@@ -12188,14 +12188,14 @@
    "created": "2026-11-18T01:35:25.878198+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 163,
    "sent": true,
    "direction": "under",
    "base": 104,
    "n": 2,
    "ref": 52.0,
    "signal_score": "50-54",
-   "last_score": "80-78"
+   "last_score": "83-80"
   },
   "bb_1868499|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868499|BB_TEMPO_DUSUSU_ALT",
@@ -12244,6 +12244,30 @@
    "ref": 54.5,
    "signal_score": "54-55",
    "last_score": "54-55"
+  },
+  "bb_1868487|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868487|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868487",
+   "match": "Minnesota Timberwolves - Portland Trail Blazers",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-18T02:20:34.303206+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 97,
+   "sent": true,
+   "direction": "under",
+   "base": 97,
+   "n": 2,
+   "ref": 48.5,
+   "signal_score": "49-48",
+   "last_score": "49-48"
   }
  }
 }
