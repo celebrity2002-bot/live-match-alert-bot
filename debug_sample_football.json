@@ -5,55 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1903127",
-   "Pids": {
-    "112": "SBTE_2_1029762057",
-    "8": "1903127"
-   },
-   "Tr1": "1",
-   "Tr2": "3",
-   "Tr2ET": "2",
-   "Tr1ET": "0",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "11784",
-     "Nm": "Alcoyano",
-     "Img": "enet/4697.png",
-     "Abr": "ALC"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "500",
-     "Nm": "Mallorca",
-     "Img": "enet/8661.png",
-     "NewsTag": "/team/mallorca-2021020913320920836-705/",
-     "Abr": "RCD",
-     "Fc": "E20613",
-     "Sc": "000000"
-    }
-   ],
-   "Eps": "119'",
-   "Esid": 9,
-   "Etm": {
-    "ATm": 1795037441092,
-    "RTm": 7080000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1st Round",
-   "Et": 1,
-   "Esd": 20261118200000,
-   "EO": 2484503167,
-   "EOX": 2484503167,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1903151",
    "Pids": {
     "112": "SBTE_2_1029774852",
@@ -140,11 +91,11 @@
      "Abr": "BAR"
     }
    ],
-   "Eps": "95'",
+   "Eps": "100'",
    "Esid": 8,
    "Etm": {
-    "ATm": 1795037411178,
-    "RTm": 5640000
+    "ATm": 1795037711187,
+    "RTm": 5940000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -153,6 +104,85 @@
    "Esd": 20261118203000,
    "EO": 2417099391,
    "EOX": 2417099391,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1887691",
+   "Pids": {
+    "112": "SBTE_2_1029027467",
+    "8": "1887691"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "TVC Deportes",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "3824",
+     "Nm": "Chelsea W",
+     "Img": "enet/258661.png",
+     "NewsTag": "/team/chelsea-fc-women-2021020913320920836-26191/",
+     "Abr": "CHE(W)",
+     "Fc": "034694",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4653",
+     "Nm": "Paris Saint-Germain W",
+     "Img": "enet/294858.png",
+     "Abr": "PSG(W)",
+     "Fc": "004170",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "78'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795037671229,
+    "RTm": 4620000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "5",
+   "Et": 1,
+   "Esd": 20261118210000,
+   "EO": 337546103,
+   "EOX": 337546103,
    "Spid": 1,
    "Pid": 8
   }
