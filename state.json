@@ -12434,14 +12434,38 @@
    "created": "2026-11-18T17:00:56.323156+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 96,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "29-28",
-   "last_score": "40-47"
+   "last_score": "45-51"
+  },
+  "bb_1832244|BB_Q1_DUSUK_UST": {
+   "key": "bb_1832244|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1832244",
+   "match": "AEK - Falco KC Szombathely",
+   "league": "Champions League Group C",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-18T17:20:33.294739+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 36,
+   "sent": true,
+   "direction": "over",
+   "base": 33,
+   "n": 3,
+   "ref": 33.0,
+   "signal_score": "10-26",
+   "last_score": "10-26"
   }
  }
 }
