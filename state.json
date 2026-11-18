@@ -12378,8 +12378,8 @@
     1.55
    ],
    "created": "2026-11-18T04:50:31.391428+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 231,
    "sent": true,
    "direction": "under",
@@ -12387,7 +12387,10 @@
    "n": 3,
    "ref": 64.0,
    "signal_score": "36-34",
-   "last_score": "117-114"
+   "last_score": "117-114",
+   "final_total": 231,
+   "settled": "2026-11-18T07:15:30.731685+00:00",
+   "seg_avg": 55.7
   },
   "bb_1868490|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868490|BB_HT_YUKSEK_ALT",
@@ -12402,8 +12405,8 @@
     1.8
    ],
    "created": "2026-11-18T05:20:32.737013+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 231,
    "sent": true,
    "direction": "under",
@@ -12411,7 +12414,10 @@
    "n": 2,
    "ref": 62.5,
    "signal_score": "59-66",
-   "last_score": "117-114"
+   "last_score": "117-114",
+   "final_total": 231,
+   "settled": "2026-11-18T07:15:31.115142+00:00",
+   "seg_avg": 53.0
   }
  }
 }
