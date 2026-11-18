@@ -26,13 +26,13 @@
      }
     ]
    },
-   "Tr1": "29",
+   "Tr1": "33",
    "Tr2": "41",
-   "Tr1OR": "29",
+   "Tr1OR": "33",
    "Tr2OR": "41",
    "Tr1Q1": "29",
    "Tr2Q1": "35",
-   "Tr1Q2": "0",
+   "Tr1Q2": "4",
    "Tr2Q2": "6",
    "T1": [
     {
@@ -61,6 +61,102 @@
    "ErnInf": "1",
    "Et": 1,
    "Esd": 20261118063000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1868490",
+   "Pids": {
+    "112": "SBTE_2_1028754033",
+    "8": "1868490"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Amazon Prime",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "amaon-prime.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "MX",
+       "GB",
+       "IE",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "sky-sports-plus.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Sportsnet One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     }
+    ]
+   },
+   "Tr1": "2",
+   "Tr2": "2",
+   "Tr1OR": "2",
+   "Tr2OR": "2",
+   "Tr1Q1": "2",
+   "Tr2Q1": "2",
+   "T1": [
+    {
+     "ID": "1889",
+     "Nm": "LA Lakers",
+     "Img": "enet/58553.png",
+     "Abr": "LAL",
+     "Fc": "FDB927",
+     "Sc": "552583"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1891",
+     "Nm": "Charlotte Hornets",
+     "Img": "enet/58755.png",
+     "Abr": "CHA",
+     "Fc": "00788C",
+     "Sc": "1D1160"
+    }
+   ],
+   "Eps": "1Q",
+   "Esid": 35,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261118070000,
    "EO": 524391,
    "EOX": 524391,
    "Spid": 23,
