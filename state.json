@@ -12785,14 +12785,14 @@
    "created": "2026-11-18T19:00:55.304662+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 173,
+   "last_total": 178,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "31-31",
-   "last_score": "82-91"
+   "last_score": "85-93"
   },
   "fb_1887720|FB_TEK_FARK_70": {
    "key": "fb_1887720|FB_TEK_FARK_70",
@@ -12887,14 +12887,14 @@
    "created": "2026-11-18T19:30:45.689902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 173,
+   "last_total": 178,
    "sent": true,
    "direction": "under",
    "base": 105,
    "n": 2,
    "ref": 52.5,
    "signal_score": "47-58",
-   "last_score": "82-91"
+   "last_score": "85-93"
   },
   "bb_1830728|BB_Q4_FARK_ALT": {
    "key": "bb_1830728|BB_Q4_FARK_ALT",
@@ -12989,14 +12989,14 @@
    "created": "2026-11-18T19:50:29.074384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 135,
+   "last_total": 141,
    "sent": true,
    "direction": "under",
    "base": 95,
    "n": 2,
    "ref": 47.5,
    "signal_score": "54-41",
-   "last_score": "75-60"
+   "last_score": "78-63"
   },
   "fb_1870308|FB_IY2_00": {
    "key": "fb_1870308|FB_IY2_00",
@@ -13037,14 +13037,14 @@
    "created": "2026-11-18T20:01:00.089166+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 162,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "74-52",
-   "last_score": "86-76"
+   "last_score": "87-79"
   },
   "bb_1830782|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1830782|BB_TEMPO_DUSUSU_ALT",
@@ -13061,14 +13061,14 @@
    "created": "2026-11-18T20:01:00.526678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 76,
+   "last_total": 85,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "31-19",
-   "last_score": "41-35"
+   "last_score": "46-39"
   },
   "fb_1903151|FB_IY2_00": {
    "key": "fb_1903151|FB_IY2_00",
@@ -13133,14 +13133,14 @@
    "created": "2026-11-18T20:20:30.899689+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 142,
+   "last_total": 151,
    "sent": true,
    "direction": "over",
    "base": 130,
    "n": 1,
    "ref": 43.333333333333336,
    "signal_score": "70-68",
-   "last_score": "72-70"
+   "last_score": "79-72"
   },
   "fb_1903133|FB_GERIDEN_FARK2": {
    "key": "fb_1903133|FB_GERIDEN_FARK2",
@@ -13205,14 +13205,14 @@
    "created": "2026-11-18T20:25:23.547902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 135,
+   "last_total": 141,
    "sent": true,
    "direction": "under",
    "base": 133,
    "n": 1,
    "ref": 44.333333333333336,
    "signal_score": "75-60",
-   "last_score": "75-60"
+   "last_score": "78-63"
   },
   "fb_1870310|FB_TEK_FARK_70": {
    "key": "fb_1870310|FB_TEK_FARK_70",
@@ -13261,6 +13261,30 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "fb_1870302|FB_TEK_FARK_70": {
+   "key": "fb_1870302|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1870302",
+   "match": "Manchester United W - Everton W",
+   "league": "England Women's League Cup",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-18T20:30:45.704591+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
