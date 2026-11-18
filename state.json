@@ -12162,8 +12162,8 @@
     1.8
    ],
    "created": "2026-11-18T01:10:32.232717+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 213,
    "sent": true,
    "direction": "over",
@@ -12171,7 +12171,10 @@
    "n": 2,
    "ref": 29.5,
    "signal_score": "32-27",
-   "last_score": "102-111"
+   "last_score": "102-111",
+   "final_total": 213,
+   "settled": "2026-11-18T03:15:40.521853+00:00",
+   "seg_avg": 77.0
   },
   "bb_1868491|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868491|BB_HT_YUKSEK_ALT",
@@ -12186,8 +12189,8 @@
     1.8
    ],
    "created": "2026-11-18T01:35:25.878198+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 213,
    "sent": true,
    "direction": "under",
@@ -12195,7 +12198,10 @@
    "n": 2,
    "ref": 52.0,
    "signal_score": "50-54",
-   "last_score": "102-111"
+   "last_score": "102-111",
+   "final_total": 213,
+   "settled": "2026-11-18T03:15:41.034758+00:00",
+   "seg_avg": 54.5
   },
   "bb_1868499|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868499|BB_TEMPO_DUSUSU_ALT",
@@ -12212,14 +12218,14 @@
    "created": "2026-11-18T01:50:37.356784+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 171,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "40-26",
-   "last_score": "75-86"
+   "last_score": "81-90"
   },
   "bb_1868499|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868499|BB_HT_YUKSEK_ALT",
@@ -12236,14 +12242,14 @@
    "created": "2026-11-18T02:15:30.264628+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 171,
    "sent": true,
    "direction": "under",
    "base": 109,
    "n": 2,
    "ref": 54.5,
    "signal_score": "54-55",
-   "last_score": "75-86"
+   "last_score": "81-90"
   },
   "bb_1868487|BB_HT_YUKSEK_ALT": {
    "key": "bb_1868487|BB_HT_YUKSEK_ALT",
@@ -12260,14 +12266,14 @@
    "created": "2026-11-18T02:20:34.303206+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 169,
+   "last_total": 178,
    "sent": true,
    "direction": "under",
    "base": 97,
    "n": 2,
    "ref": 48.5,
    "signal_score": "49-48",
-   "last_score": "84-85"
+   "last_score": "86-92"
   },
   "fb_1917188|FB_IY2_00": {
    "key": "fb_1917188|FB_IY2_00",
