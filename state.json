@@ -12270,8 +12270,8 @@
     1.8
    ],
    "created": "2026-11-18T02:20:34.303206+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 211,
    "sent": true,
    "direction": "under",
@@ -12279,7 +12279,10 @@
    "n": 2,
    "ref": 48.5,
    "signal_score": "49-48",
-   "last_score": "106-105"
+   "last_score": "106-105",
+   "final_total": 211,
+   "settled": "2026-11-18T03:50:29.656117+00:00",
+   "seg_avg": 57.0
   },
   "fb_1917188|FB_IY2_00": {
    "key": "fb_1917188|FB_IY2_00",
@@ -12295,7 +12298,7 @@
    ],
    "created": "2026-11-18T02:35:23.840480+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
