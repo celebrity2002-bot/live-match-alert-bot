@@ -31,6 +31,8 @@
    },
    "Tr1": "0",
    "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
    "Tr1OR": "0",
    "Tr2OR": "0",
    "T1": [
@@ -53,16 +55,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "45+1'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1794969321159,
-    "RTm": 2700000,
-    "ITm": 0
-   },
+   "Eps": "HT",
+   "Esid": 10,
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "Semi Finals",
+   "ErnInf": "Semi-finals",
    "Awt": 0,
    "Et": 1,
    "Esd": 20261118023000,
