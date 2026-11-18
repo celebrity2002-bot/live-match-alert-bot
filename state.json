@@ -13498,6 +13498,30 @@
    "final_total": 168,
    "settled": "2026-11-18T22:10:33.977557+00:00",
    "seg_avg": 29.0
+  },
+  "fb_1708777|FB_IY2_00": {
+   "key": "fb_1708777|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1708777",
+   "match": "Coritiba - Santos FC",
+   "league": "Brazil Serie A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-18T23:20:41.899129+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
