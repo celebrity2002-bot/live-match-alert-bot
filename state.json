@@ -12310,6 +12310,30 @@
    "final_total": 2,
    "settled": "2026-11-18T03:55:23.417819+00:00",
    "seg_avg": 2.0
+  },
+  "bb_1868516|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868516|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868516",
+   "match": "LA Clippers - Utah Jazz",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-18T04:10:30.662738+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 70,
+   "sent": true,
+   "direction": "under",
+   "base": 64,
+   "n": 3,
+   "ref": 64.0,
+   "signal_score": "29-41",
+   "last_score": "29-41"
   }
  }
 }
