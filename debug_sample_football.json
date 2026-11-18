@@ -5,46 +5,52 @@
  ],
  "events": [
   {
-   "Eid": "1903152",
+   "Eid": "1708777",
    "Pids": {
-    "8": "1903152",
-    "112": "SBTE_2_1029778558"
+    "112": "SBTE_2_1025985574",
+    "8": "1708777"
    },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Tr2ET": "0",
-   "Tr1ET": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "Trp1": "2",
-   "Trp2": "3",
+   "Media": {
+    "112": [
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
    "T1": [
     {
-     "ID": "269522",
-     "Nm": "Reus FC Reddis",
-     "Img": "teambadge/reus-fc-reddis-2024.png",
-     "Abr": "REU"
+     "ID": "4865",
+     "Nm": "Coritiba",
+     "Img": "enet/9767.png",
+     "Abr": "CTB",
+     "Fc": "ffffff",
+     "Sc": "000000"
     }
    ],
    "T2": [
     {
-     "ID": "4252",
-     "Nm": "Barakaldo",
-     "Img": "enet/7734.png",
-     "Abr": "BAR"
+     "ID": "5041",
+     "Nm": "Santos FC",
+     "Img": "teambadge/santos-fc.png",
+     "Abr": "STS",
+     "Fc": "ffffff",
+     "Sc": "000000"
     }
    ],
-   "Eps": "Pen",
-   "Esid": 4,
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "1",
+   "ErnInf": "35",
    "Et": 1,
-   "Esd": 20261118203000,
-   "EO": 2417099391,
-   "EOX": 2417099391,
+   "Esd": 20261118233000,
+   "EO": 807190631,
+   "EOX": 807190631,
    "Spid": 1,
    "Pid": 8
   }
