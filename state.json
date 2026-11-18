@@ -12785,14 +12785,14 @@
    "created": "2026-11-18T19:00:55.304662+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 185,
+   "last_total": 195,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "31-31",
-   "last_score": "87-98"
+   "last_score": "95-100"
   },
   "fb_1887720|FB_TEK_FARK_70": {
    "key": "fb_1887720|FB_TEK_FARK_70",
@@ -12887,14 +12887,14 @@
    "created": "2026-11-18T19:30:45.689902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 185,
+   "last_total": 195,
    "sent": true,
    "direction": "under",
    "base": 105,
    "n": 2,
    "ref": 52.5,
    "signal_score": "47-58",
-   "last_score": "87-98"
+   "last_score": "95-100"
   },
   "bb_1830728|BB_Q4_FARK_ALT": {
    "key": "bb_1830728|BB_Q4_FARK_ALT",
@@ -12989,14 +12989,14 @@
    "created": "2026-11-18T19:50:29.074384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 149,
+   "last_total": 158,
    "sent": true,
    "direction": "under",
    "base": 95,
    "n": 2,
    "ref": 47.5,
    "signal_score": "54-41",
-   "last_score": "83-66"
+   "last_score": "89-69"
   },
   "fb_1870308|FB_IY2_00": {
    "key": "fb_1870308|FB_IY2_00",
@@ -13036,7 +13036,7 @@
    ],
    "created": "2026-11-18T20:01:00.089166+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 173,
    "sent": true,
    "direction": "under",
@@ -13133,14 +13133,14 @@
    "created": "2026-11-18T20:20:30.899689+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 159,
+   "last_total": 170,
    "sent": true,
    "direction": "over",
    "base": 130,
    "n": 1,
    "ref": 43.333333333333336,
    "signal_score": "70-68",
-   "last_score": "87-72"
+   "last_score": "91-79"
   },
   "fb_1903133|FB_GERIDEN_FARK2": {
    "key": "fb_1903133|FB_GERIDEN_FARK2",
@@ -13157,14 +13157,14 @@
    "created": "2026-11-18T20:20:33.705100+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-3",
-   "last_score": "1-4"
+   "last_score": "2-4"
   },
   "fb_1816087|FB_IY2_00": {
    "key": "fb_1816087|FB_IY2_00",
@@ -13205,14 +13205,14 @@
    "created": "2026-11-18T20:25:23.547902+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 149,
+   "last_total": 158,
    "sent": true,
    "direction": "under",
    "base": 133,
    "n": 1,
    "ref": 44.333333333333336,
    "signal_score": "75-60",
-   "last_score": "83-66"
+   "last_score": "89-69"
   },
   "fb_1870310|FB_TEK_FARK_70": {
    "key": "fb_1870310|FB_TEK_FARK_70",
@@ -13301,14 +13301,14 @@
    "created": "2026-11-18T20:35:22.497255+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 143,
    "sent": true,
    "direction": "under",
    "base": 130,
    "n": 1,
    "ref": 43.333333333333336,
    "signal_score": "75-55",
-   "last_score": "75-55"
+   "last_score": "80-63"
   },
   "fb_1870308|FB_GERIDEN_FARK2": {
    "key": "fb_1870308|FB_GERIDEN_FARK2",
