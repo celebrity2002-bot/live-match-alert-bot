@@ -12326,14 +12326,14 @@
    "created": "2026-11-18T04:10:30.662738+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 89,
+   "last_total": 100,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "29-41",
-   "last_score": "42-47"
+   "last_score": "46-54"
   }
  }
 }
