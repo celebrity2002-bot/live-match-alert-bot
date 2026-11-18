@@ -12326,14 +12326,38 @@
    "created": "2026-11-18T04:10:30.662738+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 100,
+   "last_total": 120,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "29-41",
-   "last_score": "46-54"
+   "last_score": "62-58"
+  },
+  "bb_1868516|BB_HT_YUKSEK_ALT": {
+   "key": "bb_1868516|BB_HT_YUKSEK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868516",
+   "match": "LA Clippers - Utah Jazz",
+   "league": "NBA Regular season",
+   "strategy": "BB_HT_YUKSEK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.5,
+    1.8
+   ],
+   "created": "2026-11-18T04:35:23.777638+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 120,
+   "sent": true,
+   "direction": "under",
+   "base": 120,
+   "n": 2,
+   "ref": 60.0,
+   "signal_score": "62-58",
+   "last_score": "62-58"
   }
  }
 }
