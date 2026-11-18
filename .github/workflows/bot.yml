@@ -48,7 +48,6 @@ jobs:
           STAKE_PCT: ${{ vars.STAKE_PCT || '1' }}
           ENABLE_FOOTBALL: ${{ vars.ENABLE_FOOTBALL || '1' }}
           ENABLE_BASKETBALL: ${{ vars.ENABLE_BASKETBALL || '1' }}
-          # Hem futbol hem de düşük performanslı basketbol stratejisi burada devre dışı bırakıldı:
           DISABLE_STRATEGIES: ${{ vars.DISABLE_STRATEGIES || 'FB_BERABERLIK_GEC, FB_GEC_GOL, FB_11_IY2, FB_00_60_70, BB_HT_YUKSEK_ALT' }}
           MAX_LIVE_PER_MATCH: ${{ vars.MAX_LIVE_PER_MATCH || '2' }}
           SEND_RESULTS: ${{ vars.SEND_RESULTS || 'on' }}
@@ -66,7 +65,9 @@ jobs:
         run: |
           git config user.name "sinyal-botu"
           git config user.email "bot@users.noreply.github.com"
+          git stash || true
           git pull --rebase origin main || true
+          git stash pop || true
           if [ -f "state.json" ]; then
             git add state.json
           fi
