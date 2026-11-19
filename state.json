@@ -39,14 +39,86 @@
    "created": "2026-11-19T00:20:31.092727+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
+  },
+  "bb_1868470|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868470|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868470",
+   "match": "Cleveland Cavaliers - Memphis Grizzlies",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T00:40:31.375822+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 71,
+   "sent": true,
+   "direction": "under",
+   "base": 67,
+   "n": 3,
+   "ref": 67.0,
+   "signal_score": "39-32",
+   "last_score": "39-32"
+  },
+  "bb_1868473|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868473|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868473",
+   "match": "Indiana Pacers - Houston Rockets",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T00:40:31.946312+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 67,
+   "sent": true,
+   "direction": "under",
+   "base": 67,
+   "n": 3,
+   "ref": 67.0,
+   "signal_score": "28-39",
+   "last_score": "28-39"
+  },
+  "bb_1868468|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868468|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868468",
+   "match": "Orlando Magic - Philadelphia 76ers",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T00:40:32.409088+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 67,
+   "sent": true,
+   "direction": "under",
+   "base": 67,
+   "n": 3,
+   "ref": 67.0,
+   "signal_score": "40-27",
+   "last_score": "40-27"
   }
  }
 }

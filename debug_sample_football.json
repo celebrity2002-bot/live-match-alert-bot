@@ -5,80 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1708777",
-   "Pids": {
-    "8": "1708777",
-    "112": "SBTE_2_1025985574"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Fanatiz",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "2": [
-     {
-      "IT": 1037,
-      "Nm": 2,
-      "Sc": [
-       0,
-       1
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "4865",
-     "Nm": "Coritiba",
-     "Img": "enet/9767.png",
-     "Abr": "CTB",
-     "Fc": "ffffff",
-     "Sc": "000000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5041",
-     "Nm": "Santos FC",
-     "Img": "teambadge/santos-fc.png",
-     "Abr": "STS",
-     "Fc": "ffffff",
-     "Sc": "000000"
-    }
-   ],
-   "Eps": "90+7'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795048481129,
-    "RTm": 5400000,
-    "ITm": 360000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Regular Season",
-   "Et": 1,
-   "Eit": "8",
-   "Esd": 20261118233000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1708785",
    "Pids": {
     "112": "SBTE_2_1025985568",
@@ -122,11 +48,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "72'",
+   "Eps": "76'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795048511189,
-    "RTm": 4260000
+    "ATm": 1795048751057,
+    "RTm": 4500000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -185,11 +111,11 @@
     ]
    },
    "Tr1": "0",
-   "Tr2": "0",
+   "Tr2": "1",
    "Trh1": "0",
    "Trh2": "0",
    "Tr1OR": "0",
-   "Tr2OR": "0",
+   "Tr2OR": "1",
    "T1": [
     {
      "ID": "4935",
@@ -210,8 +136,74 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "49'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795048801337,
+    "RTm": 2880000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "35",
+   "Et": 1,
+   "Esd": 20261119003000,
+   "EO": 807322479,
+   "EOX": 807322479,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1708748",
+   "Pids": {
+    "112": "SBTE_2_1025985594",
+    "8": "1708748"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FlamengoTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "Tr1": "2",
+   "Tr2": "1",
+   "Trh1": "2",
+   "Trh2": "1",
+   "Tr1OR": "2",
+   "Tr2OR": "1",
+   "T1": [
+    {
+     "ID": "4953",
+     "Nm": "Flamengo",
+     "Img": "enet/9770.png",
+     "NewsTag": "/team/flamengo-2021020913320920836-175/",
+     "Abr": "FLA",
+     "Fc": "a1263b",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4504",
+     "Nm": "Athletico Paranaense",
+     "Img": "teambadge/atletico-paranaense-2024.png",
+     "NewsTag": "/team/athletico-paranaense-2022081113203185684-180/",
+     "Abr": "APR",
+     "Fc": "cc0000",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "48'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795048776201,
+    "RTm": 2820000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "35",
