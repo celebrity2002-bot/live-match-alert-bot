@@ -144,14 +144,62 @@
    "created": "2026-11-19T03:45:29.963426+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 122,
+   "last_total": 125,
    "sent": true,
    "direction": "under",
    "base": 63,
    "n": 3,
    "ref": 63.0,
    "signal_score": "36-30",
-   "last_score": "60-62"
+   "last_score": "63-62"
+  },
+  "bb_1868476|BB_Q4_YAKIN_UST": {
+   "key": "bb_1868476|BB_Q4_YAKIN_UST",
+   "sport": "basketball",
+   "match_id": "bb_1868476",
+   "match": "Denver Nuggets - Boston Celtics",
+   "league": "NBA Regular season",
+   "strategy": "BB_Q4_YAKIN_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-19T04:40:30.485391+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 160,
+   "sent": true,
+   "direction": "over",
+   "base": 160,
+   "n": 1,
+   "ref": 53.333333333333336,
+   "signal_score": "80-80",
+   "last_score": "80-80"
+  },
+  "bb_1868476|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868476|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868476",
+   "match": "Denver Nuggets - Boston Celtics",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-19T04:40:30.842644+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 160,
+   "sent": false,
+   "direction": "under",
+   "base": 160,
+   "n": 1,
+   "ref": 53.333333333333336,
+   "signal_score": "80-80",
+   "last_score": "80-80"
   }
  }
 }
