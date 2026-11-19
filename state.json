@@ -95,7 +95,7 @@
    ],
    "created": "2026-11-19T03:20:29.875729+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 203,
    "sent": true,
    "direction": "under",
@@ -119,7 +119,7 @@
    ],
    "created": "2026-11-19T03:40:31.533426+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 227,
    "sent": true,
    "direction": "under",
@@ -144,14 +144,14 @@
    "created": "2026-11-19T03:45:29.963426+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 174,
+   "last_total": 183,
    "sent": true,
    "direction": "under",
    "base": 63,
    "n": 3,
    "ref": 63.0,
    "signal_score": "36-30",
-   "last_score": "83-91"
+   "last_score": "85-98"
   },
   "bb_1868476|BB_Q4_YAKIN_UST": {
    "key": "bb_1868476|BB_Q4_YAKIN_UST",
@@ -167,7 +167,7 @@
    ],
    "created": "2026-11-19T04:40:30.485391+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 203,
    "sent": true,
    "direction": "over",
@@ -191,7 +191,7 @@
    ],
    "created": "2026-11-19T04:40:30.842644+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 203,
    "sent": false,
    "direction": "under",
@@ -215,7 +215,7 @@
    ],
    "created": "2026-11-19T04:50:29.975900+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 227,
    "sent": true,
    "direction": "under",
@@ -240,14 +240,14 @@
    "created": "2026-11-19T05:05:23.737995+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 174,
+   "last_total": 183,
    "sent": true,
    "direction": "over",
    "base": 154,
    "n": 1,
    "ref": 51.333333333333336,
    "signal_score": "77-79",
-   "last_score": "83-91"
+   "last_score": "85-98"
   },
   "bb_1868472|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868472|OZEL_BB_BENCH_COKUS",
@@ -264,14 +264,14 @@
    "created": "2026-11-19T05:05:24.197867+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 174,
+   "last_total": 183,
    "sent": false,
    "direction": "under",
    "base": 154,
    "n": 1,
    "ref": 51.333333333333336,
    "signal_score": "77-79",
-   "last_score": "83-91"
+   "last_score": "85-98"
   }
  }
 }
