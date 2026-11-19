@@ -13570,6 +13570,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1708768|FB_IY2_00": {
+   "key": "fb_1708768|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1708768",
+   "match": "Cruzeiro - Palmeiras",
+   "league": "Brazil Serie A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-19T00:15:32.174335+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
