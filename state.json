@@ -69,14 +69,14 @@
    "created": "2026-11-19T00:40:31.375822+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 199,
+   "last_total": 209,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "39-32",
-   "last_score": "99-100"
+   "last_score": "105-104"
   },
   "bb_1868473|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868473|BB_TEMPO_DUSUSU_ALT",
@@ -93,14 +93,14 @@
    "created": "2026-11-19T00:40:31.946312+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 184,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "28-39",
-   "last_score": "78-93"
+   "last_score": "83-101"
   },
   "bb_1868468|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868468|BB_TEMPO_DUSUSU_ALT",
@@ -117,14 +117,14 @@
    "created": "2026-11-19T00:40:32.409088+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 189,
+   "last_total": 196,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "40-27",
-   "last_score": "97-92"
+   "last_score": "101-95"
   },
   "bb_1868471|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868471|BB_TEMPO_DUSUSU_ALT",
@@ -141,14 +141,14 @@
    "created": "2026-11-19T00:55:23.381134+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 144,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "39-28",
-   "last_score": "80-50"
+   "last_score": "83-61"
   },
   "fb_1708768|FB_TEK_FARK_70": {
    "key": "fb_1708768|FB_TEK_FARK_70",
@@ -246,14 +246,14 @@
    "created": "2026-11-19T01:10:44.259698+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 135,
+   "last_total": 149,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "26-42",
-   "last_score": "57-78"
+   "last_score": "62-87"
   },
   "bb_1868466|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868466|BB_TEMPO_DUSUSU_ALT",
@@ -270,14 +270,14 @@
    "created": "2026-11-19T01:15:31.115675+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 109,
+   "last_total": 127,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "25-32",
-   "last_score": "55-54"
+   "last_score": "63-64"
   },
   "fb_1708775|FB_IY2_00": {
    "key": "fb_1708775|FB_IY2_00",
@@ -318,14 +318,14 @@
    "created": "2026-11-19T01:40:31.654415+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 98,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "35-25",
-   "last_score": "47-40"
+   "last_score": "54-44"
   },
   "bb_1868510|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868510|BB_TEMPO_DUSUSU_ALT",
@@ -342,14 +342,14 @@
    "created": "2026-11-19T01:40:33.455424+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 97,
+   "last_total": 108,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "31-31",
-   "last_score": "45-52"
+   "last_score": "49-59"
   },
   "bb_1868478|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868478|BB_TEMPO_DUSUSU_ALT",
@@ -366,14 +366,14 @@
    "created": "2026-11-19T01:45:29.436817+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 100,
+   "last_total": 105,
    "sent": true,
    "direction": "under",
    "base": 62,
    "n": 3,
    "ref": 62.0,
    "signal_score": "38-38",
-   "last_score": "48-52"
+   "last_score": "48-57"
   },
   "fb_1708760|FB_GERIDEN_FARK2": {
    "key": "fb_1708760|FB_GERIDEN_FARK2",
@@ -390,14 +390,14 @@
    "created": "2026-11-19T01:45:31.049714+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "3-0"
+   "last_score": "4-0"
   },
   "bb_1868473|BB_Q4_FARK_ALT": {
    "key": "bb_1868473|BB_Q4_FARK_ALT",
@@ -414,14 +414,14 @@
    "created": "2026-11-19T01:55:27.574117+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 184,
    "sent": true,
    "direction": "under",
    "base": 169,
    "n": 1,
    "ref": 56.333333333333336,
    "signal_score": "78-93",
-   "last_score": "78-93"
+   "last_score": "83-101"
   },
   "bb_1868473|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868473|OZEL_BB_BENCH_COKUS",
@@ -438,14 +438,14 @@
    "created": "2026-11-19T01:55:28.011481+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 171,
+   "last_total": 184,
    "sent": false,
    "direction": "under",
    "base": 169,
    "n": 1,
    "ref": 56.333333333333336,
    "signal_score": "78-93",
-   "last_score": "78-93"
+   "last_score": "83-101"
   },
   "fb_1708775|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1708775|OZEL_FB_BASKI_SIKISMA",
@@ -470,6 +470,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1868468|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868468|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868468",
+   "match": "Orlando Magic - Philadelphia 76ers",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-19T02:00:52.962499+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 196,
+   "sent": true,
+   "direction": "under",
+   "base": 189,
+   "n": 1,
+   "ref": 63.0,
+   "signal_score": "101-95",
+   "last_score": "101-95"
   }
  }
 }
