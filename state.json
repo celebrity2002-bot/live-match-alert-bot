@@ -364,8 +364,8 @@
     1.55
    ],
    "created": "2026-11-19T19:25:25.038877+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -373,7 +373,10 @@
    "n": 3,
    "ref": 53.0,
    "signal_score": "34-31",
-   "last_score": "98-81"
+   "last_score": "98-81",
+   "final_total": 179,
+   "settled": "2026-11-19T20:55:24.043460+00:00",
+   "seg_avg": 42.0
   },
   "bb_1851077|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1851077|OZEL_BB_BENCH_COKUS",
@@ -388,8 +391,8 @@
     2.1
    ],
    "created": "2026-11-19T20:25:32.103713+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 179,
    "sent": true,
    "direction": "under",
@@ -397,7 +400,10 @@
    "n": 1,
    "ref": 47.0,
    "signal_score": "79-68",
-   "last_score": "98-81"
+   "last_score": "98-81",
+   "final_total": 179,
+   "settled": "2026-11-19T20:55:24.429886+00:00",
+   "seg_avg": 38.0
   },
   "bb_1851056|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1851056|BB_TEMPO_DUSUSU_ALT",
@@ -414,14 +420,14 @@
    "created": "2026-11-19T20:25:32.473020+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 89,
+   "last_total": 90,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "30-25",
-   "last_score": "50-39"
+   "last_score": "50-40"
   },
   "fb_1887692|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1887692|FB_COK_GOLLU_ERKEN",
