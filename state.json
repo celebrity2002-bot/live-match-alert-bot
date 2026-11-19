@@ -312,14 +312,38 @@
    "created": "2026-11-19T18:50:32.313085+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 131,
+   "last_total": 144,
    "sent": true,
    "direction": "over",
    "base": 120,
    "n": 1,
    "ref": 40.0,
    "signal_score": "62-62",
-   "last_score": "64-67"
+   "last_score": "70-74"
+  },
+  "fb_1887731|FB_GERIDEN_FARK2": {
+   "key": "fb_1887731|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1887731",
+   "match": "Austria Wien W - Bayern Munich W",
+   "league": "UEFA Women's Champions League Final Stage",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-19T19:00:55.330758+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
   }
  }
 }
