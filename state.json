@@ -13546,6 +13546,30 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1"
+  },
+  "fb_1708777|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1708777|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1708777",
+   "match": "Coritiba - Santos FC",
+   "league": "Brazil Serie A",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.65,
+    2.05
+   ],
+   "created": "2026-11-19T00:04:42.885421+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
