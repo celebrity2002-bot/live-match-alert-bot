@@ -148,8 +148,8 @@
     1.55
    ],
    "created": "2026-11-19T03:45:29.963426+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 205,
    "sent": true,
    "direction": "under",
@@ -157,7 +157,10 @@
    "n": 3,
    "ref": 63.0,
    "signal_score": "36-30",
-   "last_score": "97-108"
+   "last_score": "97-108",
+   "final_total": 205,
+   "settled": "2026-11-19T05:40:54.011563+00:00",
+   "seg_avg": 47.3
   },
   "bb_1868476|BB_Q4_YAKIN_UST": {
    "key": "bb_1868476|BB_Q4_YAKIN_UST",
@@ -253,8 +256,8 @@
     2.0
    ],
    "created": "2026-11-19T05:05:23.737995+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 205,
    "sent": true,
    "direction": "over",
@@ -262,7 +265,10 @@
    "n": 1,
    "ref": 51.333333333333336,
    "signal_score": "77-79",
-   "last_score": "97-108"
+   "last_score": "97-108",
+   "final_total": 205,
+   "settled": "2026-11-19T05:40:54.367456+00:00",
+   "seg_avg": 51.0
   },
   "bb_1868472|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868472|OZEL_BB_BENCH_COKUS",
@@ -277,8 +283,8 @@
     2.1
    ],
    "created": "2026-11-19T05:05:24.197867+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 205,
    "sent": false,
    "direction": "under",
@@ -286,7 +292,10 @@
    "n": 1,
    "ref": 51.333333333333336,
    "signal_score": "77-79",
-   "last_score": "97-108"
+   "last_score": "97-108",
+   "final_total": 205,
+   "settled": "2026-11-19T05:40:54.668821+00:00",
+   "seg_avg": 51.0
   }
  }
 }
