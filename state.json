@@ -66,14 +66,14 @@
    "created": "2026-11-19T00:40:31.375822+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 142,
+   "last_total": 143,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "39-32",
-   "last_score": "72-70"
+   "last_score": "72-71"
   },
   "bb_1868473|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868473|BB_TEMPO_DUSUSU_ALT",
@@ -138,14 +138,14 @@
    "created": "2026-11-19T00:55:23.381134+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 99,
+   "last_total": 108,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "39-28",
-   "last_score": "61-38"
+   "last_score": "66-42"
   },
   "fb_1708768|FB_TEK_FARK_70": {
    "key": "fb_1708768|FB_TEK_FARK_70",
@@ -234,14 +234,14 @@
    "created": "2026-11-19T01:10:44.259698+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 89,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "26-42",
-   "last_score": "32-55"
+   "last_score": "34-55"
   },
   "bb_1868466|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868466|BB_TEMPO_DUSUSU_ALT",
@@ -258,14 +258,38 @@
    "created": "2026-11-19T01:15:31.115675+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 57,
+   "last_total": 70,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "25-32",
-   "last_score": "25-32"
+   "last_score": "33-37"
+  },
+  "fb_1708775|FB_IY2_00": {
+   "key": "fb_1708775|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1708775",
+   "match": "Gremio - Bahia",
+   "league": "Brazil Serie A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-19T01:20:34.190943+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
