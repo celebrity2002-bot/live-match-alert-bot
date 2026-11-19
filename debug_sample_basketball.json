@@ -7,8 +7,8 @@
   {
    "Eid": "1851052",
    "Pids": {
-    "112": "SBTE_2_1028562758",
-    "8": "1851052"
+    "8": "1851052",
+    "112": "SBTE_2_1028562758"
    },
    "Media": {
     "112": [
@@ -23,14 +23,14 @@
      }
     ]
    },
-   "Tr1": "41",
-   "Tr2": "32",
-   "Tr1OR": "41",
-   "Tr2OR": "32",
+   "Tr1": "47",
+   "Tr2": "34",
+   "Tr1OR": "47",
+   "Tr2OR": "34",
    "Tr1Q1": "26",
    "Tr2Q1": "14",
-   "Tr1Q2": "15",
-   "Tr2Q2": "18",
+   "Tr1Q2": "21",
+   "Tr2Q2": "20",
    "T1": [
     {
      "ID": "1975",
@@ -58,6 +58,66 @@
    "Esd": 20261119201500,
    "EO": 524391,
    "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1851068",
+   "Pids": {
+    "112": "SBTE_2_1028562791",
+    "8": "1851068"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Azteca Deportes Network",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "azteca.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "EuroLeague TV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "1943",
+     "Nm": "Zalgiris Kaunas",
+     "Img": "teambadge/zalhiris-kaunas.png",
+     "Abr": "ZAL",
+     "Fc": "146734",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1953",
+     "Nm": "Panathinaikos",
+     "Img": "teambadge/panathinaikos-basket-2024.png",
+     "Abr": "PAN",
+     "Fc": "006940",
+     "Sc": "f7921e"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "13",
+   "Et": 1,
+   "Esd": 20261119210000,
+   "EO": 524295,
+   "EOX": 524295,
    "Spid": 23,
    "Pid": 8
   }
