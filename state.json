@@ -1,3 +1,76 @@
 {
- "signals": {}
+ "signals": {
+  "bb_1868482|BB_Q4_FARK_ALT": {
+   "key": "bb_1868482|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868482",
+   "match": "Dallas Mavericks - Golden State Warriors",
+   "league": "NBA Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-19T03:00:53.633058+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 169,
+   "sent": true,
+   "direction": "under",
+   "base": 164,
+   "n": 1,
+   "ref": 54.666666666666664,
+   "signal_score": "95-74",
+   "last_score": "95-74"
+  },
+  "bb_1868482|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868482|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868482",
+   "match": "Dallas Mavericks - Golden State Warriors",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-19T03:00:54.084177+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 169,
+   "sent": true,
+   "direction": "under",
+   "base": 164,
+   "n": 1,
+   "ref": 54.666666666666664,
+   "signal_score": "95-74",
+   "last_score": "95-74"
+  },
+  "bb_1868478|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868478|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868478",
+   "match": "New Orleans Pelicans - Detroit Pistons",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-19T03:00:54.529128+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 183,
+   "sent": true,
+   "direction": "under",
+   "base": 178,
+   "n": 1,
+   "ref": 59.333333333333336,
+   "signal_score": "86-97",
+   "last_score": "86-97"
+  }
+ }
 }
