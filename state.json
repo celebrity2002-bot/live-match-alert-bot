@@ -13,8 +13,8 @@
     1.95
    ],
    "created": "2026-11-19T03:00:53.633058+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 210,
    "sent": true,
    "direction": "under",
@@ -22,7 +22,10 @@
    "n": 1,
    "ref": 54.666666666666664,
    "signal_score": "95-74",
-   "last_score": "116-94"
+   "last_score": "116-94",
+   "final_total": 210,
+   "settled": "2026-11-19T03:35:23.859216+00:00",
+   "seg_avg": 46.0
   },
   "bb_1868482|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868482|OZEL_BB_BENCH_COKUS",
@@ -37,8 +40,8 @@
     2.1
    ],
    "created": "2026-11-19T03:00:54.084177+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 210,
    "sent": true,
    "direction": "under",
@@ -46,7 +49,10 @@
    "n": 1,
    "ref": 54.666666666666664,
    "signal_score": "95-74",
-   "last_score": "116-94"
+   "last_score": "116-94",
+   "final_total": 210,
+   "settled": "2026-11-19T03:35:24.333348+00:00",
+   "seg_avg": 46.0
   },
   "bb_1868478|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868478|OZEL_BB_BENCH_COKUS",
@@ -62,7 +68,7 @@
    ],
    "created": "2026-11-19T03:00:54.529128+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 231,
    "sent": true,
    "direction": "under",
