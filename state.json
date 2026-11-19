@@ -312,14 +312,14 @@
    "created": "2026-11-19T18:50:32.313085+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 124,
+   "last_total": 131,
    "sent": true,
    "direction": "over",
    "base": 120,
    "n": 1,
    "ref": 40.0,
    "signal_score": "62-62",
-   "last_score": "62-62"
+   "last_score": "64-67"
   }
  }
 }
