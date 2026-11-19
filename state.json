@@ -121,8 +121,8 @@
     1.55
    ],
    "created": "2026-11-19T03:40:31.533426+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 227,
    "sent": true,
    "direction": "under",
@@ -130,7 +130,10 @@
    "n": 3,
    "ref": 67.0,
    "signal_score": "33-39",
-   "last_score": "101-126"
+   "last_score": "101-126",
+   "final_total": 227,
+   "settled": "2026-11-19T05:30:46.371136+00:00",
+   "seg_avg": 53.3
   },
   "bb_1868472|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868472|BB_TEMPO_DUSUSU_ALT",
@@ -147,14 +150,14 @@
    "created": "2026-11-19T03:45:29.963426+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 191,
+   "last_total": 205,
    "sent": true,
    "direction": "under",
    "base": 63,
    "n": 3,
    "ref": 63.0,
    "signal_score": "36-30",
-   "last_score": "90-101"
+   "last_score": "97-108"
   },
   "bb_1868476|BB_Q4_YAKIN_UST": {
    "key": "bb_1868476|BB_Q4_YAKIN_UST",
@@ -223,8 +226,8 @@
     2.1
    ],
    "created": "2026-11-19T04:50:29.975900+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 227,
    "sent": true,
    "direction": "under",
@@ -232,7 +235,10 @@
    "n": 1,
    "ref": 61.0,
    "signal_score": "86-99",
-   "last_score": "101-126"
+   "last_score": "101-126",
+   "final_total": 227,
+   "settled": "2026-11-19T05:30:46.908277+00:00",
+   "seg_avg": 44.0
   },
   "bb_1868472|BB_Q4_YAKIN_UST": {
    "key": "bb_1868472|BB_Q4_YAKIN_UST",
@@ -249,14 +255,14 @@
    "created": "2026-11-19T05:05:23.737995+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 191,
+   "last_total": 205,
    "sent": true,
    "direction": "over",
    "base": 154,
    "n": 1,
    "ref": 51.333333333333336,
    "signal_score": "77-79",
-   "last_score": "90-101"
+   "last_score": "97-108"
   },
   "bb_1868472|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868472|OZEL_BB_BENCH_COKUS",
@@ -273,14 +279,14 @@
    "created": "2026-11-19T05:05:24.197867+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 191,
+   "last_total": 205,
    "sent": false,
    "direction": "under",
    "base": 154,
    "n": 1,
    "ref": 51.333333333333336,
    "signal_score": "77-79",
-   "last_score": "90-101"
+   "last_score": "97-108"
   }
  }
 }
