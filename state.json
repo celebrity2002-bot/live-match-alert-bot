@@ -366,14 +366,62 @@
    "created": "2026-11-19T19:25:25.038877+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 141,
+   "last_total": 147,
    "sent": true,
    "direction": "under",
    "base": 53,
    "n": 3,
    "ref": 53.0,
    "signal_score": "34-31",
-   "last_score": "76-65"
+   "last_score": "79-68"
+  },
+  "bb_1851077|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1851077|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1851077",
+   "match": "FC Bayern Munchen - Saski Baskonia",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-19T20:25:32.103713+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 147,
+   "sent": true,
+   "direction": "under",
+   "base": 141,
+   "n": 1,
+   "ref": 47.0,
+   "signal_score": "79-68",
+   "last_score": "79-68"
+  },
+  "bb_1851056|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1851056|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1851056",
+   "match": "Valencia - Virtus Bologna",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T20:25:32.473020+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 55,
+   "sent": true,
+   "direction": "under",
+   "base": 55,
+   "n": 3,
+   "ref": 55.0,
+   "signal_score": "30-25",
+   "last_score": "30-25"
   }
  }
 }
