@@ -71,9 +71,9 @@
     ]
    },
    "Tr1": "128",
-   "Tr2": "100",
+   "Tr2": "109",
    "Tr1OR": "128",
-   "Tr2OR": "100",
+   "Tr2OR": "109",
    "Tr1Q1": "34",
    "Tr2Q1": "23",
    "Tr1Q2": "40",
@@ -81,7 +81,7 @@
    "Tr1Q3": "38",
    "Tr2Q3": "38",
    "Tr1Q4": "16",
-   "Tr2Q4": "14",
+   "Tr2Q4": "23",
    "T1": [
     {
      "ID": "1907",
@@ -115,76 +115,10 @@
    "Pid": 8
   },
   {
-   "Eid": "1868468",
-   "Pids": {
-    "112": "SBTE_2_1028754032",
-    "8": "1868468"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NBA League Pass",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "nba-league-pass.png",
-      "allowedCountries": [
-       "MX",
-       "GB",
-       "IE",
-       "US"
-      ]
-     }
-    ]
-   },
-   "Tr1": "116",
-   "Tr2": "121",
-   "Tr1OR": "116",
-   "Tr2OR": "121",
-   "Tr1Q1": "40",
-   "Tr2Q1": "27",
-   "Tr1Q2": "29",
-   "Tr2Q2": "37",
-   "Tr1Q3": "28",
-   "Tr2Q3": "28",
-   "Tr1Q4": "19",
-   "Tr2Q4": "29",
-   "T1": [
-    {
-     "ID": "1909",
-     "Nm": "Orlando Magic",
-     "Img": "teambadge/orlando-magic-2025.png",
-     "Abr": "ORL",
-     "Fc": "0077C0",
-     "Sc": "C4CED4"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "1928",
-     "Nm": "Philadelphia 76ers",
-     "Img": "enet/58509.png",
-     "Abr": "PHI",
-     "Fc": "006BB6",
-     "Sc": "ED174C"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261119030000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1868480",
    "Pids": {
-    "8": "1868480",
-    "112": "SBTE_2_1028754042"
+    "112": "SBTE_2_1028754042",
+    "8": "1868480"
    },
    "Media": {
     "112": [
@@ -202,18 +136,18 @@
      }
     ]
    },
-   "Tr1": "96",
-   "Tr2": "128",
-   "Tr1OR": "96",
-   "Tr2OR": "128",
+   "Tr1": "102",
+   "Tr2": "135",
+   "Tr1OR": "102",
+   "Tr2OR": "135",
    "Tr1Q1": "21",
    "Tr2Q1": "37",
    "Tr1Q2": "30",
    "Tr2Q2": "39",
    "Tr1Q3": "26",
    "Tr2Q3": "35",
-   "Tr1Q4": "19",
-   "Tr2Q4": "17",
+   "Tr1Q4": "25",
+   "Tr2Q4": "24",
    "T1": [
     {
      "ID": "1906",
@@ -232,6 +166,104 @@
      "Abr": "CHI",
      "Fc": "CE1141",
      "Sc": "000000"
+    }
+   ],
+   "Eps": "4Q",
+   "Esid": 43,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261119033000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1868466",
+   "Pids": {
+    "112": "SBTE_2_1028754040",
+    "8": "1868466"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "GB",
+       "MX",
+       "IE",
+       "US"
+      ]
+     },
+     {
+      "eventId": "RDS",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "TSN1",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "TSN3",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "TSN4",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     }
+    ]
+   },
+   "Tr1": "88",
+   "Tr2": "96",
+   "Tr1OR": "88",
+   "Tr2OR": "96",
+   "Tr1Q1": "23",
+   "Tr2Q1": "29",
+   "Tr1Q2": "24",
+   "Tr2Q2": "20",
+   "Tr1Q3": "32",
+   "Tr2Q3": "29",
+   "Tr1Q4": "9",
+   "Tr2Q4": "18",
+   "T1": [
+    {
+     "ID": "2412",
+     "Nm": "Toronto Raptors",
+     "Img": "enet/58539.png",
+     "Abr": "TOR",
+     "Fc": "CE1141",
+     "Sc": "000000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1864",
+     "Nm": "Washington Wizards",
+     "Img": "enet/58536.png",
+     "Abr": "WAS",
+     "Fc": "E31837",
+     "Sc": "002B5C"
     }
    ],
    "Eps": "4Q",
