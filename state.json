@@ -296,6 +296,30 @@
    "final_total": 205,
    "settled": "2026-11-19T05:40:54.668821+00:00",
    "seg_avg": 51.0
+  },
+  "bb_1851052|BB_Q4_YAKIN_UST": {
+   "key": "bb_1851052|BB_Q4_YAKIN_UST",
+   "sport": "basketball",
+   "match_id": "bb_1851052",
+   "match": "Maccabi Tel Aviv - BC Dubai",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_Q4_YAKIN_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-19T18:50:32.313085+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 124,
+   "sent": true,
+   "direction": "over",
+   "base": 120,
+   "n": 1,
+   "ref": 40.0,
+   "signal_score": "62-62",
+   "last_score": "62-62"
   }
  }
 }
