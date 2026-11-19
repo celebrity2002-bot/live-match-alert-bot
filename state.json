@@ -590,6 +590,78 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-0"
+  },
+  "fb_1708781|FB_GERIDEN_FARK2": {
+   "key": "fb_1708781|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1708781",
+   "match": "Vitoria - RB Bragantino",
+   "league": "Brazil Serie A",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-19T23:55:23.677931+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
+  },
+  "fb_1915350|FB_TEK_FARK_70": {
+   "key": "fb_1915350|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1915350",
+   "match": "Union Magdalena - Boca Juniors de Cali",
+   "league": "Colombia Primera B: Clausura: Play-off: Group A",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-19T23:55:24.200995+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1915350|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1915350|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1915350",
+   "match": "Union Magdalena - Boca Juniors de Cali",
+   "league": "Colombia Primera B: Clausura: Play-off: Group A",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.65,
+    2.05
+   ],
+   "created": "2026-11-19T23:55:24.697352+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
