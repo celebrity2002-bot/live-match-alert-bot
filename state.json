@@ -67,8 +67,8 @@
     2.1
    ],
    "created": "2026-11-19T03:00:54.529128+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 231,
    "sent": true,
    "direction": "under",
@@ -76,7 +76,10 @@
    "n": 1,
    "ref": 59.333333333333336,
    "signal_score": "86-97",
-   "last_score": "109-122"
+   "last_score": "109-122",
+   "final_total": 231,
+   "settled": "2026-11-19T03:40:31.866718+00:00",
+   "seg_avg": 53.0
   },
   "bb_1868476|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868476|BB_TEMPO_DUSUSU_ALT",
@@ -93,14 +96,38 @@
    "created": "2026-11-19T03:20:29.875729+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 79,
+   "last_total": 83,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "24-30",
-   "last_score": "34-45"
+   "last_score": "34-49"
+  },
+  "bb_1868477|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868477|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868477",
+   "match": "Sacramento Kings - Phoenix Suns",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T03:40:31.533426+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 72,
+   "sent": true,
+   "direction": "under",
+   "base": 67,
+   "n": 3,
+   "ref": 67.0,
+   "signal_score": "33-39",
+   "last_score": "33-39"
   }
  }
 }
