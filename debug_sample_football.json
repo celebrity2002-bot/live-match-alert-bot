@@ -5,158 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1708768",
-   "Pids": {
-    "112": "SBTE_2_1025985549",
-    "8": "1708768"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Azteca Deportes Network",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "azteca.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Fanatiz",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Premier Sports 2",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "premier-sports.png",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "4935",
-     "Nm": "Cruzeiro",
-     "Img": "enet/9781.png",
-     "Abr": "CRZ",
-     "Fc": "0033cc",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4934",
-     "Nm": "Palmeiras",
-     "Img": "enet/10283.png",
-     "Abr": "PAL",
-     "Fc": "006437",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "90+4'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795051491304,
-    "RTm": 5400000,
-    "ITm": 180000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "35",
-   "Et": 1,
-   "Esd": 20261119003000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1708748",
-   "Pids": {
-    "112": "SBTE_2_1025985594",
-    "8": "1708748"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FlamengoTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "2",
-   "Trh2": "1",
-   "Tr1OR": "2",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "4953",
-     "Nm": "Flamengo",
-     "Img": "enet/9770.png",
-     "NewsTag": "/team/flamengo-2021020913320920836-175/",
-     "Abr": "FLA",
-     "Fc": "a1263b",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4504",
-     "Nm": "Athletico Paranaense",
-     "Img": "teambadge/atletico-paranaense-2024.png",
-     "NewsTag": "/team/athletico-paranaense-2022081113203185684-180/",
-     "Abr": "APR",
-     "Fc": "cc0000",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795051466202,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "35",
-   "Et": 1,
-   "Esd": 20261119003000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1708760",
    "Pids": {
     "112": "SBTE_2_1025985553",
@@ -197,6 +45,62 @@
    "Esd": 20261119013000,
    "EO": 874431343,
    "EOX": 874431343,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1708775",
+   "Pids": {
+    "112": "SBTE_2_1025985576",
+    "8": "1708775"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
+   "T1": [
+    {
+     "ID": "5001",
+     "Nm": "Gremio",
+     "Img": "enet/9769.png",
+     "Abr": "GRE",
+     "Fc": "b8edff",
+     "Sc": "000000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4507",
+     "Nm": "Bahia",
+     "Img": "enet/7877.png",
+     "Abr": "BAH",
+     "Fc": "ffffff",
+     "Sc": "0400ff"
+    }
+   ],
+   "Eps": "HT",
+   "Esid": 10,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "35",
+   "Et": 1,
+   "Esd": 20261119013000,
+   "EO": 807322495,
+   "EOX": 807322495,
    "Spid": 1,
    "Pid": 8
   }
