@@ -5,50 +5,254 @@
  ],
  "events": [
   {
-   "Eid": "1817127",
+   "Eid": "1887742",
    "Pids": {
-    "112": "SBTE_2_1028235479",
-    "8": "1817127"
+    "112": "SBTE_2_1029027469",
+    "8": "1887742"
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
+   "Media": {
+    "112": [
+     {
+      "eventId": "BBC Three",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "bbc.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "BBCi",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "bbc.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "TVC Deportes",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
    "T1": [
     {
-     "ID": "3554",
-     "Nm": "Amiens",
-     "Img": "enet/8587.png",
-     "Abr": "AMI",
-     "Fc": "ffffff",
-     "Sc": "000000"
+     "ID": "3935",
+     "Nm": "Arsenal W",
+     "Img": "teambadge/arsenal-square-2024.png",
+     "NewsTag": "/team/arsenal-women-2021020913320920836-26188/",
+     "Abr": "ARS(W)",
+     "Fc": "EF0107",
+     "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "4404",
-     "Nm": "Caen",
-     "Img": "enet/7819.png",
-     "Abr": "CAE",
-     "Fc": "0045ad",
+     "ID": "4763",
+     "Nm": "Lyon W",
+     "Img": "teambadge/lyonnes-2025.png",
+     "Abr": "LYO(W)",
+     "Fc": "14387F",
+     "Sc": "DA0812"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "5",
+   "Et": 1,
+   "Esd": 20261119210000,
+   "EO": 337412199,
+   "EOX": 337412199,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1887692",
+   "Pids": {
+    "112": "SBTE_2_1029053969",
+    "8": "1887692"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "TVC Deportes",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "3391",
+     "Nm": "Barcelona W",
+     "Img": "enet/401657.png",
+     "Abr": "FCB(W)",
+     "Fc": "004D98",
+     "Sc": "A50044"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "83041",
+     "Nm": "Servette W",
+     "Img": "teambadge/servette-w.png",
+     "Abr": "SER(W)"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "5",
+   "Et": 1,
+   "Esd": 20261119210000,
+   "EO": 337150055,
+   "EOX": 337150055,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1887699",
+   "Pids": {
+    "8": "1887699",
+    "112": "SBTE_2_1029042180"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Mega Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "83076",
+     "Nm": "Benfica W",
+     "Img": "enet/1198668.png",
+     "Abr": "SLB(W)",
+     "Fc": "ff0000",
      "Sc": "ffffff"
     }
    ],
-   "Eps": "5'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795117816422,
-    "RTm": 240000
-   },
-   "Epr": 1,
+   "T2": [
+    {
+     "ID": "101071",
+     "Nm": "Roma W",
+     "Img": "enet/584402.png",
+     "Abr": "ROM(W)",
+     "Fc": "8E1F2F",
+     "Sc": "F0BC42"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "13",
+   "ErnInf": "5",
    "Et": 1,
-   "Esd": 20261119204500,
-   "EO": 807141735,
-   "EOX": 807141735,
+   "Esd": 20261119210000,
+   "EO": 270041191,
+   "EOX": 270041191,
    "Spid": 1,
    "Pid": 8
   }
