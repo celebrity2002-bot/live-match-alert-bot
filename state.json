@@ -15,14 +15,14 @@
    "created": "2026-11-19T03:00:53.633058+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 203,
+   "last_total": 210,
    "sent": true,
    "direction": "under",
    "base": 164,
    "n": 1,
    "ref": 54.666666666666664,
    "signal_score": "95-74",
-   "last_score": "113-90"
+   "last_score": "116-94"
   },
   "bb_1868482|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868482|OZEL_BB_BENCH_COKUS",
@@ -39,14 +39,14 @@
    "created": "2026-11-19T03:00:54.084177+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 203,
+   "last_total": 210,
    "sent": true,
    "direction": "under",
    "base": 164,
    "n": 1,
    "ref": 54.666666666666664,
    "signal_score": "95-74",
-   "last_score": "113-90"
+   "last_score": "116-94"
   },
   "bb_1868478|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1868478|OZEL_BB_BENCH_COKUS",
@@ -63,14 +63,14 @@
    "created": "2026-11-19T03:00:54.529128+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 220,
+   "last_total": 226,
    "sent": true,
    "direction": "under",
    "base": 178,
    "n": 1,
    "ref": 59.333333333333336,
    "signal_score": "86-97",
-   "last_score": "103-117"
+   "last_score": "106-120"
   },
   "bb_1868476|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868476|BB_TEMPO_DUSUSU_ALT",
@@ -87,14 +87,14 @@
    "created": "2026-11-19T03:20:29.875729+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 54,
+   "last_total": 64,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "24-30",
-   "last_score": "24-30"
+   "last_score": "26-38"
   }
  }
 }
