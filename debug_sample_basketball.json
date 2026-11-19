@@ -5,67 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1851055",
-   "Pids": {
-    "8": "1851055",
-    "112": "SBTE_2_1028562763"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "EuroLeague TV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "97",
-   "Tr2": "96",
-   "Tr1OR": "97",
-   "Tr2OR": "96",
-   "Tr1Q1": "22",
-   "Tr2Q1": "26",
-   "Tr1Q2": "26",
-   "Tr2Q2": "19",
-   "Tr1Q3": "32",
-   "Tr2Q3": "27",
-   "Tr1Q4": "17",
-   "Tr2Q4": "24",
-   "T1": [
-    {
-     "ID": "28",
-     "Nm": "Paris Basketball",
-     "Img": "enet/960506.png",
-     "Abr": "PAR",
-     "Fc": "000000",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "2590",
-     "Nm": "Hapoel Tel Aviv",
-     "Img": "teambadge/hapoel-tel-aviv.png",
-     "Abr": "HAP"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "13",
-   "Et": 1,
-   "Esd": 20261119224500,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1851056",
    "Pids": {
     "112": "SBTE_2_1028562766",
@@ -93,18 +32,18 @@
      }
     ]
    },
-   "Tr1": "71",
-   "Tr2": "81",
-   "Tr1OR": "71",
-   "Tr2OR": "81",
+   "Tr1": "77",
+   "Tr2": "82",
+   "Tr1OR": "77",
+   "Tr2OR": "82",
    "Tr1Q1": "30",
    "Tr2Q1": "25",
    "Tr1Q2": "20",
    "Tr2Q2": "15",
    "Tr1Q3": "17",
    "Tr2Q3": "23",
-   "Tr1Q4": "4",
-   "Tr2Q4": "18",
+   "Tr1Q4": "10",
+   "Tr2Q4": "19",
    "T1": [
     {
      "ID": "55",
