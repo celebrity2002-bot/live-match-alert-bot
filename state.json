@@ -310,8 +310,8 @@
     2.0
    ],
    "created": "2026-11-19T18:50:32.313085+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 152,
    "sent": true,
    "direction": "over",
@@ -319,7 +319,10 @@
    "n": 1,
    "ref": 40.0,
    "signal_score": "62-62",
-   "last_score": "74-78"
+   "last_score": "74-78",
+   "final_total": 152,
+   "settled": "2026-11-19T19:25:25.503918+00:00",
+   "seg_avg": 32.0
   },
   "fb_1887731|FB_GERIDEN_FARK2": {
    "key": "fb_1887731|FB_GERIDEN_FARK2",
@@ -336,14 +339,38 @@
    "created": "2026-11-19T19:00:55.330758+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2"
+   "last_score": "0-3"
+  },
+  "bb_1851077|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1851077|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1851077",
+   "match": "FC Bayern Munchen - Saski Baskonia",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T19:25:25.038877+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 65,
+   "sent": true,
+   "direction": "under",
+   "base": 53,
+   "n": 3,
+   "ref": 53.0,
+   "signal_score": "34-31",
+   "last_score": "34-31"
   }
  }
 }
