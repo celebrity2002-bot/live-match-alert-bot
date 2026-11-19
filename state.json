@@ -69,14 +69,14 @@
    "created": "2026-11-19T00:40:31.375822+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 185,
+   "last_total": 193,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "39-32",
-   "last_score": "90-95"
+   "last_score": "96-97"
   },
   "bb_1868473|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868473|BB_TEMPO_DUSUSU_ALT",
@@ -93,14 +93,14 @@
    "created": "2026-11-19T00:40:31.946312+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 141,
+   "last_total": 156,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "28-39",
-   "last_score": "65-76"
+   "last_score": "72-84"
   },
   "bb_1868468|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868468|BB_TEMPO_DUSUSU_ALT",
@@ -117,14 +117,14 @@
    "created": "2026-11-19T00:40:32.409088+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 155,
+   "last_total": 169,
    "sent": true,
    "direction": "under",
    "base": 67,
    "n": 3,
    "ref": 67.0,
    "signal_score": "40-27",
-   "last_score": "79-76"
+   "last_score": "86-83"
   },
   "bb_1868471|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868471|BB_TEMPO_DUSUSU_ALT",
@@ -318,14 +318,14 @@
    "created": "2026-11-19T01:40:31.654415+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 60,
+   "last_total": 69,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "35-25",
-   "last_score": "35-25"
+   "last_score": "38-31"
   },
   "bb_1868510|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868510|BB_TEMPO_DUSUSU_ALT",
@@ -342,14 +342,62 @@
    "created": "2026-11-19T01:40:33.455424+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 62,
+   "last_total": 77,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "31-31",
-   "last_score": "31-31"
+   "last_score": "35-42"
+  },
+  "bb_1868478|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868478|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868478",
+   "match": "New Orleans Pelicans - Detroit Pistons",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-19T01:45:29.436817+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 76,
+   "sent": true,
+   "direction": "under",
+   "base": 62,
+   "n": 3,
+   "ref": 62.0,
+   "signal_score": "38-38",
+   "last_score": "38-38"
+  },
+  "fb_1708760|FB_GERIDEN_FARK2": {
+   "key": "fb_1708760|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1708760",
+   "match": "Corinthians - Botafogo FR",
+   "league": "Brazil Serie A",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-19T01:45:31.049714+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
   }
  }
 }
