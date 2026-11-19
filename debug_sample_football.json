@@ -5,62 +5,24 @@
  ],
  "events": [
   {
-   "Eid": "1887742",
+   "Eid": "1708752",
    "Pids": {
-    "112": "SBTE_2_1029027469",
-    "8": "1887742"
+    "112": "SBTE_2_1025985558",
+    "8": "1708752"
    },
    "Media": {
     "112": [
      {
-      "eventId": "BBC Three",
+      "eventId": "Azteca Deportes Network",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
+      "thumbnail": "azteca.png",
       "allowedCountries": [
-       "IE",
-       "GB"
+       "MX"
       ]
      },
      {
-      "eventId": "BBCi",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "TVC Deportes",
+      "eventId": "Fanatiz",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
@@ -69,136 +31,122 @@
      }
     ]
    },
-   "Tr1": "0",
-   "Tr2": "2",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "3935",
-     "Nm": "Arsenal W",
-     "Img": "teambadge/arsenal-square-2024.png",
-     "NewsTag": "/team/arsenal-women-2021020913320920836-26188/",
-     "Abr": "ARS(W)",
-     "Fc": "EF0107",
-     "Sc": "FDFDFD"
+     "ID": "4780",
+     "Nm": "Vasco da Gama",
+     "Img": "enet/10276.png",
+     "Abr": "VAS",
+     "Fc": "000000",
+     "Sc": "ff0000"
     }
    ],
    "T2": [
     {
-     "ID": "4763",
-     "Nm": "Lyon W",
-     "Img": "teambadge/lyonnes-2025.png",
-     "Abr": "LYO(W)",
-     "Fc": "14387F",
-     "Sc": "DA0812"
+     "ID": "4940",
+     "Nm": "Internacional",
+     "Img": "enet/8702.png",
+     "Abr": "INL",
+     "Fc": "ff0000",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795125011337,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "5",
+   "ErnInf": "35",
    "Et": 1,
-   "Esd": 20261119210000,
-   "EO": 371098495,
-   "EOX": 371098495,
+   "Esd": 20261119233000,
+   "EO": 807190631,
+   "EOX": 807190631,
    "Spid": 1,
    "Pid": 8
   },
   {
-   "Eid": "1887699",
+   "Eid": "1708781",
    "Pids": {
-    "112": "SBTE_2_1029042180",
-    "8": "1887699"
+    "112": "SBTE_2_1025985571",
+    "8": "1708781"
    },
    "Media": {
     "112": [
      {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Mega Sports",
+      "eventId": "Fanatiz",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
        "MX"
       ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
      }
     ]
    },
-   "Tr1": "2",
-   "Tr2": "2",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "2",
-   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "83076",
-     "Nm": "Benfica W",
-     "Img": "enet/1198668.png",
-     "Abr": "SLB(W)",
+     "ID": "4509",
+     "Nm": "Vitoria",
+     "Img": "enet/7733.png",
+     "Abr": "VIT",
      "Fc": "ff0000",
      "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "101071",
-     "Nm": "Roma W",
-     "Img": "enet/584402.png",
-     "Abr": "ROM(W)",
-     "Fc": "8E1F2F",
-     "Sc": "F0BC42"
+     "ID": "5042",
+     "Nm": "RB Bragantino",
+     "Img": "enet/109705.png",
+     "Abr": "RBB",
+     "Fc": "fcfcfc",
+     "Sc": "f50000"
     }
    ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795125011223,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "5",
+   "ErnInf": "35",
    "Et": 1,
-   "Esd": 20261119210000,
-   "EO": 270173055,
-   "EOX": 270173055,
+   "Esd": 20261119233000,
+   "EO": 807190631,
+   "EOX": 807190631,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1915351",
+   "Pids": {
+    "8": "1915351"
+   },
+   "T1": [
+    {
+     "ID": "10099",
+     "Nm": "Atletico Huila",
+     "Img": "enet/4400.png",
+     "Abr": "ATL",
+     "Fc": "ffff00",
+     "Sc": "ff0000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "10097",
+     "Nm": "Envigado",
+     "Img": "enet/4402.png",
+     "Abr": "ENV",
+     "Fc": "ff5706",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261119233000,
+   "EO": 807141383,
+   "EOX": 807141383,
    "Spid": 1,
    "Pid": 8
   }

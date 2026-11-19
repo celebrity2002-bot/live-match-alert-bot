@@ -418,8 +418,8 @@
     1.55
    ],
    "created": "2026-11-19T20:25:32.473020+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 178,
    "sent": true,
    "direction": "under",
@@ -427,7 +427,10 @@
    "n": 3,
    "ref": 55.0,
    "signal_score": "30-25",
-   "last_score": "91-87"
+   "last_score": "91-87",
+   "final_total": 178,
+   "settled": "2026-11-19T22:25:23.116789+00:00",
+   "seg_avg": 41.0
   },
   "fb_1887692|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1887692|FB_COK_GOLLU_ERKEN",
