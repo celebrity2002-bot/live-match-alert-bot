@@ -420,14 +420,14 @@
    "created": "2026-11-19T20:25:32.473020+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 93,
+   "last_total": 106,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "30-25",
-   "last_score": "50-43"
+   "last_score": "56-50"
   },
   "fb_1887692|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1887692|FB_COK_GOLLU_ERKEN",
@@ -476,6 +476,54 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1"
+  },
+  "bb_1851055|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1851055|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1851055",
+   "match": "Paris Basketball - Hapoel Tel Aviv",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-19T21:15:33.358305+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 158,
+   "sent": true,
+   "direction": "under",
+   "base": 152,
+   "n": 1,
+   "ref": 50.666666666666664,
+   "signal_score": "82-76",
+   "last_score": "82-76"
+  },
+  "fb_1887742|FB_GERIDEN_FARK2": {
+   "key": "fb_1887742|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1887742",
+   "match": "Arsenal W - Lyon W",
+   "league": "UEFA Women's Champions League Final Stage",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-19T21:15:35.003407+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
   }
  }
 }
