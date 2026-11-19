@@ -419,7 +419,7 @@
    ],
    "created": "2026-11-19T20:25:32.473020+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 178,
    "sent": true,
    "direction": "under",
