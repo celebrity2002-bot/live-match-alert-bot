@@ -5,15 +5,43 @@
  ],
  "events": [
   {
-   "Eid": "1708775",
+   "Eid": "1887731",
    "Pids": {
-    "112": "SBTE_2_1025985576",
-    "8": "1708775"
+    "112": "SBTE_2_1029027470",
+    "8": "1887731"
    },
    "Media": {
     "112": [
      {
-      "eventId": "Fanatiz",
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "TVC Deportes",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
@@ -22,46 +50,109 @@
      }
     ]
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "5001",
-     "Nm": "Gremio",
-     "Img": "enet/9769.png",
-     "Abr": "GRE",
-     "Fc": "b8edff",
-     "Sc": "000000"
+     "ID": "83522",
+     "Nm": "Austria Wien W",
+     "Img": "enet/1777852.png",
+     "Abr": "AUS(W)"
     }
    ],
    "T2": [
     {
-     "ID": "4507",
-     "Nm": "Bahia",
-     "Img": "enet/7877.png",
-     "Abr": "BAH",
-     "Fc": "ffffff",
-     "Sc": "0400ff"
+     "ID": "6723",
+     "Nm": "Bayern Munich W",
+     "Img": "enet/671935.png",
+     "Abr": "BAY(W)",
+     "Fc": "DC052D",
+     "Sc": "0066B2"
     }
    ],
-   "Eps": "90+5'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795055106229,
-    "RTm": 5400000,
-    "ITm": 240000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "35",
+   "ErnInf": "5",
    "Et": 1,
-   "Esd": 20261119013000,
-   "EO": 807322495,
-   "EOX": 807322495,
+   "Esd": 20261119184500,
+   "EO": 270041191,
+   "EOX": 270041191,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1887714",
+   "Pids": {
+    "8": "1887714",
+    "112": "SBTE_2_1029027463"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "TVC Deportes",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4646",
+     "Nm": "Paris FC W",
+     "Img": "teambadge/paris-fc-2024.png",
+     "Abr": "PAR(W)",
+     "Fc": "0C183F",
+     "Sc": "0680BE"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "100139",
+     "Nm": "HB Koege W",
+     "Img": "enet/1170164.png",
+     "Abr": "HBK(W)"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "5",
+   "Et": 1,
+   "Esd": 20261119184500,
+   "EO": 270041191,
+   "EOX": 270041191,
    "Spid": 1,
    "Pid": 8
   }
