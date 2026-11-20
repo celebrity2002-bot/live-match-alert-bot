@@ -5,22 +5,13 @@
  ],
  "events": [
   {
-   "Eid": "1810738",
+   "Eid": "1918809",
    "Pids": {
-    "8": "1810738",
-    "112": "SBTE_2_1028209218"
+    "112": "SBTE_2_1029883758",
+    "8": "1918809"
    },
    "Media": {
     "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
@@ -32,53 +23,7 @@
       ]
      },
      {
-      "eventId": "ESPN+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "LaLigaTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "la-liga.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "Premier Sports 1",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "premier-sports.png",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Sky Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "TSN+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "828rogo7p3et735q5pmlh2tck",
+      "eventId": "5keqigv610xtphvq66xb6k7pw",
       "provider": "UNKNOWN_PROVIDER",
       "type": "LIVE_STREAMING",
       "allowedCountries": [
@@ -89,193 +34,165 @@
     ]
    },
    "Tr1": "0",
-   "Tr2": "1",
+   "Tr2": "0",
    "Trh1": "0",
    "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "1",
    "T1": [
     {
-     "ID": "3408",
-     "Nm": "Athletic Club",
-     "Img": "enet/8315.png",
-     "NewsTag": "/team/athletic-bilbao-2021020913320920836-198/",
-     "Abr": "ATB",
-     "Fc": "EE2523",
-     "Sc": "FDFDFD"
+     "ID": "6379",
+     "Nm": "Independiente Medellin",
+     "Img": "enet/2528.png",
+     "Abr": "IND",
+     "Fc": "cc0000",
+     "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "12635",
-     "Nm": "Espanyol",
-     "Img": "enet/8558.png",
-     "NewsTag": "/team/espanyol-2021020913320920836-201/",
-     "Abr": "ESY",
-     "Fc": "0119cb",
+     "ID": "8330",
+     "Nm": "Santa Fe",
+     "Img": "enet/7818.png",
+     "Abr": "SAN",
+     "Fc": "dd0000",
      "Sc": "ffffff"
     }
    ],
-   "Eps": "90+1'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795211411358,
-    "RTm": 5400000,
-    "ITm": 0
-   },
-   "Epr": 1,
+   "Eps": "Int.",
+   "Esid": 12,
+   "Epr": 6,
    "Ecov": 0,
-   "ErnInf": "13",
+   "ErnInf": "Clausura - Quadrangular Group A",
    "Et": 1,
-   "Esd": 20261120210000,
-   "EO": 908051327,
-   "EOX": 908051327,
+   "Esd": 20261120223000,
+   "EO": 807158119,
+   "EOX": 807158119,
    "Spid": 1,
    "Pid": 8
   },
   {
-   "Eid": "1803054",
+   "Eid": "1911854",
    "Pids": {
-    "112": "SBTE_2_1028143392",
-    "8": "1803054"
+    "112": "SBTE_2_1029639910",
+    "8": "1911854"
    },
    "Media": {
     "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
       "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
        "US",
        "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports Football",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
       ]
      }
     ]
    },
    "Tr1": "1",
-   "Tr2": "2",
+   "Tr2": "0",
    "Trh1": "1",
-   "Trh2": "2",
+   "Trh2": "0",
    "Tr1OR": "1",
-   "Tr2OR": "2",
+   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "2829",
-     "Nm": "Barnsley",
-     "Img": "enet/8283.png",
-     "NewsTag": "/team/barnsley-2022062716001253418-124/",
-     "Abr": "BAR",
-     "Fc": "D71921",
+     "ID": "262",
+     "Nm": "FC Porto",
+     "Img": "enet/9773.png",
+     "NewsTag": "/team/fc-porto-2021020913320920836-451/",
+     "Abr": "POR",
+     "Fc": "00428C",
      "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "3144",
-     "Nm": "Sheffield Wednesday",
-     "Img": "teambadge/sheffield-wednesday.png",
-     "NewsTag": "/team/sheffield-wednesday-2021020913320920836-138/",
-     "Abr": "SHW",
-     "Fc": "FDFDFD",
-     "Sc": "4681cf"
+     "ID": "4019",
+     "Nm": "Paredes",
+     "Img": "enet/2503.png",
+     "Abr": "PAR"
     }
    ],
-   "Eps": "90+4'",
+   "Eps": "49'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795211441018,
-    "RTm": 5400000,
-    "ITm": 180000
+    "ATm": 1795211711222,
+    "RTm": 2880000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "4",
    "Et": 1,
-   "Eit": "5",
-   "Esd": 20261120210000,
-   "EO": 907985791,
-   "EOX": 907985791,
+   "Esd": 20261120214500,
+   "EO": 2484109359,
+   "EOX": 2484109359,
    "Spid": 1,
    "Pid": 8
   },
   {
-   "Eid": "1820002",
+   "Eid": "1814513",
    "Pids": {
-    "112": "SBTE_2_1029647124",
-    "8": "1820002"
+    "112": "SBTE_2_1029263140",
+    "8": "1814513"
    },
-   "Tr1": "1",
-   "Tr2": "1",
+   "Inc-f": {
+    "1": [
+     {
+      "IT": 1037,
+      "Nm": 2,
+      "Sc": [
+       1,
+       1
+      ]
+     },
+     {
+      "IT": 1048,
+      "Nm": 1
+     }
+    ]
+   },
+   "Tr1": "2",
+   "Tr2": "2",
    "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
+   "Trh2": "2",
+   "Tr1OR": "2",
+   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "407690",
-     "Nm": "Toulouse",
-     "Abr": "TOU"
+     "ID": "3277",
+     "Nm": "Villarreal B",
+     "Img": "enet/161771.png",
+     "Abr": "VIL",
+     "Fc": "eeea42",
+     "Sc": "3f5170"
     }
    ],
    "T2": [
     {
-     "ID": "4654",
-     "Nm": "Marseille W",
-     "Img": "enet/626232.png",
-     "Abr": "MAR(W)"
+     "ID": "395",
+     "Nm": "Gimnastic",
+     "Img": "enet/8400.png",
+     "Abr": "GIM",
+     "Fc": "ff0000",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "90+3'",
+   "Eps": "90+5'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795211426178,
+    "ATm": 1795211681003,
     "RTm": 5400000,
-    "ITm": 120000
+    "ITm": 240000
    },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "10",
+   "ErnInf": "Group 2",
    "Et": 1,
+   "Eit": "6",
    "Esd": 20261120210000,
-   "EO": 806895999,
-   "EOX": 806895999,
+   "EO": 807141759,
+   "EOX": 807141759,
    "Spid": 1,
    "Pid": 8
   }
