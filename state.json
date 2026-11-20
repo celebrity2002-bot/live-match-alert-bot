@@ -15,14 +15,14 @@
    "created": "2026-11-20T17:30:57.619710+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 70,
+   "last_total": 72,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "17-19",
-   "last_score": "36-34"
+   "last_score": "38-34"
   },
   "bb_1884593|BB_HT_DUSUK_UST": {
    "key": "bb_1884593|BB_HT_DUSUK_UST",
@@ -39,14 +39,14 @@
    "created": "2026-11-20T18:00:56.197290+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 70,
+   "last_total": 72,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "36-34",
-   "last_score": "36-34"
+   "last_score": "38-34"
   },
   "fb_1813394|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1813394|FB_COK_GOLLU_ERKEN",
