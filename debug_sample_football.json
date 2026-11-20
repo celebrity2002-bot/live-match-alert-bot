@@ -73,11 +73,11 @@
      "Sc": "00613C"
     }
    ],
-   "Eps": "5'",
+   "Eps": "10'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795134880952,
-    "RTm": 240000
+    "ATm": 1795135210966,
+    "RTm": 540000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -86,6 +86,86 @@
    "Esd": 20261120013000,
    "EO": 807190887,
    "EOX": 807190887,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1913938",
+   "Pids": {
+    "8": "1913938"
+   },
+   "T1": [
+    {
+     "ID": "9148",
+     "Nm": "Real Cartagena",
+     "Img": "enet/7731.png",
+     "Abr": "REA"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9357",
+     "Nm": "Tigres FC",
+     "Img": "enet/193030.png",
+     "Abr": "TIG"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261120014500,
+   "EO": 807141383,
+   "EOX": 807141383,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1913939",
+   "Pids": {
+    "112": "SBTE_2_1029911893",
+    "8": "1913939"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "asdfne3ot2c93kcdqgbbzs4r8",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "10780",
+     "Nm": "Real Soacha Cundinamarca",
+     "Img": "enet/193026.png",
+     "Abr": "REA"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "9369",
+     "Nm": "Deportes Quindio",
+     "Img": "enet/4407.png",
+     "Abr": "DEP"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "6",
+   "Et": 1,
+   "Esd": 20261120014500,
+   "EO": 807141383,
+   "EOX": 807141383,
    "Spid": 1,
    "Pid": 8
   }

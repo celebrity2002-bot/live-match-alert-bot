@@ -580,8 +580,8 @@
     1.6
    ],
    "created": "2026-11-19T23:20:39.891280+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -589,7 +589,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-20T00:40:31.005244+00:00",
+   "seg_avg": 3.0
   },
   "fb_1708781|FB_GERIDEN_FARK2": {
    "key": "fb_1708781|FB_GERIDEN_FARK2",
@@ -605,7 +608,7 @@
    ],
    "created": "2026-11-19T23:55:23.677931+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -628,8 +631,8 @@
     1.85
    ],
    "created": "2026-11-19T23:55:24.200995+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -637,7 +640,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-20T00:40:31.468799+00:00",
+   "seg_avg": 2.0
   },
   "fb_1915350|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1915350|OZEL_FB_BASKI_SIKISMA",
@@ -652,8 +658,8 @@
     2.05
    ],
    "created": "2026-11-19T23:55:24.697352+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": false,
    "direction": "over",
@@ -661,7 +667,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-20T00:40:31.914143+00:00",
+   "seg_avg": 2.0
   },
   "fb_1708752|FB_TEK_FARK_70": {
    "key": "fb_1708752|FB_TEK_FARK_70",
@@ -676,8 +685,8 @@
     1.85
    ],
    "created": "2026-11-20T00:00:02.912353+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -685,7 +694,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-20T00:40:31.914212+00:00",
+   "seg_avg": 0.0
   },
   "fb_1708781|FB_TEK_FARK_70": {
    "key": "fb_1708781|FB_TEK_FARK_70",
@@ -701,7 +713,7 @@
    ],
    "created": "2026-11-20T00:15:32.780998+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
