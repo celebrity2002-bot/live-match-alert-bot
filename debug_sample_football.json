@@ -61,76 +61,6 @@
    "Pid": 8
   },
   {
-   "Eid": "1708752",
-   "Pids": {
-    "112": "SBTE_2_1025985558",
-    "8": "1708752"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Azteca Deportes Network",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "azteca.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Fanatiz",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "4780",
-     "Nm": "Vasco da Gama",
-     "Img": "enet/10276.png",
-     "Abr": "VAS",
-     "Fc": "000000",
-     "Sc": "ff0000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "4940",
-     "Nm": "Internacional",
-     "Img": "enet/8702.png",
-     "Abr": "INL",
-     "Fc": "ff0000",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+4'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795134281272,
-    "RTm": 5400000,
-    "ITm": 180000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "35",
-   "Et": 1,
-   "Esd": 20261119233000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1708781",
    "Pids": {
     "112": "SBTE_2_1025985571",
@@ -174,11 +104,12 @@
      "Sc": "f50000"
     }
    ],
-   "Eps": "88'",
+   "Eps": "90+3'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795134306268,
-    "RTm": 5220000
+    "ATm": 1795134611412,
+    "RTm": 5400000,
+    "ITm": 120000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -187,6 +118,91 @@
    "Esd": 20261119233000,
    "EO": 807322495,
    "EOX": 807322495,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1708756",
+   "Pids": {
+    "112": "SBTE_2_1025985556",
+    "8": "1708756"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Azteca Deportes Network",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "azteca.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Globo Internacional",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Premier Player",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "premier-sports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "T1": [
+    {
+     "ID": "4949",
+     "Nm": "Sao Paulo",
+     "Img": "enet/10277.png",
+     "Abr": "SAO",
+     "Fc": "ffffff",
+     "Sc": "860f23"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4840",
+     "Nm": "Fluminense",
+     "Img": "enet/9863.png",
+     "Abr": "FLU",
+     "Fc": "870A28",
+     "Sc": "00613C"
+    }
+   ],
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795134641012,
+    "RTm": 0
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Regular Season",
+   "Et": 1,
+   "Esd": 20261120013000,
+   "EO": 807190887,
+   "EOX": 807190887,
    "Spid": 1,
    "Pid": 8
   }
