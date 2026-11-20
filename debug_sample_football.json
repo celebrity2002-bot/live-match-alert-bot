@@ -5,10 +5,77 @@
  ],
  "events": [
   {
+   "Eid": "1916985",
+   "Pids": {
+    "112": "SBTE_2_1029801998",
+    "8": "1916985"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Fanatiz",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "TyC Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "auyzzzl846j8bf9cve5gau39w",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "5221",
+     "Nm": "Velez Sarsfield",
+     "Img": "enet/10079.png",
+     "Abr": "VEL",
+     "Fc": "ffffff",
+     "Sc": "003366"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "6846",
+     "Nm": "Belgrano",
+     "Img": "enet/10092.png",
+     "Abr": "BEL",
+     "Fc": "22b7ff",
+     "Sc": "000000"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "1/8",
+   "Et": 1,
+   "Esd": 20261121000000,
+   "EO": 2417229927,
+   "EOX": 2417229927,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
    "Eid": "1918809",
    "Pids": {
-    "112": "SBTE_2_1029883758",
-    "8": "1918809"
+    "8": "1918809",
+    "112": "SBTE_2_1029883758"
    },
    "Media": {
     "112": [
