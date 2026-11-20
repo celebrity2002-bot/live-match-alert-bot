@@ -65,11 +65,11 @@
      "Sc": "000000"
     }
    ],
-   "Eps": "26'",
+   "Eps": "31'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795217111175,
-    "RTm": 1500000
+    "ATm": 1795217441483,
+    "RTm": 1800000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -134,78 +134,70 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "36'",
+   "Eps": "42'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795217051085,
-    "RTm": 2100000
+    "ATm": 1795217411031,
+    "RTm": 2460000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Clausura - Quadrangular Group A",
    "Et": 1,
    "Esd": 20261120223000,
-   "EO": 807158135,
-   "EOX": 807158135,
+   "EO": 807158143,
+   "EOX": 807158143,
    "Spid": 1,
    "Pid": 8
   },
   {
-   "Eid": "1911854",
+   "Eid": "1918811",
    "Pids": {
-    "8": "1911854",
-    "112": "SBTE_2_1029639910"
+    "112": "SBTE_2_1029883767",
+    "8": "1918811"
    },
    "Media": {
     "112": [
      {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
+      "eventId": "2wmtwx4xluk4vmp4pi4a8sx04",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "US",
-       "US"
+       "GB",
+       "IE"
       ]
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Tr2ET": "0",
-   "Tr1ET": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
    "T1": [
     {
-     "ID": "262",
-     "Nm": "FC Porto",
-     "Img": "enet/9773.png",
-     "NewsTag": "/team/fc-porto-2021020913320920836-451/",
-     "Abr": "POR",
-     "Fc": "00428C",
-     "Sc": "FDFDFD"
+     "ID": "10100",
+     "Nm": "Bucaramanga",
+     "Img": "enet/4401.png",
+     "Abr": "BUC",
+     "Fc": "ffff00",
+     "Sc": "009400"
     }
    ],
    "T2": [
     {
-     "ID": "4019",
-     "Nm": "Paredes",
-     "Img": "enet/2503.png",
-     "Abr": "PAR"
+     "ID": "7356",
+     "Nm": "America de Cali",
+     "Img": "enet/10280.png",
+     "Abr": "AME",
+     "Fc": "ed303b",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "Pen",
-   "Esid": 20,
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "4",
+   "ErnInf": "1",
    "Et": 1,
-   "Esd": 20261120214500,
-   "EO": 2484109359,
-   "EOX": 2484109359,
+   "Esd": 20261121003500,
+   "EO": 807157863,
+   "EOX": 807157863,
    "Spid": 1,
    "Pid": 8
   }
