@@ -135,14 +135,14 @@
    "created": "2026-11-20T18:20:37.753898+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1826204|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1826204|FB_COK_GOLLU_ERKEN",
@@ -231,14 +231,14 @@
    "created": "2026-11-20T18:50:34.550366+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1812350|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1812350|OZEL_FB_BASKI_SIKISMA",
@@ -255,14 +255,14 @@
    "created": "2026-11-20T18:50:34.872797+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1826189|FB_IY2_00": {
    "key": "fb_1826189|FB_IY2_00",
@@ -303,14 +303,14 @@
    "created": "2026-11-20T18:50:35.513336+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1830272|FB_IY2_00": {
    "key": "fb_1830272|FB_IY2_00",
@@ -423,14 +423,14 @@
    "created": "2026-11-20T18:55:27.440368+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1812336|FB_TEK_FARK_70": {
    "key": "fb_1812336|FB_TEK_FARK_70",
@@ -591,14 +591,14 @@
    "created": "2026-11-20T19:10:37.184986+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-1"
   }
  }
 }
