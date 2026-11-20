@@ -13,8 +13,8 @@
     1.85
    ],
    "created": "2026-11-20T21:30:49.123677+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -22,7 +22,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-20T22:05:27.506609+00:00",
+   "seg_avg": 0.0
   },
   "fb_1810738|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1810738|OZEL_FB_BASKI_SIKISMA",
@@ -37,8 +40,8 @@
     2.05
    ],
    "created": "2026-11-20T21:30:49.624877+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -46,7 +49,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-20T22:05:27.998883+00:00",
+   "seg_avg": 0.0
   },
   "fb_1803054|FB_TEK_FARK_70": {
    "key": "fb_1803054|FB_TEK_FARK_70",
@@ -61,8 +67,8 @@
     1.85
    ],
    "created": "2026-11-20T21:30:50.116937+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -70,7 +76,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "1-2",
+   "final_total": 3,
+   "settled": "2026-11-20T22:05:28.507909+00:00",
+   "seg_avg": 0.0
   },
   "fb_1820002|FB_TEK_FARK_70": {
    "key": "fb_1820002|FB_TEK_FARK_70",
@@ -85,8 +94,8 @@
     1.85
    ],
    "created": "2026-11-20T21:30:50.673569+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -94,7 +103,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-20T22:05:29.020982+00:00",
+   "seg_avg": 1.0
   },
   "fb_1820002|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1820002|OZEL_FB_BASKI_SIKISMA",
@@ -109,8 +121,8 @@
     2.05
    ],
    "created": "2026-11-20T21:30:51.159825+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -118,7 +130,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-1"
+   "last_score": "1-1",
+   "final_total": 2,
+   "settled": "2026-11-20T22:05:29.514210+00:00",
+   "seg_avg": 1.0
   },
   "fb_1814513|FB_TEK_FARK_70": {
    "key": "fb_1814513|FB_TEK_FARK_70",
@@ -134,7 +149,7 @@
    ],
    "created": "2026-11-20T21:30:51.665083+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 4,
    "sent": true,
    "direction": "over",
