@@ -5,6 +5,121 @@
  ],
  "events": [
   {
+   "Eid": "1812740",
+   "Pids": {
+    "8": "1812740",
+    "112": "SBTE_2_1028230554"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "BBCi",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "bbc.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "FOX",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Fandango",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Peacock",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "av:stream:33756297",
+      "provider": "SPORTRADAR",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "2940",
+     "Nm": "Bayern Munich",
+     "Img": "enet/9823.png",
+     "NewsTag": "/team/bayern-munich-2021020913320920836-233/",
+     "Abr": "BAY",
+     "Fc": "DC052D",
+     "Sc": "0066B2"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "285",
+     "Nm": "FC Cologne",
+     "Img": "enet/8722.png",
+     "NewsTag": "/team/fc-koln-2021020913320920836-228/",
+     "Abr": "CGN",
+     "Fc": "ED1C24",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "10",
+   "Et": 1,
+   "Esd": 20261120203000,
+   "EO": 899530855,
+   "EOX": 899530855,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
    "Eid": "1845677",
    "Pids": {
     "112": "SBTE_2_1029486624",
@@ -80,16 +195,18 @@
      "Sc": "22558c"
     }
    ],
-   "Eps": "90'",
+   "Eps": "90+5'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795202411349,
-    "RTm": 5340000
+    "ATm": 1795202711264,
+    "RTm": 5400000,
+    "ITm": 240000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
    "Et": 1,
+   "Eit": "6",
    "Esd": 20261120183000,
    "EO": 874431359,
    "EOX": 874431359,
@@ -97,164 +214,62 @@
    "Pid": 8
   },
   {
-   "Eid": "1813384",
+   "Eid": "1811148",
    "Pids": {
-    "8": "1813384",
-    "112": "SBTE_2_1028231046"
+    "8": "1811148",
+    "112": "SBTE_2_1029652461"
    },
    "Media": {
     "112": [
      {
-      "eventId": "FuboTV",
+      "eventId": "Sky Sports",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
+      "thumbnail": "skysports.png",
       "allowedCountries": [
-       "US",
-       "CA"
+       "MX"
       ]
      },
      {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
+      "eventId": "4g05ozyz1hnxkitr0bfwd7llg",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Bundesliga YouTube",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
+       "GB",
+       "IE"
       ]
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "2",
-   "Trh1": "0",
-   "Trh2": "2",
-   "Tr1OR": "1",
-   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "5261",
-     "Nm": "Arminia Bielefeld",
-     "Img": "enet/9912.png",
-     "Abr": "BIE",
-     "Fc": "ffffff",
-     "Sc": "000a99"
+     "ID": "3858",
+     "Nm": "FC Andorra",
+     "Img": "enet/494050.png",
+     "Abr": "FCA",
+     "Fc": "c01111",
+     "Sc": "000000"
     }
    ],
    "T2": [
     {
-     "ID": "4453",
-     "Nm": "Magdeburg",
-     "Img": "enet/8188.png",
-     "Abr": "MAG",
+     "ID": "3452",
+     "Nm": "Leganes",
+     "Img": "enet/7854.png",
+     "Abr": "LEG",
      "Fc": "ffffff",
-     "Sc": "005aa3"
+     "Sc": "004099"
     }
    ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795202411217,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "15",
    "Et": 1,
-   "Esd": 20261120183000,
-   "EO": 840876927,
-   "EOX": 840876927,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1813394",
-   "Pids": {
-    "112": "SBTE_2_1028231087",
-    "8": "1813394"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Bundesliga YouTube",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "3",
-   "Tr2": "1",
-   "Trh1": "2",
-   "Trh2": "1",
-   "Tr1OR": "3",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "5305",
-     "Nm": "Darmstadt",
-     "Img": "enet/8262.png",
-     "Abr": "DAR",
-     "Fc": "004C99",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5278",
-     "Nm": "FC Heidenheim",
-     "Img": "enet/94937.png",
-     "Abr": "HEI",
-     "Fc": "E2001A",
-     "Sc": "003B79"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795202426243,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "12",
-   "Et": 1,
-   "Esd": 20261120183000,
-   "EO": 907985791,
-   "EOX": 907985791,
+   "Esd": 20261120203000,
+   "EO": 807157863,
+   "EOX": 807157863,
    "Spid": 1,
    "Pid": 8
   }
