@@ -2577,14 +2577,22 @@
    "created": "2026-11-20T21:05:39.327516+00:00",
    "status": "pending",
    "missing_runs": 0,
+<<<<<<< Updated upstream
    "last_total": 148,
+=======
+   "last_total": 149,
+>>>>>>> Stashed changes
    "sent": true,
    "direction": "over",
    "base": 118,
    "n": 1,
    "ref": 39.333333333333336,
    "signal_score": "62-62",
+<<<<<<< Updated upstream
    "last_score": "77-71"
+=======
+   "last_score": "77-72"
+>>>>>>> Stashed changes
   },
   "fb_1811148|FB_TEK_FARK_70": {
    "key": "fb_1811148|FB_TEK_FARK_70",
@@ -2742,7 +2750,11 @@
     1.65,
     2.05
    ],
+<<<<<<< Updated upstream
    "created": "2026-11-20T21:25:36.585068+00:00",
+=======
+   "created": "2026-11-20T21:25:51.114918+00:00",
+>>>>>>> Stashed changes
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
@@ -2766,7 +2778,11 @@
     1.45,
     1.85
    ],
+<<<<<<< Updated upstream
    "created": "2026-11-20T21:25:36.863392+00:00",
+=======
+   "created": "2026-11-20T21:25:51.553605+00:00",
+>>>>>>> Stashed changes
    "status": "pending",
    "missing_runs": 0,
    "last_total": 3,
@@ -2790,7 +2806,11 @@
     1.45,
     1.85
    ],
+<<<<<<< Updated upstream
    "created": "2026-11-20T21:25:37.142152+00:00",
+=======
+   "created": "2026-11-20T21:25:51.951101+00:00",
+>>>>>>> Stashed changes
    "status": "pending",
    "missing_runs": 0,
    "last_total": 1,
@@ -2814,7 +2834,11 @@
     1.65,
     2.05
    ],
+<<<<<<< Updated upstream
    "created": "2026-11-20T21:25:37.458314+00:00",
+=======
+   "created": "2026-11-20T21:25:52.346424+00:00",
+>>>>>>> Stashed changes
    "status": "pending",
    "missing_runs": 0,
    "last_total": 1,
@@ -2838,7 +2862,11 @@
     1.45,
     1.85
    ],
+<<<<<<< Updated upstream
    "created": "2026-11-20T21:25:37.752703+00:00",
+=======
+   "created": "2026-11-20T21:25:52.749788+00:00",
+>>>>>>> Stashed changes
    "status": "pending",
    "missing_runs": 0,
    "last_total": 3,
