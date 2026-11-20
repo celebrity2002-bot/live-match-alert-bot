@@ -137,8 +137,12 @@
      "Sc": "00613C"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "48'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795138810966,
+    "RTm": 2820000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
