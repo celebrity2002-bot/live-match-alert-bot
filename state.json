@@ -188,6 +188,30 @@
    "final_total": 2,
    "settled": "2026-11-20T22:20:33.363480+00:00",
    "seg_avg": 0.0
+  },
+  "fb_1918809|FB_IY2_00": {
+   "key": "fb_1918809|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1918809",
+   "match": "Independiente Medellin - Santa Fe",
+   "league": "Colombia Primera A: Clausura: Play-off: Group A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-20T23:35:26.032795+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
