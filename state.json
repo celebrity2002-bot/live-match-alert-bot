@@ -15,14 +15,14 @@
    "created": "2026-11-20T17:30:57.619710+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 109,
+   "last_total": 121,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "17-19",
-   "last_score": "50-59"
+   "last_score": "59-62"
   },
   "bb_1884593|BB_HT_DUSUK_UST": {
    "key": "bb_1884593|BB_HT_DUSUK_UST",
@@ -39,14 +39,14 @@
    "created": "2026-11-20T18:00:56.197290+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 109,
+   "last_total": 121,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "36-34",
-   "last_score": "50-59"
+   "last_score": "59-62"
   },
   "fb_1813394|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1813394|FB_COK_GOLLU_ERKEN",
@@ -63,14 +63,14 @@
    "created": "2026-11-20T18:00:57.821825+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1812327|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1812327|FB_COK_GOLLU_ERKEN",
@@ -87,14 +87,14 @@
    "created": "2026-11-20T18:00:58.254151+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-4"
+   "last_score": "1-5"
   },
   "fb_1812336|FB_IY2_00": {
    "key": "fb_1812336|FB_IY2_00",
@@ -231,14 +231,14 @@
    "created": "2026-11-20T18:50:34.550366+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1812350|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1812350|OZEL_FB_BASKI_SIKISMA",
@@ -255,14 +255,14 @@
    "created": "2026-11-20T18:50:34.872797+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1826189|FB_IY2_00": {
    "key": "fb_1826189|FB_IY2_00",
@@ -325,6 +325,102 @@
     1.6
    ],
    "created": "2026-11-20T18:50:35.830762+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1813384|FB_TEK_FARK_70": {
+   "key": "fb_1813384|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1813384",
+   "match": "Arminia Bielefeld - Magdeburg",
+   "league": "Germany 2. Bundesliga",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-20T18:55:26.273106+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
+  },
+  "fb_1813394|FB_GERIDEN_FARK2": {
+   "key": "fb_1813394|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1813394",
+   "match": "Darmstadt - FC Heidenheim",
+   "league": "Germany 2. Bundesliga",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-20T18:55:26.668942+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-1",
+   "last_score": "3-1"
+  },
+  "fb_1812325|FB_GERIDEN_FARK2": {
+   "key": "fb_1812325|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1812325",
+   "match": "SKN St. Poelten - ASK Voitsberg",
+   "league": "Austria 2. Liga",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-20T18:55:27.046919+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2"
+  },
+  "fb_1826837|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1826837|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1826837",
+   "match": "Wattenscheid - FC Cologne II",
+   "league": "Germany Regionalliga West",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.65,
+    2.05
+   ],
+   "created": "2026-11-20T18:55:27.440368+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
