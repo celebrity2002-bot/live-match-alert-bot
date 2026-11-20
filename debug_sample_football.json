@@ -5,10 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1916743",
+   "Eid": "1916748",
    "Pids": {
-    "112": "SBTE_2_1029790638",
-    "8": "1916743"
+    "112": "SBTE_2_1029790637",
+    "8": "1916748"
    },
    "Media": {
     "112": [
@@ -27,149 +27,35 @@
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "3",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "3",
    "T1": [
     {
-     "ID": "8893",
-     "Nm": "Orlando City",
-     "Img": "enet/267810.png",
-     "Abr": "ORL",
-     "Fc": "633492",
-     "Sc": "FDE192"
+     "ID": "8301",
+     "Nm": "Seattle Sounders FC",
+     "Img": "enet/130394.png",
+     "Abr": "SEA",
+     "Fc": "5D9741",
+     "Sc": "005595"
     }
    ],
    "T2": [
     {
-     "ID": "8948",
-     "Nm": "FC Cincinnati",
-     "Img": "enet/722265.png",
-     "NewsTag": "/team/fc-cincinnati-2021020913320920836-6705/",
-     "Abr": "CIN",
-     "Fc": "263B80",
-     "Sc": "FDFDFD"
+     "ID": "8894",
+     "Nm": "Real Salt Lake",
+     "Img": "enet/6606.png",
+     "Abr": "RSL",
+     "Fc": "B30838",
+     "Sc": "013A81"
     }
    ],
-   "Eps": "90+5'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795142111302,
-    "RTm": 5400000,
-    "ITm": 240000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
    "ErnInf": "1/16",
    "Et": 1,
-   "Esd": 20261120013000,
-   "EO": 2484519807,
-   "EOX": 2484519807,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1913938",
-   "Pids": {
-    "8": "1913938"
-   },
-   "Tr1": "5",
-   "Tr2": "0",
-   "Trh1": "3",
-   "Trh2": "0",
-   "Tr1OR": "5",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "9148",
-     "Nm": "Real Cartagena",
-     "Img": "enet/7731.png",
-     "Abr": "REA"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9357",
-     "Nm": "Tigres FC",
-     "Img": "enet/193030.png",
-     "Abr": "TIG"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795142111184,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261120014500,
-   "EO": 807141391,
-   "EOX": 807141391,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1913939",
-   "Pids": {
-    "112": "SBTE_2_1029911893",
-    "8": "1913939"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "asdfne3ot2c93kcdqgbbzs4r8",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "2",
-   "Trh1": "0",
-   "Trh2": "2",
-   "Tr1OR": "0",
-   "Tr2OR": "2",
-   "T1": [
-    {
-     "ID": "10780",
-     "Nm": "Real Soacha Cundinamarca",
-     "Img": "enet/193026.png",
-     "Abr": "REA"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "9369",
-     "Nm": "Deportes Quindio",
-     "Img": "enet/4407.png",
-     "Abr": "DEP"
-    }
-   ],
-   "Eps": "90+2'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795142126219,
-    "RTm": 5400000,
-    "ITm": 60000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "6",
-   "Et": 1,
-   "Esd": 20261120014500,
-   "EO": 807141391,
-   "EOX": 807141391,
+   "Esd": 20261120040000,
+   "EO": 2484387943,
+   "EOX": 2484387943,
    "Spid": 1,
    "Pid": 8
   }
