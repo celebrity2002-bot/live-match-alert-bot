@@ -87,14 +87,14 @@
    "created": "2026-11-20T21:30:50.673569+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1820002|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1820002|OZEL_FB_BASKI_SIKISMA",
@@ -111,14 +111,14 @@
    "created": "2026-11-20T21:30:51.159825+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1814513|FB_TEK_FARK_70": {
    "key": "fb_1814513|FB_TEK_FARK_70",
