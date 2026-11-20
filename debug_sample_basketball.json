@@ -68,17 +68,77 @@
    "Pid": 8
   },
   {
+   "Eid": "1851087",
+   "Pids": {
+    "112": "SBTE_2_1028562735",
+    "8": "1851087"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Azteca Deportes Network",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "azteca.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "EuroLeague TV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "56",
+     "Nm": "Olympiacos B.C.",
+     "Img": "enet/58596.png",
+     "Abr": "OLY",
+     "Fc": "E21E26",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1942",
+     "Nm": "Real Madrid",
+     "Img": "enet/58630.png",
+     "Abr": "RMA",
+     "Fc": "FDFDFD",
+     "Sc": "00529F"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "13",
+   "Et": 1,
+   "Esd": 20261120221500,
+   "EO": 524295,
+   "EOX": 524295,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
    "Eid": "1886834",
    "Pids": {
     "112": "SBTE_2_1028992926",
     "8": "1886834"
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "Tr1Q1": "0",
-   "Tr2Q1": "0",
+   "Tr1": "11",
+   "Tr2": "5",
+   "Tr1OR": "11",
+   "Tr2OR": "5",
+   "Tr1Q1": "11",
+   "Tr2Q1": "5",
    "T1": [
     {
      "ID": "99",
@@ -100,46 +160,6 @@
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "9",
-   "Et": 1,
-   "Esd": 20261120220000,
-   "EO": 524295,
-   "EOX": 524295,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
-   "Eid": "1844075",
-   "Pids": {
-    "112": "SBTE_2_1028475236",
-    "8": "1844075"
-   },
-   "Tr1": "5",
-   "Tr2": "5",
-   "Tr1OR": "5",
-   "Tr2OR": "5",
-   "Tr1Q1": "5",
-   "Tr2Q1": "5",
-   "T1": [
-    {
-     "ID": "31",
-     "Nm": "Aix-Maurienne",
-     "Img": "enet/165730.png",
-     "Abr": "AIX"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "52",
-     "Nm": "ADA Blois Basket",
-     "Img": "enet/767833.png",
-     "Abr": "ADA"
-    }
-   ],
-   "Eps": "1Q",
-   "Esid": 35,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "11",
    "Et": 1,
    "Esd": 20261120220000,
    "EO": 524295,
