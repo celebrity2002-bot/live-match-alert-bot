@@ -5,123 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1916743",
-   "Pids": {
-    "112": "SBTE_2_1029790638",
-    "8": "1916743"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Apple TV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "apple-tv.png",
-      "allowedCountries": [
-       "IE",
-       "CA",
-       "GB",
-       "US",
-       "MX"
-      ]
-     }
-    ]
-   },
-   "T1": [
-    {
-     "ID": "8893",
-     "Nm": "Orlando City",
-     "Img": "enet/267810.png",
-     "Abr": "ORL",
-     "Fc": "633492",
-     "Sc": "FDE192"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "8948",
-     "Nm": "FC Cincinnati",
-     "Img": "enet/722265.png",
-     "NewsTag": "/team/fc-cincinnati-2021020913320920836-6705/",
-     "Abr": "CIN",
-     "Fc": "263B80",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
-   "Ecov": 0,
-   "ErnInf": "1/16",
-   "Et": 1,
-   "Esd": 20261120013000,
-   "EO": 2484387943,
-   "EOX": 2484387943,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1708781",
-   "Pids": {
-    "112": "SBTE_2_1025985571",
-    "8": "1708781"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Fanatiz",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "2",
-   "Tr2": "1",
-   "Trh1": "2",
-   "Trh2": "0",
-   "Tr1OR": "2",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "4509",
-     "Nm": "Vitoria",
-     "Img": "enet/7733.png",
-     "Abr": "VIT",
-     "Fc": "ff0000",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5042",
-     "Nm": "RB Bragantino",
-     "Img": "enet/109705.png",
-     "Abr": "RBB",
-     "Fc": "fcfcfc",
-     "Sc": "f50000"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795134611412,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "35",
-   "Et": 1,
-   "Esd": 20261119233000,
-   "EO": 807322495,
-   "EOX": 807322495,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1708756",
    "Pids": {
     "112": "SBTE_2_1025985556",
@@ -190,11 +73,11 @@
      "Sc": "00613C"
     }
    ],
-   "Eps": "1'",
+   "Eps": "5'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795134641012,
-    "RTm": 0
+    "ATm": 1795134880952,
+    "RTm": 240000
    },
    "Epr": 1,
    "Ecov": 0,
