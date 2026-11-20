@@ -5,65 +5,212 @@
  ],
  "events": [
   {
-   "Eid": "1916748",
+   "Eid": "1845677",
    "Pids": {
-    "112": "SBTE_2_1029790637",
-    "8": "1916748"
+    "112": "SBTE_2_1029486624",
+    "8": "1845677"
    },
    "Media": {
     "112": [
      {
-      "eventId": "Apple TV",
+      "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
-      "thumbnail": "apple-tv.png",
+      "thumbnail": "fubo.png",
       "allowedCountries": [
-       "IE",
-       "CA",
-       "GB",
        "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
        "MX"
       ]
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "Trp1": "2",
-   "Trp2": "3",
    "T1": [
     {
-     "ID": "8301",
-     "Nm": "Seattle Sounders FC",
-     "Img": "enet/130394.png",
-     "Abr": "SEA",
-     "Fc": "5D9741",
-     "Sc": "005595"
+     "ID": "4379",
+     "Nm": "Al Ahli",
+     "Img": "enet/2530.png",
+     "NewsTag": "/team/al-ahli-2021020913320920836-1654/",
+     "Abr": "AHL",
+     "Fc": "196c4d",
+     "Sc": "23976b"
     }
    ],
    "T2": [
     {
-     "ID": "8894",
-     "Nm": "Real Salt Lake",
-     "Img": "enet/6606.png",
-     "Abr": "RSL",
-     "Fc": "B30838",
-     "Sc": "013A81"
+     "ID": "346",
+     "Nm": "Al Nassr",
+     "Img": "enet/101918.png",
+     "NewsTag": "/team/al-nassr-fc-2021020913320920836-1681/",
+     "Abr": "NAS",
+     "Fc": "fed32c",
+     "Sc": "22558c"
     }
    ],
-   "Eps": "Pen",
-   "Esid": 4,
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "MLS Cup - Play-In Round",
+   "ErnInf": "9",
    "Et": 1,
-   "Esd": 20261120040000,
-   "EO": 2484519807,
-   "EOX": 2484519807,
+   "Esd": 20261120183000,
+   "EO": 874299495,
+   "EOX": 874299495,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1813384",
+   "Pids": {
+    "112": "SBTE_2_1028231046",
+    "8": "1813384"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Bundesliga YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "5261",
+     "Nm": "Arminia Bielefeld",
+     "Img": "enet/9912.png",
+     "Abr": "BIE",
+     "Fc": "ffffff",
+     "Sc": "000a99"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4453",
+     "Nm": "Magdeburg",
+     "Img": "enet/8188.png",
+     "Abr": "MAG",
+     "Fc": "ffffff",
+     "Sc": "005aa3"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "12",
+   "Et": 1,
+   "Esd": 20261120183000,
+   "EO": 832356455,
+   "EOX": 832356455,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1813394",
+   "Pids": {
+    "112": "SBTE_2_1028231087",
+    "8": "1813394"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Bundesliga YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "5305",
+     "Nm": "Darmstadt",
+     "Img": "enet/8262.png",
+     "Abr": "DAR",
+     "Fc": "004C99",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "5278",
+     "Nm": "FC Heidenheim",
+     "Img": "enet/94937.png",
+     "Abr": "HEI",
+     "Fc": "E2001A",
+     "Sc": "003B79"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "12",
+   "Et": 1,
+   "Esd": 20261120183000,
+   "EO": 899465319,
+   "EOX": 899465319,
    "Spid": 1,
    "Pid": 8
   }
