@@ -15,14 +15,14 @@
    "created": "2026-11-20T17:30:57.619710+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 133,
+   "last_total": 136,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "17-19",
-   "last_score": "64-69"
+   "last_score": "67-69"
   },
   "bb_1884593|BB_HT_DUSUK_UST": {
    "key": "bb_1884593|BB_HT_DUSUK_UST",
@@ -39,14 +39,14 @@
    "created": "2026-11-20T18:00:56.197290+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 133,
+   "last_total": 136,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "36-34",
-   "last_score": "64-69"
+   "last_score": "67-69"
   },
   "fb_1813394|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1813394|FB_COK_GOLLU_ERKEN",
@@ -479,6 +479,78 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "bb_1851067|BB_Q4_FARK_ALT": {
+   "key": "bb_1851067|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1851067",
+   "match": "Anadolu Efes - ASVEL Lyon-Villeurbanne",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-20T19:05:28.796093+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 153,
+   "sent": true,
+   "direction": "under",
+   "base": 151,
+   "n": 1,
+   "ref": 50.333333333333336,
+   "signal_score": "87-66",
+   "last_score": "87-66"
+  },
+  "bb_1851067|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1851067|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1851067",
+   "match": "Anadolu Efes - ASVEL Lyon-Villeurbanne",
+   "league": "EuroLeague EuroLeague: Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-20T19:05:29.124482+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 153,
+   "sent": true,
+   "direction": "under",
+   "base": 151,
+   "n": 1,
+   "ref": 50.333333333333336,
+   "signal_score": "87-66",
+   "last_score": "87-66"
+  },
+  "fb_1845677|FB_TEK_FARK_70": {
+   "key": "fb_1845677|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1845677",
+   "match": "Al Ahli - Al Nassr",
+   "league": "Saudi Arabia Saudi Professional League",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-20T19:05:30.626343+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
