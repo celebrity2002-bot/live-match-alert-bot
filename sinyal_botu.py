@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2 - GitHub Actions sürümü (Futbol & Basketbol İddaa Bülten & Özel Sinyal Destekli)
+Canlı Sinyal Botu v2.2 - %60+ & Az Verili %100 Aktif & Maç Başı Tek Sinyal Sürümü
 """
 import json
 import os
@@ -37,9 +37,21 @@ BANKROLL = env_num("BANKROLL_TL", 2000)
 STAKE_PCT = env_num("STAKE_PCT", 1.0)
 ENABLE_BASKETBALL = os.getenv("ENABLE_BASKETBALL", "1") == "1"
 ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
-DISABLED = {x.strip().upper() for x in os.getenv("DISABLE_STRATEGIES", "").split(",") if x.strip()}
-MAX_LIVE_PER_MATCH = env_num("MAX_LIVE_PER_MATCH", 2, int)
+
+# %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
+DEFAULT_DISABLED = {
+    "OZEL_FB_BASKI_SIKISMA",
+    "FB_TEK_FARK_70",
+    "FB_GERIDEN_FARK2",
+    "BB_Q4_YAKIN_UST",
+}
+ENV_DISABLED = {x.strip().upper() for x in os.getenv("DISABLE_STRATEGIES", "").split(",") if x.strip()}
+DISABLED = DEFAULT_DISABLED | ENV_DISABLED
+
+# Her maçtan (futbol veya basketbol) en fazla 1 sinyal
+MAX_LIVE_PER_MATCH = env_num("MAX_LIVE_PER_MATCH", 1, int)
 SEND_RESULTS = (os.getenv("SEND_RESULTS", "on") or "on").strip().lower()
+HIDE_DISABLED_IN_SUMMARY = os.getenv("HIDE_DISABLED_IN_SUMMARY", "1") == "1"
 
 # Minimum bahis tutarı kuralı (En az 50 TL)
 MIN_STAKE_TL = env_num("MIN_STAKE_TL", 50, int)
@@ -207,10 +219,7 @@ def form_note(state, sid, band, sport):
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag}"
 
     band_txt = f"Oran {band[0]:.2f}-{band[1]:.2f} bandındaysa değerlendir"
-    if sport == "basketball":
-        action = f"{band_txt} (çizgi kontrolü sende)"
-    else:
-        action = band_txt
+    action = f"{band_txt} (çizgi kontrolü sende)" if sport == "basketball" else band_txt
     return f"{hist} — {action}"
 
 
@@ -218,12 +227,14 @@ def form_note(state, sid, band, sport):
 # STRATEJİ KAYIT DEFTERİ
 # ------------------------------------------------------------------
 STRATS = {}
+STRAT_ORDER = []
 
 
 def strat(sid, sport, label, title, pick, band, is_special=False):
     def deco(fn):
         STRATS[sid] = dict(id=sid, sport=sport, label=label, title=title,
                            pick=pick, band=band, fn=fn, is_special=is_special)
+        STRAT_ORDER.append(sid)
         return fn
     return deco
 
@@ -273,7 +284,13 @@ def fb_line(p):
     return f"{t} | Skor: {p['home']}-{p['away']}"
 
 
-# Standart Proven Futbol Stratejileri (4 adet)
+@strat("FB_IY2_00", "football", "0-0 ikinci yarı başı gol",
+       "FUTBOL ALARMI (0-0, 2. YARI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.40, 1.60))
+def fb_iy2_00(p):
+    if (p["ht"] or fb_in(p, 46, 55)) and p["total"] == 0:
+        return fb_res(p, fb_line(p))
+
+
 @strat("FB_COK_GOLLU_ERKEN", "football", "Erken çok gol (25-40', 3+ gol)",
        "FUTBOL ALARMI (GOLLÜ MAÇ)", "Ek Gol Olur / Canlı Üst", (1.50, 1.90))
 def fb_cok_gollu(p):
@@ -288,13 +305,6 @@ def fb_fark2(p):
         return fb_res(p, f"{fb_line(p)}\n2 gol fark baskısı — reaksiyon / ek gol ihtimali")
 
 
-@strat("FB_IY2_00", "football", "0-0 ikinci yarı başı gol",
-       "FUTBOL ALARMI (0-0, 2. YARI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.40, 1.60))
-def fb_iy2_00(p):
-    if (p["ht"] or fb_in(p, 46, 55)) and p["total"] == 0:
-        return fb_res(p, fb_line(p))
-
-
 @strat("FB_TEK_FARK_70", "football", f"Tek farkla önde, {FB_LATE_MIN}-{FB_LATE_MAX}'",
        "FUTBOL ALARMI (TEK FARK, EK GOL)", "Ek Gol Olur / Canlı Üst", (1.45, 1.85))
 def fb_tek_fark(p):
@@ -302,7 +312,6 @@ def fb_tek_fark(p):
         return fb_res(p, f"{fb_line(p)}\nTek fark üstünlüğü — risk/açık oyun ihtimali")
 
 
-# 🌟 YENİ NESİL ÖZEL SİNYAL (FUTBOL): Görünmeyen Baskı ve Sıkışma
 @strat("OZEL_FB_BASKI_SIKISMA", "football", "Görünmeyen Baskı ve Sıkışma (Özel Sinyal)",
        "🔔 ÖZEL SİNYAL (Gölge Avı)", "Sıradaki Gol Olur / Canlı Üst", (1.65, 2.05), is_special=True)
 def ozel_fb_baski(p):
@@ -356,56 +365,6 @@ def _q4_info(p):
     return None
 
 
-# Standart Proven Basketbol Stratejileri (5 adet)
-@strat("BB_TEMPO_DUSUSU_ALT", "basketball", "Tempo düşüşü ALT (Q1 yüksek)",
-       "BASKETBOL ALARMI (TEMPO DÜŞÜŞÜ ALT)", "Canlı Toplam Sayı ALT", (1.45, 1.55))
-def bb_tempo_dususu(p):
-    q1 = p["q"][0]
-    if p["period"] == 2 and q1 is not None and q1 >= BB_Q1_HIGH \
-            and 0 <= p["total"] - q1 <= BB_Q2_MAX_POINTS:
-        return {"direction": "under", "base": q1, "n": 3, "ref": float(q1),
-                "detail": f"Süre: 2. Çeyrek Başı | Toplam Skor: {p['total']}\n1. Çeyrek Toplamı: {q1} sayı"}
-
-
-@strat("BB_Q1_DUSUK_UST", "basketball", "Tempo yükselişi ÜST (Q1 düşük)",
-       "BASKETBOL ALARMI (TEMPO YÜKSELİŞİ ÜST)", "Canlı Toplam Sayı ÜST", (1.55, 1.90))
-def bb_q1_dusuk(p):
-    q1 = p["q"][0]
-    if p["period"] == 2 and q1 is not None and q1 <= BB_Q1_LOW \
-            and 0 <= p["total"] - q1 <= BB_Q2_MAX_POINTS:
-        return {"direction": "over", "base": q1, "n": 3, "ref": float(q1),
-                "detail": f"Süre: 2. Çeyrek Başı | Toplam Skor: {p['total']}\n1. Çeyrek Toplamı: {q1} sayı"}
-
-
-@strat("BB_HT_DUSUK_UST", "basketball", "Devre arası düşük skor ÜST",
-       "BASKETBOL ALARMI (DEVRE ARASI DÜŞÜK SKOR ÜST)", "Canlı Toplam Sayı ÜST", (1.50, 1.80))
-def bb_ht_dusuk(p):
-    if p["ht"] and 0 < p["total"] <= BB_HT_LOW:
-        return {"direction": "over", "base": p["total"], "n": 2, "ref": p["total"] / 2.0,
-                "detail": f"Devre Arası | İlk Yarı Toplamı: {p['total']} sayı ({p['home']}-{p['away']})"}
-
-
-@strat("BB_Q4_YAKIN_UST", "basketball", "4. çeyrek başı yakın skor ÜST",
-       "BASKETBOL ALARMI (4. ÇEYREK YAKIN MAÇ ÜST)", "Canlı Toplam Sayı ÜST", (1.60, 2.00))
-def bb_q4_yakin(p):
-    info = _q4_info(p)
-    if info and p["diff"] <= 3:
-        first3, _ = info
-        return {"direction": "over", "base": first3, "n": 1, "ref": first3 / 3.0,
-                "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']} (fark {p['diff']})\nİlk 3 çeyrek ortalaması: {first3 / 3:.1f} sayı"}
-
-
-@strat("BB_Q4_FARK_ALT", "basketball", "4. çeyrek başı büyük fark ALT",
-       "BASKETBOL ALARMI (4. ÇEYREK BÜYÜK FARK ALT)", "Canlı Toplam Sayı ALT", (1.60, 1.95))
-def bb_q4_fark(p):
-    info = _q4_info(p)
-    if info and p["diff"] >= 15:
-        first3, _ = info
-        return {"direction": "under", "base": first3, "n": 1, "ref": first3 / 3.0,
-                "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']} (fark {p['diff']})\nİlk 3 çeyrek ortalaması: {first3 / 3:.1f} sayı"}
-
-
-# 🌟 YENİ NESİL ÖZEL SİNYAL (BASKETBOL): Bench Çöküşü / Tempo Kırılması
 @strat("OZEL_BB_BENCH_COKUS", "basketball", "Bench Çöküşü / Tempo Kırılması (Özel Sinyal)",
        "🔔 ÖZEL SİNYAL (Gölge Avı)", "Canlı Toplam Sayı ALT", (1.70, 2.10), is_special=True)
 def ozel_bb_bench(p):
@@ -418,6 +377,54 @@ def ozel_bb_bench(p):
             "direction": "under", "base": first3, "n": 1, "ref": first3 / 3.0
         }
     return None
+
+
+@strat("BB_TEMPO_DUSUSU_ALT", "basketball", "Tempo düşüşü ALT (Q1 yüksek)",
+       "BASKETBOL ALARMI (TEMPO DÜŞÜŞÜ ALT)", "Canlı Toplam Sayı ALT", (1.45, 1.55))
+def bb_tempo_dususu(p):
+    q1 = p["q"][0]
+    if p["period"] == 2 and q1 is not None and q1 >= BB_Q1_HIGH \
+            and 0 <= p["total"] - q1 <= BB_Q2_MAX_POINTS:
+        return {"direction": "under", "base": q1, "n": 3, "ref": float(q1),
+                "detail": f"Süre: 2. Çeyrek Başı | Toplam Skor: {p['total']}\n1. Çeyrek Toplamı: {q1} sayı"}
+
+
+@strat("BB_HT_DUSUK_UST", "basketball", "Devre arası düşük skor ÜST",
+       "BASKETBOL ALARMI (DEVRE ARASI DÜŞÜK SKOR ÜST)", "Canlı Toplam Sayı ÜST", (1.50, 1.80))
+def bb_ht_dusuk(p):
+    if p["ht"] and 0 < p["total"] <= BB_HT_LOW:
+        return {"direction": "over", "base": p["total"], "n": 2, "ref": p["total"] / 2.0,
+                "detail": f"Devre Arası | İlk Yarı Toplamı: {p['total']} sayı ({p['home']}-{p['away']})"}
+
+
+@strat("BB_Q1_DUSUK_UST", "basketball", "Tempo yükselişi ÜST (Q1 düşük)",
+       "BASKETBOL ALARMI (TEMPO YÜKSELİŞİ ÜST)", "Canlı Toplam Sayı ÜST", (1.55, 1.90))
+def bb_q1_dusuk(p):
+    q1 = p["q"][0]
+    if p["period"] == 2 and q1 is not None and q1 <= BB_Q1_LOW \
+            and 0 <= p["total"] - q1 <= BB_Q2_MAX_POINTS:
+        return {"direction": "over", "base": q1, "n": 3, "ref": float(q1),
+                "detail": f"Süre: 2. Çeyrek Başı | Toplam Skor: {p['total']}\n1. Çeyrek Toplamı: {q1} sayı"}
+
+
+@strat("BB_Q4_FARK_ALT", "basketball", "4. çeyrek başı büyük fark ALT",
+       "BASKETBOL ALARMI (4. ÇEYREK BÜYÜK FARK ALT)", "Canlı Toplam Sayı ALT", (1.60, 1.95))
+def bb_q4_fark(p):
+    info = _q4_info(p)
+    if info and p["diff"] >= 15:
+        first3, _ = info
+        return {"direction": "under", "base": first3, "n": 1, "ref": first3 / 3.0,
+                "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']} (fark {p['diff']})\nİlk 3 çeyrek ortalaması: {first3 / 3:.1f} sayı"}
+
+
+@strat("BB_Q4_YAKIN_UST", "basketball", "4. çeyrek başı yakın skor ÜST",
+       "BASKETBOL ALARMI (4. ÇEYREK YAKIN MAÇ ÜST)", "Canlı Toplam Sayı ÜST", (1.60, 2.00))
+def bb_q4_yakin(p):
+    info = _q4_info(p)
+    if info and p["diff"] <= 3:
+        first3, _ = info
+        return {"direction": "over", "base": first3, "n": 1, "ref": first3 / 3.0,
+                "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']} (fark {p['diff']})\nİlk 3 çeyrek ortalaması: {first3 / 3:.1f} sayı"}
 
 
 # ------------------------------------------------------------------
@@ -463,10 +470,18 @@ def build_message(p, sd, res, state=None):
     return "\n".join(lines)
 
 
+def match_already_has_signal(state, match_id):
+    return any(r.get("match_id") == match_id for r in state.get("signals", {}).values())
+
+
 def register_signal(state, p, sd, res):
+    if match_already_has_signal(state, p["match_id"]):
+        return False
+
     key = f"{p['match_id']}|{sd['id']}"
     if key in state["signals"]:
         return False
+
     rec = {
         "key": key, "sport": p["sport"], "match_id": p["match_id"], "match": p["match"],
         "league": p["league"], "strategy": sd["id"], "pick": sd["pick"], "band": list(sd["band"]),
@@ -546,7 +561,8 @@ def process_sport(state, sport):
         return
     parser = parse_basketball if sport == "basketball" else parse_football
     enabled = ENABLE_BASKETBALL if sport == "basketball" else ENABLE_FOOTBALL
-    sdefs = [s for s in STRATS.values() if s["sport"] == sport and s["id"] not in DISABLED]
+    sdefs = [STRATS[sid] for sid in STRAT_ORDER
+             if STRATS[sid]["sport"] == sport and sid not in DISABLED]
 
     seen, total_events, raw_samples = set(), 0, []
     for league, ev in iter_events(data, sport):
@@ -566,7 +582,7 @@ def process_sport(state, sport):
                 if p["final"]:
                     settle(rec, p["total"], state)
 
-        if enabled and not p["final"]:
+        if enabled and not p["final"] and not match_already_has_signal(state, p["match_id"]):
             for sd in sdefs:
                 try:
                     res = sd["fn"](p)
@@ -574,7 +590,8 @@ def process_sport(state, sport):
                     log(f"Strateji hatası {sd['id']}: {exc}")
                     res = None
                 if res:
-                    register_signal(state, p, sd, res)
+                    if register_signal(state, p, sd, res):
+                        break
 
     for rec in state["signals"].values():
         if rec["sport"] == sport and rec["status"] == "pending" and rec["match_id"] not in seen:
@@ -601,6 +618,8 @@ def summary(state):
     if not by:
         lines.append("Henüz kayıtlı sinyal yok.")
     for sid in sorted(by):
+        if HIDE_DISABLED_IN_SUMMARY and sid in DISABLED:
+            continue
         recs = by[sid]
         label = STRATS.get(sid, {}).get("label", sid)
         won = sum(1 for r in recs if r["status"] == "won")
@@ -631,7 +650,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Futbol ve Basketbol 'Form & Not' güncellemeleri aktifleşti.")
+        success = send_telegram("🤖 *Test Başarılı!* %60+ & %100'lük az verili stratejiler aktif, maç başı tek sinyal devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
