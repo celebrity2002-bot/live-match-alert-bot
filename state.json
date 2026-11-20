@@ -1014,14 +1014,14 @@
    "created": "2026-11-20T19:30:50.669694+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 133,
+   "last_total": 135,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "26-32",
-   "last_score": "64-69"
+   "last_score": "66-69"
   },
   "bb_1844074|BB_Q1_DUSUK_UST": {
    "key": "bb_1844074|BB_Q1_DUSUK_UST",
@@ -1038,14 +1038,14 @@
    "created": "2026-11-20T19:30:51.183950+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 136,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "25-23",
-   "last_score": "60-57"
+   "last_score": "71-65"
   },
   "fb_1799891|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1799891|FB_COK_GOLLU_ERKEN",
@@ -1062,14 +1062,14 @@
    "created": "2026-11-20T19:30:52.794455+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "3-0"
+   "last_score": "4-1"
   },
   "fb_1826531|FB_TEK_FARK_70": {
    "key": "fb_1826531|FB_TEK_FARK_70",
@@ -1140,14 +1140,14 @@
    "created": "2026-11-20T19:40:33.611654+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 111,
+   "last_total": 123,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "19-14",
-   "last_score": "67-44"
+   "last_score": "73-50"
   },
   "bb_1884500|BB_HT_DUSUK_UST": {
    "key": "bb_1884500|BB_HT_DUSUK_UST",
@@ -1164,14 +1164,14 @@
    "created": "2026-11-20T19:44:28.285282+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 127,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "34-30",
-   "last_score": "63-57"
+   "last_score": "65-62"
   },
   "fb_1795066|FB_IY2_00": {
    "key": "fb_1795066|FB_IY2_00",
@@ -1239,14 +1239,14 @@
    "created": "2026-11-20T19:50:32.675611+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 136,
    "sent": true,
    "direction": "over",
    "base": 68,
    "n": 2,
    "ref": 34.0,
    "signal_score": "36-32",
-   "last_score": "60-57"
+   "last_score": "71-65"
   },
   "bb_1844079|BB_HT_DUSUK_UST": {
    "key": "bb_1844079|BB_HT_DUSUK_UST",
@@ -1287,14 +1287,14 @@
    "created": "2026-11-20T19:50:34.871190+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "fb_1799900|FB_IY2_00": {
    "key": "fb_1799900|FB_IY2_00",
@@ -1311,14 +1311,14 @@
    "created": "2026-11-20T19:50:35.271125+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1810457|FB_IY2_00": {
    "key": "fb_1810457|FB_IY2_00",
@@ -1359,14 +1359,14 @@
    "created": "2026-11-20T19:55:36.751269+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 96,
+   "last_total": 105,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "31-18",
-   "last_score": "53-43"
+   "last_score": "60-45"
   },
   "fb_1826836|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1826836|OZEL_FB_BASKI_SIKISMA",
@@ -1491,14 +1491,14 @@
    "created": "2026-11-20T20:00:56.963091+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 65,
+   "last_total": 71,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "17-21",
-   "last_score": "33-32"
+   "last_score": "37-34"
   },
   "fb_1796148|FB_TEK_FARK_70": {
    "key": "fb_1796148|FB_TEK_FARK_70",
@@ -1593,14 +1593,14 @@
    "created": "2026-11-20T20:20:33.206964+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 65,
+   "last_total": 71,
    "sent": true,
    "direction": "over",
    "base": 65,
    "n": 2,
    "ref": 32.5,
    "signal_score": "33-32",
-   "last_score": "33-32"
+   "last_score": "37-34"
   },
   "fb_1823598|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1823598|FB_COK_GOLLU_ERKEN",
@@ -1641,14 +1641,14 @@
    "created": "2026-11-20T20:25:25.844921+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 142,
+   "last_total": 152,
    "sent": true,
    "direction": "under",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "69-50",
-   "last_score": "75-67"
+   "last_score": "78-74"
   },
   "bb_1844074|BB_Q4_YAKIN_UST": {
    "key": "bb_1844074|BB_Q4_YAKIN_UST",
@@ -1665,14 +1665,14 @@
    "created": "2026-11-20T20:25:26.369350+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 117,
+   "last_total": 136,
    "sent": false,
    "direction": "over",
    "base": 99,
    "n": 1,
    "ref": 33.0,
    "signal_score": "51-48",
-   "last_score": "60-57"
+   "last_score": "71-65"
   },
   "bb_1844079|BB_Q4_YAKIN_UST": {
    "key": "bb_1844079|BB_Q4_YAKIN_UST",
@@ -1713,14 +1713,14 @@
    "created": "2026-11-20T20:25:26.846603+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 139,
+   "last_total": 149,
    "sent": true,
    "direction": "over",
    "base": 123,
    "n": 1,
    "ref": 41.0,
    "signal_score": "66-63",
-   "last_score": "71-68"
+   "last_score": "76-73"
   },
   "bb_1884500|BB_Q4_YAKIN_UST": {
    "key": "bb_1884500|BB_Q4_YAKIN_UST",
@@ -1737,14 +1737,14 @@
    "created": "2026-11-20T20:25:27.346289+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 127,
    "sent": true,
    "direction": "over",
    "base": 104,
    "n": 1,
    "ref": 34.666666666666664,
    "signal_score": "55-55",
-   "last_score": "63-57"
+   "last_score": "65-62"
   },
   "fb_1795066|FB_TEK_FARK_70": {
    "key": "fb_1795066|FB_TEK_FARK_70",
@@ -1857,14 +1857,14 @@
    "created": "2026-11-20T20:25:30.796405+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0"
+   "last_score": "3-0"
   },
   "fb_1799898|FB_TEK_FARK_70": {
    "key": "fb_1799898|FB_TEK_FARK_70",
@@ -1929,14 +1929,14 @@
    "created": "2026-11-20T20:25:32.220190+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1799894|FB_TEK_FARK_70": {
    "key": "fb_1799894|FB_TEK_FARK_70",
@@ -2105,6 +2105,102 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1844075|BB_Q4_YAKIN_UST": {
+   "key": "bb_1844075|BB_Q4_YAKIN_UST",
+   "sport": "basketball",
+   "match_id": "bb_1844075",
+   "match": "Aix-Maurienne - ADA Blois Basket",
+   "league": "France Pro B",
+   "strategy": "BB_Q4_YAKIN_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.6,
+    2.0
+   ],
+   "created": "2026-11-20T20:40:39.702062+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 135,
+   "sent": true,
+   "direction": "over",
+   "base": 133,
+   "n": 1,
+   "ref": 44.333333333333336,
+   "signal_score": "66-69",
+   "last_score": "66-69"
+  },
+  "fb_1814513|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1814513|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1814513",
+   "match": "Villarreal B - Gimnastic",
+   "league": "Spain Primera Division RFEF: Group 2",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-20T20:40:41.413636+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
+  },
+  "fb_1796149|FB_TEK_FARK_70": {
+   "key": "fb_1796149|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1796149",
+   "match": "Yverdon - Winterthur",
+   "league": "Switzerland Challenge League",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-20T20:40:41.944896+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1796149|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1796149|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1796149",
+   "match": "Yverdon - Winterthur",
+   "league": "Switzerland Challenge League",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.65,
+    2.05
+   ],
+   "created": "2026-11-20T20:40:42.476410+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
