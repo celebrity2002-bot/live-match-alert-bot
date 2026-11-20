@@ -1,3 +1,28 @@
 {
- "signals": {}
+ "signals": {
+  "bb_1884593|BB_Q1_DUSUK_UST": {
+   "key": "bb_1884593|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1884593",
+   "match": "FMP - Igokea",
+   "league": "Adriatic ABA League: Group A",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-20T17:30:57.619710+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 36,
+   "sent": true,
+   "direction": "over",
+   "base": 36,
+   "n": 3,
+   "ref": 36.0,
+   "signal_score": "17-19",
+   "last_score": "17-19"
+  }
+ }
 }
