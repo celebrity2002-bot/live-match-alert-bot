@@ -15,14 +15,14 @@
    "created": "2026-11-20T17:30:57.619710+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 121,
+   "last_total": 133,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "17-19",
-   "last_score": "59-62"
+   "last_score": "64-69"
   },
   "bb_1884593|BB_HT_DUSUK_UST": {
    "key": "bb_1884593|BB_HT_DUSUK_UST",
@@ -39,14 +39,14 @@
    "created": "2026-11-20T18:00:56.197290+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 121,
+   "last_total": 133,
    "sent": true,
    "direction": "over",
    "base": 70,
    "n": 2,
    "ref": 35.0,
    "signal_score": "36-34",
-   "last_score": "59-62"
+   "last_score": "64-69"
   },
   "fb_1813394|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1813394|FB_COK_GOLLU_ERKEN",
@@ -431,6 +431,54 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1812336|FB_TEK_FARK_70": {
+   "key": "fb_1812336|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1812336",
+   "match": "Kapfenberger SV - FC Hertha Wels",
+   "league": "Austria 2. Liga",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-20T19:00:58.161572+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
+  },
+  "fb_1812336|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1812336|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1812336",
+   "match": "Kapfenberger SV - FC Hertha Wels",
+   "league": "Austria 2. Liga",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.65,
+    2.05
+   ],
+   "created": "2026-11-20T19:00:58.505035+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0"
   }
  }
 }
