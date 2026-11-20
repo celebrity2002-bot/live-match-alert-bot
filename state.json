@@ -662,6 +662,30 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "fb_1708752|FB_TEK_FARK_70": {
+   "key": "fb_1708752|FB_TEK_FARK_70",
+   "sport": "football",
+   "match_id": "fb_1708752",
+   "match": "Vasco da Gama - Internacional",
+   "league": "Brazil Serie A",
+   "strategy": "FB_TEK_FARK_70",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.85
+   ],
+   "created": "2026-11-20T00:00:02.912353+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
