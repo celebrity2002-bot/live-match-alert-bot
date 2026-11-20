@@ -116,11 +116,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "61'",
+   "Eps": "66'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795209611628,
-    "RTm": 3600000
+    "ATm": 1795209911458,
+    "RTm": 3900000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -133,135 +133,10 @@
    "Pid": 8
   },
   {
-   "Eid": "1812740",
-   "Pids": {
-    "8": "1812740",
-    "112": "SBTE_2_1028230554"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "BBCi",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "bbc.png",
-      "allowedCountries": [
-       "GB"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "FOX",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "FOX One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "Fandango",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Peacock",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "av:stream:33756297",
-      "provider": "SPORTRADAR",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "2940",
-     "Nm": "Bayern Munich",
-     "Img": "enet/9823.png",
-     "NewsTag": "/team/bayern-munich-2021020913320920836-233/",
-     "Abr": "BAY",
-     "Fc": "DC052D",
-     "Sc": "0066B2"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "285",
-     "Nm": "FC Cologne",
-     "Img": "enet/8722.png",
-     "NewsTag": "/team/fc-koln-2021020913320920836-228/",
-     "Abr": "CGN",
-     "Fc": "ED1C24",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "89'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795209581591,
-    "RTm": 5280000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "10",
-   "Et": 1,
-   "Esd": 20261120203000,
-   "EO": 908051327,
-   "EOX": 908051327,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1794771",
    "Pids": {
-    "8": "1794771",
-    "112": "SBTE_2_1027973900"
+    "112": "SBTE_2_1027973900",
+    "8": "1794771"
    },
    "Media": {
     "112": [
@@ -338,11 +213,11 @@
      "Sc": "003259"
     }
    ],
-   "Eps": "77'",
+   "Eps": "82'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795209586385,
-    "RTm": 4560000
+    "ATm": 1795209883850,
+    "RTm": 4860000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -351,6 +226,106 @@
    "Esd": 20261120204500,
    "EO": 874496895,
    "EOX": 874496895,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1803054",
+   "Pids": {
+    "112": "SBTE_2_1028143392",
+    "8": "1803054"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports Football",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "Tr1": "1",
+   "Tr2": "2",
+   "Trh1": "1",
+   "Trh2": "2",
+   "Tr1OR": "1",
+   "Tr2OR": "2",
+   "T1": [
+    {
+     "ID": "2829",
+     "Nm": "Barnsley",
+     "Img": "enet/8283.png",
+     "NewsTag": "/team/barnsley-2022062716001253418-124/",
+     "Abr": "BAR",
+     "Fc": "D71921",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3144",
+     "Nm": "Sheffield Wednesday",
+     "Img": "teambadge/sheffield-wednesday.png",
+     "NewsTag": "/team/sheffield-wednesday-2021020913320920836-138/",
+     "Abr": "SHW",
+     "Fc": "FDFDFD",
+     "Sc": "4681cf"
+    }
+   ],
+   "Eps": "68'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795209881149,
+    "RTm": 4020000
+   },
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "Regular Season",
+   "Et": 1,
+   "Esd": 20261120210000,
+   "EO": 907985775,
+   "EOX": 907985775,
    "Spid": 1,
    "Pid": 8
   }
