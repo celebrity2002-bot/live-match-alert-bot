@@ -1005,14 +1005,14 @@
    "created": "2026-11-20T19:30:50.669694+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 88,
+   "last_total": 90,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "26-32",
-   "last_score": "45-43"
+   "last_score": "45-45"
   },
   "bb_1844074|BB_Q1_DUSUK_UST": {
    "key": "bb_1844074|BB_Q1_DUSUK_UST",
@@ -1029,14 +1029,14 @@
    "created": "2026-11-20T19:30:51.183950+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 77,
+   "last_total": 78,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "25-23",
-   "last_score": "38-39"
+   "last_score": "39-39"
   },
   "fb_1799891|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1799891|FB_COK_GOLLU_ERKEN",
@@ -1131,14 +1131,14 @@
    "created": "2026-11-20T19:40:33.611654+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 80,
+   "last_total": 83,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "19-14",
-   "last_score": "47-33"
+   "last_score": "50-33"
   },
   "bb_1884500|BB_HT_DUSUK_UST": {
    "key": "bb_1884500|BB_HT_DUSUK_UST",
@@ -1155,14 +1155,14 @@
    "created": "2026-11-20T19:44:28.285282+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 89,
+   "last_total": 96,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "34-30",
-   "last_score": "45-44"
+   "last_score": "50-46"
   },
   "fb_1795066|FB_IY2_00": {
    "key": "fb_1795066|FB_IY2_00",
@@ -1227,14 +1227,14 @@
    "created": "2026-11-20T19:50:32.675611+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 77,
+   "last_total": 78,
    "sent": true,
    "direction": "over",
    "base": 68,
    "n": 2,
    "ref": 34.0,
    "signal_score": "36-32",
-   "last_score": "38-39"
+   "last_score": "39-39"
   },
   "bb_1844079|BB_HT_DUSUK_UST": {
    "key": "bb_1844079|BB_HT_DUSUK_UST",
@@ -1251,14 +1251,14 @@
    "created": "2026-11-20T19:50:33.182439+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 84,
+   "last_total": 91,
    "sent": true,
    "direction": "over",
    "base": 66,
    "n": 2,
    "ref": 33.0,
    "signal_score": "37-29",
-   "last_score": "44-40"
+   "last_score": "46-45"
   },
   "fb_1799892|FB_IY2_00": {
    "key": "fb_1799892|FB_IY2_00",
@@ -1347,14 +1347,14 @@
    "created": "2026-11-20T19:55:36.751269+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 78,
+   "last_total": 92,
    "sent": true,
    "direction": "over",
    "base": 36,
    "n": 3,
    "ref": 36.0,
    "signal_score": "31-18",
-   "last_score": "42-36"
+   "last_score": "51-41"
   },
   "fb_1826836|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1826836|OZEL_FB_BASKI_SIKISMA",
@@ -1467,14 +1467,14 @@
    "created": "2026-11-20T20:00:56.963091+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 54,
+   "last_total": 59,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "17-21",
-   "last_score": "28-26"
+   "last_score": "30-29"
   },
   "fb_1796148|FB_TEK_FARK_70": {
    "key": "fb_1796148|FB_TEK_FARK_70",
@@ -1523,6 +1523,30 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0"
+  },
+  "fb_1799896|FB_GERIDEN_FARK2": {
+   "key": "fb_1799896|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1799896",
+   "match": "Heracles - Jong PSV",
+   "league": "Netherlands Eerste Divisie",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.6,
+    2.1
+   ],
+   "created": "2026-11-20T20:15:36.107408+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0"
   }
  }
 }
