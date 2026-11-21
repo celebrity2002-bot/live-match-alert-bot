@@ -285,14 +285,14 @@
    "created": "2026-11-21T01:10:32.313138+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 179,
+   "last_total": 188,
    "sent": true,
    "direction": "under",
    "base": 63,
    "n": 3,
    "ref": 63.0,
    "signal_score": "25-38",
-   "last_score": "88-91"
+   "last_score": "95-93"
   },
   "bb_1867576|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867576|BB_TEMPO_DUSUSU_ALT",
@@ -309,14 +309,14 @@
    "created": "2026-11-21T01:10:32.660629+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 203,
+   "last_total": 209,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "113-90"
+   "last_score": "113-96"
   },
   "bb_1867587|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867587|BB_TEMPO_DUSUSU_ALT",
@@ -333,14 +333,14 @@
    "created": "2026-11-21T01:40:30.112206+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 129,
+   "last_total": 136,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "34-22",
-   "last_score": "62-67"
+   "last_score": "67-69"
   },
   "bb_1867578|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867578|BB_TEMPO_DUSUSU_ALT",
@@ -357,14 +357,14 @@
    "created": "2026-11-21T01:40:30.559909+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 156,
+   "last_total": 167,
    "sent": true,
    "direction": "under",
    "base": 69,
    "n": 3,
    "ref": 69.0,
    "signal_score": "33-38",
-   "last_score": "74-82"
+   "last_score": "76-91"
   },
   "bb_1867575|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1867575|OZEL_BB_BENCH_COKUS",
@@ -381,14 +381,14 @@
    "created": "2026-11-21T02:30:42.482180+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 159,
+   "last_total": 167,
    "sent": true,
    "direction": "under",
    "base": 149,
    "n": 1,
    "ref": 49.666666666666664,
    "signal_score": "72-77",
-   "last_score": "78-81"
+   "last_score": "80-87"
   },
   "fb_1918810|FB_IY2_00": {
    "key": "fb_1918810|FB_IY2_00",
