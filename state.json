@@ -203,7 +203,7 @@
    ],
    "created": "2026-11-20T23:35:26.032795+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -252,14 +252,14 @@
    "created": "2026-11-21T00:40:36.952710+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 54,
+   "last_total": 69,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "23-31",
-   "last_score": "23-31"
+   "last_score": "32-37"
   }
  }
 }
