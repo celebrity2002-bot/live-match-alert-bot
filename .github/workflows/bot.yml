@@ -38,7 +38,7 @@ jobs:
           python-version: '3.11'
 
       - name: Kutuphaneleri Yukle
-        run: pip install requests
+        run: pip install requests Pillow
 
       - name: Botu Calistir
         env:
