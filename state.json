@@ -770,7 +770,7 @@
    ],
    "created": "2026-11-21T12:55:25.957989+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 169,
    "sent": true,
    "direction": "under",
@@ -794,7 +794,7 @@
    ],
    "created": "2026-11-21T13:10:33.169749+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -817,8 +817,8 @@
     1.6
    ],
    "created": "2026-11-21T13:15:33.256984+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -826,7 +826,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-21T14:35:25.769982+00:00",
+   "seg_avg": 1.0
   },
   "fb_1802489|FB_IY2_00": {
    "key": "fb_1802489|FB_IY2_00",
@@ -841,8 +844,8 @@
     1.6
    ],
    "created": "2026-11-21T13:20:34.315791+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -850,7 +853,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-21T14:35:26.111651+00:00",
+   "seg_avg": 3.0
   },
   "fb_1802500|FB_IY2_00": {
    "key": "fb_1802500|FB_IY2_00",
@@ -865,8 +871,8 @@
     1.6
    ],
    "created": "2026-11-21T13:20:34.786874+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -874,7 +880,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-21T14:35:26.424092+00:00",
+   "seg_avg": 1.0
   },
   "fb_1803052|FB_IY2_00": {
    "key": "fb_1803052|FB_IY2_00",
@@ -890,7 +899,7 @@
    ],
    "created": "2026-11-21T13:20:35.202374+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -913,8 +922,8 @@
     1.6
    ],
    "created": "2026-11-21T13:20:35.627604+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -922,7 +931,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-21T14:35:26.742776+00:00",
+   "seg_avg": 3.0
   },
   "bb_1895385|BB_Q1_DUSUK_UST": {
    "key": "bb_1895385|BB_Q1_DUSUK_UST",
@@ -939,14 +951,14 @@
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 114,
+   "last_total": 120,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "57-57"
+   "last_score": "61-59"
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -1035,14 +1047,14 @@
    "created": "2026-11-21T13:50:33.790095+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "fb_1826208|FB_IY2_00": {
    "key": "fb_1826208|FB_IY2_00",
@@ -1203,14 +1215,14 @@
    "created": "2026-11-21T13:55:25.774627+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1855368|FB_IY2_00": {
    "key": "fb_1855368|FB_IY2_00",
@@ -1393,6 +1405,54 @@
     1.6
    ],
    "created": "2026-11-21T14:30:48.581663+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "bb_1895383|BB_Q1_DUSUK_UST": {
+   "key": "bb_1895383|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1895383",
+   "match": "Kolossos Rhodes - ASP Promitheas",
+   "league": "Greece Basket League",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-21T14:35:23.939230+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 34,
+   "sent": true,
+   "direction": "over",
+   "base": 32,
+   "n": 3,
+   "ref": 32.0,
+   "signal_score": "17-17",
+   "last_score": "17-17"
+  },
+  "fb_1817121|FB_IY2_00": {
+   "key": "fb_1817121|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1817121",
+   "match": "Le Puy - Paris 13 Atletico",
+   "league": "France Ligue 3",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T14:35:25.446767+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
