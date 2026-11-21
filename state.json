@@ -257,7 +257,7 @@
    ],
    "created": "2026-11-21T00:40:36.952710+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 208,
    "sent": true,
    "direction": "under",
@@ -282,14 +282,14 @@
    "created": "2026-11-21T01:10:32.313138+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 154,
+   "last_total": 165,
    "sent": true,
    "direction": "under",
    "base": 63,
    "n": 3,
    "ref": 63.0,
    "signal_score": "25-38",
-   "last_score": "76-78"
+   "last_score": "81-84"
   },
   "bb_1867576|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867576|BB_TEMPO_DUSUSU_ALT",
@@ -306,14 +306,14 @@
    "created": "2026-11-21T01:10:32.660629+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 183,
+   "last_total": 192,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "100-83"
+   "last_score": "107-85"
   },
   "bb_1867587|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867587|BB_TEMPO_DUSUSU_ALT",
@@ -330,14 +330,14 @@
    "created": "2026-11-21T01:40:30.112206+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 112,
+   "last_total": 116,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "34-22",
-   "last_score": "60-52"
+   "last_score": "60-56"
   },
   "bb_1867578|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867578|BB_TEMPO_DUSUSU_ALT",
@@ -354,14 +354,14 @@
    "created": "2026-11-21T01:40:30.559909+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 136,
    "sent": true,
    "direction": "under",
    "base": 69,
    "n": 3,
    "ref": 69.0,
    "signal_score": "33-38",
-   "last_score": "56-64"
+   "last_score": "64-72"
   }
  }
 }
