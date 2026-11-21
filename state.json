@@ -960,14 +960,14 @@
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 165,
+   "last_total": 171,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "80-85"
+   "last_score": "84-87"
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -1377,14 +1377,14 @@
    "created": "2026-11-21T14:25:24.125553+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1845150|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1845150|FB_COK_GOLLU_ERKEN",
@@ -1473,14 +1473,14 @@
    "created": "2026-11-21T14:35:23.939230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 83,
+   "last_total": 92,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "17-17",
-   "last_score": "58-25"
+   "last_score": "64-28"
   },
   "fb_1817121|FB_IY2_00": {
    "key": "fb_1817121|FB_IY2_00",
@@ -1521,14 +1521,14 @@
    "created": "2026-11-21T14:40:46.054217+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "1-3"
   },
   "fb_1845169|FB_IY2_00": {
    "key": "fb_1845169|FB_IY2_00",
@@ -1663,6 +1663,30 @@
     1.6
    ],
    "created": "2026-11-21T15:15:33.544448+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1812736|FB_IY2_00": {
+   "key": "fb_1812736|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1812736",
+   "match": "Elversberg - Freiburg",
+   "league": "Germany Bundesliga",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T15:20:35.641765+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
