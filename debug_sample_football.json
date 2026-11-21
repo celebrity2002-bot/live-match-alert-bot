@@ -5,130 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1793651",
-   "Pids": {
-    "112": "SBTE_2_1028072761",
-    "8": "1793651",
-    "29": "1793651"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
-     {
-      "eventId": "TNT Sports 1",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "tnt-sports.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     },
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "FOX One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "FOX+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "12633",
-     "Nm": "Manchester City",
-     "Img": "enet/8456.png",
-     "NewsTag": "/team/manchester-city-2021020913320920836-104/",
-     "Abr": "MCI",
-     "Fc": "6CABDD",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "2872",
-     "Nm": "Fulham",
-     "Img": "enet/9879.png",
-     "NewsTag": "/team/fulham-2021020913320920836-98/",
-     "Abr": "FUL",
-     "Fc": "000000",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795270808433,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "11",
-   "Et": 1,
-   "Eit": "3",
-   "Esd": 20261121133000,
-   "EO": 908051327,
-   "EOX": 908051327,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1810739",
    "Pids": {
-    "8": "1810739",
-    "112": "SBTE_2_1028209221"
+    "112": "SBTE_2_1028209221",
+    "8": "1810739"
    },
    "Media": {
     "112": [
@@ -198,11 +78,11 @@
      }
     ]
    },
-   "Tr1": "1",
+   "Tr1": "2",
    "Tr2": "1",
    "Trh1": "1",
    "Trh2": "1",
-   "Tr1OR": "1",
+   "Tr1OR": "2",
    "Tr2OR": "1",
    "T1": [
     {
@@ -224,11 +104,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "62'",
+   "Eps": "67'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795270822956,
-    "RTm": 3660000
+    "ATm": 1795271118687,
+    "RTm": 3960000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -241,10 +121,10 @@
    "Pid": 8
   },
   {
-   "Eid": "1785418",
+   "Eid": "1812735",
    "Pids": {
-    "112": "SBTE_2_1027911532",
-    "8": "1785418"
+    "112": "SBTE_2_1028230556",
+    "8": "1812735"
    },
    "Media": {
     "112": [
@@ -264,13 +144,11 @@
       "type": "TV_CHANNEL",
       "thumbnail": "dazn.png",
       "allowedCountries": [
-       "GB",
-       "IE",
        "CA"
       ]
      },
      {
-      "eventId": "Disney+",
+      "eventId": "FOX One",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
@@ -278,7 +156,7 @@
       ]
      },
      {
-      "eventId": "Paramount+",
+      "eventId": "Fandango",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
@@ -287,57 +165,161 @@
       ]
      },
      {
-      "eventId": "13978148",
-      "provider": "BETGENIUS",
+      "eventId": "Peacock",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "av:stream:33756313",
+      "provider": "SPORTRADAR",
       "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "NG",
        "GB",
        "IE"
       ]
      }
     ]
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "4227",
-     "Nm": "Como 1907",
-     "Img": "enet/10171.png",
-     "Abr": "COM",
-     "Fc": "fafafa",
-     "Sc": "4c8adc"
+     "ID": "15",
+     "Nm": "Bayer Leverkusen",
+     "Img": "enet/8178.png",
+     "NewsTag": "/team/bayer-leverkusen-2021020913320920836-221/",
+     "Abr": "B04",
+     "Fc": "E32221",
+     "Sc": "000000"
     }
    ],
    "T2": [
     {
-     "ID": "2987",
-     "Nm": "Cagliari",
-     "Img": "enet/8529.png",
-     "NewsTag": "/team/cagliari-2021020913320920836-242/",
-     "Abr": "CAG",
-     "Fc": "002350",
-     "Sc": "AD002A"
+     "ID": "2851",
+     "Nm": "Paderborn",
+     "Img": "enet/8460.png",
+     "Abr": "SCP",
+     "Fc": "0037ff",
+     "Sc": "ffffff"
     }
    ],
-   "Eps": "18'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795270781969,
-    "RTm": 1020000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "12",
+   "ErnInf": "10",
    "Et": 1,
-   "Esd": 20261121150000,
-   "EO": 874365807,
-   "EOX": 874365807,
+   "Esd": 20261121153000,
+   "EO": 899530855,
+   "EOX": 899530855,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1812749",
+   "Pids": {
+    "112": "SBTE_2_1028230560",
+    "8": "1812749"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "FOX",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Fandango",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Peacock",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "av:stream:33756377",
+      "provider": "SPORTRADAR",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "364",
+     "Nm": "Borussia M'gladbach",
+     "Img": "enet/9788.png",
+     "NewsTag": "/team/borussia-moenchengladbach-2021020913320920836-229/",
+     "Abr": "BMG",
+     "Fc": "000000",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "448",
+     "Nm": "Borussia Dortmund",
+     "Img": "enet/9789.png",
+     "NewsTag": "/team/borussia-dortmund-2021020913320920836-230/",
+     "Abr": "DOR",
+     "Fc": "FDE100",
+     "Sc": "000000"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "10",
+   "Et": 1,
+   "Esd": 20261121153000,
+   "EO": 899530855,
+   "EOX": 899530855,
    "Spid": 1,
    "Pid": 8
   }
