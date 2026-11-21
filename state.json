@@ -1660,8 +1660,8 @@
     1.6
    ],
    "created": "2026-11-21T14:50:33.246612+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -1669,7 +1669,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-1"
+   "last_score": "2-1",
+   "final_total": 3,
+   "settled": "2026-11-21T16:50:34.884692+00:00",
+   "seg_avg": 3.0
   },
   "fb_1812332|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1812332|FB_COK_GOLLU_ERKEN",
@@ -1766,7 +1769,7 @@
    ],
    "created": "2026-11-21T15:25:23.342571+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 183,
    "sent": true,
    "direction": "over",
@@ -1791,14 +1794,14 @@
    "created": "2026-11-21T15:30:45.762002+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-2"
+   "last_score": "3-2"
   },
   "fb_1823088|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1823088|FB_COK_GOLLU_ERKEN",
@@ -1815,14 +1818,14 @@
    "created": "2026-11-21T15:30:46.206434+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-3"
+   "last_score": "2-4"
   },
   "fb_1824191|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1824191|FB_COK_GOLLU_ERKEN",
@@ -1983,14 +1986,14 @@
    "created": "2026-11-21T15:34:45.244780+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "3-1"
+   "last_score": "4-1"
   },
   "fb_1802491|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1802491|FB_COK_GOLLU_ERKEN",
@@ -2055,14 +2058,14 @@
    "created": "2026-11-21T15:40:35.312128+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-2"
+   "last_score": "2-3"
   },
   "fb_1802495|FB_IY2_00": {
    "key": "fb_1802495|FB_IY2_00",
@@ -2663,6 +2666,102 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1"
+  },
+  "fb_1794772|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1794772|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1794772",
+   "match": "Nice - Paris Saint-Germain",
+   "league": "France Ligue 1",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T16:50:33.445330+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
+  },
+  "fb_1814057|FB_IY2_00": {
+   "key": "fb_1814057|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814057",
+   "match": "Eibar W - Atletico Madrid W",
+   "league": "Spain Liga F",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T16:50:33.871044+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1815175|FB_IY2_00": {
+   "key": "fb_1815175|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1815175",
+   "match": "Marino Luanco - Coruxo FC",
+   "league": "Spain Segunda Division RFEF: Group 1",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T16:50:34.237664+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1814865|FB_IY2_00": {
+   "key": "fb_1814865|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814865",
+   "match": "Osasuna B - Barbastro",
+   "league": "Spain Segunda Division RFEF: Group 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T16:50:34.571705+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
