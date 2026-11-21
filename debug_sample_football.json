@@ -7,9 +7,9 @@
   {
    "Eid": "1793629",
    "Pids": {
+    "8": "1793629",
     "29": "1793629",
-    "112": "SBTE_2_1028072786",
-    "8": "1793629"
+    "112": "SBTE_2_1028072786"
    },
    "Media": {
     "112": [
@@ -73,6 +73,8 @@
    "Tr2": "0",
    "Trh1": "2",
    "Trh2": "0",
+   "Tr1OR": "2",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "3928",
@@ -95,35 +97,30 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "47'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795277098834,
+    "RTm": 2760000
+   },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121160000,
-   "EO": 908051311,
-   "EOX": 908051311,
+   "EO": 908051327,
+   "EOX": 908051327,
    "Spid": 1,
    "Pid": 8
   },
   {
    "Eid": "1793636",
    "Pids": {
-    "29": "1793636",
     "112": "SBTE_2_1028072780",
-    "8": "1793636"
+    "8": "1793636",
+    "29": "1793636"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -162,6 +159,15 @@
        "US"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "0",
@@ -192,11 +198,15 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
+   "Eps": "48'",
+   "Esid": 3,
+   "Etm": {
+    "ATm": 1795277087736,
+    "RTm": 2820000
+   },
    "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121160000,
    "EO": 874496879,
@@ -228,9 +238,9 @@
   {
    "Eid": "1793633",
    "Pids": {
+    "112": "SBTE_2_1028072788",
     "8": "1793633",
-    "29": "1793633",
-    "112": "SBTE_2_1028072788"
+    "29": "1793633"
    },
    "Media": {
     "112": [
