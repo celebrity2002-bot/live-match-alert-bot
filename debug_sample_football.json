@@ -104,11 +104,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "21'",
+   "Eps": "25'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795265431975,
-    "RTm": 1200000
+    "ATm": 1795265671912,
+    "RTm": 1440000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -117,6 +117,112 @@
    "Esd": 20261121133000,
    "EO": 933217135,
    "EOX": 933217135,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1810739",
+   "Pids": {
+    "112": "SBTE_2_1028209221",
+    "8": "1810739"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "ESPN+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "LaLigaTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "la-liga.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Premier Sports 1",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "premier-sports.png",
+      "allowedCountries": [
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "TSN+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "81xbpprcjc9id9n8tygyxavbo",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4482",
+     "Nm": "Deportivo Alaves",
+     "Img": "enet/9866.png",
+     "Abr": "ALV",
+     "Fc": "0761AF",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "12636",
+     "Nm": "Deportivo A Coruna",
+     "Img": "enet/9783.png",
+     "Abr": "DEP",
+     "Fc": "0000ff",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "13",
+   "Et": 1,
+   "Esd": 20261121140000,
+   "EO": 899530855,
+   "EOX": 899530855,
    "Spid": 1,
    "Pid": 8
   },
@@ -231,11 +337,11 @@
      "Sc": "1D5BA4"
     }
    ],
-   "Eps": "21'",
+   "Eps": "26'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795265416511,
-    "RTm": 1200000
+    "ATm": 1795265716341,
+    "RTm": 1500000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -244,86 +350,6 @@
    "Esd": 20261121133000,
    "EO": 933217135,
    "EOX": 933217135,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1802489",
-   "Pids": {
-    "112": "SBTE_2_1028143009",
-    "8": "1802489"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
-     {
-      "eventId": "Paramount+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sky Sports+ App",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "sky-sports-plus.png",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "T1": [
-    {
-     "ID": "2811",
-     "Nm": "Norwich City",
-     "Img": "enet/9850.png",
-     "NewsTag": "/team/norwich-2021020913320920836-111/",
-     "Abr": "NOR",
-     "Fc": "FFF200",
-     "Sc": "00A650"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3916",
-     "Nm": "Cardiff City",
-     "Img": "enet/8344.png",
-     "NewsTag": "/team/cardiff-city-2022062716001253418-122/",
-     "Abr": "CAR",
-     "Fc": "0070B5",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "20'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795265411442,
-    "RTm": 1140000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Regular Season",
-   "Et": 1,
-   "Esd": 20261121133000,
-   "EO": 899531631,
-   "EOX": 899531631,
    "Spid": 1,
    "Pid": 8
   }
