@@ -5,72 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1867583",
-   "Pids": {
-    "112": "SBTE_2_1028744823",
-    "8": "1867583"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NBA League Pass",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "nba-league-pass.png",
-      "allowedCountries": [
-       "GB",
-       "MX",
-       "IE",
-       "US"
-      ]
-     }
-    ]
-   },
-   "Tr1": "111",
-   "Tr2": "97",
-   "Tr1OR": "111",
-   "Tr2OR": "97",
-   "Tr1Q1": "23",
-   "Tr2Q1": "31",
-   "Tr1Q2": "33",
-   "Tr2Q2": "26",
-   "Tr1Q3": "31",
-   "Tr2Q3": "19",
-   "Tr1Q4": "24",
-   "Tr2Q4": "21",
-   "T1": [
-    {
-     "ID": "1865",
-     "Nm": "Atlanta Hawks",
-     "Img": "enet/58543.png",
-     "Abr": "ATL",
-     "Fc": "000000",
-     "Sc": "C8102E"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "1891",
-     "Nm": "Charlotte Hornets",
-     "Img": "enet/58755.png",
-     "Abr": "CHA",
-     "Fc": "00788C",
-     "Sc": "1D1160"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261121030000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
    "Eid": "1867571",
    "Pids": {
     "112": "SBTE_2_1028753902",
@@ -100,16 +34,16 @@
      }
     ]
    },
-   "Tr1": "73",
-   "Tr2": "77",
-   "Tr1OR": "73",
-   "Tr2OR": "77",
+   "Tr1": "76",
+   "Tr2": "78",
+   "Tr1OR": "76",
+   "Tr2OR": "78",
    "Tr1Q1": "25",
    "Tr2Q1": "38",
    "Tr1Q2": "36",
    "Tr2Q2": "24",
-   "Tr1Q3": "12",
-   "Tr2Q3": "15",
+   "Tr1Q3": "15",
+   "Tr2Q3": "16",
    "T1": [
     {
      "ID": "1906",
@@ -172,16 +106,16 @@
      }
     ]
    },
-   "Tr1": "97",
-   "Tr2": "77",
-   "Tr1OR": "97",
-   "Tr2OR": "77",
+   "Tr1": "100",
+   "Tr2": "83",
+   "Tr1OR": "100",
+   "Tr2OR": "83",
    "Tr1Q1": "29",
    "Tr2Q1": "29",
    "Tr1Q2": "33",
    "Tr2Q2": "32",
-   "Tr1Q3": "35",
-   "Tr2Q3": "16",
+   "Tr1Q3": "38",
+   "Tr2Q3": "22",
    "T1": [
     {
      "ID": "2015",
@@ -200,6 +134,79 @@
      "Abr": "IND",
      "Fc": "FDBB30",
      "Sc": "002D62"
+    }
+   ],
+   "Eps": "3Q",
+   "Esid": 42,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261121033000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1867575",
+   "Pids": {
+    "8": "1867575",
+    "112": "SBTE_2_1028744809"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Amazon Prime",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "amaon-prime.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "MX",
+       "GB",
+       "IE",
+       "US"
+      ]
+     }
+    ]
+   },
+   "Tr1": "68",
+   "Tr2": "72",
+   "Tr1OR": "68",
+   "Tr2OR": "72",
+   "Tr1Q1": "23",
+   "Tr2Q1": "26",
+   "Tr1Q2": "25",
+   "Tr2Q2": "28",
+   "Tr1Q3": "20",
+   "Tr2Q3": "18",
+   "T1": [
+    {
+     "ID": "2014",
+     "Nm": "Detroit Pistons",
+     "Img": "enet/58542.png",
+     "Abr": "DET",
+     "Fc": "1D42BA",
+     "Sc": "C8102E"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "2412",
+     "Nm": "Toronto Raptors",
+     "Img": "enet/58539.png",
+     "Abr": "TOR",
+     "Fc": "CE1141",
+     "Sc": "000000"
     }
    ],
    "Eps": "3Q",
