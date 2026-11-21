@@ -34,9 +34,9 @@
      }
     ]
    },
-   "Tr1": "104",
+   "Tr1": "107",
    "Tr2": "106",
-   "Tr1OR": "104",
+   "Tr1OR": "107",
    "Tr2OR": "106",
    "Tr1Q1": "25",
    "Tr2Q1": "38",
@@ -44,7 +44,7 @@
    "Tr2Q2": "24",
    "Tr1Q3": "27",
    "Tr2Q3": "29",
-   "Tr1Q4": "16",
+   "Tr1Q4": "19",
    "Tr2Q4": "15",
    "T1": [
     {
@@ -64,80 +64,6 @@
      "Abr": "ORL",
      "Fc": "0077C0",
      "Sc": "C4CED4"
-    }
-   ],
-   "Eps": "4Q",
-   "Esid": 43,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261121033000,
-   "EO": 524391,
-   "EOX": 524391,
-   "Spid": 23,
-   "Pid": 8
-  },
-  {
-   "Eid": "1867576",
-   "Pids": {
-    "112": "SBTE_2_1028744805",
-    "8": "1867576"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "NBA League Pass",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "nba-league-pass.png",
-      "allowedCountries": [
-       "MX",
-       "GB",
-       "IE",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Sportsnet One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "CA"
-      ]
-     }
-    ]
-   },
-   "Tr1": "126",
-   "Tr2": "117",
-   "Tr1OR": "126",
-   "Tr2OR": "117",
-   "Tr1Q1": "29",
-   "Tr2Q1": "29",
-   "Tr1Q2": "33",
-   "Tr2Q2": "32",
-   "Tr1Q3": "43",
-   "Tr2Q3": "22",
-   "Tr1Q4": "21",
-   "Tr2Q4": "34",
-   "T1": [
-    {
-     "ID": "2015",
-     "Nm": "Cleveland Cavaliers",
-     "Img": "enet/58541.png",
-     "Abr": "CLE",
-     "Fc": "860038",
-     "Sc": "041E42"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "120",
-     "Nm": "Indiana Pacers",
-     "Img": "enet/58540.png",
-     "Abr": "IND",
-     "Fc": "FDBB30",
-     "Sc": "002D62"
     }
    ],
    "Eps": "4Q",
@@ -183,18 +109,18 @@
      }
     ]
    },
-   "Tr1": "94",
-   "Tr2": "93",
-   "Tr1OR": "94",
-   "Tr2OR": "93",
+   "Tr1": "99",
+   "Tr2": "97",
+   "Tr1OR": "99",
+   "Tr2OR": "97",
    "Tr1Q1": "23",
    "Tr2Q1": "26",
    "Tr1Q2": "25",
    "Tr2Q2": "28",
    "Tr1Q3": "24",
    "Tr2Q3": "23",
-   "Tr1Q4": "22",
-   "Tr2Q4": "16",
+   "Tr1Q4": "27",
+   "Tr2Q4": "20",
    "T1": [
     {
      "ID": "2014",
@@ -222,6 +148,72 @@
    "ErnInf": "1",
    "Et": 1,
    "Esd": 20261121033000,
+   "EO": 524391,
+   "EOX": 524391,
+   "Spid": 23,
+   "Pid": 8
+  },
+  {
+   "Eid": "1867587",
+   "Pids": {
+    "112": "SBTE_2_1028744826",
+    "8": "1867587"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NBA League Pass",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "nba-league-pass.png",
+      "allowedCountries": [
+       "MX",
+       "GB",
+       "IE",
+       "US"
+      ]
+     }
+    ]
+   },
+   "Tr1": "78",
+   "Tr2": "89",
+   "Tr1OR": "78",
+   "Tr2OR": "89",
+   "Tr1Q1": "29",
+   "Tr2Q1": "22",
+   "Tr1Q2": "31",
+   "Tr2Q2": "30",
+   "Tr1Q3": "9",
+   "Tr2Q3": "23",
+   "Tr1Q4": "9",
+   "Tr2Q4": "14",
+   "T1": [
+    {
+     "ID": "119",
+     "Nm": "Chicago Bulls",
+     "Img": "enet/58544.png",
+     "Abr": "CHI",
+     "Fc": "CE1141",
+     "Sc": "000000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "1864",
+     "Nm": "Washington Wizards",
+     "Img": "enet/58536.png",
+     "Abr": "WAS",
+     "Fc": "E31837",
+     "Sc": "002B5C"
+    }
+   ],
+   "Eps": "4Q",
+   "Esid": 43,
+   "Epr": 1,
+   "Ecov": 0,
+   "ErnInf": "1",
+   "Et": 1,
+   "Esd": 20261121040000,
    "EO": 524391,
    "EOX": 524391,
    "Spid": 23,

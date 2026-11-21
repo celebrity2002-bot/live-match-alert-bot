@@ -5,85 +5,6 @@
  ],
  "events": [
   {
-   "Eid": "1799074",
-   "Pids": {
-    "112": "SBTE_2_1027986196",
-    "8": "1799074"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "TUDN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "ESPN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "espn.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "4605",
-     "Nm": "Puebla",
-     "Img": "enet/7847.png",
-     "Abr": "PUE",
-     "Fc": "e3e1e5",
-     "Sc": "000000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "3672",
-     "Nm": "Atletico de San Luis",
-     "Img": "enet/6358.png",
-     "Abr": "ASL",
-     "Fc": "ff0000",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+6'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795229721272,
-    "RTm": 5400000,
-    "ITm": 300000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "17",
-   "Et": 1,
-   "Esd": 20261121020000,
-   "EO": 907985791,
-   "EOX": 907985791,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
    "Eid": "1799078",
    "Pids": {
     "112": "SBTE_2_1027986191",
@@ -224,11 +145,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "58'",
+   "Eps": "61'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795229711639,
-    "RTm": 3420000
+    "ATm": 1795229886207,
+    "RTm": 3600000
    },
    "Epr": 1,
    "Ecov": 0,
