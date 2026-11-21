@@ -1685,7 +1685,7 @@
    ],
    "created": "2026-11-21T15:00:57.083805+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -1709,7 +1709,7 @@
    ],
    "created": "2026-11-21T15:15:33.544448+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1733,7 +1733,7 @@
    ],
    "created": "2026-11-21T15:20:35.641765+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1758,14 +1758,14 @@
    "created": "2026-11-21T15:25:23.342571+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 134,
+   "last_total": 132,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "30-9",
-   "last_score": "84-50"
+   "last_score": "84-48"
   },
   "fb_1793638|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1793638|FB_COK_GOLLU_ERKEN",
@@ -1854,14 +1854,14 @@
    "created": "2026-11-21T15:30:46.918101+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-3",
-   "last_score": "0-3"
+   "last_score": "0-4"
   },
   "fb_1837123|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1837123|FB_COK_GOLLU_ERKEN",
@@ -1878,14 +1878,14 @@
    "created": "2026-11-21T15:30:47.302676+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-2"
+   "last_score": "3-2"
   },
   "fb_1803616|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1803616|FB_COK_GOLLU_ERKEN",
@@ -1926,14 +1926,14 @@
    "created": "2026-11-21T15:34:44.396251+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "3-1"
+   "last_score": "4-1"
   },
   "fb_1837570|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1837570|FB_COK_GOLLU_ERKEN",
@@ -2406,14 +2406,14 @@
    "created": "2026-11-21T15:50:38.120259+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1839204|FB_IY2_00": {
    "key": "fb_1839204|FB_IY2_00",
@@ -2478,14 +2478,14 @@
    "created": "2026-11-21T15:50:39.285387+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1837118|FB_IY2_00": {
    "key": "fb_1837118|FB_IY2_00",
