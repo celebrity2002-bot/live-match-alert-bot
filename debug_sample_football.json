@@ -38,6 +38,8 @@
    "Trh2": "1",
    "Tr1OR": "1",
    "Tr2OR": "1",
+   "Trp1": "0",
+   "Trp2": "0",
    "T1": [
     {
      "ID": "5221",
@@ -59,7 +61,7 @@
     }
    ],
    "Eps": "Pen",
-   "Esid": 20,
+   "Esid": 4,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "1/8",
@@ -132,11 +134,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "34'",
+   "Eps": "39'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795224880941,
-    "RTm": 1980000
+    "ATm": 1795225151122,
+    "RTm": 2280000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -149,60 +151,63 @@
    "Pid": 8
   },
   {
-   "Eid": "1918811",
+   "Eid": "1918810",
    "Pids": {
-    "112": "SBTE_2_1029883767",
-    "8": "1918811"
+    "112": "SBTE_2_1029883766",
+    "8": "1918810"
    },
-   "Inc-f": {
-    "2": [
+   "Media": {
+    "112": [
      {
-      "IT": 45,
-      "Nm": 1,
-      "NoP": false
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "2wyv8gejj6dq5udyj2f888oic",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
      }
     ]
    },
-   "Tr1": "2",
-   "Tr2": "2",
-   "Trh1": "2",
-   "Trh2": "2",
-   "Tr1OR": "2",
-   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "10100",
-     "Nm": "Bucaramanga",
-     "Img": "enet/4401.png",
-     "Abr": "BUC",
-     "Fc": "ffff00",
-     "Sc": "009400"
+     "ID": "7162",
+     "Nm": "Deportivo Cali",
+     "Img": "enet/6387.png",
+     "Abr": "DEP",
+     "Fc": "1f5559",
+     "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "7356",
-     "Nm": "America de Cali",
-     "Img": "enet/10280.png",
-     "Abr": "AME",
-     "Fc": "ed303b",
+     "ID": "6739",
+     "Nm": "Millonarios",
+     "Img": "enet/4403.png",
+     "Abr": "MIL",
+     "Fc": "002aff",
      "Sc": "ffffff"
     }
    ],
-   "Eps": "90+9'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795224921180,
-    "RTm": 5400000,
-    "ITm": 480000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
    "ErnInf": "1",
    "Et": 1,
-   "Esd": 20261121003500,
-   "EO": 807158143,
-   "EOX": 807158143,
+   "Esd": 20261121024000,
+   "EO": 807157863,
+   "EOX": 807157863,
    "Spid": 1,
    "Pid": 8
   }
