@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.2 - %60+ & Az Verili %100 Aktif & Maç Başı Tek Sinyal Sürümü
+Canlı Sinyal Botu v2.4 - Erken Pencere, Erime Riski Uyarısı & İstatistik Keşif Sürümü
 """
 import json
 import os
@@ -87,10 +87,13 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol eşikleri
+# Futbol eşikleri (oran çöküşü ve market kapanmasını azaltmak için erken pencereler)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
+FB_IY2_MAX_MIN = env_num("FB_IY2_MAX_MIN", 49, int)
+FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 24, int)
+FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 37, int)
 
 MISSING_RUNS_TO_SETTLE = 3
 
@@ -206,6 +209,14 @@ def stake_tl():
     return max(MIN_STAKE_TL, hesaplanan)
 
 
+def decay_risk_note(p):
+    if p["sport"] == "football":
+        if p.get("ht") or (p.get("minute") is not None and 42 <= p["minute"] <= 48):
+            return "Yüksek (devre/kapanma geçişi — oran 1.05-1.10'a inmişse pas geç)"
+        return "Orta (erken pencere — oran düşmeden hemen kontrol et)"
+    return "Orta (çizgi/oran erimesi varsa bekleme, bantta değilse pas geç)"
+
+
 def form_note(state, sid, band, sport):
     same = [r for r in state.get("signals", {}).values()
             if r.get("strategy") == sid and r.get("status") in ("won", "lost")]
@@ -219,7 +230,7 @@ def form_note(state, sid, band, sport):
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag}"
 
     band_txt = f"Oran {band[0]:.2f}-{band[1]:.2f} bandındaysa değerlendir"
-    action = f"{band_txt} (çizgi kontrolü sende)" if sport == "basketball" else band_txt
+    action = f"{band_txt} (çizgi kontrolü sende)" if sport == "basketball" else f"{band_txt} (oran eridiyse pas geç)"
     return f"{hist} — {action}"
 
 
@@ -284,18 +295,18 @@ def fb_line(p):
     return f"{t} | Skor: {p['home']}-{p['away']}"
 
 
-@strat("FB_IY2_00", "football", "0-0 ikinci yarı başı gol",
-       "FUTBOL ALARMI (0-0, 2. YARI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.40, 1.60))
+@strat("FB_IY2_00", "football", f"0-0 erken 2. yarı gol (HT / 46-{FB_IY2_MAX_MIN}')",
+       "FUTBOL ALARMI (0-0, ERKEN 2. YARI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.45, 1.70))
 def fb_iy2_00(p):
-    if (p["ht"] or fb_in(p, 46, 55)) and p["total"] == 0:
-        return fb_res(p, fb_line(p))
+    if (p["ht"] or fb_in(p, 46, FB_IY2_MAX_MIN)) and p["total"] == 0:
+        return fb_res(p, f"{fb_line(p)}\nErken pencere — oran erimeden kontrol et")
 
 
-@strat("FB_COK_GOLLU_ERKEN", "football", "Erken çok gol (25-40', 3+ gol)",
+@strat("FB_COK_GOLLU_ERKEN", "football", f"Erken çok gol ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
        "FUTBOL ALARMI (GOLLÜ MAÇ)", "Ek Gol Olur / Canlı Üst", (1.50, 1.90))
 def fb_cok_gollu(p):
-    if fb_in(p, 25, 40) and p["total"] >= 3:
-        return fb_res(p, fb_line(p))
+    if fb_in(p, FB_EARLY_HIGH_MIN_START, FB_EARLY_HIGH_MIN_END) and p["total"] >= 3:
+        return fb_res(p, f"{fb_line(p)}\nErken gol ivmesi — oran çökmeden kontrol et")
 
 
 @strat("FB_GERIDEN_FARK2", "football", "2 gol fark, 55-80'",
@@ -436,6 +447,7 @@ def build_message(p, sd, res, state=None):
     icon = "⚽" if p["sport"] == "football" else "🏀"
     detail = res["detail"].split("\n")
     note = form_note(state or {"signals": {}}, sd["id"], band, p["sport"])
+    risk = decay_risk_note(p)
 
     if sd.get("is_special"):
         lines = [sd["title"], line, f"{icon} {p['match']}"]
@@ -448,6 +460,7 @@ def build_message(p, sd, res, state=None):
         lines += [line,
                   f"🎯 OYNA: {sd['pick']}",
                   f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
+                  f"⚡ Erime/Kapanma Riski: {risk}",
                   f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
@@ -462,11 +475,12 @@ def build_message(p, sd, res, state=None):
         lines += [line,
                   f"🎯 OYNA: {sd['pick']}",
                   f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
+                  f"⚡ Erime/Kapanma Riski: {risk}",
                   f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
                   "",
-                  "⚠️ Oran bandın dışındaysa OYNAMAYIN"]
+                  "⚠️ Oran bandın dışındaysa veya 1.05-1.15 bandına erdiyse OYNAMAYIN"]
     return "\n".join(lines)
 
 
@@ -554,6 +568,18 @@ def settle(rec, final_total, state=None):
         notify_result(state, rec)
 
 
+def inspect_stat_keys(sample_events):
+    stat_hint_tokens = ("stat", "shot", "att", "cor", "poss", "inc", "card", "foul", "xg")
+    found_keys = set()
+    for ev in sample_events:
+        if isinstance(ev, dict):
+            for k in ev.keys():
+                kl = str(k).lower()
+                if any(tok in kl for tok in stat_hint_tokens):
+                    found_keys.add(str(k))
+    return sorted(found_keys)
+
+
 def process_sport(state, sport):
     data = fetch(sport)
     if data is None:
@@ -599,11 +625,18 @@ def process_sport(state, sport):
             if rec["missing_runs"] >= MISSING_RUNS_TO_SETTLE:
                 settle(rec, rec["last_total"], state)
 
+    stat_keys = inspect_stat_keys(raw_samples)
     if os.getenv("DEBUG_DUMP") == "1" and raw_samples:
-        dump = {"top_level_keys": list(data.keys()) if isinstance(data, dict) else None,
-                "events": raw_samples}
+        sample_keys = sorted(list(raw_samples[0].keys())) if isinstance(raw_samples[0], dict) else []
+        dump = {
+            "top_level_keys": list(data.keys()) if isinstance(data, dict) else None,
+            "sample_event_keys": sample_keys,
+            "detected_stat_keys": stat_keys,
+            "events": raw_samples,
+        }
         (BASE / f"debug_sample_{sport}.json").write_text(
             json.dumps(dump, ensure_ascii=False, indent=1), encoding="utf-8")
+        log(f"{sport} debug anahtarları: {sample_keys} | istatistik ipucu: {stat_keys or 'yok'}")
     log(f"{sport}: {total_events} canlı olay tarandı (İddaa filtresi aktif)")
 
 
@@ -650,7 +683,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* %60+ & %100'lük az verili stratejiler aktif, maç başı tek sinyal devrede.")
+        success = send_telegram("🤖 *Test Başarılı!* Erken pencere ve erime riski uyarısı aktif.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
