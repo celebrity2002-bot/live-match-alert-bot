@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.4 - Erken Pencere, Erime Riski Uyarısı & İstatistik Keşif Sürümü
+Canlı Sinyal Botu v2.6 - Seçici 2. Yarı Penceresi + Aday Maç İstatistik Filtresi
 """
 import json
 import os
@@ -19,7 +19,6 @@ import requests
 # ------------------------------------------------------------------
 BASE = Path(__file__).resolve().parent
 STATE_PATH = BASE / "state.json"
-DEBUG_PATH = BASE / "debug_sample.json"
 
 TOKEN = os.getenv("TELEGRAM_TOKEN", "").strip()
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
@@ -32,11 +31,22 @@ def env_num(name, default, cast=float):
         return cast(default)
 
 
+def env_float_or_none(v):
+    try:
+        if v is None or str(v).strip() == "":
+            return None
+        return float(str(v).strip())
+    except (ValueError, TypeError):
+        return None
+
+
 MODE = (os.getenv("BOT_MODE", "paper") or "paper").strip().lower()   # paper | live
 BANKROLL = env_num("BANKROLL_TL", 2000)
 STAKE_PCT = env_num("STAKE_PCT", 1.0)
 ENABLE_BASKETBALL = os.getenv("ENABLE_BASKETBALL", "1") == "1"
 ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
+ENABLE_STAT_FILTER = os.getenv("ENABLE_STAT_FILTER", "1") == "1"
+MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.35, float)
 
 # %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
 DEFAULT_DISABLED = {
@@ -87,11 +97,12 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol eşikleri (oran çöküşü ve market kapanmasını azaltmak için erken pencereler)
+# Futbol eşikleri (devre geçişi riskini azaltmak için 2. yarı başı 46-48' penceresi)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
-FB_IY2_MAX_MIN = env_num("FB_IY2_MAX_MIN", 49, int)
+FB_IY2_MIN_MIN = env_num("FB_IY2_MIN_MIN", 46, int)
+FB_IY2_MAX_MIN = env_num("FB_IY2_MAX_MIN", 48, int)
 FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 24, int)
 FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 37, int)
 
@@ -101,6 +112,8 @@ URLS = {
     "basketball": "https://prod-public-api.livescore.com/v1/api/app/live/basketball/3?MD=1",
     "football": "https://prod-public-api.livescore.com/v1/api/app/live/soccer/1?MD=1",
 }
+FB_STATS_URL = "https://prod-public-api.livescore.com/v1/api/app/statistics/soccer/{eid}"
+
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
@@ -168,6 +181,85 @@ def fetch(sport):
     return None
 
 
+def fetch_fb_stats(eid):
+    if not eid:
+        return None
+    url = FB_STATS_URL.format(eid=eid)
+    try:
+        r = requests.get(
+            url,
+            headers={
+                "User-Agent": random.choice(USER_AGENTS),
+                "Accept": "application/json, text/plain, */*",
+                "Referer": "https://www.livescore.com/",
+            },
+            timeout=10,
+        )
+        if r.status_code != 200:
+            return None
+        payload = r.json()
+        stat_list = payload.get("Stat") if isinstance(payload, dict) else None
+        if not isinstance(stat_list, list) or len(stat_list) < 2:
+            return None
+
+        t1 = stat_list[0] if isinstance(stat_list[0], dict) else {}
+        t2 = stat_list[1] if isinstance(stat_list[1], dict) else {}
+
+        xg1 = env_float_or_none(t1.get("Xg"))
+        xg2 = env_float_or_none(t2.get("Xg"))
+        total_xg = None
+        if xg1 is not None or xg2 is not None:
+            total_xg = (xg1 or 0.0) + (xg2 or 0.0)
+
+        shon1, shon2 = num(t1.get("Shon")) or 0, num(t2.get("Shon")) or 0
+        shof1, shof2 = num(t1.get("Shof")) or 0, num(t2.get("Shof")) or 0
+        cos1, cos2 = num(t1.get("Cos")) or 0, num(t2.get("Cos")) or 0
+        ycs1, ycs2 = num(t1.get("Ycs")) or 0, num(t2.get("Ycs")) or 0
+        rcs1, rcs2 = num(t1.get("Rcs")) or 0, num(t2.get("Rcs")) or 0
+        pss1, pss2 = num(t1.get("Pss")), num(t2.get("Pss"))
+
+        return {
+            "xg_total": total_xg,
+            "xg1": xg1,
+            "xg2": xg2,
+            "sot_total": shon1 + shon2,
+            "shots_total": shon1 + shon2 + shof1 + shof2,
+            "corners_total": cos1 + cos2,
+            "yc_total": ycs1 + ycs2,
+            "rc_total": rcs1 + rcs2,
+            "pss1": pss1,
+            "pss2": pss2,
+        }
+    except Exception:
+        return None
+
+
+def format_fb_stat_line(st):
+    if not st:
+        return None
+    parts = []
+    if st.get("xg_total") is not None:
+        parts.append(f"xG {st['xg_total']:.2f}")
+    parts.append(f"İsabetli Şut {st['sot_total']}/{st['shots_total']}")
+    parts.append(f"Korner {st['corners_total']}")
+    if st.get("rc_total", 0) > 0:
+        parts.append(f"Kırmızı Kart {st['rc_total']}")
+    elif st.get("yc_total", 0) > 0:
+        parts.append(f"Sarı Kart {st['yc_total']}")
+    return " | ".join(parts)
+
+
+def passes_fb_stat_filter(p, sd, st):
+    if not ENABLE_STAT_FILTER or not st:
+        return True, None
+    # Kısır / ölü maç koruması: çok düşük xG ve çok az toplam şut + korner
+    xg_tot = st.get("xg_total")
+    activity = st.get("shots_total", 0) + st.get("corners_total", 0)
+    if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 4:
+        return False, f"Kısır maç filtresi (xG {xg_tot:.2f}, şut+korner {activity})"
+    return True, None
+
+
 def iter_events(data, sport="football"):
     keywords = ALLOWED_BASKETBALL_KEYWORDS if sport == "basketball" else ALLOWED_FOOTBALL_KEYWORDS
     for stage in (data or {}).get("Stages", []) or []:
@@ -211,10 +303,10 @@ def stake_tl():
 
 def decay_risk_note(p):
     if p["sport"] == "football":
-        if p.get("ht") or (p.get("minute") is not None and 42 <= p["minute"] <= 48):
-            return "Yüksek (devre/kapanma geçişi — oran 1.05-1.10'a inmişse pas geç)"
-        return "Orta (erken pencere — oran düşmeden hemen kontrol et)"
-    return "Orta (çizgi/oran erimesi varsa bekleme, bantta değilse pas geç)"
+        if p.get("minute") is not None and p["minute"] >= 47:
+            return "Yüksek — 1.05-1.15 bandına indiyse veya market kapalıysa PAS"
+        return "Orta — oran tam bandındaysa değerlendir, düşükse PAS"
+    return "Orta — çizgi/oran bandı uyuşmuyorsa PAS"
 
 
 def form_note(state, sid, band, sport):
@@ -230,7 +322,7 @@ def form_note(state, sid, band, sport):
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag}"
 
     band_txt = f"Oran {band[0]:.2f}-{band[1]:.2f} bandındaysa değerlendir"
-    action = f"{band_txt} (çizgi kontrolü sende)" if sport == "basketball" else f"{band_txt} (oran eridiyse pas geç)"
+    action = f"{band_txt} (çizgi sende)" if sport == "basketball" else f"{band_txt} (farklı çizgiye sapma, bandın dışındaysa pas geç)"
     return f"{hist} — {action}"
 
 
@@ -266,9 +358,11 @@ def parse_football(league, ev):
     if h is None or a is None:
         return None
     eps = str(ev.get("Eps", "")).upper().strip()
+    eid = str(ev.get("Eid"))
     return {
         "sport": "football",
-        "match_id": f"fb_{ev.get('Eid')}",
+        "eid": eid,
+        "match_id": f"fb_{eid}",
         "match": f"{team_name(ev, 'T1')} - {team_name(ev, 'T2')}",
         "league": league,
         "eps": eps,
@@ -295,11 +389,11 @@ def fb_line(p):
     return f"{t} | Skor: {p['home']}-{p['away']}"
 
 
-@strat("FB_IY2_00", "football", f"0-0 erken 2. yarı gol (HT / 46-{FB_IY2_MAX_MIN}')",
-       "FUTBOL ALARMI (0-0, ERKEN 2. YARI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.45, 1.70))
+@strat("FB_IY2_00", "football", f"0-0 2. yarı başı gol ({FB_IY2_MIN_MIN}-{FB_IY2_MAX_MIN}')",
+       "FUTBOL ALARMI (0-0, 2. YARI BAŞI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.45, 1.70))
 def fb_iy2_00(p):
-    if (p["ht"] or fb_in(p, 46, FB_IY2_MAX_MIN)) and p["total"] == 0:
-        return fb_res(p, f"{fb_line(p)}\nErken pencere — oran erimeden kontrol et")
+    if fb_in(p, FB_IY2_MIN_MIN, FB_IY2_MAX_MIN) and p["total"] == 0:
+        return fb_res(p, f"{fb_line(p)}\n2. yarı başı taze pencere — sadece bantta ise gir")
 
 
 @strat("FB_COK_GOLLU_ERKEN", "football", f"Erken çok gol ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
@@ -351,6 +445,7 @@ def parse_basketball(league, ev):
         qs.append(x + y if x is not None and y is not None else None)
     return {
         "sport": "basketball",
+        "eid": str(ev.get("Eid")),
         "match_id": f"bb_{ev.get('Eid')}",
         "match": f"{team_name(ev, 'T1')} - {team_name(ev, 'T2')}",
         "league": league,
@@ -434,272 +529,4 @@ def bb_q4_yakin(p):
     info = _q4_info(p)
     if info and p["diff"] <= 3:
         first3, _ = info
-        return {"direction": "over", "base": first3, "n": 1, "ref": first3 / 3.0,
-                "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']} (fark {p['diff']})\nİlk 3 çeyrek ortalaması: {first3 / 3:.1f} sayı"}
-
-
-# ------------------------------------------------------------------
-# SİNYAL OLUŞTURMA / SONUÇLANDIRMA
-# ------------------------------------------------------------------
-def build_message(p, sd, res, state=None):
-    band = sd["band"]
-    line = "━━━━━━━━━━━━━━"
-    icon = "⚽" if p["sport"] == "football" else "🏀"
-    detail = res["detail"].split("\n")
-    note = form_note(state or {"signals": {}}, sd["id"], band, p["sport"])
-    risk = decay_risk_note(p)
-
-    if sd.get("is_special"):
-        lines = [sd["title"], line, f"{icon} {p['match']}"]
-        if p.get("league"):
-            lines.append(f"🏆 {p['league']}")
-        lines.append(f"🏷 {sd['label']}")
-        lines.append(f"📊 {detail[0]}")
-        if len(detail) > 1:
-            lines.append(f"📉 {detail[1]}")
-        lines += [line,
-                  f"🎯 OYNA: {sd['pick']}",
-                  f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
-                  f"⚡ Erime/Kapanma Riski: {risk}",
-                  f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
-                  f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
-                  f"📌 Form & Not: {note}",
-                  "",
-                  "ℹ️ Bu sinyal, standart bültenlerin görmediği mikro-istatistiksel kör noktadan üretilmiştir."]
-    else:
-        lines = [f"🚨 {sd['title']}", line, f"{icon} {p['match']}"]
-        if p.get("league"):
-            lines.append(f"🏆 {p['league']}")
-        lines.append(f"⏱ {detail[0]}")
-        lines += [f"📊 {d}" for d in detail[1:]]
-        lines += [line,
-                  f"🎯 OYNA: {sd['pick']}",
-                  f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
-                  f"⚡ Erime/Kapanma Riski: {risk}",
-                  f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
-                  f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
-                  f"📌 Form & Not: {note}",
-                  "",
-                  "⚠️ Oran bandın dışındaysa veya 1.05-1.15 bandına erdiyse OYNAMAYIN"]
-    return "\n".join(lines)
-
-
-def match_already_has_signal(state, match_id):
-    return any(r.get("match_id") == match_id for r in state.get("signals", {}).values())
-
-
-def register_signal(state, p, sd, res):
-    if match_already_has_signal(state, p["match_id"]):
-        return False
-
-    key = f"{p['match_id']}|{sd['id']}"
-    if key in state["signals"]:
-        return False
-
-    rec = {
-        "key": key, "sport": p["sport"], "match_id": p["match_id"], "match": p["match"],
-        "league": p["league"], "strategy": sd["id"], "pick": sd["pick"], "band": list(sd["band"]),
-        "created": datetime.now(timezone.utc).isoformat(),
-        "status": "pending", "missing_runs": 0, "last_total": p["total"], "sent": False,
-        "direction": res["direction"], "base": res["base"], "n": res["n"], "ref": res["ref"],
-        "signal_score": f"{p['home']}-{p['away']}", "last_score": f"{p['home']}-{p['away']}",
-    }
-    state["signals"][key] = rec
-    if MODE == "live":
-        sent_for_match = sum(1 for r in state["signals"].values()
-                             if r["match_id"] == p["match_id"] and r.get("sent"))
-        if sent_for_match < MAX_LIVE_PER_MATCH:
-            rec["sent"] = send_telegram(build_message(p, sd, res, state))
-        else:
-            log(f"Bu maç için mesaj sınırına ulaşıldı, sadece kaydedildi: {p['match']} / {sd['id']}")
-    else:
-        log(f"[PAPER] Kaydedildi: {p['match']} / {sd['id']}")
-    return True
-
-
-def notify_result(state, rec):
-    if SEND_RESULTS == "off":
-        return
-    if MODE == "live" and not rec.get("sent"):
-        return
-    label = STRATS.get(rec["strategy"], {}).get("label", rec["strategy"])
-    won = rec["status"] == "won"
-    line = "━━━━━━━━━━━━━━"
-    icon = "⚽" if rec["sport"] == "football" else "🏀"
-    lines = ["✅✅ TUTTU ✅✅" if won else "❌❌ TUTMADI ❌❌"]
-    if MODE != "live":
-        lines.append("🧪 DENEME (sinyal gönderilmemişti)")
-    lines += [line,
-              f"{icon} {rec['match']}",
-              f"🏷 {label}",
-              f"📊 Skor: {rec.get('signal_score', '-')} ➜ {rec.get('last_score', '-')}"]
-    if rec["sport"] == "football":
-        goals = rec["final_total"] - rec["base"]
-        band = rec["band"]
-        mid = (band[0] + band[1]) / 2
-        pl = (mid - 1) * stake_tl() if won else -stake_tl()
-        lines.append(f"🥅 Sinyalden sonra {goals} gol")
-        lines.append(f"{'💰' if won else '💸'} Tahmini: {pl:+.0f} TL (oran {mid:.2f})")
-    else:
-        yon = "ÜST" if rec.get("direction") == "over" else "ALT"
-        lines.append(f"📉 Tempo: {rec.get('seg_avg')} sayı/çeyrek (referans {rec.get('ref', 0):.0f}, beklenti {yon})")
-        lines.append("ℹ️ Bahis sonucu değil, tempo ölçümüdür")
-    same = [r for r in state["signals"].values()
-            if r["strategy"] == rec["strategy"] and r["status"] in ("won", "lost")]
-    w = sum(1 for r in same if r["status"] == "won")
-    lines += [line, f"📈 Bu strateji: {w} ✅ / {len(same) - w} ❌ (%{100 * w / len(same):.0f})"]
-    send_telegram("\n".join(lines))
-
-
-def settle(rec, final_total, state=None):
-    rec["final_total"] = final_total
-    rec["settled"] = datetime.now(timezone.utc).isoformat()
-    base = rec.get("base", 0)
-    if final_total < base:
-        rec["status"] = "void"
-        return
-    avg = (final_total - base) / max(rec.get("n", 1), 1)
-    ref = rec.get("ref", 0.0)
-    ok = avg > ref if rec.get("direction") == "over" else avg < ref
-    rec["status"] = "won" if ok else "lost"
-    rec["seg_avg"] = round(avg, 1)
-    log(f"Sonuçlandı: {rec['match']} / {rec['strategy']} -> {rec['status']} (final toplam {final_total})")
-    if state is not None:
-        notify_result(state, rec)
-
-
-def inspect_stat_keys(sample_events):
-    stat_hint_tokens = ("stat", "shot", "att", "cor", "poss", "inc", "card", "foul", "xg")
-    found_keys = set()
-    for ev in sample_events:
-        if isinstance(ev, dict):
-            for k in ev.keys():
-                kl = str(k).lower()
-                if any(tok in kl for tok in stat_hint_tokens):
-                    found_keys.add(str(k))
-    return sorted(found_keys)
-
-
-def process_sport(state, sport):
-    data = fetch(sport)
-    if data is None:
-        log(f"{sport}: veri alınamadı, tur atlandı")
-        return
-    parser = parse_basketball if sport == "basketball" else parse_football
-    enabled = ENABLE_BASKETBALL if sport == "basketball" else ENABLE_FOOTBALL
-    sdefs = [STRATS[sid] for sid in STRAT_ORDER
-             if STRATS[sid]["sport"] == sport and sid not in DISABLED]
-
-    seen, total_events, raw_samples = set(), 0, []
-    for league, ev in iter_events(data, sport):
-        total_events += 1
-        if len(raw_samples) < 3:
-            raw_samples.append(ev)
-        p = parser(league, ev)
-        if not p:
-            continue
-        seen.add(p["match_id"])
-
-        for rec in state["signals"].values():
-            if rec["match_id"] == p["match_id"] and rec["status"] == "pending":
-                rec["last_total"] = p["total"]
-                rec["last_score"] = f"{p['home']}-{p['away']}"
-                rec["missing_runs"] = 0
-                if p["final"]:
-                    settle(rec, p["total"], state)
-
-        if enabled and not p["final"] and not match_already_has_signal(state, p["match_id"]):
-            for sd in sdefs:
-                try:
-                    res = sd["fn"](p)
-                except Exception as exc:
-                    log(f"Strateji hatası {sd['id']}: {exc}")
-                    res = None
-                if res:
-                    if register_signal(state, p, sd, res):
-                        break
-
-    for rec in state["signals"].values():
-        if rec["sport"] == sport and rec["status"] == "pending" and rec["match_id"] not in seen:
-            rec["missing_runs"] += 1
-            if rec["missing_runs"] >= MISSING_RUNS_TO_SETTLE:
-                settle(rec, rec["last_total"], state)
-
-    stat_keys = inspect_stat_keys(raw_samples)
-    if os.getenv("DEBUG_DUMP") == "1" and raw_samples:
-        sample_keys = sorted(list(raw_samples[0].keys())) if isinstance(raw_samples[0], dict) else []
-        dump = {
-            "top_level_keys": list(data.keys()) if isinstance(data, dict) else None,
-            "sample_event_keys": sample_keys,
-            "detected_stat_keys": stat_keys,
-            "events": raw_samples,
-        }
-        (BASE / f"debug_sample_{sport}.json").write_text(
-            json.dumps(dump, ensure_ascii=False, indent=1), encoding="utf-8")
-        log(f"{sport} debug anahtarları: {sample_keys} | istatistik ipucu: {stat_keys or 'yok'}")
-    log(f"{sport}: {total_events} canlı olay tarandı (İddaa filtresi aktif)")
-
-
-# ------------------------------------------------------------------
-# ÖZET
-# ------------------------------------------------------------------
-def summary(state):
-    lines = [f"GÜNLÜK ÖZET ({MODE.upper()} modu)", ""]
-    by = {}
-    for rec in state["signals"].values():
-        by.setdefault(rec["strategy"], []).append(rec)
-    if not by:
-        lines.append("Henüz kayıtlı sinyal yok.")
-    for sid in sorted(by):
-        if HIDE_DISABLED_IN_SUMMARY and sid in DISABLED:
-            continue
-        recs = by[sid]
-        label = STRATS.get(sid, {}).get("label", sid)
-        won = sum(1 for r in recs if r["status"] == "won")
-        lost = sum(1 for r in recs if r["status"] == "lost")
-        pend = sum(1 for r in recs if r["status"] == "pending")
-        done = won + lost
-        band = recs[0]["band"]
-        rate = f"%{100 * won / done:.0f}" if done else "-"
-        lines.append(f"{label}")
-        if recs[0]["sport"] == "football":
-            mid = (band[0] + band[1]) / 2
-            profit = (won * (mid - 1) - lost) * stake_tl()
-            lines.append(f"  Tuttu {won} | Tutmadı {lost} | Bekleyen {pend}")
-            lines.append(f"  İsabet {rate} (başa baş %{breakeven(band):.0f}) | K/Z {profit:+.0f} TL")
-        else:
-            lines.append(f"  Hipotez gerçekleşti {won} | Gerçekleşmedi {lost} | Bekleyen {pend}")
-            lines.append(f"  Oran: %{rate.strip('%')} (bahis sonucu DEĞİL, çizgi bilinmiyor)"
-                         if done else "  Henüz sonuç yok")
-        if 0 < done < 30:
-            lines.append(f"  Örnek az ({done}); güvenmeyin.")
-    send_telegram("\n".join(lines))
-
-
-# ------------------------------------------------------------------
-def main():
-    cmd = sys.argv[1] if len(sys.argv) > 1 else "run"
-    state = load_state()
-    if cmd == "summary":
-        summary(state)
-    elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Erken pencere ve erime riski uyarısı aktif.")
-        if success:
-            log("Test mesajı Telegram'a başarıyla gönderildi!")
-        else:
-            log("Test mesajı gönderilemedi!")
-    else:
-        active = [s for s in STRATS.values() if s["id"] not in DISABLED]
-        log(f"Mod: {MODE} | Aktif strateji: {len(active)} | "
-            f"Basketbol: {ENABLE_BASKETBALL} | Futbol: {ENABLE_FOOTBALL}")
-        for sport, enabled in (("basketball", ENABLE_BASKETBALL), ("football", ENABLE_FOOTBALL)):
-            pending = any(r["sport"] == sport and r["status"] == "pending"
-                          for r in state["signals"].values())
-            if enabled or pending:
-                process_sport(state, sport)
-                time.sleep(1)
-    save_state(state)
-
-
-if __name__ == "__main__":
-    main()
+        return {"direction": "over", "base": first3, "n": 1, "ref
