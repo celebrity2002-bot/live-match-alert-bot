@@ -255,14 +255,62 @@
    "created": "2026-11-21T00:40:36.952710+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 111,
+   "last_total": 113,
    "sent": true,
    "direction": "under",
    "base": 54,
    "n": 3,
    "ref": 54.0,
    "signal_score": "23-31",
-   "last_score": "54-57"
+   "last_score": "56-57"
+  },
+  "bb_1867571|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1867571|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867571",
+   "match": "Brooklyn Nets - Orlando Magic",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-21T01:10:32.313138+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 63,
+   "sent": true,
+   "direction": "under",
+   "base": 63,
+   "n": 3,
+   "ref": 63.0,
+   "signal_score": "25-38",
+   "last_score": "25-38"
+  },
+  "bb_1867576|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1867576|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867576",
+   "match": "Cleveland Cavaliers - Indiana Pacers",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-21T01:10:32.660629+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 63,
+   "sent": true,
+   "direction": "under",
+   "base": 58,
+   "n": 3,
+   "ref": 58.0,
+   "signal_score": "31-32",
+   "last_score": "31-32"
   }
  }
 }
