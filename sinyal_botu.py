@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.7 - Dinamik Neon PNG Kart + Seçici Pencere + İstatistik Filtresi
+Canlı Sinyal Botu v2.7.1 - Temiz Neon PNG Kart + Seçici Pencere + İstatistik Filtresi
 """
 import io
 import json
@@ -306,9 +306,12 @@ def send_telegram_photo(png_bytes, caption=""):
     url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
     for attempt in range(2):
         try:
+            payload = {"chat_id": CHAT_ID}
+            if caption:
+                payload["caption"] = caption[:1024]
             r = requests.post(
                 url,
-                data={"chat_id": CHAT_ID, "caption": (caption or "")[:1024]},
+                data=payload,
                 files={"photo": ("signal_card.png", io.BytesIO(png_bytes), "image/png")},
                 timeout=15,
             )
@@ -381,11 +384,9 @@ def build_signal_card_png(p, sd, res, stat_line=None):
         img = Image.new("RGB", (w, h), bg_color)
         draw = ImageDraw.Draw(img)
 
-        # Dış ve iç neon çerçeveler
         _draw_rounded_box(draw, (24, 24, w - 24, h - 24), 44, panel_bg, outline=accent, width=6)
         _draw_rounded_box(draw, (42, 42, w - 42, h - 42), 34, None, outline=accent_dark, width=2)
 
-        # Üst başlık ve canlı rozeti
         f_top = _load_font(30, bold=True)
         f_badge = _load_font(22, bold=True)
         draw.text((74, 68), "CANLI MAC TAKIP BOTU", fill=text_main, font=f_top)
@@ -399,7 +400,6 @@ def build_signal_card_png(p, sd, res, stat_line=None):
             font=f_badge,
         )
 
-        # Yön oku + Ana sinyal başlığı
         arrow_x = 115
         arrow_y = 195
         if is_under:
@@ -434,7 +434,6 @@ def build_signal_card_png(p, sd, res, stat_line=None):
         t_main, f_main = _fit_text(draw, main_title, w - 260, 56, bold=True, min_size=38)
         draw.text((195, 162), t_main, fill=accent, font=f_main)
 
-        # Takımlar, lig, dakika/çeyrek ve skor
         match_txt, f_match = _fit_text(draw, p["match"], w - 140, 48, bold=True, min_size=30)
         mb = draw.textbbox((0, 0), match_txt, font=f_match)
         draw.text(((w - (mb[2] - mb[0])) // 2, 275), match_txt, fill=text_main, font=f_match)
@@ -449,7 +448,6 @@ def build_signal_card_png(p, sd, res, stat_line=None):
             lb = draw.textbbox((0, 0), lg_txt, font=f_lg)
             draw.text(((w - (lb[2] - lb[0])) // 2, 382), lg_txt, fill=text_muted, font=f_lg)
 
-        # Metrik satırları
         metric_rows = []
         if p["sport"] == "football":
             if stat_line:
@@ -464,13 +462,12 @@ def build_signal_card_png(p, sd, res, stat_line=None):
             metric_rows.append(f"Strateji: {sd['label']}")
 
         y_cursor = 435
-        for idx, m_text in enumerate(metric_rows[:3]):
+        for m_text in metric_rows[:3]:
             _draw_rounded_box(draw, (74, y_cursor, w - 74, y_cursor + 86), 22, row_bg, outline=(52, 68, 62), width=2)
             m_fit, f_m = _fit_text(draw, m_text, w - 190, 32, bold=True, min_size=22)
             draw.text((104, y_cursor + 24), m_fit, fill=text_main, font=f_m)
             y_cursor += 104
 
-        # OYNA ve Oran Bandı hapları
         band = sd["band"]
         play_txt, f_play = _fit_text(draw, f"OYNA: {sd['pick']}", w - 160, 36, bold=True, min_size=24)
         _draw_rounded_box(draw, (74, y_cursor + 8, w - 74, y_cursor + 88), 40, pill_bg, outline=accent, width=3)
@@ -483,7 +480,6 @@ def build_signal_card_png(p, sd, res, stat_line=None):
         bb2 = draw.textbbox((0, 0), band_txt, font=f_band)
         draw.text(((w - (bb2[2] - bb2[0])) // 2, y_cursor + 124), band_txt, fill=text_main, font=f_band)
 
-        # Alt disiplin uyarısı
         warn_txt, f_warn = _fit_text(
             draw,
             "Bandin disindaysa veya 1.05-1.15'e erdiyse OYNAMAYIN",
@@ -798,8 +794,7 @@ def dispatch_signal_telegram(p, sd, res, state=None, stat_line=None):
     msg_text = build_message(p, sd, res, state, stat_line=stat_line)
     card_bytes = build_signal_card_png(p, sd, res, stat_line=stat_line)
     if card_bytes:
-        short_cap = f"{sd['title']} | {p['match']} | OYNA: {sd['pick']} ({sd['band'][0]:.2f}-{sd['band'][1]:.2f})"
-        if send_telegram_photo(card_bytes, caption=short_cap):
+        if send_telegram_photo(card_bytes, caption=""):
             return True
     return send_telegram(msg_text)
 
@@ -986,7 +981,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Dinamik PNG kart, seçici 2. yarı penceresi ve aday maç istatistik filtresi aktif.")
+        success = send_telegram("🤖 *Test Başarılı!* Temiz neon PNG kart, seçici 2. yarı penceresi ve aday maç istatistik filtresi aktif.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
