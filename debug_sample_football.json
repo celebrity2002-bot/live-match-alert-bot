@@ -7,20 +7,11 @@
   {
    "Eid": "1793651",
    "Pids": {
-    "112": "SBTE_2_1028072761",
     "8": "1793651",
-    "29": "1793651"
+    "29": "1793651",
+    "112": "SBTE_2_1028072761"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "NOW",
@@ -75,6 +66,15 @@
       "allowedCountries": [
        "MX"
       ]
+     }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
      }
     ]
    },
@@ -194,6 +194,12 @@
      }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "4482",
@@ -214,9 +220,13 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795266039999,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "13",
    "Et": 1,
