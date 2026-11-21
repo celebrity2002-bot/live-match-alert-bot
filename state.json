@@ -418,8 +418,8 @@
     1.6
    ],
    "created": "2026-11-21T02:30:44.623689+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -427,7 +427,58 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-0",
+   "final_total": 0,
+   "settled": "2026-11-21T03:45:50.119700+00:00",
+   "seg_avg": 0.0
+  },
+  "bb_1867574|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1867574|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867574",
+   "match": "Denver Nuggets - Houston Rockets",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-21T03:45:47.914771+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 75,
+   "sent": true,
+   "direction": "under",
+   "base": 64,
+   "n": 3,
+   "ref": 64.0,
+   "signal_score": "38-37",
+   "last_score": "38-37"
+  },
+  "bb_1867582|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1867582|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867582",
+   "match": "LA Lakers - Sacramento Kings",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-21T03:45:48.384628+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 64,
+   "sent": true,
+   "direction": "under",
+   "base": 56,
+   "n": 3,
+   "ref": 56.0,
+   "signal_score": "32-32",
+   "last_score": "32-32"
   }
  }
 }
