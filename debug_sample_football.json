@@ -7,20 +7,11 @@
   {
    "Eid": "1793629",
    "Pids": {
+    "112": "SBTE_2_1028072786",
     "8": "1793629",
-    "29": "1793629",
-    "112": "SBTE_2_1028072786"
+    "29": "1793629"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng6/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -67,6 +58,15 @@
        "MX"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng6/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "2",
@@ -97,11 +97,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "82'",
+   "Eps": "87'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795279198453,
-    "RTm": 4860000
+    "ATm": 1795279500190,
+    "RTm": 5160000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -116,9 +116,9 @@
   {
    "Eid": "1793636",
    "Pids": {
+    "112": "SBTE_2_1028072780",
     "8": "1793636",
-    "29": "1793636",
-    "112": "SBTE_2_1028072780"
+    "29": "1793636"
    },
    "Media": {
     "112": [
@@ -198,11 +198,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "83'",
+   "Eps": "88'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795279192777,
-    "RTm": 4920000
+    "ATm": 1795279493450,
+    "RTm": 5220000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -238,9 +238,9 @@
   {
    "Eid": "1793633",
    "Pids": {
+    "29": "1793633",
     "112": "SBTE_2_1028072788",
-    "8": "1793633",
-    "29": "1793633"
+    "8": "1793633"
    },
    "Media": {
     "112": [
@@ -346,11 +346,11 @@
      "Sc": "FFCD00"
     }
    ],
-   "Eps": "79'",
+   "Eps": "84'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795279211469,
-    "RTm": 4680000
+    "ATm": 1795279509297,
+    "RTm": 4980000
    },
    "Epr": 1,
    "Ecov": 0,

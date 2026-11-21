@@ -1661,7 +1661,7 @@
    ],
    "created": "2026-11-21T14:50:33.246612+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -1766,7 +1766,7 @@
    ],
    "created": "2026-11-21T15:25:23.342571+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 183,
    "sent": true,
    "direction": "over",
@@ -1887,14 +1887,14 @@
    "created": "2026-11-21T15:30:47.302676+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 7,
+   "last_total": 8,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "4-3"
+   "last_score": "4-4"
   },
   "fb_1803616|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1803616|FB_COK_GOLLU_ERKEN",
@@ -2055,14 +2055,14 @@
    "created": "2026-11-21T15:40:35.312128+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "2-2"
   },
   "fb_1802495|FB_IY2_00": {
    "key": "fb_1802495|FB_IY2_00",
@@ -2271,14 +2271,14 @@
    "created": "2026-11-21T15:50:35.785693+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "fb_1803619|FB_IY2_00": {
    "key": "fb_1803619|FB_IY2_00",
@@ -2343,14 +2343,14 @@
    "created": "2026-11-21T15:50:36.950678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "1-2"
   },
   "fb_1822460|FB_IY2_00": {
    "key": "fb_1822460|FB_IY2_00",
@@ -2535,14 +2535,14 @@
    "created": "2026-11-21T15:50:40.045476+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-1"
+   "last_score": "2-2"
   },
   "fb_1810459|FB_IY2_00": {
    "key": "fb_1810459|FB_IY2_00",
@@ -2559,14 +2559,14 @@
    "created": "2026-11-21T15:50:40.421631+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1837574|FB_IY2_00": {
    "key": "fb_1837574|FB_IY2_00",
