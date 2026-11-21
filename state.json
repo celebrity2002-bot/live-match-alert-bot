@@ -627,14 +627,14 @@
    "created": "2026-11-21T12:00:53.243723+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-2"
+   "last_score": "2-4"
   },
   "fb_1869775|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1869775|FB_COK_GOLLU_ERKEN",
