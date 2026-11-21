@@ -3012,14 +3012,14 @@
    "created": "2026-11-21T17:50:32.365699+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 133,
+   "last_total": 142,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "13-21",
-   "last_score": "62-71"
+   "last_score": "66-76"
   },
   "fb_1798207|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1798207|FB_COK_GOLLU_ERKEN",
@@ -3034,8 +3034,8 @@
     1.9
    ],
    "created": "2026-11-21T17:50:33.849469+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -3043,7 +3043,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "3-0"
+   "last_score": "3-0",
+   "final_total": 3,
+   "settled": "2026-11-21T19:20:32.650768+00:00",
+   "seg_avg": 0.0
   },
   "fb_1795653|FB_IY2_00": {
    "key": "fb_1795653|FB_IY2_00",
@@ -3264,14 +3267,14 @@
    "created": "2026-11-21T18:25:26.606598+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 87,
+   "last_total": 95,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "18-18",
-   "last_score": "48-39"
+   "last_score": "56-39"
   },
   "bb_1868545|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868545|BB_TEMPO_DUSUSU_ALT",
@@ -3288,14 +3291,14 @@
    "created": "2026-11-21T18:40:31.264706+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 119,
+   "last_total": 123,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "35-38",
-   "last_score": "60-59"
+   "last_score": "60-63"
   },
   "fb_1911851|FB_IY2_00": {
    "key": "fb_1911851|FB_IY2_00",
@@ -3312,14 +3315,14 @@
    "created": "2026-11-21T18:50:35.341071+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1915542|FB_IY2_00": {
    "key": "fb_1915542|FB_IY2_00",
@@ -3368,6 +3371,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1844078|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1844078|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1844078",
+   "match": "UJAP Quimper - Hyeres-Toulon",
+   "league": "France Pro B",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-21T19:20:31.166181+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 53,
+   "sent": true,
+   "direction": "under",
+   "base": 53,
+   "n": 3,
+   "ref": 53.0,
+   "signal_score": "25-28",
+   "last_score": "25-28"
   }
  }
 }
