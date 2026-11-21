@@ -563,6 +563,30 @@
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1"
+  },
+  "fb_1869786|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1869786|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1869786",
+   "match": "Chelsea U18 - Arsenal U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T11:35:25.032555+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-0",
+   "last_score": "3-0"
   }
  }
 }
