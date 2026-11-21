@@ -5,142 +5,10 @@
  ],
  "events": [
   {
-   "Eid": "1814059",
+   "Eid": "1813406",
    "Pids": {
-    "112": "SBTE_2_1029560797",
-    "8": "1814059"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "2dnay2c7c5r79zsrwg2kq6as4",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "1",
-   "Trh1": "1",
-   "Trh2": "1",
-   "Tr1OR": "1",
-   "Tr2OR": "1",
-   "T1": [
-    {
-     "ID": "230795",
-     "Nm": "Levante Badalona W",
-     "Img": "teambadge/levante-badalona-2024.png",
-     "Abr": "LBA(W)",
-     "Fc": "482E92",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "2712",
-     "Nm": "Deportivo La Coruna W",
-     "Img": "enet/1077485.png",
-     "Abr": "DEP(W)",
-     "Fc": "57175E",
-     "Sc": "A38D44"
-    }
-   ],
-   "Eps": "HT",
-   "Esid": 10,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "Regular Season",
-   "Et": 1,
-   "Esd": 20261121120000,
-   "EO": 807158127,
-   "EOX": 807158127,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1834798",
-   "Pids": {
-    "8": "1834798",
-    "112": "SBTE_2_1028430624"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "GB",
-       "IE",
-       "CA"
-      ]
-     },
-     {
-      "eventId": "8ry2hgjorhp9rrt7ayw4g0wt0",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "6722",
-     "Nm": "Eintracht Frankfurt W",
-     "Img": "enet/294857.png",
-     "Abr": "SGE(W)",
-     "Fc": "E1000F",
-     "Sc": "000000"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "369217",
-     "Nm": "Hamburger SV",
-     "Img": "enet/1638021.png",
-     "Abr": "HAM"
-    }
-   ],
-   "Eps": "HT",
-   "Esid": 10,
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "11",
-   "Et": 1,
-   "Esd": 20261121120000,
-   "EO": 807158119,
-   "EOX": 807158119,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1849652",
-   "Pids": {
-    "112": "SBTE_2_1028488943",
-    "8": "1849652"
+    "112": "SBTE_2_1028231032",
+    "8": "1813406"
    },
    "Media": {
     "112": [
@@ -162,44 +30,188 @@
       "allowedCountries": [
        "CA"
       ]
+     },
+     {
+      "eventId": "Bundesliga YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
      }
     ]
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
    "T1": [
     {
-     "ID": "228731",
-     "Nm": "Parma Calcio W",
-     "Img": "enet/1184312.png",
-     "Abr": "PAR(W)"
+     "ID": "2939",
+     "Nm": "1. FC Nuremberg",
+     "Img": "enet/8165.png",
+     "Abr": "NUR",
+     "Fc": "c70000",
+     "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "101065",
-     "Nm": "Napoli W",
-     "Img": "teambadge/napoli-women.png",
-     "Abr": "NAP(W)",
-     "Fc": "12A0D7",
-     "Sc": "003C82"
+     "ID": "5172",
+     "Nm": "Eintracht Braunschweig",
+     "Img": "enet/9776.png",
+     "Abr": "EBR",
+     "Fc": "f0e800",
+     "Sc": "002aff"
     }
    ],
-   "Eps": "12'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795261451010,
-    "RTm": 660000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Regular Season",
+   "ErnInf": "12",
    "Et": 1,
-   "Esd": 20261121123000,
-   "EO": 807141735,
-   "EOX": 807141735,
+   "Esd": 20261121130000,
+   "EO": 832356455,
+   "EOX": 832356455,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1813397",
+   "Pids": {
+    "112": "SBTE_2_1028231083",
+    "8": "1813397"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Bundesliga YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "2852",
+     "Nm": "Hannover 96",
+     "Img": "enet/9904.png",
+     "Abr": "HAN",
+     "Fc": "ff0000",
+     "Sc": "ffffff"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "5257",
+     "Nm": "Greuther Furth",
+     "Img": "enet/8357.png",
+     "Abr": "GRF",
+     "Fc": "ffffff",
+     "Sc": "029400"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "12",
+   "Et": 1,
+   "Esd": 20261121130000,
+   "EO": 832356455,
+   "EOX": 832356455,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1813411",
+   "Pids": {
+    "112": "SBTE_2_1028231081",
+    "8": "1813411"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Bundesliga YouTube",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "5",
+     "Nm": "Wolfsburg",
+     "Img": "teambadge/wolfsburg-2026.png",
+     "NewsTag": "/team/wolfsburg-2021020913320920836-227/",
+     "Abr": "WOB",
+     "Fc": "65B32E",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "5294",
+     "Nm": "Holstein Kiel",
+     "Img": "enet/8150.png",
+     "Abr": "HKI",
+     "Fc": "62a3db",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "12",
+   "Et": 1,
+   "Esd": 20261121130000,
+   "EO": 899465319,
+   "EOX": 899465319,
    "Spid": 1,
    "Pid": 8
   }
