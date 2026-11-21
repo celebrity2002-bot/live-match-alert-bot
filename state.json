@@ -14,7 +14,7 @@
    ],
    "created": "2026-11-21T19:55:28.530560+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 264,
    "sent": true,
    "direction": "under",
@@ -63,14 +63,14 @@
    "created": "2026-11-21T20:15:33.562584+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 88,
+   "last_total": 93,
    "sent": true,
    "direction": "over",
    "base": 69,
    "n": 2,
    "ref": 34.5,
    "signal_score": "37-32",
-   "last_score": "51-37"
+   "last_score": "51-42"
   },
   "fb_1795657|FB_IY2_00": {
    "key": "fb_1795657|FB_IY2_00",
@@ -87,14 +87,14 @@
    "created": "2026-11-21T20:19:50.820806+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "bb_1867875|BB_Q1_DUSUK_UST": {
    "key": "bb_1867875|BB_Q1_DUSUK_UST",
@@ -111,14 +111,14 @@
    "created": "2026-11-21T20:25:24.692150+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 59,
+   "last_total": 70,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "13-22",
-   "last_score": "26-33"
+   "last_score": "31-39"
   },
   "bb_1844078|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1844078|OZEL_BB_BENCH_COKUS",
@@ -135,14 +135,14 @@
    "created": "2026-11-21T20:30:44.951123+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 156,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 137,
    "n": 1,
    "ref": 45.666666666666664,
    "signal_score": "65-76",
-   "last_score": "75-81"
+   "last_score": "77-89"
   },
   "bb_1854370|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1854370|OZEL_BB_BENCH_COKUS",
@@ -159,14 +159,14 @@
    "created": "2026-11-21T20:30:45.464134+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 162,
+   "last_total": 168,
    "sent": true,
    "direction": "under",
    "base": 140,
    "n": 1,
    "ref": 46.666666666666664,
    "signal_score": "70-77",
-   "last_score": "79-83"
+   "last_score": "82-86"
   },
   "fb_1785427|FB_IY2_00": {
    "key": "fb_1785427|FB_IY2_00",
@@ -207,14 +207,14 @@
    "created": "2026-11-21T20:35:27.934387+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 137,
    "sent": true,
    "direction": "under",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "50-69",
-   "last_score": "54-76"
+   "last_score": "58-79"
   },
   "bb_1853702|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1853702|OZEL_BB_BENCH_COKUS",
@@ -231,14 +231,14 @@
    "created": "2026-11-21T20:35:28.334791+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 146,
+   "last_total": 156,
    "sent": true,
    "direction": "under",
    "base": 134,
    "n": 1,
    "ref": 44.666666666666664,
    "signal_score": "65-76",
-   "last_score": "67-79"
+   "last_score": "71-85"
   },
   "fb_1790273|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1790273|FB_COK_GOLLU_ERKEN",
@@ -263,6 +263,30 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-2"
+  },
+  "fb_1820001|FB_IY2_00": {
+   "key": "fb_1820001|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1820001",
+   "match": "Paris Saint-Germain W - Saint Malo",
+   "league": "France Premiere Ligue Femenine",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.7
+   ],
+   "created": "2026-11-21T20:46:41.489713+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
