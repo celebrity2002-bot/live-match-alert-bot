@@ -15,11 +15,7 @@ on:
           - run
           - summary
           - test
-options:
-       - run
-       - summary
-       - test
-       - detay_test
+          - detay_test
 
 permissions:
   contents: write
@@ -54,14 +50,15 @@ jobs:
           ENABLE_FOOTBALL: ${{ vars.ENABLE_FOOTBALL || '1' }}
           ENABLE_BASKETBALL: ${{ vars.ENABLE_BASKETBALL || '1' }}
           DISABLE_STRATEGIES: ${{ vars.DISABLE_STRATEGIES || 'FB_BERABERLIK_GEC, FB_GEC_GOL, FB_11_IY2, FB_00_60_70, BB_HT_YUKSEK_ALT' }}
-          MAX_LIVE_PER_MATCH: ${{ vars.MAX_LIVE_PER_MATCH || '2' }}
+          MAX_LIVE_PER_MATCH: ${{ vars.MAX_LIVE_PER_MATCH || '1' }}
           SEND_RESULTS: ${{ vars.SEND_RESULTS || 'on' }}
-          DEBUG_DUMP: ${{ vars.DEBUG_DUMP || '1' }}
         run: |
           if [ "${{ github.event.schedule }}" = "0 19 * * *" ] || [ "${{ github.event.inputs.command }}" = "summary" ]; then
             python sinyal_botu.py summary
           elif [ "${{ github.event.inputs.command }}" = "test" ]; then
             python sinyal_botu.py test
+          elif [ "${{ github.event.inputs.command }}" = "detay_test" ]; then
+            python detay_test.py
           else
             python sinyal_botu.py run
           fi
