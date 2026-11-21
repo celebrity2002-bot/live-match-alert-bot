@@ -15,6 +15,11 @@ on:
           - run
           - summary
           - test
+options:
+       - run
+       - summary
+       - test
+       - detay_test
 
 permissions:
   contents: write
