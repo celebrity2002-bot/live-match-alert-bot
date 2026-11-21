@@ -447,14 +447,14 @@
    "created": "2026-11-21T03:45:47.914771+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 158,
+   "last_total": 171,
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "38-37",
-   "last_score": "78-80"
+   "last_score": "85-86"
   },
   "bb_1867582|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867582|BB_TEMPO_DUSUSU_ALT",
@@ -471,14 +471,14 @@
    "created": "2026-11-21T03:45:48.384628+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 163,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "32-32",
-   "last_score": "79-84"
+   "last_score": "82-84"
   },
   "fb_1799077|FB_IY2_00": {
    "key": "fb_1799077|FB_IY2_00",
@@ -519,14 +519,14 @@
    "created": "2026-11-21T04:35:24.883702+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 178,
+   "last_total": 188,
    "sent": true,
    "direction": "under",
    "base": 165,
    "n": 1,
    "ref": 55.0,
    "signal_score": "80-91",
-   "last_score": "84-94"
+   "last_score": "89-99"
   }
  }
 }
