@@ -2958,14 +2958,14 @@
    "created": "2026-11-21T17:35:34.399678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 164,
+   "last_total": 182,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "32-23",
-   "last_score": "92-72"
+   "last_score": "100-82"
   },
   "fb_1814870|FB_IY2_00": {
    "key": "fb_1814870|FB_IY2_00",
@@ -3006,14 +3006,14 @@
    "created": "2026-11-21T17:50:32.365699+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 103,
+   "last_total": 114,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "13-21",
-   "last_score": "49-54"
+   "last_score": "55-59"
   },
   "fb_1798207|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1798207|FB_COK_GOLLU_ERKEN",
@@ -3053,7 +3053,7 @@
    ],
    "created": "2026-11-21T17:50:34.253809+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -3077,7 +3077,7 @@
    ],
    "created": "2026-11-21T17:50:34.584143+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -3249,14 +3249,14 @@
    "created": "2026-11-21T18:25:26.606598+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 74,
+   "last_total": 79,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "18-18",
-   "last_score": "42-32"
+   "last_score": "42-37"
   },
   "bb_1868545|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868545|BB_TEMPO_DUSUSU_ALT",
@@ -3273,14 +3273,14 @@
    "created": "2026-11-21T18:40:31.264706+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 91,
+   "last_total": 106,
    "sent": true,
    "direction": "under",
    "base": 59,
    "n": 3,
    "ref": 59.0,
    "signal_score": "35-38",
-   "last_score": "45-46"
+   "last_score": "52-54"
   },
   "fb_1911851|FB_IY2_00": {
    "key": "fb_1911851|FB_IY2_00",
@@ -3295,6 +3295,54 @@
     1.6
    ],
    "created": "2026-11-21T18:50:35.341071+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1915542|FB_IY2_00": {
+   "key": "fb_1915542|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1915542",
+   "match": "CA Talleres Remedios de Escalada - Real Pilar",
+   "league": "Argentina Primera B Metropolitana: Promotion Playoff",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T18:55:26.987946+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1915543|FB_IY2_00": {
+   "key": "fb_1915543|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1915543",
+   "match": "Sportivo Italiano - Deportivo Armenio",
+   "league": "Argentina Primera B Metropolitana: Promotion Playoff",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T18:55:27.516926+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
