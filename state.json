@@ -69,14 +69,14 @@
    "created": "2026-11-21T20:15:33.562584+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 137,
+   "last_total": 140,
    "sent": true,
    "direction": "over",
    "base": 69,
    "n": 2,
    "ref": 34.5,
    "signal_score": "37-32",
-   "last_score": "67-70"
+   "last_score": "67-73"
   },
   "fb_1795657|FB_IY2_00": {
    "key": "fb_1795657|FB_IY2_00",
@@ -117,14 +117,14 @@
    "created": "2026-11-21T20:25:24.692150+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 97,
+   "last_total": 99,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "13-22",
-   "last_score": "43-54"
+   "last_score": "43-56"
   },
   "bb_1844078|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1844078|OZEL_BB_BENCH_COKUS",
