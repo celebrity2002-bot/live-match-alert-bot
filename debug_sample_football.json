@@ -7,11 +7,20 @@
   {
    "Eid": "1793651",
    "Pids": {
-    "112": "SBTE_2_1028072761",
     "8": "1793651",
-    "29": "1793651"
+    "29": "1793651",
+    "112": "SBTE_2_1028072761"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "NOW",
@@ -67,17 +76,14 @@
        "MX"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "12633",
@@ -100,23 +106,27 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795264236150,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121133000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531623,
+   "EOX": 899531623,
    "Spid": 1,
    "Pid": 8
   },
   {
    "Eid": "1802497",
    "Pids": {
-    "112": "SBTE_2_1028143010",
-    "8": "1802497"
+    "8": "1802497",
+    "112": "SBTE_2_1028143010"
    },
    "Media": {
     "112": [
@@ -186,6 +196,12 @@
      }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "3006",
@@ -208,15 +224,19 @@
      "Sc": "1D5BA4"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795264221209,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "16",
    "Et": 1,
    "Esd": 20261121133000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8
   },
@@ -258,6 +278,10 @@
      }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
    "T1": [
     {
      "ID": "2811",
@@ -280,15 +304,19 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795264241456,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
-   "ErnInf": "16",
+   "ErnInf": "Regular Season",
    "Et": 1,
    "Esd": 20261121133000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8
   }
