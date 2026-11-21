@@ -587,6 +587,30 @@
    "ref": 0.0,
    "signal_score": "3-0",
    "last_score": "3-0"
+  },
+  "fb_1834798|FB_IY2_00": {
+   "key": "fb_1834798|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1834798",
+   "match": "Eintracht Frankfurt W - Hamburger SV",
+   "league": "Germany Frauen-Bundesliga",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T11:45:35.442493+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
