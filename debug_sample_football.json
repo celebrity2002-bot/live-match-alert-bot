@@ -5,21 +5,41 @@
  ],
  "events": [
   {
-   "Eid": "1813406",
+   "Eid": "1793651",
    "Pids": {
-    "112": "SBTE_2_1028231032",
-    "8": "1813406"
+    "112": "SBTE_2_1028072761",
+    "8": "1793651",
+    "29": "1793651"
    },
    "Media": {
     "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "TNT Sports 1",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "tnt-sports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
       "allowedCountries": [
-       "CA",
-       "US"
+       "US",
+       "CA"
       ]
      },
      {
@@ -32,228 +52,243 @@
       ]
      },
      {
-      "eventId": "Bundesliga YouTube",
+      "eventId": "FOX One",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
-       "IE",
-       "GB"
+       "MX"
       ]
-     }
-    ]
-   },
-   "Inc-f": {
-    "1": [
+     },
      {
-      "IT": 1038,
-      "Nm": 2,
-      "Sc": [
-       1,
-       0
+      "eventId": "FOX+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
       ]
+     }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "1",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "2939",
-     "Nm": "1. FC Nuremberg",
-     "Img": "enet/8165.png",
-     "Abr": "NUR",
-     "Fc": "c70000",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5172",
-     "Nm": "Eintracht Braunschweig",
-     "Img": "enet/9776.png",
-     "Abr": "EBR",
-     "Fc": "f0e800",
-     "Sc": "002aff"
-    }
-   ],
-   "Eps": "21'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795263631187,
-    "RTm": 1200000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "12",
-   "Et": 1,
-   "Esd": 20261121130000,
-   "EO": 807322479,
-   "EOX": 807322479,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1813397",
-   "Pids": {
-    "112": "SBTE_2_1028231083",
-    "8": "1813397"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Bundesliga YouTube",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "2852",
-     "Nm": "Hannover 96",
-     "Img": "enet/9904.png",
-     "Abr": "HAN",
-     "Fc": "ff0000",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "5257",
-     "Nm": "Greuther Furth",
-     "Img": "enet/8357.png",
-     "Abr": "GRF",
-     "Fc": "ffffff",
-     "Sc": "029400"
-    }
-   ],
-   "Eps": "21'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795263626218,
-    "RTm": 1200000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "12",
-   "Et": 1,
-   "Esd": 20261121130000,
-   "EO": 807322487,
-   "EOX": 807322487,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1813411",
-   "Pids": {
-    "112": "SBTE_2_1028231081",
-    "8": "1813411"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "CA",
-       "US"
-      ]
-     },
-     {
-      "eventId": "DAZN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "dazn.png",
-      "allowedCountries": [
-       "CA"
-      ]
-     },
-     {
-      "eventId": "Bundesliga YouTube",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "IE",
-       "GB"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "5",
-     "Nm": "Wolfsburg",
-     "Img": "teambadge/wolfsburg-2026.png",
-     "NewsTag": "/team/wolfsburg-2021020913320920836-227/",
-     "Abr": "WOB",
-     "Fc": "65B32E",
+     "ID": "12633",
+     "Nm": "Manchester City",
+     "Img": "enet/8456.png",
+     "NewsTag": "/team/manchester-city-2021020913320920836-104/",
+     "Abr": "MCI",
+     "Fc": "6CABDD",
      "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "5294",
-     "Nm": "Holstein Kiel",
-     "Img": "enet/8150.png",
-     "Abr": "HKI",
-     "Fc": "62a3db",
-     "Sc": "ffffff"
+     "ID": "2872",
+     "Nm": "Fulham",
+     "Img": "enet/9879.png",
+     "NewsTag": "/team/fulham-2021020913320920836-98/",
+     "Abr": "FUL",
+     "Fc": "000000",
+     "Sc": "FDFDFD"
     }
    ],
-   "Eps": "20'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795263596186,
-    "RTm": 1140000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "12",
+   "ErnInf": "11",
    "Et": 1,
-   "Esd": 20261121130000,
-   "EO": 874299751,
-   "EOX": 874299751,
+   "Esd": 20261121133000,
+   "EO": 899530855,
+   "EOX": 899530855,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1802497",
+   "Pids": {
+    "112": "SBTE_2_1028143010",
+    "8": "1802497"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "ESPN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "espn.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports Football",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "3006",
+     "Nm": "Millwall",
+     "Img": "teambadge/millwall.png",
+     "NewsTag": "/team/millwall-2022062716001253418-137/",
+     "Abr": "MIL",
+     "Fc": "00194A",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "2866",
+     "Nm": "QPR",
+     "Img": "enet/10172.png",
+     "NewsTag": "/team/queens-park-rangers-2022062716001253418-121/",
+     "Abr": "QPR",
+     "Fc": "FDFDFD",
+     "Sc": "1D5BA4"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "16",
+   "Et": 1,
+   "Esd": 20261121133000,
+   "EO": 899530855,
+   "EOX": 899530855,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1802489",
+   "Pids": {
+    "112": "SBTE_2_1028143009",
+    "8": "1802489"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Paramount+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports+ App",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "sky-sports-plus.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "2811",
+     "Nm": "Norwich City",
+     "Img": "enet/9850.png",
+     "NewsTag": "/team/norwich-2021020913320920836-111/",
+     "Abr": "NOR",
+     "Fc": "FFF200",
+     "Sc": "00A650"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3916",
+     "Nm": "Cardiff City",
+     "Img": "enet/8344.png",
+     "NewsTag": "/team/cardiff-city-2022062716001253418-122/",
+     "Abr": "CAR",
+     "Fc": "0070B5",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "16",
+   "Et": 1,
+   "Esd": 20261121133000,
+   "EO": 899530855,
+   "EOX": 899530855,
    "Spid": 1,
    "Pid": 8
   }
