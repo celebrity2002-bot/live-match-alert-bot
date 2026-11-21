@@ -2796,14 +2796,14 @@
    "created": "2026-11-21T16:50:33.445330+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-2"
+   "last_score": "1-3"
   },
   "fb_1814057|FB_IY2_00": {
    "key": "fb_1814057|FB_IY2_00",
@@ -2901,14 +2901,14 @@
    "created": "2026-11-21T17:01:00.622708+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-3"
+   "last_score": "3-3"
   },
   "fb_1911853|FB_IY2_00": {
    "key": "fb_1911853|FB_IY2_00",
@@ -2997,14 +2997,14 @@
    "created": "2026-11-21T17:50:32.365699+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 51,
+   "last_total": 58,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "13-21",
-   "last_score": "19-32"
+   "last_score": "26-32"
   },
   "fb_1798207|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1798207|FB_COK_GOLLU_ERKEN",
@@ -3045,14 +3045,14 @@
    "created": "2026-11-21T17:50:34.253809+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1795654|FB_IY2_00": {
    "key": "fb_1795654|FB_IY2_00",
@@ -3069,14 +3069,14 @@
    "created": "2026-11-21T17:50:34.584143+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1911845|FB_IY2_00": {
    "key": "fb_1911845|FB_IY2_00",
