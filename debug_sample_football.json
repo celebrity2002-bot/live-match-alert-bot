@@ -7,20 +7,11 @@
   {
    "Eid": "1793651",
    "Pids": {
-    "8": "1793651",
     "29": "1793651",
-    "112": "SBTE_2_1028072761"
+    "112": "SBTE_2_1028072761",
+    "8": "1793651"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "NOW",
@@ -76,6 +67,15 @@
        "MX"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng5/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "0",
@@ -106,27 +106,27 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "1'",
+   "Eps": "5'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795264236150,
-    "RTm": 0
+    "ATm": 1795264476793,
+    "RTm": 240000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121133000,
-   "EO": 899531623,
-   "EOX": 899531623,
+   "EO": 899531631,
+   "EOX": 899531631,
    "Spid": 1,
    "Pid": 8
   },
   {
    "Eid": "1802497",
    "Pids": {
-    "8": "1802497",
-    "112": "SBTE_2_1028143010"
+    "112": "SBTE_2_1028143010",
+    "8": "1802497"
    },
    "Media": {
     "112": [
@@ -224,19 +224,19 @@
      "Sc": "1D5BA4"
     }
    ],
-   "Eps": "1'",
+   "Eps": "6'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795264221209,
-    "RTm": 0
+    "ATm": 1795264521435,
+    "RTm": 300000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "16",
    "Et": 1,
    "Esd": 20261121133000,
-   "EO": 899531367,
-   "EOX": 899531367,
+   "EO": 899531631,
+   "EOX": 899531631,
    "Spid": 1,
    "Pid": 8
   },
@@ -304,19 +304,19 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "1'",
+   "Eps": "5'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795264241456,
-    "RTm": 0
+    "ATm": 1795264511311,
+    "RTm": 240000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Regular Season",
    "Et": 1,
    "Esd": 20261121133000,
-   "EO": 899531367,
-   "EOX": 899531367,
+   "EO": 899531631,
+   "EOX": 899531631,
    "Spid": 1,
    "Pid": 8
   }
