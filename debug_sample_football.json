@@ -12,15 +12,6 @@
     "29": "1793654"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "NOW",
@@ -79,6 +70,15 @@
        "GB"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "0",
@@ -109,11 +109,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "16'",
+   "Eps": "21'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795283112339,
-    "RTm": 900000
+    "ATm": 1795283412215,
+    "RTm": 1200000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -258,19 +258,19 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "12'",
+   "Eps": "17'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795283112369,
-    "RTm": 660000
+    "ATm": 1795283410076,
+    "RTm": 960000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "13",
    "Et": 1,
    "Esd": 20261121183000,
-   "EO": 899531631,
-   "EOX": 899531631,
+   "EO": 899662703,
+   "EOX": 899662703,
    "Spid": 1,
    "Pid": 8
   },
@@ -393,11 +393,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "16'",
+   "Eps": "21'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795283121948,
-    "RTm": 900000
+    "ATm": 1795283422000,
+    "RTm": 1200000
    },
    "Epr": 1,
    "Ecov": 0,
