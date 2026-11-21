@@ -7,11 +7,20 @@
   {
    "Eid": "1793654",
    "Pids": {
-    "112": "SBTE_2_1028072760",
     "8": "1793654",
-    "29": "1793654"
+    "29": "1793654",
+    "112": "SBTE_2_1028072760"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "NOW",
@@ -70,15 +79,6 @@
        "GB"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
    "Tr1": "0",
@@ -109,11 +109,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "26'",
+   "Eps": "28'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795283707059,
-    "RTm": 1500000
+    "ATm": 1795283828035,
+    "RTm": 1620000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -125,6 +125,15 @@
    "Spid": 1,
    "Pid": 8,
    "Games": {
+    "p6": [
+     {
+      "id": "681334bd5a041059deb5b7ae",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "NG"
+      ]
+     }
+    ],
     "ls6": [
      {
       "id": "679a5dc64c58a24929681a30",
@@ -132,15 +141,6 @@
       "allowedCountries": [
        "GB",
        "IE"
-      ]
-     }
-    ],
-    "p6": [
-     {
-      "id": "681334bd5a041059deb5b7ae",
-      "status": "INACTIVE",
-      "allowedCountries": [
-       "NG"
       ]
      }
     ]
@@ -258,11 +258,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "22'",
+   "Eps": "24'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795283706961,
-    "RTm": 1260000
+    "ATm": 1795283828055,
+    "RTm": 1380000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -393,11 +393,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "25'",
+   "Eps": "27'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795283666948,
-    "RTm": 1440000
+    "ATm": 1795283781995,
+    "RTm": 1560000
    },
    "Epr": 1,
    "Ecov": 0,
