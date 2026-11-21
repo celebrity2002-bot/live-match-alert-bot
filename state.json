@@ -769,8 +769,8 @@
     1.55
    ],
    "created": "2026-11-21T12:55:25.957989+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 169,
    "sent": true,
    "direction": "under",
@@ -778,7 +778,10 @@
    "n": 3,
    "ref": 50.0,
    "signal_score": "29-21",
-   "last_score": "92-77"
+   "last_score": "92-77",
+   "final_total": 169,
+   "settled": "2026-11-21T14:40:44.328613+00:00",
+   "seg_avg": 39.7
   },
   "fb_1869783|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1869783|FB_COK_GOLLU_ERKEN",
@@ -793,8 +796,8 @@
     1.9
    ],
    "created": "2026-11-21T13:10:33.169749+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -802,7 +805,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-3",
-   "last_score": "0-6"
+   "last_score": "0-6",
+   "final_total": 6,
+   "settled": "2026-11-21T14:40:46.560636+00:00",
+   "seg_avg": 3.0
   },
   "fb_1802497|FB_IY2_00": {
    "key": "fb_1802497|FB_IY2_00",
@@ -898,8 +904,8 @@
     1.6
    ],
    "created": "2026-11-21T13:20:35.202374+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -907,7 +913,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-21T14:40:47.077136+00:00",
+   "seg_avg": 1.0
   },
   "fb_1823649|FB_IY2_00": {
    "key": "fb_1823649|FB_IY2_00",
@@ -951,14 +960,14 @@
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 120,
+   "last_total": 129,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "61-59"
+   "last_score": "68-61"
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -998,7 +1007,7 @@
    ],
    "created": "2026-11-21T13:35:25.589253+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -1023,14 +1032,14 @@
    "created": "2026-11-21T13:40:33.523026+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-2"
+   "last_score": "3-2"
   },
   "fb_1826203|FB_IY2_00": {
    "key": "fb_1826203|FB_IY2_00",
@@ -1095,14 +1104,14 @@
    "created": "2026-11-21T13:50:34.762216+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1826822|FB_IY2_00": {
    "key": "fb_1826822|FB_IY2_00",
@@ -1143,14 +1152,14 @@
    "created": "2026-11-21T13:50:35.725700+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "2-0"
   },
   "fb_1890739|FB_IY2_00": {
    "key": "fb_1890739|FB_IY2_00",
@@ -1359,14 +1368,14 @@
    "created": "2026-11-21T14:30:46.787618+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1"
+   "last_score": "3-1"
   },
   "fb_1849648|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1849648|FB_COK_GOLLU_ERKEN",
@@ -1431,14 +1440,14 @@
    "created": "2026-11-21T14:35:23.939230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 34,
+   "last_total": 42,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "17-17",
-   "last_score": "17-17"
+   "last_score": "25-17"
   },
   "fb_1817121|FB_IY2_00": {
    "key": "fb_1817121|FB_IY2_00",
@@ -1463,6 +1472,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "fb_1841294|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1841294|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1841294",
+   "match": "Barendrecht - Kloetinge",
+   "league": "Netherlands Tweede Divisie",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T14:40:46.054217+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2"
   }
  }
 }
