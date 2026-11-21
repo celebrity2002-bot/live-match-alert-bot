@@ -122,7 +122,7 @@
    ],
    "created": "2026-11-21T20:25:24.692150+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 145,
    "sent": true,
    "direction": "over",
@@ -307,8 +307,8 @@
     1.7
    ],
    "created": "2026-11-21T20:46:41.489713+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -316,7 +316,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-0",
+   "final_total": 1,
+   "settled": "2026-11-21T22:08:17.217812+00:00",
+   "seg_avg": 1.0
   },
   "fb_1811158|FB_IY2_00": {
    "key": "fb_1811158|FB_IY2_00",
@@ -360,14 +363,14 @@
    "created": "2026-11-21T21:20:34.881201+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0",
+   "last_score": "0-1",
    "stats_summary": "İsabetli Şut 4/8 | Korner 9"
   },
   "fb_1918630|FB_IY2_00": {
