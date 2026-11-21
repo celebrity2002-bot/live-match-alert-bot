@@ -7,11 +7,20 @@
   {
    "Eid": "1793654",
    "Pids": {
+    "29": "1793654",
     "112": "SBTE_2_1028072760",
-    "8": "1793654",
-    "29": "1793654"
+    "8": "1793654"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "NOW",
@@ -70,15 +79,6 @@
        "GB"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
    "Tr1": "0",
@@ -119,6 +119,15 @@
    "Spid": 1,
    "Pid": 8,
    "Games": {
+    "p6": [
+     {
+      "id": "681334bd5a041059deb5b7ae",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "NG"
+      ]
+     }
+    ],
     "ls6": [
      {
       "id": "679a5dc64c58a24929681a30",
@@ -126,15 +135,6 @@
       "allowedCountries": [
        "GB",
        "IE"
-      ]
-     }
-    ],
-    "p6": [
-     {
-      "id": "681334bd5a041059deb5b7ae",
-      "status": "INACTIVE",
-      "allowedCountries": [
-       "NG"
       ]
      }
     ]
@@ -267,8 +267,8 @@
   {
    "Eid": "1812739",
    "Pids": {
-    "112": "SBTE_2_1028230562",
-    "8": "1812739"
+    "8": "1812739",
+    "112": "SBTE_2_1028230562"
    },
    "Media": {
     "112": [
