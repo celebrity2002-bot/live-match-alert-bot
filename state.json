@@ -959,7 +959,7 @@
    ],
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 171,
    "sent": true,
    "direction": "over",
@@ -1328,7 +1328,7 @@
    ],
    "created": "2026-11-21T14:20:38.123004+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1473,14 +1473,14 @@
    "created": "2026-11-21T14:35:23.939230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 92,
+   "last_total": 97,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "17-17",
-   "last_score": "64-28"
+   "last_score": "66-31"
   },
   "fb_1817121|FB_IY2_00": {
    "key": "fb_1817121|FB_IY2_00",
@@ -1521,14 +1521,14 @@
    "created": "2026-11-21T14:40:46.054217+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-3"
+   "last_score": "2-3"
   },
   "fb_1845169|FB_IY2_00": {
    "key": "fb_1845169|FB_IY2_00",
@@ -1697,6 +1697,30 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0"
+  },
+  "bb_1861266|BB_Q1_DUSUK_UST": {
+   "key": "bb_1861266|BB_Q1_DUSUK_UST",
+   "sport": "basketball",
+   "match_id": "bb_1861266",
+   "match": "Bahcesehir Koleji - Manisa BB",
+   "league": "Turkiye BSL",
+   "strategy": "BB_Q1_DUSUK_UST",
+   "pick": "Canlı Toplam Sayı ÜST",
+   "band": [
+    1.55,
+    1.9
+   ],
+   "created": "2026-11-21T15:25:23.342571+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 39,
+   "sent": true,
+   "direction": "over",
+   "base": 30,
+   "n": 3,
+   "ref": 30.0,
+   "signal_score": "30-9",
+   "last_score": "30-9"
   }
  }
 }
