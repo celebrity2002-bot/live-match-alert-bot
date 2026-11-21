@@ -7,20 +7,11 @@
   {
    "Eid": "1793629",
    "Pids": {
-    "112": "SBTE_2_1028072786",
     "8": "1793629",
-    "29": "1793629"
+    "29": "1793629",
+    "112": "SBTE_2_1028072786"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng6/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -67,6 +58,15 @@
        "MX"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng6/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "1",
@@ -95,11 +95,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "35'",
+   "Eps": "36'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795275260506,
-    "RTm": 2040000
+    "ATm": 1795275321470,
+    "RTm": 2100000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -212,6 +212,15 @@
    "Spid": 1,
    "Pid": 8,
    "Games": {
+    "p6": [
+     {
+      "id": "681334bd5a041059deb5b7ae",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "NG"
+      ]
+     }
+    ],
     "ls6": [
      {
       "id": "679a5dc64c58a24929681a30",
@@ -219,15 +228,6 @@
       "allowedCountries": [
        "GB",
        "IE"
-      ]
-     }
-    ],
-    "p6": [
-     {
-      "id": "681334bd5a041059deb5b7ae",
-      "status": "INACTIVE",
-      "allowedCountries": [
-       "NG"
       ]
      }
     ]
