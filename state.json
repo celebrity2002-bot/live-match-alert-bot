@@ -960,14 +960,14 @@
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 161,
+   "last_total": 165,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "80-81"
+   "last_score": "80-85"
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -1063,8 +1063,8 @@
     1.6
    ],
    "created": "2026-11-21T13:50:33.790095+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -1072,7 +1072,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-2"
+   "last_score": "0-2",
+   "final_total": 2,
+   "settled": "2026-11-21T15:15:34.099663+00:00",
+   "seg_avg": 2.0
   },
   "fb_1826208|FB_IY2_00": {
    "key": "fb_1826208|FB_IY2_00",
@@ -1470,14 +1473,14 @@
    "created": "2026-11-21T14:35:23.939230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 74,
+   "last_total": 83,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "17-17",
-   "last_score": "52-22"
+   "last_score": "58-25"
   },
   "fb_1817121|FB_IY2_00": {
    "key": "fb_1817121|FB_IY2_00",
@@ -1646,6 +1649,30 @@
    "ref": 0.0,
    "signal_score": "0-3",
    "last_score": "0-3"
+  },
+  "fb_1812749|FB_IY2_00": {
+   "key": "fb_1812749|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1812749",
+   "match": "Borussia M'gladbach - Borussia Dortmund",
+   "league": "Germany Bundesliga",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T15:15:33.544448+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
