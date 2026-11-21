@@ -13,8 +13,8 @@
     2.1
    ],
    "created": "2026-11-21T19:55:28.530560+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 264,
    "sent": true,
    "direction": "under",
@@ -22,7 +22,10 @@
    "n": 1,
    "ref": 63.333333333333336,
    "signal_score": "103-92",
-   "last_score": "132-132"
+   "last_score": "132-132",
+   "final_total": 264,
+   "settled": "2026-11-21T20:50:36.087708+00:00",
+   "seg_avg": 74.0
   },
   "fb_1795072|FB_IY2_00": {
    "key": "fb_1795072|FB_IY2_00",
@@ -63,14 +66,14 @@
    "created": "2026-11-21T20:15:33.562584+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 93,
+   "last_total": 94,
    "sent": true,
    "direction": "over",
    "base": 69,
    "n": 2,
    "ref": 34.5,
    "signal_score": "37-32",
-   "last_score": "51-42"
+   "last_score": "52-42"
   },
   "fb_1795657|FB_IY2_00": {
    "key": "fb_1795657|FB_IY2_00",
@@ -111,14 +114,14 @@
    "created": "2026-11-21T20:25:24.692150+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 70,
+   "last_total": 76,
    "sent": true,
    "direction": "over",
    "base": 35,
    "n": 3,
    "ref": 35.0,
    "signal_score": "13-22",
-   "last_score": "31-39"
+   "last_score": "33-43"
   },
   "bb_1844078|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1844078|OZEL_BB_BENCH_COKUS",
@@ -135,14 +138,14 @@
    "created": "2026-11-21T20:30:44.951123+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 166,
+   "last_total": 170,
    "sent": true,
    "direction": "under",
    "base": 137,
    "n": 1,
    "ref": 45.666666666666664,
    "signal_score": "65-76",
-   "last_score": "77-89"
+   "last_score": "77-93"
   },
   "bb_1854370|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1854370|OZEL_BB_BENCH_COKUS",
@@ -159,14 +162,14 @@
    "created": "2026-11-21T20:30:45.464134+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 168,
+   "last_total": 174,
    "sent": true,
    "direction": "under",
    "base": 140,
    "n": 1,
    "ref": 46.666666666666664,
    "signal_score": "70-77",
-   "last_score": "82-86"
+   "last_score": "84-90"
   },
   "fb_1785427|FB_IY2_00": {
    "key": "fb_1785427|FB_IY2_00",
@@ -207,14 +210,14 @@
    "created": "2026-11-21T20:35:27.934387+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 137,
+   "last_total": 143,
    "sent": true,
    "direction": "under",
    "base": 119,
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "50-69",
-   "last_score": "58-79"
+   "last_score": "59-84"
   },
   "bb_1853702|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1853702|OZEL_BB_BENCH_COKUS",
@@ -231,14 +234,14 @@
    "created": "2026-11-21T20:35:28.334791+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 156,
+   "last_total": 163,
    "sent": true,
    "direction": "under",
    "base": 134,
    "n": 1,
    "ref": 44.666666666666664,
    "signal_score": "65-76",
-   "last_score": "71-85"
+   "last_score": "73-90"
   },
   "fb_1790273|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1790273|FB_COK_GOLLU_ERKEN",
@@ -277,6 +280,30 @@
     1.7
    ],
    "created": "2026-11-21T20:46:41.489713+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "1-0"
+  },
+  "fb_1811158|FB_IY2_00": {
+   "key": "fb_1811158|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1811158",
+   "match": "Tenerife - Mallorca",
+   "league": "Spain LaLiga 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.7
+   ],
+   "created": "2026-11-21T20:50:37.750416+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
