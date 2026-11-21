@@ -15,14 +15,14 @@
    "created": "2026-11-21T19:55:28.530560+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 217,
+   "last_total": 227,
    "sent": true,
    "direction": "under",
    "base": 190,
    "n": 1,
    "ref": 63.333333333333336,
    "signal_score": "103-92",
-   "last_score": "112-105"
+   "last_score": "117-110"
   },
   "fb_1795072|FB_IY2_00": {
    "key": "fb_1795072|FB_IY2_00",
