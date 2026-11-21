@@ -57,11 +57,7 @@
     }
    ],
    "Eps": "90'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795222180949,
-    "RTm": 5340000
-   },
+   "Esid": 14,
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Clausura - 8th Finals",
@@ -69,6 +65,74 @@
    "Esd": 20261121000000,
    "EO": 2417361791,
    "EOX": 2417361791,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1799074",
+   "Pids": {
+    "112": "SBTE_2_1027986196",
+    "8": "1799074"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "TUDN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Disney+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "ESPN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "espn.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "4605",
+     "Nm": "Puebla",
+     "Img": "enet/7847.png",
+     "Abr": "PUE",
+     "Fc": "e3e1e5",
+     "Sc": "000000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3672",
+     "Nm": "Atletico de San Luis",
+     "Img": "enet/6358.png",
+     "Abr": "ASL",
+     "Fc": "ff0000",
+     "Sc": "ffffff"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "17",
+   "Et": 1,
+   "Esd": 20261121020000,
+   "EO": 874299495,
+   "EOX": 874299495,
    "Spid": 1,
    "Pid": 8
   },
@@ -104,19 +168,19 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "54'",
+   "Eps": "58'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795222231162,
-    "RTm": 3180000
+    "ATm": 1795222466183,
+    "RTm": 3420000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "1",
    "Et": 1,
    "Esd": 20261121003500,
-   "EO": 807158127,
-   "EOX": 807158127,
+   "EO": 807158143,
+   "EOX": 807158143,
    "Spid": 1,
    "Pid": 8
   }
