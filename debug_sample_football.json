@@ -69,6 +69,12 @@
      }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "3928",
@@ -91,35 +97,30 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795273212728,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121160000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8
   },
   {
    "Eid": "1793636",
    "Pids": {
+    "8": "1793636",
     "29": "1793636",
-    "112": "SBTE_2_1028072780",
-    "8": "1793636"
+    "112": "SBTE_2_1028072780"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -158,8 +159,23 @@
        "US"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "3863",
@@ -182,36 +198,38 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795273239331,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121160000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8,
    "Games": {
-    "p6": [
-     {
-      "id": "681334bd5a041059deb5b7ae",
-      "status": "ACTIVE",
-      "closeTime": 1795273200000,
-      "allowedCountries": [
-       "NG"
-      ]
-     }
-    ],
     "ls6": [
      {
       "id": "679a5dc64c58a24929681a30",
-      "status": "ACTIVE",
-      "closeTime": 1795273200000,
+      "status": "INACTIVE",
       "allowedCountries": [
        "GB",
        "IE"
+      ]
+     }
+    ],
+    "p6": [
+     {
+      "id": "681334bd5a041059deb5b7ae",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "NG"
       ]
      }
     ]
@@ -225,15 +243,6 @@
     "29": "1793633"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng8/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "NOW",
@@ -298,8 +307,23 @@
        "IE"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng8/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "2881",
@@ -322,23 +346,26 @@
      "Sc": "FFCD00"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795273237034,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121160000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8,
    "Games": {
     "p6": [
      {
       "id": "681334bd5a041059deb5b7ae",
-      "status": "ACTIVE",
-      "closeTime": 1795273200000,
+      "status": "INACTIVE",
       "allowedCountries": [
        "NG"
       ]
@@ -347,8 +374,7 @@
     "ls6": [
      {
       "id": "679a5dc64c58a24929681a30",
-      "status": "ACTIVE",
-      "closeTime": 1795273200000,
+      "status": "INACTIVE",
       "allowedCountries": [
        "GB",
        "IE"
