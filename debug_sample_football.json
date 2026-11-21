@@ -7,9 +7,9 @@
   {
    "Eid": "1793629",
    "Pids": {
-    "29": "1793629",
     "112": "SBTE_2_1028072786",
-    "8": "1793629"
+    "8": "1793629",
+    "29": "1793629"
    },
    "Media": {
     "29": [
@@ -97,11 +97,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "72'",
+   "Eps": "77'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795278597779,
-    "RTm": 4260000
+    "ATm": 1795278899040,
+    "RTm": 4560000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -121,6 +121,15 @@
     "29": "1793636"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -159,15 +168,6 @@
        "US"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
    "Tr1": "0",
@@ -198,11 +198,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "73'",
+   "Eps": "78'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795278593004,
-    "RTm": 4320000
+    "ATm": 1795278892359,
+    "RTm": 4620000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -243,15 +243,6 @@
     "29": "1793633"
    },
    "Media": {
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng8/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
-    ],
     "112": [
      {
       "eventId": "NOW",
@@ -316,6 +307,15 @@
        "IE"
       ]
      }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng8/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
     ]
    },
    "Tr1": "1",
@@ -346,11 +346,11 @@
      "Sc": "FFCD00"
     }
    ],
-   "Eps": "69'",
+   "Eps": "74'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795278613867,
-    "RTm": 4080000
+    "ATm": 1795278908795,
+    "RTm": 4380000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -362,6 +362,15 @@
    "Spid": 1,
    "Pid": 8,
    "Games": {
+    "p6": [
+     {
+      "id": "681334bd5a041059deb5b7ae",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "NG"
+      ]
+     }
+    ],
     "ls6": [
      {
       "id": "679a5dc64c58a24929681a30",
@@ -369,15 +378,6 @@
       "allowedCountries": [
        "GB",
        "IE"
-      ]
-     }
-    ],
-    "p6": [
-     {
-      "id": "681334bd5a041059deb5b7ae",
-      "status": "INACTIVE",
-      "allowedCountries": [
-       "NG"
       ]
      }
     ]
