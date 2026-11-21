@@ -69,14 +69,14 @@
    "created": "2026-11-21T20:15:33.562584+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 115,
+   "last_total": 119,
    "sent": true,
    "direction": "over",
    "base": 69,
    "n": 2,
    "ref": 34.5,
    "signal_score": "37-32",
-   "last_score": "60-55"
+   "last_score": "62-57"
   },
   "fb_1795657|FB_IY2_00": {
    "key": "fb_1795657|FB_IY2_00",
@@ -139,8 +139,8 @@
     2.1
    ],
    "created": "2026-11-21T20:30:44.951123+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 171,
    "sent": true,
    "direction": "under",
@@ -148,7 +148,10 @@
    "n": 1,
    "ref": 45.666666666666664,
    "signal_score": "65-76",
-   "last_score": "78-93"
+   "last_score": "78-93",
+   "final_total": 171,
+   "settled": "2026-11-21T21:07:48.200258+00:00",
+   "seg_avg": 34.0
   },
   "bb_1854370|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1854370|OZEL_BB_BENCH_COKUS",
@@ -163,8 +166,8 @@
     2.1
    ],
    "created": "2026-11-21T20:30:45.464134+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 185,
    "sent": true,
    "direction": "under",
@@ -172,7 +175,10 @@
    "n": 1,
    "ref": 46.666666666666664,
    "signal_score": "70-77",
-   "last_score": "89-96"
+   "last_score": "89-96",
+   "final_total": 185,
+   "settled": "2026-11-21T21:07:48.656699+00:00",
+   "seg_avg": 45.0
   },
   "fb_1785427|FB_IY2_00": {
    "key": "fb_1785427|FB_IY2_00",
@@ -211,8 +217,8 @@
     1.95
    ],
    "created": "2026-11-21T20:35:27.934387+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 158,
    "sent": true,
    "direction": "under",
@@ -220,7 +226,10 @@
    "n": 1,
    "ref": 39.666666666666664,
    "signal_score": "50-69",
-   "last_score": "66-92"
+   "last_score": "66-92",
+   "final_total": 158,
+   "settled": "2026-11-21T21:07:49.134279+00:00",
+   "seg_avg": 39.0
   },
   "bb_1853702|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1853702|OZEL_BB_BENCH_COKUS",
