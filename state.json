@@ -715,8 +715,8 @@
     1.9
    ],
    "created": "2026-11-21T12:50:33.024076+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 7,
    "sent": true,
    "direction": "over",
@@ -724,7 +724,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "4-3"
+   "last_score": "4-3",
+   "final_total": 7,
+   "settled": "2026-11-21T14:20:38.883908+00:00",
+   "seg_avg": 4.0
   },
   "fb_1813715|FB_IY2_00": {
    "key": "fb_1813715|FB_IY2_00",
@@ -768,14 +771,14 @@
    "created": "2026-11-21T12:55:25.957989+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 150,
+   "last_total": 157,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "29-21",
-   "last_score": "80-70"
+   "last_score": "85-72"
   },
   "fb_1869783|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1869783|FB_COK_GOLLU_ERKEN",
@@ -936,14 +939,14 @@
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 88,
+   "last_total": 94,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "48-40"
+   "last_score": "52-42"
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -1128,14 +1131,14 @@
    "created": "2026-11-21T13:50:35.725700+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "1-0"
   },
   "fb_1890739|FB_IY2_00": {
    "key": "fb_1890739|FB_IY2_00",
@@ -1198,6 +1201,102 @@
     1.6
    ],
    "created": "2026-11-21T13:55:25.774627+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855368|FB_IY2_00": {
+   "key": "fb_1855368|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1855368",
+   "match": "Treviso - Pergolettese",
+   "league": "Italy Serie C: Group A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T14:20:37.287050+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855747|FB_IY2_00": {
+   "key": "fb_1855747|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1855747",
+   "match": "Ostia Mare - Atalanta U23",
+   "league": "Italy Serie C: Group B",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T14:20:37.727882+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1855752|FB_IY2_00": {
+   "key": "fb_1855752|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1855752",
+   "match": "Vado - Latina",
+   "league": "Italy Serie C: Group B",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T14:20:38.123004+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1856130|FB_IY2_00": {
+   "key": "fb_1856130|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1856130",
+   "match": "Monopoli - Cavese",
+   "league": "Italy Serie C: Group C",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T14:20:38.496135+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 0,
