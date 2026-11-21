@@ -84,19 +84,19 @@
      "Sc": "ff0000"
     }
    ],
-   "Eps": "29'",
+   "Eps": "34'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795231750943,
-    "RTm": 1680000
+    "ATm": 1795232051045,
+    "RTm": 1980000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "Apertura",
    "Et": 1,
    "Esd": 20261121040000,
-   "EO": 874431343,
-   "EOX": 874431343,
+   "EO": 907985775,
+   "EOX": 907985775,
    "Spid": 1,
    "Pid": 8
   },
@@ -168,91 +168,19 @@
      "Abr": "ATL"
     }
    ],
-   "Eps": "21'",
+   "Eps": "25'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795231836193,
-    "RTm": 1200000
+    "ATm": 1795232076211,
+    "RTm": 1440000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "17",
    "Et": 1,
    "Esd": 20261121041000,
-   "EO": 874431351,
-   "EOX": 874431351,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1918810",
-   "Pids": {
-    "112": "SBTE_2_1029883766",
-    "8": "1918810"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "FuboTV",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "fubo.png",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "2wyv8gejj6dq5udyj2f888oic",
-      "provider": "UNKNOWN_PROVIDER",
-      "type": "LIVE_STREAMING",
-      "allowedCountries": [
-       "GB",
-       "IE"
-      ]
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
-   "T1": [
-    {
-     "ID": "7162",
-     "Nm": "Deportivo Cali",
-     "Img": "enet/6387.png",
-     "Abr": "DEP",
-     "Fc": "1f5559",
-     "Sc": "ffffff"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "6739",
-     "Nm": "Millonarios",
-     "Img": "enet/4403.png",
-     "Abr": "MIL",
-     "Fc": "002aff",
-     "Sc": "ffffff"
-    }
-   ],
-   "Eps": "90+3'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795231811518,
-    "RTm": 5400000,
-    "ITm": 120000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "1",
-   "Et": 1,
-   "Esd": 20261121024000,
-   "EO": 807158143,
-   "EOX": 807158143,
+   "EO": 874431359,
+   "EOX": 874431359,
    "Spid": 1,
    "Pid": 8
   }
