@@ -49,11 +49,11 @@
      "Sc": "A38D44"
     }
    ],
-   "Eps": "20'",
+   "Eps": "24'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795260011397,
-    "RTm": 1140000
+    "ATm": 1795260251212,
+    "RTm": 1380000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -128,11 +128,11 @@
      "Abr": "HAM"
     }
    ],
-   "Eps": "21'",
+   "Eps": "25'",
    "Esid": 2,
    "Etm": {
-    "ATm": 1795260026214,
-    "RTm": 1200000
+    "ATm": 1795260266188,
+    "RTm": 1440000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -145,43 +145,61 @@
    "Pid": 8
   },
   {
-   "Eid": "1869776",
+   "Eid": "1849652",
    "Pids": {
-    "8": "1869776"
+    "112": "SBTE_2_1028488943",
+    "8": "1849652"
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     }
+    ]
+   },
    "T1": [
     {
-     "ID": "182315",
-     "Nm": "Birmingham City U18",
-     "Img": "enet/1281663.png",
-     "Abr": "BIR(18)"
+     "ID": "228731",
+     "Nm": "Parma Calcio W",
+     "Img": "enet/1184312.png",
+     "Abr": "PAR(W)"
     }
    ],
    "T2": [
     {
-     "ID": "4562",
-     "Nm": "Aston Villa U18",
-     "Img": "teambadge/aston-villa-2024.png",
-     "Abr": "AST(18)"
+     "ID": "101065",
+     "Nm": "Napoli W",
+     "Img": "teambadge/napoli-women.png",
+     "Abr": "NAP(W)",
+     "Fc": "12A0D7",
+     "Sc": "003C82"
     }
    ],
-   "Eps": "17'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795260011469,
-    "RTm": 960000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "South",
+   "ErnInf": "8",
    "Et": 1,
-   "Esd": 20261121120000,
-   "EO": 807141735,
-   "EOX": 807141735,
+   "Esd": 20261121123000,
+   "EO": 807141479,
+   "EOX": 807141479,
    "Spid": 1,
    "Pid": 8
   }
