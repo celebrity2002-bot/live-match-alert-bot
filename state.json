@@ -1491,14 +1491,14 @@
    "created": "2026-11-21T14:35:23.939230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 119,
+   "last_total": 135,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "17-17",
-   "last_score": "76-43"
+   "last_score": "85-50"
   },
   "fb_1817121|FB_IY2_00": {
    "key": "fb_1817121|FB_IY2_00",
@@ -1514,7 +1514,7 @@
    ],
    "created": "2026-11-21T14:35:25.446767+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -1611,14 +1611,14 @@
    "created": "2026-11-21T14:50:32.925313+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-1"
+   "last_score": "2-1"
   },
   "fb_1911844|FB_IY2_00": {
    "key": "fb_1911844|FB_IY2_00",
@@ -1731,14 +1731,14 @@
    "created": "2026-11-21T15:25:23.342571+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 75,
+   "last_total": 87,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "30-9",
-   "last_score": "52-23"
+   "last_score": "57-30"
   },
   "fb_1793638|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1793638|FB_COK_GOLLU_ERKEN",
@@ -1899,14 +1899,14 @@
    "created": "2026-11-21T15:34:44.396251+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-0",
-   "last_score": "3-0"
+   "last_score": "3-1"
   },
   "fb_1837570|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1837570|FB_COK_GOLLU_ERKEN",
@@ -2027,6 +2027,54 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-2"
+  },
+  "fb_1802495|FB_IY2_00": {
+   "key": "fb_1802495|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1802495",
+   "match": "Wolves - Charlton Athletic",
+   "league": "England Championship",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T15:45:35.966956+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1803614|FB_IY2_00": {
+   "key": "fb_1803614|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1803614",
+   "match": "Accrington Stanley - Salford City",
+   "league": "England League 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T15:45:36.349196+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
