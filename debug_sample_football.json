@@ -106,11 +106,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "63'",
+   "Eps": "68'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795269017415,
-    "RTm": 3720000
+    "ATm": 1795269317289,
+    "RTm": 4020000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -233,30 +233,21 @@
    "Pid": 8
   },
   {
-   "Eid": "1802497",
+   "Eid": "1785418",
    "Pids": {
-    "112": "SBTE_2_1028143010",
-    "8": "1802497"
+    "112": "SBTE_2_1027911532",
+    "8": "1785418"
    },
    "Media": {
     "112": [
-     {
-      "eventId": "NOW",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "now.png",
-      "allowedCountries": [
-       "IE"
-      ]
-     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
       "allowedCountries": [
-       "US",
-       "CA"
+       "CA",
+       "US"
       ]
      },
      {
@@ -265,6 +256,8 @@
       "type": "TV_CHANNEL",
       "thumbnail": "dazn.png",
       "allowedCountries": [
+       "GB",
+       "IE",
        "CA"
       ]
      },
@@ -272,15 +265,6 @@
       "eventId": "Disney+",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "ESPN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "espn.png",
       "allowedCountries": [
        "MX"
       ]
@@ -295,67 +279,47 @@
       ]
      },
      {
-      "eventId": "Sky Sports Football",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "skysports.png",
+      "eventId": "13978148",
+      "provider": "BETGENIUS",
+      "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "IE",
-       "GB"
+       "NG",
+       "GB",
+       "IE"
       ]
      }
     ]
    },
-   "Inc-f": {
-    "1": [
-     {
-      "IT": 45,
-      "Nm": 1,
-      "NoP": false
-     }
-    ]
-   },
-   "Tr1": "0",
-   "Tr2": "1",
-   "Trh1": "0",
-   "Trh2": "1",
-   "Tr1OR": "0",
-   "Tr2OR": "1",
    "T1": [
     {
-     "ID": "3006",
-     "Nm": "Millwall",
-     "Img": "teambadge/millwall.png",
-     "NewsTag": "/team/millwall-2022062716001253418-137/",
-     "Abr": "MIL",
-     "Fc": "00194A",
-     "Sc": "FDFDFD"
+     "ID": "4227",
+     "Nm": "Como 1907",
+     "Img": "enet/10171.png",
+     "Abr": "COM",
+     "Fc": "fafafa",
+     "Sc": "4c8adc"
     }
    ],
    "T2": [
     {
-     "ID": "2866",
-     "Nm": "QPR",
-     "Img": "enet/10172.png",
-     "NewsTag": "/team/queens-park-rangers-2022062716001253418-121/",
-     "Abr": "QPR",
-     "Fc": "FDFDFD",
-     "Sc": "1D5BA4"
+     "ID": "2987",
+     "Nm": "Cagliari",
+     "Img": "enet/8529.png",
+     "NewsTag": "/team/cagliari-2021020913320920836-242/",
+     "Abr": "CAG",
+     "Fc": "002350",
+     "Sc": "AD002A"
     }
    ],
-   "Eps": "62'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795268986480,
-    "RTm": 3660000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "16",
+   "ErnInf": "12",
    "Et": 1,
-   "Esd": 20261121133000,
-   "EO": 908051327,
-   "EOX": 908051327,
+   "Esd": 20261121150000,
+   "EO": 899530855,
+   "EOX": 899530855,
    "Spid": 1,
    "Pid": 8
   }
