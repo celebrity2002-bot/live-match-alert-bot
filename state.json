@@ -958,8 +958,8 @@
     1.9
    ],
    "created": "2026-11-21T13:25:26.575384+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 171,
    "sent": true,
    "direction": "over",
@@ -967,7 +967,10 @@
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "84-87"
+   "last_score": "84-87",
+   "final_total": 171,
+   "settled": "2026-11-21T15:34:42.293846+00:00",
+   "seg_avg": 47.0
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -1280,7 +1283,7 @@
    ],
    "created": "2026-11-21T14:20:37.287050+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1304,7 +1307,7 @@
    ],
    "created": "2026-11-21T14:20:37.727882+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -1327,8 +1330,8 @@
     1.6
    ],
    "created": "2026-11-21T14:20:38.123004+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1336,7 +1339,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "0-1",
+   "final_total": 1,
+   "settled": "2026-11-21T15:34:45.579483+00:00",
+   "seg_avg": 1.0
   },
   "fb_1856130|FB_IY2_00": {
    "key": "fb_1856130|FB_IY2_00",
@@ -1352,7 +1358,7 @@
    ],
    "created": "2026-11-21T14:20:38.496135+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -1376,7 +1382,7 @@
    ],
    "created": "2026-11-21T14:25:24.125553+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -1473,14 +1479,14 @@
    "created": "2026-11-21T14:35:23.939230+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 104,
+   "last_total": 112,
    "sent": true,
    "direction": "over",
    "base": 32,
    "n": 3,
    "ref": 32.0,
    "signal_score": "17-17",
-   "last_score": "68-36"
+   "last_score": "74-38"
   },
   "fb_1817121|FB_IY2_00": {
    "key": "fb_1817121|FB_IY2_00",
@@ -1713,14 +1719,14 @@
    "created": "2026-11-21T15:25:23.342571+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 55,
+   "last_total": 57,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "30-9",
-   "last_score": "40-15"
+   "last_score": "42-15"
   },
   "fb_1793638|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1793638|FB_COK_GOLLU_ERKEN",
@@ -1841,6 +1847,102 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-2"
+  },
+  "fb_1803616|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1803616|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1803616",
+   "match": "Chesterfield - Shrewsbury Town",
+   "league": "England League 2",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T15:34:43.970664+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
+  },
+  "fb_1823081|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1823081|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1823081",
+   "match": "Chester FC - Macclesfield FC",
+   "league": "England National League: North",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T15:34:44.396251+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-0",
+   "last_score": "3-0"
+  },
+  "fb_1837570|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1837570|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1837570",
+   "match": "FC United of Manchester - Warrington Rylands",
+   "league": "England Northern Premier League",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T15:34:44.826053+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "3-0",
+   "last_score": "3-0"
+  },
+  "fb_1839196|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1839196|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1839196",
+   "match": "Berkhamsted - Frome Town",
+   "league": "England Southern League Premier: South",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-21T15:34:45.244780+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1"
   }
  }
 }
