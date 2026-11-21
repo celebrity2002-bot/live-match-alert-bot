@@ -12,6 +12,15 @@
     "29": "1793629"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng6/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -58,15 +67,6 @@
        "MX"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng6/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
    "Tr1": "2",
@@ -97,11 +97,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "57'",
+   "Eps": "62'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795277698199,
-    "RTm": 3360000
+    "ATm": 1795277995214,
+    "RTm": 3660000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -198,19 +198,19 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "58'",
+   "Eps": "63'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795277687916,
-    "RTm": 3420000
+    "ATm": 1795277986288,
+    "RTm": 3720000
    },
    "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121160000,
-   "EO": 874496879,
-   "EOX": 874496879,
+   "EO": 874496895,
+   "EOX": 874496895,
    "Spid": 1,
    "Pid": 8,
    "Games": {
@@ -319,11 +319,11 @@
     ]
    },
    "Tr1": "1",
-   "Tr2": "2",
+   "Tr2": "3",
    "Trh1": "1",
    "Trh2": "1",
    "Tr1OR": "1",
-   "Tr2OR": "2",
+   "Tr2OR": "3",
    "T1": [
     {
      "ID": "2881",
@@ -346,11 +346,11 @@
      "Sc": "FFCD00"
     }
    ],
-   "Eps": "54'",
+   "Eps": "59'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795277708691,
-    "RTm": 3180000
+    "ATm": 1795278011907,
+    "RTm": 3480000
    },
    "Epr": 1,
    "Ecov": 0,
