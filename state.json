@@ -445,8 +445,8 @@
     1.55
    ],
    "created": "2026-11-21T03:45:47.914771+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 257,
    "sent": true,
    "direction": "under",
@@ -454,7 +454,10 @@
    "n": 3,
    "ref": 64.0,
    "signal_score": "38-37",
-   "last_score": "133-124"
+   "last_score": "133-124",
+   "final_total": 257,
+   "settled": "2026-11-21T05:55:23.393711+00:00",
+   "seg_avg": 64.3
   },
   "bb_1867582|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1867582|BB_TEMPO_DUSUSU_ALT",
