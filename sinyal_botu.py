@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.6 - Seçici 2. Yarı Penceresi + Aday Maç İstatistik Filtresi
+Canlı Sinyal Botu v2.7 - Dinamik Neon PNG Kart + Seçici Pencere + İstatistik Filtresi
 """
+import io
 import json
 import os
+import random
 import re
 import sys
 import time
-import random
 from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
+
+try:
+    from PIL import Image, ImageDraw, ImageFont
+    HAS_PIL = True
+except Exception:
+    Image = ImageDraw = ImageFont = None
+    HAS_PIL = False
 
 # ------------------------------------------------------------------
 # AYARLAR
@@ -46,6 +54,7 @@ STAKE_PCT = env_num("STAKE_PCT", 1.0)
 ENABLE_BASKETBALL = os.getenv("ENABLE_BASKETBALL", "1") == "1"
 ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
 ENABLE_STAT_FILTER = os.getenv("ENABLE_STAT_FILTER", "1") == "1"
+ENABLE_PNG_CARD = os.getenv("ENABLE_PNG_CARD", "1") == "1"
 MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.35, float)
 
 # %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
@@ -289,6 +298,209 @@ def send_telegram(text):
             log(f"Telegram hatası: {exc}")
         time.sleep(2)
     return False
+
+
+def send_telegram_photo(png_bytes, caption=""):
+    if not TOKEN or not CHAT_ID or not png_bytes:
+        return False
+    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    for attempt in range(2):
+        try:
+            r = requests.post(
+                url,
+                data={"chat_id": CHAT_ID, "caption": (caption or "")[:1024]},
+                files={"photo": ("signal_card.png", io.BytesIO(png_bytes), "image/png")},
+                timeout=15,
+            )
+            if r.status_code == 200:
+                return True
+            log(f"Telegram sendPhoto HTTP {r.status_code}: {r.text[:200]}")
+        except Exception as exc:
+            log(f"Telegram sendPhoto hatası: {exc}")
+        time.sleep(2)
+    return False
+
+
+# ------------------------------------------------------------------
+# DİNAMİK NEON PNG SİNYAL KARTI
+# ------------------------------------------------------------------
+def _load_font(size, bold=False):
+    if not HAS_PIL:
+        return None
+    candidates = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+        "C:/Windows/Fonts/arialbd.ttf" if bold else "C:/Windows/Fonts/arial.ttf",
+    ]
+    for path in candidates:
+        if os.path.exists(path):
+            try:
+                return ImageFont.truetype(path, size=size)
+            except Exception:
+                pass
+    return ImageFont.load_default()
+
+
+def _fit_text(draw, text, max_width, start_size, bold=True, min_size=18):
+    size = start_size
+    while size >= min_size:
+        font = _load_font(size, bold=bold)
+        bbox = draw.textbbox((0, 0), text, font=font)
+        if (bbox[2] - bbox[0]) <= max_width:
+            return text, font
+        size -= 2
+    font = _load_font(min_size, bold=bold)
+    trimmed = text
+    while len(trimmed) > 3:
+        trimmed = trimmed[:-4] + "..."
+        bbox = draw.textbbox((0, 0), trimmed, font=font)
+        if (bbox[2] - bbox[0]) <= max_width:
+            break
+    return trimmed, font
+
+
+def _draw_rounded_box(draw, xy, radius, fill, outline=None, width=3):
+    draw.rounded_rectangle(xy, radius=radius, fill=fill, outline=outline, width=width)
+
+
+def build_signal_card_png(p, sd, res, stat_line=None):
+    if not (HAS_PIL and ENABLE_PNG_CARD):
+        return None
+    try:
+        w, h = 900, 1200
+        is_under = res.get("direction") == "under"
+        accent = (255, 68, 78) if is_under else (46, 255, 118)
+        accent_dark = (72, 16, 22) if is_under else (14, 62, 28)
+        pill_bg = (110, 22, 30) if is_under else (22, 95, 42)
+        bg_color = (7, 11, 10)
+        panel_bg = (14, 21, 18)
+        row_bg = (22, 30, 27)
+        text_main = (244, 248, 246)
+        text_muted = (166, 180, 173)
+
+        img = Image.new("RGB", (w, h), bg_color)
+        draw = ImageDraw.Draw(img)
+
+        # Dış ve iç neon çerçeveler
+        _draw_rounded_box(draw, (24, 24, w - 24, h - 24), 44, panel_bg, outline=accent, width=6)
+        _draw_rounded_box(draw, (42, 42, w - 42, h - 42), 34, None, outline=accent_dark, width=2)
+
+        # Üst başlık ve canlı rozeti
+        f_top = _load_font(30, bold=True)
+        f_badge = _load_font(22, bold=True)
+        draw.text((74, 68), "CANLI MAC TAKIP BOTU", fill=text_main, font=f_top)
+        _draw_rounded_box(draw, (w - 220, 62, w - 74, 108), 18, pill_bg, outline=accent, width=2)
+        b_txt = "CANLI"
+        bb = draw.textbbox((0, 0), b_txt, font=f_badge)
+        draw.text(
+            (w - 147 - (bb[2] - bb[0]) // 2, 85 - (bb[3] - bb[1]) // 2),
+            b_txt,
+            fill=text_main,
+            font=f_badge,
+        )
+
+        # Yön oku + Ana sinyal başlığı
+        arrow_x = 115
+        arrow_y = 195
+        if is_under:
+            draw.polygon(
+                [
+                    (arrow_x - 36, arrow_y - 34),
+                    (arrow_x + 36, arrow_y - 34),
+                    (arrow_x + 36, arrow_y + 6),
+                    (arrow_x + 56, arrow_y + 6),
+                    (arrow_x, arrow_y + 46),
+                    (arrow_x - 56, arrow_y + 6),
+                    (arrow_x - 36, arrow_y + 6),
+                ],
+                fill=accent,
+            )
+            main_title = "ALT SINYALI"
+        else:
+            draw.polygon(
+                [
+                    (arrow_x, arrow_y - 46),
+                    (arrow_x + 56, arrow_y - 6),
+                    (arrow_x + 36, arrow_y - 6),
+                    (arrow_x + 36, arrow_y + 34),
+                    (arrow_x - 36, arrow_y + 34),
+                    (arrow_x - 36, arrow_y - 6),
+                    (arrow_x - 56, arrow_y - 6),
+                ],
+                fill=accent,
+            )
+            main_title = "GOL / UST SINYALI" if p["sport"] == "football" else "UST SINYALI"
+
+        t_main, f_main = _fit_text(draw, main_title, w - 260, 56, bold=True, min_size=38)
+        draw.text((195, 162), t_main, fill=accent, font=f_main)
+
+        # Takımlar, lig, dakika/çeyrek ve skor
+        match_txt, f_match = _fit_text(draw, p["match"], w - 140, 48, bold=True, min_size=30)
+        mb = draw.textbbox((0, 0), match_txt, font=f_match)
+        draw.text(((w - (mb[2] - mb[0])) // 2, 275), match_txt, fill=text_main, font=f_match)
+
+        first_line = res["detail"].split("\n")[0]
+        sub_txt, f_sub = _fit_text(draw, first_line, w - 140, 32, bold=True, min_size=22)
+        sb = draw.textbbox((0, 0), sub_txt, font=f_sub)
+        draw.text(((w - (sb[2] - sb[0])) // 2, 338), sub_txt, fill=text_muted, font=f_sub)
+
+        if p.get("league"):
+            lg_txt, f_lg = _fit_text(draw, p["league"], w - 160, 24, bold=False, min_size=18)
+            lb = draw.textbbox((0, 0), lg_txt, font=f_lg)
+            draw.text(((w - (lb[2] - lb[0])) // 2, 382), lg_txt, fill=text_muted, font=f_lg)
+
+        # Metrik satırları
+        metric_rows = []
+        if p["sport"] == "football":
+            if stat_line:
+                for chunk in [x.strip() for x in stat_line.split("|") if x.strip()][:3]:
+                    metric_rows.append(chunk)
+            while len(metric_rows) < 3:
+                metric_rows.append(f"Strateji: {sd['label']}")
+        else:
+            q_str = " / ".join(str(x) for x in (p.get("q") or []) if x is not None)
+            metric_rows.append(f"Toplam Sayi: {p['total']}  (Fark: {p['diff']})")
+            metric_rows.append(f"Ceyrekler: {q_str if q_str else 'Canli'}")
+            metric_rows.append(f"Strateji: {sd['label']}")
+
+        y_cursor = 435
+        for idx, m_text in enumerate(metric_rows[:3]):
+            _draw_rounded_box(draw, (74, y_cursor, w - 74, y_cursor + 86), 22, row_bg, outline=(52, 68, 62), width=2)
+            m_fit, f_m = _fit_text(draw, m_text, w - 190, 32, bold=True, min_size=22)
+            draw.text((104, y_cursor + 24), m_fit, fill=text_main, font=f_m)
+            y_cursor += 104
+
+        # OYNA ve Oran Bandı hapları
+        band = sd["band"]
+        play_txt, f_play = _fit_text(draw, f"OYNA: {sd['pick']}", w - 160, 36, bold=True, min_size=24)
+        _draw_rounded_box(draw, (74, y_cursor + 8, w - 74, y_cursor + 88), 40, pill_bg, outline=accent, width=3)
+        pb = draw.textbbox((0, 0), play_txt, font=f_play)
+        draw.text(((w - (pb[2] - pb[0])) // 2, y_cursor + 28), play_txt, fill=text_main, font=f_play)
+
+        band_str = f"Oran Bandi: {band[0]:.2f} - {band[1]:.2f}   |   Tutar: {stake_tl()} TL"
+        band_txt, f_band = _fit_text(draw, band_str, w - 160, 32, bold=True, min_size=22)
+        _draw_rounded_box(draw, (74, y_cursor + 104, w - 74, y_cursor + 184), 40, (20, 46, 30), outline=accent, width=3)
+        bb2 = draw.textbbox((0, 0), band_txt, font=f_band)
+        draw.text(((w - (bb2[2] - bb2[0])) // 2, y_cursor + 124), band_txt, fill=text_main, font=f_band)
+
+        # Alt disiplin uyarısı
+        warn_txt, f_warn = _fit_text(
+            draw,
+            "Bandin disindaysa veya 1.05-1.15'e erdiyse OYNAMAYIN",
+            w - 130,
+            25,
+            bold=True,
+            min_size=18,
+        )
+        wb = draw.textbbox((0, 0), warn_txt, font=f_warn)
+        draw.text(((w - (wb[2] - wb[0])) // 2, h - 102), warn_txt, fill=accent, font=f_warn)
+
+        out = io.BytesIO()
+        img.save(out, format="PNG", optimize=True)
+        return out.getvalue()
+    except Exception as exc:
+        log(f"PNG kart üretilemedi, düz metne düşülüyor: {exc}")
+        return None
 
 
 def breakeven(band):
@@ -582,6 +794,16 @@ def build_message(p, sd, res, state=None, stat_line=None):
     return "\n".join(lines)
 
 
+def dispatch_signal_telegram(p, sd, res, state=None, stat_line=None):
+    msg_text = build_message(p, sd, res, state, stat_line=stat_line)
+    card_bytes = build_signal_card_png(p, sd, res, stat_line=stat_line)
+    if card_bytes:
+        short_cap = f"{sd['title']} | {p['match']} | OYNA: {sd['pick']} ({sd['band'][0]:.2f}-{sd['band'][1]:.2f})"
+        if send_telegram_photo(card_bytes, caption=short_cap):
+            return True
+    return send_telegram(msg_text)
+
+
 def match_already_has_signal(state, match_id):
     return any(r.get("match_id") == match_id for r in state.get("signals", {}).values())
 
@@ -608,7 +830,7 @@ def register_signal(state, p, sd, res, stat_line=None):
         sent_for_match = sum(1 for r in state["signals"].values()
                              if r["match_id"] == p["match_id"] and r.get("sent"))
         if sent_for_match < MAX_LIVE_PER_MATCH:
-            rec["sent"] = send_telegram(build_message(p, sd, res, state, stat_line=stat_line))
+            rec["sent"] = dispatch_signal_telegram(p, sd, res, state, stat_line=stat_line)
         else:
             log(f"Bu maç için mesaj sınırına ulaşıldı, sadece kaydedildi: {p['match']} / {sd['id']}")
     else:
@@ -764,7 +986,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Seçici 2. yarı penceresi ve aday maç istatistik filtresi aktif.")
+        success = send_telegram("🤖 *Test Başarılı!* Dinamik PNG kart, seçici 2. yarı penceresi ve aday maç istatistik filtresi aktif.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
