@@ -97,11 +97,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "66'",
+   "Eps": "67'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795278238266,
-    "RTm": 3900000
+    "ATm": 1795278298766,
+    "RTm": 3960000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -121,6 +121,15 @@
     "29": "1793636"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "FuboTV",
@@ -159,15 +168,6 @@
        "US"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng7/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
    "Tr1": "0",
@@ -198,11 +198,11 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "67'",
+   "Eps": "68'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795278230550,
-    "RTm": 3960000
+    "ATm": 1795278293199,
+    "RTm": 4020000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -346,11 +346,11 @@
      "Sc": "FFCD00"
     }
    ],
-   "Eps": "62'",
+   "Eps": "64'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795278188934,
-    "RTm": 3660000
+    "ATm": 1795278313428,
+    "RTm": 3780000
    },
    "Epr": 1,
    "Ecov": 0,
