@@ -2794,8 +2794,8 @@
     1.9
    ],
    "created": "2026-11-21T16:50:33.445330+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -2803,7 +2803,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "1-3"
+   "last_score": "1-3",
+   "final_total": 4,
+   "settled": "2026-11-21T18:30:50.417615+00:00",
+   "seg_avg": 1.0
   },
   "fb_1814057|FB_IY2_00": {
    "key": "fb_1814057|FB_IY2_00",
@@ -2900,7 +2903,7 @@
    ],
    "created": "2026-11-21T17:01:00.622708+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -2924,7 +2927,7 @@
    ],
    "created": "2026-11-21T17:05:30.546647+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -2949,14 +2952,14 @@
    "created": "2026-11-21T17:35:34.399678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 121,
+   "last_total": 137,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "32-23",
-   "last_score": "71-50"
+   "last_score": "83-54"
   },
   "fb_1814870|FB_IY2_00": {
    "key": "fb_1814870|FB_IY2_00",
@@ -3045,14 +3048,14 @@
    "created": "2026-11-21T17:50:34.253809+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "fb_1795654|FB_IY2_00": {
    "key": "fb_1795654|FB_IY2_00",
@@ -3189,14 +3192,14 @@
    "created": "2026-11-21T18:20:35.849856+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 130,
+   "last_total": 138,
    "sent": true,
    "direction": "under",
    "base": 120,
    "n": 1,
    "ref": 40.0,
    "signal_score": "52-68",
-   "last_score": "57-73"
+   "last_score": "60-78"
   },
   "fb_1810756|FB_IY2_00": {
    "key": "fb_1810756|FB_IY2_00",
@@ -3237,14 +3240,14 @@
    "created": "2026-11-21T18:25:26.606598+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 36,
+   "last_total": 46,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "18-18",
-   "last_score": "18-18"
+   "last_score": "24-22"
   }
  }
 }
