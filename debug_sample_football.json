@@ -7,11 +7,20 @@
   {
    "Eid": "1793654",
    "Pids": {
-    "112": "SBTE_2_1028072760",
     "8": "1793654",
-    "29": "1793654"
+    "29": "1793654",
+    "112": "SBTE_2_1028072760"
    },
    "Media": {
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ],
     "112": [
      {
       "eventId": "NOW",
@@ -70,17 +79,14 @@
        "GB"
       ]
      }
-    ],
-    "29": [
-     {
-      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
-      "deniedCountries": [],
-      "ageRestricted": "false",
-      "beforeStartTime": 5,
-      "afterEndTime": 15
-     }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "2986",
@@ -103,15 +109,19 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795282209917,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "11",
    "Et": 1,
    "Esd": 20261121183000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8,
    "Games": {
@@ -249,8 +259,8 @@
    "ErnInf": "13",
    "Et": 1,
    "Esd": 20261121183000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8
   },
@@ -345,6 +355,12 @@
      }
     ]
    },
+   "Tr1": "0",
+   "Tr2": "0",
+   "Trh1": "0",
+   "Trh2": "0",
+   "Tr1OR": "0",
+   "Tr2OR": "0",
    "T1": [
     {
      "ID": "266",
@@ -367,15 +383,19 @@
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "NS",
-   "Esid": 1,
-   "Epr": 0,
+   "Eps": "1'",
+   "Esid": 2,
+   "Etm": {
+    "ATm": 1795282226208,
+    "RTm": 0
+   },
+   "Epr": 1,
    "Ecov": 0,
    "ErnInf": "10",
    "Et": 1,
    "Esd": 20261121183000,
-   "EO": 899530855,
-   "EOX": 899530855,
+   "EO": 899531367,
+   "EOX": 899531367,
    "Spid": 1,
    "Pid": 8
   }
