@@ -660,14 +660,14 @@
    "created": "2026-11-21T12:35:28.801466+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-3",
-   "last_score": "0-3"
+   "last_score": "1-4"
   },
   "fb_1813411|FB_IY2_00": {
    "key": "fb_1813411|FB_IY2_00",
@@ -732,14 +732,14 @@
    "created": "2026-11-21T12:50:33.393490+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "bb_1861275|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1861275|BB_TEMPO_DUSUSU_ALT",
@@ -756,14 +756,14 @@
    "created": "2026-11-21T12:55:25.957989+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 76,
+   "last_total": 86,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "29-21",
-   "last_score": "46-30"
+   "last_score": "49-37"
   },
   "fb_1869783|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1869783|FB_COK_GOLLU_ERKEN",
@@ -780,14 +780,38 @@
    "created": "2026-11-21T13:10:33.169749+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-3",
-   "last_score": "0-3"
+   "last_score": "0-4"
+  },
+  "fb_1802497|FB_IY2_00": {
+   "key": "fb_1802497|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1802497",
+   "match": "Millwall - QPR",
+   "league": "England Championship",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:15:33.256984+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
