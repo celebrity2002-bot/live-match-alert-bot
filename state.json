@@ -759,14 +759,14 @@
    "created": "2026-11-21T12:55:25.957989+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 109,
+   "last_total": 119,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "29-21",
-   "last_score": "62-47"
+   "last_score": "66-53"
   },
   "fb_1869783|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1869783|FB_COK_GOLLU_ERKEN",
@@ -783,14 +783,14 @@
    "created": "2026-11-21T13:10:33.169749+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-3",
-   "last_score": "0-4"
+   "last_score": "0-5"
   },
   "fb_1802497|FB_IY2_00": {
    "key": "fb_1802497|FB_IY2_00",
@@ -831,14 +831,14 @@
    "created": "2026-11-21T13:20:34.315791+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1"
+   "last_score": "1-1"
   },
   "fb_1802500|FB_IY2_00": {
    "key": "fb_1802500|FB_IY2_00",
@@ -879,14 +879,14 @@
    "created": "2026-11-21T13:20:35.202374+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0"
+   "last_score": "0-1"
   },
   "fb_1823649|FB_IY2_00": {
    "key": "fb_1823649|FB_IY2_00",
@@ -903,14 +903,14 @@
    "created": "2026-11-21T13:20:35.627604+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0"
+   "last_score": "1-1"
   },
   "bb_1895385|BB_Q1_DUSUK_UST": {
    "key": "bb_1895385|BB_Q1_DUSUK_UST",
@@ -927,14 +927,14 @@
    "created": "2026-11-21T13:25:26.575384+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 65,
+   "last_total": 69,
    "sent": true,
    "direction": "over",
    "base": 30,
    "n": 3,
    "ref": 30.0,
    "signal_score": "15-15",
-   "last_score": "36-29"
+   "last_score": "37-32"
   },
   "fb_1822613|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1822613|FB_COK_GOLLU_ERKEN",
@@ -1007,6 +1007,174 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "1-2"
+  },
+  "fb_1826203|FB_IY2_00": {
+   "key": "fb_1826203|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1826203",
+   "match": "Burghausen - Ansbach",
+   "league": "Germany Regionalliga Bayern",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:33.790095+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1826208|FB_IY2_00": {
+   "key": "fb_1826208|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1826208",
+   "match": "FC Memmingen - TSV Landsberg",
+   "league": "Germany Regionalliga Bayern",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:34.255493+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1830268|FB_IY2_00": {
+   "key": "fb_1830268|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1830268",
+   "match": "Aalen - Homburg",
+   "league": "Germany Regionalliga Südwest",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:34.762216+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1826822|FB_IY2_00": {
+   "key": "fb_1826822|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1826822",
+   "match": "FC Bocholt - Westfalia Rhynern",
+   "league": "Germany Regionalliga West",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:35.255789+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1890734|FB_IY2_00": {
+   "key": "fb_1890734|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1890734",
+   "match": "Nestos Chrysoupoli FC - Hellas Syrou",
+   "league": "Greece Super League 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:35.725700+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1890739|FB_IY2_00": {
+   "key": "fb_1890739|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1890739",
+   "match": "Panthrakikos Komotini - Panionios",
+   "league": "Greece Super League 2",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:36.266758+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
+  },
+  "fb_1841301|FB_IY2_00": {
+   "key": "fb_1841301|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1841301",
+   "match": "Koninklijke HFC - HHC Hardenberg",
+   "league": "Netherlands Tweede Divisie",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.4,
+    1.6
+   ],
+   "created": "2026-11-21T13:50:36.814533+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0"
   }
  }
 }
