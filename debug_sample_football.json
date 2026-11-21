@@ -5,21 +5,31 @@
  ],
  "events": [
   {
-   "Eid": "1785428",
+   "Eid": "1793654",
    "Pids": {
-    "112": "SBTE_2_1027911682",
-    "8": "1785428"
+    "112": "SBTE_2_1028072760",
+    "8": "1793654",
+    "29": "1793654"
    },
    "Media": {
     "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
       "allowedCountries": [
-       "US",
-       "CA"
+       "CA",
+       "US"
       ]
      },
      {
@@ -28,30 +38,133 @@
       "type": "TV_CHANNEL",
       "thumbnail": "dazn.png",
       "allowedCountries": [
-       "GB",
-       "IE",
        "CA"
       ]
      },
      {
-      "eventId": "Disney+",
+      "eventId": "HBO Max",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
+      "thumbnail": "tnt-hbo-max.png",
       "allowedCountries": [
        "MX"
       ]
      },
      {
-      "eventId": "ESPN",
+      "eventId": "Sky Sports Main Event",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
-      "thumbnail": "espn.png",
+      "thumbnail": "skysports.png",
       "allowedCountries": [
-       "MX"
+       "IE",
+       "GB"
       ]
      },
      {
-      "eventId": "Paramount+",
+      "eventId": "Sky Sports Premier League",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     }
+    ],
+    "29": [
+     {
+      "streamhls": "https://livesportradio.com/global/reeng11/playlist.m3u8",
+      "deniedCountries": [],
+      "ageRestricted": "false",
+      "beforeStartTime": 5,
+      "afterEndTime": 15
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "2986",
+     "Nm": "Newcastle United",
+     "Img": "teambadge/newcastle-united-2026.png",
+     "NewsTag": "/team/newcastle-united-2021020913320920836-103/",
+     "Abr": "NEW",
+     "Fc": "241F20",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "2773",
+     "Nm": "Arsenal",
+     "Img": "enet/9825.png",
+     "NewsTag": "/team/arsenal-2021020913320920836-97/",
+     "Abr": "ARS",
+     "Fc": "EF0107",
+     "Sc": "FDFDFD"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "11",
+   "Et": 1,
+   "Esd": 20261121183000,
+   "EO": 899530855,
+   "EOX": 899530855,
+   "Spid": 1,
+   "Pid": 8,
+   "Games": {
+    "p6": [
+     {
+      "id": "681334bd5a041059deb5b7ae",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "NG"
+      ]
+     }
+    ],
+    "ls6": [
+     {
+      "id": "679a5dc64c58a24929681a30",
+      "status": "INACTIVE",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "Eid": "1810756",
+   "Pids": {
+    "112": "SBTE_2_1028209195",
+    "8": "1810756"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "ESPN+",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "allowedCountries": [
@@ -60,76 +173,129 @@
       ]
      },
      {
-      "eventId": "13978153",
-      "provider": "BETGENIUS",
+      "eventId": "LaLigaTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "la-liga.png",
+      "allowedCountries": [
+       "IE",
+       "GB"
+      ]
+     },
+     {
+      "eventId": "Premier Sports 2",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "premier-sports.png",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     },
+     {
+      "eventId": "Sky Sports",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "TSN+",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "84snfg3o35m7xy7adjsq7mrys",
+      "provider": "UNKNOWN_PROVIDER",
       "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "NG",
        "GB",
        "IE"
       ]
      }
     ]
    },
-   "Tr1": "0",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "0",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "4410",
-     "Nm": "Parma",
-     "Img": "enet/10167.png",
-     "Abr": "PAR",
-     "Fc": "fcfcfc",
-     "Sc": "080808"
+     "ID": "12634",
+     "Nm": "Sevilla",
+     "Img": "enet/8302.png",
+     "NewsTag": "/team/sevilla-2021020913320920836-196/",
+     "Abr": "SEV",
+     "Fc": "F43333",
+     "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "4237",
-     "Nm": "AS Roma",
-     "Img": "enet/8686.png",
-     "NewsTag": "/team/roma-2021020913320920836-249/",
-     "Abr": "ROM",
-     "Fc": "8E1F2F",
-     "Sc": "F0BC42"
+     "ID": "3352",
+     "Nm": "Real Betis",
+     "Img": "enet/8603.png",
+     "NewsTag": "/team/real-betis-2021020913320920836-215/",
+     "Abr": "BET",
+     "Fc": "0BB363",
+     "Sc": "FDFDFD"
     }
    ],
-   "Eps": "21'",
-   "Esid": 2,
-   "Etm": {
-    "ATm": 1795281616152,
-    "RTm": 1200000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "12",
+   "ErnInf": "13",
    "Et": 1,
-   "Esd": 20261121180000,
-   "EO": 874365807,
-   "EOX": 874365807,
+   "Esd": 20261121183000,
+   "EO": 899530855,
+   "EOX": 899530855,
    "Spid": 1,
    "Pid": 8
   },
   {
-   "Eid": "1794772",
+   "Eid": "1812739",
    "Pids": {
-    "112": "SBTE_2_1027973925",
-    "8": "1794772"
+    "112": "SBTE_2_1028230562",
+    "8": "1812739"
    },
    "Media": {
     "112": [
+     {
+      "eventId": "NOW",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "now.png",
+      "allowedCountries": [
+       "IE"
+      ]
+     },
      {
       "eventId": "FuboTV",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
       "thumbnail": "fubo.png",
       "allowedCountries": [
-       "US",
+       "CA",
+       "US"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
        "CA"
+      ]
+     },
+     {
+      "eventId": "FOX",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
       ]
      },
      {
@@ -141,132 +307,75 @@
       ]
      },
      {
-      "eventId": "Ligue 1+",
+      "eventId": "Fandango",
       "provider": "ABELSON",
       "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Peacock",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "US",
+       "US"
+      ]
+     },
+     {
+      "eventId": "Sky Sports Football",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "skysports.png",
       "allowedCountries": [
        "IE",
        "GB"
       ]
      },
      {
-      "eventId": "beIN Sports",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
+      "eventId": "av:stream:33756409",
+      "provider": "SPORTRADAR",
+      "type": "LIVE_STREAMING",
       "allowedCountries": [
-       "CA"
+       "GB",
+       "IE"
       ]
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "2",
-   "Trh1": "1",
-   "Trh2": "2",
-   "Tr1OR": "1",
-   "Tr2OR": "2",
    "T1": [
     {
-     "ID": "3532",
-     "Nm": "Nice",
-     "Img": "enet/9831.png",
-     "NewsTag": "/team/nice-2021020913320920836-308/",
-     "Abr": "NCE",
-     "Fc": "ED1C24",
-     "Sc": "000000"
+     "ID": "266",
+     "Nm": "Schalke 04",
+     "Img": "enet/10189.png",
+     "NewsTag": "/team/schalke-04-2021020913320920836-235/",
+     "Abr": "S04",
+     "Fc": "0026bd",
+     "Sc": "ffffff"
     }
    ],
    "T2": [
     {
-     "ID": "3910",
-     "Nm": "Paris Saint-Germain",
-     "Img": "enet/9847.png",
-     "NewsTag": "/team/paris-saint-germain-2021020913320920836-295/",
-     "Abr": "PSG",
-     "Fc": "004170",
+     "ID": "4378",
+     "Nm": "VfB Stuttgart",
+     "Img": "enet/10269.png",
+     "NewsTag": "/team/vfb-stuttgart-2021020913320920836-237/",
+     "Abr": "STU",
+     "Fc": "E32219",
      "Sc": "FDFDFD"
     }
    ],
-   "Eps": "HT",
-   "Esid": 10,
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "11",
+   "ErnInf": "10",
    "Et": 1,
-   "Esd": 20261121171500,
-   "EO": 874496895,
-   "EOX": 874496895,
-   "Spid": 1,
-   "Pid": 8
-  },
-  {
-   "Eid": "1790265",
-   "Pids": {
-    "112": "SBTE_2_1027976490",
-    "8": "1790265"
-   },
-   "Media": {
-    "112": [
-     {
-      "eventId": "Disney+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "ESPN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "thumbnail": "espn.png",
-      "allowedCountries": [
-       "MX"
-      ]
-     }
-    ]
-   },
-   "Tr1": "1",
-   "Tr2": "4",
-   "Trh1": "0",
-   "Trh2": "3",
-   "Tr1OR": "1",
-   "Tr2OR": "4",
-   "T1": [
-    {
-     "ID": "4202",
-     "Nm": "NEC Nijmegen",
-     "Img": "enet/8464.png",
-     "NewsTag": "/team/nec-nijmegen-2022062716001253418-385/",
-     "Abr": "NEC",
-     "Fc": "ed1c24",
-     "Sc": "009b69"
-    }
-   ],
-   "T2": [
-    {
-     "ID": "497",
-     "Nm": "PSV Eindhoven",
-     "Img": "enet/8640.png",
-     "NewsTag": "/team/psv-eindhoven-2021020913320920836-392/",
-     "Abr": "PSV",
-     "Fc": "ED1C24",
-     "Sc": "FDFDFD"
-    }
-   ],
-   "Eps": "86'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795281592146,
-    "RTm": 5100000
-   },
-   "Epr": 1,
-   "Ecov": 0,
-   "ErnInf": "13",
-   "Et": 1,
-   "Esd": 20261121163000,
-   "EO": 908051327,
-   "EOX": 908051327,
+   "Esd": 20261121183000,
+   "EO": 899530855,
+   "EOX": 899530855,
    "Spid": 1,
    "Pid": 8
   }
