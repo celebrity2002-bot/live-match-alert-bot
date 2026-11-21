@@ -420,8 +420,8 @@
     1.7
    ],
    "created": "2026-11-21T21:55:26.054069+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -430,7 +430,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "2-0",
-   "stats_summary": "İsabetli Şut 4/7 | Korner 3 | Sarı Kart 1"
+   "stats_summary": "İsabetli Şut 4/7 | Korner 3 | Sarı Kart 1",
+   "final_total": 2,
+   "settled": "2026-11-21T23:15:32.259890+00:00",
+   "seg_avg": 2.0
   }
  }
 }
