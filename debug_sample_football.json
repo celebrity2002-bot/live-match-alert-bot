@@ -66,12 +66,12 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "90+1'",
+   "Eps": "90+6'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795229421242,
+    "ATm": 1795229721272,
     "RTm": 5400000,
-    "ITm": 0
+    "ITm": 300000
    },
    "Epr": 1,
    "Ecov": 0,
@@ -80,6 +80,92 @@
    "Esd": 20261121020000,
    "EO": 907985791,
    "EOX": 907985791,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1799078",
+   "Pids": {
+    "112": "SBTE_2_1027986191",
+    "8": "1799078"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "Azteca 7",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "azteca.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "US",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "Azteca Deportes Network",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "azteca.png",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     },
+     {
+      "eventId": "FOX One",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "allowedCountries": [
+       "MX"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "3573",
+     "Nm": "FC Juarez",
+     "Img": "enet/649424.png",
+     "Abr": "FCJ",
+     "Fc": "ffffff",
+     "Sc": "89f442"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "3626",
+     "Nm": "Atlas",
+     "Img": "enet/6577.png",
+     "Abr": "ATS",
+     "Fc": "000000",
+     "Sc": "ff0000"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "17",
+   "Et": 1,
+   "Esd": 20261121040000,
+   "EO": 874299495,
+   "EOX": 874299495,
    "Spid": 1,
    "Pid": 8
   },
@@ -138,11 +224,11 @@
      "Sc": "ffffff"
     }
    ],
-   "Eps": "53'",
+   "Eps": "58'",
    "Esid": 3,
    "Etm": {
-    "ATm": 1795229411250,
-    "RTm": 3120000
+    "ATm": 1795229711639,
+    "RTm": 3420000
    },
    "Epr": 1,
    "Ecov": 0,
