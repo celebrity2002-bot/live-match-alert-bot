@@ -392,8 +392,8 @@
     1.7
    ],
    "created": "2026-11-21T21:24:50.327984+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -402,7 +402,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 0,
+   "settled": "2026-11-21T22:47:35.492072+00:00",
+   "seg_avg": 0.0
   },
   "fb_1916744|FB_IY2_00": {
    "key": "fb_1916744|FB_IY2_00",
