@@ -2903,7 +2903,7 @@
    ],
    "created": "2026-11-21T17:01:00.622708+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -2927,7 +2927,7 @@
    ],
    "created": "2026-11-21T17:05:30.546647+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 5,
    "sent": true,
    "direction": "over",
@@ -2952,14 +2952,14 @@
    "created": "2026-11-21T17:35:34.399678+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 137,
+   "last_total": 142,
    "sent": true,
    "direction": "under",
    "base": 51,
    "n": 3,
    "ref": 51.0,
    "signal_score": "32-23",
-   "last_score": "83-54"
+   "last_score": "86-56"
   },
   "fb_1814870|FB_IY2_00": {
    "key": "fb_1814870|FB_IY2_00",
@@ -3192,14 +3192,14 @@
    "created": "2026-11-21T18:20:35.849856+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 138,
+   "last_total": 147,
    "sent": true,
    "direction": "under",
    "base": 120,
    "n": 1,
    "ref": 40.0,
    "signal_score": "52-68",
-   "last_score": "60-78"
+   "last_score": "64-83"
   },
   "fb_1810756|FB_IY2_00": {
    "key": "fb_1810756|FB_IY2_00",
@@ -3240,14 +3240,14 @@
    "created": "2026-11-21T18:25:26.606598+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 46,
+   "last_total": 48,
    "sent": true,
    "direction": "over",
    "base": 34,
    "n": 3,
    "ref": 34.0,
    "signal_score": "18-18",
-   "last_score": "24-22"
+   "last_score": "26-22"
   }
  }
 }
