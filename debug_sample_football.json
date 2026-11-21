@@ -5,40 +5,15 @@
  ],
  "events": [
   {
-   "Eid": "1799077",
+   "Eid": "1814059",
    "Pids": {
-    "112": "SBTE_2_1027986197",
-    "8": "1799077"
+    "112": "SBTE_2_1029560797",
+    "8": "1814059"
    },
    "Media": {
     "112": [
      {
-      "eventId": "TUDN",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "US",
-       "US"
-      ]
-     },
-     {
-      "eventId": "FOX One",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "FOX+",
-      "provider": "ABELSON",
-      "type": "TV_CHANNEL",
-      "allowedCountries": [
-       "MX"
-      ]
-     },
-     {
-      "eventId": "9fqi0e8bc2gepzmhjbybfyas4",
+      "eventId": "2dnay2c7c5r79zsrwg2kq6as4",
       "provider": "UNKNOWN_PROVIDER",
       "type": "LIVE_STREAMING",
       "allowedCountries": [
@@ -48,45 +23,137 @@
      }
     ]
    },
-   "Tr1": "1",
-   "Tr2": "0",
-   "Trh1": "0",
-   "Trh2": "0",
-   "Tr1OR": "1",
-   "Tr2OR": "0",
    "T1": [
     {
-     "ID": "411",
-     "Nm": "Tijuana",
-     "Img": "enet/162418.png",
-     "Abr": "TIJ",
-     "Fc": "f50000",
-     "Sc": "f7f7f7"
+     "ID": "230795",
+     "Nm": "Levante Badalona W",
+     "Img": "teambadge/levante-badalona-2024.png",
+     "Abr": "LBA(W)",
+     "Fc": "482E92",
+     "Sc": "FDFDFD"
     }
    ],
    "T2": [
     {
-     "ID": "4242",
-     "Nm": "Atlante",
-     "Img": "enet/1942.png",
-     "Abr": "ATL"
+     "ID": "2712",
+     "Nm": "Deportivo La Coruna W",
+     "Img": "enet/1077485.png",
+     "Abr": "DEP(W)",
+     "Fc": "57175E",
+     "Sc": "A38D44"
     }
    ],
-   "Eps": "90+4'",
-   "Esid": 3,
-   "Etm": {
-    "ATm": 1795237451247,
-    "RTm": 5400000,
-    "ITm": 180000
-   },
-   "Epr": 1,
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
    "Ecov": 0,
-   "ErnInf": "Apertura",
+   "ErnInf": "12",
    "Et": 1,
-   "Eit": "5",
-   "Esd": 20261121041000,
-   "EO": 874431359,
-   "EOX": 874431359,
+   "Esd": 20261121120000,
+   "EO": 807157863,
+   "EOX": 807157863,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1834798",
+   "Pids": {
+    "112": "SBTE_2_1028430624",
+    "8": "1834798"
+   },
+   "Media": {
+    "112": [
+     {
+      "eventId": "FuboTV",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "fubo.png",
+      "allowedCountries": [
+       "CA"
+      ]
+     },
+     {
+      "eventId": "DAZN",
+      "provider": "ABELSON",
+      "type": "TV_CHANNEL",
+      "thumbnail": "dazn.png",
+      "allowedCountries": [
+       "GB",
+       "IE",
+       "CA"
+      ]
+     },
+     {
+      "eventId": "8ry2hgjorhp9rrt7ayw4g0wt0",
+      "provider": "UNKNOWN_PROVIDER",
+      "type": "LIVE_STREAMING",
+      "allowedCountries": [
+       "GB",
+       "IE"
+      ]
+     }
+    ]
+   },
+   "T1": [
+    {
+     "ID": "6722",
+     "Nm": "Eintracht Frankfurt W",
+     "Img": "enet/294857.png",
+     "Abr": "SGE(W)",
+     "Fc": "E1000F",
+     "Sc": "000000"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "369217",
+     "Nm": "Hamburger SV",
+     "Img": "enet/1638021.png",
+     "Abr": "HAM"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "11",
+   "Et": 1,
+   "Esd": 20261121120000,
+   "EO": 807157863,
+   "EOX": 807157863,
+   "Spid": 1,
+   "Pid": 8
+  },
+  {
+   "Eid": "1869776",
+   "Pids": {
+    "8": "1869776"
+   },
+   "T1": [
+    {
+     "ID": "182315",
+     "Nm": "Birmingham City U18",
+     "Img": "enet/1281663.png",
+     "Abr": "BIR(18)"
+    }
+   ],
+   "T2": [
+    {
+     "ID": "4562",
+     "Nm": "Aston Villa U18",
+     "Img": "teambadge/aston-villa-2024.png",
+     "Abr": "AST(18)"
+    }
+   ],
+   "Eps": "NS",
+   "Esid": 1,
+   "Epr": 0,
+   "Ecov": 0,
+   "ErnInf": "11",
+   "Et": 1,
+   "Esd": 20261121120000,
+   "EO": 807141479,
+   "EOX": 807141479,
    "Spid": 1,
    "Pid": 8
   }
