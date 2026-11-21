@@ -121,8 +121,8 @@
     1.9
    ],
    "created": "2026-11-21T20:25:24.692150+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 145,
    "sent": true,
    "direction": "over",
@@ -130,7 +130,10 @@
    "n": 3,
    "ref": 35.0,
    "signal_score": "13-22",
-   "last_score": "72-73"
+   "last_score": "72-73",
+   "final_total": 145,
+   "settled": "2026-11-21T22:15:31.254528+00:00",
+   "seg_avg": 36.7
   },
   "bb_1844078|OZEL_BB_BENCH_COKUS": {
    "key": "bb_1844078|OZEL_BB_BENCH_COKUS",
