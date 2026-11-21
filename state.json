@@ -2092,8 +2092,8 @@
     1.9
    ],
    "created": "2026-11-21T15:40:35.312128+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 7,
    "sent": true,
    "direction": "over",
@@ -2101,7 +2101,10 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "3-4"
+   "last_score": "3-4",
+   "final_total": 7,
+   "settled": "2026-11-21T17:15:34.894045+00:00",
+   "seg_avg": 4.0
   },
   "fb_1802495|FB_IY2_00": {
    "key": "fb_1802495|FB_IY2_00",
