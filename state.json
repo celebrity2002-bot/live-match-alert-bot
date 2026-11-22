@@ -450,15 +450,40 @@
    "created": "2026-11-22T01:05:26.852554+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0",
+   "last_score": "0-1",
    "stats_summary": "İsabetli Şut 4/13 | Korner 5 | Sarı Kart 1"
+  },
+  "bb_1868495|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868495|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868495",
+   "match": "New York Knicks - Portland Trail Blazers",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T01:10:32.783650+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 67,
+   "sent": true,
+   "direction": "under",
+   "base": 63,
+   "n": 3,
+   "ref": 63.0,
+   "signal_score": "42-25",
+   "last_score": "42-25",
+   "stats_summary": ""
   }
  }
 }
