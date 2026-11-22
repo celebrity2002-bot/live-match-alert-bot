@@ -349,8 +349,8 @@
     1.85
    ],
    "created": "2026-11-22T14:35:29.007794+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
    "direction": "over",
@@ -359,7 +359,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "4-0",
-   "stats_summary": "xG 0.61 | Isabetli Sut 2/7 | Korner 7"
+   "stats_summary": "xG 0.61 | Isabetli Sut 2/7 | Korner 7",
+   "final_total": 4,
+   "settled": "2026-11-22T16:05:27.184674+00:00",
+   "seg_avg": 4.0
   },
   "fb_1793646|FB_IY2_00": {
    "key": "fb_1793646|FB_IY2_00",
@@ -374,8 +377,8 @@
     1.85
    ],
    "created": "2026-11-22T14:40:40.330082+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -384,7 +387,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-0",
-   "stats_summary": "xG 1.49 | Isabetli Sut 6/10 | Korner 3 | Sari Kart 2"
+   "stats_summary": "xG 1.49 | Isabetli Sut 6/10 | Korner 3 | Sari Kart 2",
+   "final_total": 1,
+   "settled": "2026-11-22T16:05:27.659008+00:00",
+   "seg_avg": 1.0
   },
   "fb_1749008|FB_IY2_00": {
    "key": "fb_1749008|FB_IY2_00",
@@ -399,8 +405,8 @@
     1.85
    ],
    "created": "2026-11-22T14:40:41.626637+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -409,7 +415,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "2-1",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 3,
+   "settled": "2026-11-22T16:05:28.089777+00:00",
+   "seg_avg": 3.0
   },
   "fb_1805895|FB_IY2_00": {
    "key": "fb_1805895|FB_IY2_00",
@@ -704,14 +713,14 @@
    "created": "2026-11-22T15:55:24.863719+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 73,
+   "last_total": 78,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "39-34",
+   "last_score": "41-37",
    "stats_summary": ""
   }
  }
