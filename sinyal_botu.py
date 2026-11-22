@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.3 - KG Var 48-62' Penceresi + Geride Kalan Takım Min 2 İsabetli Şut
+Canlı Sinyal Botu v2.8.4 - Deneysel KG Var Pasif + Sıkılaştırılmış 0-0 ve Erken Gol Odaklı Akış
 """
 import io
 import json
@@ -68,6 +68,7 @@ DEFAULT_DISABLED = {
     "OZEL_FB_BASKI_SIKISMA",
     "FB_TEK_FARK_70",
     "FB_GERIDEN_FARK2",
+    "FB_KG_VAR_ACIK_MAC",
     "BB_Q4_YAKIN_UST",
 }
 ENV_DISABLED = {x.strip().upper() for x in os.getenv("DISABLE_STRATEGIES", "").split(",") if x.strip()}
@@ -1084,7 +1085,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.3 aktif: KG Var 48-62' penceresi ve iki yönlü isabetli şut dengesi hazır.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.4 aktif: Deneysel KG Var kapatıldı, odak 0-0 (50-65') ve erken gol kurgularında.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
