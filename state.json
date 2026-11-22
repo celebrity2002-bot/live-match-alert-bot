@@ -517,8 +517,8 @@
     1.85
    ],
    "created": "2026-11-22T15:35:30.603396+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -527,7 +527,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-1",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 2,
+   "settled": "2026-11-22T17:15:38.991898+00:00",
+   "seg_avg": 2.0
   },
   "fb_1834803|FB_IY2_00": {
    "key": "fb_1834803|FB_IY2_00",
@@ -598,8 +601,8 @@
     1.85
    ],
    "created": "2026-11-22T15:40:35.039089+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -608,7 +611,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 0,
+   "settled": "2026-11-22T17:15:39.518455+00:00",
+   "seg_avg": 0.0
   },
   "fb_1848648|FB_IY2_00": {
    "key": "fb_1848648|FB_IY2_00",
@@ -623,8 +629,8 @@
     1.85
    ],
    "created": "2026-11-22T15:40:35.930182+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -633,7 +639,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "2-0",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 2,
+   "settled": "2026-11-22T17:15:40.036075+00:00",
+   "seg_avg": 2.0
   },
   "fb_1848646|FB_IY2_00": {
    "key": "fb_1848646|FB_IY2_00",
@@ -648,8 +657,8 @@
     1.85
    ],
    "created": "2026-11-22T15:40:36.810061+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
    "direction": "over",
@@ -658,7 +667,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 0,
+   "settled": "2026-11-22T17:15:40.561603+00:00",
+   "seg_avg": 0.0
   },
   "fb_1810460|FB_IY2_00": {
    "key": "fb_1810460|FB_IY2_00",
@@ -673,8 +685,8 @@
     1.85
    ],
    "created": "2026-11-22T15:40:37.777518+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 6,
    "sent": true,
    "direction": "over",
@@ -683,7 +695,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "5-1",
-   "stats_summary": "Isabetli Sut 2/6 | Korner 4 | Sari Kart 3"
+   "stats_summary": "Isabetli Sut 2/6 | Korner 4 | Sari Kart 3",
+   "final_total": 6,
+   "settled": "2026-11-22T17:15:41.219244+00:00",
+   "seg_avg": 6.0
   },
   "fb_1788603|FB_KG_VAR_ACIK_MAC": {
    "key": "fb_1788603|FB_KG_VAR_ACIK_MAC",
@@ -728,14 +743,14 @@
    "created": "2026-11-22T15:55:24.863719+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 173,
+   "last_total": 200,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "98-75",
+   "last_score": "113-87",
    "stats_summary": ""
   },
   "fb_1798208|FB_KG_VAR_ACIK_MAC": {
@@ -781,14 +796,14 @@
    "created": "2026-11-22T16:20:31.120367+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 129,
+   "last_total": 135,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "31-29",
-   "last_score": "70-59",
+   "last_score": "75-60",
    "stats_summary": ""
   },
   "fb_1812164|FB_COK_GOLLU_ERKEN": {
@@ -806,14 +821,14 @@
    "created": "2026-11-22T16:20:33.282237+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-3",
-   "last_score": "0-3",
+   "last_score": "0-4",
    "stats_summary": ""
   },
   "bb_1861256|BB_Q4_FARK_ALT": {
@@ -859,14 +874,14 @@
    "created": "2026-11-22T16:50:35.149464+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 60,
+   "last_total": 64,
    "sent": true,
    "direction": "over",
    "base": 31,
    "n": 3,
    "ref": 31.0,
    "signal_score": "11-20",
-   "last_score": "28-32",
+   "last_score": "30-34",
    "stats_summary": ""
   },
   "fb_1790281|FB_KG_VAR_ACIK_MAC": {
