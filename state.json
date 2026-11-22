@@ -713,15 +713,40 @@
    "created": "2026-11-22T15:55:24.863719+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 86,
+   "last_total": 94,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "45-41",
+   "last_score": "47-47",
    "stats_summary": ""
+  },
+  "fb_1798208|FB_KG_VAR_ACIK_MAC": {
+   "key": "fb_1798208|FB_KG_VAR_ACIK_MAC",
+   "sport": "football",
+   "match_id": "fb_1798208",
+   "match": "Kortrijk - Union St.Gilloise",
+   "league": "Belgium Belgian Pro League",
+   "strategy": "FB_KG_VAR_ACIK_MAC",
+   "pick": "KG Var (Karşılıklı Gol)",
+   "band": [
+    1.5,
+    2.05
+   ],
+   "created": "2026-11-22T16:15:41.518272+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1",
+   "stats_summary": "Isabetli Sut 3/10 | Korner 5 | Sari Kart 3"
   }
  }
 }
