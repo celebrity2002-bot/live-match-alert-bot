@@ -716,14 +716,14 @@
    "created": "2026-11-22T15:55:24.863719+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 121,
+   "last_total": 126,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "65-56",
+   "last_score": "70-56",
    "stats_summary": ""
   },
   "fb_1798208|FB_KG_VAR_ACIK_MAC": {
@@ -741,14 +741,14 @@
    "created": "2026-11-22T16:15:41.518272+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-0",
+   "last_score": "0-1",
    "stats_summary": "Isabetli Sut 3/10 | Korner 5 | Sari Kart 3"
   },
   "bb_1867876|BB_TEMPO_DUSUSU_ALT": {
@@ -766,14 +766,14 @@
    "created": "2026-11-22T16:20:31.120367+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 106,
+   "last_total": 108,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "31-29",
-   "last_score": "57-49",
+   "last_score": "59-49",
    "stats_summary": ""
   },
   "fb_1812164|FB_COK_GOLLU_ERKEN": {
@@ -816,14 +816,14 @@
    "created": "2026-11-22T16:30:44.405006+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 135,
+   "last_total": 138,
    "sent": true,
    "direction": "under",
    "base": 120,
    "n": 1,
    "ref": 40.0,
    "signal_score": "70-55",
-   "last_score": "75-60",
+   "last_score": "76-62",
    "stats_summary": ""
   }
  }
