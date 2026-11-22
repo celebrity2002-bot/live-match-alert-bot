@@ -434,6 +434,31 @@
    "final_total": 2,
    "settled": "2026-11-21T23:15:32.259890+00:00",
    "seg_avg": 2.0
+  },
+  "fb_1708784|FB_IY2_00": {
+   "key": "fb_1708784|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1708784",
+   "match": "Chapecoense AF - Cruzeiro",
+   "league": "Brazil Serie A",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.7
+   ],
+   "created": "2026-11-22T01:05:26.852554+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "İsabetli Şut 4/13 | Korner 5 | Sarı Kart 1"
   }
  }
 }
