@@ -199,14 +199,14 @@
    "created": "2026-11-22T13:30:45.520216+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 185,
+   "last_total": 196,
    "sent": true,
    "direction": "under",
    "base": 156,
    "n": 1,
    "ref": 52.0,
    "signal_score": "91-65",
-   "last_score": "106-79",
+   "last_score": "113-83",
    "stats_summary": ""
   },
   "fb_1834795|FB_IY2_00": {
