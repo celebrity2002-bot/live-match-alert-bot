@@ -702,14 +702,14 @@
    "created": "2026-11-22T11:35:26.493530+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 75,
+   "last_total": 79,
    "sent": true,
    "direction": "under",
    "base": 53,
    "n": 3,
    "ref": 53.0,
    "signal_score": "37-24",
-   "last_score": "44-31",
+   "last_score": "48-31",
    "stats_summary": ""
   },
   "fb_1814868|FB_IY2_00": {
