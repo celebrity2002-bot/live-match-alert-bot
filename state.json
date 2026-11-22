@@ -786,6 +786,31 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": ""
+  },
+  "fb_1815814|FB_IY2_00": {
+   "key": "fb_1815814|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1815814",
+   "match": "Don Benito - Marbella FC",
+   "league": "Spain Segunda Division RFEF: Group 4",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.7
+   ],
+   "created": "2026-11-22T12:05:26.461705+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
   }
  }
 }
