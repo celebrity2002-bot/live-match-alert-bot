@@ -97,8 +97,8 @@
     1.85
    ],
    "created": "2026-11-22T22:40:32.814522+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -107,7 +107,60 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-0",
-   "stats_summary": "Isabetli Sut 2/6 (2-0) | Korner 4 | Sari Kart 1"
+   "stats_summary": "Isabetli Sut 2/6 (2-0) | Korner 4 | Sari Kart 1",
+   "final_total": 1,
+   "settled": "2026-11-22T23:40:35.516581+00:00",
+   "seg_avg": 1.0
+  },
+  "bb_1868503|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868503|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868503",
+   "match": "Miami Heat - Oklahoma City Thunder",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T23:40:32.731623+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 62,
+   "sent": true,
+   "direction": "under",
+   "base": 60,
+   "n": 3,
+   "ref": 60.0,
+   "signal_score": "36-26",
+   "last_score": "36-26",
+   "stats_summary": ""
+  },
+  "fb_1708765|FB_IY2_00": {
+   "key": "fb_1708765|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1708765",
+   "match": "RB Bragantino - Vasco da Gama",
+   "league": "Brazil Serie A",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T23:40:34.843008+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 3/9 (2-1) | Korner 6 | Sari Kart 2"
   }
  }
 }
