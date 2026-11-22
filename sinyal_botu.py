@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.7.5 - Bülten Odaklı Lig Filtresi + 35-40' / 55-60' Pencereleri + Neon PNG Kart
+Canlı Sinyal Botu v2.7.6 - 35-40' / 55-60' Pencereleri + Bülten Odaklı Filtre + Net Gol Çizgisi Kartı
 """
 import io
 import json
@@ -251,12 +251,12 @@ def format_fb_stat_line(st):
     parts = []
     if st.get("xg_total") is not None:
         parts.append(f"xG {st['xg_total']:.2f}")
-    parts.append(f"İsabetli Şut {st['sot_total']}/{st['shots_total']}")
+    parts.append(f"Isabetli Sut {st['sot_total']}/{st['shots_total']}")
     parts.append(f"Korner {st['corners_total']}")
     if st.get("rc_total", 0) > 0:
-        parts.append(f"Kırmızı Kart {st['rc_total']}")
+        parts.append(f"Kirmizi Kart {st['rc_total']}")
     elif st.get("yc_total", 0) > 0:
-        parts.append(f"Sarı Kart {st['yc_total']}")
+        parts.append(f"Sari Kart {st['yc_total']}")
     return " | ".join(parts)
 
 
@@ -276,7 +276,7 @@ def fb_goal_line_hint(p, res):
         return f"Hedef: En az 1 gol cikmaz (ALT) | Skor: {p['total']}"
     tot = p.get("total", 0)
     if tot == 0:
-        return "Hedef: 0.5 Ust (1.40+ bant) | Alternatif: 1.5 Ust"
+        return "Hedef: 0.5 Ust (1+ gol) | Alternatif: 1.5 Ust"
     if tot == 1:
         return "Hedef: 1.5 Ust (2+ gol) | Skor: 1 gol var"
     if tot == 2:
@@ -472,9 +472,9 @@ def build_signal_card_png(p, sd, res, stat_line=None):
                     if len(metric_rows) < 3:
                         metric_rows.append(chunk)
             if len(metric_rows) < 3:
-                metric_rows.append(f"Pencere: {sd['label']}")
+                metric_rows.append(f"Mevcut Skor: {p['home']}-{p['away']} ({p['total']} gol)")
             if len(metric_rows) < 3:
-                metric_rows.append(f"Skor: {p['home']}-{p['away']}")
+                metric_rows.append(f"Pencere: {sd['label']}")
         else:
             q_str = " / ".join(str(x) for x in (p.get("q") or []) if x is not None)
             metric_rows.append(f"Toplam Sayi: {p['total']}  (Fark: {p['diff']})")
@@ -1008,7 +1008,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Bülten odaklı lig filtresi, 35-40' / 55-60' pencereleri ve temiz neon PNG kart aktif.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.7.6 aktif: 35-40' ve 55-60' pencereleri, bülten odaklı filtre ve net gol çizgisi kartı hazır.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
