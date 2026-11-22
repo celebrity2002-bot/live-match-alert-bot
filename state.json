@@ -674,14 +674,14 @@
    "created": "2026-11-22T03:40:30.981256+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 129,
+   "last_total": 139,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "27-29",
-   "last_score": "66-63",
+   "last_score": "72-67",
    "stats_summary": ""
   }
  }
