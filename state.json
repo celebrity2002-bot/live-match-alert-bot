@@ -294,7 +294,7 @@
    ],
    "created": "2026-11-22T14:05:24.886970+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "direction": "over",
@@ -418,8 +418,8 @@
     1.85
    ],
    "created": "2026-11-22T14:45:36.631833+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -428,7 +428,85 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-0",
-   "stats_summary": "Isabetli Sut 3/10 | Korner 6 | Sari Kart 3"
+   "stats_summary": "Isabetli Sut 3/10 | Korner 6 | Sari Kart 3",
+   "final_total": 1,
+   "settled": "2026-11-22T15:35:31.648529+00:00",
+   "seg_avg": 1.0
+  },
+  "fb_1848649|FB_IY2_00": {
+   "key": "fb_1848649|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1848649",
+   "match": "Bechem United - Asante Kotoko SC",
+   "league": "Ghana Premier League",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T15:35:28.081942+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
+  },
+  "fb_1848652|FB_IY2_00": {
+   "key": "fb_1848652|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1848652",
+   "match": "Bibiani Gold Stars - All Blacks",
+   "league": "Ghana Premier League",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T15:35:29.274062+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
+  },
+  "fb_1861053|FB_IY2_00": {
+   "key": "fb_1861053|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1861053",
+   "match": "Kagera Sugar - TRA United",
+   "league": "Tanzania Premier League",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T15:35:30.603396+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
   }
  }
 }
