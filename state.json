@@ -501,14 +501,14 @@
    "created": "2026-11-22T15:35:30.603396+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0",
+   "last_score": "1-0",
    "stats_summary": ""
   },
   "fb_1834803|FB_IY2_00": {
