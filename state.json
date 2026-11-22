@@ -15,14 +15,14 @@
    "created": "2026-11-22T17:25:24.135682+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 126,
+   "last_total": 134,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "30-34",
-   "last_score": "70-56",
+   "last_score": "72-62",
    "stats_summary": ""
   },
   "bb_1854361|BB_TEMPO_DUSUSU_ALT": {
@@ -65,14 +65,14 @@
    "created": "2026-11-22T17:25:26.024176+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 124,
+   "last_total": 129,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "39-20",
-   "last_score": "69-55",
+   "last_score": "69-60",
    "stats_summary": ""
   },
   "fb_1821048|FB_KG_VAR_ACIK_MAC": {
@@ -88,8 +88,8 @@
     2.05
    ],
    "created": "2026-11-22T17:25:28.540849+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -98,7 +98,10 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0",
-   "stats_summary": "Isabetli Sut 10/18 (9-1) | Korner 13 | Sari Kart 1"
+   "stats_summary": "Isabetli Sut 10/18 (9-1) | Korner 13 | Sari Kart 1",
+   "final_total": 1,
+   "settled": "2026-11-22T18:05:37.773501+00:00",
+   "seg_avg": 0.0
   },
   "fb_1785414|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1785414|FB_COK_GOLLU_ERKEN",
@@ -138,8 +141,8 @@
     2.1
    ],
    "created": "2026-11-22T17:30:49.711460+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 220,
    "sent": true,
    "direction": "under",
@@ -148,7 +151,10 @@
    "ref": 58.333333333333336,
    "signal_score": "90-85",
    "last_score": "118-102",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 220,
+   "settled": "2026-11-22T18:05:36.025453+00:00",
+   "seg_avg": 45.0
   },
   "bb_1854367|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1854367|BB_TEMPO_DUSUSU_ALT",
@@ -165,14 +171,14 @@
    "created": "2026-11-22T17:40:33.788252+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 84,
+   "last_total": 93,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "29-23",
-   "last_score": "43-41",
+   "last_score": "47-46",
    "stats_summary": ""
   },
   "fb_1812743|FB_IY2_00": {
@@ -190,14 +196,14 @@
    "created": "2026-11-22T17:45:37.420253+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "xG 1.27 | Isabetli Sut 2/11 (2-0) | Korner 3 | Sari Kart 3"
   },
   "fb_1894576|FB_IY2_00": {
@@ -215,14 +221,14 @@
    "created": "2026-11-22T17:45:38.372937+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "Isabetli Sut 3/9 (2-1) | Korner 4 | Sari Kart 3"
   }
  }
