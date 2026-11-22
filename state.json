@@ -14,7 +14,7 @@
    ],
    "created": "2026-11-22T17:25:24.135682+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 147,
    "sent": true,
    "direction": "over",
@@ -40,14 +40,14 @@
    "created": "2026-11-22T17:25:25.103369+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 123,
+   "last_total": 135,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "27-32",
-   "last_score": "61-62",
+   "last_score": "71-64",
    "stats_summary": ""
   },
   "bb_1854366|BB_TEMPO_DUSUSU_ALT": {
@@ -65,14 +65,14 @@
    "created": "2026-11-22T17:25:26.024176+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 164,
+   "last_total": 175,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "39-20",
-   "last_score": "84-80",
+   "last_score": "89-86",
    "stats_summary": ""
   },
   "fb_1821048|FB_KG_VAR_ACIK_MAC": {
@@ -118,14 +118,14 @@
    "created": "2026-11-22T17:27:35.744034+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "3-1",
+   "last_score": "4-1",
    "stats_summary": "xG 0.76 | Isabetli Sut 3/6 (1-2) | Korner 4"
   },
   "bb_1867876|OZEL_BB_BENCH_COKUS": {
@@ -171,14 +171,14 @@
    "created": "2026-11-22T17:40:33.788252+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 97,
+   "last_total": 102,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "29-23",
-   "last_score": "49-48",
+   "last_score": "54-48",
    "stats_summary": ""
   },
   "fb_1812743|FB_IY2_00": {
@@ -230,6 +230,31 @@
    "signal_score": "0-0",
    "last_score": "2-1",
    "stats_summary": "Isabetli Sut 3/9 (2-1) | Korner 4 | Sari Kart 3"
+  },
+  "bb_1886836|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1886836|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1886836",
+   "match": "ASVEL Lyon-Villeurbanne - Bourg-en-Bresse",
+   "league": "France LNB Pro A",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T18:25:23.880926+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 56,
+   "sent": true,
+   "direction": "under",
+   "base": 56,
+   "n": 3,
+   "ref": 56.0,
+   "signal_score": "24-32",
+   "last_score": "24-32",
+   "stats_summary": ""
   }
  }
 }
