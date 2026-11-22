@@ -70,7 +70,7 @@
    ],
    "created": "2026-11-22T17:25:26.024176+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 225,
    "sent": true,
    "direction": "under",
@@ -180,14 +180,14 @@
    "created": "2026-11-22T17:40:33.788252+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 159,
+   "last_total": 166,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "29-23",
-   "last_score": "85-74",
+   "last_score": "87-79",
    "stats_summary": ""
   },
   "fb_1812743|FB_IY2_00": {
@@ -361,14 +361,14 @@
    "created": "2026-11-22T18:50:43.854357+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 53,
+   "last_total": 57,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "15-18",
-   "last_score": "27-26",
+   "last_score": "29-28",
    "stats_summary": ""
   }
  }
