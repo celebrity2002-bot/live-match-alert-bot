@@ -673,7 +673,7 @@
    ],
    "created": "2026-11-22T03:40:30.981256+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 193,
    "sent": true,
    "direction": "under",
