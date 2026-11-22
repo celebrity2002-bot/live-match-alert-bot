@@ -686,6 +686,31 @@
    "final_total": 193,
    "settled": "2026-11-22T05:55:23.860070+00:00",
    "seg_avg": 47.0
+  },
+  "bb_1895391|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1895391|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1895391",
+   "match": "Mykonos - Vikos",
+   "league": "Greece Basket League",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T11:35:26.493530+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 61,
+   "sent": true,
+   "direction": "under",
+   "base": 53,
+   "n": 3,
+   "ref": 53.0,
+   "signal_score": "37-24",
+   "last_score": "37-24",
+   "stats_summary": ""
   }
  }
 }
