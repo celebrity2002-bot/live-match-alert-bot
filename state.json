@@ -69,8 +69,8 @@
     1.55
    ],
    "created": "2026-11-22T21:10:38.135401+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 196,
    "sent": true,
    "direction": "under",
@@ -79,7 +79,10 @@
    "ref": 55.0,
    "signal_score": "29-27",
    "last_score": "104-92",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 196,
+   "settled": "2026-11-22T23:05:27.455731+00:00",
+   "seg_avg": 47.0
   },
   "fb_1708749|FB_IY2_00": {
    "key": "fb_1708749|FB_IY2_00",
