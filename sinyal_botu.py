@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.7.4 - 35-40' ve 55-60' Pencereleri + 1.40+ Oran Bandı + Temiz Neon PNG Kart
+Canlı Sinyal Botu v2.7.5 - Bülten Odaklı Lig Filtresi + 35-40' / 55-60' Pencereleri + Neon PNG Kart
 """
 import io
 import json
@@ -75,11 +75,11 @@ HIDE_DISABLED_IN_SUMMARY = os.getenv("HIDE_DISABLED_IN_SUMMARY", "1") == "1"
 # Minimum bahis tutarı kuralı (En az 50 TL)
 MIN_STAKE_TL = env_num("MIN_STAKE_TL", 50, int)
 
-# Futbol için İddaa bülteni odaklı izin verilen anahtar kelimeler
+# Futbol için bülten uyumu yüksek üst lig ve Avrupa kupası anahtar kelimeleri
 default_football_keywords = (
-    "turkey,england,spain,italy,germany,france,netherlands,portugal,"
-    "uefa,champions league,europa league,conference league,brazil,argentina,"
-    "mls,saudi arabia,greece,belgium,austria,switzerland,colombia,mexico"
+    "super lig,süper lig,premier league,la liga,serie a,bundesliga,ligue 1,"
+    "champions league,europa league,conference league,eredivisie,liga portugal,"
+    "super league greece,pro league"
 )
 ALLOWED_FOOTBALL_KEYWORDS = {
     x.strip().lower()
@@ -87,10 +87,10 @@ ALLOWED_FOOTBALL_KEYWORDS = {
     if x.strip()
 }
 
-# Basketbol için İddaa bülteni odaklı izin verilen anahtar kelimeler
+# Basketbol için bülten uyumu yüksek ana lig ve kupa anahtar kelimeleri
 default_basketball_keywords = (
-    "euroleague,eurocup,champions league,nba,wnba,ncaa,turkey,super lig,tbl,bsl,"
-    "spain,acb,endesa,italy,germany,bundesliga,france,lnb,greece,aba,vtb"
+    "euroleague,eurocup,champions league,nba,bsl,super lig,süper lig,"
+    "acb,serie a,bundesliga,pro a,aba,vtb,tbl"
 )
 ALLOWED_BASKETBALL_KEYWORDS = {
     x.strip().lower()
@@ -1008,7 +1008,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* 35-40' ve 55-60' pencereleri, 1.40+ oran bandı ve temiz neon PNG kart aktif.")
+        success = send_telegram("🤖 *Test Başarılı!* Bülten odaklı lig filtresi, 35-40' / 55-60' pencereleri ve temiz neon PNG kart aktif.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
