@@ -40,14 +40,14 @@
    "created": "2026-11-22T17:25:25.103369+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 64,
+   "last_total": 70,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "27-32",
-   "last_score": "30-34",
+   "last_score": "32-38",
    "stats_summary": ""
   },
   "bb_1854366|BB_TEMPO_DUSUSU_ALT": {
@@ -65,14 +65,14 @@
    "created": "2026-11-22T17:25:26.024176+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 64,
+   "last_total": 77,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "39-20",
-   "last_score": "39-25",
+   "last_score": "46-31",
    "stats_summary": ""
   },
   "fb_1821048|FB_KG_VAR_ACIK_MAC": {
@@ -124,6 +124,31 @@
    "signal_score": "2-1",
    "last_score": "2-1",
    "stats_summary": "xG 0.76 | Isabetli Sut 3/6 (1-2) | Korner 4"
+  },
+  "bb_1867876|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1867876|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1867876",
+   "match": "Valencia - CB Breogan Lugo",
+   "league": "Spain Liga ACB",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-22T17:30:49.711460+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 175,
+   "sent": true,
+   "direction": "under",
+   "base": 175,
+   "n": 1,
+   "ref": 58.333333333333336,
+   "signal_score": "90-85",
+   "last_score": "90-85",
+   "stats_summary": ""
   }
  }
 }
