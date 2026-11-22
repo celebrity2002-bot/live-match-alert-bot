@@ -127,14 +127,14 @@
    "created": "2026-11-22T23:40:32.731623+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 62,
+   "last_total": 79,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "36-26",
-   "last_score": "36-26",
+   "last_score": "44-35",
    "stats_summary": ""
   },
   "fb_1708765|FB_IY2_00": {
