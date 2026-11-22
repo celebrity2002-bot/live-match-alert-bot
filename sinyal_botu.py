@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.1 - 0-0 İstatistik Zorunluluğu + Güncel Dakikalar + KG Var + Neon PNG Kart
+Canlı Sinyal Botu v2.8.2 - Lig Gürültü Filtresi + KG Var İki Yönlü Şut Dengesi + 0-0 İstatistik Zorunluluğu
 """
 import io
 import json
@@ -60,6 +60,7 @@ MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.35, float)
 MIN_IY2_SOT = env_num("MIN_IY2_SOT", 2, int)
 MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 6, int)
 MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 6, int)
+MIN_KG_TRAILING_SHOTS = env_num("MIN_KG_TRAILING_SHOTS", 3, int)
 
 # %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
 DEFAULT_DISABLED = {
@@ -88,6 +89,16 @@ default_football_keywords = (
 ALLOWED_FOOTBALL_KEYWORDS = {
     x.strip().lower()
     for x in os.getenv("ALLOWED_FOOTBALL_KEYWORDS", default_football_keywords).split(",")
+    if x.strip()
+}
+
+default_blocked_football_keywords = (
+    "ghana,nigeria,kenya,tanzania,uganda,zambia,ethiopia,rwanda,"
+    "reserve,reserves,u19,u21,youth"
+)
+BLOCKED_FOOTBALL_KEYWORDS = {
+    x.strip().lower()
+    for x in os.getenv("BLOCKED_FOOTBALL_KEYWORDS", default_blocked_football_keywords).split(",")
     if x.strip()
 }
 
@@ -228,6 +239,7 @@ def fetch_fb_stats(eid):
 
         sot1, sot2 = num(t1.get("Shon")) or 0, num(t2.get("Shon")) or 0
         shof1, shof2 = num(t1.get("Shof")) or 0, num(t2.get("Shof")) or 0
+        shots1, shots2 = sot1 + shof1, sot2 + shof2
         cos1, cos2 = num(t1.get("Cos")) or 0, num(t2.get("Cos")) or 0
         ycs1, ycs2 = num(t1.get("Ycs")) or 0, num(t2.get("Ycs")) or 0
         rcs1, rcs2 = num(t1.get("Rcs")) or 0, num(t2.get("Rcs")) or 0
@@ -239,8 +251,10 @@ def fetch_fb_stats(eid):
             "xg2": xg2,
             "sot1": sot1,
             "sot2": sot2,
+            "shots1": shots1,
+            "shots2": shots2,
             "sot_total": sot1 + sot2,
-            "shots_total": sot1 + sot2 + shof1 + shof2,
+            "shots_total": shots1 + shots2,
             "corners_total": cos1 + cos2,
             "yc_total": ycs1 + ycs2,
             "rc_total": rcs1 + rcs2,
@@ -257,7 +271,7 @@ def format_fb_stat_line(st):
     parts = []
     if st.get("xg_total") is not None:
         parts.append(f"xG {st['xg_total']:.2f}")
-    parts.append(f"Isabetli Sut {st['sot_total']}/{st['shots_total']}")
+    parts.append(f"Isabetli Sut {st['sot_total']}/{st['shots_total']} ({st['sot1']}-{st['sot2']})")
     parts.append(f"Korner {st['corners_total']}")
     if st.get("rc_total", 0) > 0:
         parts.append(f"Kirmizi Kart {st['rc_total']}")
@@ -272,11 +286,23 @@ def passes_fb_stat_filter(p, sd, st):
         if not st:
             return False, "KG Var için canlı istatistik verisi bulunamadı"
         sot1, sot2 = st.get("sot1", 0), st.get("sot2", 0)
+        shots1, shots2 = st.get("shots1", 0), st.get("shots2", 0)
         activity = st.get("shots_total", 0) + st.get("corners_total", 0)
         if sot1 < 1 or sot2 < 1 or activity < MIN_KG_ACTIVITY:
             return False, (
                 f"KG Var iki yönlü üretim filtresi (isabetli şut {sot1}-{sot2}, "
                 f"şut+korner {activity}/{MIN_KG_ACTIVITY})"
+            )
+        if p.get("home", 0) > p.get("away", 0):
+            trailing_shots, trailing_sot = shots2, sot2
+        elif p.get("away", 0) > p.get("home", 0):
+            trailing_shots, trailing_sot = shots1, sot1
+        else:
+            trailing_shots, trailing_sot = min(shots1, shots2), min(sot1, sot2)
+        if trailing_sot < 1 or trailing_shots < MIN_KG_TRAILING_SHOTS:
+            return False, (
+                f"KG Var geride kalan takım şut dengesi (şut {trailing_shots}/{MIN_KG_TRAILING_SHOTS}, "
+                f"isabetli şut {trailing_sot}/1)"
             )
         return True, None
 
@@ -321,8 +347,11 @@ def iter_events(data, sport="football"):
         league = " ".join(
             x for x in (str(stage.get("Cnm", "")).strip(), str(stage.get("Snm", "")).strip()) if x
         )
+        l_lower = league.lower()
+        if sport == "football" and BLOCKED_FOOTBALL_KEYWORDS:
+            if any(bkw in l_lower for bkw in BLOCKED_FOOTBALL_KEYWORDS):
+                continue
         if keywords:
-            l_lower = league.lower()
             if not any(kw in l_lower for kw in keywords):
                 continue
         for ev in stage.get("Events", []) or []:
@@ -1054,7 +1083,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.1 aktif: 0-0 maçlarda istatistik zorunluluğu ve güncel pencereler hazır.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.2 aktif: Lig gürültü filtresi ve KG Var iki yönlü şut dengesi hazır.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
