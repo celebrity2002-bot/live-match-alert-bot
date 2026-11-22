@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.7.6 - 35-40' / 55-60' Pencereleri + Bülten Odaklı Filtre + Net Gol Çizgisi Kartı
+Canlı Sinyal Botu v2.7.7 - FB_IY2_00 Kısır Maç Filtresi + 35-40' / 55-60' Pencereleri + Neon PNG Kart
 """
 import io
 import json
@@ -56,6 +56,8 @@ ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
 ENABLE_STAT_FILTER = os.getenv("ENABLE_STAT_FILTER", "1") == "1"
 ENABLE_PNG_CARD = os.getenv("ENABLE_PNG_CARD", "1") == "1"
 MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.35, float)
+MIN_IY2_SOT = env_num("MIN_IY2_SOT", 2, int)
+MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 6, int)
 
 # %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
 DEFAULT_DISABLED = {
@@ -264,9 +266,16 @@ def passes_fb_stat_filter(p, sd, st):
     if not ENABLE_STAT_FILTER or not st:
         return True, None
     xg_tot = st.get("xg_total")
+    sot_tot = st.get("sot_total", 0)
     activity = st.get("shots_total", 0) + st.get("corners_total", 0)
     if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 4:
         return False, f"Kısır maç filtresi (xG {xg_tot:.2f}, şut+korner {activity})"
+    if sd.get("id") == "FB_IY2_00" and p.get("total") == 0:
+        if sot_tot < MIN_IY2_SOT or activity < MIN_IY2_ACTIVITY:
+            return False, (
+                f"0-0 kısır maç filtresi (isabetli şut {sot_tot}/{MIN_IY2_SOT}, "
+                f"şut+korner {activity}/{MIN_IY2_ACTIVITY})"
+            )
     return True, None
 
 
@@ -1008,7 +1017,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.7.6 aktif: 35-40' ve 55-60' pencereleri, bülten odaklı filtre ve net gol çizgisi kartı hazır.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.7.7 aktif: 0-0 kısır maç filtresi ve temiz neon PNG kart hazır.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
