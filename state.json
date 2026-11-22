@@ -563,14 +563,14 @@
    "created": "2026-11-22T15:40:34.088813+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0",
+   "last_score": "2-1",
    "stats_summary": ""
   },
   "fb_1848647|FB_IY2_00": {
@@ -663,14 +663,14 @@
    "created": "2026-11-22T15:40:37.777518+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "3-0",
+   "last_score": "3-1",
    "stats_summary": "Isabetli Sut 2/6 | Korner 4 | Sari Kart 3"
   },
   "fb_1788603|FB_KG_VAR_ACIK_MAC": {
@@ -686,8 +686,8 @@
     2.05
    ],
    "created": "2026-11-22T15:43:45.434106+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -696,7 +696,10 @@
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-1",
-   "stats_summary": "Isabetli Sut 6/13 | Korner 7 | Sari Kart 1"
+   "stats_summary": "Isabetli Sut 6/13 | Korner 7 | Sari Kart 1",
+   "final_total": 2,
+   "settled": "2026-11-22T16:35:26.518372+00:00",
+   "seg_avg": 1.0
   },
   "bb_1886835|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1886835|BB_TEMPO_DUSUSU_ALT",
@@ -713,14 +716,14 @@
    "created": "2026-11-22T15:55:24.863719+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 98,
+   "last_total": 101,
    "sent": true,
    "direction": "under",
    "base": 58,
    "n": 3,
    "ref": 58.0,
    "signal_score": "31-32",
-   "last_score": "49-49",
+   "last_score": "52-49",
    "stats_summary": ""
   },
   "fb_1798208|FB_KG_VAR_ACIK_MAC": {
@@ -763,14 +766,14 @@
    "created": "2026-11-22T16:20:31.120367+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 79,
+   "last_total": 95,
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "31-29",
-   "last_score": "44-35",
+   "last_score": "50-45",
    "stats_summary": ""
   },
   "fb_1812164|FB_COK_GOLLU_ERKEN": {
@@ -813,14 +816,14 @@
    "created": "2026-11-22T16:30:44.405006+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 125,
+   "last_total": 133,
    "sent": true,
    "direction": "under",
    "base": 120,
    "n": 1,
    "ref": 40.0,
    "signal_score": "70-55",
-   "last_score": "70-55",
+   "last_score": "75-58",
    "stats_summary": ""
   }
  }
