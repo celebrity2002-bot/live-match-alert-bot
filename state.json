@@ -15,14 +15,14 @@
    "created": "2026-11-22T17:25:24.135682+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 64,
+   "last_total": 70,
    "sent": true,
    "direction": "over",
    "base": 64,
    "n": 2,
    "ref": 32.0,
    "signal_score": "30-34",
-   "last_score": "30-34",
+   "last_score": "34-36",
    "stats_summary": ""
   },
   "bb_1854361|BB_TEMPO_DUSUSU_ALT": {
@@ -40,14 +40,14 @@
    "created": "2026-11-22T17:25:25.103369+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 70,
+   "last_total": 76,
    "sent": true,
    "direction": "under",
    "base": 50,
    "n": 3,
    "ref": 50.0,
    "signal_score": "27-32",
-   "last_score": "32-38",
+   "last_score": "35-41",
    "stats_summary": ""
   },
   "bb_1854366|BB_TEMPO_DUSUSU_ALT": {
@@ -65,14 +65,14 @@
    "created": "2026-11-22T17:25:26.024176+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 77,
+   "last_total": 98,
    "sent": true,
    "direction": "under",
    "base": 57,
    "n": 3,
    "ref": 57.0,
    "signal_score": "39-20",
-   "last_score": "46-31",
+   "last_score": "58-40",
    "stats_summary": ""
   },
   "fb_1821048|FB_KG_VAR_ACIK_MAC": {
@@ -140,14 +140,14 @@
    "created": "2026-11-22T17:30:49.711460+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 179,
    "sent": true,
    "direction": "under",
    "base": 175,
    "n": 1,
    "ref": 58.333333333333336,
    "signal_score": "90-85",
-   "last_score": "90-85",
+   "last_score": "94-85",
    "stats_summary": ""
   }
  }
