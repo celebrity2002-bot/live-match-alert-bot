@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.7.1 - Temiz Neon PNG Kart + Seçici Pencere + İstatistik Filtresi
+Canlı Sinyal Botu v2.7.3 - 35-40' Penceresi + Net Gol Çizgisi + Temiz Kart Satırları
 """
 import io
 import json
@@ -106,12 +106,12 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol eşikleri (devre geçişi riskini azaltmak için 2. yarı başı 46-48' penceresi)
+# Futbol eşikleri (0-0 maçlarda 1.05-1.10 oran erimesi ve 0.5 üst kapanma riski için 35-40' penceresi)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
-FB_IY2_MIN_MIN = env_num("FB_IY2_MIN_MIN", 46, int)
-FB_IY2_MAX_MIN = env_num("FB_IY2_MAX_MIN", 48, int)
+FB_IY2_MIN_MIN = env_num("FB_IY2_MIN_MIN", 35, int)
+FB_IY2_MAX_MIN = env_num("FB_IY2_MAX_MIN", 40, int)
 FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 24, int)
 FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 37, int)
 
@@ -266,6 +266,20 @@ def passes_fb_stat_filter(p, sd, st):
     if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 4:
         return False, f"Kısır maç filtresi (xG {xg_tot:.2f}, şut+korner {activity})"
     return True, None
+
+
+def fb_goal_line_hint(p, res):
+    direction = res.get("direction", "over")
+    if direction == "under":
+        return f"Hedef: En az 1 gol cikmaz (ALT) | Skor: {p['total']}"
+    tot = p.get("total", 0)
+    if tot == 0:
+        return "Hedef: 0.5 Ust (1+ gol) | Alternatif: 1.5 Ust"
+    if tot == 1:
+        return "Hedef: 1.5 Ust (2+ gol) | Skor: 1 gol var"
+    if tot == 2:
+        return "Hedef: 2.5 Ust (3+ gol) | Skor: 2 gol var"
+    return f"Hedef: {tot + 0.5:.1f} Ust ({tot + 1}+ gol) | Skor: {tot} gol var"
 
 
 def iter_events(data, sport="football"):
@@ -450,11 +464,15 @@ def build_signal_card_png(p, sd, res, stat_line=None):
 
         metric_rows = []
         if p["sport"] == "football":
+            metric_rows.append(fb_goal_line_hint(p, res))
             if stat_line:
-                for chunk in [x.strip() for x in stat_line.split("|") if x.strip()][:3]:
-                    metric_rows.append(chunk)
-            while len(metric_rows) < 3:
-                metric_rows.append(f"Strateji: {sd['label']}")
+                for chunk in [x.strip() for x in stat_line.split("|") if x.strip()]:
+                    if len(metric_rows) < 3:
+                        metric_rows.append(chunk)
+            if len(metric_rows) < 3:
+                metric_rows.append(f"Pencere: {sd['label']}")
+            if len(metric_rows) < 3:
+                metric_rows.append(f"Skor: {p['home']}-{p['away']}")
         else:
             q_str = " / ".join(str(x) for x in (p.get("q") or []) if x is not None)
             metric_rows.append(f"Toplam Sayi: {p['total']}  (Fark: {p['diff']})")
@@ -464,8 +482,8 @@ def build_signal_card_png(p, sd, res, stat_line=None):
         y_cursor = 435
         for m_text in metric_rows[:3]:
             _draw_rounded_box(draw, (74, y_cursor, w - 74, y_cursor + 86), 22, row_bg, outline=(52, 68, 62), width=2)
-            m_fit, f_m = _fit_text(draw, m_text, w - 190, 32, bold=True, min_size=22)
-            draw.text((104, y_cursor + 24), m_fit, fill=text_main, font=f_m)
+            m_fit, f_m = _fit_text(draw, m_text, w - 190, 30, bold=True, min_size=20)
+            draw.text((104, y_cursor + 26), m_fit, fill=text_main, font=f_m)
             y_cursor += 104
 
         band = sd["band"]
@@ -510,7 +528,7 @@ def stake_tl():
 
 def decay_risk_note(p):
     if p["sport"] == "football":
-        if p.get("minute") is not None and p["minute"] >= 47:
+        if p.get("minute") is not None and p["minute"] >= 39:
             return "Yüksek — 1.05-1.15 bandına indiyse veya market kapalıysa PAS"
         return "Orta — oran tam bandındaysa değerlendir, düşükse PAS"
     return "Orta — çizgi/oran bandı uyuşmuyorsa PAS"
@@ -596,11 +614,11 @@ def fb_line(p):
     return f"{t} | Skor: {p['home']}-{p['away']}"
 
 
-@strat("FB_IY2_00", "football", f"0-0 2. yarı başı gol ({FB_IY2_MIN_MIN}-{FB_IY2_MAX_MIN}')",
-       "FUTBOL ALARMI (0-0, 2. YARI BAŞI GOL)", "2. Yarıda Gol Olur / Canlı Üst", (1.45, 1.70))
+@strat("FB_IY2_00", "football", f"0-0 ilk yarı sonu gol ({FB_IY2_MIN_MIN}-{FB_IY2_MAX_MIN}')",
+       "FUTBOL ALARMI (0-0, İLK YARI SONU GOL)", "Canlı Üst / Gol Olur", (1.50, 1.85))
 def fb_iy2_00(p):
     if fb_in(p, FB_IY2_MIN_MIN, FB_IY2_MAX_MIN) and p["total"] == 0:
-        return fb_res(p, f"{fb_line(p)}\n2. yarı başı taze pencere — sadece bantta ise gir")
+        return fb_res(p, f"{fb_line(p)}\nİlk yarı sonu penceresi — oran çökmeden kontrol et")
 
 
 @strat("FB_COK_GOLLU_ERKEN", "football", f"Erken çok gol ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
@@ -759,6 +777,8 @@ def build_message(p, sd, res, state=None, stat_line=None):
         lines.append(f"📊 {detail[0]}")
         if len(detail) > 1:
             lines.append(f"📉 {detail[1]}")
+        if p["sport"] == "football":
+            lines.append(f"🎯 Çizgi Notu: {fb_goal_line_hint(p, res)}")
         if stat_line:
             lines.append(f"📈 İstatistik: {stat_line}")
         lines += [line,
@@ -776,6 +796,8 @@ def build_message(p, sd, res, state=None, stat_line=None):
             lines.append(f"🏆 {p['league']}")
         lines.append(f"⏱ {detail[0]}")
         lines += [f"📊 {d}" for d in detail[1:]]
+        if p["sport"] == "football":
+            lines.append(f"🎯 Çizgi Notu: {fb_goal_line_hint(p, res)}")
         if stat_line:
             lines.append(f"📈 İstatistik: {stat_line}")
         lines += [line,
@@ -981,7 +1003,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* Temiz neon PNG kart, seçici 2. yarı penceresi ve aday maç istatistik filtresi aktif.")
+        success = send_telegram("🤖 *Test Başarılı!* 35-40' penceresi, hedef gol çizgisi ve temiz kart satırları aktif.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
