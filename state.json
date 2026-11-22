@@ -15,14 +15,14 @@
    "created": "2026-11-22T20:01:00.972590+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "direction": "over",
    "base": 4,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-3",
-   "last_score": "1-3",
+   "last_score": "1-4",
    "stats_summary": "Isabetli Sut 6/7 (1-5) | Korner 2"
   },
   "fb_1785416|FB_COK_GOLLU_ERKEN": {
@@ -49,6 +49,31 @@
    "signal_score": "1-2",
    "last_score": "1-3",
    "stats_summary": "xG 1.94 | Isabetli Sut 7/11 (3-4) | Korner 4"
+  },
+  "bb_1868507|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868507|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868507",
+   "match": "Atlanta Hawks - Detroit Pistons",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T21:10:38.135401+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 56,
+   "sent": true,
+   "direction": "under",
+   "base": 55,
+   "n": 3,
+   "ref": 55.0,
+   "signal_score": "29-27",
+   "last_score": "29-27",
+   "stats_summary": ""
   }
  }
 }
