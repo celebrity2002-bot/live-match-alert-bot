@@ -24,6 +24,56 @@
    "signal_score": "0-3",
    "last_score": "0-3",
    "stats_summary": ""
+  },
+  "fb_1815809|FB_IY2_00": {
+   "key": "fb_1815809|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1815809",
+   "match": "Linares Deportivo - Atletico Sanluqueno CF",
+   "league": "Spain Segunda Division RFEF: Group 4",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T12:40:32.695482+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
+  },
+  "fb_1887387|FB_IY2_00": {
+   "key": "fb_1887387|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1887387",
+   "match": "CD Atletico Paso - Real Valladolid Promesas",
+   "league": "Spain Segunda Division RFEF: Group 5",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T12:40:33.612951+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
   }
  }
 }
