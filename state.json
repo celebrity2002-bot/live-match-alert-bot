@@ -41,8 +41,8 @@
     1.9
    ],
    "created": "2026-11-22T20:20:37.993793+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 8,
    "sent": true,
    "direction": "over",
@@ -51,7 +51,10 @@
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "4-4",
-   "stats_summary": "xG 1.94 | Isabetli Sut 7/11 (3-4) | Korner 4"
+   "stats_summary": "xG 1.94 | Isabetli Sut 7/11 (3-4) | Korner 4",
+   "final_total": 8,
+   "settled": "2026-11-22T21:50:31.049756+00:00",
+   "seg_avg": 5.0
   },
   "bb_1868507|BB_TEMPO_DUSUSU_ALT": {
    "key": "bb_1868507|BB_TEMPO_DUSUSU_ALT",
