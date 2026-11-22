@@ -484,6 +484,56 @@
    "signal_score": "42-25",
    "last_score": "66-43",
    "stats_summary": ""
+  },
+  "bb_1868518|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868518|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868518",
+   "match": "Minnesota Timberwolves - Memphis Grizzlies",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T01:40:33.815453+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 65,
+   "sent": true,
+   "direction": "under",
+   "base": 62,
+   "n": 3,
+   "ref": 62.0,
+   "signal_score": "28-37",
+   "last_score": "28-37",
+   "stats_summary": ""
+  },
+  "bb_1868492|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868492|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868492",
+   "match": "San Antonio Spurs - New Orleans Pelicans",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T01:40:34.827906+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 61,
+   "sent": true,
+   "direction": "under",
+   "base": 61,
+   "n": 3,
+   "ref": 61.0,
+   "signal_score": "32-29",
+   "last_score": "32-29",
+   "stats_summary": ""
   }
  }
 }
