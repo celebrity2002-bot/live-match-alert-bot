@@ -153,8 +153,8 @@
     1.85
    ],
    "created": "2026-11-22T13:10:34.883618+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
    "direction": "over",
@@ -163,7 +163,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-0",
-   "stats_summary": "Isabetli Sut 4/8 | Korner 10"
+   "stats_summary": "Isabetli Sut 4/8 | Korner 10",
+   "final_total": 1,
+   "settled": "2026-11-22T14:35:29.865361+00:00",
+   "seg_avg": 1.0
   },
   "fb_1879310|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1879310|FB_COK_GOLLU_ERKEN",
@@ -180,14 +183,14 @@
    "created": "2026-11-22T13:25:26.244467+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-3",
+   "last_score": "2-4",
    "stats_summary": ""
   },
   "bb_1884605|OZEL_BB_BENCH_COKUS": {
@@ -292,6 +295,56 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 5/9 | Korner 4 | Sari Kart 1"
+  },
+  "fb_1785420|FB_IY2_00": {
+   "key": "fb_1785420|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1785420",
+   "match": "Bologna - Udinese",
+   "league": "Italy Serie A",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T14:35:27.842689+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "xG 0.36 | Isabetli Sut 2/8 | Korner 4 | Sari Kart 1"
+  },
+  "fb_1794760|FB_IY2_00": {
+   "key": "fb_1794760|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1794760",
+   "match": "Paris FC - Angers",
+   "league": "France Ligue 1",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-22T14:35:29.007794+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "xG 0.61 | Isabetli Sut 2/7 | Korner 7"
   }
  }
 }
