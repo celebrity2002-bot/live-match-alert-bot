@@ -651,15 +651,40 @@
    "created": "2026-11-22T15:40:37.777518+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0",
+   "last_score": "1-0",
    "stats_summary": "Isabetli Sut 2/6 | Korner 4 | Sari Kart 3"
+  },
+  "fb_1788603|FB_KG_VAR_ACIK_MAC": {
+   "key": "fb_1788603|FB_KG_VAR_ACIK_MAC",
+   "sport": "football",
+   "match_id": "fb_1788603",
+   "match": "FC Kosice - Skalica",
+   "league": "Slovakia Super Liga",
+   "strategy": "FB_KG_VAR_ACIK_MAC",
+   "pick": "KG Var (Karşılıklı Gol)",
+   "band": [
+    1.5,
+    2.05
+   ],
+   "created": "2026-11-22T15:43:45.434106+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0",
+   "stats_summary": "Isabetli Sut 6/13 | Korner 7 | Sari Kart 1"
   }
  }
 }
