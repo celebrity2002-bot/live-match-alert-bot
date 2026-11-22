@@ -796,14 +796,22 @@
    "created": "2026-11-22T16:20:31.120367+00:00",
    "status": "pending",
    "missing_runs": 0,
+<<<<<<< Updated upstream
    "last_total": 149,
+=======
+   "last_total": 155,
+>>>>>>> Stashed changes
    "sent": true,
    "direction": "under",
    "base": 60,
    "n": 3,
    "ref": 60.0,
    "signal_score": "31-29",
+<<<<<<< Updated upstream
    "last_score": "79-70",
+=======
+   "last_score": "82-73",
+>>>>>>> Stashed changes
    "stats_summary": ""
   },
   "fb_1812164|FB_COK_GOLLU_ERKEN": {
@@ -946,7 +954,11 @@
     1.45,
     1.55
    ],
+<<<<<<< Updated upstream
    "created": "2026-11-22T17:20:22.493676+00:00",
+=======
+   "created": "2026-11-22T17:20:38.198511+00:00",
+>>>>>>> Stashed changes
    "status": "pending",
    "missing_runs": 0,
    "last_total": 50,
