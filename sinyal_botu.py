@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.2 - Lig Gürültü Filtresi + KG Var İki Yönlü Şut Dengesi + 0-0 İstatistik Zorunluluğu
+Canlı Sinyal Botu v2.8.3 - KG Var 48-62' Penceresi + Geride Kalan Takım Min 2 İsabetli Şut
 """
 import io
 import json
@@ -61,6 +61,7 @@ MIN_IY2_SOT = env_num("MIN_IY2_SOT", 2, int)
 MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 6, int)
 MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 6, int)
 MIN_KG_TRAILING_SHOTS = env_num("MIN_KG_TRAILING_SHOTS", 3, int)
+MIN_KG_TRAILING_SOT = env_num("MIN_KG_TRAILING_SOT", 2, int)
 
 # %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
 DEFAULT_DISABLED = {
@@ -128,7 +129,7 @@ FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
 FB_IY2_00_MIN = env_num("FB_IY2_00_MIN", 50, int)
 FB_IY2_00_MAX = env_num("FB_IY2_00_MAX", 65, int)
 FB_KG_MIN = env_num("FB_KG_MIN", 48, int)
-FB_KG_MAX = env_num("FB_KG_MAX", 68, int)
+FB_KG_MAX = env_num("FB_KG_MAX", 62, int)
 FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 25, int)
 FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 45, int)
 
@@ -299,10 +300,10 @@ def passes_fb_stat_filter(p, sd, st):
             trailing_shots, trailing_sot = shots1, sot1
         else:
             trailing_shots, trailing_sot = min(shots1, shots2), min(sot1, sot2)
-        if trailing_sot < 1 or trailing_shots < MIN_KG_TRAILING_SHOTS:
+        if trailing_sot < MIN_KG_TRAILING_SOT or trailing_shots < MIN_KG_TRAILING_SHOTS:
             return False, (
                 f"KG Var geride kalan takım şut dengesi (şut {trailing_shots}/{MIN_KG_TRAILING_SHOTS}, "
-                f"isabetli şut {trailing_sot}/1)"
+                f"isabetli şut {trailing_sot}/{MIN_KG_TRAILING_SOT})"
             )
         return True, None
 
@@ -1083,7 +1084,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.2 aktif: Lig gürültü filtresi ve KG Var iki yönlü şut dengesi hazır.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.3 aktif: KG Var 48-62' penceresi ve iki yönlü isabetli şut dengesi hazır.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
