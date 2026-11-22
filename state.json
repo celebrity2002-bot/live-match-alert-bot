@@ -503,14 +503,14 @@
    "created": "2026-11-22T01:40:33.815453+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 165,
+   "last_total": 173,
    "sent": true,
    "direction": "under",
    "base": 62,
    "n": 3,
    "ref": 62.0,
    "signal_score": "28-37",
-   "last_score": "91-74",
+   "last_score": "93-80",
    "stats_summary": ""
   },
   "bb_1868492|BB_TEMPO_DUSUSU_ALT": {
@@ -528,14 +528,14 @@
    "created": "2026-11-22T01:40:34.827906+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 152,
+   "last_total": 155,
    "sent": true,
    "direction": "under",
    "base": 61,
    "n": 3,
    "ref": 61.0,
    "signal_score": "32-29",
-   "last_score": "86-66",
+   "last_score": "89-66",
    "stats_summary": ""
   },
   "fb_1920197|FB_IY2_00": {
@@ -615,6 +615,31 @@
    "signal_score": "0-0",
    "last_score": "0-2",
    "stats_summary": "İsabetli Şut 2/6 | Korner 3 | Sarı Kart 1"
+  },
+  "bb_1868497|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868497|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868497",
+   "match": "Dallas Mavericks - LA Clippers",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-22T02:57:04.072703+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 152,
+   "sent": true,
+   "direction": "under",
+   "base": 152,
+   "n": 1,
+   "ref": 50.666666666666664,
+   "signal_score": "78-74",
+   "last_score": "78-74",
+   "stats_summary": ""
   }
  }
 }
