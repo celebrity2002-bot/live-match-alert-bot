@@ -71,14 +71,14 @@
    "created": "2026-11-22T21:10:38.135401+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 103,
+   "last_total": 105,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "29-27",
-   "last_score": "51-52",
+   "last_score": "51-54",
    "stats_summary": ""
   }
  }
