@@ -183,14 +183,14 @@
    "created": "2026-11-22T17:40:33.788252+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 175,
+   "last_total": 182,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "29-23",
-   "last_score": "90-85",
+   "last_score": "95-87",
    "stats_summary": ""
   },
   "fb_1812743|FB_IY2_00": {
@@ -264,14 +264,14 @@
    "created": "2026-11-22T18:25:23.880926+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 97,
+   "last_total": 103,
    "sent": true,
    "direction": "under",
    "base": 56,
    "n": 3,
    "ref": 56.0,
    "signal_score": "24-32",
-   "last_score": "47-50",
+   "last_score": "47-56",
    "stats_summary": ""
   },
   "bb_1854381|BB_TEMPO_DUSUSU_ALT": {
@@ -289,14 +289,14 @@
    "created": "2026-11-22T18:30:52.481324+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 80,
+   "last_total": 85,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "35-24",
-   "last_score": "45-35",
+   "last_score": "48-37",
    "stats_summary": ""
   },
   "fb_1798203|FB_IY2_00": {
@@ -364,14 +364,14 @@
    "created": "2026-11-22T18:50:43.854357+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 68,
+   "last_total": 75,
    "sent": true,
    "direction": "over",
    "base": 33,
    "n": 3,
    "ref": 33.0,
    "signal_score": "15-18",
-   "last_score": "33-35",
+   "last_score": "38-37",
    "stats_summary": ""
   }
  }
