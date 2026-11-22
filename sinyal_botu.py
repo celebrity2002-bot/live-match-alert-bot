@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.4 - Deneysel KG Var Pasif + Sıkılaştırılmış 0-0 ve Erken Gol Odaklı Akış
+Canlı Sinyal Botu v2.8.5 - Daha Erken Pencere Yakalama (0-0: 47-60', Erken Çok Gol: 20-40')
 """
 import io
 import json
@@ -123,16 +123,16 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol güncel kontrol dakikaları
+# Futbol güncel kontrol dakikaları (daha erken pencere yakalama)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
-FB_IY2_00_MIN = env_num("FB_IY2_00_MIN", 50, int)
-FB_IY2_00_MAX = env_num("FB_IY2_00_MAX", 65, int)
+FB_IY2_00_MIN = env_num("FB_IY2_00_MIN", 47, int)
+FB_IY2_00_MAX = env_num("FB_IY2_00_MAX", 60, int)
 FB_KG_MIN = env_num("FB_KG_MIN", 48, int)
 FB_KG_MAX = env_num("FB_KG_MAX", 62, int)
-FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 25, int)
-FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 45, int)
+FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 20, int)
+FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 40, int)
 
 MISSING_RUNS_TO_SETTLE = 3
 
@@ -1085,7 +1085,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.4 aktif: Deneysel KG Var kapatıldı, odak 0-0 (50-65') ve erken gol kurgularında.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.5 aktif: 0-0 (47-60') ve Erken Çok Gol (20-40') pencereleri erken yakalamaya güncellendi.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
