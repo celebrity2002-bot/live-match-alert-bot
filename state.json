@@ -702,14 +702,14 @@
    "created": "2026-11-22T11:35:26.493530+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 109,
+   "last_total": 122,
    "sent": true,
    "direction": "under",
    "base": 53,
    "n": 3,
    "ref": 53.0,
    "signal_score": "37-24",
-   "last_score": "57-52",
+   "last_score": "65-57",
    "stats_summary": ""
   },
   "fb_1814868|FB_IY2_00": {
@@ -777,14 +777,14 @@
    "created": "2026-11-22T11:46:39.405295+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": ""
   },
   "fb_1815814|FB_IY2_00": {
@@ -810,6 +810,56 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0",
+   "stats_summary": ""
+  },
+  "bb_1884605|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1884605|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1884605",
+   "match": "Crvena Zvezda Beograd - Cibona",
+   "league": "Adriatic ABA League: Group A",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T12:30:42.505904+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 59,
+   "sent": true,
+   "direction": "under",
+   "base": 57,
+   "n": 3,
+   "ref": 57.0,
+   "signal_score": "40-19",
+   "last_score": "40-19",
+   "stats_summary": ""
+  },
+  "fb_1890736|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1890736|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1890736",
+   "match": "Zakynthos APS - Panserraikos FC",
+   "league": "Greece Super League 2",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Ek Gol Olur / Canlı Üst",
+   "band": [
+    1.5,
+    1.9
+   ],
+   "created": "2026-11-22T12:30:44.629976+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-3",
+   "last_score": "0-3",
    "stats_summary": ""
   }
  }
