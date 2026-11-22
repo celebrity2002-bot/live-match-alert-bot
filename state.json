@@ -70,7 +70,7 @@
    ],
    "created": "2026-11-22T21:10:38.135401+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 196,
    "sent": true,
    "direction": "under",
