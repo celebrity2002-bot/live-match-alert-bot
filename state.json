@@ -532,8 +532,8 @@
     1.55
    ],
    "created": "2026-11-22T01:40:34.827906+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 205,
    "sent": true,
    "direction": "under",
@@ -542,7 +542,10 @@
    "ref": 61.0,
    "signal_score": "32-29",
    "last_score": "114-91",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 205,
+   "settled": "2026-11-22T03:40:31.930667+00:00",
+   "seg_avg": 48.0
   },
   "fb_1920197|FB_IY2_00": {
    "key": "fb_1920197|FB_IY2_00",
@@ -641,8 +644,8 @@
     2.1
    ],
    "created": "2026-11-22T02:57:04.072703+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 199,
    "sent": true,
    "direction": "under",
@@ -651,6 +654,34 @@
    "ref": 50.666666666666664,
    "signal_score": "78-74",
    "last_score": "104-95",
+   "stats_summary": "",
+   "final_total": 199,
+   "settled": "2026-11-22T03:40:32.396570+00:00",
+   "seg_avg": 47.0
+  },
+  "bb_1868529|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868529|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868529",
+   "match": "Sacramento Kings - Boston Celtics",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-22T03:40:30.981256+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 56,
+   "sent": true,
+   "direction": "under",
+   "base": 52,
+   "n": 3,
+   "ref": 52.0,
+   "signal_score": "27-29",
+   "last_score": "27-29",
    "stats_summary": ""
   }
  }
