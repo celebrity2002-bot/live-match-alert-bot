@@ -71,14 +71,14 @@
    "created": "2026-11-22T21:10:38.135401+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 177,
+   "last_total": 185,
    "sent": true,
    "direction": "under",
    "base": 55,
    "n": 3,
    "ref": 55.0,
    "signal_score": "29-27",
-   "last_score": "92-85",
+   "last_score": "95-90",
    "stats_summary": ""
   },
   "fb_1708749|FB_IY2_00": {
