@@ -42,7 +42,7 @@
    ],
    "created": "2026-11-22T20:20:37.993793+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 8,
    "sent": true,
    "direction": "over",
