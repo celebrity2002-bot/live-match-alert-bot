@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.7.3 - 35-40' Penceresi + Net Gol Çizgisi + Temiz Kart Satırları
+Canlı Sinyal Botu v2.7.4 - 35-40' ve 55-60' Pencereleri + 1.40+ Oran Bandı + Temiz Neon PNG Kart
 """
 import io
 import json
@@ -106,12 +106,14 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol eşikleri (0-0 maçlarda 1.05-1.10 oran erimesi ve 0.5 üst kapanma riski için 35-40' penceresi)
+# Futbol eşikleri (0-0 maçlarda 1.40+ oran ve açık market için 35-40' ve 55-60' pencereleri)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
-FB_IY2_MIN_MIN = env_num("FB_IY2_MIN_MIN", 35, int)
-FB_IY2_MAX_MIN = env_num("FB_IY2_MAX_MIN", 40, int)
+FB_W1_MIN = env_num("FB_W1_MIN", 35, int)
+FB_W1_MAX = env_num("FB_W1_MAX", 40, int)
+FB_W2_MIN = env_num("FB_W2_MIN", 55, int)
+FB_W2_MAX = env_num("FB_W2_MAX", 60, int)
 FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 24, int)
 FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 37, int)
 
@@ -274,7 +276,7 @@ def fb_goal_line_hint(p, res):
         return f"Hedef: En az 1 gol cikmaz (ALT) | Skor: {p['total']}"
     tot = p.get("total", 0)
     if tot == 0:
-        return "Hedef: 0.5 Ust (1+ gol) | Alternatif: 1.5 Ust"
+        return "Hedef: 0.5 Ust (1.40+ bant) | Alternatif: 1.5 Ust"
     if tot == 1:
         return "Hedef: 1.5 Ust (2+ gol) | Skor: 1 gol var"
     if tot == 2:
@@ -500,7 +502,7 @@ def build_signal_card_png(p, sd, res, stat_line=None):
 
         warn_txt, f_warn = _fit_text(
             draw,
-            "Bandin disindaysa veya 1.05-1.15'e erdiyse OYNAMAYIN",
+            "Bandin disindaysa veya 1.40 altindaysa OYNAMAYIN",
             w - 130,
             25,
             bold=True,
@@ -528,9 +530,9 @@ def stake_tl():
 
 def decay_risk_note(p):
     if p["sport"] == "football":
-        if p.get("minute") is not None and p["minute"] >= 39:
-            return "Yüksek — 1.05-1.15 bandına indiyse veya market kapalıysa PAS"
-        return "Orta — oran tam bandındaysa değerlendir, düşükse PAS"
+        if p.get("minute") is not None and p["minute"] >= 58:
+            return "Yüksek — 1.40 altına indiyse veya market kapalıysa PAS"
+        return "Orta — 1.40+ bantta ve açık markette değerlendir, düşükse PAS"
     return "Orta — çizgi/oran bandı uyuşmuyorsa PAS"
 
 
@@ -547,7 +549,7 @@ def form_note(state, sid, band, sport):
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag}"
 
     band_txt = f"Oran {band[0]:.2f}-{band[1]:.2f} bandındaysa değerlendir"
-    action = f"{band_txt} (çizgi sende)" if sport == "basketball" else f"{band_txt} (farklı çizgiye sapma, bandın dışındaysa pas geç)"
+    action = f"{band_txt} (çizgi sende)" if sport == "basketball" else f"{band_txt} (1.40 altında veya kapalı markette pas geç)"
     return f"{hist} — {action}"
 
 
@@ -614,11 +616,14 @@ def fb_line(p):
     return f"{t} | Skor: {p['home']}-{p['away']}"
 
 
-@strat("FB_IY2_00", "football", f"0-0 ilk yarı sonu gol ({FB_IY2_MIN_MIN}-{FB_IY2_MAX_MIN}')",
-       "FUTBOL ALARMI (0-0, İLK YARI SONU GOL)", "Canlı Üst / Gol Olur", (1.50, 1.85))
+@strat("FB_IY2_00", "football", f"0-0 gol penceresi ({FB_W1_MIN}-{FB_W1_MAX}' / {FB_W2_MIN}-{FB_W2_MAX}')",
+       "FUTBOL ALARMI (0-0, 1.40+ GOL PENCERESİ)", "0.5 Üst / Gol Olur", (1.40, 1.85))
 def fb_iy2_00(p):
-    if fb_in(p, FB_IY2_MIN_MIN, FB_IY2_MAX_MIN) and p["total"] == 0:
-        return fb_res(p, f"{fb_line(p)}\nİlk yarı sonu penceresi — oran çökmeden kontrol et")
+    in_w1 = fb_in(p, FB_W1_MIN, FB_W1_MAX)
+    in_w2 = fb_in(p, FB_W2_MIN, FB_W2_MAX)
+    if (in_w1 or in_w2) and p["total"] == 0:
+        win_tag = "İlk yarı sonu penceresi" if in_w1 else "İkinci yarı orta penceresi"
+        return fb_res(p, f"{fb_line(p)}\n{win_tag} — 1.40+ oran ve açık market kontrol et")
 
 
 @strat("FB_COK_GOLLU_ERKEN", "football", f"Erken çok gol ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
@@ -789,7 +794,7 @@ def build_message(p, sd, res, state=None, stat_line=None):
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
                   "",
-                  "🛑 Bandın dışındaysa veya 1.05-1.15'e erdiyse OYNAMAYIN"]
+                  "🛑 Bandın dışındaysa veya 1.40 altındaysa OYNAMAYIN"]
     else:
         lines = [f"🚨 {sd['title']}", line, f"{icon} {p['match']}"]
         if p.get("league"):
@@ -808,7 +813,7 @@ def build_message(p, sd, res, state=None, stat_line=None):
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
                   "",
-                  "🛑 Bandın dışındaysa, kapalıysa veya 1.05-1.15'e erdiyse OYNAMAYIN"]
+                  "🛑 Bandın dışındaysa, kapalıysa veya 1.40 altındaysa OYNAMAYIN"]
     return "\n".join(lines)
 
 
@@ -1003,7 +1008,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* 35-40' penceresi, hedef gol çizgisi ve temiz kart satırları aktif.")
+        success = send_telegram("🤖 *Test Başarılı!* 35-40' ve 55-60' pencereleri, 1.40+ oran bandı ve temiz neon PNG kart aktif.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
