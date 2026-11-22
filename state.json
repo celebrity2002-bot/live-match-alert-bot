@@ -736,6 +736,56 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": ""
+  },
+  "fb_1814061|FB_IY2_00": {
+   "key": "fb_1814061|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1814061",
+   "match": "Real Sociedad W - Sevilla W",
+   "league": "Spain Liga F",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.7
+   ],
+   "created": "2026-11-22T11:46:38.419575+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "İsabetli Şut 0/3 | Korner 4"
+  },
+  "fb_1815513|FB_IY2_00": {
+   "key": "fb_1815513|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1815513",
+   "match": "Atletico Baleares - Murcia B",
+   "league": "Spain Segunda Division RFEF: Group 3",
+   "strategy": "FB_IY2_00",
+   "pick": "2. Yarıda Gol Olur / Canlı Üst",
+   "band": [
+    1.45,
+    1.7
+   ],
+   "created": "2026-11-22T11:46:39.405295+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": ""
   }
  }
 }
