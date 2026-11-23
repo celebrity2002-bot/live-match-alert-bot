@@ -1,3 +1,29 @@
 {
- "signals": {}
+ "signals": {
+  "bb_1868454|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868454|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868454",
+   "match": "New York Knicks - Indiana Pacers",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-23T01:40:37.122956+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 53,
+   "sent": true,
+   "direction": "under",
+   "base": 52,
+   "n": 3,
+   "ref": 52.0,
+   "signal_score": "27-26",
+   "last_score": "27-26",
+   "stats_summary": ""
+  }
+ }
 }
