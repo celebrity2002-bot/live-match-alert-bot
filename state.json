@@ -111,6 +111,31 @@
    "final_total": 175,
    "settled": "2026-11-23T04:15:33.213821+00:00",
    "seg_avg": 31.0
+  },
+  "fb_1873591|FB_IY2_00": {
+   "key": "fb_1873591|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1873591",
+   "match": "Al-Ain - Esteghlal",
+   "league": "Asia AFC Champions League Elite: West",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-23T16:45:33.616641+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/8 (1-1) | Korner 8 | Sari Kart 1"
   }
  }
 }
