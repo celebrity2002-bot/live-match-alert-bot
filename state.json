@@ -180,14 +180,22 @@
    "created": "2026-11-23T00:35:22.870249+00:00",
    "status": "pending",
    "missing_runs": 0,
+<<<<<<< Updated upstream
    "last_total": 171,
+=======
+   "last_total": 172,
+>>>>>>> Stashed changes
    "sent": true,
    "direction": "under",
    "base": 64,
    "n": 3,
    "ref": 64.0,
    "signal_score": "31-33",
+<<<<<<< Updated upstream
    "last_score": "82-89",
+=======
+   "last_score": "82-90",
+>>>>>>> Stashed changes
    "stats_summary": ""
   },
   "bb_1868444|BB_TEMPO_DUSUSU_ALT": {
