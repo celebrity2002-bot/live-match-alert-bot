@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.6 - Daha Erken Pencere Yakalama (0-0: 45-56', Erken Çok Gol: 15-35')
+Canlı Sinyal Botu v2.8.7 - Basketbol ALT Tempo Sıkılaştırma (BB_Q1_HIGH=56 + Bench Çöküşü Filtresi)
 """
 import io
 import json
@@ -116,7 +116,7 @@ ALLOWED_BASKETBALL_KEYWORDS = {
 }
 
 # Basketbol eşikleri
-BB_Q1_HIGH = env_num("BB_Q1_HIGH", 50, int)
+BB_Q1_HIGH = env_num("BB_Q1_HIGH", 56, int)
 BB_Q1_LOW = env_num("BB_Q1_LOW", 36, int)
 BB_Q2_MAX_POINTS = env_num("BB_Q2_MAX_POINTS", 15, int)
 BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
@@ -782,11 +782,11 @@ def _q4_info(p):
        "🔔 ÖZEL SİNYAL (Gölge Avı)", "Canlı Toplam Sayı ALT", (1.70, 2.10), is_special=True)
 def ozel_bb_bench(p):
     info = _q4_info(p)
-    if info and p["total"] > 140:
+    if info and 140 < p["total"] <= 185 and p["diff"] >= 12:
         first3, _ = info
         return {
             "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']}\n"
-                      f"Analiz: Fiziksel düşüş ve rotasyon tıkanması saptandı. Piyasa yanıltıcı şekilde ÜST bekliyor.",
+                      f"Analiz: Fark {p['diff']} sayıya açıldı ve tempo kontrollü banda indi; olası rotasyon/tempo düşüşü izleniyor.",
             "direction": "under", "base": first3, "n": 1, "ref": first3 / 3.0
         }
     return None
@@ -1085,7 +1085,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.6 aktif: 0-0 (45-56') ve Erken Çok Gol (15-35') pencereleri daha erken yakalamaya güncellendi.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.7 aktif: Basketbol ALT tempo eşikleri sıkılaştırıldı.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
