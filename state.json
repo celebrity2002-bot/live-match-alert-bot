@@ -15,14 +15,14 @@
    "created": "2026-11-23T01:40:37.122956+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 179,
+   "last_total": 185,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "27-26",
-   "last_score": "95-84",
+   "last_score": "98-87",
    "stats_summary": ""
   },
   "bb_1868446|OZEL_BB_BENCH_COKUS": {
