@@ -125,8 +125,8 @@
     1.85
    ],
    "created": "2026-11-23T16:45:33.616641+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
    "direction": "over",
@@ -135,7 +135,10 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "1-1",
-   "stats_summary": "Isabetli Sut 2/8 (1-1) | Korner 8 | Sari Kart 1"
+   "stats_summary": "Isabetli Sut 2/8 (1-1) | Korner 8 | Sari Kart 1",
+   "final_total": 2,
+   "settled": "2026-11-23T18:05:28.474598+00:00",
+   "seg_avg": 2.0
   }
  }
 }
