@@ -126,7 +126,7 @@
    ],
    "created": "2026-11-23T16:45:33.616641+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "direction": "over",
