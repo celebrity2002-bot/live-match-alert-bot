@@ -98,7 +98,7 @@
    ],
    "created": "2026-11-23T03:20:33.323182+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 175,
    "sent": true,
    "direction": "under",
