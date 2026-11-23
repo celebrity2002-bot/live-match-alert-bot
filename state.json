@@ -15,14 +15,14 @@
    "created": "2026-11-23T01:40:37.122956+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 96,
+   "last_total": 106,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "27-26",
-   "last_score": "48-48",
+   "last_score": "55-51",
    "stats_summary": ""
   },
   "bb_1868446|OZEL_BB_BENCH_COKUS": {
@@ -40,14 +40,14 @@
    "created": "2026-11-23T01:50:32.826581+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 225,
+   "last_total": 238,
    "sent": true,
    "direction": "under",
    "base": 200,
    "n": 1,
    "ref": 66.66666666666667,
    "signal_score": "98-105",
-   "last_score": "113-112",
+   "last_score": "119-119",
    "stats_summary": ""
   },
   "bb_1868438|OZEL_BB_BENCH_COKUS": {
@@ -65,14 +65,14 @@
    "created": "2026-11-23T01:50:33.708372+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 199,
+   "last_total": 204,
    "sent": true,
    "direction": "under",
    "base": 174,
    "n": 1,
    "ref": 58.0,
    "signal_score": "97-77",
-   "last_score": "110-89",
+   "last_score": "113-91",
    "stats_summary": ""
   }
  }
