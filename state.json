@@ -15,14 +15,14 @@
    "created": "2026-11-23T01:40:37.122956+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 185,
+   "last_total": 195,
    "sent": true,
    "direction": "under",
    "base": 52,
    "n": 3,
    "ref": 52.0,
    "signal_score": "27-26",
-   "last_score": "98-87",
+   "last_score": "102-93",
    "stats_summary": ""
   },
   "bb_1868446|OZEL_BB_BENCH_COKUS": {
@@ -80,6 +80,31 @@
    "final_total": 210,
    "settled": "2026-11-23T02:30:43.713648+00:00",
    "seg_avg": 36.0
+  },
+  "bb_1868445|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868445|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868445",
+   "match": "Golden State Warriors - Boston Celtics",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-23T03:20:33.323182+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 146,
+   "sent": true,
+   "direction": "under",
+   "base": 144,
+   "n": 1,
+   "ref": 48.0,
+   "signal_score": "69-77",
+   "last_score": "69-77",
+   "stats_summary": ""
   }
  }
 }
