@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.8 - Sonuç Bildirimi Teslim Takibi ve Yeniden Deneme
+Canlı Sinyal Botu v2.8.9 - Yüksek İsabet Odaklı Seçici Filtreler (Kırılgan ALT Elemesi + Güçlü 0-0 İstatistik Barajı)
 """
 import io
 import json
@@ -56,20 +56,22 @@ ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
 ENABLE_STAT_FILTER = os.getenv("ENABLE_STAT_FILTER", "1") == "1"
 REQUIRE_STAT_FOR_00 = os.getenv("REQUIRE_STAT_FOR_00", "1") == "1"
 ENABLE_PNG_CARD = os.getenv("ENABLE_PNG_CARD", "1") == "1"
-MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.35, float)
-MIN_IY2_SOT = env_num("MIN_IY2_SOT", 2, int)
-MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 6, int)
+MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.50, float)
+MIN_IY2_SOT = env_num("MIN_IY2_SOT", 3, int)
+MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 9, int)
 MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 6, int)
 MIN_KG_TRAILING_SHOTS = env_num("MIN_KG_TRAILING_SHOTS", 3, int)
 MIN_KG_TRAILING_SOT = env_num("MIN_KG_TRAILING_SOT", 2, int)
 
-# %60 altında kalan stratejiler varsayılan pasif; az verili %100'ler açık tutuldu
+# Zayıf veya yüksek varyanslı / kırılgan stratejiler varsayılan pasif
 DEFAULT_DISABLED = {
     "OZEL_FB_BASKI_SIKISMA",
     "FB_TEK_FARK_70",
     "FB_GERIDEN_FARK2",
     "FB_KG_VAR_ACIK_MAC",
     "BB_Q4_YAKIN_UST",
+    "OZEL_BB_BENCH_COKUS",
+    "BB_TEMPO_DUSUSU_ALT",
 }
 ENV_DISABLED = {x.strip().upper() for x in os.getenv("DISABLE_STRATEGIES", "").split(",") if x.strip()}
 DISABLED = DEFAULT_DISABLED | ENV_DISABLED
@@ -316,7 +318,7 @@ def passes_fb_stat_filter(p, sd, st):
     xg_tot = st.get("xg_total")
     sot_tot = st.get("sot_total", 0)
     activity = st.get("shots_total", 0) + st.get("corners_total", 0)
-    if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 4:
+    if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 6:
         return False, f"Kısır maç filtresi (xG {xg_tot:.2f}, şut+korner {activity})"
     if sid == "FB_IY2_00" and p.get("total") == 0:
         if sot_tot < MIN_IY2_SOT or activity < MIN_IY2_ACTIVITY:
@@ -782,11 +784,11 @@ def _q4_info(p):
        "🔔 ÖZEL SİNYAL (Gölge Avı)", "Canlı Toplam Sayı ALT", (1.70, 2.10), is_special=True)
 def ozel_bb_bench(p):
     info = _q4_info(p)
-    if info and 140 < p["total"] <= 185 and p["diff"] >= 12:
+    if info and 140 < p["total"] <= 165 and p["diff"] >= 14:
         first3, _ = info
         return {
             "detail": f"Süre: 4. Çeyrek Başı | Skor: {p['home']}-{p['away']}\n"
-                      f"Analiz: Fark {p['diff']} sayıya açıldı ve tempo kontrollü banda indi; olası rotasyon/tempo düşüşü izleniyor.",
+                      f"Analiz: Fark {p['diff']} sayıya açıldı ve tempo düşük/orta bantta; olası rotasyon/tempo düşüşü izleniyor.",
             "direction": "under", "base": first3, "n": 1, "ref": first3 / 3.0
         }
     return None
@@ -1101,7 +1103,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.8 aktif: Sonuç bildirimi teslim takibi ve yeniden deneme eklendi.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.9 aktif: Kırılgan basketbol ALT stratejileri elendi, 0-0 istatistik barajı yükseltildi.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
