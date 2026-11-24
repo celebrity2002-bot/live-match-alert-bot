@@ -27,6 +27,31 @@
    "final_total": 225,
    "settled": "2026-11-24T05:35:26.029257+00:00",
    "seg_avg": 59.0
+  },
+  "fb_1873665|FB_IY2_00": {
+   "key": "fb_1873665|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1873665",
+   "match": "Kyoto Sanga FC - Pohang Steelers",
+   "league": "Asia AFC Champions League Elite: East",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-24T10:45:32.198841+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 4/9 (3-1) | Korner 4"
   }
  }
 }
