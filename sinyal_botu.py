@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.7 - Basketbol ALT Tempo Sıkılaştırma (BB_Q1_HIGH=56 + Bench Çöküşü Filtresi)
+Canlı Sinyal Botu v2.8.8 - Sonuç Bildirimi Teslim Takibi ve Yeniden Deneme
 """
 import io
 import json
@@ -920,6 +920,7 @@ def register_signal(state, p, sd, res, stat_line=None):
         "league": p["league"], "strategy": sd["id"], "pick": sd["pick"], "band": list(sd["band"]),
         "created": datetime.now(timezone.utc).isoformat(),
         "status": "pending", "missing_runs": 0, "last_total": p["total"], "sent": False,
+        "result_sent": False,
         "direction": res["direction"], "base": res["base"], "n": res["n"], "ref": res["ref"],
         "signal_score": f"{p['home']}-{p['away']}", "last_score": f"{p['home']}-{p['away']}",
         "stats_summary": stat_line or "",
@@ -939,9 +940,12 @@ def register_signal(state, p, sd, res, stat_line=None):
 
 def notify_result(state, rec):
     if SEND_RESULTS == "off":
-        return
+        return True
     if MODE == "live" and not rec.get("sent"):
-        return
+        rec["result_sent"] = True
+        return True
+    if rec.get("result_sent"):
+        return True
     label = STRATS.get(rec["strategy"], {}).get("label", rec["strategy"])
     won = rec["status"] == "won"
     line = "━━━━━━━━━━━━━━"
@@ -968,7 +972,14 @@ def notify_result(state, rec):
             if r["strategy"] == rec["strategy"] and r["status"] in ("won", "lost")]
     w = sum(1 for r in same if r["status"] == "won")
     lines += [line, f"📈 Bu strateji: {w} ✅ / {len(same) - w} ❌ (%{100 * w / len(same):.0f})"]
-    send_telegram("\n".join(lines))
+    ok = send_telegram("\n".join(lines))
+    if ok:
+        rec["result_sent"] = True
+        log(f"Sonuç bildirimi gönderildi: {rec['match']} / {rec['strategy']} -> {rec['status']}")
+    else:
+        rec["result_sent"] = False
+        log(f"Sonuç bildirimi gönderilemedi, sonraki turda tekrar denenecek: {rec['match']} / {rec['strategy']}")
+    return ok
 
 
 def settle(rec, final_total, state=None):
@@ -977,6 +988,7 @@ def settle(rec, final_total, state=None):
     base = rec.get("base", 0)
     if final_total < base:
         rec["status"] = "void"
+        rec["result_sent"] = True
         return
     avg = (final_total - base) / max(rec.get("n", 1), 1)
     ref = rec.get("ref", 0.0)
@@ -1039,6 +1051,10 @@ def process_sport(state, sport):
             if rec["missing_runs"] >= MISSING_RUNS_TO_SETTLE:
                 settle(rec, rec["last_total"], state)
 
+    for rec in state["signals"].values():
+        if rec["sport"] == sport and rec.get("status") in ("won", "lost") and not rec.get("result_sent"):
+            notify_result(state, rec)
+
     log(f"{sport}: {total_events} canlı olay tarandı (İddaa filtresi aktif)")
 
 
@@ -1085,7 +1101,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.7 aktif: Basketbol ALT tempo eşikleri sıkılaştırıldı.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.8.8 aktif: Sonuç bildirimi teslim takibi ve yeniden deneme eklendi.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
