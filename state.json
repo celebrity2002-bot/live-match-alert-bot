@@ -139,6 +139,31 @@
    "final_total": 2,
    "settled": "2026-11-23T18:05:28.474598+00:00",
    "seg_avg": 2.0
+  },
+  "bb_1868479|BB_TEMPO_DUSUSU_ALT": {
+   "key": "bb_1868479|BB_TEMPO_DUSUSU_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868479",
+   "match": "Charlotte Hornets - Memphis Grizzlies",
+   "league": "NBA Regular season",
+   "strategy": "BB_TEMPO_DUSUSU_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.45,
+    1.55
+   ],
+   "created": "2026-11-24T00:40:32.253074+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 67,
+   "sent": true,
+   "direction": "under",
+   "base": 60,
+   "n": 3,
+   "ref": 60.0,
+   "signal_score": "32-35",
+   "last_score": "32-35",
+   "stats_summary": ""
   }
  }
 }
