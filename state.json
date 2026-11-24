@@ -112,6 +112,32 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 3/6 (0-3) | Korner 3"
+  },
+  "fb_1857552|FB_IY2_00": {
+   "key": "fb_1857552|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1857552",
+   "match": "Smouha SC - National Bank",
+   "league": "Egypt Premier League",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-24T16:20:48.108419+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 3/5 (0-3) | Korner 4 | Sari Kart 4"
   }
  }
 }
