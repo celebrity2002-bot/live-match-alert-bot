@@ -71,9 +71,38 @@
     1.85
    ],
    "created": "2026-11-24T14:30:47.152034+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 1,
+   "sent": true,
+   "result_sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "1-0",
+   "stats_summary": "Isabetli Sut 7/17 (2-5) | Korner 8 | Sari Kart 1",
+   "final_total": 1,
+   "settled": "2026-11-24T15:45:48.231857+00:00",
+   "seg_avg": 1.0
+  },
+  "fb_1857553|FB_IY2_00": {
+   "key": "fb_1857553|FB_IY2_00",
+   "sport": "football",
+   "match_id": "fb_1857553",
+   "match": "ZED FC - Abo Qir Semad",
+   "league": "Egypt Premier League",
+   "strategy": "FB_IY2_00",
+   "pick": "0.5 Üst / Gol Olur",
+   "band": [
+    1.4,
+    1.85
+   ],
+   "created": "2026-11-24T15:45:47.020984+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -81,8 +110,8 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
-   "stats_summary": "Isabetli Sut 7/17 (2-5) | Korner 8 | Sari Kart 1"
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 3/6 (0-3) | Korner 3"
   }
  }
 }
