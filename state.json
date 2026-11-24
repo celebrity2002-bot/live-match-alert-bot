@@ -160,7 +160,7 @@
    "created": "2026-11-24T19:35:31.196841+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 157,
+   "last_total": 164,
    "sent": true,
    "result_sent": false,
    "direction": "under",
@@ -168,7 +168,7 @@
    "n": 1,
    "ref": 46.333333333333336,
    "signal_score": "63-78",
-   "last_score": "67-90",
+   "last_score": "70-94",
    "stats_summary": ""
   }
  }
