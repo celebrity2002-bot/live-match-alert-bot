@@ -245,18 +245,21 @@
     1.95
    ],
    "created": "2026-11-24T21:15:33.656239+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 186,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "under",
    "base": 140,
    "n": 1,
    "ref": 46.666666666666664,
    "signal_score": "58-82",
    "last_score": "91-95",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 186,
+   "settled": "2026-11-24T22:10:41.455865+00:00",
+   "seg_avg": 46.0
   }
  }
 }
