@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.8.9 - Yüksek İsabet Odaklı Seçici Filtreler (Kırılgan ALT Elemesi + Güçlü 0-0 İstatistik Barajı)
+Canlı Sinyal Botu v2.9.0 - 1.65+ Değer Odaklı Seçici Strateji ve İstatistik Filtresi
 """
 import io
 import json
@@ -56,19 +56,18 @@ ENABLE_FOOTBALL = os.getenv("ENABLE_FOOTBALL", "1") == "1"
 ENABLE_STAT_FILTER = os.getenv("ENABLE_STAT_FILTER", "1") == "1"
 REQUIRE_STAT_FOR_00 = os.getenv("REQUIRE_STAT_FOR_00", "1") == "1"
 ENABLE_PNG_CARD = os.getenv("ENABLE_PNG_CARD", "1") == "1"
-MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.50, float)
+MIN_TARGET_ODDS = env_num("MIN_TARGET_ODDS", 1.65, float)
+MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.55, float)
 MIN_IY2_SOT = env_num("MIN_IY2_SOT", 3, int)
 MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 9, int)
-MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 6, int)
+MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 7, int)
 MIN_KG_TRAILING_SHOTS = env_num("MIN_KG_TRAILING_SHOTS", 3, int)
 MIN_KG_TRAILING_SOT = env_num("MIN_KG_TRAILING_SOT", 2, int)
 
-# Zayıf veya yüksek varyanslı / kırılgan stratejiler varsayılan pasif
+# Düşük oranlı / kırılgan / yüksek varyanslı stratejiler varsayılan pasif
 DEFAULT_DISABLED = {
-    "OZEL_FB_BASKI_SIKISMA",
+    "FB_IY2_00",
     "FB_TEK_FARK_70",
-    "FB_GERIDEN_FARK2",
-    "FB_KG_VAR_ACIK_MAC",
     "BB_Q4_YAKIN_UST",
     "OZEL_BB_BENCH_COKUS",
     "BB_TEMPO_DUSUSU_ALT",
@@ -125,14 +124,14 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol güncel kontrol dakikaları (daha erken pencere yakalama)
+# Futbol güncel kontrol dakikaları (1.65+ değer pencereleri)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
-FB_IY2_00_MIN = env_num("FB_IY2_00_MIN", 45, int)
+FB_IY2_00_MIN = env_num("FB_IY2_00_MIN", 47, int)
 FB_IY2_00_MAX = env_num("FB_IY2_00_MAX", 56, int)
 FB_KG_MIN = env_num("FB_KG_MIN", 48, int)
-FB_KG_MAX = env_num("FB_KG_MAX", 62, int)
+FB_KG_MAX = env_num("FB_KG_MAX", 64, int)
 FB_EARLY_HIGH_MIN_START = env_num("FB_EARLY_HIGH_MIN_START", 15, int)
 FB_EARLY_HIGH_MIN_END = env_num("FB_EARLY_HIGH_MIN_END", 35, int)
 
@@ -318,12 +317,12 @@ def passes_fb_stat_filter(p, sd, st):
     xg_tot = st.get("xg_total")
     sot_tot = st.get("sot_total", 0)
     activity = st.get("shots_total", 0) + st.get("corners_total", 0)
-    if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 6:
-        return False, f"Kısır maç filtresi (xG {xg_tot:.2f}, şut+korner {activity})"
+    if xg_tot is not None and xg_tot < MIN_TOTAL_XG and activity <= 7:
+        return False, f"Düşük tempo/xG filtresi (xG {xg_tot:.2f}, şut+korner {activity})"
     if sid == "FB_IY2_00" and p.get("total") == 0:
         if sot_tot < MIN_IY2_SOT or activity < MIN_IY2_ACTIVITY:
             return False, (
-                f"0-0 kısır maç filtresi (isabetli şut {sot_tot}/{MIN_IY2_SOT}, "
+                f"0-0 düşük üretim filtresi (isabetli şut {sot_tot}/{MIN_IY2_SOT}, "
                 f"şut+korner {activity}/{MIN_IY2_ACTIVITY})"
             )
     return True, None
@@ -334,15 +333,15 @@ def fb_goal_line_hint(p, res):
         return res["market_hint"]
     direction = res.get("direction", "over")
     if direction == "under":
-        return f"Hedef: En az 1 gol cikmaz (ALT) | Skor: {p['total']}"
+        return f"Hedef: ALT ({MIN_TARGET_ODDS:.2f}+ oran bandi) | Skor: {p['total']}"
     tot = p.get("total", 0)
     if tot == 0:
-        return "Hedef: 0.5 Ust (1+ gol) | Kapaliysa PAS"
+        return "Hedef: 1.5 Ust / IY2 Gol (1.65+ bandi) | 1.09 0.5 Ust PAS"
     if tot == 1:
-        return "Hedef: 1.5 Ust (2+ gol) | Skor: 1 gol var"
+        return "Hedef: 1.5 Ust (2+ gol, 1.65+ bandi) | Skor: 1 gol var"
     if tot == 2:
-        return "Hedef: 2.5 Ust (3+ gol) | Skor: 2 gol var"
-    return f"Hedef: {tot + 0.5:.1f} Ust ({tot + 1}+ gol) | Skor: {tot} gol var"
+        return "Hedef: 2.5 Ust (3+ gol, 1.65+ bandi) | Skor: 2 gol var"
+    return f"Hedef: {tot + 0.5:.1f} Ust ({tot + 1}+ gol, 1.65+ bandi) | Skor: {tot} gol var"
 
 
 def iter_events(data, sport="football"):
@@ -566,7 +565,7 @@ def build_signal_card_png(p, sd, res, stat_line=None):
 
         warn_txt, f_warn = _fit_text(
             draw,
-            "Bandin disindaysa veya 1.40 altindaysa OYNAMAYIN",
+            f"Oran {MIN_TARGET_ODDS:.2f} altindaysa veya band disindaysa PAS",
             w - 130,
             25,
             bold=True,
@@ -595,9 +594,9 @@ def stake_tl():
 def decay_risk_note(p):
     if p["sport"] == "football":
         if p.get("minute") is not None and p["minute"] >= 62:
-            return "Yüksek — oran düştüyse veya market kapalıysa PAS"
-        return "Orta — hedef banttaysa ve açık markette değerlendir, düşükse PAS"
-    return "Orta — çizgi/oran bandı uyuşmuyorsa PAS"
+            return f"Yüksek — oran {MIN_TARGET_ODDS:.2f} altındaysa veya kapalıysa PAS"
+        return f"Orta-Yüksek — {MIN_TARGET_ODDS:.2f}+ değer bandındaysa değerlendir, düşükse PAS"
+    return f"Orta — çizgi/oran {MIN_TARGET_ODDS:.2f} bandındaysa değerlendir, düşükse PAS"
 
 
 def form_note(state, sid, band, sport):
@@ -612,8 +611,8 @@ def form_note(state, sid, band, sport):
         sample_tag = "Az örneklem" if done < 20 else f"{done} sinyal"
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag}"
 
-    band_txt = f"Oran {band[0]:.2f}-{band[1]:.2f} bandındaysa değerlendir"
-    action = f"{band_txt} (çizgi sende)" if sport == "basketball" else f"{band_txt} (oran düşükse veya kapalı markette pas geç)"
+    band_txt = f"Değer bandı {band[0]:.2f}-{band[1]:.2f}"
+    action = f"{band_txt} (çizgi/oran sende)" if sport == "basketball" else f"{band_txt} (1.05-1.40 arası düşük oranları pas geç)"
     return f"{hist} — {action}"
 
 
@@ -687,52 +686,52 @@ def fb_line(p):
     return f"{t} | Skor: {p['home']}-{p['away']}"
 
 
-@strat("FB_IY2_00", "football", f"0-0 gol penceresi ({FB_IY2_00_MIN}-{FB_IY2_00_MAX}')",
-       "FUTBOL ALARMI (0-0, GOL PENCERESİ)", "0.5 Üst / Gol Olur", (1.40, 1.85))
+@strat("FB_IY2_00", "football", f"0-0 değer penceresi ({FB_IY2_00_MIN}-{FB_IY2_00_MAX}')",
+       "FUTBOL DEĞER ALARMI (0-0, 1.65+ HEDEF)", "1.5 Üst / İkinci Yarı Gol", (1.65, 2.15))
 def fb_iy2_00(p):
     if fb_in(p, FB_IY2_00_MIN, FB_IY2_00_MAX) and p["total"] == 0:
-        return fb_res(p, f"{fb_line(p)}\nİkinci yarı gol penceresi — hedef bandı ve açık market kontrol et")
+        return fb_res(p, f"{fb_line(p)}\nİkinci yarı değer penceresi — 1.09 0.5 Üst yerine 1.65+ değer marketi kontrol et")
 
 
-@strat("FB_KG_VAR_ACIK_MAC", "football", f"Deneysel KG Var (1-0 / 0-1, {FB_KG_MIN}-{FB_KG_MAX}')",
-       "FUTBOL ALARMI (AÇIK MAÇ KG VAR)", "KG Var (Karşılıklı Gol)", (1.50, 2.05))
+@strat("FB_KG_VAR_ACIK_MAC", "football", f"İki Yönlü Açık Maç KG Var ({FB_KG_MIN}-{FB_KG_MAX}')",
+       "FUTBOL DEĞER ALARMI (KG VAR 1.65+)", "KG Var (Karşılıklı Gol)", (1.65, 2.15))
 def fb_kg_var_acik_mac(p):
     if fb_in(p, FB_KG_MIN, FB_KG_MAX) and p["total"] == 1:
         return fb_res(
             p,
-            f"{fb_line(p)}\nTek gollü açık maç penceresi — iki yönlü şut/baskı kontrolü",
-            market_hint=f"Hedef: KG Var | Skor: {p['home']}-{p['away']}",
+            f"{fb_line(p)}\nTek gollü açık maç penceresi — iki yönlü şut ve hücum dengesi onaylı",
+            market_hint=f"Hedef: KG Var (1.65+ bandi) | Skor: {p['home']}-{p['away']}",
         )
 
 
-@strat("FB_COK_GOLLU_ERKEN", "football", f"Erken çok gol ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
-       "FUTBOL ALARMI (GOLLÜ MAÇ)", "Ek Gol Olur / Canlı Üst", (1.50, 1.90))
+@strat("FB_COK_GOLLU_ERKEN", "football", f"Yüksek Tempolu Erken Maç ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
+       "FUTBOL DEĞER ALARMI (TEMPO / EK GOL)", "Sıradaki Gol / Canlı Üst", (1.65, 2.10))
 def fb_cok_gollu(p):
     if fb_in(p, FB_EARLY_HIGH_MIN_START, FB_EARLY_HIGH_MIN_END) and p["total"] >= 3:
-        return fb_res(p, f"{fb_line(p)}\nErken gol ivmesi — oran çökmeden kontrol et")
+        return fb_res(p, f"{fb_line(p)}\nYüksek tempolu erken maç — 1.65+ değer bandındaki çizgiyi kontrol et")
 
 
-@strat("FB_GERIDEN_FARK2", "football", "2 gol fark, 55-80'",
-       "FUTBOL ALARMI (2 GOL FARK, BASKI)", "Sıradaki Gol Olur / Canlı Üst", (1.60, 2.10))
+@strat("FB_GERIDEN_FARK2", "football", "2 gol fark baskısı, 55-80'",
+       "FUTBOL DEĞER ALARMI (2 FARK BASKI)", "Sıradaki Gol / Canlı Üst", (1.65, 2.15))
 def fb_fark2(p):
     if fb_in(p, 55, 80) and p["diff"] == 2:
-        return fb_res(p, f"{fb_line(p)}\n2 gol fark baskısı — reaksiyon / ek gol ihtimali")
+        return fb_res(p, f"{fb_line(p)}\n2 gol fark baskısı — reaksiyon ve açık oyun potansiyeli")
 
 
 @strat("FB_TEK_FARK_70", "football", f"Tek farkla önde, {FB_LATE_MIN}-{FB_LATE_MAX}'",
-       "FUTBOL ALARMI (TEK FARK, EK GOL)", "Ek Gol Olur / Canlı Üst", (1.45, 1.85))
+       "FUTBOL DEĞER ALARMI (TEK FARK)", "Ek Gol Olur / Canlı Üst", (1.65, 2.05))
 def fb_tek_fark(p):
     if fb_in(p, FB_LATE_MIN, FB_LATE_MAX) and p["diff"] == 1:
-        return fb_res(p, f"{fb_line(p)}\nTek fark üstünlüğü — risk/açık oyun ihtimali")
+        return fb_res(p, f"{fb_line(p)}\nTek fark üstünlüğü — 1.65+ bandındaki gol marketini kontrol et")
 
 
-@strat("OZEL_FB_BASKI_SIKISMA", "football", "Görünmeyen Baskı ve Sıkışma (Özel Sinyal)",
-       "🔔 ÖZEL SİNYAL (Gölge Avı)", "Sıradaki Gol Olur / Canlı Üst", (1.65, 2.05), is_special=True)
+@strat("OZEL_FB_BASKI_SIKISMA", "football", "Görünmeyen Baskı ve Sıkışma (Değer Sinyali)",
+       "🔔 DEĞER SİNYALİ (1.65+ Hedef)", "Sıradaki Gol Olur / Canlı Üst", (1.70, 2.20), is_special=True)
 def ozel_fb_baski(p):
     if fb_in(p, 65, 78) and p["total"] <= 1:
         return {
             "detail": f"Dakika: {p['minute']}' | Skor: {p['home']}-{p['away']}\n"
-                      f"Analiz: Piyasa maçın kısır geçeceğini sanıp 'Alt' oranlarını şişirdi. Sıkışma tavan yaptı.",
+                      f"Analiz: Düşük skor beklentisiyle şişen/dengelenen oranlarda baskı ve kırılma potansiyeli.",
             "direction": "over", "base": p["total"], "n": 1, "ref": 0.0
         }
     return None
@@ -781,7 +780,7 @@ def _q4_info(p):
 
 
 @strat("OZEL_BB_BENCH_COKUS", "basketball", "Bench Çöküşü / Tempo Kırılması (Özel Sinyal)",
-       "🔔 ÖZEL SİNYAL (Gölge Avı)", "Canlı Toplam Sayı ALT", (1.70, 2.10), is_special=True)
+       "🔔 ÖZEL SİNYAL (1.70+ Hedef)", "Canlı Toplam Sayı ALT", (1.70, 2.10), is_special=True)
 def ozel_bb_bench(p):
     info = _q4_info(p)
     if info and 140 < p["total"] <= 165 and p["diff"] >= 14:
@@ -795,7 +794,7 @@ def ozel_bb_bench(p):
 
 
 @strat("BB_TEMPO_DUSUSU_ALT", "basketball", "Tempo düşüşü ALT (Q1 yüksek)",
-       "BASKETBOL ALARMI (TEMPO DÜŞÜŞÜ ALT)", "Canlı Toplam Sayı ALT", (1.45, 1.55))
+       "BASKETBOL DEĞER ALARMI (TEMPO DÜŞÜŞÜ ALT)", "Canlı Toplam Sayı ALT", (1.65, 1.95))
 def bb_tempo_dususu(p):
     q1 = p["q"][0]
     if p["period"] == 2 and q1 is not None and q1 >= BB_Q1_HIGH \
@@ -805,7 +804,7 @@ def bb_tempo_dususu(p):
 
 
 @strat("BB_HT_DUSUK_UST", "basketball", "Devre arası düşük skor ÜST",
-       "BASKETBOL ALARMI (DEVRE ARASI DÜŞÜK SKOR ÜST)", "Canlı Toplam Sayı ÜST", (1.50, 1.80))
+       "BASKETBOL DEĞER ALARMI (DEVRE ARASI ÜST)", "Canlı Toplam Sayı ÜST", (1.65, 1.95))
 def bb_ht_dusuk(p):
     if p["ht"] and 0 < p["total"] <= BB_HT_LOW:
         return {"direction": "over", "base": p["total"], "n": 2, "ref": p["total"] / 2.0,
@@ -813,7 +812,7 @@ def bb_ht_dusuk(p):
 
 
 @strat("BB_Q1_DUSUK_UST", "basketball", "Tempo yükselişi ÜST (Q1 düşük)",
-       "BASKETBOL ALARMI (TEMPO YÜKSELİŞİ ÜST)", "Canlı Toplam Sayı ÜST", (1.55, 1.90))
+       "BASKETBOL DEĞER ALARMI (TEMPO YÜKSELİŞİ ÜST)", "Canlı Toplam Sayı ÜST", (1.65, 2.00))
 def bb_q1_dusuk(p):
     q1 = p["q"][0]
     if p["period"] == 2 and q1 is not None and q1 <= BB_Q1_LOW \
@@ -823,7 +822,7 @@ def bb_q1_dusuk(p):
 
 
 @strat("BB_Q4_FARK_ALT", "basketball", "4. çeyrek başı büyük fark ALT",
-       "BASKETBOL ALARMI (4. ÇEYREK BÜYÜK FARK ALT)", "Canlı Toplam Sayı ALT", (1.60, 1.95))
+       "BASKETBOL DEĞER ALARMI (4. ÇEYREK FARK ALT)", "Canlı Toplam Sayı ALT", (1.65, 2.00))
 def bb_q4_fark(p):
     info = _q4_info(p)
     if info and p["diff"] >= 15:
@@ -833,7 +832,7 @@ def bb_q4_fark(p):
 
 
 @strat("BB_Q4_YAKIN_UST", "basketball", "4. çeyrek başı yakın skor ÜST",
-       "BASKETBOL ALARMI (4. ÇEYREK YAKIN MAÇ ÜST)", "Canlı Toplam Sayı ÜST", (1.60, 2.00))
+       "BASKETBOL DEĞER ALARMI (4. ÇEYREK YAKIN ÜST)", "Canlı Toplam Sayı ÜST", (1.65, 2.05))
 def bb_q4_yakin(p):
     info = _q4_info(p)
     if info and p["diff"] <= 3:
@@ -867,13 +866,13 @@ def build_message(p, sd, res, state=None, stat_line=None):
             lines.append(f"📈 İstatistik: {stat_line}")
         lines += [line,
                   f"🎯 OYNA: {sd['pick']}",
-                  f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
+                  f"📈 Değer oran bandı: {band[0]:.2f} - {band[1]:.2f}",
                   f"⚡ Karar / Risk: {risk}",
                   f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
                   "",
-                  "🛑 Bandın dışındaysa veya 1.40 altındaysa OYNAMAYIN"]
+                  f"🛑 Oran {MIN_TARGET_ODDS:.2f} altındaysa veya banttaki değer yoksa PAS"]
     else:
         lines = [f"🚨 {sd['title']}", line, f"{icon} {p['match']}"]
         if p.get("league"):
@@ -886,13 +885,13 @@ def build_message(p, sd, res, state=None, stat_line=None):
             lines.append(f"📈 İstatistik: {stat_line}")
         lines += [line,
                   f"🎯 OYNA: {sd['pick']}",
-                  f"📈 Oran bandı: {band[0]:.2f} - {band[1]:.2f}",
+                  f"📈 Değer oran bandı: {band[0]:.2f} - {band[1]:.2f}",
                   f"⚡ Karar / Risk: {risk}",
                   f"💰 Tutar: {stake_tl()} TL (Min: {MIN_STAKE_TL} TL)",
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
                   "",
-                  "🛑 Bandın dışındaysa, kapalıysa veya 1.40 altındaysa OYNAMAYIN"]
+                  f"🛑 Oran {MIN_TARGET_ODDS:.2f} altındaysa, kapalıysa veya bant dışındaysa PAS"]
     return "\n".join(lines)
 
 
@@ -1103,7 +1102,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.8.9 aktif: Kırılgan basketbol ALT stratejileri elendi, 0-0 istatistik barajı yükseltildi.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.9.0 aktif: 1.65+ değer odaklı seçici strateji ve filtreler devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
