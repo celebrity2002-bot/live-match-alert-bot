@@ -13,8 +13,8 @@
     2.1
    ],
    "created": "2026-11-24T04:55:24.153894+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 225,
    "sent": true,
    "direction": "under",
@@ -23,7 +23,10 @@
    "ref": 55.333333333333336,
    "signal_score": "76-94",
    "last_score": "106-119",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 225,
+   "settled": "2026-11-24T05:35:26.029257+00:00",
+   "seg_avg": 59.0
   }
  }
 }
