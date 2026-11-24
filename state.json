@@ -1,3 +1,29 @@
 {
- "signals": {}
+ "signals": {
+  "bb_1868467|OZEL_BB_BENCH_COKUS": {
+   "key": "bb_1868467|OZEL_BB_BENCH_COKUS",
+   "sport": "basketball",
+   "match_id": "bb_1868467",
+   "match": "Sacramento Kings - San Antonio Spurs",
+   "league": "NBA Regular season",
+   "strategy": "OZEL_BB_BENCH_COKUS",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.7,
+    2.1
+   ],
+   "created": "2026-11-24T04:55:24.153894+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 170,
+   "sent": true,
+   "direction": "under",
+   "base": 166,
+   "n": 1,
+   "ref": 55.333333333333336,
+   "signal_score": "76-94",
+   "last_score": "76-94",
+   "stats_summary": ""
+  }
+ }
 }
