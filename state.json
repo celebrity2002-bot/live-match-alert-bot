@@ -15,14 +15,14 @@
    "created": "2026-11-24T04:55:24.153894+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 183,
+   "last_total": 194,
    "sent": true,
    "direction": "under",
    "base": 166,
    "n": 1,
    "ref": 55.333333333333336,
    "signal_score": "76-94",
-   "last_score": "85-98",
+   "last_score": "92-102",
    "stats_summary": ""
   }
  }
