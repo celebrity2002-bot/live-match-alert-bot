@@ -26,7 +26,8 @@
    "stats_summary": "",
    "final_total": 225,
    "settled": "2026-11-24T05:35:26.029257+00:00",
-   "seg_avg": 59.0
+   "seg_avg": 59.0,
+   "result_sent": true
   },
   "fb_1873665|FB_IY2_00": {
    "key": "fb_1873665|FB_IY2_00",
@@ -54,7 +55,8 @@
    "stats_summary": "Isabetli Sut 4/9 (3-1) | Korner 4",
    "final_total": 1,
    "settled": "2026-11-24T12:10:33.592036+00:00",
-   "seg_avg": 1.0
+   "seg_avg": 1.0,
+   "result_sent": true
   }
  }
 }
