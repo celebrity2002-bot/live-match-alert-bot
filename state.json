@@ -230,14 +230,22 @@
    "created": "2026-11-24T01:40:31.254242+00:00",
    "status": "pending",
    "missing_runs": 0,
+<<<<<<< Updated upstream
    "last_total": 95,
+=======
+   "last_total": 97,
+>>>>>>> Stashed changes
    "sent": true,
    "direction": "under",
    "base": 66,
    "n": 3,
    "ref": 66.0,
    "signal_score": "37-34",
+<<<<<<< Updated upstream
    "last_score": "47-48",
+=======
+   "last_score": "49-48",
+>>>>>>> Stashed changes
    "stats_summary": ""
   },
   "bb_1868486|BB_TEMPO_DUSUSU_ALT": {
@@ -263,6 +271,34 @@
    "ref": 57.0,
    "signal_score": "34-32",
    "last_score": "54-38",
+<<<<<<< Updated upstream
+=======
+   "stats_summary": ""
+  },
+  "bb_1868489|BB_Q4_FARK_ALT": {
+   "key": "bb_1868489|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1868489",
+   "match": "Philadelphia 76ers - Portland Trail Blazers",
+   "league": "NBA Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.6,
+    1.95
+   ],
+   "created": "2026-11-24T01:55:47.694407+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 199,
+   "sent": true,
+   "direction": "under",
+   "base": 193,
+   "n": 1,
+   "ref": 64.33333333333333,
+   "signal_score": "92-107",
+   "last_score": "92-107",
+>>>>>>> Stashed changes
    "stats_summary": ""
   }
  }
