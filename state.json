@@ -196,6 +196,32 @@
    "signal_score": "1-0",
    "last_score": "1-0",
    "stats_summary": "Isabetli Sut 5/8 (2-3) | Korner 2 | Sari Kart 2"
+  },
+  "fb_1857558|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1857558|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1857558",
+   "match": "Ghazl Al Mehalla - Petrojet",
+   "league": "Egypt Premier League",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T19:35:25.984539+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 4/15 (3-1) | Korner 11 | Sari Kart 1"
   }
  }
 }
