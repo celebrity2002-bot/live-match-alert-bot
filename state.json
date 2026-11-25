@@ -39,18 +39,21 @@
     2.2
    ],
    "created": "2026-11-25T16:25:28.955042+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 0,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0",
-   "stats_summary": "Isabetli Sut 4/10 (2-2) | Korner 8 | Sari Kart 2"
+   "stats_summary": "Isabetli Sut 4/10 (2-2) | Korner 8 | Sari Kart 2",
+   "final_total": 0,
+   "settled": "2026-11-25T17:05:27.407631+00:00",
+   "seg_avg": 0.0
   },
   "fb_1873826|FB_COK_GOLLU_ERKEN": {
    "key": "fb_1873826|FB_COK_GOLLU_ERKEN",
