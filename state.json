@@ -274,18 +274,21 @@
     2.15
    ],
    "created": "2026-11-25T21:15:39.626890+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0",
-   "stats_summary": "xG 1.71 | Isabetli Sut 7/15 (7-0) | Korner 4 | Sari Kart 1"
+   "stats_summary": "xG 1.71 | Isabetli Sut 7/15 (7-0) | Korner 4 | Sari Kart 1",
+   "final_total": 2,
+   "settled": "2026-11-25T22:05:28.555932+00:00",
+   "seg_avg": 0.0
   },
   "fb_1882795|FB_KG_VAR_ACIK_MAC": {
    "key": "fb_1882795|FB_KG_VAR_ACIK_MAC",
@@ -300,18 +303,21 @@
     2.15
    ],
    "created": "2026-11-25T21:15:40.478839+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-3",
-   "stats_summary": "xG 1.50 | Isabetli Sut 3/10 (2-1) | Korner 7"
+   "stats_summary": "xG 1.50 | Isabetli Sut 3/10 (2-1) | Korner 7",
+   "final_total": 3,
+   "settled": "2026-11-25T22:05:28.977016+00:00",
+   "seg_avg": 2.0
   },
   "fb_1882810|FB_KG_VAR_ACIK_MAC": {
    "key": "fb_1882810|FB_KG_VAR_ACIK_MAC",
@@ -326,18 +332,21 @@
     2.15
    ],
    "created": "2026-11-25T21:15:41.435383+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "2-1",
-   "stats_summary": "xG 1.64 | Isabetli Sut 7/9 (2-5) | Korner 5 | Sari Kart 1"
+   "stats_summary": "xG 1.64 | Isabetli Sut 7/9 (2-5) | Korner 5 | Sari Kart 1",
+   "final_total": 3,
+   "settled": "2026-11-25T22:05:29.406040+00:00",
+   "seg_avg": 2.0
   },
   "bb_1851074|BB_Q4_FARK_ALT": {
    "key": "bb_1851074|BB_Q4_FARK_ALT",
@@ -352,18 +361,21 @@
     2.0
    ],
    "created": "2026-11-25T21:25:27.730395+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 194,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "under",
    "base": 143,
    "n": 1,
    "ref": 47.666666666666664,
    "signal_score": "84-67",
    "last_score": "103-91",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 194,
+   "settled": "2026-11-25T22:05:26.731712+00:00",
+   "seg_avg": 51.0
   },
   "fb_1882753|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1882753|OZEL_FB_BASKI_SIKISMA",
@@ -378,18 +390,21 @@
     2.2
    ],
    "created": "2026-11-25T21:25:30.249337+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "2-0",
-   "stats_summary": "xG 2.94 | Isabetli Sut 6/16 (4-2) | Korner 12 | Sari Kart 2"
+   "stats_summary": "xG 2.94 | Isabetli Sut 6/16 (4-2) | Korner 12 | Sari Kart 2",
+   "final_total": 2,
+   "settled": "2026-11-25T22:05:29.838246+00:00",
+   "seg_avg": 1.0
   },
   "fb_1882838|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1882838|OZEL_FB_BASKI_SIKISMA",
@@ -404,18 +419,21 @@
     2.2
    ],
    "created": "2026-11-25T21:25:31.540386+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1",
-   "stats_summary": "xG 1.38 | Isabetli Sut 5/12 (1-4) | Korner 4 | Sari Kart 1"
+   "stats_summary": "xG 1.38 | Isabetli Sut 5/12 (1-4) | Korner 4 | Sari Kart 1",
+   "final_total": 1,
+   "settled": "2026-11-25T22:05:30.278946+00:00",
+   "seg_avg": 0.0
   }
  }
 }
