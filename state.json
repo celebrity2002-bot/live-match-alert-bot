@@ -373,6 +373,32 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": "Isabetli Sut 6/15 (5-1) | Korner 10 | Sari Kart 1"
+  },
+  "fb_1873664|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1873664|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1873664",
+   "match": "Gamba Osaka - Port FC",
+   "league": "Asia AFC Champions League Elite: East",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T11:25:26.509059+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 6/11 (5-1) | Korner 10 | Sari Kart 1"
   }
  }
 }
