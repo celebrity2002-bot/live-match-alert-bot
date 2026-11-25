@@ -159,7 +159,7 @@
    ],
    "created": "2026-11-25T19:10:34.408687+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 1,
    "sent": true,
    "result_sent": false,
@@ -222,6 +222,32 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 4/15 (3-1) | Korner 11 | Sari Kart 1"
+  },
+  "fb_1873868|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1873868|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1873868",
+   "match": "Al Taawoun - Al-Nahda",
+   "league": "Asia AFC Champions League Two: Group C",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T19:39:21.791010+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/10 (2-0) | Korner 1 | Sari Kart 1"
   }
  }
 }
