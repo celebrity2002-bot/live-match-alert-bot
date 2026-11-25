@@ -461,7 +461,11 @@
    "last_score": "1-0",
    "stats_summary": "Isabetli Sut 2/11 (2-0) | Korner 4 | Sari Kart 2",
    "final_total": 1,
+<<<<<<< Updated upstream
    "settled": "2026-11-25T16:00:46.860031+00:00",
+=======
+   "settled": "2026-11-25T16:01:07.241573+00:00",
+>>>>>>> Stashed changes
    "seg_avg": 0.0
   }
  }
