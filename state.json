@@ -333,7 +333,7 @@
    ],
    "created": "2026-11-25T09:10:37.781004+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 0,
    "sent": true,
    "result_sent": false,
