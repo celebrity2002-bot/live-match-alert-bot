@@ -347,6 +347,32 @@
    "final_total": 0,
    "settled": "2026-11-25T09:50:34.731071+00:00",
    "seg_avg": 0.0
+  },
+  "fb_1873659|FB_GERIDEN_FARK2": {
+   "key": "fb_1873659|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1873659",
+   "match": "Kashima Antlers - Jeonbuk FC",
+   "league": "Asia AFC Champions League Elite: East",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-25T11:20:36.365227+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "Isabetli Sut 6/15 (5-1) | Korner 10 | Sari Kart 1"
   }
  }
 }
