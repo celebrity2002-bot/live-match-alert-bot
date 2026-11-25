@@ -304,7 +304,7 @@
    ],
    "created": "2026-11-25T03:05:27.874383+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 245,
    "sent": true,
    "result_sent": false,
