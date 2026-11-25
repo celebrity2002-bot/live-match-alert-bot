@@ -354,7 +354,7 @@
    "created": "2026-11-25T21:25:27.730395+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 165,
+   "last_total": 168,
    "sent": true,
    "result_sent": false,
    "direction": "under",
@@ -362,7 +362,7 @@
    "n": 1,
    "ref": 47.666666666666664,
    "signal_score": "84-67",
-   "last_score": "88-77",
+   "last_score": "91-77",
    "stats_summary": ""
   },
   "fb_1882753|OZEL_FB_BASKI_SIKISMA": {
@@ -380,7 +380,7 @@
    "created": "2026-11-25T21:25:30.249337+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -388,7 +388,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "xG 2.94 | Isabetli Sut 6/16 (4-2) | Korner 12 | Sari Kart 2"
   },
   "fb_1882838|OZEL_FB_BASKI_SIKISMA": {
