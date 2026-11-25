@@ -421,7 +421,7 @@
    "created": "2026-11-25T13:25:27.567562+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -429,7 +429,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1",
+   "last_score": "0-2",
    "stats_summary": ""
   }
  }
