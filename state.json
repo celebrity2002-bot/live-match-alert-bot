@@ -354,7 +354,7 @@
    "created": "2026-11-25T21:25:27.730395+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 151,
+   "last_total": 165,
    "sent": true,
    "result_sent": false,
    "direction": "under",
@@ -362,7 +362,7 @@
    "n": 1,
    "ref": 47.666666666666664,
    "signal_score": "84-67",
-   "last_score": "84-67",
+   "last_score": "88-77",
    "stats_summary": ""
   },
   "fb_1882753|OZEL_FB_BASKI_SIKISMA": {
