@@ -405,6 +405,32 @@
    "final_total": 1,
    "settled": "2026-11-25T12:05:27.631569+00:00",
    "seg_avg": 1.0
+  },
+  "fb_1799189|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1799189|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1799189",
+   "match": "Radnicki Nis - Zeleznicar Pancevo",
+   "league": "Serbia Super Liga",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T13:25:27.567562+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1",
+   "stats_summary": ""
   }
  }
 }
