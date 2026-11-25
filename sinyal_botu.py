@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.9.0 - 1.65+ Değer Odaklı Seçici Strateji ve İstatistik Filtresi
+Canlı Sinyal Botu v2.9.2 - Açık Maç İvmesi, Düşük Skor Tempo Artışı ve Strateji Karne Disiplini
 """
 import io
 import json
@@ -58,17 +58,23 @@ REQUIRE_STAT_FOR_00 = os.getenv("REQUIRE_STAT_FOR_00", "1") == "1"
 ENABLE_PNG_CARD = os.getenv("ENABLE_PNG_CARD", "1") == "1"
 MIN_TARGET_ODDS = env_num("MIN_TARGET_ODDS", 1.65, float)
 MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.55, float)
+MIN_OPEN_MATCH_XG = env_num("MIN_OPEN_MATCH_XG", 0.85, float)
+MIN_OPEN_MATCH_ACTIVITY = env_num("MIN_OPEN_MATCH_ACTIVITY", 10, int)
 MIN_IY2_SOT = env_num("MIN_IY2_SOT", 3, int)
 MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 9, int)
 MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 7, int)
 MIN_KG_TRAILING_SHOTS = env_num("MIN_KG_TRAILING_SHOTS", 3, int)
 MIN_KG_TRAILING_SOT = env_num("MIN_KG_TRAILING_SOT", 2, int)
 
-# Düşük oranlı / kırılgan / yüksek varyanslı stratejiler varsayılan pasif
+# Düşük isabetli / kırılgan / yüksek varyanslı stratejiler varsayılan pasif
 DEFAULT_DISABLED = {
     "FB_IY2_00",
     "FB_TEK_FARK_70",
+    "FB_GERIDEN_FARK2",
+    "FB_KG_VAR_ACIK_MAC",
+    "OZEL_FB_BASKI_SIKISMA",
     "BB_Q4_YAKIN_UST",
+    "BB_Q4_FARK_ALT",
     "OZEL_BB_BENCH_COKUS",
     "BB_TEMPO_DUSUSU_ALT",
 }
@@ -128,6 +134,8 @@ BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
+FB_OPEN_MIN_MIN = env_num("FB_OPEN_MIN_MIN", 25, int)
+FB_OPEN_MAX_MIN = env_num("FB_OPEN_MAX_MIN", 62, int)
 FB_IY2_00_MIN = env_num("FB_IY2_00_MIN", 47, int)
 FB_IY2_00_MAX = env_num("FB_IY2_00_MAX", 56, int)
 FB_KG_MIN = env_num("FB_KG_MIN", 48, int)
@@ -285,6 +293,21 @@ def format_fb_stat_line(st):
 
 def passes_fb_stat_filter(p, sd, st):
     sid = sd.get("id")
+    if sid == "FB_ACIK_MAC_DEVAM_GOL":
+        if not st:
+            return False, "Açık maç devam golü için canlı istatistik verisi bulunamadı"
+        sot_tot = st.get("sot_total", 0)
+        activity = st.get("shots_total", 0) + st.get("corners_total", 0)
+        xg_tot = st.get("xg_total")
+        if sot_tot < 3 or activity < MIN_OPEN_MATCH_ACTIVITY:
+            return False, (
+                f"Açık maç üretim filtresi (isabetli şut {sot_tot}/3, "
+                f"şut+korner {activity}/{MIN_OPEN_MATCH_ACTIVITY})"
+            )
+        if xg_tot is not None and xg_tot < MIN_OPEN_MATCH_XG:
+            return False, f"Açık maç xG filtresi (xG {xg_tot:.2f}/{MIN_OPEN_MATCH_XG:.2f})"
+        return True, None
+
     if sid == "FB_KG_VAR_ACIK_MAC":
         if not st:
             return False, "KG Var için canlı istatistik verisi bulunamadı"
@@ -603,13 +626,15 @@ def form_note(state, sid, band, sport):
     same = [r for r in state.get("signals", {}).values()
             if r.get("strategy") == sid and r.get("status") in ("won", "lost")]
     done = len(same)
+    be = breakeven(band)
     if done == 0:
         hist = "İlk sinyal | Az örneklem"
     else:
         won = sum(1 for r in same if r.get("status") == "won")
         rate = 100.0 * won / done
         sample_tag = "Az örneklem" if done < 20 else f"{done} sinyal"
-        hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag}"
+        status_tag = "Karne zayıf" if (done >= 4 and rate < be) else "Karne izleniyor"
+        hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag} | {status_tag}"
 
     band_txt = f"Değer bandı {band[0]:.2f}-{band[1]:.2f}"
     action = f"{band_txt} (çizgi/oran sende)" if sport == "basketball" else f"{band_txt} (1.05-1.40 arası düşük oranları pas geç)"
@@ -684,6 +709,18 @@ def fb_in(p, lo, hi):
 def fb_line(p):
     t = "Devre Arası" if p["ht"] else f"Dakika: {p['minute']}'"
     return f"{t} | Skor: {p['home']}-{p['away']}"
+
+
+@strat("FB_ACIK_MAC_DEVAM_GOL", "football",
+       f"Açık Maç İvmesi ({FB_OPEN_MIN_MIN}-{FB_OPEN_MAX_MIN}', {FB_OPEN_MIN_GOALS}+ gol)",
+       "FUTBOL DEĞER ALARMI (AÇIK MAÇ İVMESİ)", "Ek Gol / Canlı Üst", (1.65, 2.15))
+def fb_acik_mac_devam_gol(p):
+    if fb_in(p, FB_OPEN_MIN_MIN, FB_OPEN_MAX_MIN) and p["total"] >= FB_OPEN_MIN_GOALS:
+        return fb_res(
+            p,
+            f"{fb_line(p)}\nSkor açık ve üretim yüksek — 1.65+ değer bandındaki gol çizgisini kontrol et",
+            market_hint=f"Hedef: {p['total'] + 0.5:.1f} Ust (1.65+ bandi) | Skor: {p['home']}-{p['away']}",
+        )
 
 
 @strat("FB_IY2_00", "football", f"0-0 değer penceresi ({FB_IY2_00_MIN}-{FB_IY2_00_MAX}')",
@@ -941,12 +978,14 @@ def register_signal(state, p, sd, res, stat_line=None):
 
 def notify_result(state, rec):
     if SEND_RESULTS == "off":
-        return True
-    if MODE == "live" and not rec.get("sent"):
         rec["result_sent"] = True
         return True
     if rec.get("result_sent"):
         return True
+    if MODE == "live" and not rec.get("sent"):
+        rec["result_sent"] = True
+        return True
+    rec["result_sent"] = True
     label = STRATS.get(rec["strategy"], {}).get("label", rec["strategy"])
     won = rec["status"] == "won"
     line = "━━━━━━━━━━━━━━"
@@ -975,7 +1014,6 @@ def notify_result(state, rec):
     lines += [line, f"📈 Bu strateji: {w} ✅ / {len(same) - w} ❌ (%{100 * w / len(same):.0f})"]
     ok = send_telegram("\n".join(lines))
     if ok:
-        rec["result_sent"] = True
         log(f"Sonuç bildirimi gönderildi: {rec['match']} / {rec['strategy']} -> {rec['status']}")
     else:
         rec["result_sent"] = False
@@ -984,6 +1022,8 @@ def notify_result(state, rec):
 
 
 def settle(rec, final_total, state=None):
+    if rec.get("status") in ("won", "lost", "void"):
+        return
     rec["final_total"] = final_total
     rec["settled"] = datetime.now(timezone.utc).isoformat()
     base = rec.get("base", 0)
@@ -1079,7 +1119,8 @@ def summary(state):
         pend = sum(1 for r in recs if r["status"] == "pending")
         done = won + lost
         band = recs[0]["band"]
-        rate = f"%{100 * won / done:.0f}" if done else "-"
+        rate_val = (100.0 * won / done) if done else None
+        rate = f"%{rate_val:.0f}" if rate_val is not None else "-"
         lines.append(f"{label}")
         if recs[0]["sport"] == "football":
             mid = (band[0] + band[1]) / 2
@@ -1090,7 +1131,9 @@ def summary(state):
             lines.append(f"  Hipotez gerçekleşti {won} | Gerçekleşmedi {lost} | Bekleyen {pend}")
             lines.append(f"  Oran: %{rate.strip('%')} (bahis sonucu DEĞİL, çizgi bilinmiyor)"
                          if done else "  Henüz sonuç yok")
-        if 0 < done < 30:
+        if rate_val is not None and done >= 4 and rate_val < breakeven(band):
+            lines.append(f"  Karne uyarısı: başa baş %{breakeven(band):.0f} altında.")
+        elif 0 < done < 30:
             lines.append(f"  Örnek az ({done}); güvenmeyin.")
     send_telegram("\n".join(lines))
 
@@ -1102,7 +1145,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.9.0 aktif: 1.65+ değer odaklı seçici strateji ve filtreler devrede.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.9.2 aktif: Açık maç ivmesi kurgusu ve strateji karne takibi devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
