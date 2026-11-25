@@ -260,6 +260,32 @@
    "final_total": 186,
    "settled": "2026-11-24T22:10:41.455865+00:00",
    "seg_avg": 46.0
+  },
+  "bb_1867584|BB_Q4_FARK_ALT": {
+   "key": "bb_1867584|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867584",
+   "match": "Orlando Magic - Detroit Pistons",
+   "league": "NBA Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.65,
+    2.0
+   ],
+   "created": "2026-11-25T01:55:25.995883+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 141,
+   "sent": true,
+   "result_sent": false,
+   "direction": "under",
+   "base": 134,
+   "n": 1,
+   "ref": 44.666666666666664,
+   "signal_score": "63-78",
+   "last_score": "63-78",
+   "stats_summary": ""
   }
  }
 }
