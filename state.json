@@ -305,7 +305,7 @@
    "created": "2026-11-25T03:05:27.874383+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 221,
+   "last_total": 227,
    "sent": true,
    "result_sent": false,
    "direction": "under",
@@ -313,7 +313,7 @@
    "n": 1,
    "ref": 64.33333333333333,
    "signal_score": "92-107",
-   "last_score": "104-117",
+   "last_score": "110-117",
    "stats_summary": ""
   }
  }
