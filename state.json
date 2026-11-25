@@ -14,7 +14,7 @@
    ],
    "created": "2026-11-25T16:25:26.530003+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 151,
    "sent": true,
    "result_sent": false,
@@ -97,18 +97,21 @@
     2.15
    ],
    "created": "2026-11-25T17:25:28.912545+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
    "last_score": "0-1",
-   "stats_summary": "Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1"
+   "stats_summary": "Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1",
+   "final_total": 1,
+   "settled": "2026-11-25T18:10:37.605777+00:00",
+   "seg_avg": 0.0
   },
   "fb_1873825|OZEL_FB_BASKI_SIKISMA": {
    "key": "fb_1873825|OZEL_FB_BASKI_SIKISMA",
@@ -123,18 +126,21 @@
     2.2
    ],
    "created": "2026-11-25T17:30:47.436435+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 1,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 1,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-0",
    "last_score": "1-0",
-   "stats_summary": "Isabetli Sut 3/7 (2-1) | Korner 2 | Sari Kart 4"
+   "stats_summary": "Isabetli Sut 3/7 (2-1) | Korner 2 | Sari Kart 4",
+   "final_total": 1,
+   "settled": "2026-11-25T18:10:37.960346+00:00",
+   "seg_avg": 0.0
   }
  }
 }
