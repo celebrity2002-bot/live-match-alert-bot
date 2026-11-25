@@ -260,6 +260,84 @@
    "final_total": 0,
    "settled": "2026-11-25T20:20:33.610808+00:00",
    "seg_avg": 0.0
+  },
+  "fb_1882770|FB_GERIDEN_FARK2": {
+   "key": "fb_1882770|FB_GERIDEN_FARK2",
+   "sport": "football",
+   "match_id": "fb_1882770",
+   "match": "Atletico Madrid - Viking",
+   "league": "Champions League League Stage",
+   "strategy": "FB_GERIDEN_FARK2",
+   "pick": "Sıradaki Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-25T21:15:39.626890+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "xG 1.71 | Isabetli Sut 7/15 (7-0) | Korner 4 | Sari Kart 1"
+  },
+  "fb_1882795|FB_KG_VAR_ACIK_MAC": {
+   "key": "fb_1882795|FB_KG_VAR_ACIK_MAC",
+   "sport": "football",
+   "match_id": "fb_1882795",
+   "match": "Club Brugge - Liverpool",
+   "league": "Champions League League Stage",
+   "strategy": "FB_KG_VAR_ACIK_MAC",
+   "pick": "KG Var (Karşılıklı Gol)",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-25T21:15:40.478839+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1",
+   "stats_summary": "xG 1.50 | Isabetli Sut 3/10 (2-1) | Korner 7"
+  },
+  "fb_1882810|FB_KG_VAR_ACIK_MAC": {
+   "key": "fb_1882810|FB_KG_VAR_ACIK_MAC",
+   "sport": "football",
+   "match_id": "fb_1882810",
+   "match": "Lille - Bayern Munich",
+   "league": "Champions League League Stage",
+   "strategy": "FB_KG_VAR_ACIK_MAC",
+   "pick": "KG Var (Karşılıklı Gol)",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-25T21:15:41.435383+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-1",
+   "last_score": "0-1",
+   "stats_summary": "xG 1.64 | Isabetli Sut 7/9 (2-5) | Korner 5 | Sari Kart 1"
   }
  }
 }
