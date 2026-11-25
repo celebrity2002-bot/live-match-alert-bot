@@ -289,6 +289,32 @@
    "final_total": 187,
    "settled": "2026-11-25T02:30:43.310990+00:00",
    "seg_avg": 53.0
+  },
+  "bb_1867569|BB_Q4_FARK_ALT": {
+   "key": "bb_1867569|BB_Q4_FARK_ALT",
+   "sport": "basketball",
+   "match_id": "bb_1867569",
+   "match": "Washington Wizards - Boston Celtics",
+   "league": "NBA Regular season",
+   "strategy": "BB_Q4_FARK_ALT",
+   "pick": "Canlı Toplam Sayı ALT",
+   "band": [
+    1.65,
+    2.0
+   ],
+   "created": "2026-11-25T03:05:27.874383+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 199,
+   "sent": true,
+   "result_sent": false,
+   "direction": "under",
+   "base": 193,
+   "n": 1,
+   "ref": 64.33333333333333,
+   "signal_score": "92-107",
+   "last_score": "92-107",
+   "stats_summary": ""
   }
  }
 }
