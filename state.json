@@ -434,6 +434,32 @@
    "final_total": 2,
    "settled": "2026-11-25T14:01:04.556942+00:00",
    "seg_avg": 1.0
+  },
+  "fb_1873838|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1873838|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1873838",
+   "match": "Nasaf Qarshi - AL Khalidiyah",
+   "league": "Asia AFC Champions League Two: Group A",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T15:10:46.525558+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0",
+   "stats_summary": "Isabetli Sut 2/11 (2-0) | Korner 4 | Sari Kart 2"
   }
  }
 }
