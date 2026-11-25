@@ -302,7 +302,7 @@
    "created": "2026-11-25T21:15:40.478839+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -310,7 +310,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-1",
-   "last_score": "0-1",
+   "last_score": "0-2",
    "stats_summary": "xG 1.50 | Isabetli Sut 3/10 (2-1) | Korner 7"
   },
   "fb_1882810|FB_KG_VAR_ACIK_MAC": {
@@ -354,7 +354,7 @@
    "created": "2026-11-25T21:25:27.730395+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 168,
+   "last_total": 171,
    "sent": true,
    "result_sent": false,
    "direction": "under",
@@ -362,7 +362,7 @@
    "n": 1,
    "ref": 47.666666666666664,
    "signal_score": "84-67",
-   "last_score": "91-77",
+   "last_score": "94-77",
    "stats_summary": ""
   },
   "fb_1882753|OZEL_FB_BASKI_SIKISMA": {
