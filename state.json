@@ -15,7 +15,7 @@
    "created": "2026-11-25T16:25:26.530003+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 135,
+   "last_total": 141,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -23,7 +23,7 @@
    "n": 3,
    "ref": 35.0,
    "signal_score": "18-17",
-   "last_score": "68-67",
+   "last_score": "68-73",
    "stats_summary": ""
   },
   "fb_1857556|OZEL_FB_BASKI_SIKISMA": {
@@ -69,7 +69,7 @@
    ],
    "created": "2026-11-25T16:25:30.396750+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 6,
    "sent": true,
    "result_sent": false,
