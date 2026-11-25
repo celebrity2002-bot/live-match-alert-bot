@@ -318,6 +318,32 @@
    "final_total": 245,
    "settled": "2026-11-25T03:45:31.175152+00:00",
    "seg_avg": 52.0
+  },
+  "fb_1873845|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1873845|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1873845",
+   "match": "Melbourne Victory - Viettel",
+   "league": "Asia AFC Champions League Two: Group E",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T09:10:37.781004+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 4/12 (3-1) | Korner 5 | Sari Kart 1"
   }
  }
 }
