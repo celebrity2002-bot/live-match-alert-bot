@@ -215,7 +215,7 @@
    "created": "2026-11-25T19:35:25.984539+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -223,7 +223,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "Isabetli Sut 4/15 (3-1) | Korner 11 | Sari Kart 1"
   },
   "fb_1873868|OZEL_FB_BASKI_SIKISMA": {
