@@ -15,7 +15,7 @@
    "created": "2026-11-25T16:25:26.530003+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 92,
+   "last_total": 99,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -23,7 +23,7 @@
    "n": 3,
    "ref": 35.0,
    "signal_score": "18-17",
-   "last_score": "50-42",
+   "last_score": "52-47",
    "stats_summary": ""
   },
   "fb_1857556|OZEL_FB_BASKI_SIKISMA": {
@@ -70,7 +70,7 @@
    "created": "2026-11-25T16:25:30.396750+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -78,7 +78,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-3",
+   "last_score": "2-4",
    "stats_summary": "Isabetli Sut 6/8 (1-5) | Korner 0 | Kirmizi Kart 1"
   },
   "fb_1873867|FB_KG_VAR_ACIK_MAC": {
@@ -106,6 +106,32 @@
    "signal_score": "0-1",
    "last_score": "0-1",
    "stats_summary": "Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1"
+  },
+  "fb_1873825|OZEL_FB_BASKI_SIKISMA": {
+   "key": "fb_1873825|OZEL_FB_BASKI_SIKISMA",
+   "sport": "football",
+   "match_id": "fb_1873825",
+   "match": "Al-Jazira - Gol Gohar",
+   "league": "Asia AFC Champions League Two: Group B",
+   "strategy": "OZEL_FB_BASKI_SIKISMA",
+   "pick": "Sıradaki Gol Olur / Canlı Üst",
+   "band": [
+    1.7,
+    2.2
+   ],
+   "created": "2026-11-25T17:30:47.436435+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 1,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 1,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-0",
+   "last_score": "1-0",
+   "stats_summary": "Isabetli Sut 3/7 (2-1) | Korner 2 | Sari Kart 4"
   }
  }
 }
