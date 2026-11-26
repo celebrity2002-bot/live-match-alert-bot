@@ -719,7 +719,7 @@
    "created": "2026-11-26T18:55:24.243183+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -727,7 +727,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1",
+   "last_score": "1-2",
    "stats_summary": "xG 1.33 | Isabetli Sut 7/12 (4-3) | Korner 4 | Kirmizi Kart 1"
   },
   "fb_1883521|FB_ACIK_MAC_DEVAM_GOL": {
