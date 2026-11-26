@@ -667,7 +667,7 @@
    "created": "2026-11-26T18:30:57.239419+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -675,7 +675,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2",
+   "last_score": "1-2",
    "stats_summary": "Isabetli Sut 3/6 (0-3) | Korner 5"
   },
   "fb_1883508|FB_ACIK_MAC_DEVAM_GOL": {
@@ -703,6 +703,84 @@
    "signal_score": "0-2",
    "last_score": "0-2",
    "stats_summary": "xG 0.90 | Isabetli Sut 3/7 (1-2) | Korner 10"
+  },
+  "fb_1883567|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883567|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883567",
+   "match": "Celta Vigo - AFC Bournemouth",
+   "league": "Europa League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T18:55:24.243183+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "xG 1.33 | Isabetli Sut 7/12 (4-3) | Korner 4 | Kirmizi Kart 1"
+  },
+  "fb_1883521|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883521|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883521",
+   "match": "FC Salzburg - Ararat Armenia",
+   "league": "Europa League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T18:55:25.113548+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "xG 1.75 | Isabetli Sut 6/12 (6-0) | Korner 9 | Sari Kart 2"
+  },
+  "fb_1883487|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883487|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883487",
+   "match": "Olympiacos - AC Milan",
+   "league": "Europa League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T18:55:25.955453+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "xG 1.96 | Isabetli Sut 7/13 (5-2) | Korner 3 | Sari Kart 2"
   }
  }
 }
