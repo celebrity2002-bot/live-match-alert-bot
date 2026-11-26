@@ -563,7 +563,7 @@
    "created": "2026-11-26T18:25:28.359167+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -571,7 +571,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0",
+   "last_score": "4-0",
    "stats_summary": "Isabetli Sut 4/8 (2-2) | Korner 2 | Kirmizi Kart 1"
   },
   "fb_1883668|FB_ACIK_MAC_DEVAM_GOL": {
@@ -771,7 +771,7 @@
    "created": "2026-11-26T18:55:25.955453+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -779,7 +779,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-1",
+   "last_score": "2-2",
    "stats_summary": "xG 1.96 | Isabetli Sut 7/13 (5-2) | Korner 3 | Sari Kart 2"
   }
  }
