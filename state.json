@@ -507,7 +507,7 @@
    ],
    "created": "2026-11-26T12:40:44.323237+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 8,
    "sent": true,
    "result_sent": false,
