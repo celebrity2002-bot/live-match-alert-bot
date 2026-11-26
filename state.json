@@ -521,6 +521,32 @@
    "final_total": 8,
    "settled": "2026-11-26T14:20:34.527582+00:00",
    "seg_avg": 5.0
+  },
+  "fb_1883514|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883514|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883514",
+   "match": "Union St.Gilloise - Lech Poznan",
+   "league": "Europa League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T18:10:37.110401+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": "xG 1.13 | Isabetli Sut 5/8 (3-2) | Korner 2"
   }
  }
 }
