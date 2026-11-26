@@ -934,7 +934,7 @@
    "created": "2026-11-26T20:40:43.413015+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -942,7 +942,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-2",
+   "last_score": "2-3",
    "stats_summary": "xG 1.63 | Isabetli Sut 4/10 (4-0) | Korner 0"
   },
   "fb_1883472|FB_ACIK_MAC_DEVAM_GOL": {
