@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.9.2 - Açık Maç İvmesi, Düşük Skor Tempo Artışı ve Strateji Karne Disiplini
+Canlı Sinyal Botu v2.9.3 - Kopuk Maç Rölanti Filtresi ve Çalışan İvme Kurgularının Derinleştirilmesi
 """
 import io
 import json
@@ -60,6 +60,7 @@ MIN_TARGET_ODDS = env_num("MIN_TARGET_ODDS", 1.65, float)
 MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.55, float)
 MIN_OPEN_MATCH_XG = env_num("MIN_OPEN_MATCH_XG", 0.85, float)
 MIN_OPEN_MATCH_ACTIVITY = env_num("MIN_OPEN_MATCH_ACTIVITY", 10, int)
+MAX_GOAL_DIFF_FOR_MOMENTUM = env_num("MAX_GOAL_DIFF_FOR_MOMENTUM", 2, int)
 MIN_IY2_SOT = env_num("MIN_IY2_SOT", 3, int)
 MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 9, int)
 MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 7, int)
@@ -293,19 +294,24 @@ def format_fb_stat_line(st):
 
 def passes_fb_stat_filter(p, sd, st):
     sid = sd.get("id")
-    if sid == "FB_ACIK_MAC_DEVAM_GOL":
-        if not st:
-            return False, "Açık maç devam golü için canlı istatistik verisi bulunamadı"
-        sot_tot = st.get("sot_total", 0)
-        activity = st.get("shots_total", 0) + st.get("corners_total", 0)
-        xg_tot = st.get("xg_total")
-        if sot_tot < 3 or activity < MIN_OPEN_MATCH_ACTIVITY:
+    if sid in ("FB_ACIK_MAC_DEVAM_GOL", "FB_COK_GOLLU_ERKEN"):
+        if p.get("diff", 0) > MAX_GOAL_DIFF_FOR_MOMENTUM:
             return False, (
-                f"Açık maç üretim filtresi (isabetli şut {sot_tot}/3, "
-                f"şut+korner {activity}/{MIN_OPEN_MATCH_ACTIVITY})"
+                f"Skor farkı rölanti filtresi (fark {p.get('diff', 0)} > {MAX_GOAL_DIFF_FOR_MOMENTUM})"
             )
-        if xg_tot is not None and xg_tot < MIN_OPEN_MATCH_XG:
-            return False, f"Açık maç xG filtresi (xG {xg_tot:.2f}/{MIN_OPEN_MATCH_XG:.2f})"
+        if ENABLE_STAT_FILTER and st:
+            sot_tot = st.get("sot_total", 0)
+            activity = st.get("shots_total", 0) + st.get("corners_total", 0)
+            xg_tot = st.get("xg_total")
+            min_act = MIN_OPEN_MATCH_ACTIVITY if sid == "FB_ACIK_MAC_DEVAM_GOL" else max(7, MIN_OPEN_MATCH_ACTIVITY - 2)
+            min_sot = 3 if sid == "FB_ACIK_MAC_DEVAM_GOL" else 2
+            if sot_tot < min_sot or activity < min_act:
+                return False, (
+                    f"İvme üretim filtresi (isabetli şut {sot_tot}/{min_sot}, "
+                    f"şut+korner {activity}/{min_act})"
+                )
+            if xg_tot is not None and xg_tot < MIN_OPEN_MATCH_XG:
+                return False, f"İvme xG filtresi (xG {xg_tot:.2f}/{MIN_OPEN_MATCH_XG:.2f})"
         return True, None
 
     if sid == "FB_KG_VAR_ACIK_MAC":
@@ -616,7 +622,7 @@ def stake_tl():
 
 def decay_risk_note(p):
     if p["sport"] == "football":
-        if p.get("minute") is not None and p["minute"] >= 62:
+        if p.get("minute") is not None and p["minute"] >= 58:
             return f"Yüksek — oran {MIN_TARGET_ODDS:.2f} altındaysa veya kapalıysa PAS"
         return f"Orta-Yüksek — {MIN_TARGET_ODDS:.2f}+ değer bandındaysa değerlendir, düşükse PAS"
     return f"Orta — çizgi/oran {MIN_TARGET_ODDS:.2f} bandındaysa değerlendir, düşükse PAS"
@@ -715,10 +721,14 @@ def fb_line(p):
        f"Açık Maç İvmesi ({FB_OPEN_MIN_MIN}-{FB_OPEN_MAX_MIN}', {FB_OPEN_MIN_GOALS}+ gol)",
        "FUTBOL DEĞER ALARMI (AÇIK MAÇ İVMESİ)", "Ek Gol / Canlı Üst", (1.65, 2.15))
 def fb_acik_mac_devam_gol(p):
-    if fb_in(p, FB_OPEN_MIN_MIN, FB_OPEN_MAX_MIN) and p["total"] >= FB_OPEN_MIN_GOALS:
+    if (
+        fb_in(p, FB_OPEN_MIN_MIN, FB_OPEN_MAX_MIN)
+        and p["total"] >= FB_OPEN_MIN_GOALS
+        and p["diff"] <= MAX_GOAL_DIFF_FOR_MOMENTUM
+    ):
         return fb_res(
             p,
-            f"{fb_line(p)}\nSkor açık ve üretim yüksek — 1.65+ değer bandındaki gol çizgisini kontrol et",
+            f"{fb_line(p)}\nSkor açık, fark dengeli ve üretim sürüyor — 1.65+ değer bandını kontrol et",
             market_hint=f"Hedef: {p['total'] + 0.5:.1f} Ust (1.65+ bandi) | Skor: {p['home']}-{p['away']}",
         )
 
@@ -744,8 +754,12 @@ def fb_kg_var_acik_mac(p):
 @strat("FB_COK_GOLLU_ERKEN", "football", f"Yüksek Tempolu Erken Maç ({FB_EARLY_HIGH_MIN_START}-{FB_EARLY_HIGH_MIN_END}', 3+ gol)",
        "FUTBOL DEĞER ALARMI (TEMPO / EK GOL)", "Sıradaki Gol / Canlı Üst", (1.65, 2.10))
 def fb_cok_gollu(p):
-    if fb_in(p, FB_EARLY_HIGH_MIN_START, FB_EARLY_HIGH_MIN_END) and p["total"] >= 3:
-        return fb_res(p, f"{fb_line(p)}\nYüksek tempolu erken maç — 1.65+ değer bandındaki çizgiyi kontrol et")
+    if (
+        fb_in(p, FB_EARLY_HIGH_MIN_START, FB_EARLY_HIGH_MIN_END)
+        and p["total"] >= 3
+        and p["diff"] <= MAX_GOAL_DIFF_FOR_MOMENTUM
+    ):
+        return fb_res(p, f"{fb_line(p)}\nYüksek tempolu ve kopmamış erken maç — 1.65+ değer bandını kontrol et")
 
 
 @strat("FB_GERIDEN_FARK2", "football", "2 gol fark baskısı, 55-80'",
@@ -1145,7 +1159,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.9.2 aktif: Açık maç ivmesi kurgusu ve strateji karne takibi devrede.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.9.3 aktif: Kopuk maç rölanti filtresi ve derinleştirilmiş ivme kurguları devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
