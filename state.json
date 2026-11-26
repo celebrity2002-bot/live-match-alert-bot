@@ -960,7 +960,7 @@
    "created": "2026-11-26T20:46:22.922618+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -968,7 +968,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "3-1",
+   "last_score": "4-1",
    "stats_summary": "xG 0.86 | Isabetli Sut 7/9 (4-3) | Korner 6 | Sari Kart 2"
   }
  }
