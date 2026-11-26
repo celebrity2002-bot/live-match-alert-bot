@@ -892,6 +892,58 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": "Isabetli Sut 4/7 (4-0) | Korner 3"
+  },
+  "fb_1883588|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883588|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883588",
+   "match": "NEC Nijmegen - Rennes",
+   "league": "Europa League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T20:40:42.313935+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "xG 1.62 | Isabetli Sut 5/9 (2-3) | Korner 2 | Sari Kart 1"
+  },
+  "fb_1883523|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883523|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883523",
+   "match": "Sparta Prague - AZ Alkmaar",
+   "league": "Europa League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T20:40:43.413015+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "xG 1.63 | Isabetli Sut 4/10 (4-0) | Korner 0"
   }
  }
 }
