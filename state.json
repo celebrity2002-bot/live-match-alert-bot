@@ -866,6 +866,32 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": "Isabetli Sut 4/7 (2-2) | Korner 3 | Sari Kart 1"
+  },
+  "fb_1883612|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1883612|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1883612",
+   "match": "SC Braga - KuPS",
+   "league": "Conference League League Stage",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-26T20:35:26.792070+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "Isabetli Sut 4/7 (4-0) | Korner 3"
   }
  }
 }
