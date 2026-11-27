@@ -1040,6 +1040,32 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": ""
+  },
+  "fb_1869772|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869772|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869772",
+   "match": "Brentford U18 - Birmingham City U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T12:40:33.637545+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "Isabetli Sut 4/7 (2-2) | Korner 3"
   }
  }
 }
