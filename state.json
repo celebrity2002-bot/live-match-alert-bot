@@ -985,6 +985,32 @@
    "final_total": 5,
    "settled": "2026-11-26T22:05:25.982539+00:00",
    "seg_avg": 2.0
+  },
+  "fb_1852927|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1852927|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1852927",
+   "match": "Imisli FK - Shafa",
+   "league": "Azerbaijan Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T11:01:01.743939+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": ""
   }
  }
 }
