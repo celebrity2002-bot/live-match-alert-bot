@@ -1028,18 +1028,21 @@
     2.15
    ],
    "created": "2026-11-27T11:40:35.675906+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
    "last_score": "2-0",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 2,
+   "settled": "2026-11-27T13:05:26.945735+00:00",
+   "seg_avg": 0.0
   },
   "fb_1869772|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1869772|FB_ACIK_MAC_DEVAM_GOL",
