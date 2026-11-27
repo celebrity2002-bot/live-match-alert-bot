@@ -1115,18 +1115,21 @@
     2.15
    ],
    "created": "2026-11-27T18:45:31.942185+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "1-2",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 3,
+   "settled": "2026-11-27T20:10:36.080228+00:00",
+   "seg_avg": 1.0
   },
   "fb_1805925|FB_IY1_00_BASKI": {
    "key": "fb_1805925|FB_IY1_00_BASKI",
@@ -1273,7 +1276,7 @@
    "created": "2026-11-27T19:35:26.225679+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1281,7 +1284,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1",
+   "last_score": "1-2",
    "stats_summary": "Isabetli Sut 3/8 (2-1) | Korner 5 | Sari Kart 1"
   },
   "fb_1894569|FB_ACIK_MAC_DEVAM_GOL": {
@@ -1361,6 +1364,32 @@
    "signal_score": "2-1",
    "last_score": "2-1",
    "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 5 | Sari Kart 2"
+  },
+  "fb_1812758|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1812758|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1812758",
+   "match": "Werder Bremen - Borussia M'gladbach",
+   "league": "Germany Bundesliga",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T20:10:35.156353+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "xG 1.72 | Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1"
   }
  }
 }
