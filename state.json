@@ -1000,7 +1000,7 @@
    ],
    "created": "2026-11-27T11:01:01.743939+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 4,
    "sent": true,
    "result_sent": false,
