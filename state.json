@@ -1029,7 +1029,7 @@
    ],
    "created": "2026-11-27T11:40:35.675906+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 2,
    "sent": true,
    "result_sent": false,
