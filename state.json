@@ -1434,8 +1434,37 @@
     2.15
    ],
    "created": "2026-11-27T20:25:25.026483+00:00",
+   "status": "lost",
+   "missing_runs": 3,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": true,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "xG 0.73 | Isabetli Sut 4/8 (2-2) | Korner 4 | Sari Kart 4",
+   "final_total": 0,
+   "settled": "2026-11-27T21:50:35.881365+00:00",
+   "seg_avg": 0.0
+  },
+  "fb_1894570|FB_IY1_00_BASKI": {
+   "key": "fb_1894570|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1894570",
+   "match": "Deportivo Cuenca - Manta",
+   "league": "Ecuador Serie A: Relegation Group",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T21:50:35.047895+00:00",
    "status": "pending",
-   "missing_runs": 2,
+   "missing_runs": 0,
    "last_total": 0,
    "sent": true,
    "result_sent": false,
@@ -1445,7 +1474,7 @@
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "0-0",
-   "stats_summary": "xG 0.73 | Isabetli Sut 4/8 (2-2) | Korner 4 | Sari Kart 4"
+   "stats_summary": "Isabetli Sut 2/4 (2-0) | Korner 6"
   }
  }
 }
