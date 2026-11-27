@@ -1098,6 +1098,32 @@
    "signal_score": "1-1",
    "last_score": "2-2",
    "stats_summary": "Isabetli Sut 8/11 (3-5) | Korner 0"
+  },
+  "fb_1816780|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1816780|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1816780",
+   "match": "Feirense - Portimonense",
+   "league": "Portugal Liga Portugal 2",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T18:45:31.942185+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": ""
   }
  }
 }
