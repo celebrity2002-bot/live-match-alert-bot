@@ -1179,6 +1179,84 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 5/8 (1-4) | Korner 1 | Sari Kart 1"
+  },
+  "fb_1790275|FB_IY1_00_BASKI": {
+   "key": "fb_1790275|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1790275",
+   "match": "FC Groningen - Willem II",
+   "league": "Netherlands Eredivisie",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T19:30:48.363226+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 5/8 (3-2) | Korner 3"
+  },
+  "fb_1870882|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1870882|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1870882",
+   "match": "Manchester City U21 - West Bromwich Albion U21",
+   "league": "England Premier League 2",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T19:30:49.536207+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "Isabetli Sut 6/9 (5-1) | Korner 3 | Sari Kart 2"
+  },
+  "fb_1810478|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1810478|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1810478",
+   "match": "Francs Borains - Eupen",
+   "league": "Belgium Challenger Pro League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T19:30:50.946840+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "Isabetli Sut 4/7 (2-2) | Korner 3 | Sari Kart 1"
   }
  }
 }
