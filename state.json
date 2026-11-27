@@ -1144,18 +1144,21 @@
     2.15
    ],
    "created": "2026-11-27T18:55:26.638471+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "2-3",
-   "stats_summary": "Isabetli Sut 2/4 (2-0) | Korner 7"
+   "stats_summary": "Isabetli Sut 2/4 (2-0) | Korner 7",
+   "final_total": 5,
+   "settled": "2026-11-27T20:30:51.568254+00:00",
+   "seg_avg": 5.0
   },
   "fb_1810482|FB_IY1_00_BASKI": {
    "key": "fb_1810482|FB_IY1_00_BASKI",
