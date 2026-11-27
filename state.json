@@ -1086,18 +1086,21 @@
     2.15
    ],
    "created": "2026-11-27T17:35:35.414108+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "3-2",
-   "stats_summary": "Isabetli Sut 8/11 (3-5) | Korner 0"
+   "stats_summary": "Isabetli Sut 8/11 (3-5) | Korner 0",
+   "final_total": 5,
+   "settled": "2026-11-27T19:05:26.093362+00:00",
+   "seg_avg": 3.0
   },
   "fb_1816780|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1816780|FB_ACIK_MAC_DEVAM_GOL",
