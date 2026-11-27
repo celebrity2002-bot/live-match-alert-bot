@@ -1405,18 +1405,21 @@
     2.15
    ],
    "created": "2026-11-27T20:10:35.156353+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 6,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "3-3",
-   "stats_summary": "xG 1.72 | Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1"
+   "stats_summary": "xG 1.72 | Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1",
+   "final_total": 6,
+   "settled": "2026-11-27T21:35:28.247127+00:00",
+   "seg_avg": 4.0
   },
   "fb_1785431|FB_IY1_00_BASKI": {
    "key": "fb_1785431|FB_IY1_00_BASKI",
