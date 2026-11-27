@@ -1087,7 +1087,7 @@
    ],
    "created": "2026-11-27T17:35:35.414108+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 5,
    "sent": true,
    "result_sent": false,
@@ -1124,6 +1124,32 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": ""
+  },
+  "fb_1805925|FB_IY1_00_BASKI": {
+   "key": "fb_1805925|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1805925",
+   "match": "Grazer AK - SCR Altach",
+   "league": "Austria Bundesliga",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T18:55:26.638471+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/4 (2-0) | Korner 7"
   }
  }
 }
