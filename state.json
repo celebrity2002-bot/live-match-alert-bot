@@ -1145,7 +1145,7 @@
    ],
    "created": "2026-11-27T18:55:26.638471+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 5,
    "sent": true,
    "result_sent": false,
@@ -1172,7 +1172,7 @@
    "created": "2026-11-27T19:25:37.579560+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1180,7 +1180,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-1",
+   "last_score": "0-2",
    "stats_summary": "Isabetli Sut 5/8 (1-4) | Korner 1 | Sari Kart 1"
   },
   "fb_1790275|FB_IY1_00_BASKI": {
@@ -1390,6 +1390,32 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": "xG 1.72 | Isabetli Sut 4/8 (2-2) | Korner 3 | Sari Kart 1"
+  },
+  "fb_1785431|FB_IY1_00_BASKI": {
+   "key": "fb_1785431|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1785431",
+   "match": "Venezia - Bologna",
+   "league": "Italy Serie A",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-27T20:25:25.026483+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "xG 0.73 | Isabetli Sut 4/8 (2-2) | Korner 4 | Sari Kart 4"
   }
  }
 }
