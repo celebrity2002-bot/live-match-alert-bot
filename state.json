@@ -1059,7 +1059,7 @@
    "created": "2026-11-27T12:40:33.637545+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1067,7 +1067,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "2-1",
+   "last_score": "3-1",
    "stats_summary": "Isabetli Sut 4/7 (2-2) | Korner 3"
   }
  }
