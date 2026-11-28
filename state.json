@@ -1549,7 +1549,7 @@
    "created": "2026-11-28T11:30:47.756186+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1557,7 +1557,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "3-2",
+   "last_score": "3-3",
    "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 3"
   },
   "fb_1869764|FB_ACIK_MAC_DEVAM_GOL": {
@@ -1627,7 +1627,7 @@
    "created": "2026-11-28T11:35:35.984916+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1635,7 +1635,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2",
+   "last_score": "1-2",
    "stats_summary": "Isabetli Sut 7/8 (3-4) | Korner 3"
   },
   "fb_1879403|FB_ACIK_MAC_DEVAM_GOL": {
@@ -1651,6 +1651,32 @@
     2.15
    ],
    "created": "2026-11-28T11:40:38.247630+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "3-0",
+   "stats_summary": ""
+  },
+  "fb_1816774|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1816774|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1816774",
+   "match": "AVS Futebol SAD - Leixoes",
+   "league": "Portugal Liga Portugal 2",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T11:45:44.967446+00:00",
    "status": "pending",
    "missing_runs": 0,
    "last_total": 2,
