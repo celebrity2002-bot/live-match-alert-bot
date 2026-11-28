@@ -1575,7 +1575,7 @@
    "created": "2026-11-28T11:30:48.889760+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1583,7 +1583,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2",
+   "last_score": "1-2",
    "stats_summary": "Isabetli Sut 3/5 (1-2) | Korner 5"
   },
   "fb_1825686|FB_IY1_00_BASKI": {
@@ -1611,6 +1611,32 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 2/9 (1-1) | Korner 4 | Sari Kart 2"
+  },
+  "fb_1869761|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869761|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869761",
+   "match": "Fulham U18 - Reading U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T11:35:35.984916+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": "Isabetli Sut 7/8 (3-4) | Korner 3"
   }
  }
 }
