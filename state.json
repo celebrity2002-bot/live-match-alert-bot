@@ -1929,7 +1929,7 @@
    "created": "2026-11-28T13:25:28.345120+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1937,7 +1937,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-2",
+   "last_score": "2-3",
    "stats_summary": "Isabetli Sut 4/9 (2-2) | Korner 3"
   },
   "fb_1912740|FB_IY1_00_BASKI": {
@@ -2095,6 +2095,32 @@
    "signal_score": "0-0",
    "last_score": "1-0",
    "stats_summary": "Isabetli Sut 2/5 (2-0) | Korner 4 | Kirmizi Kart 1"
+  },
+  "fb_1812752|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1812752|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1812752",
+   "match": "FC Cologne - Elversberg",
+   "league": "Germany Bundesliga",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T14:55:29.383399+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "xG 1.17 | Isabetli Sut 3/6 (2-1) | Korner 4"
   }
  }
 }
