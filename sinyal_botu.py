@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.9.6 - 2.00+ Sürpriz Kırılma Kurgusu, Ayrı Bant Takibi ve Gerçek Oran Kayıt Altyapısı
+Canlı Sinyal Botu v2.9.7 - Gerçek Bülten Oranı/Çizgi Kaydı (set_odds) ve 2.00+ Ayrı Performans Raporu
 """
 import io
 import json
@@ -409,7 +409,7 @@ def fb_goal_line_hint(p, res):
         return f"Hedef: ALT ({MIN_TARGET_ODDS:.2f}+ oran bandi) | Skor: {p['total']}"
     tot = p.get("total", 0)
     if tot == 0:
-        return "GOL OLUR | 0.5 Ust kapaliysa 1.5 Ust (1.65+ ise 2+ gol)"
+        return "GOL OLUR | 0.5 kapaliysa 1.5/2.5 Ust (1.65+ acik cizgi)"
     if tot == 1:
         return "Hedef: 1.5 Ust / 2.5 Ust (1.65+ bandi) | Skor: 1 gol"
     if tot == 2:
@@ -683,7 +683,7 @@ def decay_risk_note(p, sd=None):
     if p["sport"] == "football":
         if p.get("minute") is not None and p["minute"] >= 58:
             return f"Yüksek — oran {MIN_TARGET_ODDS:.2f} altındaysa veya kapalıysa PAS"
-        return f"Orta — 0.5 kapalıysa 1.5 Üst ({MIN_TARGET_ODDS:.2f}+) kontrol et, düşükse PAS"
+        return f"Orta — 0.5 kapalıysa açık 1.5/2.5 Üst ({MIN_TARGET_ODDS:.2f}+) kontrol et, düşükse PAS"
     return f"Orta — çizgi/oran {MIN_TARGET_ODDS:.2f} bandındaysa değerlendir, düşükse PAS"
 
 
@@ -804,13 +804,13 @@ def fb_surpriz_200_plus(p):
 
 @strat("FB_IY1_00_BASKI", "football",
        f"İlk Yarı 0-0 Baskı ({FB_IY1_00_MIN}-{FB_IY1_00_MAX}', GOL OLUR)",
-       "0-0 BASKI ALARMI — GOL OLUR", "0.5 Üst / 1.5 Üst (Açık Çizgi)", (1.65, 2.15))
+       "0-0 BASKI ALARMI — GOL OLUR", "0.5 / 1.5 / 2.5 Üst (Açık Çizgi)", (1.65, 2.15))
 def fb_iy1_00_baski(p):
     if fb_in(p, FB_IY1_00_MIN, FB_IY1_00_MAX) and p["total"] == 0:
         return fb_res(
             p,
-            f"{fb_line(p)}\nKarar: GOL OLUR — 0.5 kapalıysa 1.5 Üst (1.65+ ise 2+ gol) bak",
-            market_hint="GOL OLUR | 0.5 kapaliysa 1.5 Ust (1.65+ = 2+ gol)",
+            f"{fb_line(p)}\nKarar: GOL OLUR — 0.5/1.5 kapalı veya düşükse 2.5 Üst (1.65+ açık çizgi) bak",
+            market_hint="GOL OLUR | 0.5 kapaliysa 1.5/2.5 Ust (1.65+ acik cizgi)",
         )
 
 
@@ -1110,6 +1110,8 @@ def notify_result(state, rec):
               f"{icon} {rec['match']}",
               f"🏷 {label}",
               f"📊 Skor: {rec.get('signal_score', '-')} ➜ {rec.get('last_score', '-')}"]
+    if rec.get("actual_line") or rec.get("actual_odds"):
+        lines.append(f"🎯 Kayıtlı Bülten: {rec.get('actual_line') or '-'} @ {rec.get('actual_odds') or '-'}")
     if rec["sport"] == "football":
         goals = rec["final_total"] - rec["base"]
         band = rec["band"]
@@ -1215,6 +1217,81 @@ def process_sport(state, sport):
 
 
 # ------------------------------------------------------------------
+# GERÇEK ORAN KAYDI & ORAN BANDI KIYAS RAPORU
+# ------------------------------------------------------------------
+def set_actual_odds(state, query, odds_val, line_label=None):
+    q = str(query or "").strip().lower()
+    odds = env_float_or_none(odds_val)
+    if not q or odds is None:
+        log("Kullanım: python sinyal_botu.py set_odds <maç_adı> <oran> [çizgi]")
+        return False
+
+    matches = [
+        r for r in state.get("signals", {}).values()
+        if q in str(r.get("match", "")).lower() or q in str(r.get("key", "")).lower()
+    ]
+    if not matches:
+        log(f"Eşleşen sinyal bulunamadı: {query}")
+        return False
+
+    matches.sort(key=lambda r: r.get("created", ""), reverse=True)
+    target = matches[0]
+    target["actual_odds"] = round(odds, 2)
+    if line_label:
+        target["actual_line"] = str(line_label).strip()
+    log(
+        f"Gerçek bülten kaydı güncellendi: {target['match']} | "
+        f"Oran: {target['actual_odds']:.2f} | Çizgi: {target.get('actual_line') or '-'}"
+    )
+    return True
+
+
+def build_odds_bucket_lines(state):
+    std_recs, high_recs = [], []
+    for r in state.get("signals", {}).values():
+        if r.get("sport") != "football":
+            continue
+        odds = env_float_or_none(r.get("actual_odds"))
+        if odds is None:
+            continue
+        if odds >= SURPRISE_MIN_ODDS:
+            high_recs.append(r)
+        else:
+            std_recs.append(r)
+
+    if not std_recs and not high_recs:
+        return []
+
+    lines = ["", "📊 GERÇEK ORAN BANDI KIYASI"]
+    for title, bucket in (("1.65 - 1.99 Standart Bant", std_recs), ("2.00+ Yüksek Oran / Sürpriz", high_recs)):
+        won = sum(1 for r in bucket if r.get("status") == "won")
+        lost = sum(1 for r in bucket if r.get("status") == "lost")
+        pend = sum(1 for r in bucket if r.get("status") == "pending")
+        done = won + lost
+        profit = 0.0
+        for r in bucket:
+            if r.get("status") not in ("won", "lost"):
+                continue
+            o = env_float_or_none(r.get("actual_odds")) or 1.80
+            profit += ((o - 1) * stake_tl()) if r.get("status") == "won" else -stake_tl()
+        rate = f"%{(100.0 * won / done):.0f}" if done else "-"
+        lines.append(f"{title}: Tuttu {won} | Tutmadı {lost} | Bekleyen {pend} | İsabet {rate} | K/Z {profit:+.0f} TL")
+    return lines
+
+
+def odds_report(state):
+    bucket_lines = build_odds_bucket_lines(state)
+    if not bucket_lines:
+        msg = "Henüz gerçek bülten oranı girilmiş futbol sinyali yok.\nÖrnek: python sinyal_botu.py set_odds \"Osnabrück\" 2.27 \"2.5 Üst\""
+        log(msg)
+        send_telegram(msg)
+        return
+    text = "\n".join(["🎯 GERÇEK ORAN & ÇİZGİ PERFORMANS RAPORU"] + bucket_lines[1:])
+    log(text)
+    send_telegram(text)
+
+
+# ------------------------------------------------------------------
 # ÖZET
 # ------------------------------------------------------------------
 def summary(state):
@@ -1256,6 +1333,7 @@ def summary(state):
             lines.append(f"  Karne uyarısı: başa baş %{breakeven(band):.0f} altında.")
         elif 0 < done < 30:
             lines.append(f"  Örnek az ({done}); güvenmeyin.")
+    lines.extend(build_odds_bucket_lines(state))
     send_telegram("\n".join(lines))
 
 
@@ -1265,8 +1343,15 @@ def main():
     state = load_state()
     if cmd == "summary":
         summary(state)
+    elif cmd == "odds_report":
+        odds_report(state)
+    elif cmd == "set_odds":
+        q = sys.argv[2] if len(sys.argv) > 2 else ""
+        o = sys.argv[3] if len(sys.argv) > 3 else ""
+        l_txt = sys.argv[4] if len(sys.argv) > 4 else None
+        set_actual_odds(state, q, o, l_txt)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.9.6 aktif: 2.00+ sürpriz kırılma kurgusu ve ayrı bant takibi devrede.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.9.7 aktif: Gerçek bülten oranı kaydı ve 2.00+ performans kıyası devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
