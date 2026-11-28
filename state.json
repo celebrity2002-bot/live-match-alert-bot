@@ -77,6 +77,32 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 3/8 (3-0) | Korner 2"
+  },
+  "fb_1800714|FB_IY1_00_BASKI": {
+   "key": "fb_1800714|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1800714",
+   "match": "Maccabi Tel Aviv - Hapoel Petah Tikva",
+   "league": "Israel Premier League",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "0.5 Üst / 1.5 Üst (Açık Çizgi)",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T17:30:47.012788+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 4/6 (3-1) | Korner 4 | Sari Kart 1"
   }
  }
 }
