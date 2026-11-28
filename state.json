@@ -2038,7 +2038,7 @@
    ],
    "created": "2026-11-28T14:35:27.863286+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "result_sent": false,
@@ -2117,7 +2117,7 @@
    "created": "2026-11-28T14:55:29.383399+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2125,7 +2125,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "3-0",
+   "last_score": "4-0",
    "stats_summary": "xG 1.17 | Isabetli Sut 3/6 (2-1) | Korner 4"
   },
   "fb_1788614|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2195,7 +2195,7 @@
    "created": "2026-11-28T15:30:49.679584+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2203,7 +2203,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1",
+   "last_score": "2-2",
    "stats_summary": ""
   },
   "fb_1793675|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2325,7 +2325,7 @@
    "created": "2026-11-28T15:50:33.775778+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2333,7 +2333,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2",
+   "last_score": "1-2",
    "stats_summary": ""
   }
  }
