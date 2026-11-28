@@ -1987,7 +1987,7 @@
    "created": "2026-11-28T14:30:46.361317+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1995,7 +1995,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "4-1",
+   "last_score": "5-1",
    "stats_summary": ""
   },
   "fb_1816776|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2257,6 +2257,58 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": ""
+  },
+  "fb_1837589|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1837589|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1837589",
+   "match": "Hyde United - Warrington Town",
+   "league": "England Northern Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T15:45:39.331354+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": ""
+  },
+  "fb_1810486|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1810486|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1810486",
+   "match": "Patro Eisden - Gent U23",
+   "league": "Belgium Challenger Pro League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T15:45:40.380359+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-0",
+   "last_score": "2-0",
+   "stats_summary": "Isabetli Sut 4/6 (4-0) | Korner 9"
   }
  }
 }
