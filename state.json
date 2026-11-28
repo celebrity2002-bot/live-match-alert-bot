@@ -1696,7 +1696,7 @@
    ],
    "created": "2026-11-28T11:45:44.967446+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 6,
    "sent": true,
    "result_sent": false,
@@ -1882,7 +1882,7 @@
    "created": "2026-11-28T13:05:38.276250+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1890,7 +1890,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1",
+   "last_score": "1-2",
    "stats_summary": "Isabetli Sut 10/11 (3-7) | Korner 5 | Sari Kart 3"
   }
  }
