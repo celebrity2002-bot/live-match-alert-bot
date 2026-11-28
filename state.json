@@ -1986,7 +1986,7 @@
    ],
    "created": "2026-11-28T14:30:46.361317+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 6,
    "sent": true,
    "result_sent": false,
@@ -2011,18 +2011,21 @@
     2.15
    ],
    "created": "2026-11-28T14:30:47.954745+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 2,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "1-1",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 2,
+   "settled": "2026-11-28T16:10:37.893603+00:00",
+   "seg_avg": 0.0
   },
   "fb_1785432|FB_IY1_00_BASKI": {
    "key": "fb_1785432|FB_IY1_00_BASKI",
@@ -2066,18 +2069,21 @@
     2.15
    ],
    "created": "2026-11-28T14:35:29.315752+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 6,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "2-4",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 6,
+   "settled": "2026-11-28T16:10:38.269903+00:00",
+   "seg_avg": 3.0
   },
   "fb_1870892|FB_IY1_00_BASKI": {
    "key": "fb_1870892|FB_IY1_00_BASKI",
@@ -2092,18 +2098,21 @@
     2.15
    ],
    "created": "2026-11-28T14:35:30.494309+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 0,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
    "last_score": "3-0",
-   "stats_summary": "Isabetli Sut 2/5 (2-0) | Korner 4 | Kirmizi Kart 1"
+   "stats_summary": "Isabetli Sut 2/5 (2-0) | Korner 4 | Kirmizi Kart 1",
+   "final_total": 3,
+   "settled": "2026-11-28T16:10:38.646673+00:00",
+   "seg_avg": 3.0
   },
   "fb_1812752|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1812752|FB_ACIK_MAC_DEVAM_GOL",
@@ -2172,7 +2181,7 @@
    "created": "2026-11-28T15:25:26.773170+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2180,7 +2189,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0",
+   "last_score": "0-1",
    "stats_summary": "Isabetli Sut 2/6 (1-1) | Korner 4"
   },
   "fb_1837581|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2302,7 +2311,7 @@
    "created": "2026-11-28T15:45:40.380359+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2310,7 +2319,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "3-0",
+   "last_score": "4-0",
    "stats_summary": "Isabetli Sut 4/6 (4-0) | Korner 9"
   },
   "fb_1837586|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2364,6 +2373,32 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": "xG 1.46 | Isabetli Sut 3/9 (3-0) | Korner 8 | Sari Kart 1"
+  },
+  "fb_1810493|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1810493|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1810493",
+   "match": "Club NXT - K Lierse S.K.",
+   "league": "Belgium Challenger Pro League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T16:10:37.109187+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1",
+   "stats_summary": "Isabetli Sut 3/11 (2-1) | Korner 5 | Sari Kart 2"
   }
  }
 }
