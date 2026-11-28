@@ -2091,7 +2091,7 @@
    "created": "2026-11-28T14:35:30.494309+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2099,7 +2099,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0",
+   "last_score": "3-0",
    "stats_summary": "Isabetli Sut 2/5 (2-0) | Korner 4 | Kirmizi Kart 1"
   },
   "fb_1812752|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2299,7 +2299,7 @@
    "created": "2026-11-28T15:45:40.380359+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2307,8 +2307,34 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "2-0",
+   "last_score": "3-0",
    "stats_summary": "Isabetli Sut 4/6 (4-0) | Korner 9"
+  },
+  "fb_1837586|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1837586|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1837586",
+   "match": "Ashton United - Stockton Town",
+   "league": "England Northern Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T15:50:33.775778+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": ""
   }
  }
 }
