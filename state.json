@@ -287,7 +287,11 @@
    "last_score": "2-1",
    "stats_summary": "",
    "final_total": 3,
+<<<<<<< Updated upstream
    "settled": "2026-11-28T20:00:53.391332+00:00",
+=======
+   "settled": "2026-11-28T20:01:06.723914+00:00",
+>>>>>>> Stashed changes
    "seg_avg": 1.0
   },
   "fb_1812760|FB_ACIK_MAC_DEVAM_GOL": {
