@@ -1781,7 +1781,7 @@
    "created": "2026-11-28T12:30:49.328801+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1789,7 +1789,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "3-0",
+   "last_score": "4-0",
    "stats_summary": "Isabetli Sut 2/6 (2-0) | Korner 3"
   },
   "fb_1869766|FB_ACIK_MAC_DEVAM_GOL": {
@@ -1859,7 +1859,7 @@
    "created": "2026-11-28T12:35:26.275450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 6,
+   "last_total": 7,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1867,7 +1867,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "5-1",
+   "last_score": "5-2",
    "stats_summary": "Isabetli Sut 4/6 (3-1) | Korner 3"
   },
   "fb_1869763|FB_ACIK_MAC_DEVAM_GOL": {
@@ -1895,6 +1895,32 @@
    "signal_score": "1-1",
    "last_score": "2-3",
    "stats_summary": "Isabetli Sut 10/11 (3-7) | Korner 5 | Sari Kart 3"
+  },
+  "fb_1869771|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869771|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869771",
+   "match": "Derby County U18 - Blackburn Rovers U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T13:25:28.345120+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "Isabetli Sut 4/9 (2-2) | Korner 3"
   }
  }
 }
