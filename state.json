@@ -1981,7 +1981,7 @@
    "created": "2026-11-28T14:30:46.361317+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 3,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1989,7 +1989,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-1",
+   "last_score": "3-1",
    "stats_summary": ""
   },
   "fb_1816776|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2017,6 +2017,84 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": ""
+  },
+  "fb_1785432|FB_IY1_00_BASKI": {
+   "key": "fb_1785432|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1785432",
+   "match": "Frosinone - Parma",
+   "league": "Italy Serie A",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T14:35:27.863286+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "xG 0.55 | Isabetli Sut 4/10 (3-1) | Korner 6 | Sari Kart 1"
+  },
+  "fb_1846838|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1846838|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1846838",
+   "match": "Urartu FC - Shirak",
+   "league": "Armenia Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T14:35:29.315752+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2",
+   "stats_summary": ""
+  },
+  "fb_1870892|FB_IY1_00_BASKI": {
+   "key": "fb_1870892|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1870892",
+   "match": "Liverpool U21 - Birmingham City U21",
+   "league": "England Premier League 2",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T14:35:30.494309+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/5 (2-0) | Korner 4 | Kirmizi Kart 1"
   }
  }
 }
