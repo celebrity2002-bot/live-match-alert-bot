@@ -1,3 +1,60 @@
 {
- "signals": {}
+ "signals": {
+  "fb_1798196|FB_IY1_00_BASKI": {
+   "key": "fb_1798196|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1798196",
+   "match": "Sporting Charleroi - SK Beveren",
+   "league": "Belgium Belgian Pro League",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "0.5 / 1.5 / 2.5 Üst (Açık Çizgi)",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T20:10:35.953041+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 3/6 (2-1) | Korner 3 | Sari Kart 1",
+   "actual_odds": null,
+   "actual_line": null
+  },
+  "fb_1810487|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1810487|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1810487",
+   "match": "KSC Lokeren - Beerschot",
+   "league": "Belgium Challenger Pro League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T20:10:37.091144+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 5,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 5,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-3",
+   "last_score": "2-3",
+   "stats_summary": "Isabetli Sut 7/12 (2-5) | Korner 6 | Kirmizi Kart 1",
+   "actual_odds": null,
+   "actual_line": null
+  }
+ }
 }
