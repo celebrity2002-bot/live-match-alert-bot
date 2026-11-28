@@ -99,7 +99,7 @@
    "created": "2026-11-28T17:30:47.012788+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -107,7 +107,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "Isabetli Sut 4/6 (3-1) | Korner 4 | Sari Kart 1"
   },
   "fb_1798200|FB_ACIK_MAC_DEVAM_GOL": {
@@ -239,6 +239,32 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": "Isabetli Sut 4/8 (3-1) | Korner 2"
+  },
+  "fb_1816779|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1816779|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1816779",
+   "match": "Sporting CP B - Amarante FC",
+   "league": "Portugal Liga Portugal 2",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T18:35:28.901174+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": ""
   }
  }
 }
