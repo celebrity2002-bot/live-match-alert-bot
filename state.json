@@ -43,7 +43,7 @@
    ],
    "created": "2026-11-28T17:25:26.329414+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 7,
    "sent": true,
    "result_sent": false,
@@ -184,6 +184,32 @@
    "signal_score": "0-2",
    "last_score": "0-2",
    "stats_summary": "xG 1.08 | Isabetli Sut 7/9 (4-3) | Korner 6"
+  },
+  "fb_1885519|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1885519|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1885519",
+   "match": "Siroki Brijeg - Zrinjski Mostar",
+   "league": "Bosnia and Herzegovina Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T18:15:42.010493+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": ""
   }
  }
 }
