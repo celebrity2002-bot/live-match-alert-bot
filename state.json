@@ -43,7 +43,7 @@
    ],
    "created": "2026-11-28T17:25:26.329414+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 7,
    "sent": true,
    "result_sent": false,
