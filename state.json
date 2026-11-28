@@ -2039,7 +2039,7 @@
    "created": "2026-11-28T14:35:27.863286+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 0,
+   "last_total": 1,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2047,7 +2047,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "0-0",
+   "last_score": "1-0",
    "stats_summary": "xG 0.55 | Isabetli Sut 4/10 (3-1) | Korner 6 | Sari Kart 1"
   },
   "fb_1846838|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2091,7 +2091,7 @@
    "created": "2026-11-28T14:35:30.494309+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2099,7 +2099,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "Isabetli Sut 2/5 (2-0) | Korner 4 | Kirmizi Kart 1"
   },
   "fb_1812752|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2127,6 +2127,32 @@
    "signal_score": "2-0",
    "last_score": "3-0",
    "stats_summary": "xG 1.17 | Isabetli Sut 3/6 (2-1) | Korner 4"
+  },
+  "fb_1788614|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1788614|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1788614",
+   "match": "Komarno - Zilina",
+   "league": "Slovakia Super Liga",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T15:15:35.205048+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": "Isabetli Sut 3/7 (1-2) | Korner 6"
   }
  }
 }
