@@ -2039,7 +2039,7 @@
    "created": "2026-11-28T14:35:27.863286+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2047,7 +2047,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0",
+   "last_score": "3-0",
    "stats_summary": "xG 0.55 | Isabetli Sut 4/10 (3-1) | Korner 6 | Sari Kart 1"
   },
   "fb_1846838|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2065,7 +2065,7 @@
    "created": "2026-11-28T14:35:29.315752+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2073,7 +2073,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
-   "last_score": "2-3",
+   "last_score": "2-4",
    "stats_summary": ""
   },
   "fb_1870892|FB_IY1_00_BASKI": {
@@ -2231,6 +2231,32 @@
    "signal_score": "0-2",
    "last_score": "0-2",
    "stats_summary": "xG 1.97 | Isabetli Sut 5/10 (3-2) | Korner 3"
+  },
+  "fb_1837583|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1837583|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1837583",
+   "match": "Curzon Ashton - Bury",
+   "league": "England Northern Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T15:38:44.564892+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": ""
   }
  }
 }
