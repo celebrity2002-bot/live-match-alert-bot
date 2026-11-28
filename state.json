@@ -73,7 +73,7 @@
    "created": "2026-11-28T17:25:27.775564+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -81,7 +81,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0",
+   "last_score": "3-0",
    "stats_summary": "Isabetli Sut 3/8 (3-0) | Korner 2"
   },
   "fb_1800714|FB_IY1_00_BASKI": {
@@ -99,7 +99,7 @@
    "created": "2026-11-28T17:30:47.012788+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 4,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -107,7 +107,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "2-0",
+   "last_score": "3-1",
    "stats_summary": "Isabetli Sut 4/6 (3-1) | Korner 4 | Sari Kart 1"
   },
   "fb_1798200|FB_ACIK_MAC_DEVAM_GOL": {
@@ -203,7 +203,7 @@
    "created": "2026-11-28T18:15:42.010493+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -211,7 +211,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2",
+   "last_score": "1-2",
    "stats_summary": ""
   },
   "fb_1790291|FB_ACIK_MAC_DEVAM_GOL": {
@@ -265,6 +265,32 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": ""
+  },
+  "fb_1812760|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1812760|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1812760",
+   "match": "VfB Stuttgart - Eintracht Frankfurt",
+   "league": "Germany Bundesliga",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T18:40:35.274099+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "xG 1.22 | Isabetli Sut 6/9 (2-4) | Korner 8 | Sari Kart 1"
   }
  }
 }
