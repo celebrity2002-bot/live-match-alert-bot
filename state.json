@@ -1507,6 +1507,32 @@
    "final_total": 3,
    "settled": "2026-11-28T09:00:54.303042+00:00",
    "seg_avg": 0.0
+  },
+  "fb_1749014|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1749014|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1749014",
+   "match": "Naftan Novopolotsk - Dinamo Minsk",
+   "league": "Belarus Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T10:45:35.407676+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-2",
+   "last_score": "1-2",
+   "stats_summary": ""
   }
  }
 }
