@@ -357,7 +357,7 @@
    "created": "2026-11-28T19:15:32.847714+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -365,7 +365,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-3",
+   "last_score": "2-3",
    "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 5"
   },
   "fb_1810487|FB_COK_GOLLU_ERKEN": {
@@ -383,7 +383,7 @@
    "created": "2026-11-28T19:35:34.361853+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -391,7 +391,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-2",
-   "last_score": "2-2",
+   "last_score": "2-3",
    "stats_summary": "Isabetli Sut 4/6 (2-2) | Korner 2"
   },
   "fb_1894537|FB_ACIK_MAC_DEVAM_GOL": {
@@ -409,7 +409,7 @@
    "created": "2026-11-28T19:45:36.518260+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 1,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -417,7 +417,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "0-2",
+   "last_score": "0-1",
    "stats_summary": "Isabetli Sut 4/6 (2-2) | Korner 4"
   }
  }
