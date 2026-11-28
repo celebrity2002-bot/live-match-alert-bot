@@ -1807,7 +1807,7 @@
    "created": "2026-11-28T12:30:51.664383+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1815,7 +1815,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "4-1",
+   "last_score": "5-1",
    "stats_summary": "Isabetli Sut 8/10 (4-4) | Korner 6"
   },
   "fb_1869769|FB_IY1_00_BASKI": {
@@ -1921,6 +1921,32 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": "Isabetli Sut 4/9 (2-2) | Korner 3"
+  },
+  "fb_1912740|FB_IY1_00_BASKI": {
+   "key": "fb_1912740|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1912740",
+   "match": "Young Africans - MC Alger",
+   "league": "Africa CAF Champions League: Group B",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T13:35:27.545943+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/6 (1-1) | Korner 2 | Sari Kart 3"
   }
  }
 }
