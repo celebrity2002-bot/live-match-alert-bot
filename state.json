@@ -41,7 +41,7 @@
    "created": "2026-11-28T17:25:26.329414+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 5,
+   "last_total": 6,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -49,7 +49,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "2-3",
+   "last_score": "2-4",
    "stats_summary": "xG 1.25 | Isabetli Sut 6/14 (4-2) | Korner 3 | Sari Kart 1"
   },
   "fb_1788615|FB_IY1_00_BASKI": {
@@ -119,7 +119,7 @@
    "created": "2026-11-28T17:45:31.826552+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -127,7 +127,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1",
+   "last_score": "2-1",
    "stats_summary": "Isabetli Sut 3/6 (2-1) | Korner 5 | Sari Kart 1"
   }
  }
