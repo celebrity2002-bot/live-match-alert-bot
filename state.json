@@ -1578,7 +1578,7 @@
    "created": "2026-11-28T11:30:48.889760+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 6,
+   "last_total": 7,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1586,7 +1586,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
-   "last_score": "3-3",
+   "last_score": "4-3",
    "stats_summary": "Isabetli Sut 3/5 (1-2) | Korner 5"
   },
   "fb_1825686|FB_IY1_00_BASKI": {
