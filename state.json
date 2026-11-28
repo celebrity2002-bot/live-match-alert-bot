@@ -2320,7 +2320,7 @@
    "created": "2026-11-28T15:45:40.380359+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2328,7 +2328,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-0",
-   "last_score": "4-0",
+   "last_score": "5-0",
    "stats_summary": "Isabetli Sut 4/6 (4-0) | Korner 9"
   },
   "fb_1837586|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2434,6 +2434,32 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 2/4 (1-1) | Korner 5"
+  },
+  "fb_1912767|FB_IY1_00_BASKI": {
+   "key": "fb_1912767|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1912767",
+   "match": "Pyramids FC - MAS Fes",
+   "league": "Africa CAF Champions League: Group D",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T16:35:26.065447+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/6 (2-0) | Korner 2 | Sari Kart 2"
   }
  }
 }
