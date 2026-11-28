@@ -1744,6 +1744,58 @@
    "signal_score": "0-0",
    "last_score": "0-0",
    "stats_summary": "Isabetli Sut 3/4 (2-1) | Korner 6"
+  },
+  "fb_1813380|FB_IY1_00_BASKI": {
+   "key": "fb_1813380|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1813380",
+   "match": "Hertha Berlin - Karlsruher SC",
+   "league": "Germany 2. Bundesliga",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T12:30:49.328801+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/6 (2-0) | Korner 3"
+  },
+  "fb_1869766|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869766|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869766",
+   "match": "Manchester City U18 - Newcastle United U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T12:30:51.664383+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1",
+   "stats_summary": "Isabetli Sut 8/10 (4-4) | Korner 6"
   }
  }
 }
