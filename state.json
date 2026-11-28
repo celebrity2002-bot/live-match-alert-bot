@@ -1692,6 +1692,32 @@
    "signal_score": "2-0",
    "last_score": "2-0",
    "stats_summary": ""
+  },
+  "fb_1869770|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869770|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869770",
+   "match": "Liverpool U18 - Everton U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T12:08:22.137183+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1",
+   "stats_summary": "Isabetli Sut 5/9 (2-3) | Korner 1 | Sari Kart 3"
   }
  }
 }
