@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.9.5 - Erken İlk Yarı 0-0 Baskı Kurgusu, Gol Olur / Pas Ayrımı ve Çizgi Netliği
+Canlı Sinyal Botu v2.9.6 - 2.00+ Sürpriz Kırılma Kurgusu, Ayrı Bant Takibi ve Gerçek Oran Kayıt Altyapısı
 """
 import io
 import json
@@ -57,6 +57,8 @@ ENABLE_STAT_FILTER = os.getenv("ENABLE_STAT_FILTER", "1") == "1"
 REQUIRE_STAT_FOR_00 = os.getenv("REQUIRE_STAT_FOR_00", "1") == "1"
 ENABLE_PNG_CARD = os.getenv("ENABLE_PNG_CARD", "1") == "1"
 MIN_TARGET_ODDS = env_num("MIN_TARGET_ODDS", 1.65, float)
+SURPRISE_MIN_ODDS = env_num("SURPRISE_MIN_ODDS", 2.00, float)
+SURPRISE_MAX_ODDS = env_num("SURPRISE_MAX_ODDS", 2.60, float)
 MIN_TOTAL_XG = env_num("MIN_TOTAL_XG", 0.55, float)
 MIN_OPEN_MATCH_XG = env_num("MIN_OPEN_MATCH_XG", 0.85, float)
 MIN_OPEN_MATCH_ACTIVITY = env_num("MIN_OPEN_MATCH_ACTIVITY", 10, int)
@@ -64,6 +66,9 @@ MAX_GOAL_DIFF_FOR_MOMENTUM = env_num("MAX_GOAL_DIFF_FOR_MOMENTUM", 2, int)
 MIN_IY1_00_XG = env_num("MIN_IY1_00_XG", 0.45, float)
 MIN_IY1_00_SOT = env_num("MIN_IY1_00_SOT", 2, int)
 MIN_IY1_00_ACTIVITY = env_num("MIN_IY1_00_ACTIVITY", 8, int)
+MIN_SURPRISE_XG = env_num("MIN_SURPRISE_XG", 0.65, float)
+MIN_SURPRISE_SOT = env_num("MIN_SURPRISE_SOT", 3, int)
+MIN_SURPRISE_ACTIVITY = env_num("MIN_SURPRISE_ACTIVITY", 10, int)
 MIN_IY2_SOT = env_num("MIN_IY2_SOT", 3, int)
 MIN_IY2_ACTIVITY = env_num("MIN_IY2_ACTIVITY", 9, int)
 MIN_KG_ACTIVITY = env_num("MIN_KG_ACTIVITY", 7, int)
@@ -134,9 +139,13 @@ BB_Q4_MAX_POINTS = env_num("BB_Q4_MAX_POINTS", 8, int)
 BB_HT_HIGH = env_num("BB_HT_HIGH", 95, int)
 BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
-# Futbol güncel kontrol dakikaları (1.65+ değer pencereleri)
+# Futbol güncel kontrol dakikaları (1.65+ ve 2.00+ sürpriz pencereleri)
 FB_IY1_00_MIN = env_num("FB_IY1_00_MIN", 20, int)
 FB_IY1_00_MAX = env_num("FB_IY1_00_MAX", 32, int)
+FB_SURPRISE_IY1_MIN = env_num("FB_SURPRISE_IY1_MIN", 18, int)
+FB_SURPRISE_IY1_MAX = env_num("FB_SURPRISE_IY1_MAX", 33, int)
+FB_SURPRISE_IY2_MIN = env_num("FB_SURPRISE_IY2_MIN", 50, int)
+FB_SURPRISE_IY2_MAX = env_num("FB_SURPRISE_IY2_MAX", 74, int)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
@@ -299,6 +308,21 @@ def format_fb_stat_line(st):
 
 def passes_fb_stat_filter(p, sd, st):
     sid = sd.get("id")
+    if sid == "FB_SURPRIZ_200_PLUS":
+        if not st:
+            return False, "SURPRIZ 2.00+ PAS — Canlı istatistik verisi bulunamadı"
+        sot_tot = st.get("sot_total", 0)
+        activity = st.get("shots_total", 0) + st.get("corners_total", 0)
+        xg_tot = st.get("xg_total")
+        if sot_tot < MIN_SURPRISE_SOT or activity < MIN_SURPRISE_ACTIVITY:
+            return False, (
+                f"SURPRIZ 2.00+ PAS — Kırılma baskısı yetersiz "
+                f"(isabetli şut {sot_tot}/{MIN_SURPRISE_SOT}, şut+korner {activity}/{MIN_SURPRISE_ACTIVITY})"
+            )
+        if xg_tot is not None and xg_tot < MIN_SURPRISE_XG:
+            return False, f"SURPRIZ 2.00+ PAS — xG düşük (xG {xg_tot:.2f}/{MIN_SURPRISE_XG:.2f})"
+        return True, None
+
     if sid == "FB_IY1_00_BASKI":
         if not st:
             return False, "GOL OLMAZ / PAS — 0-0 ilk yarı baskı için canlı istatistik verisi yok"
@@ -500,9 +524,10 @@ def build_signal_card_png(p, sd, res, stat_line=None):
     try:
         w, h = 900, 1200
         is_under = res.get("direction") == "under"
-        accent = (255, 68, 78) if is_under else (46, 255, 118)
-        accent_dark = (72, 16, 22) if is_under else (14, 62, 28)
-        pill_bg = (110, 22, 30) if is_under else (22, 95, 42)
+        is_surprise = sd.get("id") == "FB_SURPRIZ_200_PLUS"
+        accent = (255, 68, 78) if is_under else ((255, 198, 46) if is_surprise else (46, 255, 118))
+        accent_dark = (72, 16, 22) if is_under else ((82, 58, 8) if is_surprise else (14, 62, 28))
+        pill_bg = (110, 22, 30) if is_under else ((112, 78, 12) if is_surprise else (22, 95, 42))
         bg_color = (7, 11, 10)
         panel_bg = (14, 21, 18)
         row_bg = (22, 30, 27)
@@ -518,11 +543,16 @@ def build_signal_card_png(p, sd, res, stat_line=None):
         f_top = _load_font(30, bold=True)
         f_badge = _load_font(22, bold=True)
         draw.text((74, 68), "CANLI MAC TAKIP BOTU", fill=text_main, font=f_top)
-        _draw_rounded_box(draw, (w - 220, 62, w - 74, 108), 18, pill_bg, outline=accent, width=2)
-        b_txt = "GOL OLUR" if sd.get("id") == "FB_IY1_00_BASKI" else "CANLI"
+        _draw_rounded_box(draw, (w - 230, 62, w - 74, 108), 18, pill_bg, outline=accent, width=2)
+        if is_surprise:
+            b_txt = "2.00+ KIRILMA"
+        elif sd.get("id") == "FB_IY1_00_BASKI":
+            b_txt = "GOL OLUR"
+        else:
+            b_txt = "CANLI"
         bb = draw.textbbox((0, 0), b_txt, font=f_badge)
         draw.text(
-            (w - 147 - (bb[2] - bb[0]) // 2, 85 - (bb[3] - bb[1]) // 2),
+            (w - 152 - (bb[2] - bb[0]) // 2, 85 - (bb[3] - bb[1]) // 2),
             b_txt,
             fill=text_main,
             font=f_badge,
@@ -557,15 +587,17 @@ def build_signal_card_png(p, sd, res, stat_line=None):
                 ],
                 fill=accent,
             )
-            if sd.get("id") == "FB_IY1_00_BASKI":
+            if is_surprise:
+                main_title = "SURPRIZ 2.00+ KIRILMA"
+            elif sd.get("id") == "FB_IY1_00_BASKI":
                 main_title = "0-0 BASKI: GOL OLUR"
             elif sd.get("id") == "FB_KG_VAR_ACIK_MAC":
                 main_title = "KG VAR SINYALI"
             else:
                 main_title = "GOL / UST SINYALI" if p["sport"] == "football" else "UST SINYALI"
 
-        t_main, f_main = _fit_text(draw, main_title, w - 260, 56, bold=True, min_size=36)
-        draw.text((195, 162), t_main, fill=accent, font=f_main)
+        t_main, f_main = _fit_text(draw, main_title, w - 260, 52, bold=True, min_size=34)
+        draw.text((195, 165), t_main, fill=accent, font=f_main)
 
         match_txt, f_match = _fit_text(draw, p["match"], w - 140, 48, bold=True, min_size=30)
         mb = draw.textbbox((0, 0), match_txt, font=f_match)
@@ -619,7 +651,7 @@ def build_signal_card_png(p, sd, res, stat_line=None):
 
         warn_txt, f_warn = _fit_text(
             draw,
-            f"0.5 kapaliysa 1.5 Ust ({MIN_TARGET_ODDS:.2f}+) bak; uymuyorsa PAS",
+            f"Acik cizgide {band[0]:.2f}+ oran yoksa veya senaryo uymuyorsa PAS",
             w - 130,
             24,
             bold=True,
@@ -645,7 +677,9 @@ def stake_tl():
     return max(MIN_STAKE_TL, hesaplanan)
 
 
-def decay_risk_note(p):
+def decay_risk_note(p, sd=None):
+    if sd and sd.get("id") == "FB_SURPRIZ_200_PLUS":
+        return f"Yüksek Varyans — {SURPRISE_MIN_ODDS:.2f}+ açık çizgi varsa ve baskı sürüyorsa değerlendir, yoksa PAS"
     if p["sport"] == "football":
         if p.get("minute") is not None and p["minute"] >= 58:
             return f"Yüksek — oran {MIN_TARGET_ODDS:.2f} altındaysa veya kapalıysa PAS"
@@ -668,7 +702,7 @@ def form_note(state, sid, band, sport):
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag} | {status_tag}"
 
     band_txt = f"Değer bandı {band[0]:.2f}-{band[1]:.2f}"
-    action = f"{band_txt} (çizgi/oran sende)" if sport == "basketball" else f"{band_txt} (0.5 kapalıysa 1.5 Üst / 2+ gol)"
+    action = f"{band_txt} (çizgi/oran sende)" if sport == "basketball" else f"{band_txt} (sitedeki açık çizgi ve oranı kontrol et)"
     return f"{hist} — {action}"
 
 
@@ -740,6 +774,32 @@ def fb_in(p, lo, hi):
 def fb_line(p):
     t = "Devre Arası" if p["ht"] else f"Dakika: {p['minute']}'"
     return f"{t} | Skor: {p['home']}-{p['away']}"
+
+
+@strat("FB_SURPRIZ_200_PLUS", "football",
+       f"2.00+ Sürpriz Kırılma ({FB_SURPRISE_IY1_MIN}-{FB_SURPRISE_IY1_MAX}' 0-0 / {FB_SURPRISE_IY2_MIN}-{FB_SURPRISE_IY2_MAX}' açık)",
+       "⚡ 2.00+ SÜRPRİZ KIRILMA SINYALI", "2.00+ Açık Üst / Sıradaki Gol",
+       (SURPRISE_MIN_ODDS, SURPRISE_MAX_ODDS), is_special=True)
+def fb_surpriz_200_plus(p):
+    early_lock_break = fb_in(p, FB_SURPRISE_IY1_MIN, FB_SURPRISE_IY1_MAX) and p["total"] == 0
+    mid_open_break = (
+        fb_in(p, FB_SURPRISE_IY2_MIN, FB_SURPRISE_IY2_MAX)
+        and 1 <= p["total"] <= 2
+        and p["diff"] <= MAX_GOAL_DIFF_FOR_MOMENTUM
+    )
+    if early_lock_break:
+        return fb_res(
+            p,
+            f"{fb_line(p)}\nErken 0-0 kilit kırılma baskısı — bültende 2.00+ çizgi/oran varsa sürpriz radarı",
+            market_hint=f"SURPRIZ 2.00+ | Erken 0-0 baski ({p['home']}-{p['away']})",
+        )
+    if mid_open_break:
+        return fb_res(
+            p,
+            f"{fb_line(p)}\nKopmamış maçta yüksek baskı — bültende açık {p['total'] + 1.5:.1f} Ust / 2.00+ çizgiyi kontrol et",
+            market_hint=f"SURPRIZ 2.00+ | Hedef: {p['total'] + 1.5:.1f} Ust ({p['home']}-{p['away']})",
+        )
+    return None
 
 
 @strat("FB_IY1_00_BASKI", "football",
@@ -938,7 +998,7 @@ def build_message(p, sd, res, state=None, stat_line=None):
     icon = "⚽" if p["sport"] == "football" else "🏀"
     detail = res["detail"].split("\n")
     note = form_note(state or {"signals": {}}, sd["id"], band, p["sport"])
-    risk = decay_risk_note(p)
+    risk = decay_risk_note(p, sd=sd)
 
     if sd.get("is_special"):
         lines = [sd["title"], line, f"{icon} {p['match']}"]
@@ -960,7 +1020,7 @@ def build_message(p, sd, res, state=None, stat_line=None):
                   f"🎲 Başa baş isabet: %{breakeven(band):.0f}",
                   f"📌 Form & Not: {note}",
                   "",
-                  f"🛑 Sitedeki çizgi uymuyorsa veya oran {MIN_TARGET_ODDS:.2f} altındaysa PAS"]
+                  f"🛑 Sitedeki çizgi uymuyorsa veya oran {band[0]:.2f} altındaysa PAS"]
     else:
         lines = [f"🚨 {sd['title']}", line, f"{icon} {p['match']}"]
         if p.get("league"):
@@ -1013,6 +1073,8 @@ def register_signal(state, p, sd, res, stat_line=None):
         "direction": res["direction"], "base": res["base"], "n": res["n"], "ref": res["ref"],
         "signal_score": f"{p['home']}-{p['away']}", "last_score": f"{p['home']}-{p['away']}",
         "stats_summary": stat_line or "",
+        "actual_odds": None,
+        "actual_line": None,
     }
     state["signals"][key] = rec
     if MODE == "live":
@@ -1051,10 +1113,12 @@ def notify_result(state, rec):
     if rec["sport"] == "football":
         goals = rec["final_total"] - rec["base"]
         band = rec["band"]
-        mid = (band[0] + band[1]) / 2
+        used_odds = env_float_or_none(rec.get("actual_odds"))
+        mid = used_odds if used_odds is not None else ((band[0] + band[1]) / 2)
         pl = (mid - 1) * stake_tl() if won else -stake_tl()
+        odds_tag = f"gerçek oran {mid:.2f}" if used_odds is not None else f"orta oran {mid:.2f}"
         lines.append(f"🥅 Sinyalden sonra {goals} gol")
-        lines.append(f"{'💰' if won else '💸'} Tahmini: {pl:+.0f} TL (oran {mid:.2f})")
+        lines.append(f"{'💰' if won else '💸'} Tahmini: {pl:+.0f} TL ({odds_tag})")
     else:
         yon = "ÜST" if rec.get("direction") == "over" else "ALT"
         lines.append(f"📉 Tempo: {rec.get('seg_avg')} sayı/çeyrek (referans {rec.get('ref', 0):.0f}, beklenti {yon})")
@@ -1174,8 +1238,14 @@ def summary(state):
         rate = f"%{rate_val:.0f}" if rate_val is not None else "-"
         lines.append(f"{label}")
         if recs[0]["sport"] == "football":
-            mid = (band[0] + band[1]) / 2
-            profit = (won * (mid - 1) - lost) * stake_tl()
+            profit = 0.0
+            for r in recs:
+                if r["status"] not in ("won", "lost"):
+                    continue
+                r_band = r.get("band") or band
+                used_odds = env_float_or_none(r.get("actual_odds"))
+                odds = used_odds if used_odds is not None else ((r_band[0] + r_band[1]) / 2)
+                profit += ((odds - 1) * stake_tl()) if r["status"] == "won" else -stake_tl()
             lines.append(f"  Tuttu {won} | Tutmadı {lost} | Bekleyen {pend}")
             lines.append(f"  İsabet {rate} (başa baş %{breakeven(band):.0f}) | K/Z {profit:+.0f} TL")
         else:
@@ -1196,7 +1266,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.9.5 aktif: Erken 0-0 baskı penceresi ve 1.5 Üst çizgi netliği devrede.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.9.6 aktif: 2.00+ sürpriz kırılma kurgusu ve ayrı bant takibi devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
