@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Canlı Sinyal Botu v2.9.5 - İlk Yarı 0-0 Baskı Kurgusu, Gol Olur / Gol Olmaz Ayrımı ve Çizgi Esnekliği
+Canlı Sinyal Botu v2.9.5 - Erken İlk Yarı 0-0 Baskı Kurgusu, Gol Olur / Pas Ayrımı ve Çizgi Netliği
 """
 import io
 import json
@@ -136,7 +136,7 @@ BB_HT_LOW = env_num("BB_HT_LOW", 70, int)
 
 # Futbol güncel kontrol dakikaları (1.65+ değer pencereleri)
 FB_IY1_00_MIN = env_num("FB_IY1_00_MIN", 20, int)
-FB_IY1_00_MAX = env_num("FB_IY1_00_MAX", 39, int)
+FB_IY1_00_MAX = env_num("FB_IY1_00_MAX", 32, int)
 FB_LATE_MIN = env_num("FB_LATE_MIN", 65, int)
 FB_LATE_MAX = env_num("FB_LATE_MAX", 80, int)
 FB_OPEN_MIN_GOALS = env_num("FB_OPEN_MIN_GOALS", 2, int)
@@ -385,7 +385,7 @@ def fb_goal_line_hint(p, res):
         return f"Hedef: ALT ({MIN_TARGET_ODDS:.2f}+ oran bandi) | Skor: {p['total']}"
     tot = p.get("total", 0)
     if tot == 0:
-        return "BASKI: GOL OLUR | Sitedeki acik Ust / Gol cizgisine bak"
+        return "GOL OLUR | 0.5 Ust kapaliysa 1.5 Ust (1.65+ ise 2+ gol)"
     if tot == 1:
         return "Hedef: 1.5 Ust / 2.5 Ust (1.65+ bandi) | Skor: 1 gol"
     if tot == 2:
@@ -619,7 +619,7 @@ def build_signal_card_png(p, sd, res, stat_line=None):
 
         warn_txt, f_warn = _fit_text(
             draw,
-            f"Acik cizgiye bak; {MIN_TARGET_ODDS:.2f} altindaysa veya uymuyorsa PAS",
+            f"0.5 kapaliysa 1.5 Ust ({MIN_TARGET_ODDS:.2f}+) bak; uymuyorsa PAS",
             w - 130,
             24,
             bold=True,
@@ -649,7 +649,7 @@ def decay_risk_note(p):
     if p["sport"] == "football":
         if p.get("minute") is not None and p["minute"] >= 58:
             return f"Yüksek — oran {MIN_TARGET_ODDS:.2f} altındaysa veya kapalıysa PAS"
-        return f"Orta — sitede açık çizgiyi kontrol et, {MIN_TARGET_ODDS:.2f}+ ise değerlendir"
+        return f"Orta — 0.5 kapalıysa 1.5 Üst ({MIN_TARGET_ODDS:.2f}+) kontrol et, düşükse PAS"
     return f"Orta — çizgi/oran {MIN_TARGET_ODDS:.2f} bandındaysa değerlendir, düşükse PAS"
 
 
@@ -668,7 +668,7 @@ def form_note(state, sid, band, sport):
         hist = f"Geçmiş {won}/{done} (%{rate:.0f}) | {sample_tag} | {status_tag}"
 
     band_txt = f"Değer bandı {band[0]:.2f}-{band[1]:.2f}"
-    action = f"{band_txt} (çizgi/oran sende)" if sport == "basketball" else f"{band_txt} (sitedeki açık çizgiyi kontrol et)"
+    action = f"{band_txt} (çizgi/oran sende)" if sport == "basketball" else f"{band_txt} (0.5 kapalıysa 1.5 Üst / 2+ gol)"
     return f"{hist} — {action}"
 
 
@@ -744,13 +744,13 @@ def fb_line(p):
 
 @strat("FB_IY1_00_BASKI", "football",
        f"İlk Yarı 0-0 Baskı ({FB_IY1_00_MIN}-{FB_IY1_00_MAX}', GOL OLUR)",
-       "0-0 BASKI ALARMI — GOL OLUR", "Sitedeki Açık Üst / Gol Çizgisi", (1.65, 2.15))
+       "0-0 BASKI ALARMI — GOL OLUR", "0.5 Üst / 1.5 Üst (Açık Çizgi)", (1.65, 2.15))
 def fb_iy1_00_baski(p):
     if fb_in(p, FB_IY1_00_MIN, FB_IY1_00_MAX) and p["total"] == 0:
         return fb_res(
             p,
-            f"{fb_line(p)}\nKarar: GOL OLUR (baskı barajı aşıldı) — sitede açık olan çizgiyi kontrol et",
-            market_hint="Karar: GOL OLUR | Sitedeki acik gol/ust cizgisine bak",
+            f"{fb_line(p)}\nKarar: GOL OLUR — 0.5 kapalıysa 1.5 Üst (1.65+ ise 2+ gol) bak",
+            market_hint="GOL OLUR | 0.5 kapaliysa 1.5 Ust (1.65+ = 2+ gol)",
         )
 
 
@@ -1196,7 +1196,7 @@ def main():
     if cmd == "summary":
         summary(state)
     elif cmd == "test":
-        success = send_telegram("🤖 *Test Başarılı!* v2.9.5 aktif: İlk yarı 0-0 baskı kurgusu ve GOL OLUR / GOL OLMAZ ayrımı devrede.")
+        success = send_telegram("🤖 *Test Başarılı!* v2.9.5 aktif: Erken 0-0 baskı penceresi ve 1.5 Üst çizgi netliği devrede.")
         if success:
             log("Test mesajı Telegram'a başarıyla gönderildi!")
         else:
