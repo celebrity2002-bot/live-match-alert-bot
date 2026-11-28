@@ -129,18 +129,21 @@
     2.15
    ],
    "created": "2026-11-28T17:45:31.826552+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "3-1",
-   "stats_summary": "Isabetli Sut 3/6 (2-1) | Korner 5 | Sari Kart 1"
+   "stats_summary": "Isabetli Sut 3/6 (2-1) | Korner 5 | Sari Kart 1",
+   "final_total": 4,
+   "settled": "2026-11-28T19:20:33.216835+00:00",
+   "seg_avg": 2.0
   },
   "fb_1793674|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1793674|FB_ACIK_MAC_DEVAM_GOL",
@@ -342,7 +345,7 @@
    "created": "2026-11-28T19:15:32.847714+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -350,7 +353,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1",
+   "last_score": "1-2",
    "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 5"
   }
  }
