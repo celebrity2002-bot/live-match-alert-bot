@@ -2205,6 +2205,32 @@
    "signal_score": "2-1",
    "last_score": "2-1",
    "stats_summary": ""
+  },
+  "fb_1793675|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1793675|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1793675",
+   "match": "Manchester United - Brentford",
+   "league": "England Premier League",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T15:35:28.252596+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": "xG 1.97 | Isabetli Sut 5/10 (3-2) | Korner 3"
   }
  }
 }
