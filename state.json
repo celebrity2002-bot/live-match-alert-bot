@@ -158,18 +158,21 @@
     2.15
    ],
    "created": "2026-11-28T18:00:54.105385+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-2",
    "last_score": "2-2",
-   "stats_summary": "xG 1.55 | Isabetli Sut 4/8 (1-3) | Korner 3 | Sari Kart 2"
+   "stats_summary": "xG 1.55 | Isabetli Sut 4/8 (1-3) | Korner 3 | Sari Kart 2",
+   "final_total": 4,
+   "settled": "2026-11-28T19:35:35.556743+00:00",
+   "seg_avg": 1.0
   },
   "fb_1785425|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1785425|FB_ACIK_MAC_DEVAM_GOL",
@@ -213,18 +216,21 @@
     2.15
    ],
    "created": "2026-11-28T18:15:42.010493+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
    "last_score": "1-2",
-   "stats_summary": ""
+   "stats_summary": "",
+   "final_total": 3,
+   "settled": "2026-11-28T19:35:35.995203+00:00",
+   "seg_avg": 1.0
   },
   "fb_1790291|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1790291|FB_ACIK_MAC_DEVAM_GOL",
@@ -240,7 +246,7 @@
    ],
    "created": "2026-11-28T18:25:32.160705+00:00",
    "status": "pending",
-   "missing_runs": 0,
+   "missing_runs": 1,
    "last_total": 3,
    "sent": true,
    "result_sent": false,
@@ -267,7 +273,7 @@
    "created": "2026-11-28T18:35:28.901174+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 2,
+   "last_total": 3,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -275,7 +281,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
-   "last_score": "1-1",
+   "last_score": "2-1",
    "stats_summary": ""
   },
   "fb_1812760|FB_ACIK_MAC_DEVAM_GOL": {
@@ -291,18 +297,21 @@
     2.15
    ],
    "created": "2026-11-28T18:40:35.274099+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 4,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "1-1",
    "last_score": "2-2",
-   "stats_summary": "xG 1.22 | Isabetli Sut 6/9 (2-4) | Korner 8 | Sari Kart 1"
+   "stats_summary": "xG 1.22 | Isabetli Sut 6/9 (2-4) | Korner 8 | Sari Kart 1",
+   "final_total": 4,
+   "settled": "2026-11-28T19:35:36.474832+00:00",
+   "seg_avg": 2.0
   },
   "fb_1800713|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1800713|FB_ACIK_MAC_DEVAM_GOL",
@@ -355,6 +364,32 @@
    "signal_score": "1-1",
    "last_score": "1-2",
    "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 5"
+  },
+  "fb_1810487|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1810487|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1810487",
+   "match": "KSC Lokeren - Beerschot",
+   "league": "Belgium Challenger Pro League",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Sıradaki Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.1
+   ],
+   "created": "2026-11-28T19:35:34.361853+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 4,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 4,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-2",
+   "last_score": "2-2",
+   "stats_summary": "Isabetli Sut 4/6 (2-2) | Korner 2"
   }
  }
 }
