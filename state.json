@@ -1807,7 +1807,7 @@
    "created": "2026-11-28T12:30:51.664383+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1815,7 +1815,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "3-1",
+   "last_score": "4-1",
    "stats_summary": "Isabetli Sut 8/10 (4-4) | Korner 6"
   },
   "fb_1869769|FB_IY1_00_BASKI": {
@@ -1859,7 +1859,7 @@
    "created": "2026-11-28T12:35:26.275450+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 7,
+   "last_total": 8,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1867,7 +1867,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "3-1",
-   "last_score": "5-2",
+   "last_score": "6-2",
    "stats_summary": "Isabetli Sut 4/6 (3-1) | Korner 3"
   },
   "fb_1869763|FB_ACIK_MAC_DEVAM_GOL": {
