@@ -1579,18 +1579,21 @@
     2.15
    ],
    "created": "2026-11-28T11:30:48.889760+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 9,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
    "last_score": "5-4",
-   "stats_summary": "Isabetli Sut 3/5 (1-2) | Korner 5"
+   "stats_summary": "Isabetli Sut 3/5 (1-2) | Korner 5",
+   "final_total": 9,
+   "settled": "2026-11-28T13:05:39.553529+00:00",
+   "seg_avg": 7.0
   },
   "fb_1825686|FB_IY1_00_BASKI": {
    "key": "fb_1825686|FB_IY1_00_BASKI",
@@ -1634,18 +1637,21 @@
     2.15
    ],
    "created": "2026-11-28T11:35:35.984916+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "won",
+   "missing_runs": 3,
    "last_total": 5,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 2,
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-2",
    "last_score": "3-2",
-   "stats_summary": "Isabetli Sut 7/8 (3-4) | Korner 3"
+   "stats_summary": "Isabetli Sut 7/8 (3-4) | Korner 3",
+   "final_total": 5,
+   "settled": "2026-11-28T13:05:40.072178+00:00",
+   "seg_avg": 3.0
   },
   "fb_1879403|FB_ACIK_MAC_DEVAM_GOL": {
    "key": "fb_1879403|FB_ACIK_MAC_DEVAM_GOL",
@@ -1715,18 +1721,21 @@
     2.15
    ],
    "created": "2026-11-28T12:08:22.137183+00:00",
-   "status": "pending",
-   "missing_runs": 2,
+   "status": "lost",
+   "missing_runs": 3,
    "last_total": 3,
    "sent": true,
-   "result_sent": false,
+   "result_sent": true,
    "direction": "over",
    "base": 3,
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
    "last_score": "2-1",
-   "stats_summary": "Isabetli Sut 5/9 (2-3) | Korner 1 | Sari Kart 3"
+   "stats_summary": "Isabetli Sut 5/9 (2-3) | Korner 1 | Sari Kart 3",
+   "final_total": 3,
+   "settled": "2026-11-28T13:05:40.612654+00:00",
+   "seg_avg": 0.0
   },
   "fb_1813390|FB_IY1_00_BASKI": {
    "key": "fb_1813390|FB_IY1_00_BASKI",
@@ -1857,6 +1866,32 @@
    "signal_score": "3-1",
    "last_score": "4-1",
    "stats_summary": "Isabetli Sut 4/6 (3-1) | Korner 3"
+  },
+  "fb_1869763|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869763|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869763",
+   "match": "Aston Villa U18 - Tottenham Hotspur U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T13:05:38.276250+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "Isabetli Sut 10/11 (3-7) | Korner 5 | Sari Kart 3"
   }
  }
 }
