@@ -1533,6 +1533,84 @@
    "signal_score": "1-2",
    "last_score": "1-2",
    "stats_summary": ""
+  },
+  "fb_1869759|FB_COK_GOLLU_ERKEN": {
+   "key": "fb_1869759|FB_COK_GOLLU_ERKEN",
+   "sport": "football",
+   "match_id": "fb_1869759",
+   "match": "Ipswich Town U18 - Norwich City U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_COK_GOLLU_ERKEN",
+   "pick": "Sıradaki Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.1
+   ],
+   "created": "2026-11-28T11:30:47.756186+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 3,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 3,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "2-1",
+   "last_score": "2-1",
+   "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 3"
+  },
+  "fb_1869764|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1869764|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1869764",
+   "match": "Sunderland U18 - Leicester City U18",
+   "league": "England Premier League U18",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T11:30:48.889760+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-2",
+   "last_score": "0-2",
+   "stats_summary": "Isabetli Sut 3/5 (1-2) | Korner 5"
+  },
+  "fb_1825686|FB_IY1_00_BASKI": {
+   "key": "fb_1825686|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1825686",
+   "match": "FC Obolon Kyiv - Zorya",
+   "league": "Ukraine Premier League",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "Sitedeki Açık Üst / Gol Çizgisi",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T11:30:50.143641+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/9 (1-1) | Korner 4 | Sari Kart 2"
   }
  }
 }
