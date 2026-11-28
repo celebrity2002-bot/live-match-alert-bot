@@ -1987,7 +1987,7 @@
    "created": "2026-11-28T14:30:46.361317+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 4,
+   "last_total": 5,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -1995,7 +1995,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "2-1",
-   "last_score": "3-1",
+   "last_score": "4-1",
    "stats_summary": ""
   },
   "fb_1816776|FB_ACIK_MAC_DEVAM_GOL": {
@@ -2039,7 +2039,7 @@
    "created": "2026-11-28T14:35:27.863286+00:00",
    "status": "pending",
    "missing_runs": 0,
-   "last_total": 1,
+   "last_total": 2,
    "sent": true,
    "result_sent": false,
    "direction": "over",
@@ -2047,7 +2047,7 @@
    "n": 1,
    "ref": 0.0,
    "signal_score": "0-0",
-   "last_score": "1-0",
+   "last_score": "2-0",
    "stats_summary": "xG 0.55 | Isabetli Sut 4/10 (3-1) | Korner 6 | Sari Kart 1"
   },
   "fb_1846838|FB_ACIK_MAC_DEVAM_GOL": {
