@@ -275,7 +275,7 @@
    ],
    "created": "2026-11-28T18:35:28.901174+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 3,
    "sent": true,
    "result_sent": false,
@@ -419,6 +419,34 @@
    "signal_score": "0-2",
    "last_score": "0-1",
    "stats_summary": "Isabetli Sut 4/6 (2-2) | Korner 4"
+  },
+  "fb_1813393|FB_IY1_00_BASKI": {
+   "key": "fb_1813393|FB_IY1_00_BASKI",
+   "sport": "football",
+   "match_id": "fb_1813393",
+   "match": "VfL Osnabrück - Hannover 96",
+   "league": "Germany 2. Bundesliga",
+   "strategy": "FB_IY1_00_BASKI",
+   "pick": "0.5 Üst / 1.5 Üst (Açık Çizgi)",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T19:56:50.557109+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 0,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 0,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "0-0",
+   "last_score": "0-0",
+   "stats_summary": "Isabetli Sut 2/6 (2-0) | Korner 3",
+   "actual_odds": null,
+   "actual_line": null
   }
  }
 }
