@@ -130,7 +130,7 @@
    ],
    "created": "2026-11-28T17:45:31.826552+00:00",
    "status": "pending",
-   "missing_runs": 1,
+   "missing_runs": 2,
    "last_total": 4,
    "sent": true,
    "result_sent": false,
@@ -326,6 +326,32 @@
    "signal_score": "1-1",
    "last_score": "1-1",
    "stats_summary": "Isabetli Sut 8/11 (5-3) | Korner 1 | Sari Kart 3"
+  },
+  "fb_1805921|FB_ACIK_MAC_DEVAM_GOL": {
+   "key": "fb_1805921|FB_ACIK_MAC_DEVAM_GOL",
+   "sport": "football",
+   "match_id": "fb_1805921",
+   "match": "Austria Lustenau - Rapid Wien",
+   "league": "Austria Bundesliga",
+   "strategy": "FB_ACIK_MAC_DEVAM_GOL",
+   "pick": "Ek Gol / Canlı Üst",
+   "band": [
+    1.65,
+    2.15
+   ],
+   "created": "2026-11-28T19:15:32.847714+00:00",
+   "status": "pending",
+   "missing_runs": 0,
+   "last_total": 2,
+   "sent": true,
+   "result_sent": false,
+   "direction": "over",
+   "base": 2,
+   "n": 1,
+   "ref": 0.0,
+   "signal_score": "1-1",
+   "last_score": "1-1",
+   "stats_summary": "Isabetli Sut 3/5 (2-1) | Korner 5"
   }
  }
 }
